@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch4 - Perfection of Yoga</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html" class="active">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Perfection of Yoga</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#yoga-as-rejected-by-arjuna" id="yoga-as-rejected-by-arjuna">Yoga As Rejected By Arjuna</a></h1>
+<p>There have been many yoga systems popularized in the Western world, especially in this century, but none of them have actually taught the perfection of yoga.</p>
+<p>In the Bhagavad-gītā, Śrī Kṛṣṇa, the Supreme Personality of Godhead, teaches Arjuna directly the perfection of yoga.</p>
+<p>If we actually want to participate in the perfection of the yoga system, in Bhagavad-gītā we will find the authoritative statements of the Supreme Person.</p>
+<p>It is certainly remarkable that the perfection of yoga was taught in the middle of a battlefield.</p>
+<p>It was taught to Arjuna, the warrior, just before Arjuna was to engage in a fratricidal battle.</p>
+<p>Out of sentiment, Arjuna was thinking, “Why should I fight against my own kinsmen?” That reluctance to fight was due to Arjuna's illusion, and just to eradicate that illusion, Śrī Kṛṣṇa spoke the Bhagavad-gītā to him.</p>
+<p>One can just imagine how little time must have elapsed while Bhagavad-gītā was being spoken.</p>
+<p>All the warriors on both sides were poised to fight, so there was very little time indeed—at the utmost, one hour.</p>
+<p>Within this one hour, the whole Bhagavad-gītā was discussed, and Śrī Kṛṣṇa set forth the perfection of all yoga systems to His friend Arjuna.</p>
+<p>At the end of this great discourse, Arjuna set aside his misgivings and fought.</p>
+<p>However, within the discourse, when Arjuna heard the explanation of the meditational system of yoga—how to sit down, how to keep the body straight, how to keep the eyes half-closed and how to gaze at the tip of the nose without diverting one's attention, all this being conducted in a secluded place alone— he replied: yo 'yaṁ yogas tvayā proktaḥ sāmyena madhusūdana etasyāhaṁ na paśyāmi caṣcalatvāt sthitiṁ sthirām “O Madhusūdana, the system of yoga which You have summarized appears impractical and unendurable to me, for the mind is restless and unsteady.” (Bg.6.33) This is important.</p>
+<p>We must always remember that we are in a material circumstance wherein at every moment our mind is subject to agitation.</p>
+<p>Actually we are not in a very comfortable situation.</p>
+<p>We are always thinking that by changing our situation we will overcome our mental agitation, and we are always thinking that when we reach a certain point, all mental agitations will disappear.</p>
+<p>But it is the nature of the material world that we cannot be free from anxiety.</p>
+<p>Our dilemma is that we are always trying to make a solution to our problems, but this universe is so designed that these solutions never come.</p>
+<p>Not being a cheater, being very frank and open, Arjuna tells Kṛṣṇa that the system of yoga which He has described is not possible for him to execute.</p>
+<p>In speaking to Kṛṣṇa, it is significant that Arjuna addresses Him as Madhusūdana, indicating that the Lord is the killer of the demon Madhu.</p>
+<p>It is notable that God's names are innumerable, for He is often named according to His activities.</p>
+<p>Indeed, God has innumerable names because He has innumerable activities.</p>
+<p>We are only parts of God, and we cannot even remember how many activities we engage in from our childhood to the present.</p>
+<p>The eternal God is unlimited, and since His activities are also unlimited, He has unlimited names, of which Kṛṣṇa is the chief.</p>
+<p>Then why is Arjuna addressing Him as Madhusūdana when, being Kṛṣṇa's friend, he could address Him directly as Kṛṣṇa? The answer is that Arjuna considers his mind to be like a great demon, such as the demon Madhu.</p>
+<p>If it were possible for Kṛṣṇa to kill the demon called the mind, then Arjuna would be able to attain the perfection of yoga.</p>
+<p>“My mind is much stronger than this demon Madhu,” Arjuna is saying.</p>
+<p>“Please, if You could kill him, then it would be possible for me to execute this yoga system.” Even the mind of a great man like Arjuna is always agitated.</p>
+<p>As Arjuna himself says: cañcalaṁ hi manaḥ kṛṣṇa pramāthi balavad dṛḍham tasyāhaṁ nigrahaṁ manye vāyor iva suduṣkaram “For the mind is restless, turbulent, obstinate and very strong, O Kṛṣṇa, and to subdue it is, it seems to me, more difficult than controlling the wind.” (Bg.6.34) It is indeed a fact that the mind is always telling us to go here, go there, do this, do that—it is always telling us which way to turn.</p>
+<p>Thus the sum and substance of the yoga system is to control the agitated mind.</p>
+<p>In the meditational yoga system the mind is controlled by focusing on the Supersoul —that is the whole purpose of yoga.</p>
+<p>But Arjuna says that controlling this mind is more difficult than stopping the wind from blowing.</p>
+<p>One can imagine a man stretching out his arms trying to stop a hurricane.</p>
+<p>Are we to assume that Arjuna is simply not sufficiently qualified to control his mind? The actual fact is that we cannot begin to understand the immense qualifications of Arjuna.</p>
+<p>After all, he was a personal friend of the Supreme Personality of Godhead.</p>
+<p>This is a highly elevated position and is one that cannot be at all attained by one without great qualifications.</p>
+<p>In addition to this, Arjuna was renowned as a great warrior and administrator.</p>
+<p>He was such an intelligent man that he could understand Bhagavad-gītā within one hour, whereas at the present moment great scholars cannot even understand it in the course of a lifetime.</p>
+<p>Yet Arjuna was thinking that controlling the mind was simply not possible for him.</p>
+<p>Are we then to assume that what was impossible for Arjuna in a more advanced age is possible for us in this degenerate age? We should not for one moment think that we are in Arjuna's category.</p>
+<p>We are a thousand times inferior.</p>
+<p>Moreover, there is no record of Arjuna's having executed the yoga system at any time.</p>
+<p>At the same time Arjuna was praised by Kṛṣṇa as the only man worthy of understanding Bhagavad-gītā.</p>
+<p>What was Arjuna's great qualification? Śrī Kṛṣṇa says, “You are My devotee.</p>
+<p>You are My very dear friend.” Despite this qualification, Arjuna refused to execute the meditational yoga system described by Śrī Kṛṣṇa.</p>
+<p>What then are we to conclude? Are we to despair the mind's ever being controlled? No, it can be controlled, and the process is this Kṛṣṇa consciousness.</p>
+<p>The mind must be fixed always in Kṛṣṇa.</p>
+<p>Insofar as the mind is absorbed in Kṛṣṇa it has attained the perfection of yoga.</p>
+<p>Now when we turn to the Śrīmad-Bhāgavatam, in the Twelfth Canto we find Śukadeva Gosvāmī telling Mahārāja Parīkṣit that in the Golden Age, the Satya-yuga, people were living for 100,000 years, and at that time, when advanced living entities lived for such lengths of time, it was possible to execute this meditational system of yoga.</p>
+<p>But what was achieved in the Satya-yuga by this meditational process, and in the following yuga, the Tretā-yuga, by the offering of great sacrifices, and in the next yuga, the Dvāpara-yuga, by temple worship, would be achieved at the present time, in this Kali-yuga, by simply chanting the names of God, hari-kīrtana, Hare Kṛṣṇa.</p>
+<p>So from authoritative sources we learn that this chanting of Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare / Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare is the embodiment of the perfection of yoga for this age.</p>
+<p>Today we have great difficulties living fifty or sixty years.</p>
+<p>A man may live at the utmost eighty or a hundred years.</p>
+<p>In addition, these brief years are always fraught with anxiety, with difficulties due to circumstances of war, pestilence, famine and so many other disturbances.</p>
+<p>We're also not very intelligent, and, at the same time, we're unfortunate.</p>
+<p>These are the characteristics of man living in Kali--yuga, a degraded age.</p>
+<p>So properly speaking, we can never attain success in this meditational yoga system described by Kṛṣṇa.</p>
+<p>At the utmost we can only gratify our personal whims by some pseudo-adaptation of this system.</p>
+<p>Thus people are paying money to attend some classes in gymnastic exercises and deep-breathing, and they're happy if they think they can lengthen their lifetimes by a few years or enjoy better sex life.</p>
+<p>But we must understand that this is not the actual yoga system.</p>
+<p>In this age that meditational system cannot be properly executed.</p>
+<p>Instead, all of the perfections of that system can be realized through bhakti-yoga, the sublime process of Kṛṣṇa consciousness, specifically mantra-yoga, the glorification of Śrī Kṛṣṇa through the chanting of Hare Kṛṣṇa.</p>
+<p>That is recommended in Vedic Scriptures and is introduced by great authorities like Caitanya Mahāprabhu.</p>
+<p>Indeed, the Bhagavad-gītā proclaims that the mahātmās, the great souls, are always chanting the glories of the Lord.</p>
+<p>If one wants to be a mahātmā in terms of the Vedic literature, in terms of Bhagavad-gītā and in terms of the great authorities, then one has to adopt this process of Kṛṣṇa consciousness and of chanting Hare Kṛṣṇa.</p>
+<p>But if we're content at making a show of meditation by sitting very straight in lotus position and going into a trance like some sort of performer, then that is a different thing.</p>
+<p>But we should understand that such show-bottle performances have nothing to do with the actual perfection of yoga.</p>
+<p>The material disease cannot be cured by artificial medicine.</p>
+<p>We have to take the real cure straight from Kṛṣṇa.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

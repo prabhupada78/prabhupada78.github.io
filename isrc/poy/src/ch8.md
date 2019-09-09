@@ -34,15 +34,3 @@ Without this final link, the chain is practically useless.
 
 Those who are truly interested in the perfection of the yoga process should immediately take to Kṛṣṇa consciousness by chanting Hare Kṛṣṇa, understanding Bhagavad-gītā, and rendering service to Kṛṣṇa through this Society for Kṛṣṇa consciousness and thereby surpass all other systems and attain the ultimate goal of all yoga—love of Kṛṣṇa.
 
-Śrīmad-Bhāgavatam Never before has this sublime text been available to the English-speaking world.
-
-Now ISKCON Press announces the forthcoming publication of Cantos I and II of Śrīmad-Bhāgavatam in five richly illustrated hardcover volumes.
-
-The science of God is greater than all other sciences, and this spiritual technology is rationally and authoritatively explained in the 18,000 verses of Śrīmad-Bhāgavatam, India's sublime contribution of culture, philosophy, politics, sociology, religion and love.
-
-His Divine Grace A.C.
-
-Bhaktivedanta Swami Prabhupāda has undertaken the mighty task of rendering this supremely potent work into the English language along with Sanskrit transliterations, word-for-word synonyms and elaborate English purports.
-
-Thus in each verse one will find new enlightenment regarding the Absolute Truth, the origin of all emanations.
-
