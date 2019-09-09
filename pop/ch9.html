@@ -1,0 +1,587 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch9 - Path of Perfection</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html" class="active">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Path of Perfection</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#failure-and-success-in-yoga" id="failure-and-success-in-yoga">Failure and Success in Yoga</a></h1>
+<p>Suppose I give up my business, my ordinary occupation, and begin to practice yoga, real yoga, as explained herein by Lord Sri Krsna.</p>
+<p>Suppose I practice, and somehow or other I fail; I cannot properly complete the process.</p>
+<p>What, then, is the result? This is Arjuna's very next question.</p>
+<p>ariuna uvaca ayatih sraddhayopeto yogac calita-manasah aprapya yoga-samsiddhim kam gatim krsna gacchati &quot;Arjuna said: What is the destination of the man of faith who does not persevere, who in the beginning takes to the process of selfrealization but who later desists due to worldly-mindedness and thus does not attain perfection in mysticism?&quot; (Bg.6.37) The path of self-realization, of mysticism, is described in the Bhagavad-gita.</p>
+<p>The basic principle of self-realization is knowing that &quot;I am not this material body but am different from it, and my happiness is in eternal life, bliss, and knowledge.&quot; Before arriving at the point of self-realization, one must take it for granted that he is not this body.</p>
+<p>That lesson is taught in the very beginning of Bhagavad-gita: the living entity is not this material body but something different, and his happiness is in eternal life.</p>
+<p>Clearly, this life is not eternal.</p>
+<p>The perfection of yoga means attaining a blissful, eternal life full of knowledge.</p>
+<p>All yoga systems should be executed with that goal in mind.</p>
+<p>It is not that one attends yoga classes to reduce fat or to keep the body fit for sense gratification.</p>
+<p>This is not the goal of yoga, but people are taught this way because they want to be cheated.</p>
+<p>Actually, if you undergo any exercise program, your body will be kept fit.</p>
+<p>There are many systems of bodily exercise--weight lifting and other sports--and they help keep the body fit, reduce fat, and help the digestive system.</p>
+<p>Therefore there is no need to practice yoga for these purposes.</p>
+<p>The real purpose for practicing yoga is to realize that I am not this body.</p>
+<p>I want eternal happiness, complete knowledge, and eternal life--that is the ultimate end of the true yoga system.</p>
+<p>The goal of yoga is transcendental, beyond both body and mind.</p>
+<p>Self-realization is sought by three methods: (1) the path of knowledge (jnana); (2) the path of the eightfold system; or (3) the path of bhakti-yoga.</p>
+<p>In each of these processes, one has to realize the constitutional position of the living entity, his relationship with God, and the activities whereby he can reestablish the lost link and achieve the highest perfectional stage of Krsna consciousness.</p>
+<p>Following any of the above-mentioned three methods, one is sure to reach the supreme goal sooner or later.</p>
+<p>This was asserted by the Lord in the Second Chapter: even a little endeavor on the transcendental path offers a great hope for deliverance.</p>
+<p>Of these three methods, the path of bhakti-yoga is especially suitable for this age, because it is the most direct method of God realization.</p>
+<p>To be doubly assured, Arjuna is asking Lord Krsna to confirm His former statement.</p>
+<p>One may sincerely accept the path of selfrealization, but the process of cultivation of knowledge (jnana) and the practice of the eightfold yoga system are generally very difficult for this age.</p>
+<p>Therefore, despite constant endeavor, one may fail for many reasons.</p>
+<p>First of all, one may not be actually following the process, the rules and regulations.</p>
+<p>To pursue the transcendental path is more or less to declare war on the illusory energy.</p>
+<p>When we accept any process of self-realization, we are actually declaring war against maya, illusion, and maya is certain to place many difficulties before us.</p>
+<p>Therefore, there is a chance of failure, but one has to become very steady.</p>
+<p>Whenever a person tries to escape the clutches of the illusory energy, she tries to defeat the practitioner by various allurements.</p>
+<p>A conditioned soul is already allured by the modes of material energy, and there is every chance of being allured again, even while performing transcendental disciplines.</p>
+<p>This is called yogac calita-manasah: deviation from the transcendental path.</p>
+<p>Arjuna is inquisitive to know the results of deviation from the path of self-realization.</p>
+<p>As stated in Bhagavad-gita (6.37), quoted above, yogat means &quot;from the practice of yoga,&quot; calita means &quot;diversion,&quot; and manasah means &quot;mind.&quot; So there is every chance for the mind to be diverted from yoga practice.</p>
+<p>We all have some experience of trying to concentrate by reading a book, and our mind is so disturbed that it does not allow us to concentrate on the book.</p>
+<p>Actually, Arjuna is asking a very important question, for one is subject to failure in all types of yoga--be it the eightfold yoga system, the jnana-yoga system of speculative philosophy, or the bhaktiyoga system of devotional service.</p>
+<p>Failure is possible on any of these paths, and the results of failure are clearly explained by Sri Krsna Himself in the following dialogue with Arjuna (Bg.6.38-44).</p>
+<p>Arjuna, continuing his inquiry, asks, kaccin nobhaya-vibhras/as chinnabhram iva nasyati apratistho maha-baho vimudho brahmanah pathi &quot;O mighty-armed Krsna, does not such a man, being deviated from the path of Transcendence, perish like a riven cloud, with no position in any sphere?&quot; etan me samsayam krsna chettum arhasy asesatah tvad-anyah samsayasyasya chetta na hy upapadyate &quot;This is my doubt, O Krsna, and I ask You to dispel it completely.</p>
+<p>But for Yourself, no one is to be found who can destroy this doubt.&quot; sri-bhaga van uvaca partha naiveha namutra vinasas tasya vidyate na hi kalyana-krt kascid durgatim tata gacchati &quot;The Blessed Lord said: Son of Prtha, a transcendentalist engaged in auspicious activities does not meet with destruction either in this world or in the spiritual world; one who does good, My friend, is never overcome by evil.&quot; prapya punya-krtam lokan usitva sasvatih samah sucinam srimatam gehe yoga-bhrasto 'bhijayate &quot;The unsuccessful yogi, after many, many years of enjoyment on the planets of the pious living entities, is born into a family of righteous people, or into a family of rich aristocracy.&quot; atha va yoginam eva kule bha vati dhimatam etad dhi durlabhataram loke janma yad idrsam &quot;Or he takes his birth in a family of transcendentalists who are surely great in wisdom.</p>
+<p>Verily, such a birth is rare in this world.&quot; tatra tam buddhi-samyogam labhate paurva-dehikam yatate ca tato bhuyah samsiddhau kuru-nandana &quot;On taking such a birth, he again revives the divine consciousness of his previous life, and he tries to make further progress in order to achieve complete success, O son of Kuru.&quot; purvabhyasena tenaiva hriyate hy avaso 'pi sah jijnasur api yogasya sabda-brahmativartate &quot;By virtue of the divine consciousness of his previous life, he automatically becomes attracted to the yogic principles--even without seeking them.</p>
+<p>Such an inquisitive transcendentalist, striving for yoga, stands always above the ritualistic principles of the scriptures.&quot; Purification of consciousness is the purpose of this Krsna consciousness movement.</p>
+<p>Presently we are preparing this divine consciousness, for our consciousness goes with us at the time of death.</p>
+<p>Consciousness is carried from the body just as the aroma of a flower is carried by the air.</p>
+<p>When we die, this material body composed of five elements--earth, water, air, fire, and ether--decomposes, and the gross materials return to the elements.</p>
+<p>Or, as the Christian Bible says, &quot;Dust thou art, and unto dust thou shalt return.&quot; In some societies the body is burned, in others it is buried, and in others it is thrown to animals.</p>
+<p>In India, the Hindus burn the body, and thus the body is transformed into ashes.</p>
+<p>Ash is simply another form of earth.</p>
+<p>Christians bury the body, and after some time in the grave, the body eventually turns to dust, which again, like ash, is another form of earth.</p>
+<p>There are other societies--like the Parsee community in India--that neither burn nor bury the body but throw it to the vultures, and the vultures immediately come to eat the body, and then the body is eventually transformed into stool.</p>
+<p>So in any case, this beautiful body, which we are soaping and caring for so nicely, will eventually turn into either stool, ashes, or dust.</p>
+<p>At death, the finer elements (mind, intelligence, and ego), which, combined, are called consciousness, carry the small particle of spirit soul to another body to suffer or enjoy, according to one's work.</p>
+<p>Our consciousness is molded by our work.</p>
+<p>If we associate with stool, our consciousness, which is like the air, will carry the aroma of stool, and thus at the time of death will transport us to an undesirable body.</p>
+<p>Or, if the consciousness passes over roses, it carries the aroma of roses, and thus we are transported to a body wherein we can enjoy the results of our previous work.</p>
+<p>If we train ourselves to work in Krsna consciousness, our consciousness will carry us to Krsna.</p>
+<p>Different types of body are developed according to consciousness; therefore, if we train our consciousness according to the yogic principles, we will attain a body wherein we can practice yoga.</p>
+<p>We will get good parents and a chance to practice the yoga system, and automatically we will be able to revive the Krsna consciousness practiced in our previous body.</p>
+<p>Therefore it is stated in this last verse, &quot;By virtue of the divine consciousness of his previous life, he automatically becomes attracted to the yogic principles--even without seeking them.&quot; Therefore, our present duty is to cultivate divine consciousness.</p>
+<p>If we want divine life, spiritual elevation, and eternal, blissful life, full of knowledge--in other words, if we want to go back home, back to Godhead--we have to train ourselves in divine consciousness, or Krsna consciousness.</p>
+<p>This can be easily done through association (sangat sanjayate kamah).</p>
+<p>Through divine association, our consciousness is made divine, and through demoniac association, our consciousness is made demoniac.</p>
+<p>Therefore, our consciousness must be trained to be divine through the proper association of those in Krsna consciousness.</p>
+<p>That is the duty of one in this human form, a form that gives us a chance to make our next life completely divine.</p>
+<p>To attain this end, we should try to contact those who are developing divine consciousness.</p>
+<p>prayatnad yatamanas tu yogi samsuddha-kilbisah aneka-janma-samsiddhas tato yati param gatim &quot;But when the yogi engages himself with sincere endeavor in making further progress, being washed of all contaminations, then ultimately, after many, many births of practice, he attains the supreme goal.&quot; (Bg.6.45) As indicated in this verse, making progress is a question of practice.</p>
+<p>When a child is born, he neither knows how to smoke nor how to drink, but through association he becomes a drunkard or a smoker.</p>
+<p>Association is the most important factor.</p>
+<p>Sangat sanjayate kamah.</p>
+<p>For instance, there are many business associations, and by becoming a member of certain associations, one's business flourishes.</p>
+<p>In any endeavor, association is very important.</p>
+<p>For the development of divine consciousness, we have established the International Society for Krishna Consciousness, in which the methods of attaining divine consciousness are taught.</p>
+<p>In this society we invite everyone to come and chant Hare Krsna.</p>
+<p>This process is not difficult, and even children can participate.</p>
+<p>No previous qualifications are necessary; one doesn't need a master's degree or doctorate.</p>
+<p>Our invitation to everyone is to join this association and become Krsna conscious.</p>
+<p>The Supreme Lord, God, is pure, and His kingdom is also pure.</p>
+<p>If one wants to enter His kingdom, he must also be pure.</p>
+<p>This is very natural; if we want to enter a particular society, we must meet certain qualifications.</p>
+<p>If we want to return home, back to Godhead, there is a qualification we must meet--we must not be materially contaminated.</p>
+<p>And what is this contamination? Unrestricted sense gratification.</p>
+<p>If we can free ourselves from the material contamination of sense gratification, we can become eligible to enter the kingdom of God.</p>
+<p>That process of freeing ourselves, of washing ourselves of this contamination, is called the yoga system.</p>
+<p>As stated before, yoga does not mean sitting down for fifteen minutes, meditating, and then continuing with sense gratification.</p>
+<p>To be cured of a certain disease, we must follow the prescriptions of a physician.</p>
+<p>In this Sixth Chapter of Bhagavad-gita, the process of yoga is recommended, and we have to follow the prescribed methods in order to be freed from material contamination.</p>
+<p>If we succeed in doing so, we can link up, or connect, with the Supreme.</p>
+<p>Krsna consciousness is a method for connecting directly with the Supreme.</p>
+<p>This is the special gift of Lord Caitanya Mahaprabhu.</p>
+<p>Not only is this method direct and immediate, but it is also practical.</p>
+<p>Although many people entering this Society have no qualifications, they have become highly advanced in Krsna consciousness simply by coming in contact with the Society.</p>
+<p>In this age, life is very short, and a yoga process that takes a long time will not help the general populace.</p>
+<p>In Kali-yuga, people are all so unfortunate, and association is very bad.</p>
+<p>Therefore, this process of directly contacting the Supreme is recommended--hari-nama.</p>
+<p>Krsna is present in the form of His transcendental name, and we can contact Him immediately by hearing His name.</p>
+<p>Simply by hearing the name Krsna we immediately become freed from material contamination.</p>
+<p>As stated in the Seventh Chapter of Bhagavad-gita (7.28), yesam tv anta-gatam papam jananam punya-karmanam te dvandva-moha-nirmukta bhajante mam drdha-vratah &quot;Persons who have acted piously in previous lives and in this life, whose sinful actions are completely eradicated, and who are freed from the duality of delusion, engage themselves in My service with determination.&quot; It is herein stressed that one must be completely fixed in Krsna consciousness, devoid of duality, and must execute only pious activities.</p>
+<p>Because the mind is flickering, dualities will always come.</p>
+<p>One is always wondering, &quot;Shall I become Krsna conscious, or should I engage in another consciousness?&quot; These problems are always there, but if one is advanced by virtue of pious activities executed in a previous life, his consciousness will be steadily fixed, and he will resolve, &quot;I will be Krsna conscious.&quot; Whether we acted piously in this life or a previous life really doesn't matter.</p>
+<p>This chanting of Hare Krsna is so potent that through it we will immediately be purified.</p>
+<p>We should have the determination, however, not to become implicated in further impious activities.</p>
+<p>Therefore, for those who want to be initiated in this Society for Krsna consciousness, there are four principles: no illicit sex, no intoxication, no meat-eating, and no gambling.</p>
+<p>We don't say, &quot;No sex.&quot; But we do say, &quot;No illicit sex.&quot; If you want sex, get married and have Krsna conscious children.</p>
+<p>&quot;No intoxication&quot; means not even taking tea or coffee--to say nothing of other intoxicants.</p>
+<p>And there is no gambling and no meat-eating (including fish and eggs).</p>
+<p>Simply by following these four basic rules and regulations, one becomes immediately uncontaminated.</p>
+<p>No further endeavor is necessary.</p>
+<p>As soon as one joins this Krsna consciousness movement and follows these rules and regulations, material contamination is immediately removed, but one must be careful not to be contaminated again.</p>
+<p>Therefore these rules and regulations should be followed carefully.</p>
+<p>Material contamination begins with these four bad habits, and if we manage to check them, there is no question of contamination.</p>
+<p>Therefore, as soon as we take to Krsna consciousness, we become free.</p>
+<p>However, we should not think that because Krsna consciousness makes us free, we can again indulge in these four bad habits and get free by chanting.</p>
+<p>That is cheating, and that will not be allowed.</p>
+<p>Once we are freed, we should not allow ourselves to become contaminated again.</p>
+<p>One should not think, &quot;I shall drink or have illicit sex and then chant and make myself free.&quot; According to some religious processes, it is said that one can commit all kinds of sin and then go to church, confess to a priest, and be freed of all sin.</p>
+<p>Therefore people are sinning and confessing and sinning and confessing over and over again.</p>
+<p>But this is not the process of Krsna consciousness.</p>
+<p>If you are freed, that's all right, but don't do it again.</p>
+<p>After all, what is the purpose of confession? If you confess, &quot;I have committed these sinful activities,&quot; why should you commit them again? If a thief confesses that he has been pickpocketing, he is freed of his sin by virtue of his confession, but does this mean that he should go out again and pick pockets? This requires a little intelligence.</p>
+<p>One should not think that because by confessing one becomes freed, he should continue to commit sinful activities, confess again, and again become freed.</p>
+<p>That is not the purpose of confession.</p>
+<p>We should therefore understand that if we indulge in unrestricted sinful activities, we become contaminated.</p>
+<p>We should be careful to have sex only according to the rules and regulations, to eat only food that has been prescribed and properly offered, to defend as Krsna advised Arjuna--for the right cause.</p>
+<p>In this way we can avoid contamination and purify our life.</p>
+<p>If we can continue to live a pure life until the time of death, we will surely be transferred to the kingdom of God.</p>
+<p>When one is fully in Krsna consciousness, he does not return to this material world when he gives up his body.</p>
+<p>This is stated in the Fourth Chapter (Bg.4.9).</p>
+<p>janma karma ca me divyam evam yo vetti tattvatah tyaktva deham punarjanma naiti mam eti so 'rjuna &quot;One who knows the transcendental nature of My appearance and activities does not, upon leaving the body, take his birth again in this material world, but attains My eternal abode, O Arjuna.&quot; The unsuccessful yogi returns to a good family or to a righteous, rich, or aristocratic family, but if one is situated in perfect Krsna consciousness, he does not return again.</p>
+<p>He attains Goloka Vrndavana in the eternal spiritual sky.</p>
+<p>We should be determined not to come back to this material world again, because even if we attain a good birth in a rich or aristocratic family, we can degrade ourselves again by improperly utilizing our good chance.</p>
+<p>Why take this risk? It is better to complete the process of Krsna consciousness in this life.</p>
+<p>It is very simple and not at all difficult.</p>
+<p>We only have to keep thinking of Krsna; then we will be assured that our next birth will be in the spiritual sky, in Goloka Vrndavana, in the kingdom of God.</p>
+<p>tapas vibhyo 'dhiko yogi jnanibhyo 'pi mato 'dhikah karmibhyas cadhiko yogi tasmad yogi bha varjuna &quot;A yogi is greater than the ascetic, greater than the empiricist, and greater than the fruitive worker.</p>
+<p>Therefore, O Arjuna, in all circumstances, be a yogi.&quot; (Bg.6.46) There are different gradations of life within this material world, but if one lives according to the yogic principle, especially the principles of bhakti-yoga, one is living the most perfect life possible.</p>
+<p>Therefore Krsna is telling Arjuna, &quot;My dear friend Arjuna, in all circumstances be a yogi and remain a yogi.&quot; yoginam api sarvesam mad-gatenan taratmana sraddhavan bhajate yo mam sa me yuktatamo matah &quot;And of all yogis, he who always abides in Me with great faith, worshiping Me in transcendental loving service, is most intimately united with Me in yoga and is the highest of all.&quot; (Bg.6.47) Here it is clearly stated that there are many types of yogis--astanga-yogis, hathayogis, jnana-yogis, karma-yogis, and bhakti-yogis--and that of all the yogis, &quot;he who always abides in Me&quot; is said to be the greatest of all.</p>
+<p>&quot;In Me&quot; means in Krsna; that is, the greatest yogi is always in Krsna consciousness.</p>
+<p>Such a yogi &quot;abides in Me with great faith, worshiping Me in transcendental loving service, is most intimately united with Me in yoga, and is the highest of all.&quot; This is the prime instruction of this Sixth Chapter on sankhya-yoga: if one wants to attain the highest platform of yoga, one must remain in Krsna consciousness.</p>
+<p>In Sanskrit, the word bhajate, with its root bhaj (bhaj-dhatu) means &quot;to render service.&quot; But who renders service to Krsna unless he is a devotee of Krsna? In this Society of Krsna consciousness, devotees are rendering service without payment, out of love for Krsna.</p>
+<p>They can render service elsewhere and get paid hundreds of dollars a month, but this service rendered here is loving service (bhaj), based on love of Godhead.</p>
+<p>Devotees render service in many ways--gardening, typing, cooking, cleaning, etc.</p>
+<p>All activities are connected with Krsna, and therefore Krsna consciousness is prevailing twenty-four hours a day.</p>
+<p>That is the highest type of yoga.</p>
+<p>That is &quot;worshiping Me in transcendental loving service.&quot; As stated before, the perfection of yoga is keeping one's consciousness in contact with Visnu, or Krsna, the Supreme Lord.</p>
+<p>We are not simply boasting that even a child can be the highest yogi simply by participating in Krsna consciousness; no, this is the verdict of authorized scripture--Bhagavad-gita.</p>
+<p>These words are not our creation but are specifically stated by Lord Sri Krsna, the Supreme Personality of Godhead Himself.</p>
+<p>Actually, worship and service are somewhat different.</p>
+<p>Worship implies some motive.</p>
+<p>I worship a friend or an important man because if I can please that person, I may derive some profit.</p>
+<p>Those who worship the demigods worship for some ulterior purpose, and that is condemned in the Seventh Chapter of Bhagavad-gita (7.20): kamais tais tair hrta-jnanah prapadyante 'nya-devatah tam tam niyamam asthaya prakrtya niyatah svaya &quot;Those whose minds are distorted by material desires surrender unto demigods and follow the particular rules and regulations of worship according to their own natures.&quot; Those who are bewildered by lust worship the demigods with a motive; therefore, when we speak of worship, some motive is implied.</p>
+<p>Service, however, is different, for in service there is no motive.</p>
+<p>Service is rendered out of love, just as a mother renders service to her child out of love only.</p>
+<p>Everyone can neglect that child, but the mother cannot, because love is present.</p>
+<p>Bhaj-dhatu is similar in that there is no question of motive, but service is rendered out of pure love.</p>
+<p>That is the perfection of Krsna consciousness.</p>
+<p>This is also the recommendation of Srimad-Bhagavatam (1.2.6): sa vai pumsam paro dharmo yato bhaktir adhoksaje ahaituky apratihata yayatma suprasidati &quot;The supreme occupation [dharma] for all humanity is that by which men can attain to loving devotional service unto the transcendent Lord.</p>
+<p>Such devotional service must be unmotivated and uninterrupted to completely satisfy the self.&quot; Yato bhaktir adhoksaje.</p>
+<p>The word bhakti comes from the same root as bhaj.</p>
+<p>The test of a first-class religion is whether or not we are developing our love for God.</p>
+<p>If we practice religion with some ulterior motive, hoping to fulfill our material necessities, our religion is not first class but third class.</p>
+<p>It must be understood that first-class religion is that by which we can develop our love of Godhead.</p>
+<p>Ahaituky apratihata.</p>
+<p>This perfect religion should be executed without ulterior motive or impediment.</p>
+<p>That is the yoga system recommended in Srimad-Bhagavatam and in this Sixth Chapter of Bhagavadgita.</p>
+<p>That is the system of Krsna consciousness.</p>
+<p>Krsna consciousness is not rendered with some motive in mind.</p>
+<p>The devotees are not serving Krsna in order that He supply them this or that.</p>
+<p>For a devotee there is no scarcity.</p>
+<p>One should not think that by becoming Krsna conscious, one becomes poor.</p>
+<p>No.</p>
+<p>If Krsna is there, everything is there, because Krsna is everything.</p>
+<p>But this does not mean that we should try to conduct business with Krsna, demanding, &quot;Krsna give me this.</p>
+<p>Give me that.&quot; Krsna knows better than we do, and He knows our motives.</p>
+<p>A child does not make demands of his parents, saying, &quot;Dear father, give me this.</p>
+<p>Give me that.&quot; Since the father knows his child's necessities, there is no need for the child to ask.</p>
+<p>Similarly, it is not a very good idea to ask God to give us this or that.</p>
+<p>Why should we ask? If God is all-knowing and all-powerful, He knows our wants, our necessities, and can supply them.</p>
+<p>This is confirmed in the Vedas.</p>
+<p>Eko bahunam yo vidadhati kaman: &quot;The single one almighty God is supplying all necessities to millions and trillions of living entities.&quot; Therefore, we should not demand anything of God, because our demands are already met.</p>
+<p>The supplies are already there.</p>
+<p>We should simply try to love God.</p>
+<p>Even cats and dogs are receiving their necessities without going to church and petitioning God.</p>
+<p>If a cat or dog receives its necessities without making demands, why should the devotee not receive what he needs? Therefore we should not demand anything from God but should simply try to love Him.</p>
+<p>Then everything will be fulfilled, and we will have attained the highest platform of yoga.</p>
+<p>We can actually see how the various parts of the body serve the body.</p>
+<p>If I have an itch, the fingers immediately scratch.</p>
+<p>If I want to see something, the eyes immediately look.</p>
+<p>If I want to go somewhere, the legs immediately take me.</p>
+<p>As I receive service from the different parts of my body, God receives service from all parts of His creation.</p>
+<p>God is not meant to serve.</p>
+<p>If the limbs of the body serve the entire body, the parts of the body automatically receive energy.</p>
+<p>Similarly, if we serve Krsna, we automatically receive all necessities, all energy.</p>
+<p>Srimad-Bhagavatam confirms that we are all parts and parcels of the Supreme.</p>
+<p>If a part of the body cannot regularly render service, it gives pain to the body, and if a person does not render service to the Supreme Lord, he is simply giving pain and trouble to the Supreme Lord.</p>
+<p>Therefore such a person has to suffer, just as a criminal has to suffer when he does not abide by the laws of the state.</p>
+<p>Such a criminal may think, &quot;I'm a very good man,&quot; but because he is violating the laws of the state, he is giving the government trouble, and consequently the government puts him in prison.</p>
+<p>When living entities give the Supreme Lord trouble, the Lord comes, collects them together, and puts them in this material world.</p>
+<p>In essence, He says, &quot;You live here.</p>
+<p>You are all disturbing the creation; therefore you are criminals and have to live in this material world.&quot; Sthanad bhrastah patanty adhah: &quot;One falls down from his constitutional position.&quot; If a finger is diseased, it has to be amputated lest it pollute the entire body.</p>
+<p>Having rebelled against the principles of God consciousness, we are cut off from our original position.</p>
+<p>We have fallen.</p>
+<p>In order to regain our original position, we must resume rendering service unto the Supreme Lord.</p>
+<p>That is the perfect cure.</p>
+<p>Otherwise we will continue to suffer pain, and God will suffer pain because of us.</p>
+<p>If I am a father, and my son is not good, I suffer, and my son suffers also.</p>
+<p>Similarly, we are all sons of God, and when we cause God pain, we are also pained.</p>
+<p>The best course is to revive our original Krsna consciousness and engage in the Lord's service.</p>
+<p>That is our natural life, and that is possible in the spiritual sky, Goloka Vrndavana.</p>
+<p>The word avajananti actually means &quot;to neglect.&quot; This means thinking, &quot;What is God? I am God.</p>
+<p>Why should I serve God?&quot; This is just like a criminal thinking, &quot;What is this government? I can manage my own affairs.</p>
+<p>I don't care for the government.&quot; This is called avajananti.</p>
+<p>We may speak in this way, but the police department is there to punish us.</p>
+<p>Similarly, material nature is here to punish us with the threefold miseries.</p>
+<p>These miseries are meant for those rascals who avajananti, who don't care for God or who take the meaning of God cheaply, saying, &quot;I am God.</p>
+<p>You are God.&quot; Thus the general progress ofyoga is gradual.</p>
+<p>First one practices karma-yoga, which refers to ordinary, fruitive activity.</p>
+<p>Ordinary activities include sinful activities, but karma-yoga excludes such activities.</p>
+<p>Karma-yoga refers only to good, pious activities, or those actions which are prescribed.</p>
+<p>After performing karma-yoga, one comes to the platform ofjnana-yoga, knowledge.</p>
+<p>From the platform of knowledge, one attains to this astanga-yoga, the eightfold yoga system--dhyana, dharana, pranayama, asana, etc.--and from astanga-yoga, as one concentrates on Visnu, one comes to the point of bhakti-yoga.</p>
+<p>Bhaktiyoga is the perfectional stage, and if one practices Krsna consciousness, one attains this stage from the very beginning.</p>
+<p>That is the direct route.</p>
+<p>If one practices jnana-yoga and thinks that he has attained the ultimate, he is mistaken.</p>
+<p>He has to make further progress.</p>
+<p>If we are on a staircase and have to reach the top floor, which is the hundredth floor, we are mistaken if we think we have arrived when we are on the thirtieth floor.</p>
+<p>As stated before, the whole yoga system may be likened to a staircase, connecting or linking us to God.</p>
+<p>In order to attain the ultimate, the Supreme Personality of Godhead, we must go to the highest platform, and that is bhakti-yoga.</p>
+<p>But why walk up all these steps if we have a chance to take an elevator? By means of an elevator, we can reach the top in a matter of seconds.</p>
+<p>Bhakti-yoga is this elevator, the direct process by which we can reach the top in a matter of seconds.</p>
+<p>We can go step by step, following all the other yoga systems, or we can go directly.</p>
+<p>Since in this age of Kali-yuga people have short life spans and are always disturbed and anxious, Lord Caitanya Mahaprabhu, by His causeless mercy, has given us the elevator by which we can come immediately to the platform of bhakti-yoga.</p>
+<p>That direct means is the chanting of Hare Krsna, and that is the special gift of Lord Caitanya Mahaprabhu.</p>
+<p>Therefore Rupa Gosvami offers respects to Lord Caitanya Mahaprabhu, namo maha-vadanyaya krsna-prema-pradaya te: &quot;Oh, You are the most munificent incarnation because You are directly giving love of Krsna.</p>
+<p>To attain pure love of Krsna, one has to pass through so many stages of yoga, but You are giving this love directly.</p>
+<p>Therefore You are the most munificent.&quot; As stated in the Eighteenth Chapter of Bhagavad-gita (18.55), bhaktya yavan yas tato mam visate mam abhijanati casmi tattvatah tattvatojnatva tad-anantaram &quot;one can understand the Supreme Personality as He is only by devotional service.</p>
+<p>And when one is in full consciousness of the Supreme Lord by such devotion, he can enter into the kingdom of God.&quot; In the other yoga systems, there must be a mixture of bhakti, but bhakti-yoga is unadulterated devotion.</p>
+<p>It is service without a motive.</p>
+<p>Generally people pray with some motive in mind, but we should pray only for further engagement in devotional service.</p>
+<p>Lord Caitanya Mahaprabhu has taught us that when we pray we should not pray for anything material.</p>
+<p>In the beginning, we cited Lord Caitanya Mahaprabhu's perfect prayer.: na dhanam najanam na sundarim ka vitam vajagad-ia kamaye mama janmanijanmaninare bha vatad bhaktir ahaituki tvayi &quot;O Almighty Lord, I have no desire to accumulate wealth, nor to enjoy beautiful women.</p>
+<p>Nor do I want any number of followers.</p>
+<p>What I want only is the causeless mercy of Your devotional service in my life, birth after birth.&quot; (Siksastaka 4) In this verse, Caitanya Mahaprabhu addresses the Supreme Lord as Jagadisa.</p>
+<p>Jagat means &quot;universe,&quot; and isa means &quot;controller.&quot; The Supreme Lord is the controller of the universe, and this can be understood by anyone; therefore Caitanya Mahaprabhu addresses the Supreme Lord as Jagadisa instead of Krsna or Rama.</p>
+<p>In the material world we find many controllers, so it is logical that there is a controller of the entire universe.</p>
+<p>Caitanya Mahaprabhu does not pray for wealth, followers, or beautiful women, because these are material requests.</p>
+<p>Usually, people want to be very great leaders within this material world.</p>
+<p>Someone tries to become a very rich man like Ford or Rockefeller, or someone else tries to become president or some great leader that many thousands of people will follow.</p>
+<p>These are all material demands: &quot;Give me money.</p>
+<p>Give me followers.</p>
+<p>Give me a nice wife.&quot; Lord Caitanya Mahaprabhu refuses to make such materialistic requests.</p>
+<p>He frankly says, &quot;I don't want any of these things.&quot; He even says, mamajanmanijan-maninare.</p>
+<p>That is, He's not even asking for liberation.</p>
+<p>Just as the materialists have their demands, the yogis demand liberation.</p>
+<p>But Caitanya Mahaprabhu does not want anything of this nature.</p>
+<p>Then why is He a devotee? Why is He worshiping Krsna? &quot;I simply want to engage in Your service birth after birth.&quot; He does not even pray for an end to birth, old age, disease, and death.</p>
+<p>There are no demands whatsoever, for this is the highest platform, the stage of bhakti-yoga.</p>
+<p>Chanting Hare Krsna is also asking the Lord, &quot;Please engage me in Your service.&quot; This is the mantra taught by Caitanya Mahaprabhu Himself.</p>
+<p>Hare refers to the energy of the Lord, and Krsna and Rama are names for the Lord Himself.</p>
+<p>When we chant Hare Krsna, we are asking Krsna to please engage us in His service.</p>
+<p>This is because our entire material disease is due to our having forgotten to serve God.</p>
+<p>In illusion, we are thinking, &quot;I am God.</p>
+<p>What is the other God that I have to serve? I myself am God.&quot; Ultimately, that is the only disease, the last snare of illusion.</p>
+<p>First of all, a person tries to be prime minister, president, Rockefeller, Ford, this and that, and when one fails or attains such a post and is still unhappy, he wants to become God.</p>
+<p>That is like becoming an even higher president.</p>
+<p>When I understand that the presidency does not afford me eternal bliss and knowledge, I demand the highest presidency.</p>
+<p>I demand to become God.</p>
+<p>In any case, the demand is there, and this demand is our disease.</p>
+<p>In illusion, we are demanding to be the highest, but the process of bhakti-yoga is just the opposite.</p>
+<p>We want to become servants, servants of the servants of the Lord.</p>
+<p>There is no question of demanding to become the Lord; we just want to serve.</p>
+<p>That's all.</p>
+<p>Our original nature is rooted in service, and wanting to serve is the crucial test for the devotee.</p>
+<p>We may not realize it, but in this material world we are also serving.</p>
+<p>If we want to become president, we have to make so many promises to the voters.</p>
+<p>In other words, the president has to say, &quot;I'll give the people my service.&quot; Unless he promises to serve his country, there is no question of his becoming president.</p>
+<p>So even if one is the most exalted leader, his position is to render service.</p>
+<p>This is very difficult for people to understand.</p>
+<p>Despite becoming the highest executive in the land, one has to give service to the people.</p>
+<p>If that service is not given, one is likely to be usurped, fired, or killed.</p>
+<p>In the material world, service is very dangerous.</p>
+<p>If there is a little discrepancy in one's service, one is immediately fired.</p>
+<p>When the people did not like the service that President Nixon was rendering, they forced him to resign.</p>
+<p>Some people disagreed with President Kennedy, and he was killed.</p>
+<p>Similarly, in India, Gandhi was also killed because some people did not like the way he was rendering service.</p>
+<p>This is always the position in the material world; therefore one should be intelligent enough to decide to cease rendering service for material motives.</p>
+<p>We must render service to the Supreme Lord, and that rendering of service is our perfection.</p>
+<p>We have formed this International Society for Krishna Consciousness in order to teach people what they have forgotten.</p>
+<p>In this material world, we have forgotten the service of Radha-Krsna; therefore we have become servants of maya, the senses.</p>
+<p>Therefore, in this Society we are saying, &quot;You are serving your senses.</p>
+<p>Now just turn your service to Radha and Krsna, and you will be happy.</p>
+<p>You have to render service-either to maya [illusion], the senses, or to Sri Sri Radha-Krsna.&quot; In this world, everyone is serving the senses, but people are not satisfied.</p>
+<p>No one can be satisfied, because the senses are always demanding more gratification, and this means that we are constantly having to serve the senses.</p>
+<p>In any case, our position as servant remains the same.</p>
+<p>It is a question of whether we want to be happy in our service.</p>
+<p>It is the verdict of Bhagavad-gita and the other Vedic scriptures that we will never be happy trying to serve our senses, for they are only sources of misery.</p>
+<p>Therefore Lord Caitanya Mahaprabhu prays to be situated in Krsna's service.</p>
+<p>He also prays, ayi nanda-tanuja kinkaram patitam mam visame bhavambudhau krpaya ta va pada-pankajasthita-dhuli-sadrsam vicintaya &quot;O son of Maharaja Nanda [Krsna], I am Your eternal servitor, yet somehow or other I have fallen into the ocean of birth and death.</p>
+<p>Please pick me up from this ocean of death and place me as one of the atoms at Your lotus feet.&quot; (Siksastaka 5) This is another way of asking Krsna to engage us in His service.</p>
+<p>Loving devotional service can only be rendered to the personal form of Krsna, Syamasundara.</p>
+<p>The impersonalists emphasize the vina-rupa, the universal form exhibited in the Eleventh Chapter of Bhagavad-gita, but it is stated therein (11.21) that the demigods are very much afraid of this form, and Arjuna says, adrsta-purvam hrsito 'smi drstva bhayena ca pravyathitam mano me tad eva me darsaya deva rupam prasida devesa jagan-nivasa &quot;After seeing this universal form, which I have never seen before, I am gladdened, but at the same time my mind is disturbed with fear.</p>
+<p>Therefore please bestow Your grace upon me and reveal again Your form as the Personality of Godhead [Krsna, or Syamasundara], O Lord of lords, O abode of the universe.&quot; (Bg.11.45) There is no question of loving the vina-rupa.</p>
+<p>If Krsna comes before you in the vina-rupa form, you will be so filled with fear that you will forget your love.</p>
+<p>So don't be eager like the impersonalists to see the vina-rupa form; just render loving service to Syamasundara, Krsna.</p>
+<p>We have more or less seen Krsna as the visva-rupa during wartime in Calcutta in 1942.</p>
+<p>There was a siren, and we ran into a shelter, and the bombing began.</p>
+<p>In this way, we were seeing that visva-rupa, and I was thinking, &quot;Of course, this is also just another form of Krsna.</p>
+<p>But this is not a very lovable form.&quot; A devotee wants to love Krsna in His original form, and this visva-rupa is not His original form.</p>
+<p>Being omnipotent, Krsna can appear in any form, but His lovable form is that of Krsna, Syamasundara.</p>
+<p>Although a man may be a police officer, when he is at home he is a beloved father to his son.</p>
+<p>But if he comes home firing his revolver, the son will be so frightened that he will forget that he is his beloved father.</p>
+<p>Naturally, the child loves his father when he's at home like a father, and similarly we love Krsna as He is in His eternal abode, in the form of Syamasundara.</p>
+<p>The visva-rupa was shown to Arjuna to warn those rascals who claim, &quot;I am God.&quot; Arjuna asked to see the visva-rupa so that in the future we may have some criterion by which to test rascals who claim to be God.</p>
+<p>In other words, if someone says, &quot;I am God,&quot; we can simply reply, &quot;If you are God, please show me your visva-rupa.&quot; And we can rest assured that such rascals cannot display this form.</p>
+<p>Of course, Arjuna was offering all respects to the visva-rupa form.</p>
+<p>That is a natural quality of a devotee.</p>
+<p>A devotee even respects Durga, Maya, because Maya is Krsna's energy.</p>
+<p>If we respect Krsna, we respect everyone, even an ant.</p>
+<p>Therefore Brahma prays, srsti-sthiti-pralaya-sadhana-saktir eka chayeva yasya bhu vanani bibharti durga icchanurupam api yasya ca cestate sa govindam adi-purusam tam aham bhajami &quot;The external potency, Maya, who is of the nature of the shadow of the cit [spiritual] potency, is worshiped by all people as Durga, the creating, preserving, and destroying agency of this mundane world.</p>
+<p>I worship the primeval Lord, Govinda, in accordance with whose will Durga conducts herself.&quot; (Brahma-samhita 5.44) Thus when we pray to Krsna, we pray to Durga immediately, because Durga is His energy.</p>
+<p>And when we pray to Durga, we are actually praying to Krsna, because she is working under the direction of Krsna.</p>
+<p>When the devotee sees the activities of Maya, he sees Krsna immediately, thinking, &quot;Oh, Maya is acting so nicely under the direction of Krsna.&quot; When one offers respect to a policeman, he is actually offering respect to the government.</p>
+<p>Durga, the material energy, is so powerful that she can create, annihilate, and maintain, but in all cases she is acting under Krsna's directions.</p>
+<p>Through bhakti, pure devotion to Krsna, we can leave the association of Maya and be promoted to the eternal association of Krsna.</p>
+<p>Some of the gopas, Krsna's friends, are eternal associates, and others are promoted to that eternal position.</p>
+<p>If only the eternal associates of Krsna can play with Him and others cannot, then what is the meaning of becoming Krsna conscious? We can also become eternal associates of Krsna through pious deeds executed in many, many lives.</p>
+<p>Actually, in the Vrndavana manifest in this material world, the associates of Krsna are mainly conditioned living entities who have been promoted to the perfect stage of Krsna consciousness.</p>
+<p>Thus promoted, they are first of all allowed to see Krsna on the planet where Krsna's pastimes are being enacted.</p>
+<p>After this, they are promoted to the transcendental Goloka Vrndavana in the spiritual sky.</p>
+<p>Therefore it is stated in the Bhaga vata (10.12.11), krta-punya-punjah.</p>
+<p>Bhakti-yoga means connecting ourselves with Krsna, God, and becoming His eternal associates.</p>
+<p>Bhakti-yoga cannot be applied to any other objective; therefore in Buddhism, for instance, there is no bhakti-yoga, because they do not recognize the Supreme Lord existing as the supreme objective.</p>
+<p>Christians, however, practice bhakti-yoga when they worship Jesus Christ, because they are accepting him as the son of God and are therefore accepting God.</p>
+<p>Unless one accepts God, there is no question of bhakti-yoga.</p>
+<p>Christianity, therefore, is also a form of Vaisnavism, because God is recognized.</p>
+<p>Nonetheless, there are different stages of God realization.</p>
+<p>Mainly, Christianity says, &quot;God is great,&quot; and that is a very good assertion, but the actual greatness of God can be understood from Bhagavad-gita and Srimad-Bhagavatam.</p>
+<p>Accepting the greatness of God is the beginning of bhakti.</p>
+<p>Bhakti-yoga also exists among the Muhammadans, because God is the target in the Muslim religion.</p>
+<p>However, where there is no recognition of a personal God--in other words, where there is only impersonalism--there is no question of bhakti-yoga.</p>
+<p>Bhakti-yoga must include three items: the servitor, the served, and service.</p>
+<p>One must be present to accept service, and one must be present to render service.</p>
+<p>The via media is the process of service itself, bhakti-yoga.</p>
+<p>Now, if there is no one to accept that service, how is bhakti-yoga possible? Therefore, if a philosophy or religion does not accept God as the Supreme Person, there is no possibility of bhakti-yoga being applied.</p>
+<p>In the bhakti-yoga process, the role of the spiritual master is most important and essential.</p>
+<p>Although the spiritual master will always come back until his devotees have achieved God realization, one should not try to take advantage of this.</p>
+<p>We should not trouble our spiritual master but should complete the bhakti-yoga process in this life.</p>
+<p>The disciple should be serious in his service to the spiritual master, and if the devotee is intelligent, he should think, &quot;Why should I act in such a way that my spiritual master has to take the trouble to reclaim me again? Let me realize Krsna in this life.&quot; That is the proper way of thinking.</p>
+<p>We should not think, &quot;Oh, I am sure that my spiritual master will come and save me.</p>
+<p>Therefore I will do as I please.&quot; If we have any affection for our spiritual master, we should complete the process in this life, so that he does not have to return to reclaim us.</p>
+<p>In this regard, there is the example of Bilvamangala Thakura, who, in his previous life, was elevated almost to prema-bhakti, the highest platform of devotional service.</p>
+<p>However, since there is always a chance for a falldown, somehow or other he fell down.</p>
+<p>In his next life, he was born in a very rich brahmana family, in accordance with the principle enunciated in the Sixth Chapter of Bhaga vad-gita (6.41): sucinam srimatam gehe.</p>
+<p>Unfortunately, as is often the case with rich boys, he became a prostitute hunter.</p>
+<p>Yet it is said that his spiritual master instructed him through his prostitute, saying, &quot;Oh, you are so attached to this mere flesh and bones.</p>
+<p>If you were this much attached to Krsna, how much good you might achieve!&quot; Immediately Bilvamangala Thakura resumed his devotional service.</p>
+<p>Although the spiritual master assumes responsibility for his disciple, we should not take advantage of this.</p>
+<p>Rather, we should try to please the spiritual master (yasya prasadad bhagavat-prasadah).</p>
+<p>We should not put our spiritual master in such a position that he has to reclaim us from a house of prostitution.</p>
+<p>But even if he has to do so, he will do it, because he assumes this responsibility when he accepts his disciple.</p>
+<p>The bhakti-yoga process should be completed in this life, because in this life we have all the instruments necessary to become fully Krsna conscious.</p>
+<p>We have mrdangas and cymbals and tongues with which to chant Hare Krsna.</p>
+<p>Even if we don't have mrdangas and cymbals, we have a tongue.</p>
+<p>No one has to purchase a tongue.</p>
+<p>We also have ears with which to hear the sound that the tongue vibrates.</p>
+<p>Therefore we have all the instruments we need with us--a tongue and ears.</p>
+<p>We have only to chant Hare Krsna and use our ears to hear this vibration, and all perfection will be there.</p>
+<p>We don't have to become highly educated scientists or philosophers.</p>
+<p>We have only to chant and hear.</p>
+<p>Thus we have everything complete.</p>
+<p>Purnam adah purnam idam: everything created by God is complete.</p>
+<p>This aggregate earth, for instance, is complete.</p>
+<p>There is sufficient water in the oceans, and the sun acts to evaporate this water, turn it into clouds, and drop rain on the land to produce plants.</p>
+<p>And from the mountains, pure rivers are flowing to supply water throughout the year.</p>
+<p>If we want to evaporate a few hundred gallons of water, we have to make many arrangements, but the creation is so complete that millions of tons of water are being drawn from the ocean, turned into clouds, and then sprayed all over the land and reserved on the peaks of mountains so that water will be present for the production of grains and vegetables.</p>
+<p>Thus the creation is complete because it comes from the complete, and similarly our bodies are also complete for spiritual realization.</p>
+<p>The complete machine is already with us.</p>
+<p>We have only to utilize it to vibrate the transcendental sound (sabda) of Hare Krsna, and we will attain complete liberation from all material pangs.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch8.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch8.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

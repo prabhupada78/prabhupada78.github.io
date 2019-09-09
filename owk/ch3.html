@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch3 - On the Way to Krsna</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html" class="active">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">On the Way to Krsna</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#seeing-kṛṣṇa-everywhere-and-always" id="seeing-kṛṣṇa-everywhere-and-always">Seeing Kṛṣṇa Everywhere and Always</a></h1>
+<p>In our practical life, Kṛṣṇa instructs us how to invoke Kṛṣṇa consciousness.</p>
+<p>It is not that we are to stop executing our duty or to cease from activity.</p>
+<p>Rather, activities have to be conducted in Kṛṣṇa consciousness.</p>
+<p>Everyone has a vocation in life, but with what consciousness does he enter upon it? Everyone is thinking, “Oh, I must have a vocation in order to maintain my family.” Society, the government or the family have to be satisfied, and no one is free from such consciousness One has to be in proper consciousness to execute any activity nicely.</p>
+<p>He whose consciousness is agitated, who is like a madman, cannot execute any duty.</p>
+<p>We should execute our duty properly, but we should do it thinking to satisfy Kṛṣṇa.</p>
+<p>It is not that we have to change our process of work, but we do have to understand for whom we are working.</p>
+<p>Whatever activity we have to do we must execute, but we should not be carried away by kāma, desire.</p>
+<p>The Sanskrit word kāma is used to indicate lust, desire or sense satisfaction.</p>
+<p>Śrī Kṛṣṇa instructs that we should not work for the satisfaction of kāma or our own lust.</p>
+<p>The whole teaching of Bhagavad-gītā is based on this principle.</p>
+<p>Arjuna wanted to satisfy his senses by refraining from fighting with his relatives, but Kṛṣṇa spoke to him to convince him to execute his duty for the satisfaction of the Supreme.</p>
+<p>Materially it may seem very pious that he is giving up his claim for a kingdom and refusing to kill his relatives, but Kṛṣṇa did not approve of this because the principle for Arjuna’s decision was to satisfy his own senses.</p>
+<p>One’s business or occupation need not be changed—as Arjuna’s was not changed—but one does have to change his consciousness.</p>
+<p>In order to change this consciousness, however, knowledge is required.</p>
+<p>That knowledge is knowing “I am part and parcel of Kṛṣṇa, the superior energy of Kṛṣṇa.” That is real knowledge.</p>
+<p>Relative knowledge may teach us how to repair a machine, but real knowledge is knowing our position as being integral with Kṛṣṇa.</p>
+<p>Being part of Him, our pleasure, which is partial, is dependent on the whole.</p>
+<p>For instance, my hand can take pleasure when it is attached to my body and serves it.</p>
+<p>It does not take pleasure in serving another’s body.</p>
+<p>Because we are part of Kṛṣṇa, our pleasure is in serving Him.</p>
+<p>“I cannot be happy serving you,” everyone is thinking.</p>
+<p>“I can only be happy serving myself.” But no one knows who the self is.</p>
+<p>That self is Kṛṣṇa.</p>
+<p>mamaivāṁśo jīva-loke jīva-bhūtaḥ sanātanaḥ manaḥ ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati “The living entities in this conditioned world are My eternal, fragmental parts.</p>
+<p>Due to conditioned life, they are struggling very hard with the six senses, which include the mind.” (Bg.15.7) The jīvas, or living entities, are now detached from the whole due to material contact.</p>
+<p>It is therefore necessary for us to strive to attach ourselves again through the latent Kṛṣṇa consciousness that is within us.</p>
+<p>Artificially, we are trying to forget Kṛṣṇa and live independently, but this is not possible.</p>
+<p>When we strive to live independent of Kṛṣṇa, we come under the influence of the laws of material nature.</p>
+<p>If one thinks he is independent of Kṛṣṇa, he becomes dependent on the illusory energy of Kṛṣṇa, just as if one thinks that he is independent of the government and its regulations, he becomes dependent on the police force.</p>
+<p>Everyone is trying to become independent, and this is called māyā, illusion.</p>
+<p>Individually, communally, socially, nationally, or universally, it is not possible to become independent.</p>
+<p>When we come to realize that we are dependent, we will have attained knowledge.</p>
+<p>Today so many people are striving for peace in the world, but they do not know how to implement that peace formula.</p>
+<p>The United Nations has been striving for peace for so many years, but still war is going on.</p>
+<p>yac cāpi sarva-bhūtānāṁ bījaṁ tad aham arjuna na tad asti vinā yat syān mayā bhūtaṁ carācaram “Furthermore, O Arjuna, I am the generating seed of all existences.</p>
+<p>There is no being—moving or unmoving—that can exist without Me.” (Bg.10.39) Kṛṣṇa is thus the proprietor of everything, the ultimate beneficiary and the receiver of the results of everything.</p>
+<p>We may consider ourselves to be the proprietors of the fruits of our labor, but this is a misconception.</p>
+<p>We must come to understand that Kṛṣṇa is the ultimate proprietor of the fruits of all our works.</p>
+<p>Hundreds of people may be working in an office, but they understand that whatever profit the business makes belongs to the proprietor.</p>
+<p>As soon as a teller at the bank thinks, “Oh, I have so much money.</p>
+<p>I am the proprietor.</p>
+<p>Let me take it home with me,” his trouble begins.</p>
+<p>If we think that we can use whatever wealth we have amassed for our own sense gratification, we are acting out of kāma, lust.</p>
+<p>But if we come to understand that everything we have belongs to Kṛṣṇa, we are liberated.</p>
+<p>We may have the same money in our hands, but as soon as we think that we are the proprietor, we are under the influence of māyā.</p>
+<p>One who is situated in the consciousness that everything belongs to Kṛṣṇa is an actual learned man.</p>
+<p>īśāvāsyam idaṁ sarvaṁ yat kiñca jagatyāṁ jagat tena tyaktena bhuñjīthā mā gṛdhaḥ kasya svid dhanam “Everything animate or inanimate that is within the universe is controlled and owned by the Lord.</p>
+<p>One should therefore accept only those things necessary for himself, which are set aside as his quota, and one must not accept other things, knowing well to whom they belong.” (Śrī Īśopaniṣad, Mantra 1) This consciousness of īśāvāsya—everything belongs to Kṛṣṇa—must be revived, not only individually but nationally and universally.</p>
+<p>Then there will be peace.</p>
+<p>We often tend to be philanthropic and altruistic, and we strive to be friends with our countrymen, with our families and with all the peoples of the world—but this is based on a wrong conception.</p>
+<p>The real friend is Kṛṣṇa, and if we want to benefit our family, nation or planet, we will work for Him.</p>
+<p>If we have our family’s welfare in mind, we will try to make all members Kṛṣṇa conscious.</p>
+<p>There are so many men trying to benefit their families, but unfortunately they do not succeed.</p>
+<p>They do not know what the real problem is.</p>
+<p>As the Bhāgavatam says, one should not attempt to become a father, or mother, or teacher unless he is able to save his children from death, from the grip of material nature.</p>
+<p>The father should be in knowledge of Kṛṣṇa, and he should be determined that the innocent children who are entrusted to him will not have to undergo the cycle of birth and death again.</p>
+<p>He should be resolved to train his children in such a way that they will no longer have to be subjected to the painful cycle of birth and death.</p>
+<p>But before one can do this, he has to make himself expert.</p>
+<p>If he becomes expert in Kṛṣṇa consciousness, he can help not only his children but his society and nation.</p>
+<p>But if he himself is bound by ignorance, how can he untie others who are similarly bound? Before one can make others free, he must be free himself.</p>
+<p>Actually no one is a free man, for everyone is under the spell of material nature, but one who is surrendered to Kṛṣṇa cannot be touched by māyā.</p>
+<p>He, of all men, is free.</p>
+<p>If one places himself in sunlight, there is no question of darkness.</p>
+<p>But if one places himself in artificial light, it may flicker and go out.</p>
+<p>Kṛṣṇa is just like sunlight.</p>
+<p>Where He is present, there is no question of darkness and ignorance.</p>
+<p>The wise men, the mahātmās, understand this.</p>
+<p>ahaṁ sarvasya prabhavo mattaḥ sarvaṁ pravartate iti matvā bhajante māṁ budhā bhāva-samanvitāḥ “I am the source of all spiritual and material worlds.</p>
+<p>Everything emanates from Me.</p>
+<p>The wise who know this perfectly engage in My devotional service and worship Me with all their hearts.” (Bg.10.8) In this verse the word budha is used, which indicates a wise man or one who is learned.</p>
+<p>What is his symptom? He knows that Kṛṣṇa is the fountainhead of everything, of all emanations.</p>
+<p>He knows that whatever he sees is but an emanation of Kṛṣṇa.</p>
+<p>In the material world, sex life is the most prominent factor.</p>
+<p>Sexual attraction is found in all species of life, and one may ask where it comes from.</p>
+<p>The wise man understands that this tendency is in Kṛṣṇa and that it is revealed in His relationships with the damsels of Vraja.</p>
+<p>Whatever is found in this material world can also be found in perfection in Kṛṣṇa.</p>
+<p>The difference is that in the material world everything is manifest in a perverted form.</p>
+<p>In Kṛṣṇa all of these tendencies and manifestations exist in pure consciousness, in spirit.</p>
+<p>One who knows this, in full knowledge, becomes a pure devotee of Kṛṣṇa.</p>
+<p>mahātmānas tu māṁ pārtha daivīṁ prakṛtim āśritāḥ bhajanty ananya-manaso jñātvā bhūtādim avyayam satataṁ kīrtayanto māṁ yatantaś ca dṛḍha-vratāḥ namasyantaś ca māṁ bhaktyā nitya-yuktā upāsate “O son of Pṛthā, those who are not deluded, the great souls, are under the protection of the divine nature.</p>
+<p>They are fully engaged in devotional service because they know Me as the Supreme Personality of Godhead, original and inexhaustible.</p>
+<p>Always chanting My glories, endeavoring with great determination, bowing down before Me, these great souls perpetually worship Me with devotion.” (Bg.9.13) Who is the great soul, the mahātmā? It is he who is under the influence of the superior energy.</p>
+<p>At present we are under the influence of Kṛṣṇa’s inferior energy.</p>
+<p>As living entities, our position is marginal—we can transfer ourselves to either of the two energies.</p>
+<p>Kṛṣṇa is fully independent, and because we are part and parcel of Him we also have this quality of independence.</p>
+<p>Therefore we have a choice as to which energy we will function under.</p>
+<p>Because we are ignorant of the superior nature, we have no alternative but to remain in the inferior nature.</p>
+<p>Some philosophies propound that there is no nature other than the one we are presently experiencing and that the only solution to this is to nullify it and become void.</p>
+<p>But we cannot be void because we are living entities.</p>
+<p>It does not mean that we are finished just because we change our bodies.</p>
+<p>Before we can get out from the influence of material nature, we have to understand where our place actually is, where we are to go.</p>
+<p>If we do not know where to go, then we will simply say, “Oh, we do not know what is superior and inferior.</p>
+<p>All we know is this, so let us stay here and rot.” Bhagavad-gītā,however, gives us information of the superior energy, the superior nature.</p>
+<p>What Kṛṣṇa speaks, He speaks for all eternity; it does not change.</p>
+<p>It does not matter what our present occupation is or what Arjuna’s occupation was—we only have to change our consciousness.</p>
+<p>At present we are guided by the consciousness of self—interest, but we do not know what our real self-interest is.</p>
+<p>Actually we do not have self-interest, but sense interest.</p>
+<p>Whatever we are doing, we are doing to satisfy the senses.</p>
+<p>It is this consciousness that has to be changed.</p>
+<p>In its place we must implant our real self—interest—Kṛṣṇa consciousness.</p>
+<p>How is this done? How is it possible to become Kṛṣṇa conscious in every step of our life? Actually Kṛṣṇa makes it very easy for us: raso ’ham apsu kaunteya prabhāsmi śaśi-sūryayoḥ praṇavaḥ sarva-vedeṣu śabdaḥ khe pauruṣaṁ nṛṣu “O son of Kuntī [Arjuna], I am the taste of water.</p>
+<p>the light of the sun and the moon, the syllable om in the Vedic mantras; I am the sound in ether and ability in man.” (Bg.7.8) In this verse Śrī Kṛṣṇa is describing how we can become Kṛṣṇa conscious fully, in all stages of life.</p>
+<p>All living entities must drink water.</p>
+<p>The taste of water is so nice that when we are thirsty nothing but water seems to do.</p>
+<p>No manufacturer can create the pure taste of water.</p>
+<p>We can thus remember Kṛṣṇa or God when we drink water.</p>
+<p>No one can avoid drinking water every day of his life, so God consciousness is there—how can we forget? Similarly, when there is some illumination, that is also Kṛṣṇa.</p>
+<p>The original effulgence in the spiritual sky, the brahmajyoti, emanates from the body of Kṛṣṇa.</p>
+<p>This material sky is covered.</p>
+<p>The very nature of the material universe is darkness, which we experience at night.</p>
+<p>It is being artificially illuminated by the sun, by the reflected light of the moon, and by electricity.</p>
+<p>Where is this illumination coming from? The sun is being illumined by the brahmajyoti, or the bright effulgence of the spiritual world.</p>
+<p>In the spiritual world there is no need for sun, moon or electricity because there everything is illuminated by the brahmajyoti.</p>
+<p>On this earth, however, we can remember Kṛṣṇa whenever we see some illumination from the sun.</p>
+<p>When we chant the Vedic mantras which begin with om, we can also remember Kṛṣṇa.</p>
+<p>Om, like Hare Kṛṣṇa, is also an address to God, and om is also Kṛṣṇa.</p>
+<p>Śabdaḥ means sound, and whenever we hear any sound we should know that it is a vibration of the original sound, the pure spiritual sound om or Hare Kṛṣṇa.</p>
+<p>Whatever sound we hear in the material world is but a reflection of that original spiritual sound om.</p>
+<p>In this way when we hear sound, when we drink water, when we see some illumination, we can remember God.</p>
+<p>If we can do this, then when will we not remember God? This is the process of Kṛṣṇa consciousness.</p>
+<p>In this way we can remember Kṛṣṇa twenty-four hours a day, and in this way Kṛṣṇa is with us.</p>
+<p>Of course Kṛṣṇa is always with us, but as soon as we remember this, His presence is factual and is felt.</p>
+<p>There are nine different processes for associating with God, and the first method of association is śravaṇam—hearing.</p>
+<p>By reading Bhagavadgītā we hear the speeches of Śrī Kṛṣṇa, which means that we are actually associating with Kṛṣṇa or God.</p>
+<p>(We should always remember that when we speak of Kṛṣṇa, we refer to God.) Inasmuch as we associate with God and as we go on hearing the words of Kṛṣṇa and His names, the contamination of material nature is reduced.</p>
+<p>In understanding that Kṛṣṇa is sound, illumination, water, and so many other things, it becomes impossible to avoid Kṛṣṇa.</p>
+<p>If we can remember Kṛṣṇa in this way, our association with Him is permanent.</p>
+<p>Association with Kṛṣṇa is like association with sunshine.</p>
+<p>Where there is sunshine, there is no contamination.</p>
+<p>As long as one is out in the ultraviolet rays of the sun, he will not be diseased.</p>
+<p>In western medicine, sunshine is recommended for all kinds of diseases, and according to the Vedas a diseased man should worship the sun for cure.</p>
+<p>Similarly, if we associate with Kṛṣṇa in Kṛṣṇa consciousness, our maladies are cured.</p>
+<p>By chanting Hare Kṛṣṇa we can associate with Kṛṣṇa, and we can see the water as Kṛṣṇa, the sun and the moon as Kṛṣṇa, and we can hear Kṛṣṇa in sound and taste Him in water.</p>
+<p>Unfortunately, in our present condition we have forgotten Kṛṣṇa.</p>
+<p>But now we have to revive our spiritual life by remembering Him.</p>
+<p>This process of śravaṇaṁ kīrtanam—hearing and chanting—was approved by Lord Caitanya Mahāprabhu.</p>
+<p>When Lord Caitanya was speaking with Rāmānanda Rāya, a friend of the Lord’s and a great devotee, the Lord questioned him about the methods of spiritual realization.</p>
+<p>Rāmānanda recommended varṇāśrama-dharma, sannyāsa, the renunciation of work, and so many other methods, but Lord Caitanya said, “No, all of these are not so good.” Each time Rāmānanda Rāya suggested something, Lord Caitanya rejected it, requesting a better method for spiritual development.</p>
+<p>Finally Rāmānanda Rāya quoted a Vedic aphorism which recommended that one give up all unnecessary endeavor in mental speculation for understanding God because by speculation it is not possible to arrive at the ultimate truth.</p>
+<p>Scientists, for instance, may speculate about distant stars and planets, but they can never come to any conclusions without experience.</p>
+<p>One may go on speculating throughout his life and never reach any conclusions.</p>
+<p>It is especially useless to speculate about God.</p>
+<p>Therefore ŚrīmadBhāgavatam recommends that all sorts of speculation should be given up.</p>
+<p>It is recommended instead that one become submissive, realizing that not only is he an insignificant creature, but that this earth is only one small point in the great universe.</p>
+<p>New York City may seem very large, but when one realizes that the earth is such a small spot, and that on the earth the United States is just another small spot, and that in the United States New York City is but a small spot, and that in New York the individual is only one out of millions, then one can understand that he is not so very important after all.</p>
+<p>Realizing our insignificance in the face of the universe and God, we should not be artificially puffed-up but should be submissive.</p>
+<p>We should be very careful not to fall prey to the frog philosophy.</p>
+<p>Once there was a frog in a well, and upon being informed of the existence of the Atlantic Ocean by a friend, he asked the friend, “Oh, what is this Atlantic Ocean?” “It is a vast body of water,” his friend replied.</p>
+<p>“How vast? Is it double the size of this well?” “Oh no, much much larger,” his friend replied.</p>
+<p>“How much larger? Ten times the size?” In this way the frog went on calculating.</p>
+<p>But what is the possibility of his ever understanding the depths and far reaches of the great ocean? Our faculties, experience, and powers of speculation are always limited.</p>
+<p>We can only give rise to such frog philosophy.</p>
+<p>Therefore Śrīmad-Bhāgavatam recommends that we give up the method of speculation as a waste of time in trying to understand the Supreme.</p>
+<p>After giving up speculation, what should we do? Bhāgavatam recommends that we become submissive and hear the message of God submissively.</p>
+<p>This message may be found also in the Bhagavad-gītā and other Vedic literatures, in the Bible or the Koran—in any bona fide scripture—or it may be heard from a realized soul.</p>
+<p>The main point is that one should not speculate but should simply hear about God.</p>
+<p>What will be the result of such hearing? Regardless of what one is—whether he be a poor or rich man, an American, European or Indian, a brāhmaṇa, śūdra or whatever—if one but hears the transcendental word of God, the Lord, who can never be conquered by any power or force, will be conquered by love.</p>
+<p>Arjuna was a friend of Kṛṣṇa’s, but Kṛṣṇa, although the Supreme Godhead, became Arjuna’s chariot driver, a menial servant.</p>
+<p>Arjuna loved Kṛṣṇa, and Kṛṣṇa reciprocated his love in this way.</p>
+<p>Similarly, when Kṛṣṇa was a child, He playfully took the shoes of His father, Nanda Mahārāja, and put them on His head.</p>
+<p>People may try very hard to become one with God, but actually we can surpass that—we can become father of God.</p>
+<p>Of course God is the father of all creatures, and He has no father Himself, but He accepts His devotee, His lover, as a father.</p>
+<p>Kṛṣṇa agrees to be conquered by His devotee out of love.</p>
+<p>All one has to do is hear the message of the Lord very carefully.</p>
+<p>In the Seventh Chapter of Bhagavad-gītā Śrī Kṛṣṇa gives additional ways in which He can be perceived in every step of life: puṇyo gandhaḥ pṛthivyāṁ ca tejaś cāsmi vibhāvasau jīvanaṁ sarva-bhūteṣu tapaś cāsmi tapasviṣu “I am the original fragrance of the earth, and I am the heat in fire.</p>
+<p>I am the life of all that lives, and I am the penances of all ascetics.” (Bg.7.9) The words puṇyo gandhaḥ refer to fragrances.</p>
+<p>Only Kṛṣṇa can create flavors and fragrances.</p>
+<p>We may synthetically create some scents or fragrances, but these are not as good as the originals that occur in nature.</p>
+<p>When we smell a good natural fragrance, we can think, “Oh, here is God.</p>
+<p>Here is Kṛṣṇa.” Or when we see some natural beauty, we can think, “Oh, here is Kṛṣṇa.” Or when we see something uncommon, powerful or wonderful, we can think,“Here is Kṛṣṇa.” Or when we see any form of life, whether it be in a tree, in a plant, or an animal or in a human being, we should understand that this life is part and parcel of Kṛṣṇa, for as soon as the spiritual spark, which is part and parcel of Kṛṣṇa, is taken away from the body, the body disintegrates.</p>
+<p>bījaṁ māṁ sarva-bhūtānāṁ viddhi pārtha sanātanam buddhir buddhimatām asmi tejas tejasvinām aham “O son of Pṛthā, know that I am the original seed of all existences, the intelligence of the intelligent, and the prowess of all powerful men.” (Bg.7.10) Here again it is explicitly stated that Kṛṣṇa is the life of all that lives.</p>
+<p>Thus at every step we can see God.</p>
+<p>People may ask, “Can you show me God?” Yes, of course.</p>
+<p>God can be seen in so many ways.</p>
+<p>But if one closes his eyes and says, “I shall not see God,” then how can He be shown? In the above verse the word bījam means seed, and that seed is proclaimed to be eternal (sanātanam).</p>
+<p>One may see a huge tree, but what is the origin of this tree? It is the seed, and that seed is eternal.</p>
+<p>The seed of existence is within every living entity.</p>
+<p>The body itself may go through so many changes—it may develop within the mother’s womb, come out as a small baby and grow through childhood and adulthood—but the seed of that existence that is within is permanent.</p>
+<p>Therefore it is sanātanam.</p>
+<p>Imperceivably we are changing our bodies at every moment, at every second.</p>
+<p>But the bījam, the seed, the spiritual spark, does not change.</p>
+<p>Kṛṣṇa proclaims Himself to be this eternal seed within all existences.</p>
+<p>He is also the intelligence of an intelligent person.</p>
+<p>Without being favored by Kṛṣṇa, one cannot become extraordinarily intelligent.</p>
+<p>Everyone is trying to be more intelligent than others, but without the favor of Kṛṣṇa this is not possible.</p>
+<p>Therefore whenever we encounter someone with extraordinary intelligence we should think, “That intelligence is Kṛṣṇa.” Similarly, the influence of one who is very influential is also Kṛṣṇa.</p>
+<p>balaṁ balavatāṁ cāhaṁ kāma-rāga-vivarjitam dharmāviruddho bhūteṣu kāmo ’smi bharatarṣabha “I am the strength of the strong, devoid of passion and desire.</p>
+<p>I am sex life which is not contrary to religious principles, O Lord of the Bharatas [Arjuna].” (Bg.7.11) The elephant and the gorilla are very strong animals, and we should understand that they get their strength from Kṛṣṇa.</p>
+<p>The human being cannot acquire such strength by his own endeavor, but if Kṛṣṇa so favors, a man can get strength to exceed the elephant thousands of times.</p>
+<p>The great warrior Bhīma, who fought in the battle of Kurukṣetra, was said to have strength ten thousand times that of an elephant.</p>
+<p>Similarly, desire or lust (kāma) which is not against religious principles should also be seen as Kṛṣṇa.</p>
+<p>What is this lust? Lust generally means sex life, but here kāma refers to sex life which is not against religious principles, that is to say, sex for the begetting of good children.</p>
+<p>If one can beget good Kṛṣṇa conscious children, he can have sex thousands of times, but if he can only beget children who are raised in the consciousness of cats and dogs, his sex life is to be considered irreligious.</p>
+<p>In religious and civilized societies, marriage is intended as an indication that a couple is to engage in sex for begetting good children.</p>
+<p>Therefore married sex life is considered religious, and unmarried sex life is considered irreligious.</p>
+<p>Actually there is no difference between the sannyāsī and the householder provided that the householder’s sexual activities are based on religious principles.</p>
+<p>ye caiva sāttvikā bhāvā rājasās tāmasāś caye matta eveti tān viddhi na tv ahaṁ teṣu te mayi “All states of being—be they of goodness, passion or ignorance—are manifested by My energy.</p>
+<p>I am, in one sense, everything—but I am independent.</p>
+<p>I am not under the modes of this material nature.” (Bg.7.12) One may question Kṛṣṇa in this way: “You say You are sound, water, illumination, fragrance, the seed of all, strength, and kāma, desire—does that mean that you exist simply in the mode of goodness?” In the material world there are the modes of goodness, passion and ignorance.</p>
+<p>Thus far, Kṛṣṇa has described Himself as that which is good (for instance, sex in marriage according to religious principles).</p>
+<p>But what about the other modes? Does not Kṛṣṇa exist in them? In answer, Kṛṣṇa replies that whatever is seen in the material world is due to an interaction of three modes of material nature.</p>
+<p>Whatever can be observed is a combination of goodness, passion or ignorance, and in all cases these three states are “produced by Me.” Because they are produced by Kṛṣṇa, their position is in Him, but He is not in them, for Kṛṣṇa Himself is transcendental to the three modes.</p>
+<p>Thus, in another sense, bad and evil things, which are produced out of ignorance, are also Kṛṣṇa, when they are applied by Kṛṣṇa.</p>
+<p>How is this? For example, an electrical engineer is producing electrical energy.</p>
+<p>In our homes we are experiencing this electrical energy as coldness in the refrigerator or heat in the electric stove, but at the power plant electrical energy is neither cold nor hot.</p>
+<p>The manifestations of this energy may be different for the living entities, but for Kṛṣṇa they are not different.</p>
+<p>Therefore Kṛṣṇa sometimes acts on what appears to be the principles of passion or ignorance, but for Kṛṣṇa there is nothing but Kṛṣṇa, just as for the electrical engineer electrical energy is simply electricity and nothing else.</p>
+<p>He makes no distinction that this is “cold electricity” or that is “hot electricity.” Everything is being generated by Kṛṣṇa.</p>
+<p>Indeed, the Vedānta-sūtra confirms: athāto brahma jijñāsā janmādy asya yataḥ: everything is flowing from the Supreme Absolute Truth.</p>
+<p>What the living entity is considering to be bad or good is only so for the living entity, for he is conditioned.</p>
+<p>But because Kṛṣṇa is not conditioned, for Him there is no question of bad or good.</p>
+<p>Because we are conditioned, we are suffering from dualities, but for Him everything is perfect.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

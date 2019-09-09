@@ -1,0 +1,623 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch7 - Perfec Questions, Perfect Answers</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html" class="active">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Perfec Questions, Perfect Answers</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-perfect-devotee" id="the-perfect-devotee">The Perfect Devotee</a></h1>
+<p>February 29, 1972, evening</p>
+<p>ŚYĀMASUNDARA: Śrīla Prabhupāda, this afternoon we were discussing austerities.</p>
+<p>ŚRĪLA PRABHUPĀDA: Mm?</p>
+<p>ŚYĀMASUNDARA: If we don't practice austerities voluntarily, then we must involuntarily practice some austerities.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, under the direction of the spiritual master one should ...</p>
+<p>You have no mind to follow austerities, but when you accept a spiritual master, you have to carry out his order.</p>
+<p>That is austerity.</p>
+<p>ŚYĀMASUNDARA: Even if you don't want to practice austerity, you must.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, you must.</p>
+<p>Because you have surrendered to your spiritual master, his order is final.</p>
+<p>So even if you don't like it, you have to do it.</p>
+<p>To please me.</p>
+<p>ŚYĀMASUNDARA: Ah.</p>
+<p>ŚRĪLA PRABHUPĀDA: But you don't like ...</p>
+<p>[He laughs.] Nobody likes to fast, but the spiritual master says, &quot;Today, fasting,&quot; so what can be done? [Śyāmasundara laughs.] A disciple is one who has voluntarily agreed to be disciplined by the spiritual master.</p>
+<p>That is austerity.</p>
+<p>ŚYĀMASUNDARA: Say, like our parents or many people in the material world, completely enamored by the material life—they don't want to undergo austerity or bodily pain, but still they must.</p>
+<p>They are being forced by nature to suffer austerities.</p>
+<p>ŚRĪLA PRABHUPĀDA: That is forced austerity.</p>
+<p>That is not good.</p>
+<p>Voluntary austerity will help.</p>
+<p>ŚYĀMASUNDARA: If you don't undergo voluntary austerity, then you must be forced to undergo austerity.</p>
+<p>ŚRĪLA PRABHUPĀDA: That is the difference between man and animal.</p>
+<p>An animal cannot accept austerity.</p>
+<p>But a man can accept it.</p>
+<p>There is a nice foodstuff in the confectioner's shop, so a man wants to eat it, but he sees that he has no money, so he can restrain himself.</p>
+<p>But when a cow comes, immediately she pushes her mouth in.</p>
+<p>You can beat her with a stick, but she will tolerate it.</p>
+<p>She will do that.</p>
+<p>Therefore an animal cannot undergo austerity.</p>
+<p>Our austerity is very nice.</p>
+<p>We chant Hare Kṛṣṇa, dance, and Kṛṣṇa sends very nice foodstuffs, and we eat.</p>
+<p>That's all.</p>
+<p>Why are your people not agreeable to such austerity? Chanting, dancing and eating nicely?</p>
+<p>BOB: What is that?</p>
+<p>ŚRĪLA PRABHUPĀDA: Because we are following austerities, Kṛṣṇa sends us nice things.</p>
+<p>So we are not losers.</p>
+<p>When you become Kṛṣṇa-ized, then you get more comforts than at the present moment.</p>
+<p>That's a fact.</p>
+<p>I have been living alone for the last twenty years, but I have no difficulties.</p>
+<p>Before taking sannyāsa I was living in Delhi.</p>
+<p>So I had no difficulties, although I was living alone.</p>
+<p>ŚYĀMASUNDARA: If you don't accept spiritual discipline, then nature will force so many calamities.</p>
+<p>ŚRĪLA PRABHUPĀDA: Oh, yes.</p>
+<p>That is stated in the Bhagavad-gītā: daivī hy eṣā guṇamayī mama māyā duratyayā mām eva ye prapadyante māyām etāṁ taranti te [&quot;This divine energy of Mine, consisting of the three modes of material nature, is difficult to overcome.</p>
+<p>But those who have surrendered unto Me can easily cross beyond it.&quot;] Māyā is imposing so many difficulties, but as soon as you surrender to Kṛṣṇa, no more imposition.</p>
+<p>ŚYĀMASUNDARA: We were so foolish that we were always thinking, &quot;In the future I'll be happy.&quot;</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, that is māyā, illusion.</p>
+<p>That is like the ass.</p>
+<p>You sit down on the back of the ass and just take a morsel of grass.</p>
+<p>The ass is thinking, &quot;Let me go forward a little, and I shall get the grass.&quot; [Bob laughs.] But it is always one foot distant.</p>
+<p>That is ass-ism.</p>
+<p>[They all laugh.] Everyone is thinking, &quot;Let me go a little forward, and I'll get it.</p>
+<p>I'll be very happy.&quot;</p>
+<p>BOB: I ... I thank you so much for ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Hmm?</p>
+<p>BOB: Tomorrow I'll have to leave you and—</p>
+<p>ŚRĪLA PRABHUPĀDA: Don't talk l-e-a-v-e, but talk l-i-v-e.</p>
+<p>BOB: I cannot yet, but I was thinking now of returning tomorrow to my town. But ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Don't return.</p>
+<p>BOB: I should stay here tomorrow—here?</p>
+<p>ŚRĪLA PRABHUPĀDA: Stay here.</p>
+<p>BOB: You tell me to, I'll stay.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, you are a very good boy.</p>
+<p>[There is a long pause.</p>
+<p>It is now much quieter.] It is very simple.</p>
+<p>When the living entities forget Kṛṣṇa, they are in this material world.</p>
+<p>Kṛṣṇa means His name, His form, His abode, His pastimes—everything.</p>
+<p>BOB: What was that last?</p>
+<p>ŚRĪLA PRABHUPĀDA: Ah? Pastimes.</p>
+<p>BOB: Pastimes.</p>
+<p>ŚRĪLA PRABHUPĀDA: When we speak of a king, it means the king's government, king's palace, king's queen, king's sons, secretaries, military strength —everything.</p>
+<p>Is it not?</p>
+<p>BOB: Yes.</p>
+<p>ŚRĪLA PRABHUPĀDA: Similarly, Kṛṣṇa being the Supreme Personality of Godhead, as soon as we think of Kṛṣṇa, this means all the energies of Kṛṣṇa.</p>
+<p>That is complete by saying, &quot;Rādhā-Kṛṣṇa.&quot; Rādhā represents all the energy of Kṛṣṇa.</p>
+<p>And Kṛṣṇa is the Supreme Lord.</p>
+<p>So when we speak of Kṛṣṇa, the living entities are also included because the living entities are energies, different energies of Kṛṣṇa— superior energy.</p>
+<p>So when this energy is not serving the energetic, that is material existence.</p>
+<p>The whole world is not serving Kṛṣṇa.</p>
+<p>They are serving Kṛṣṇa in a different way.</p>
+<p>They are serving indirectly, just as disobedient citizens serve the government indirectly.</p>
+<p>Prisoners come to the prison house on account of their disobedience of the laws of the state.</p>
+<p>So, in the prison house, they are forced to obey the laws of the state.</p>
+<p>Similarly, all the living entities here are godless, either by ignorance or by choice.</p>
+<p>They do not like to accept the supremacy of God.</p>
+<p>Demoniac.</p>
+<p>So we are trying to bring them to their original condition.</p>
+<p>That is the Kṛṣṇa consciousness movement.</p>
+<p>BOB: I'd like to ask you just something I talked with devotees about—medicine.</p>
+<p>I walked to the river with some devotees today.</p>
+<p>I have a cold, so I said I shouldn't go in the water.</p>
+<p>Some felt I should because it is the Ganges, and some said I shouldn't because I have a cold, and we were talking, and I don't understand.</p>
+<p>Do we get sick because of our bad actions in the past?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, that's a fact.</p>
+<p>BOB: But when one ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Any kind of distress we suffer is due to our impious activities in the past.</p>
+<p>BOB: But when someone is removed from karmic influence ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes?</p>
+<p>BOB: ... does he still get sick?</p>
+<p>ŚRĪLA PRABHUPĀDA: No.</p>
+<p>Even if he gets sick, that is very temporary.</p>
+<p>For instance, this fan is moving.</p>
+<p>If you disconnect the electric power, then the fan will move for a moment.</p>
+<p>That movement is not due to the electric current.</p>
+<p>That is force —what is it called, physically, this force?</p>
+<p>ŚYĀMASUNDARA: Momentum.</p>
+<p>ŚRĪLA PRABHUPĀDA: Momentum.</p>
+<p>But as soon as it stops, no more movement.</p>
+<p>Similarly, even if a devotee who has surrendered to Kṛṣṇa is suffering from material consequences, that is temporary.</p>
+<p>Therefore, a devotee does not take any material miseries as miseries.</p>
+<p>He takes them as Kṛṣṇa's, God's, mercy.</p>
+<p>BOB: A perfected soul, a devotee, a pure devotee ...</p>
+<p>ŚRĪLA PRABHUPĀDA: A perfected soul is one who engages twenty-four hours a day in Kṛṣṇa consciousness.</p>
+<p>That is perfection.</p>
+<p>That is a transcendental position.</p>
+<p>Perfection means to engage in one's original consciousness.</p>
+<p>That is perfection.</p>
+<p>That is stated in Bhagavad-gītā: sve sve karmaṇy abhirataḥ saṁsiddhiṁ labhate naraḥ &quot;By following his qualities of work, every man can become perfect.&quot; Complete perfection.</p>
+<p>Saṁsiddhi.</p>
+<p>Siddhi is perfection.</p>
+<p>That is Brahman realization, spiritual realization.</p>
+<p>And saṁsiddhi means devotion, which comes after Brahman realization.</p>
+<p>BOB: Could you just say that last thing again please?</p>
+<p>ŚRĪLA PRABHUPĀDA: Saṁsiddhi.</p>
+<p>BOB: Yes.</p>
+<p>ŚRĪLA PRABHUPĀDA: Sam means complete.</p>
+<p>BOB: Yes.</p>
+<p>ŚRĪLA PRABHUPĀDA: And siddhi means perfection.</p>
+<p>In the Bhagavad-gītā it is stated that one who goes back home, back to Godhead, has attained the complete perfection.</p>
+<p>So perfection comes when one realizes that he is not this body; he is spirit soul.</p>
+<p>Brahma-bhūta that is called Brahman realization.</p>
+<p>That is perfection.</p>
+<p>And saṁsiddhi comes after Brahman realization, when one engages in devotional service.</p>
+<p>Therefore if one is already engaged in devotional service, it is to be understood that Brahman realization is there.</p>
+<p>Therefore it is called saṁsiddhi.</p>
+<p>BOB: I ask you this very humbly, but do you feel diseases and sickness?</p>
+<p>ŚRĪLA PRABHUPĀDA: Hm-m?</p>
+<p>BOB: Do you personally feel disease and sickness?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: Is this a result of your past karma?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: So one in this material world never escapes his karma completely?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, he escapes.</p>
+<p>No more karma for a devotee.</p>
+<p>No more karmic reaction.</p>
+<p>BOB: But you must be the best devotee.</p>
+<p>ŚRĪLA PRABHUPĀDA: Hm-m ... No, I don't consider myself the best devotee. I am the lowest.</p>
+<p>BOB: No!</p>
+<p>ŚRĪLA PRABHUPĀDA: You are the best devotee.</p>
+<p>BOB: [Laughs.] Oh, no, no! But, see, you say—what you say ... always seems right.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: Then you must be the best devotee.</p>
+<p>ŚRĪLA PRABHUPĀDA: The thing is that even the best devotee, when he preaches, comes to the second-class platform of a devotee.</p>
+<p>BOB: What would the best devotee be doing?</p>
+<p>ŚRĪLA PRABHUPĀDA: The best devotee does not preach.</p>
+<p>BOB: What does he do?</p>
+<p>ŚRĪLA PRABHUPĀDA: He sees that there is no need of preaching.</p>
+<p>For him, everyone is a devotee.</p>
+<p>[Bob laughs heartily.] Yes, he sees no more nondevotees— all devotees.</p>
+<p>He is called an uttama-adhikārī.</p>
+<p>But while I am preaching, how can I say I am the best devotee? Just like Rādhārāṇī—She does not see anyone as a nondevotee.</p>
+<p>Therefore we try to approach Rādhārāṇī.</p>
+<p>BOB: Who is this?</p>
+<p>ŚRĪLA PRABHUPĀDA: Rādhārāṇī, Kṛṣṇa's consort.</p>
+<p>BOB: Ah.</p>
+<p>ŚRĪLA PRABHUPĀDA: If anyone approaches Rādhārāṇī, She recommends to Kṛṣṇa, &quot;Here is the best devotee.</p>
+<p>He is better than Me,&quot; and Kṛṣṇa cannot refuse him.</p>
+<p>That is the best devotee.</p>
+<p>But it is not to be imitated: &quot;I have become the best devotee.&quot; īśvare tad-adhīneṣu bāliśeṣu dviṣatsu ca prema-maitrī-kṛpopekṣā yaḥ karoti sa madhyamaḥ [Bhāg.11.2.46] A second-class devotee has the vision that some are envious of God, but this is not the vision of the best devotee.</p>
+<p>The best devotee sees, &quot;Nobody is envious of God.</p>
+<p>Everyone is better than me.&quot; Just like Caitanya-caritāmṛta's author, Kṛṣṇadāsa Kavirāja.</p>
+<p>He says, &quot;I am lower than the worm in the stool.&quot;</p>
+<p>BOB: Who is saying this?</p>
+<p>ŚRĪLA PRABHUPĀDA: Kṛṣṇadāsa Kavirāja, the author of Caitanya-caritāmṛta: purīṣera kīṭa haite muñi se laghiṣṭha.</p>
+<p>He is not making a show.</p>
+<p>He is feeling like that.</p>
+<p>&quot;I am the lowest.</p>
+<p>Everyone is best, but I am the lowest.</p>
+<p>Everyone is engaged in Kṛṣṇa's service.</p>
+<p>I am not engaged.&quot; Caitanya Mahāprabhu said &quot;Oh, I have not a pinch of devotion to Kṛṣṇa.</p>
+<p>I cry to make a show.</p>
+<p>If I had been a devotee of Kṛṣṇa, I would have died long ago.</p>
+<p>But I am living.</p>
+<p>That is the proof that I do not love Kṛṣṇa.&quot; That is the vision of the best devotee.</p>
+<p>He is so much absorbed in Kṛṣṇa's love that he says, &quot;Everything is going on, but I am the lowest.</p>
+<p>Therefore I cannot see God.&quot; That is the best devotee.</p>
+<p>BOB: So a devotee must work for everybody's liberation?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>A devotee must work under the direction of a bona fide spiritual master, not imitate the best devotee.</p>
+<p>BOB: Excuse me?</p>
+<p>ŚRĪLA PRABHUPĀDA: One should not imitate the best devotee.</p>
+<p>BOB: Imitate.</p>
+<p>Oh.</p>
+<p>I see.</p>
+<p>ŚYĀMASUNDARA: One time you said that sometimes you feel sickness or pain due to the sinful activities of your devotees.</p>
+<p>Can sometimes disease be due to that? Caused by that?</p>
+<p>ŚRĪLA PRABHUPĀDA: You see, Kṛṣṇa says: ahaṁ tvāṁ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ &quot;I will deliver you from all sinful reaction.</p>
+<p>Do not fear.&quot; So Kṛṣṇa is so powerful that He can immediately take up all the sins of others and immediately make them right.</p>
+<p>But when a living entity plays the part on behalf of Kṛṣṇa, he also takes the responsibility for the sinful activities of his devotees.</p>
+<p>Therefore to become a guru is not an easy task.</p>
+<p>You see? He has to take all the poisons and absorb them.</p>
+<p>So sometimes—because he is not Kṛṣṇa—sometimes there is some trouble.</p>
+<p>Therefore Caitanya Mahāprabhu has forbidden, &quot;Don't make many śiṣyas, many disciples.&quot; But for preaching work we have to accept many disciples—for expanding preaching—even if we suffer.</p>
+<p>That's a fact.</p>
+<p>The spiritual master has to take the responsibility for all the sinful activities of his disciples.</p>
+<p>Therefore to make many disciples is a risky job unless one is able to assimilate all the sins.</p>
+<p>vāñchā-kalpa-tarubhyaś ca kṛpā-sindhubhya eva ca patitānāṁ pāvanebhyo vaiṣṇavebhyo namo namaḥ [&quot;I offer my respectful obeisances unto all the Vaiṣṇava devotees of the Lord.</p>
+<p>They are just like desire trees who can fulfill the desires of everyone, and they are full of compassion for the fallen conditioned souls.&quot;] He takes responsibility for all the fallen souls.</p>
+<p>That idea is also in the Bible.</p>
+<p>Jesus Christ took all the sinful reactions of the people and sacrificed his life.</p>
+<p>That is the responsibility of a spiritual master.</p>
+<p>Because Kṛṣṇa is Kṛṣṇa, He is apāpa-viddha—He cannot be attacked by sinful reactions.</p>
+<p>But a living entity is sometimes subjected to their influence because he is so small.</p>
+<p>Big fire, small fire.</p>
+<p>If you put some big thing in a small fire, the fire itself may be extinguished.</p>
+<p>But in a big fire, whatever you put in is all right.</p>
+<p>The big fire can consume anything.</p>
+<p>BOB: Christ's suffering was of that nature?</p>
+<p>ŚRĪLA PRABHUPĀDA: Mm-m?</p>
+<p>BOB: Was Christ's suffering—</p>
+<p>ŚRĪLA PRABHUPĀDA: That I have already explained.</p>
+<p>He took the sinful reactions of all the people.</p>
+<p>Therefore he suffered.</p>
+<p>BOB: I see.</p>
+<p>ŚRĪLA PRABHUPĀDA: He said—that is in the Bible—that he took all the sinful reactions of the people and sacrificed his life.</p>
+<p>But these Christian people have made it a law for Christ to suffer while they do all nonsense.</p>
+<p>[Bob gives a short laugh.] Such great fools they are! They have let Jesus Christ make a contract for taking all their sinful reactions so they can go on with all nonsense.</p>
+<p>That is their religion.</p>
+<p>Christ was so magnanimous that he took all their sins and suffered, but that does not induce them to stop all these sins.</p>
+<p>They have not come to that sense.</p>
+<p>They have taken it very easily.</p>
+<p>&quot;Let Lord Jesus Christ suffer, and we'll do all nonsense.&quot; Is it not?</p>
+<p>BOB: It is so.</p>
+<p>ŚRĪLA PRABHUPĀDA: They should have been ashamed: &quot;Lord Jesus Christ suffered for us, but we are continuing the sinful activities.&quot; He told everyone, &quot;Thou shalt not kill,&quot; but they are indulging in killing, thinking, &quot;Lord Jesus Christ will excuse us and take all the sinful reactions.&quot; This is going on.</p>
+<p>We should be very much cautious: &quot;For my sinful actions my spiritual master will suffer, so I'll not commit even a pinch of sinful activities.&quot; That is the duty of the disciple.</p>
+<p>After initiation, all sinful reaction is finished.</p>
+<p>Now if he again commits sinful activities, his spiritual master has to suffer.</p>
+<p>A disciple should be sympathetic and consider this.</p>
+<p>&quot;For my sinful activities, my spiritual master will suffer.&quot; If the spiritual master is attacked by some disease, it is due to the sinful activities of others.</p>
+<p>&quot;Don't make many disciples.&quot; But we do it because we are preaching.</p>
+<p>Never mind—let us suffer—still we shall accept them.</p>
+<p>Therefore your question was—when I suffer is it due to my past misdeeds? Was it not? That is my misdeed—that I accepted some disciples who are nonsense.</p>
+<p>That is my misdeed.</p>
+<p>BOB: This happens on occasions?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>This is sure to happen because we are accepting so many men.</p>
+<p>It is the duty of the disciples to be cautious.</p>
+<p>&quot;My spiritual master has saved me.</p>
+<p>I should not put him again into suffering.&quot; When the spiritual master is in suffering, Kṛṣṇa saves him.</p>
+<p>Kṛṣṇa thinks, &quot;Oh, he has taken so much responsibility for delivering a fallen person.&quot; So Kṛṣṇa is there.</p>
+<p>kaunteya pratijānīhi na me bhaktaḥ praṇaśyati [&quot;O son of Kuntī, declare it boldly that My devotee never perishes.&quot;] Because the spiritual master takes the risk on account of Kṛṣṇa.</p>
+<p>BOB: Your suffering is not the same kind of pain ...</p>
+<p>ŚRĪLA PRABHUPĀDA: No, it is not due to karma.</p>
+<p>The pain is there sometimes, so that the disciples may know, &quot;Due to our sinful activities, our spiritual master is suffering.&quot;</p>
+<p>BOB: You look very well now.</p>
+<p>ŚRĪLA PRABHUPĀDA: I am always well ... in the sense that even if there is suffering, I know Kṛṣṇa will protect me.</p>
+<p>But this suffering is not due to my sinful activities.</p>
+<p>BOB: But let us say when I—in the town I live in, I take boiled water because some of the water has disease in it.</p>
+<p>Now, why should I drink boiled water if I have been good enough not to get a disease? Then I may drink any water.</p>
+<p>And if I have been not acting properly. Then I shall get disease anyway.</p>
+<p>ŚRĪLA PRABHUPĀDA: So long as you are in the material world, you cannot neglect physical laws.</p>
+<p>Suppose you go to a jungle and there is a tiger.</p>
+<p>It is known that it will attack you, so why should you voluntarily go and be attacked? It is not that a devotee should take physical risk so long as he has a physical body.</p>
+<p>It is not a challenge to the physical laws: &quot;I have become a devotee.</p>
+<p>I challenge everything.&quot; That is foolishness.</p>
+<p>anāsaktasya viṣayān yathārham upayuñjataḥ nirbandhaḥ kṛṣṇa-sambandhe yuktaṁ vairāgyam ucyate The devotee is advised to accept the necessities of life without attachment.</p>
+<p>He'll take boiled water, but if boiled water is not available, does it mean he will not drink water? If it is not available, he will drink ordinary water.</p>
+<p>We take Kṛṣṇa prasāda, but while touring, sometimes we have to take some food in a hotel.</p>
+<p>Because one is a devotee, should he think, &quot;I will not take any foodstuffs from the hotel.</p>
+<p>I shall starve&quot;? If I starve, then I will be weak and will not be able to preach.</p>
+<p>BOB: Does a devotee lose some of his individuality, in that—</p>
+<p>ŚRĪLA PRABHUPĀDA: No, he has full individuality for pleasing Kṛṣṇa.</p>
+<p>Kṛṣṇa says, &quot;You surrender unto Me.&quot; So he voluntarily surrenders.</p>
+<p>It is not that he has lost his individuality.</p>
+<p>He keeps his individuality.</p>
+<p>Just like Arjuna—in the beginning, he was declining to fight, on account of his individuality.</p>
+<p>But when he accepted Kṛṣṇa as his spiritual master, he became śiṣya [a disciple].</p>
+<p>Then whatever Kṛṣṇa ordered, he said yes.</p>
+<p>That doesn't mean he lost his individuality.</p>
+<p>He voluntarily accepted: &quot;Whatever Kṛṣṇa says, I shall do it.&quot; Just like all my disciples —they have not lost their individuality, but they have surrendered their individuality.</p>
+<p>That is required.</p>
+<p>For example, suppose a man does not use sex.</p>
+<p>It does not mean he has become impotent.</p>
+<p>If he likes, he can have sex life a thousand times.</p>
+<p>But he has voluntarily avoided it.</p>
+<p>Paraṁ dṛṣṭvā nivartate: he has a higher taste.</p>
+<p>Sometimes we fast, but that does not mean we are diseased.</p>
+<p>We voluntarily fast.</p>
+<p>It does not mean that I am not hungry or cannot eat.</p>
+<p>But we voluntarily fast.</p>
+<p>BOB: Does the devotee who surrenders keep his individual taste?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, in full.</p>
+<p>BOB: Taste for different things?</p>
+<p>ŚRĪLA PRABHUPĀDA: Hm?</p>
+<p>BOB: Does he keep his individual likes and dislikes?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, he keeps everything.</p>
+<p>But he gives preference to Kṛṣṇa.</p>
+<p>Suppose I like this thing but Kṛṣṇa says, &quot;No, you cannot use it.&quot; Then I shall not use it.</p>
+<p>It is for Kṛṣṇa's sake.</p>
+<p>nirbandhaḥ kṛṣṇa-sambandhe yuktaṁ vairāgyam ucyate Kṛṣṇa says positively, &quot;I like these things.&quot; So we have to offer to Kṛṣṇa what He likes, and then we'll take prasāda.</p>
+<p>Kṛṣṇa likes Rādhārāṇī.</p>
+<p>Therefore all the gopīs, they are trying to push Rādhārāṇī to Kṛṣṇa.</p>
+<p>&quot;Kṛṣṇa likes this gopī.</p>
+<p>All right, push Her.&quot; That is Kṛṣṇa consciousness.</p>
+<p>To satisfy the senses of Kṛṣṇa, not to satisfy my senses.</p>
+<p>That is bhakti.</p>
+<p>That is called prema, love for Kṛṣṇa.</p>
+<p>&quot;Ah, Kṛṣṇa likes this.</p>
+<p>I must give Him this.&quot;</p>
+<p>BOB: There is some prasāda [food offered to Kṛṣṇa].</p>
+<p>It's offered, and then we go and eat, and different prasādams are served.</p>
+<p>Some I like, and some I find the taste not at all to my liking.</p>
+<p>ŚRĪLA PRABHUPĀDA: You should not do that.</p>
+<p>The perfection is that whatever is offered to Kṛṣṇa you should accept.</p>
+<p>That is perfection.</p>
+<p>You cannot say.</p>
+<p>&quot;I like this, I don't like this.&quot; So long as you make such discrimination, that means you have not appreciated what prasāda is.</p>
+<p>A DEVOTEE: What if there is someone speaking of likes and dislikes? Say someone is preparing some prasāda ...</p>
+<p>ŚRĪLA PRABHUPĀDA: No disliking, no liking.</p>
+<p>Whatever Kṛṣṇa likes, that's all right.</p>
+<p>A DEVOTEE: Yes.</p>
+<p>But say someone prepares something, like some prasāda for Kṛṣṇa, but he does not make it so good, and it is—</p>
+<p>ŚRĪLA PRABHUPĀDA: No, if made sincerely with devotion, then Kṛṣṇa will like it.</p>
+<p>Just like Vidu.</p>
+<p>Vidu was feeding Kṛṣṇa bananas, but he was so absorbed in thought that he was throwing away the real bananas and he was giving Kṛṣṇa the skin, and Kṛṣṇa was eating.</p>
+<p>[All laugh] Kṛṣṇa knew that he was giving in devotion, and Kṛṣṇa can eat anything, provided there is devotion.</p>
+<p>It does not matter whether it is materially tasteful or not.</p>
+<p>Similarly, a devotee also takes Kṛṣṇa prasāda, whether it is materially tasteful or not.</p>
+<p>We should accept everything.</p>
+<p>A DEVOTEE: But if the devotion is not there, like in India ...</p>
+<p>ŚRĪLA PRABHUPĀDA: If devotion is not there, He doesn't like any food, either tasteful or not tasteful.</p>
+<p>He does not accept it.</p>
+<p>A DEVOTEE: In India ... Somebody—</p>
+<p>ŚRĪLA PRABHUPĀDA: Oh, India, India.</p>
+<p>Don't talk of India! Talk of philosophy.</p>
+<p>If there is not devotion, Kṛṣṇa does not accept anything, either in India or in your country.</p>
+<p>Lord Kṛṣṇa is not obliged to accept anything costly because it is very tasty.</p>
+<p>Kṛṣṇa has very many tasteful dishes in Vaikuṇṭha.</p>
+<p>He is not hankering after your food.</p>
+<p>He accepts your devotion, bhakti.</p>
+<p>The real thing is devotion, not the food.</p>
+<p>Kṛṣṇa does not accept any food of this material world.</p>
+<p>He accepts only the devotion.</p>
+<p>patraṁ puṣpaṁ phalaṁ toyaṁ yo me bhaktyā prayacchati tad ahaṁ bhakty-upahṛtam aśnāmi prayatātmanaḥ [&quot;If one offers Me with love and devotion a leaf, a flower, fruit or water, I will accept it.&quot;] &quot;Because it has been offered to Me with devotion and love&quot;—that is required.</p>
+<p>Therefore we do not allow anyone to cook who is not a devotee.</p>
+<p>Kṛṣṇa does not accept anything from the hands of a nondevotee.</p>
+<p>Why should He accept? He is not hungry.</p>
+<p>He does not require any food.</p>
+<p>He accepts only the devotion, that's all.</p>
+<p>That is the main point.</p>
+<p>So one has to become a devotee.</p>
+<p>Not a good cook.</p>
+<p>But if he is a devotee, then he will be a good cook also.</p>
+<p>Automatically he will become a good cook.</p>
+<p>Therefore one has to become a devotee only.</p>
+<p>Then all other good qualifications will automatically be there.</p>
+<p>And if he is a nondevotee, any good qualifications have no value.</p>
+<p>He is on the mental plane, so he has no good qualification.</p>
+<p>[There is a long pause in the conversation.]</p>
+<p>ŚRĪLA PRABHUPĀDA: And the time?</p>
+<p>ŚYĀMASUNDARA: Six o'clock.</p>
+<p>ŚRĪLA PRABHUPĀDA: Questions and answers are required.</p>
+<p>They are beneficial to all.</p>
+<p>BOB: I still have a question on the prasāda.</p>
+<p>ŚRĪLA PRABHUPĀDA: Sūta Gosvāmī says: munayaḥ sādhu pṛṣṭo 'haṁ bhavadbhir loka-maṅgalam yat kṛtaḥ kṛṣṇa-sampraśno yenātmā suprasīdati [&quot;O sages, I have been justly questioned by you.</p>
+<p>Your questions are worthy because they relate to Lord Kṛṣṇa and so are relevant to the world's welfare.</p>
+<p>Only questions of this sort are capable of completely satisfying the self.&quot;] Kṛṣṇasampraśnaḥ, that is very good.</p>
+<p>When you discuss and hear, that is loka-maṅgalam, auspicious for everyone.</p>
+<p>Both the questions and the answers.</p>
+<p>BOB: I still do not understand so much about prasāda.</p>
+<p>But if you like I'll think about it and ask you again tomorrow.</p>
+<p>ŚRĪLA PRABHUPĀDA: Prasāda is always prasāda.</p>
+<p>But because we are not elevated sufficiently, therefore we do not like some prasāda.</p>
+<p>BOB: I found specifically that what I mean—that some are too spicy, and it hurts my stomach.</p>
+<p>ŚRĪLA PRABHUPĀDA: Well ...</p>
+<p>That is also due to not appreciating, but the cook should have consideration.</p>
+<p>Kṛṣṇa must be offered first-class foodstuffs.</p>
+<p>So if he offers something last class, he is not performing his duty.</p>
+<p>But Kṛṣṇa can accept anything if it is offered by a devotee, and a devotee can accept any prasāda, even if it is spicy.</p>
+<p>Hiraṇyakaśipu gave his son poison [and the son offered it to Kṛṣṇa], and the son drank it as nectar.</p>
+<p>So even if it is spicy to others' taste, it is very palatable to the devotee.</p>
+<p>What is the question of spicy? He was offered poison, real poison.</p>
+<p>And Pūtanā Rākṣasī—she also offered Kṛṣṇa poison.</p>
+<p>But Kṛṣṇa is so nice that He thought, &quot;She took Me as My mother,&quot; so He took the poison and delivered her.</p>
+<p>Kṛṣṇa does not take the bad side.</p>
+<p>A good man does not take the bad side—he takes only the good side.</p>
+<p>Just like one of my big Godbrothers—he wanted to make business with my Guru Mahārāja [spiritual master], but my Guru Mahārāja did not take the bad side.</p>
+<p>He took the good side.</p>
+<p>He thought, &quot;He has come forward to give me some service.&quot;</p>
+<p>BOB: Business with your—what was that? Business with who?</p>
+<p>ŚRĪLA PRABHUPĀDA: I am talking about my Guru Mahārāja.</p>
+<p>BOB: Oh, I see.</p>
+<p>I have another question on prasāda, if I may.</p>
+<p>Let us say some devotee has some trouble and does not eat a certain type of food-like some devotees do not eat ghee because of liver trouble.</p>
+<p>So these devotees, should they take all the prasāda?</p>
+<p>ŚRĪLA PRABHUPĀDA: No, no.</p>
+<p>Those who are not perfect devotees may discriminate.</p>
+<p>But a perfect devotee does not discriminate.</p>
+<p>Why should you imitate a perfect devotee? So long as you have discrimination, you are not a perfect devotee.</p>
+<p>So why should you artificially imitate a perfect devotee and eat everything?</p>
+<p>BOB: Oh.</p>
+<p>ŚRĪLA PRABHUPĀDA: The point is, a perfect devotee does not make any discrimination.</p>
+<p>Whatever is offered to Kṛṣṇa is nectar.</p>
+<p>That's all.</p>
+<p>Kṛṣṇa accepts anything from a devotee.</p>
+<p>&quot;Whatever is offered to Me by My devotee,&quot; He accepts.</p>
+<p>The same thing for a devotee.</p>
+<p>Don't you see the point? A perfect devotee does not make any discrimination.</p>
+<p>But if I am not a perfect devotee and I have discrimination, why shall I imitate the perfect devotee? It may not be possible for me to digest everything because I am not a perfect devotee.</p>
+<p>A devotee should not be a foolish man.</p>
+<p>It is said: kṛṣṇa ye bhaje se baḍa catura So a devotee knows his position, and he is intelligent enough to deal with others accordingly.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

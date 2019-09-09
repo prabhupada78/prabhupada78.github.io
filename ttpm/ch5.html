@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch5 - Teachings of Prahlada</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html" class="active">ch5</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Teachings of Prahlada</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#god-realization-is-everywhere" id="god-realization-is-everywhere">God Realization Is Everywhere</a></h1>
+<p>Mahārāja Prahlāda informed his class fellows about the all­pervasiveness of the Supreme Lord.</p>
+<p>The Supreme Soul is all­pervasive, but that does not mean that He has lost His personality.</p>
+<p>That is significant.</p>
+<p>Although He is all­pervading, still He is a person.</p>
+<p>According to our material perception, if something is all­pervading, then it has no personality, no localized aspect.</p>
+<p>But God is not like that.</p>
+<p>For example, the sunshine is all­pervading, but the sun also has a localized aspect.</p>
+<p>The sun is localized in one place, and you can see it.</p>
+<p>Not only is there the sun, but within the sun planet there is a sun­god, whose name is Vivasvān.</p>
+<p>We get this information from Vedic literature; there is no way to understand what takes place on other planets but by hearing from authorized sources.</p>
+<p>The difference in modern civilization is that we hear a scientist say, &quot;We have seen the moon; it is such and such,&quot; and we believe it.</p>
+<p>We have not gone with the scientist to see the moon, but we believe him.</p>
+<p>Belief is the basic principle of understanding.</p>
+<p>You either believe me or him; that depends on you.</p>
+<p>If you believe a scientist that is information, and if you believe the Vedas, that is also information.</p>
+<p>It is up to you which source you believe.</p>
+<p>According to Vedic instruction, we take infallible information from the Vedas.</p>
+<p>As I have explained, an ordinary man who is conditioned by material nature ' has four defects.</p>
+<p>What are those four defects? The first is that a human being is sure to commit mistakes, however great a scientist he may be.</p>
+<p>Not very long ago in this country, there was a disaster when a scientist sent a satellite up but at once it burned to ashes.</p>
+<p>So there was a mistake.</p>
+<p>There must be mistakes.</p>
+<p>This is the nature of conditioned life.</p>
+<p>The mistake may be very great or very slight­that doesn't matter.</p>
+<p>But a human being conditioned by material nature is sure to commit mistakes.</p>
+<p>Further, man is illusioned.</p>
+<p>He accepts one thing for something else because his senses are imperfect.</p>
+<p>For example, we accept this body as the self.</p>
+<p>Actually, I am not this body; therefore the acceptance of the body as self is called illusion.</p>
+<p>The whole world is going on under the illusion that &quot;I am this body.&quot; Therefore there is no peace because everyone is illusioned.</p>
+<p>I am thinking that I am Indian, you are American, and a Chinese man is thinking that he is Chinese.</p>
+<p>What is this &quot;Chinese,&quot; &quot;American,&quot; and &quot;Indian&quot;? It is the body.</p>
+<p>This is illusion.</p>
+<p>To cheat is another condition of life.</p>
+<p>I am a fool, but I will boast that I am very learned.</p>
+<p>Everyone who is illusioned and commits mistakes is a fool, but still one poses himself as being freed from all mistakes.</p>
+<p>And above all, our senses are imperfect.</p>
+<p>We view the sun as a small disc.</p>
+<p>Why? It is far, far greater than this earth, but we see it just as a disc.</p>
+<p>We have these imperfect senses, and we are subject to become illusioned and commit mistakes, and we are influenced by the propensity to cheat.</p>
+<p>How can one expect real knowledge from such conditioned souls? There is no possibility to receive actual knowledge from them.</p>
+<p>So, in this world, whether a man is a scientist.</p>
+<p>a philosopher or whatever he may be, or however educated he may be, because he is conditioned, he cannot give complete information.</p>
+<p>This is a fact.</p>
+<p>How do you get complete information? The process is the disciplic succession of Vedic knowledge.</p>
+<p>You can read in Bhagavad­gītā that Lord Kṛṣṇa says to Arjuna, &quot;The knowledge of Bhagavad­gītā was first spoken by Me to the sun­god, and the sun­god spoke it to his son, Manu.</p>
+<p>In turn, Manu spoke this knowledge to his son lkṣvāku, and then lkṣvāku spoke the same to his son.</p>
+<p>In this way the knowledge has come down, but unfortunately that disciplic succession is now broken.</p>
+<p>Therefore, O Arjuna, I am now preaching the same knowledge to you because you are My very dear friend and good devotee.&quot; This is the process of accepting knowledge.</p>
+<p>We have to accept the transcendental vibration.</p>
+<p>The entire Vedic knowledge is a transcendental vibration to help us to understand the Supreme Lord.</p>
+<p>So Prahlāda Mahārāja says that the Supreme Soul is identical with the all­pervading Supreme Personality of Godhead.</p>
+<p>In the Brahma­saṁhitā also the same information appears­that the Supreme Lord, although situated in His own transcendental abode, is all­pervading.</p>
+<p>Although He is all­pervading, present everywhere, still by our imperfect senses we cannot see Him.</p>
+<p>Prahlāda Mahārāja says, &quot;Although He is not seen, He can still be perceived.</p>
+<p>One who is intelligent can perceive the presence of the Supreme Lord everywhere.&quot; How is this possible? During the daytime one who is in the light can see that the sun is up, even though he is in a.</p>
+<p>room.</p>
+<p>Because it is daytime, because it is light, he can understand that the sun is shining.</p>
+<p>Similarly, those who have understood the whole material creation, those who have understood the whole cosmic situation, know that everything is an expansion of the energy of the Supreme Lord.</p>
+<p>What do we see with these present material senses? We can hear and understand the five gross elements and also the finer elements; we can understand that we have mind and intelligence.</p>
+<p>Similarly, we can understand that there is soul.</p>
+<p>We can understand fire, water, earth, sky, mind and intelligence.</p>
+<p>And, if a man is further advanced, he can understand that there is a soul, and, above all, there is Supersoul.</p>
+<p>We see what is visible to the material eye.</p>
+<p>We can see earth, water, fire.</p>
+<p>But we cannot see air, although we can perceive it.</p>
+<p>By touch we can understand the air.</p>
+<p>We can understand that there is sky by sound.</p>
+<p>We can understand that we have mind because we are thinking, feeling and willing.</p>
+<p>Similarly, we can understand that we have an intelligence that guides the mind.</p>
+<p>If we go still further, we can understand, &quot;I am consciousness.&quot; The visible things around us are also expansions of the inferior energy of the Supreme Lord.</p>
+<p>It is stated in the Bhagavad­gītā that we should try to understand that which is spread all over the body because that is eternal.</p>
+<p>We have to understand from the authorities, but we can also perceive it.</p>
+<p>We know that there is consciousness spread all over the body.</p>
+<p>If I pinch any part of my body, there is consciousness.</p>
+<p>Similarly, consciousness is spread all over this universe.</p>
+<p>But that is not our consciousness.</p>
+<p>That is God's consciousness.</p>
+<p>We know every part of our body.</p>
+<p>We can perceive, &quot;This is my finger,&quot; or &quot;This is my ear.&quot; Similarly, God, the Supreme Soul, is all­pervading by His consciousness.</p>
+<p>That is Kṛṣṇa consciousness.</p>
+<p>Our process is to dovetail our consciousness with Kṛṣṇa consciousness—that will make us perfect.</p>
+<p>It is not that we merge into that consciousness.</p>
+<p>In one sense we can say &quot;merge,&quot; but still we keep our individuality.</p>
+<p>That is the difference between impersonalist philosophy and Kṛṣṇa’s conscious philosophy.</p>
+<p>The impersonalist philosophy says that we merge into the Supreme and lose our individuality.</p>
+<p>We can say that we merge into the Supreme, but we keep our individuality.</p>
+<p>How is that? An airplane starts from the airport and climbs up and up, and when it goes very high we cannot see it because it merges into the higher sky.</p>
+<p>We can simply see sky, but the airplane is not lost—it is still there.</p>
+<p>Another example is that if a green bird enters into a big green tree, we cannot distinguish the bird from the tree, but they both exist.</p>
+<p>Similarly, the supreme consciousness is Kṛṣṇa, and when we dovetail our individual consciousness with the Supreme, we then become perfect.</p>
+<p>An outsider may see that there is no distinction between God and men, but it is due only to a poor fund of knowledge.</p>
+<p>Every individual person, every individual being, maintains his individuality, even though he is dovetailed with the Supreme.</p>
+<p>Prahlāda Mahārāja says that we cannot see consciousness either supreme consciousness or individual—but it is there.</p>
+<p>How is it there? We can understand the supreme consciousness and our individual consciousness by perception of blissfulness.</p>
+<p>Because we have consciousness, we can feel ānanda, or pleasure.</p>
+<p>Without consciousness there is no feeling of pleasure.</p>
+<p>Because of that consciousness we can enjoy life by applying our senses in whatever way we like.</p>
+<p>But as soon as consciousness is gone, we cannot enjoy.</p>
+<p>I am present because of consciousness, and I am part and parcel of Kṛṣṇa, as stated in Bhagavad­gītā.</p>
+<p>This consciousness exists because we are part and parcel of the supreme consciousness.</p>
+<p>For example, a spark is a tiny part and parcel of the fire, yet the spark is also the fire.</p>
+<p>A drop of the Atlantic Ocean possesses the same quality as all the ocean water—it is also salty.</p>
+<p>Similarly the pleasure poetency which we feel is the presence of consciousness, and that same pleasure potency also exists in the Supreme Lord.</p>
+<p>Paramesvara means the supreme controller.</p>
+<p>We are also iśvara, or controller, because we are in some control.</p>
+<p>For example, I have some controlling power to take a drink of water when I cough.</p>
+<p>According to our capacity, everyone of us has some controlling power.</p>
+<p>But we are not the supreme controller.</p>
+<p>The supreme controller is God.</p>
+<p>Because He is the supreme controller, He is controlling all these universal energies by His different potencies.</p>
+<p>We can also understand and feel.</p>
+<p>I am controlling my bodily affairs as far as possible, but because I am not the supreme controller, if there is something wrong in this body, I have no control.</p>
+<p>I speak of this hand as &quot;my hand&quot; because I am working with this hand and am moving it according to my desire.</p>
+<p>I am actually the controller of my hand.</p>
+<p>But I am not the controller of your hand.</p>
+<p>If I desire that your hand move, that is not in my power; that is in your power.</p>
+<p>You can move your hand if you like.</p>
+<p>I am not the controller of your body, but the Supreme Soul is the controller of both your body and my body.</p>
+<p>That is explained in the Bhagavad­gītā.</p>
+<p>The Lord says that you are present in your body and that this body is the field of your activities.</p>
+<p>Whatever you are doing according to the body is limited.</p>
+<p>An animal which is bound up in a certain tract of land can move there and cannot go beyond what that space allows.</p>
+<p>Similarly, your activity and my activity are bound up within the limits of our bodies.</p>
+<p>My body is my field of activities, and your body is your field of activities.</p>
+<p>But Kṛṣṇa says, &quot;I am present in every field.&quot; He is present as Supersoul.</p>
+<p>I know when I cough, but you do not know how I feel, and similarly, I do not know what you are doing.</p>
+<p>Kṛṣṇa however, as Paramātmā, knows what is going on in my body, in your body, and in thousands of millions and billions of other bodies.</p>
+<p>Therefore He is the supreme controller.</p>
+<p>We have our limited energy, but He is transcendental to this limited energy.</p>
+<p>He has unlimited opulence.</p>
+<p>By His controlling power, by His supreme will, this material creation is moving.</p>
+<p>That is also confirmed in the Bhagavad­gītā where Kṛṣṇa states, &quot;Under My superintendence the whole material natures working.</p>
+<p>All wonderful things that you see in this material world are due to My supervision, My supreme control.&quot; Prahlāda Mahārāja now gives his conclusion.</p>
+<p>&quot;My dear friends, because the Supreme Lord is present everywhere and because we are part and parcel of the Supreme Lord, our duty is to be merciful to all living entities.&quot; When a person is in a lower position, we have a duty to help him.</p>
+<p>Because he is helpless, the small child is dependent on the mercy of the parent.</p>
+<p>In the relationship of the small child and the parent there is a reciprocation of feeling.</p>
+<p>The child is always dependent on the parent.</p>
+<p>&quot;Mother, I want this.&quot; &quot;Yes, my dear child.&quot; We should be compassionate to all living entities and should show them mercy.</p>
+<p>How can we show our mercy? There are millions and millions of poor men, so how can we show them all mercy? They want so many things.</p>
+<p>People are very proud that they are going to serve the poor.</p>
+<p>In what way are they going to serve? Are we able to supply clothing and food to all the needy persons of the world? That is not possible.</p>
+<p>How, then, can we be merciful to every living entity? The fact is 'that we cannot show any mercy to the living entities through material considerations.</p>
+<p>That is not possible.</p>
+<p>Prahlāda Mahārāja is showing his class friends real mercy.</p>
+<p>They were all fools, devoid of Kṛṣṇa consciousness, and therefore he was showing them how to become Kṛṣṇa conscious.</p>
+<p>This is the highest mercy.</p>
+<p>If you want to show any mercy at all to the living entities, then enlighten them in Kṛṣṇa consciousness as Prahlāda Mahārāja did.</p>
+<p>Otherwise, it is materially beyond your power to show mercy.</p>
+<p>&quot;My dear demoniac friends,&quot; Prahlāda says, &quot;give up this demoniac life.</p>
+<p>Give up this nonsense.&quot; The belief that there is no God is the demoniac feature that Prahlāda Mahārāja requests his demoniac friends to give up.</p>
+<p>They were thinking, &quot;Who is God? There is no God.&quot; We find in the Bhagavad­gītā that people of this mentality are called miscreants, for they always try to make mischief.</p>
+<p>They are very well educated attorneys, lawyers and so on, but their plan is to cheat.</p>
+<p>We have practically experienced it.</p>
+<p>They are highly educated with so many qualifications and are nicely dressed, but their mentality is more base than that of a dog.</p>
+<p>&quot;This man has some money, so let us conspire to cheat him.&quot; They are simply miscreants.</p>
+<p>Why are they cheating for? Simply for sense gratification, just an ass who does not know the purpose of life.</p>
+<p>He takes the hundred pounds burdens on tils back, and he is kept by the washerman, who loads his back as much as possible.</p>
+<p>In this way the ass works the whole day with this burden simply for a few morsels of grass.</p>
+<p>Similarly, materialistic people will simply be satisfied to eat a simple piece of bread or something similar, but they work very hard.</p>
+<p>Therefore they are compared to asses.</p>
+<p>They are always planning something mischievous.</p>
+<p>They are the lowest of mankind because they do not believe in God.</p>
+<p>Why? Their actual knowledge has been plundered by the influence of this material energy.</p>
+<p>Because they deny the existence of God, illusion impells them: &quot;Yes, there is no God.</p>
+<p>Work hard and commit sins so that you may go to hell.&quot; Prahlāda Mahārāja requests his demoniac friends to just give up this idea that there is no God.</p>
+<p>If we give up this nonsensical idea, then the Supreme lord who is beyond our perception, will be pleased and show His mercy to us.</p>
+<p>SAM KIRTAN The Devotees are here seen chanting the Holy Names of God.</p>
+<p>This, in these dark days of quarrel and hypocrisy, practice called Sam Kirtan is the most recommended activity for developing God Consciousness.</p>
+<p>HARE KRISHNA HARE KRISHNA KRISHNA KRISHNA HARE HARE HARE RAMA HARE RAMA RAMA RAMA HARE HARE HIS DIVINE GRACE A.C.</p>
+<p>Bhaktivedanta Swami Prabhupada Founder­Acharya of the International Society for Krishna Consciousness</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch3 - Beyond Birth and Death</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html" class="active">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Beyond Birth and Death</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#liberation-from-material-planets" id="liberation-from-material-planets">Liberation from Material Planets</a></h1>
+<p>The jñānis and yogīs are generally impersonalists, and although they attain the temporary form of liberation by merging into the impersonal effulgence, the spiritual sky, their knowledge, according to Śrīmad-Bhāgavatam, is not considered pure.</p>
+<p>By penances, austerities and meditations, they can rise up to the Supreme Absolute platform, but, as has been explained, they again fall down to the material world because they have not taken Kṛṣṇa’s personal features seriously.</p>
+<p>Unless one worships the lotus feet of Kṛṣṇa, he again has to descend to the material platform.</p>
+<p>The ideal attitude should be: “I am Your eternal servitor.</p>
+<p>Please let me somehow engage in Your service.” Kṛṣṇa is called ajitaḥ—unconquerable—for no one can conquer God, but according to Śrīmad-Bhāgavatam, one with this attitude easily conquers the Supreme.</p>
+<p>Śrīmad-Bhāgavatam also recommends that we give up this futile process to measure the Supreme.</p>
+<p>We cannot even measure the limitations of space, what to speak of the Supreme.</p>
+<p>It is not possible to measure the length and breadth of Kṛṣṇa by one’s minuscule knowledge, and one who arrives at this conclusion is considered intelligent by Vedic literature.</p>
+<p>One should come to understand, submissively, that he is a very insignificant segment of the universe.</p>
+<p>Abandoning the endeavor to understand the Supreme by limited knowledge or mental speculation, we should become submissive and hear of the Supreme through the authoritative sources such as Bhagavad-gītā or through the lips of a realized soul.</p>
+<p>In Bhagavad-gītā, Arjuna is hearing about God from the lips of Śrī Kṛṣṇa Himself.</p>
+<p>In this way Arjuna set the criterion for understanding the Supreme by submissive hearing.</p>
+<p>It is our position to hear Bhagavad-gītā from the lips of Arjuna or his bona fide representative, the spiritual master.</p>
+<p>After hearing, it is necessary to practice this acquired knowledge in daily life.</p>
+<p>“My dear Lord, You are unconquerable,” the devotee prays, “but by this process, by hearing, You are conquered.” God is unconquerable, but He is conquered by the devotee who abandons mental speculation and listens to authoritative sources.</p>
+<p>According to Brahma-saṁhitā, there are two ways of acquiring knowledge—the ascending process and descending process.</p>
+<p>By the ascending process, one is elevated by knowledge acquired by himself.</p>
+<p>In this way one thinks, “I don’t care for any authorities or books.</p>
+<p>I will attain knowledge myself by meditation, philosophy, etc.</p>
+<p>In this way I will understand God.” The other process, the descending process, involves receiving knowledge from higher authorities.</p>
+<p>Brahma-saṁhitā states that if one takes to the ascending process and travels at the speed of mind and wind for millions of years, he will still end up not knowing.</p>
+<p>For him, the subject matter will remain elusive and inconceivable.</p>
+<p>But that subject matter is given in Bhagavad-gītā: ananya-cetāḥ: Kṛṣṇa says to meditate on Him without deviation from the path of devotional service in submission.</p>
+<p>For one who worships Him in this way—tasyāhaṁ sulabhaḥ: “I become easily available.” This is the process: if one works for Kṛṣṇa twenty-four hours a day, Kṛṣṇa cannot forget him.</p>
+<p>By becoming submissive, he can attract the attention of God.</p>
+<p>As Guru Mahārāja Bhaktisiddhānta Sarasvatī used to say, “Don’t try to see God.</p>
+<p>Is God to come and stand before us like a servant just because we want to see Him? That is not the submissive way.</p>
+<p>We have to oblige Him by our love and service.” The proper process for approaching Kṛṣṇa was given to humanity by Lord Caitanya Mahāprabhu, and Rūpa Gosvāmī, His first disciple, appreciated it.</p>
+<p>Rūpa Gosvāmī was a minister in the Muhammadan government, but he left the government to become a disciple of Caitanya Mahāprabhu's.</p>
+<p>When he first went to see the Lord, Rūpa Gosvāmī approached Him with the following verse: namo mahā-vadānyāya kṛṣṇa-prema-pradāya te kṛṣṇāya kṛṣṇa-caitanya-nāmne gaura-tviṣe namaḥ “I offer my respectful obeisances unto the Supreme Lord Śrī Kṛṣṇa Caitanya, who is more magnanimou than any other avatāra, even Kṛṣṇa Himself, because He is bestowing freely what no one else has ever given—pure love of Kṛṣṇa.” Rūpa Gosvāmī called Caitanya Mahāprabhu “the most munificent, the most charitable personality,” because He was offering the most precious thing of all very cheaply —love of God.</p>
+<p>We all want Kṛṣṇa and are all hankering after Him.</p>
+<p>Kṛṣṇa is the most attractive, the most beautiful, the most opulent, the most powerful and the most learned.</p>
+<p>That is the object of our hankering.</p>
+<p>We’re hankering after the beautiful, the powerful, the learned, the wealthy.</p>
+<p>Kṛṣṇa is the reservoir of all of this, so we need only turn our attention toward Him, and we will get everything.</p>
+<p>Everything—whatever we want.</p>
+<p>Whatever is our heart’s desire will be fulfilled by this process of Kṛṣṇa consciousness.</p>
+<p>For one who dies in Kṛṣṇa consciousness, as stated before, entrance into Kṛṣṇaloka, the supreme abode where Kṛṣṇa resides, is guaranteed.</p>
+<p>At this point one may ask what the advantage is in going to that planet, and Kṛṣṇa Himself answers: mām upetya punar janma duḥkhālayam aśāśvatam nāpnuvanti mahātmānaḥ saṁsiddhiṁ paramāṁ gatāḥ “After attaining Me, the great souls, who are yogīs in devotion, never return to this temporary world, which is full of miseries, because they have attained the highest perfection.” (Bg.8.15) This material world is certified by Śrī Kṛṣṇa, the creator, as duḥkhālayam—full of miseries.</p>
+<p>How then can we make it comfortable? Is it possible to make this world comfortable by the so-called advancement of science? No, this is not possible.</p>
+<p>As a result, we do not even wish to know what these miseries are.</p>
+<p>The miseries, as stated before, are birth, old age, disease and death, and because we cannot make a solution to them we try to set them aside.</p>
+<p>Science has no power to solve these miseries that are always giving us trouble.</p>
+<p>Instead they divert our attention into making spaceships or atomic bombs.</p>
+<p>The solution to these problems is given here in Bhagavad-gītā: if one attains to Kṛṣṇa’s platform he does not have to return again to this earth of birth and death.</p>
+<p>We should try to understand that this place is full of miseries.</p>
+<p>It takes a certain amount of developed consciousness to understand this.</p>
+<p>Cats and dogs and hogs cannot understand that they are suffering.</p>
+<p>Man is called a rational animal, but his rationality is being used to further his animalistic propensities instead of finding out how to get liberation from this miserable condition.</p>
+<p>Here Kṛṣṇa explicitly states that one who comes to Him will never be reborn to suffer miseries again.</p>
+<p>Those great souls who come to Him have attained the highest perfection of life which alleviates the living entity from the suffering of conditional existence.</p>
+<p>One of the differences between Kṛṣṇa and an ordinary being is that an ordinary entity can be only in one place at a time, but Kṛṣṇa can be everywhere in the universe and yet in His own abode, simultaneously.</p>
+<p>Kṛṣṇa’s abode in the transcendental kingdom is called Goloka Vṛndāvana.</p>
+<p>The Vṛndāvana in India is that same Vṛndāvana descended on this earth.</p>
+<p>When Kṛṣṇa descends Himself by His own internal potency, His dhāma, or abode, also descends.</p>
+<p>In other words, when Kṛṣṇa descends on this earth, He manifests Himself in that particular land.</p>
+<p>Despite this, Kṛṣṇa’s abode remains eternally in the transcendental sphere, in the Vaikuṇṭhas.</p>
+<p>In this verse Kṛṣṇa proclaims that one who comes to His abode in the Vaikuṇṭhas never has to take birth again in the material world.</p>
+<p>Such a person is called mahātmā.</p>
+<p>The word mahātmā is generally heard in the West in connection with Mahātmā Gandhi, but we should understand that mahātmā is not the title of a politician.</p>
+<p>Rather, mahātmā refers to the first-class Kṛṣṇa conscious man who is eligible to enter into the abode of Kṛṣṇa.</p>
+<p>The mahātmā’s perfection is this: to utilize the human form of life and the resources of nature to extricate himself from the cycle of birth and death.</p>
+<p>An intelligent person knows that he does not want miseries, but they are inflicted upon him by force.</p>
+<p>As stated before, we are always in a miserable condition due to this mind, body, natural disturbances or other living entities.</p>
+<p>There is always some kind of misery inflicted upon us.</p>
+<p>This material world is meant for misery; unless the misery is there, we cannot come to Kṛṣṇa consciousness.</p>
+<p>Miseries are actually an impetus and help to elevate us to Kṛṣṇa consciousness.</p>
+<p>An intelligent man questions why these miseries are inflicted on him by force.</p>
+<p>However, modern civilization’s attitude is, “Let me suffer.</p>
+<p>Let me cover it by some intoxication.</p>
+<p>That’s all.” But as soon as the intoxication is over, the miseries return.</p>
+<p>It is not possible to make a solution to the miseries of life by artificial intoxication.</p>
+<p>The solution is made by Kṛṣṇa consciousness.</p>
+<p>One may point out that although the devotees of Kṛṣṇa are trying to enter Kṛṣṇa’s planet, our interest is in going to the moon.</p>
+<p>Isn’t going to the moon also perfection? The tendency to travel to other planets is always present in the living entity.</p>
+<p>One name for the living entity is sarva-gata, which means “one who wants to travel everywhere.” Travel is part of the nature of the living entity.</p>
+<p>The desire to go to the moon is not a new thing.</p>
+<p>The yogīs also are interested in entering the higher planets, but in Bhagavad-gītā Kṛṣṇa points out that this will not be of any help.</p>
+<p>ābrahma-bhuvanal lokāḥ punar āvartino ’rjuna mām upetya tu kaunteya punar janma na vidyate “From the highest planet in the material world down to the lowest, all are places of misery wherein repeated birth and death take place.</p>
+<p>But one who attains to My abode, O son of Kuntī, never takes birth again.”(Bg.8.16) The universe is divided into higher, middle and lower planetary systems.</p>
+<p>The earth is considered to be a member of the middle planetary system.</p>
+<p>Kṛṣṇa points out that even if one enters into the highest planet of all, called Brahmaloka, there is still repetition of birth and death.</p>
+<p>Other planets in the universe are full of living entities.</p>
+<p>We should not think that we are here and that all the other planets are vacant.</p>
+<p>From experience we can see that no place on earth is vacant of living entities.</p>
+<p>If we dig deep down into the earth, we find worms; if we go deep into the water, we find aquatics; if we go into the sky, we find so many birds.</p>
+<p>How is it possible to conclude that other planets have no living entities? But Kṛṣṇa points out that even if we enter into those planets where great demigods reside, we will still be subjected to death.</p>
+<p>Again, Kṛṣṇa repeats that upon reaching His planet, one need not take birth again.</p>
+<p>We should be very serious about attaining our eternal life full of bliss and knowledge.</p>
+<p>We have forgotten that this is actually our aim of life, our real selfinterest.</p>
+<p>Why have we forgotten? We have simply been entrapped by the material glitter, by skyscrapers, big factories and political play, although we know that however big we build skyscrapers, we will not be able to live here indefinitely.</p>
+<p>We should not spoil our energy in building mighty industries and cities to further entrap ourselves in material nature; rather, our energy should be used to develop Kṛṣṇa consciousness in order to attain a spiritual body whereby we may enter into Kṛṣṇa’s planet.</p>
+<p>Kṛṣṇa consciousness is not a religious formula or some spiritual recreation; it is the most important part of the living entity.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

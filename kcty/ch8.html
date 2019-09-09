@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch8 - Topmost Yoga System</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html" class="active">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Topmost Yoga System</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#sources-of-absolute-knowledge" id="sources-of-absolute-knowledge">Sources of Absolute Knowledge</a></h1>
+<p>We require to hear about the method of relishing the Śrīmad-Bhāgavatam the most elevated text on the science of God consciousness, the matured and ripened fruit of the tree of Vedic wisdom.</p>
+<p>The Sanskrit word rasa means juice, just like the juice of an orange or a mango.</p>
+<p>And the author of the Śrīmad-Bhāgavatam requests that you kindly try to taste the rasa, or juice, of the fruit of the Bhāgavatam.</p>
+<p>Why? Why shall I taste the juice of the fruit of the Bhāgavatam? Because it is the ripened fruit of the Vedic desire tree.</p>
+<p>As a desire tree, whatever you want you can have from the Vedas.</p>
+<p>Veda means knowledge; it is so complete that whether you want to enjoy in this material world or you want to enjoy spiritual life, both kinds of knowledge are there.</p>
+<p>If you follow the Vedic principles, then you will be happy.</p>
+<p>This is like the codes of the state.</p>
+<p>If the citizens obey, then they will be happy, there will be no criminal trespassing, and they will enjoy life.</p>
+<p>The state does not come to you for nothing just to trouble you, but if you live according to the state law there is no question of unhappiness.</p>
+<p>Similarly, this conditioned soul, the living entity, has come here to this material world for enjoyment and for material happiness.</p>
+<p>And the Vedas are the guidance: all right, enjoy—but you enjoy according to these principles.</p>
+<p>That is called Veda.</p>
+<p>Therefore, everything is there.</p>
+<p>Just as we sometimes perform a marriage ceremony in the temple.</p>
+<p>What is this marriage ceremony? It is the combination of man and woman, boy and girl.</p>
+<p>They are already there they are living like friends —what is the use of this marriage ceremony? It is Vedic: the Vedas account for living together, sex life, but under some special regulations so that you may be happy.</p>
+<p>The ultimate end is to become happy.</p>
+<p>If you follow the Vedic rules and restrictions, that will not mean that you will be kept from eating or not allowed to sleep, not allowed to defend or to have sex life.</p>
+<p>It is not like that.</p>
+<p>Your bodily necessities are the same as those of the animals; the animals also eat, they also sleep, they also mate and also defend.</p>
+<p>So we require these things also.</p>
+<p>But the Vedas prescribe some regulations: you act in this way, so that you will not be unhappy.</p>
+<p>If you follow the regulation, ultimately the result will be that you will be free from the material entanglement.</p>
+<p>This material life is not meant for the spirit soul.</p>
+<p>It is simply a misunderstanding that you want to enjoy this material life.</p>
+<p>But Kṛṣṇa, the Supreme Lord, gives us specific orders so that we can enjoy, in such a way that, at the end, we will understand that this is not our proper life—our proper life is spiritual.</p>
+<p>This human form of life is perfected as soon as we come to the understanding of spiritual existence—that I am Brahman.</p>
+<p>Otherwise, if I do not take care of my spiritual life, then the result is that I must live as the cats and dogs do.</p>
+<p>There is every possibility that my next life will be an animal life.</p>
+<p>And if, by chance or by a freak of nature, I get into animal life, then millions and millions of years will be required before again coming to this human form of life.</p>
+<p>So the human form of life is meant for self-realization, and the Vedas are the direction.</p>
+<p>Now in the Bhagavad-gītā you will find that Kṛṣṇa says that to study or to follow the rules and regulations of the Vedas actually means to come to the understanding of Kṛṣṇa consciousness.</p>
+<p>That is stated in the Śrīmad-Bhāgavatam also.</p>
+<p>So the Vedas give you the chance to gradually come to the point of understanding Kṛṣṇa, after many, many births.</p>
+<p>But the Bhāgavatam is called the essence of life, the ripened fruit of the Vedas, because the Bhāgavatam gives you directly what is needed in your life.</p>
+<p>The Vedas are divided into four: Sāma, Ṛg, Atharva and Yajur.</p>
+<p>Then these are explained by the Purāṇas, of which there are eighteen.</p>
+<p>Then these are still further explained by the Upaniṣads, of which there are 108.</p>
+<p>The Upaniṣads are summarized in the Vedānta-sūtra, and the Vedānta-sūtra is still again explained by the Śrīmad-Bhāgavatam, by the same author.</p>
+<p>This is the process.</p>
+<p>So the Bhāgavatam is the essence of all Vedic knowledge.</p>
+<p>Naimiṣāraṇya is a very famous and sacred forest in northern India, where all the ṛṣis, the sages, generally go to aid their spiritual advancement of life.</p>
+<p>This Śrīmad-Bhāgavatam was first discussed in this age in that forest.</p>
+<p>When it was discussed, the great saint Sūta Gosvāmī was asked by his audience: Now that Kṛṣṇa has gone back to His abode, with whom is transcendental knowledge now resting? This question was raised.</p>
+<p>The Bhagavad-gītā was spoken by Kṛṣṇa Himself, and it contains all descriptions of jñāna-yoga, karma-yoga, dhyāna-yoga and bhakti-yoga.</p>
+<p>Now this inquiry was made: Where can you get spiritual knowledge, now that Kṛṣṇa is gone? The answer was that Kṛṣṇa, having departed, has left us the Śrīmad-Bhāgavatam.</p>
+<p>It is the representation, the sound representation, of Kṛṣṇa.</p>
+<p>The Bhāgavatam is not different from Kṛṣṇa, as the Gītā is not different from Kṛṣṇa.</p>
+<p>They are absolute.</p>
+<p>Kṛṣṇa and Kṛṣṇa's sound vibration are not different.</p>
+<p>Kṛṣṇa and Kṛṣṇa's name are also not different.</p>
+<p>And Kṛṣṇa and Kṛṣṇa's form, again, are not different.</p>
+<p>This is absolute.</p>
+<p>It requires realization.</p>
+<p>This Bhagavad-gītā and Śrīmad-Bhāgavatam are sound incarnations of Kṛṣṇa.</p>
+<p>The Śrīmad-Bhāgavatam is also the literary incarnation of Kṛṣṇa, and it is the fruit of Vedic knowledge.</p>
+<p>You may have experience that there is a bird which is called a parrot.</p>
+<p>The parrot's body is green, and his beak is red.</p>
+<p>The specific qualification of the parrot is that whatever you say he can imitate.</p>
+<p>That parrot bird is touching the ripened fruit, and, naturally, if the fruit is ripened on the tree, it becomes very tasteful.</p>
+<p>Again, if the fruit is tasted by the parrot, it becomes still more tasteful.</p>
+<p>That is nature's way.</p>
+<p>So, here, it is said that this ŚrīmadBhāgavatam is just like the ripened fruit of Vedic knowledge, and at the same time it is touched by Śukadeva Gosvāmī, Sūta's spiritual master.</p>
+<p>Śuka means parrot in Sanskrit.</p>
+<p>This Śrīmad-Bhāgavatam was first explained by Śukadeva Gosvāmī, though the author is his father, Vyāsa.</p>
+<p>Śukadeva was only sixteen years old when he was taught the Bhāgavatam, and he was illumined.</p>
+<p>He was already liberated in the impersonal concept of the Absolute, but after hearing the Bhāgavatam from his father, he became attracted by the pastimes of Kṛṣṇa, and he became a preacher of the Bhāgavatam.</p>
+<p>First he explained it before Mahārāja Parīkṣit, the great king.</p>
+<p>A short history of Mahārāja Parīkṣit is that he was a very pious king, but unfortunately by some of his acts he was cursed by a brāhmaṇa boy to die within seven days.</p>
+<p>In those days if a brāhmaṇa should curse someone it would come true.</p>
+<p>They had the power to curse or give benediction.</p>
+<p>So Parīkṣit understood that within a week he would have to die, and he prepared himself.</p>
+<p>He gave up his kingdom, entrusting it to his son, Mahārāja Janamejaya, and he detached himself from the family and sat down on the banks of the Ganges near Delhi.</p>
+<p>It was not exactly the Ganges; it was actually the Yamunā.</p>
+<p>There, because he was a great emperor, many learned sages came.</p>
+<p>Parīkṣit now inquired from all the great sages present there: &quot;What is my duty? I am going to die within seven days; now what is my duty? You are all learned sages; please just prescribe for me.&quot; So someone said to practice yoga, some said to practice jñāna, the cultivation of knowledge; there were different opinions.</p>
+<p>But at that time Śukadeva Gosvāmī entered the forest, and although Śukadeva was only sixteen, he was so learned and reputed that all the old sages, including his father, Vyāsadeva, stood up to show him respect.</p>
+<p>He was so learned.</p>
+<p>So when he appeared, it was agreed.</p>
+<p>&quot;Here is Śukadeva Gosvāmī.</p>
+<p>Let him decide what to do.</p>
+<p>We appoint him as our representative.&quot; Śukadeva Gosvāmī was thus authorized to speak, and he was asked, &quot;What is my duty? I am very fortunate that you have come in this momentous hour.</p>
+<p>Kindly tell me what is my duty.&quot; Śukadeva Gosvāmī said, &quot;All right, I shall explain to you the ŚrīmadBhāgavatam.&quot; Then everyone present agreed.</p>
+<p>As the Bhāgavatam was first spoken by Śukadeva Gosvāmī, it is therefore mentioned that as the parrot touches ripened fruit and it becomes even sweeter, so this Śrīmad-Bhāgavatam, because it was touched first by Śukadeva Gosvāmī, has become still more tasteful.</p>
+<p>The idea is that any Vedic literature, especially the Bhāgavatam or the Gītā, should be learned as spoken by a realized soul.</p>
+<p>Especially this literature, which is called Vaiṣṇava literature, should not be heard from a person who is not a devotee.</p>
+<p>This point I have several times stressed.</p>
+<p>Those who are nondevotees, those who are mental speculationists, those who are fruitive workers, those who are meditators or mystic yogīs, cannot explain the science of God.</p>
+<p>This is especially mentioned also by Sanātana Gosvāmī, another great saint; those who are not in devotional service, nongodly, those who have no faith in God—such persons should not be allowed to speak on the Bhagavad-gītā and ŚrīmadBhāgavatam, or any literature which is in relationship with the Supreme Lord.</p>
+<p>So it is not that anybody can speak the Bhāgavatam or the Gītā and we will have to hear it.</p>
+<p>No.</p>
+<p>Sanātana Gosvāmī especially prohibits us: we should not hear of the Supreme Lord from one who is not purified.</p>
+<p>One may ask, &quot;How can you taint the words of Kṛṣṇa, which are naturally transcendentally pure? What is the harm if we hear from the nondevotee?&quot; This question may be raised.</p>
+<p>The example given here is that milk is very nice and nutritious, but as soon as it is touched by a serpent it becomes poison immediately.</p>
+<p>The serpent is very envious.</p>
+<p>He bites and puts to death immediately, unnecessarily, and therefore is considered the cruelest animal amongst the living entities.</p>
+<p>In the śāstra nonviolence is recommended, as in every scripture, but the serpent and the scorpion are allowed to be killed.</p>
+<p>You cannot say that milk is so nutritious, and we can drink—what is the harm if it is touched by serpents? No—the result will be death.</p>
+<p>One should not hear at least the Bhagavad-gītā and the Śrīmad-Bhāgavatam from those who are not devotees of the Lord, who have no realization of God and who are envious of Him.</p>
+<p>Their touch renders it poison.</p>
+<p>The words of the Lord are always sublime, but as soon as they are touched by the serpent-like nondevotee, one should be very careful about hearing.</p>
+<p>In the Bhāgavatam, it is indicated that as soon as Śukadeva touched it, it became delicious.</p>
+<p>This is the distinction.</p>
+<p>Basically it is the ripened fruit of Vedic knowledge, but at the same time it has been touched by Śukadeva Gosvāmī.</p>
+<p>The Lord is the supreme object of yoga and the reservoir of all transcendental pleasure; He reveals Himself only to His devotees and by the mercy of His devotees all can relish His intimate association.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

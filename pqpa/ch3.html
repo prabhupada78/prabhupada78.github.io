@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch3 - Perfec Questions, Perfect Answers</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html" class="active">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Perfec Questions, Perfect Answers</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#vedic-culture-varṇāśrama-dharma" id="vedic-culture-varṇāśrama-dharma">Vedic Culture: Varṇāśrama-dharma</a></h1>
+<p>February 28, 1972</p>
+<p>BOB: I've asked devotees about how they feel towards sex in their relations, and I see the way they feel, but I can't see myself acting the same way.</p>
+<p>See, I'll be getting married at the end of this summer.</p>
+<p>ŚRĪLA PRABHUPĀDA: Hm-m?</p>
+<p>BOB: I'll be getting married at the end of this summer, in September or August when I return to America.</p>
+<p>And the devotees say that the householders only have sex to conceive a child, and I cannot picture myself at all in such a position, and— What kind of sex life can one lead, living in the material world?</p>
+<p>ŚRĪLA PRABHUPĀDA: The Vedic principle is that one should avoid sex life altogether.</p>
+<p>The whole Vedic principle is to get liberation from material bondage.</p>
+<p>There are different attachments for material enjoyment, of which sex life is the topmost enjoyment.</p>
+<p>The Bhāgavatam says that this material world ...</p>
+<p>puṁsaḥ striyā mithunī-bhāvam etam Man is attached to woman, and woman is attached to man.</p>
+<p>Not only in human society—in animal society also.</p>
+<p>That attachment is the basic principle of material life.</p>
+<p>So, a woman is hankering or seeking after the association of a man, and a man is hankering or seeking for the association of a woman.</p>
+<p>All the fiction novels, dramas, cinema and even ordinary advertisements that you see simply depict the attachment between man and woman.</p>
+<p>Even in the tailor's shop you will find in the window some woman and some man.</p>
+<p>pravṛttir eṣā bhūtānāṁ nivṛttis tu mahāphalām So this attachment is already there.</p>
+<p>BOB: Attachment between man and woman?</p>
+<p>ŚRĪLA PRABHUPĀDA: Man and woman.</p>
+<p>So if you want to get liberation from this material world, then that attachment should be reduced to nil.</p>
+<p>Otherwise, simply further attachment—You will have to take rebirth, either as a human being or as a demigod or as an animal, as a serpent, as a bird, as a beast.</p>
+<p>You will have to take birth.</p>
+<p>So, this basic principle of increasing attachment is not our business, although it is the general tendency.</p>
+<p>Gṛha, kṣetra, suta [home, land, sons].</p>
+<p>But if one can reduce and stop it, that is first class.</p>
+<p>Therefore our Vedic system is to first of all train a boy as a brahmacārī—no sex life.</p>
+<p>The Vedic principle is to reduce attachment, not to increase it.</p>
+<p>Therefore the whole system is called varṇāśramadharma.</p>
+<p>The Indian system calls for varṇa and āśrama—four social orders and four spiritual orders.</p>
+<p>Brahmacarya [celibate student life], gṛhastha [married life], vānaprastha [retired life] and sannyāsa [renounced life]—these are the spiritual orders.</p>
+<p>And the social orders consist of brāhmaṇas [intellectuals], kṣatriyas [administrators], vaiśyas [merchants and farmers] and śūdras [ordinary workers].</p>
+<p>So under this system, the regulative principles are so nice that even if one has the tendency to enjoy material life, he is so nicely molded that at last he achieves liberation and goes back home, back to Godhead.</p>
+<p>This is the process.</p>
+<p>So sex life is not required, but because we are attached to it, therefore there are some regulative principles under which it is maintained.</p>
+<p>[Chanting starts somewhere in the background, with exotic mṛdaṅga drumbeats amidst laughing and the loud blowing of horns.]</p>
+<p>ŚRĪLA PRABHUPĀDA: It is said in Śrīmad-Bhāgavatam that— puṁsaḥ striyā mithunī-bhāvam etaṁ tayor mitho hṛdaya-granthim āhuḥ ato gṛha-kṣetra-sutāpta-vittair janasya moho 'yam ahaṁ mameti [Bhāg.5.5.8] This sex life is the basic principle of material life—attachment for man or woman.</p>
+<p>And when they are united, when a man and woman are united, that attachment becomes increased, and that increased attachment will induce one to accumulate gṛha (a home), kṣetra (land), suta (children), āpta (friendship or society) and vitta.</p>
+<p>Vitta means money.</p>
+<p>In this way—gṛha-kṣetra-sutāpta-vittaiḥ—he becomes entangled.</p>
+<p>janasya moho 'yam: this is the illusion.</p>
+<p>And by this illusion he thinks, ahaṁ mameti: &quot;I am this body, and anything in relationship with this body is mine.&quot;</p>
+<p>BOB: What is that again?</p>
+<p>ŚRĪLA PRABHUPĀDA: This attachment increases.</p>
+<p>The material attachment involves thinking, &quot;I am this body, and because I have this body in a particular place, that is my country.&quot; And that is going on: &quot;I am American, I am Indian, I am German, I am this, I am that—this body.</p>
+<p>This is my country.</p>
+<p>I shall sacrifice everything for my country and society.&quot; So in this way, the illusion increases.</p>
+<p>And under this illusion, when he dies he gets another body.</p>
+<p>That may be a superior body or inferior body, according to his karma.</p>
+<p>So if he gets a superior body, then that is also an entanglement, even if he goes to the heavenly planets.</p>
+<p>But if he becomes a cat or dog, then his life is lost.</p>
+<p>Or a tree—there is every chance of it.</p>
+<p>So this science is not known in the world—how the soul is transmigrating from one body to another, and how he is being entrapped in different types of bodies.</p>
+<p>This science is unknown.</p>
+<p>Therefore when Arjuna was speaking—&quot;If I kill my brother, if I kill my grandfather on the other side ....&quot;—he was simply thinking on the basis of the bodily concept of life.</p>
+<p>But when his problems could not be solved, he surrendered to Kṛṣṇa and accepted Him as spiritual master.</p>
+<p>And when Kṛṣṇa became his spiritual master, He chastised Arjuna in the beginning: aśocyān anvaśocas tvaṁ prañṣā-vādāṁś ca bhāṣase gatāsūn agatāsūṁś ca nānuśocanti paṇḍitāḥ &quot;You are talking like a learned man, but you are fool number one because you are talking about the bodily concept of life.&quot; So this sex life increases the bodily concept of life.</p>
+<p>Therefore, the whole process is to reduce it to nil.</p>
+<p>BOB: To reduce it over the stages of your life?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>Reduce it.</p>
+<p>A boy is trained as a student up to twenty-five years, restricting sex life.</p>
+<p>Brahmacārī.</p>
+<p>So, some of the boys remain naiṣṭhika-brahmacārī [celibate for life].</p>
+<p>Because they are given education and they become fully conversant with spiritual knowledge, they don't want to marry.</p>
+<p>That is also restricted—he cannot have sex life without being married.</p>
+<p>Therefore in human society there is marriage, not in animal society.</p>
+<p>But people are gradually descending from human society to animal society.</p>
+<p>They are forgetting marriage.</p>
+<p>That is also predicted in the śāstras.</p>
+<p>Dāmpatye 'bhirucir hetuḥ: in the Kali-yuga [the present age of quarrel], eventually there will be no marriage performances; the boy and the girl will simply agree to live together, and their relationship will exist on sexual power.</p>
+<p>If the man or the woman is deficient in sex life, then there is divorce.</p>
+<p>So, for this philosophy there are many Western philosophers like Freud and others who have written so many books.</p>
+<p>But according to Vedic culture, we are interested in sex only for begetting children, that's all.</p>
+<p>Not to study the psychology of sex life.</p>
+<p>There is already natural psychology for that.</p>
+<p>Even if one does not read any philosophy, he is sexually inclined.</p>
+<p>Nobody is taught it in the schools and colleges.</p>
+<p>Everyone already knows how to do it.</p>
+<p>[He laughs.] That is the general tendency.</p>
+<p>But education should be given to stop it.</p>
+<p>That is real education.</p>
+<p>[There is a long pause, filled with the sound of bicycle horns, children playing, and throngs of people calling to one another.]</p>
+<p>BOB: Presently, in America, that's a radical concept.</p>
+<p>ŚRĪLA PRABHUPĀDA: Well, in America there are so many things that require reformation, and this Kṛṣṇa consciousness movement will bring that.</p>
+<p>I went to your country and saw that the boys and girls were living like friends, so I said to my students, &quot;You cannot live together as friends; you must get yourselves married.&quot;</p>
+<p>BOB: Many people see that even marriage is not sacred, so they find no desire to marry.</p>
+<p>Because people get married, and if things are not proper, they get a divorce so very easily—</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, that also.</p>
+<p>BOB: —that some people feel that to get married is not meaningful.</p>
+<p>ŚRĪLA PRABHUPĀDA: No, their idea is that marriage is for legalized prostitution.</p>
+<p>They think like that, but that is not marriage.</p>
+<p>Even that Christian paper —what is that? Watch—?</p>
+<p>ŚYĀMASUNDARA: Watchtower?</p>
+<p>ŚRĪLA PRABHUPĀDA: Watchtower.</p>
+<p>It has criticized that one priest has allowed a marriage between two men—homosexuality.</p>
+<p>So these things are all going on.</p>
+<p>They take it purely for prostitution, that's all.</p>
+<p>So therefore people are thinking, &quot;What is the use of keeping a regular prostitute at such heavy expenditure? Better not to have this.&quot;</p>
+<p>ŚYĀMASUNDARA: You use that example of the cow and the market.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes—when the milk is available in the marketplace, what is the use of keeping a cow? [Everyone laughs.] It is a very abominable condition in the Western countries—I have seen it.</p>
+<p>Here also in India, gradually it is coming.</p>
+<p>Therefore we have started this Kṛṣṇa consciousness movement to educate people in the essential principles of spiritual life.</p>
+<p>It is not a sectarian religious movement.</p>
+<p>It is a cultural movement for everyone's benefit.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

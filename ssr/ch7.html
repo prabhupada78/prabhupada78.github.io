@@ -1,0 +1,981 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch7 - Science of Self-Realization</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Foreword</a></li><li class="affix"><a href="intro.html">Introduction</a></li><li class="affix"><a href="ch1.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html" class="active">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Science of Self-Realization</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#exploring-the-spiritual-frontier" id="exploring-the-spiritual-frontier">Exploring the Spiritual Frontier</a></h1>
+<h2><a class="header" href="#srila-prabhupada-arrives-in-america" id="srila-prabhupada-arrives-in-america">Srila Prabhupada Arrives in America</a></h2>
+<p>Several years after Srila Prabhupada first arrived in America, a disciple discovered the diary he had kept during his passage from India on the steamship Jaladuta.</p>
+<p>Inside was a poem, handwritten in Bengali, that Srila Prabhupada had written on board the ship just after it had arrived in Boston harbor.</p>
+<p>The poem beautifully captures Srila Prabhupada's first impressions of Western civilization and reveals his heartfelt determination to change the consciousness of America.</p>
+<p>My dear Lord Krishna, You are so kind upon this useless soul, but I do not know why You have brought me here.</p>
+<p>Now You can do whatever You like with me.</p>
+<p>But I guess You have some business here, otherwise why would You bring me to this terrible place? Most of the population here is covered by the material modes of ignorance and passion.</p>
+<p>Absorbed in material life, they think themselves very happy and satisfied, and therefore they have no taste for the transcendental message of Vasudeva.</p>
+<p>I do not know how they will be able to understand it.</p>
+<p>But I know Your causeless mercy can make everything possible, because You are the most expert mystic.</p>
+<p>How will they understand the mellows of devotional service? O Lord, I am simply praying for Your mercy so that I will be able to convince them about Your message.</p>
+<p>All living entities have become under the control of the illusory energy by Your will, and therefore, if You like, by Your will they can also be released from the clutches of illusion.</p>
+<p>I wish that You may deliver them.</p>
+<p>Therefore if You so desire their deliverance, then only will they be able to understand Your message.</p>
+<p>The words of the Srimad-Bhagavatam are Your incarnation, and if a sober person repeatedly receives them with submissive aural reception, then he will be able to understand Your message.</p>
+<p>It is said in the Srimad-Bhagavatam (1.2.17-21): &quot;Sri Krishna, the Personality of Godhead, who is the Paramatma [Supersoul] in everyone's heart and the benefactor of the truthful devotee, cleanses desire for material enjoyment from the heart of the devotee who relishes His messages, which are in themselves virtuous when properly heard and chanted.</p>
+<p>By regularly hearing the Bhagavatam and rendering service unto the pure devotee, all that is troublesome to the heart is practically destroyed, and loving service unto the glorious Lord, who is praised with transcendental songs, is established as an irrevocable fact.</p>
+<p>At the time loving service is established in the heart, the modes of passion [rajas] and ignorance [tamas], and lust and desire [kama] disappear from the heart.</p>
+<p>Then the devotee is established in goodness and he becomes happy.</p>
+<p>Thus established in the mode of goodness, the man rejuvenated by loving service to the Lord gains liberation from material association [mukti] and comes to know scientifically of the Personality of Godhead.</p>
+<p>Thus the knots of the heart and all misgivings are cut to pieces.</p>
+<p>The chain of fruitive actions [karma] is terminated when one sees the self as master.&quot; He will become liberated from the influence of the modes of ignorance and passion and thus all inauspicious things accumulated in the core of the heart will disappear.</p>
+<p>How will I make them understand this message of Krishna consciousness? I am very unfortunate, unqualified, and the most fallen.</p>
+<p>Therefore I am seeking Your benediction so that I can convince them, for I am powerless to do so on my own.</p>
+<p>Somehow or other, O Lord, You have brought me here to speak about You.</p>
+<p>Now, my Lord, it is up to You to make me a success or failure as You like.</p>
+<p>O spiritual master of all the worlds! I can simply repeat Your message, so if You like You can make my power of speaking suitable for their understanding.</p>
+<p>Only by Your causeless mercy will my words become pure.</p>
+<p>I am sure that when this transcendental message penetrates their hearts they will certainly feel engladdened and thus become liberated from all unhappy conditions of life.</p>
+<p>O Lord, I am just like a puppet in Your hands.</p>
+<p>So if You have brought me here to dance, then make me dance, make me dance.</p>
+<p>O Lord, make me dance as You like.</p>
+<p>I have no devotion, nor do I have any knowledge, but I have strong faith in the holy name of Krishna.</p>
+<p>I have been designated as Bhaktivedanta, and now, if You like, You can fulfill the real purport of Bhaktivedanta.</p>
+<p>Signed--the most unfortunate, insignificant beggar A.C.Bhaktivedanta Swami, on board the ship Jaladuta, Commonwealth Pier, Boston, Massachusetts, U.S.A.</p>
+<p>dated 18th of September, 1965</p>
+<h2><a class="header" href="#build-your-nation-on-the-spiritual-platform" id="build-your-nation-on-the-spiritual-platform">Build Your Nation on the Spiritual Platform</a></h2>
+<p>Asked to speak at the University of Nairobi in September 1972, Srila Prabhupada addressed an overflow crowd of students and government officials at the campus's Taifla (Independence) Hall.</p>
+<p>In his lecture he advised citizens of the developing nation of Kenya, &quot;... please develop spiritually, for spiritual development is sound development.</p>
+<p>Don't imitate the Americans and Europeans, who are living like cats and dogs.</p>
+<p>The atomic bomb is already there, and as soon as the next war breaks out, all their skyscrapers and everything else will be finished...&quot; Ladies and gentlemen, thank you very much for kindly coming here to participate in this meeting for spreading Krishna consciousness.</p>
+<p>The Krishna consciousness movement is trying to bring human society to the point where everyone's life can become successful.</p>
+<p>The subject today is the real meaning of human life.</p>
+<p>We are trying to instruct the entire world about this meaning.</p>
+<p>Human life is attained after many, many millions of years species of life according to the Padma Purana.</p>
+<p>Life began with the aquatics, for we can understand from Vedic literature that at the beginning of creation the entire planet was merged in water.</p>
+<p>This material world is composed of five gross elements--earth, water, fire, air, and ether.</p>
+<p>Besides these there are three subtle elements--mind, intelligence, and ego.</p>
+<p>Behind these curtains is the spirit soul, which is covered by these eight elements.</p>
+<p>This information is given in the Bhagavad-gita.</p>
+<p>Human beings are not the only living entities to have a spirit soul.</p>
+<p>We are all spirit souls--beasts, birds, reptiles, insects, trees, plants, aquatics, and so on.</p>
+<p>The spirit soul is simply covered by different dresses, just as some of you are dressed in white clothes, some in green, some in red, etc.</p>
+<p>But we are not concerned with the dress; we are concerned with you as spirit soul.</p>
+<p>Thus it is said in the Bhagavad-gita (5.18): vidya-vinaya-sampanne brahmane ga vi hastini suni caiva svapake ca panditah sama-darsinah &quot;The humble sage, by virtue of true knowledge, sees with equal vision a learned and gentle brahmana, a cow, an elephant, a dog, and a dog-eater.&quot; The sage does not make any distinction on the basis of color, intelligence, or species.</p>
+<p>He sees every living entity as a small particle of spirit soul.</p>
+<p>It is stated: kesagra-sata-bhagasya satamsah sadrsatmakah jivah suksma-svarupo 'yam sankhyatito hi cit-kanah &quot;There are innumerable particles of spiritual atoms, which are measured as one tenthousandth of the upper portion of a hair.&quot; Because we have no instrument to measure the dimensions of the spirit soul, the small particle of spirit soul is measured in this way.</p>
+<p>In other words, the soul is so small that it is smaller than an atom.</p>
+<p>That small particle is within you, within me, within the elephant, within gigantic animals, in all men, in the ant, in the tree, everywhere.</p>
+<p>However, scientific knowledge cannot estimate the dimensions of the soul, nor can a doctor locate the soul within the body.</p>
+<p>Consequently material scientists conclude that there is no soul, but that is not a fact.</p>
+<p>There is a soul.</p>
+<p>The presence of the soul makes a difference between a living body and a dead body.</p>
+<p>As soon as the soul departs from the body, the body dies.</p>
+<p>It has no value.</p>
+<p>However great a scientist or a philosopher one may be, he must admit that as soon as the soul departs from the body, the body dies.</p>
+<p>It then has no value and has to be thrown away.</p>
+<p>We should try to understand this; the soul is valuable, not the body.</p>
+<p>The fact that the soul is transmigrating is explained in the Bhagavad-gita (2.22): vasamsi jirnani yatha vihaya navani grhnati naro 'parani tatha sarirani vihaya jirnany anyani samyati navani dehi &quot;As a person puts on new garments, giving up old ones, similarly, the soul accepts new material bodies, giving up the old and useless ones.&quot; When a suit becomes old, we give it up and accept another suit; similarly the soul is changing dresses according to desire.</p>
+<p>Because the soul is part and parcel of God, it has godly qualities.</p>
+<p>God is the supreme will, the supreme power, the supreme independent one, and we, being part and parcel of Him, have all these qualities in minute quantity.</p>
+<p>We have willing, thinking, feeling, and desiring.</p>
+<p>In the Vedas it is stated that God is the supreme living force among all living forces (cetanas cetananam).</p>
+<p>He is also supplying the necessities of all living entities.</p>
+<p>We living entities are innumerable; there is no limit to our number.</p>
+<p>God, however, is one.</p>
+<p>He is also living, as we are but we are minute particles of that living force.</p>
+<p>For example, a particle of gold is the same in quality as a gold mine.</p>
+<p>If we chemically analyze the ingredients in a small drop of water, we will find all of the ingredients that are to be found in the vast ocean.</p>
+<p>In a similar way, we are one with God, being His part and parcel.</p>
+<p>This godly particle, the soul, or the living force, is transmigrating from aquatics to trees and plants and then from trees and plants to insect life, then to reptile life, then to the bodies of birds and beasts.</p>
+<p>Darwin's theory of evolution is but a partial explanation of the transmigration of the soul.</p>
+<p>Darwin has simply taken information from Vedic literature, but he has no conception of the soul.</p>
+<p>The difference is that the soul is transmigrating from aquatic life to plants and trees, then to insect life, then to bird life, then animal life, then human life, and within human life he moves from uncivilized life to civilized life, etc.</p>
+<p>The civilized life of a human being represents the culmination of evolution.</p>
+<p>Here is a junction: from this point we can again slide down into the cyclic process of evolution, or we can elevate ourselves to a godly life.</p>
+<p>The choice is up to us.</p>
+<p>This is indicated in the Bhagavad-gita.</p>
+<p>This human form of life actually means developed consciousness; therefore we should not waste our lives like cats, dogs, and hogs.</p>
+<p>That is the injunction.</p>
+<p>Although this body is perishable like a dog's or cat's body, it is different in that one can attain the highest perfection in this life.</p>
+<p>We are part and parcel of God, but somehow or other we have fallen into this material existence; now we have to evolve in such a way that we can go back home, back to Godhead.</p>
+<p>That is the highest perfection.</p>
+<p>There is actually another world, a spiritual world.</p>
+<p>As stated in the Bhagavad-gita (8.20): paras tasmat tu bhavo 'nyo 'vyakto 'vyaktat sanatanah yah sa sarvesu bhutesu nasyatsu na vinasyati &quot;Yet there is another nature, which is eternal and is transcendental to this manifested and unmanifested matter.</p>
+<p>It is supreme and is never annihilated.</p>
+<p>When all in this world is annihilated, that part remains as it is.&quot; In this material nature, everything is created, it stays for some time, produces some by-products, dwindles, and finally vanishes.</p>
+<p>Our bodies are created at a certain moment by sexual intercourse.</p>
+<p>The semen of the father emulsifies and takes a pea form, and the living entity, or soul, takes shelter in that form, and because it takes shelter, it develops hands, legs, eyes, etc.</p>
+<p>This development is complete in the seventh month, and in the ninth month the human being comes out of the womb.</p>
+<p>It is because the soul is present that the child develops.</p>
+<p>If the soul is not present, there is no development, and the child is born dead.</p>
+<p>We can take this dead body and preserve it in chemicals, but it will not develop.</p>
+<p>Development means change of body.</p>
+<p>All of us have had baby bodies, but those bodies are no longer existing.</p>
+<p>The body of a baby develops into the body of a child, and that body develops into the body of a boy, and that body develops into a youth's body, which eventually turns into an old man's body.</p>
+<p>Finally the body completely vanishes.</p>
+<p>The whole cosmic manifestation, the gigantic form of this material world, is also working according to this same process.</p>
+<p>It is created at a certain point, it develops, it is maintained, and at a certain stage it is dissolved.</p>
+<p>That is the nature of the material world.</p>
+<p>It is manifest at a certain interval, and again it vanishes (bhutva bhutva praliyate).</p>
+<p>The word bhava means &quot;nature.&quot; There is another nature, which never dissolves, which is eternal.</p>
+<p>As jivas, spirit souls, we are also eternal.</p>
+<p>This is verified in the Bhagavad-gita (2.20): na jayate mriyate va kadacin nayam bhutva bhavita va na bhuyah ajo nityah sasvato 'yam purano na hanyate hanyamane sarire &quot;For the soul there is neither birth nor death.</p>
+<p>Nor, having once been, does he ever cease to be.</p>
+<p>He is unborn, eternal, ever-existing, undying, and primeval.</p>
+<p>He is not slain when the body is slain.&quot; Just as God has no birth or death, we spirit souls can have neither birth nor death, but because we think, &quot;1 am this body,&quot; we consider that we are born and that we die.</p>
+<p>Such thinking is called maya, or illusion, and as soon as we get out of this illusion of identifying the soul with the body, we attain the stage called brahma-bhuta.</p>
+<p>When one realizes aham-brahmasmi, &quot;I am not this body; I am spirit soul, part and parcel of the Supreme Brahman,&quot; he attains what is called Brahman realization.</p>
+<p>As soon as Brahman realization is attained, one becomes happy.</p>
+<p>Is this not a fact? If you understand clearly that you have no birth and death, that you are eternal, will you not become happy? Yes, certainly.</p>
+<p>Thus when one is Brahman realized, spiritually realized, he has no more to do with hankering or lamentation.</p>
+<p>The whole world is simply hankering and lamenting.</p>
+<p>You African people are now hankering to be like Europeans and Americans, but the Europeans have lost their empire, and now they are lamenting.</p>
+<p>So in this way one party is hankering and another is lamenting.</p>
+<p>Similarly, this material life is simply a combination of hankering and lamenting.</p>
+<p>We are hankering for those things which we do not possess, and we are lamenting for those things which we have lost.</p>
+<p>That is our material business.</p>
+<p>If we realize, however, that we are part and parcel of the Supreme Personality of Godhead (Parabrahman) and that we are Brahman, then we will transcend this hankering and lamenting.</p>
+<p>The so-called universal brotherhood or unity that the United Nations is trying to achieve is possible only when you come to the spiritual platform, or Brahman realization.</p>
+<p>Brahman realization is the aim of human life.</p>
+<p>One should not work like cats, dogs, and hogs.</p>
+<p>The hog is always very busy day and night trying to find stool, and when he finds it, he eats it and becomes sexually agitated and has sex without discrimination.</p>
+<p>A hog will have sex with its mother or sister or anyone else, and this is a hog's life.</p>
+<p>However, the scriptures indicate that the human form of life is not meant for working hard for sense gratification like cats, dogs, and hogs.</p>
+<p>It is meant for realizing, &quot;I do not belong to this material world.</p>
+<p>I am spirit soul and am eternal, but somehow or other I have fallen into this conditional life of birth, old age, disease, and death.&quot; This human form of life is meant for making a solution to these four material miseries--birth, old age, disease, and death.</p>
+<p>That is the aim of human life.</p>
+<p>Just try to understand that human life is not meant for working very hard like hogs and then having some sense gratification and then all of a sudden dying.</p>
+<p>People who do not believe in the soul are in a most unfortunate condition.</p>
+<p>They do not know where they came from nor where they are going.</p>
+<p>Knowledge of the soul is the most important knowledge, but it is not discussed in any university.</p>
+<p>But what is the constitution of this body? What is the distinction between a dead body and a living body? Why is the body living? What is the condition of the body, and what is its value? No one is presently studying these questions, but by this Krishna consciousness movement we are trying to educate people so that they can understand that they are not these bodies but are spirit souls.</p>
+<p>The business of human life is different from the business of cats and dogs.</p>
+<p>That is our message.</p>
+<p>As far as the soul is concerned, the evolutionary process is going on, and we are struggling for existence, struggling to come to the point of eternal life.</p>
+<p>That eternal life is possible.</p>
+<p>If you try your best in this human form of life, in your next life you can get a spiritual body.</p>
+<p>Your spiritual body is already within you, and it will develop as soon as you become free from the contamination of this material existence.</p>
+<p>That is the aim of human life.</p>
+<p>People do not know what actual self-interest is; it is to realize oneself, to realize, &quot;I am part and parcel of God, and I have to return to the kingdom of God to join with God.&quot; Just as we have a social life here, God has a social life in the spiritual kingdom.</p>
+<p>You can join Him there.</p>
+<p>It is not that after this body is finished you become void.</p>
+<p>No.</p>
+<p>That is a wrong conception.</p>
+<p>In the Bhagavad-gita (2.12), Krishna told Arjuna on the Battlefield of Kuruksetra: na tv evaham jatu nasam na tvam neme janadhipah na caiva na bhavisyamah sarve vayam atah param &quot;Never was there a time when I did not exist, nor you, nor all these kings; nor in the future shall any of us cease to be.&quot; The process for attaining eternal life is very easy, and yet at the same time very difficult.</p>
+<p>It is difficult because people in the beginning do not believe in the existence of transmigration of the soul.</p>
+<p>However, if we simply take knowledge from the authorities, the process becomes very simple.</p>
+<p>Our process of Krishna consciousness is to take knowledge from Krishna, the most perfect being, and not from an ordinary being conditioned by the laws of material nature.</p>
+<p>Knowledge taken from a conditioned being is sure to be defective.</p>
+<p>What are the defects of the conditioned soul? He is sure to commit mistakes, sure to be illusioned, sure to cheat others, and sure to have imperfect senses.</p>
+<p>We cannot attain knowledge perfectly, because we want to cheat others and our senses are imperfect.</p>
+<p>Although our senses are imperfect, we are very proud of our eyes, and we want to see everything.</p>
+<p>Therefore someone says, &quot;Can you show me God?&quot; Actually the answer is yes.</p>
+<p>Why can't you see God at every moment? Krishna says, raso 'ham apsu kaunteya: &quot;I am the taste of water.&quot; Everyone drinks water, and the taste is there--so if we think of this taste as God, we begin the process of God realization.</p>
+<p>Krishna also says, prabhasmi sasi-suryayoh: &quot;I am the sunshine, and I am the moonshine.&quot; We all see the sunshine and moonshine every day, and if we think of how it is that the sun and moon are emanating light, we will ultimately reach God.</p>
+<p>There are so many similar instances.</p>
+<p>If you want to be God conscious and realize God yourself, it is not very difficult.</p>
+<p>You have simply to follow the prescribed methods.</p>
+<p>As stated in the Bhagavadgita (18.55), tato mam-tattvato jnatva.</p>
+<p>We must simply try to understand God in truth and try to understand His appearance, disappearance, and functions.</p>
+<p>When we understand Him in truth, we immediately enter the kingdom of God.</p>
+<p>After quitting this body, the person who understands God, or Krishna, does not come back again to accept another material body.</p>
+<p>Krishna says, mam eti: &quot;He comes to Me.&quot; That is our aim.</p>
+<p>Therefore we should not waste our time living like cats and dogs.</p>
+<p>We should live comfortably, but at the same time we should be Krishna conscious, or God conscious.</p>
+<p>That will help us become happy.</p>
+<p>Without understanding God and without becoming God conscious, there is no possibility of peace and happiness.</p>
+<p>The way of peace and happiness is outlined in the Bhagavad-gita.</p>
+<p>If you really want to understand God, He is very easy to understand.</p>
+<p>God is the proprietor of everything.</p>
+<p>Isavasyam idam sarvam.</p>
+<p>Unfortunately we are thinking, &quot;I am the proprietor.&quot; In your country, for instance, the British have sometimes claimed to be proprietors, and now you are claiming to be the proprietors--so who knows what will happen in the future? Actually no one knows who the real proprietor is.</p>
+<p>The land is there, and it is the property of God, but we are simply thinking, &quot;I am the proprietor.</p>
+<p>I own this, and I own that.&quot; Actually, America existed before the Europeans came, but now the Americans are thinking, &quot;We are the proprietors.&quot; Similarly, before them the Red Indians were thinking, &quot;We are the proprietors.&quot; The fact is that no man is an actual proprietor; the proprietor is God.</p>
+<p>isavasyam idam sarvam yat kim ca jagatyam jagat tena tyaktena bhunjitha ma grdhah kasya svid dhanam &quot;Everything animate or inanimate that is within the universe is controlled and owned by the Lord.</p>
+<p>One should therefore accept only those things necessary for himself, which are set aside as his quota, and one should not accept other things, knowing well to whom they belong.&quot; (Isopanisad, Mantra 1) This realization is wanting.</p>
+<p>Krishna claims proprietorship over all forms--including American forms, African forms, cat forms, dog forms, tree forms, etc.--for in actuality He is the proprietor and the supreme father.</p>
+<p>If we simply realize this, we attain God realization.</p>
+<p>Actually, if we realize God as prescribed in the authorized books and Vedic literatures, we will find that there will no longer be quarrels between this party and that party.</p>
+<p>Everything will be peaceful.</p>
+<p>Everyone has the right to use God's property, just as a son has the right to live at the cost of his father.</p>
+<p>It is stated in the scriptures that even a small animal in the home must be given some food.</p>
+<p>That is spiritual communism.</p>
+<p>No one should remain hungry, not even a serpent.</p>
+<p>We are always afraid of serpents, but if we find a serpent to be living in our house, it is our duty to see that the serpent is also fed.</p>
+<p>This is the conception of God consciousness, or Krishna consciousness: samah sarvesu bhutesu.</p>
+<p>One who is transcendentally situated is equally disposed to every living entity.</p>
+<p>Thus the Bhagavad-gita points out that when one sees everyone equally, as part and parcel of the Supreme Lord, one actually begins his devotional life.</p>
+<p>This Krishna consciousness movement is trying in an authoritative way to make everyone understand what he is and what the aim of life is.</p>
+<p>This process of purification of the heart is very easily accomplished.</p>
+<p>One simply has to chant this maha-mantra--Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare.</p>
+<p>Hare Rama, Hare Rama, Rama Rama, Hare Hare.</p>
+<p>It can actually be seen that in this movement there are boys and girls from different countries and different religions, but no one is concerned with any particular section, country, or religious body.</p>
+<p>We are simply concerned about knowing ourselves and our relationship with God.</p>
+<p>God is the supreme proprietor, and we are all His sons, or servitors.</p>
+<p>Therefore let us engage ourselves in the service of the Lord, as recommended in the Bhagavad-gita.</p>
+<p>As soon as we understand that God is the proprietor of everything, then all the troubles of the world will immediately be solved.</p>
+<p>This may take some time.</p>
+<p>It is not expected that everyone will understand this high philosophy, but if the intelligent people in every country try to understand it, that will be sufficient.</p>
+<p>In the Bhagavad-gita (3.21) it is stated: yad yad acarati sresthas tat tad evetaro janah sa yat pramanam kurute lokas tad anuvartate &quot;Whatever action a great man performs, common men follow in his footsteps.</p>
+<p>And whatever standards he sets by exemplary acts, all the world pursues.&quot; We therefore invite the most intelligent men in the world to understand this Krishna conscious philosophy and try to distribute it all over the world.</p>
+<p>We have now come to these African countries, and I invite all intelligent Africans to come and understand this philosophy and distribute it.</p>
+<p>You are trying to develop yourselves, so please develop spiritually, for spiritual development is sound development.</p>
+<p>Don't imitate the Americans and Europeans, who are living like cats and dogs.</p>
+<p>Such civilizations built on the consciousness of sense gratification cannot stand.</p>
+<p>The atomic bomb is already there, and as soon as the next war breaks out, all their skyscrapers and everything else will be finished.</p>
+<p>Try to understand this from the real viewpoint of human life, the spiritual viewpoint.</p>
+<p>This is what this Krishna consciousness movement is about.</p>
+<p>We therefore request you to try to understand this philosophy.</p>
+<p>Thank you very much.</p>
+<h2><a class="header" href="#saintly-compassion" id="saintly-compassion">Saintly Compassion</a></h2>
+<p>Every religion has its own saints, but all saints share one transcendent spiritual quality: compassion.</p>
+<p>Srila Prabhupada explains... Today I shall speak to you about the glorification of the holy name of God.</p>
+<p>This was discussed between Maharaja Pariksit and Sukadeva Gosvami in connection with a brahmana who was very fallen and addicted to all kinds of sinful activities but was saved simply by chanting the holy name.</p>
+<p>This is found in the Sixth Canto of the SrimadBhagavatam.</p>
+<p>The universal planetary systems are very nicely explained in the fifth Canto of the Srimad-Bhagavatam.</p>
+<p>Within the universe there are some planets which are hellish.</p>
+<p>Actually, not only the Bhagavatam but all religious scriptures contain descriptions of hell and heaven.</p>
+<p>In the Srimad-Bhagavatam you can find out where those hellish planets are and how distant they are from this planet, just as you can obtain information from modern astronomy.</p>
+<p>Astronomers have calculated how far the moon is from here and what the distance is between this planet and the sun; similarly, the Bhagavatam contains descriptions of the hellish planets.</p>
+<p>We have experience of different atmospheric conditions even on this planet.</p>
+<p>In the Western countries near the North Pole, the climate is different than in India, which is near the equator.</p>
+<p>Just as there are differences in atmosphere and living conditions on this planet, similarly there are many planets which have different atmospheres and conditions of life.</p>
+<p>After hearing a description of the hellish planets from Sukadeva Gosvami, Pariksit Maharaja said, adhuneha maha-bhaga yathaiva narakan narah nanogra-yatanan neyat tan me vyakhyatum arhasi &quot;Sir, I have heard from you about the hellish planets.</p>
+<p>Men who are very sinful are sent to those planets.&quot; (Srimad-Bhagavatam 6.1.6) Pariksit Maharaja is a Vaisnava [devotee], and a Vaisnava always feels compassion for others' distress.</p>
+<p>He is very afflicted by the miseries of others.</p>
+<p>When Lord Jesus Christ presented himself, for instance, he was greatly afflicted by the miserable conditions of the people.</p>
+<p>Regardless of which country or sect they belong to, all Vaisnavas, or devotees--any people who are God conscious, or Krishna conscious--are thus compassionate.</p>
+<p>Therefore to blaspheme a Vaisnava, a preacher of God's glories, is a great offense.</p>
+<p>Krishna, God, is never tolerant of offenses committed at the lotus feet of a Vaisnava.</p>
+<p>Krpambudhi: a Vaisnava is an ocean of mercy.</p>
+<p>Vancha-kalpa-taru: everyone has desires, but a Vaisnava can fulfill all desires.</p>
+<p>Kalpa-taru means &quot;desire tree.&quot; There is a tree in the spiritual world which is called a desire tree.</p>
+<p>In this material world, you get a particular type of fruit from a particular type of tree, but in Krishnaloka as well as in all the Vaikuntha planets, all the trees are spiritual and will fulfill all your desires.</p>
+<p>That is described in the Brahma-samhita: cintamani-prakara-sadmasu kalpa-vrksa.</p>
+<p>A Vaisnava is addressed as maha-bhaga, which means &quot;fortunate.&quot; One who becomes a Vaisnava and is God conscious is understood to be greatly fortunate.</p>
+<p>Caitanya Mahaprabhu has explained that the living entities are rotating in different species of life, in different planetary systems all over the universe.</p>
+<p>A living entity can go anywhere--to hell or heaven--as he likes and as he prepares himself.</p>
+<p>There are many heavenly planets, many hellish species of life.</p>
+<p>The living entity is rotating, wandering through these species and creating bodies according to his mentality in the present life.</p>
+<p>As you sow, so shall you reap.</p>
+<p>Caitanya Mahaprabhu says that out of all these numberless living entities who are traveling in the material world, one is fortunate, not everyone.</p>
+<p>If everyone were fortunate, they would all have taken to Krishna consciousness.</p>
+<p>It is being distributed freely everywhere.</p>
+<p>But why are people not taking it? Because they are unfortunate.</p>
+<p>Therefore Caitanya Mahaprabhu says that only those who are fortunate take to this Krishna consciousness, and they get hopeful life, pleasant life, blissful life, a life of knowledge.</p>
+<p>It is the duty of a Vaisnava to go door to door to make the unfortunate people fortunate.</p>
+<p>A Vaisnava thinks, &quot;How can these people be delivered from their hellish life?&quot; That was Pariksit Maharaja's inquiry.</p>
+<p>&quot;Sir,&quot; he said, &quot;you have described that on account of one's sinful activities one is put into a hellish condition of life or in a hellish planetary system.</p>
+<p>Now, what are the countermethods by which such persons can be saved?&quot; This is the question.</p>
+<p>When a Vaisnava comes, when God Himself comes, or when God's son or His very confidential devotees come, their only mission is to save the sinful men who are suffering.</p>
+<p>They have knowledge of how to do this.</p>
+<p>When Prahlada Maharaja met Nrsimhadeva, he said: naivodvije para duratyaya vaitaranyas tvad-virya-gayana-mahamrta-magna-cittah soce tato vimukha-cetasa indriyarthamaya-sukhaya bharam udvahato vimudhan &quot;My dear Lord,&quot; Prahlada says, &quot;I am not very anxious for my own deliverance.&quot; (Bhag.7.9.43) Mayavadi philosophers are very careful that their personal salvation is not interrupted.</p>
+<p>They think, &quot;If I go to preach in association with others, I may fall down, and my realization will be finished.&quot; Therefore they do not come.</p>
+<p>Only the Vaisnavas come, at the risk of falldown--but they do not fall down.</p>
+<p>They may even go to hell to deliver the conditioned souls.</p>
+<p>This is Prahlada Maharaja's mission.</p>
+<p>He says, naivodvije: &quot;I am not very anxious about living in this material world.&quot; Prahlada Maharaja says further, &quot;I have no anxiety for myself, because somehow or other I have been trained to be always Krishna conscious.&quot; Because he is Krishna conscious, he is confident that in his next life he is going to Krishna.</p>
+<p>It is stated in the Bhagavad-gita that if one executes the Krishna conscious regulative principles carefully, it is certain that he will reach the supreme destination in his next life.</p>
+<p>Prahlada Maharaja continues: &quot;There is only one source of anxiety for me.&quot; Just see--although he had no anxiety for himself, he still had anxiety.</p>
+<p>He says, soce tato vimukha-cetasah: &quot;I am anxious for those persons who are not Krishna conscious.</p>
+<p>That is my anxiety.</p>
+<p>for myself I have no anxiety, but I am thinking of those who are not Krishna conscious.&quot; Why aren't they Krishna conscious? Maya-sukhaya bharam udvahato vimudhan.</p>
+<p>These rascals have created a humbug civilization for temporary happiness.</p>
+<p>Maya-sukhaya.</p>
+<p>Actually this is a fact.</p>
+<p>We have a humbug civilization.</p>
+<p>So many cars are being manufactured every year, and for that purpose so many roads have to be excavated and prepared.</p>
+<p>This creates problem after problem.</p>
+<p>Therefore it is mayasukhaya, illusory happiness, and yet we are trying to be happy in this way.</p>
+<p>We are trying to manufacture some way to be happy, but this only creates other problems.</p>
+<p>In your country you have the greatest number of cars, but that does not solve any problems.</p>
+<p>You have manufactured cars to help solve the problems of life, but I have experienced that this also creates more problems.</p>
+<p>When my disciple Dayananda wanted to take me to a doctor in Los Angeles, I had to take the trouble to travel thirty miles before I could even consult the doctor.</p>
+<p>Once you create cars, then you must travel thirty or forty miles to meet your friends.</p>
+<p>You can fly from New York to Boston in one hour, but it takes even longer than that just to get to the airport.</p>
+<p>This situation is called maya-sukhaya.</p>
+<p>Maya means &quot;false,&quot; &quot;illusory.&quot; We are trying to create some very comfortable situation, but we have created another uncomfortable situation.</p>
+<p>This is the way of the material world; if we are not satisfied by the natural comforts offered by God and nature and we want to create artificial comforts, then we have to create some discomfort also.</p>
+<p>Most people do not know that.</p>
+<p>They think that they are creating a very comfortable situation, but actually they are traveling fifty miles to go to the office to earn a livelihood and fifty miles to come back.</p>
+<p>Because of such conditions, Prahlada Maharaja says that these vimudhans-these materialistic persons, these rascals--have created an unnecessary burden on themselves simply for temporary happiness.</p>
+<p>Vimudhan, maya-sukhaya bharam udvahato.</p>
+<p>Therefore, in Vedic civilization it is recommended that one free himself from material life, take sannyasa, the renounced order of life, and prosecute spiritual life with absolutely no anxiety.</p>
+<p>If one can execute Krishna consciousness in family life, that is very good.</p>
+<p>Bhaktivinoda Thakura was a family man, a magistrate.</p>
+<p>and still he executed devotional service so nicely.</p>
+<p>Dhruva Maharaja and Prahlada Maharaja were grhasthas, householders, but they trained themselves in such a way that even as householders they were faced with no interruption in their service.</p>
+<p>Therefore, Prahlada Maharaja says, &quot;I have learned the art of always remaining in Krishna consciousness.&quot; What is that art? Tvad-virya-gayana-mahamrta-magna-cittah.</p>
+<p>Simply glorifying the victorious activities and pastimes of the Lord.</p>
+<p>Virya means &quot;very heroic.&quot; Krishna's activities are heroic.</p>
+<p>You can read about them in Krishna, the Supreme Personality of Godhead.</p>
+<p>Krishna's name, His fame, His activities, His associates, and all other things related to Him are heroic.</p>
+<p>Prahlada Maharaja says in this connection, &quot;I am certain that wherever I go, I can glorify Your heroic activities and be safe.</p>
+<p>There is no question of my falling down.</p>
+<p>But I am simply anxious for these persons who have created a type of civilization in which they are always busy working hard.</p>
+<p>I am thinking of them.&quot; Prahlada says further: prayena deva munayah sva-vimukti-kama maunam caranti vijane na parartha-nisthah naitan vihaya krpanan vimumuksa eko nanyam tvad asya saranam bhramato 'nupasye &quot;My dear Lord, there are many saintly persons and sages who are very interested in their own liberation.&quot; (Bhag.7.9.44) Munayah means &quot;saintly persons&quot; or &quot;philosophers.&quot; Prayena deva munayah sva-vimukti-kamah: they are very interested in their own liberation.</p>
+<p>They try to live in solitary places like the Himalaya Mountains.</p>
+<p>They do not talk to anyone, and they are always afraid of mixing with ordinary people in the city and becoming disturbed or maybe even falling down.</p>
+<p>They think, &quot;Better let me save myself.&quot; Prahlada Maharaja regrets that these great saintly persons do not come to the city, where people have manufactured a civilization of very hard work all day and night.</p>
+<p>Such saints are not very compassionate.</p>
+<p>He says, &quot;I am anxious for these fallen people who are unnecessarily working so hard simply for sense gratification.&quot; Even if there were some point in working that hard, such people do not know what it is.</p>
+<p>All they know is sex.</p>
+<p>Either they go to a naked dance or to a naked club or to this or that.</p>
+<p>Prahlada Maharaja says, naitan vihaya krpanan vimumuksa ekah: &quot;My Lord, I do not need salvation alone.</p>
+<p>Unless I take all these fools with me, I shall not go.&quot; He refuses to go to the kingdom of God without taking all these fallen souls with him.</p>
+<p>This is a Vaisnava.</p>
+<p>Nanyam tvad asya saranam bhramato 'nupasye: &quot;I simply want to teach them how to surrender unto You.</p>
+<p>That's all.</p>
+<p>That is my goal.&quot; The Vaisnava knows that as soon as one surrenders, one's path is clear.</p>
+<p>Naivodvije para duratyaya-vaitaranyas tvad-virya-gayana-mahamrta-magna-cittah: ' 'Somehow or other, let them bow down before Krishna.&quot; This is a simple method.</p>
+<p>All you have to do is bow down before Krishna with faith and say, &quot;My Lord Krishna, I was forgetful of You for so long, for so many lives.</p>
+<p>Now I have come to consciousness; please accept me.&quot; That's all.</p>
+<p>If one simply learns this technique and sincerely surrenders himself to the Lord, his path is immediately open.</p>
+<p>These are the philosophical thoughts of a Vaisnava.</p>
+<p>A Vaisnava is always thinking about how the fallen conditioned souls can be delivered.</p>
+<p>He is always involved in making plans in that way, just like the Gosvamis.</p>
+<p>What was the business of the six Gosvamis of Vrndavana, Lord Caitanya's direct disciples? That is stated by Srinivasa Acarya: nana-sastra-vicaranaika-nipunau sad-dharma-samsthapakau lokanam hita-karinau tribhuvane manyau saranyakarau radha-Krishna-padaravinda-bhajananandena mattalikau vande rupa-sanatanau raghu-yugau sri-jiva-gopalakau &quot;The six Gosvamis, namely, Sri Sanatana Gosvami, Sri Rupa Gosvami, Sri Raghunatha Bhatta Gosvami, Sri Raghunatha dasa Gosvami, Sri Jiva Gosvami, and Sri Gopala Bhatta Gosvami, are very expert in scrutinizingly studying the revealed scriptures with the aim of establishing eternal religious principles for the benefit of all human beings.</p>
+<p>They are always absorbed in the mood of the gopis and are engaged in the transcendental loving service of Radha and Krishna.&quot; (Sad-gosvamy-astaka 2) With similar Vaisnava compassion, Pariksit Maharaja says to Sukadeva Gosvami: &quot;You have described the different types of hellish conditions of life.</p>
+<p>Now, tell me how those who are suffering can be delivered.</p>
+<p>Kindly explain this to me.</p>
+<p>adhuneha maha-bhaga yathaiva narakan narah nanogra-yatanan neyat tan me vyakhyatum arhasi Nara means human beings, those who are fallen.</p>
+<p>Narakan narah.</p>
+<p>nanogra-yatanan neyat tan me: &quot;How can they be delivered from their fierce miseries and horrible pains?&quot; That is a Vaisnava heart.</p>
+<p>Maharaja Pariksit says, &quot;Somehow or other they have fallen down to this hellish life.</p>
+<p>But that does not mean that they should remain in that condition.</p>
+<p>There must be some means by which they can be delivered, so kindly explain that.&quot; Sukadeva Gosvami replied: na ced ihaivapacitim yathamhasah krtasya kuryan mana-ukta-panibhih dhruvam sa vai pretya narakan upaiti ye kirtita me bhavatas tigma-yatanah &quot;Yes, I've already described the different types of hellish conditions and very severe painful life, but one has to counteract it.&quot; (Bhag.6.1.7) How can this be done? Sinful activities are committed in various ways.</p>
+<p>We can commit sinful activity or thus make a plan, thinking, &quot;I shall kill that man.&quot; Either way, it is sinful.</p>
+<p>When the mind is thinking, feeling, and willing, then there is action.</p>
+<p>The other day I was reading in a book that if someone's dog barks at you when you are passing on the road, then that is an offense on the part of the dog-owner, according to law.</p>
+<p>No one should have to be scared by dogs barking, so one should take care of his dog.</p>
+<p>I read this.</p>
+<p>It is a law in your country.</p>
+<p>The dog is simply barking, but it is sinful.</p>
+<p>The dog is not responsible, because it is an animal, but because the owner of the animal has made the dog his best friend, he is responsible by law.</p>
+<p>If an outside dog enters your house, it may not be killed, but the owners of the dog may be prosecuted.</p>
+<p>Just as the barking of the dog is unlawful, so when you speak something offensive to others, that is also sinful.</p>
+<p>That is just like barking.</p>
+<p>Therefore sinful activities are committed in so many ways.</p>
+<p>Whether we think of sinful activities, or we speak something sinful, or we actually commit a sinful activity, they are all considered sinful activities.</p>
+<p>Dhruvam sa vai pretya narakan upaiti.</p>
+<p>One has to suffer punishment for such sinful activities.</p>
+<p>People do not believe in a next life, because they want to avoid this botheration.</p>
+<p>But we cannot avoid it.</p>
+<p>We must act according to the law, or we will be punished.</p>
+<p>Similarly, I cannot avoid God's law.</p>
+<p>That is not possible.</p>
+<p>I can cheat others, commit theft, and hide myself, thereby saving myself from the punishment of the state law, but I cannot save myself from the superior law, the law of nature.</p>
+<p>It is very difficult.</p>
+<p>There are so many witnesses.</p>
+<p>The daylight is witness, the moonlight is witness, and Krishna is the supreme witness.</p>
+<p>You cannot say, &quot;I am committing this sin, but no one can see me.&quot; Krishna is the supreme witness sitting within your heart.</p>
+<p>He notes down what you are thinking and what you are doing.</p>
+<p>He also gives facility.</p>
+<p>If you want to do something to satisfy your senses, Krishna gives the facility for that action.</p>
+<p>That is stated in the Bhagavad-gita.</p>
+<p>Sarvasya caham hrdi sannivistah: &quot;I am sitting in everyone's heart.&quot; Mattah smrtir jnanam apohanam ca: &quot;From Me come remembrance, knowledge, and forgetfulness.&quot; In this way Krishna gives us a chance.</p>
+<p>If you want Krishna, then He will give you a chance to have Him, and if you don't want Krishna, then He will give you a chance to forget Him.</p>
+<p>If you want to enjoy life forgetting Krishna, forgetting God, then Krishna will give you all facility so that you can forget, and if you want to enjoy life with Krishna consciousness, then Krishna will give you the chance to make progress in Krishna consciousness.</p>
+<p>That is up to you.</p>
+<p>If you think that you can be happy without Krishna consciousness, Krishna does not object to that.</p>
+<p>Yathecchasi tatha kuru.</p>
+<p>After advising Arjuna, He simply said, &quot;Now I have explained everything to you.</p>
+<p>Whatever you desire you can do.&quot; Arjuna replied immediately, karisye vacanam tava: &quot;Now I shall execute Your order.&quot; That is Krishna consciousness.</p>
+<p>God does not interfere with your little independence.</p>
+<p>If you want to act according to the order of God, then God will help you.</p>
+<p>Even if you fall down sometimes, if you become sincere--&quot;From this time on I shall remain Krishna conscious and execute His orders&quot;--then Krishna will help you.</p>
+<p>In all respects, even if you fall down, He will excuse you and give you more intelligence.</p>
+<p>This intelligence will say, &quot;Don't do this.</p>
+<p>Now go on with your duty.&quot; But if you want to forget Krishna, if you want to become happy without Krishna, He will give you so many chances that you will forget Krishna life after life.</p>
+<p>Pariksit Maharaja says here, &quot;It is not that if I say there is no God then there will be no God or I will not be responsible for what I do.&quot; That is the atheistic theory.</p>
+<p>Atheists do not want God, because they are always sinful--if they thought that there were God, then they would be forced to shudder at the thought of punishment.</p>
+<p>Therefore they deny the existence of God.</p>
+<p>That is their process.</p>
+<p>They think that if they do not accept God then there is no punishment and they can do whatever they like.</p>
+<p>When rabbits are being attacked by bigger animals, they close their eyes and think, &quot;I am not going to be killed.&quot; But they are killed anyway.</p>
+<p>Similarly, we may deny the existence of God and the law of God, but still God and His law are there.</p>
+<p>In the high court you may say, &quot;I don't care for the law of the government,&quot; but you will be forced to accept the government law.</p>
+<p>If you deny the state law, then you will be put into prison and be caused to suffer.</p>
+<p>Similarly, you may foolishly decry the existence of God--&quot;There is no God&quot; or &quot;I am God&quot;--but nevertheless you are responsible for all your actions, both good and bad.</p>
+<p>There are two kinds of activities--good and bad.</p>
+<p>If you act nicely and perform pious activities, then you get good fortune, and if you act sinfully, then you have to suffer.</p>
+<p>Therefore Sukadeva Gosvami says: tasmat puraivasv iha papa-niskrtau yateta mrtyor avipadyatatmana dosasya drstva guru-laghavam yatha bhisak cikitseta rujam nidana-vit (Bhag.6.1.8) There are different kinds of atonement.</p>
+<p>If you commit some sin and counteract it by something else, that is atonement.</p>
+<p>There are examples of this in the Christian Bible.</p>
+<p>Sukadeva Gosvami says, &quot;You should know that you are responsible, and according to the gravity of sinful life, you should accept some type of atonement as described in the sastras, the scriptures.&quot; Actually, just as when one is diseased he must go to a doctor and pay doctor bills as a form of atonement, according to the Vedic way of life there is a class of brahmanas to whom one should go for the prescribed atonement according to the sins one commits.</p>
+<p>Sukadeva Gosvami says that one has to execute the prescribed atonement according to the gravity of one's sinful life.</p>
+<p>He continues the example: dosasya drstva guru-laghavam yatha bhisak cikitseta rujam nidana-vit.</p>
+<p>When you consult a physician, he prescribes an inexpensive medicine or a costly medicine, according to the gravity of the disease.</p>
+<p>If you simply have a headache, he may prescribe an aspirin, but if you have something very severe, he immediately prescribes a surgical operation that will cost a thousand dollars.</p>
+<p>Similarly, sinful life is a diseased condition, so one must follow the prescribed cure to become healthy.</p>
+<p>Acceptance of the chain of birth and death is a diseased condition of the soul.</p>
+<p>The soul has no birth and death and no disease, because it is spirit.</p>
+<p>Krishna says in the Bhagavad-gita (2.20): na jayate, the soul has no birth, and mriyate, it has no death.</p>
+<p>Nityah sasvato 'yam purano.</p>
+<p>na hanyate hanyamane sarire.</p>
+<p>The soul is eternal and everlasting.</p>
+<p>It is not lost with the dissolution of this body.</p>
+<p>Na hanyate hanyamane sarire.</p>
+<p>Na hanyate means that it is not killed or destroyed, even after the destruction of this body.</p>
+<p>The missing point of modern civilization is that there is no educational system to instruct people on what happens after death.</p>
+<p>Thus we have the most defective education, because without this knowledge of what happens after death, one dies like an animal.</p>
+<p>The animal does not know that he is going to have another body; he has no such knowledge.</p>
+<p>Human life is not meant for becoming an animal.</p>
+<p>One should not simply be interested in eating, sleeping, sex life, and defense.</p>
+<p>You may have a very nice arrangement for eating, or many nice buildings for sleeping, or a very good arrangement for sex life, or a very good defense force to protect you, but that does not mean that you are a human being.</p>
+<p>That type of civilization is animal life.</p>
+<p>Animals are also interested in eating, sleeping, and sex life, and according to their own methods they defend also.</p>
+<p>Where, then, is the distinction between human life and animal life if you simply engage in these four principles of bodily nature? The distinction is made when a human being is inquisitive--&quot;Why have I been put into this miserable condition? ls there any remedy for it? ls there any perpetual, eternal life? I do not want to die.</p>
+<p>I want to live very happily and peacefully.</p>
+<p>Is there a chance of this? What is that method? What is that science?&quot; When these inquiries are there and steps are taken to answer these questions, that is human civilization; otherwise it is doggish civilization, animal civilization.</p>
+<p>Animals are satisfied if they can eat, sleep, have some sex life, and have some defense.</p>
+<p>Actually there is no defense, because no one can protect himself from the hands of cruel death.</p>
+<p>Hiranyakasipu, for instance, wanted to live forever, and so he underwent severe austerities.</p>
+<p>So-called scientists are now saying that we shall stop death by scientific methods.</p>
+<p>This is also another crazy utterance.</p>
+<p>That is not possible.</p>
+<p>You may make great advancement in scientific knowledge, but there is no scientific solution to these four problems--birth, death, old age, and disease.</p>
+<p>One who is intelligent will be eager to solve these four prime problems.</p>
+<p>No one wants to die.</p>
+<p>But there is no remedy.</p>
+<p>I have to die.</p>
+<p>Everyone is very anxious to stop the increase of population by employing so many contraceptive methods, but still, birth is going on.</p>
+<p>So there is no stoppage or birth.</p>
+<p>You may invent up-to-date medicines by your scientific methods, but you cannot stop disease.</p>
+<p>It is not possible just to take a tablet to put an end to disease.</p>
+<p>In the Bhagavad-gita it is said, janma-mrtyu jara-vyadhi-duhkha-dosanudarsanam: one might think that he has solved all the problems of his life, but where is the solution to these four problems of birth, death, old age, and disease? That solution is Krishna consciousness.</p>
+<p>Krishna also says in the same book, janma karma ca me divyam evam yo vetti tattvatah tyaktva deham punar janma naiti mam eti so 'rjuna (Bg.4.9) Every one of us is giving up our body at every moment.</p>
+<p>The last phase of giving up this body is called death.</p>
+<p>But Krishna says, &quot;If anyone understands My appearance and disappearance and My activities--not superficially, but in truth--after giving up this body he never again accepts a material body.&quot; What happens to such a person? Mam eti--he returns to Krishna.</p>
+<p>If you are to go to Krishna, then you have to prepare your spiritual body.</p>
+<p>That is Krishna consciousness.</p>
+<p>If you keep yourself in Krishna consciousness, then gradually you prepare your next body, a spiritual body, which will carry you immediately to Krishnaloka, the abode of Krishna, and you will become happy.</p>
+<p>You will live there perpetually and blissfully.</p>
+<h2><a class="header" href="#protecting-oneself-from-illusion" id="protecting-oneself-from-illusion">Protecting Oneself from Illusion</a></h2>
+<p>In 1973 Srila Prabhupada received an unusual letter from a woman in California who had encountered two of his young disciples.</p>
+<p>She complained that they had &quot;a very negative outlook toward the people they meet.&quot; Moved by her genuine concern, Srila Prabhupada took time out from his busy schedule to write her this thoughtful letter.</p>
+<p>Your Grace: Please accept this letter with Love... K-Mart; San Fernando.</p>
+<p>We have talked with two of your boys at different times.</p>
+<p>Both had a very negative outlook toward the people they meet.</p>
+<p>Do not believe this is in any way as it should be.</p>
+<p>These boys happen to represent God.</p>
+<p>This comes from within.</p>
+<p>Their outlook must have mercy.</p>
+<p>We realize this; therefore handpick these little peaces [sic] of heaven to place in the middle of these people.</p>
+<p>Or else it will defeat your purpose.</p>
+<p>Love Is.</p>
+<p>Let it be as it is; with Love or not at all.</p>
+<p>My prayers be with you... and I beg yours with me.</p>
+<p>Yours in God, Blessed Be, Lynne Ludwig My dear Lynne Ludwig, Please accept my blessings.</p>
+<p>I beg to acknowledge receipt of your letter from California, and I have noted the contents carefully, although due to extensively traveling and preaching in a tour in India I have not had the opportunity to reply to you at length until now.</p>
+<p>Your complaint is that you have met two of my young disciples in California and they appeared to you to have &quot;a very negative outlook toward the people they meet.&quot; Of course, I do not know the case and what the circumstances are, but kindly forgive my beloved disciples for any unkindness or indiscretion on their part.</p>
+<p>After all, to give up one's life completely for serving the Lord is not an easy thing, and maya, or the illusory, material energy, tries especially hard to again entrap those who have left her service to become devotees.</p>
+<p>Therefore, in order to withstand the attack of maya and remain strong under all conditions of temptation, young or inexperienced devotees in the neophyte stage of devotional service will sometimes adopt an attitude against those things or persons which may possibly be harmful or threatening to their tender devotional creepers.</p>
+<p>They may even overindulge in such feelings just to protect themselves, and thus they will appear to some nondevotees, who are perhaps themselves still very much enamored by the material energy of maya, to be negative or pessimistic.</p>
+<p>But the actual fact is that this material world is a miserable, negative place, full of danger at every step; it is duhkhalayam asasvatam, a temporary abode of death, birth, disease, and old age, a home of suffering and pain only.</p>
+<p>To come to the platform of understanding these things as they are is not very common, and therefore persons who attain to it are described as &quot;great souls.&quot; mam upetya punar janma duhkhalayam asasvatam napnuvanti mahatmanah samsiddhim paramam gatah This means that those who have understood that the material worlds are places of misery and temporality (duhkhalayam asasvatam) never return here again, and because they are mahatmanah, the great souls, Krishna keeps them with Him because they have qualified themselves to escape this nasty place by becoming His pure devotees.</p>
+<p>This verse is spoken by Krishna, or God Himself, in the Bhagavad-gita (8.15).</p>
+<p>Who can be a more final authority? The point is that to make advancement in spiritual life, one must view everything material with a pessimistic eye unless it is utilized to serve and please Krishna.</p>
+<p>We are not very much hopeful for any lasting pleasure or satisfaction for our deepest cravings within this realm of gross matter.</p>
+<p>You refer to the word &quot;love&quot; several times in your letter, but the actual fact is that there is no love in this material world.</p>
+<p>That is false propaganda.</p>
+<p>What they call love here is lust only, or desire for personal sense gratification: kama esa krodha esa rajo-guna-samudbhavah mahasano maha-papma viddhy enam iha vairinam Krishna tells Arjuna, His disciple, that &quot;It is lust only... which is the all-devouring, sinful enemy of this world.&quot; (Bg.3.37) In the Vedic language there is no word for materialistic &quot;love,&quot; as we call it in the present day.</p>
+<p>The word kama describes lust or material desire, not love, but the word that we find in the Vedas for actual love is prema, meaning one's love of God only.</p>
+<p>Outside of loving God there is no possibility of loving.</p>
+<p>Rather, there is lusty desire only.</p>
+<p>Within this atmosphere of matter, the entire range of human activities--and not only every activity of human beings but all living entities--is based upon, given impetus and thus polluted by sex desire, the attraction between male and female.</p>
+<p>For that sex life, the whole universe is spinning around--and suffering! That is the harsh truth.</p>
+<p>So-called love here means that &quot;you gratify my senses, I'll gratify your senses,&quot; and as soon as that gratification stops, immediately there is divorce, separation, quarrel, and hatred.</p>
+<p>So many things are going on under this false conception of love.</p>
+<p>Actual love means love of God, Krishna.</p>
+<p>Everyone wants to repose his loving tendency in some object which is in his opinion worthy.</p>
+<p>But the question is one of ignorance only, because people have a poor fund of knowledge about where to find that supreme lovable object who is actually worthy to accept and reciprocate their love.</p>
+<p>People simply do not know.</p>
+<p>There is no proper information.</p>
+<p>As soon as you have some attachment for anything material, it will kick you upon the face, deteriorate, and disappoint you.</p>
+<p>It's bound to dissatisfy and frustrate you.</p>
+<p>That's a fact.</p>
+<p>But these young boys in your country, and all over the world, are accepting, &quot;Yes, that is a fact,&quot; and they are getting the right information from Krishna: bahunam janmanam ante jnanavan mam prapadyate vasudevah sarvam iti sa mahatma sudurlabhah &quot;After many births and deaths, he who is actually wise surrenders unto Me, knowing Me to be the cause of all causes and all that is.</p>
+<p>Such a great soul is very rare.&quot; (Bg.</p>
+<p>7.19) Again Krishna uses that word mahatma, great soul.</p>
+<p>Therefore our devotees that you have met are not ordinary boys and girls.</p>
+<p>No.</p>
+<p>They are to be considered actually wise, great souls because they have experienced in many births the miserable disease of material life and have become disgusted.</p>
+<p>Therefore they are seeking higher knowledge--they are seeking something better--and when they find Krishna and surrender unto Him, they become mahatmas, who are actually situated in knowledge.</p>
+<p>This material world is just like a prison house; it is a punishing place meant to bring us to that point of becoming disgusted, surrendering at last to Krishna, and going back to our original nature of eternal life in bliss and complete knowledge.</p>
+<p>Therefore it is to the credit of these devotees that they have done what is sudurlabhah, very rare among all men in human society.</p>
+<p>By surrendering to Krishna one will find the final object in which to invest his love: God.</p>
+<p>Love of God is present in everyone, just like fire in an unlit match, but it is covered over.</p>
+<p>But if one somehow or other develops his dormant love of God, and Krishna becomes his supreme adorable object, supreme friend, supreme master, or supreme lover, than he shall never again become disappointed or unhappy.</p>
+<p>Rather, because his loving propensity is rightfully placed: mac-citta mad-gata-prana bodhayantah parasparam kathayantas ca mam nityam tusyanti ca ramanti ca (Bg.10.9) I he devotee whose life is surrendered to Krishna is always enjoying &quot;great satisfaction and bliss,&quot; and he is constantly enlightened, always positive, not negative, as you say.</p>
+<p>The advanced devotee is the friend of everyone.</p>
+<p>The yoga-yukto visuddhatma, purified soul engaged in loving devotional service to Krishna, is sarvabhutatma-bhutatma, dear to everyone, and everyone is dear to him.</p>
+<p>In another place Krishna claims that yo mad-bhaktah sa me priyah, His devotee, who is very dear to Him, advesta sarva-bhutanam maitrah karuna eva ca, is not envious but is a kind friend to all living entities.</p>
+<p>The devotee is supposed to be, furthermore, equal to everyone (panditah sama-darsinah).</p>
+<p>He never discriminates, saying, &quot;This one is good, this one is bad.&quot; No.</p>
+<p>These are descriptions of the more advanced stages of Krishna consciousness that devotees get by development of mature knowledge.</p>
+<p>At present many of our students are young boys.</p>
+<p>They are learning gradually, and the process is so effective, certain, and authorized that if they stick to it they will come to the right point, as you say, of loving.</p>
+<p>But that love is not material, so it should not be judged on the false, sentimental platform of ordinary, mundane dealings.</p>
+<p>That is our point.</p>
+<p>Therefore to say they are not loving may be true from the materialists' point of view.</p>
+<p>They have given up affection for family, friends, wife, country, race, and so on, which is all based upon the bodily concept of life, or flickering sense gratification.</p>
+<p>They have become a little detached from maya's love, or lust, and they want Krishna's love, or endless, fully rewarding love, but they have not yet developed to that point, that's all.</p>
+<p>We cannot expect that all of a sudden your countrymen, who are addicted to so many bad habits, will give up eating flesh, taking intoxicants, having illicit sex life, and so many other nasty things, and overnight become great, self-realized souls.</p>
+<p>That is not possible.</p>
+<p>That is utopian.</p>
+<p>But just being initiated as Krishna's devotee puts one in the topmost category of human society.</p>
+<p>Sa buddhiman manusyesu sa yuktah krtsna-karma-krt: &quot;He is intelligent in human society.</p>
+<p>He is in the transcendental position, although engaged in all sorts of activities.&quot; And although such a devotee may not yet have advanced to the highest level of spiritual understanding, still he is to be considered the most exalted personality, regardless of any temporary frailties.</p>
+<p>api cet su-duracaro bhajate mam ananya-bhak sadhur eva sa mantavyah samyag vyavasito hi sah &quot;Even if a devotee commits the most abominable actions, he is to be considered saintly because he is properly situated.&quot; (Bg.9.30) As you will say, &quot;To err is human.&quot; Therefore in the neophyte stage we may always expect some discrepancies.</p>
+<p>Kindly see the thing in this light and forgive their small mistakes.</p>
+<p>The big thing is that they have given everything, even their lives, to Krishna--and that is never a mistake.</p>
+<p>Your ever well-wisher, A.C.Bhaktivedanta Swami</p>
+<h2><a class="header" href="#an-awareness-of-what-is-best-and-most-beautiful" id="an-awareness-of-what-is-best-and-most-beautiful">An Awareness of What Is Best and Most Beautiful</a></h2>
+<p>During May 1974, the noted Irish poet Desmond James Bernard O 'Grady visited Srila Prabhupada at his quarters in Rome, and the two had a lengthy and lively discussion.</p>
+<p>Among other things, the spiritual leader and the poet discussed personal identity and individual duty, putting an end to war, modern education and its problems, life beyond time, and the essential nature of love.</p>
+<p>Mr.O'Grady: Your edition of the Bhagavad-gita is very nice.</p>
+<p>Srila Prabhupada: It is the fifth edition in two years.</p>
+<p>Mr.O'Grady: In which country has the Hare Krishna movement been the most successful? Srila Prabhupada: Everywhere.</p>
+<p>In Africa, America, Canada, Japan, China.</p>
+<p>But actually it has been most successful in America.</p>
+<p>Many Americans have taken to Krishna consciousness.</p>
+<p>Mr.O'Grady: What about here in Rome? Have you had problems with the police? Srila Prabhupada: We have problems everywhere.</p>
+<p>Police sometimes harass us, but usually they become tired and eventually don't do anything.</p>
+<p>[Laughter.] Mr.O'Grady: The system give up? That's marvelous.</p>
+<p>I feel very tired of the system myself.</p>
+<p>Something is wrong with the present state of affairs.</p>
+<p>Maybe you can give me some advice on how to beat the system.</p>
+<p>Srila Prabhupada: You Irish people! You are never tired of fighting.</p>
+<p>Mr.O'Grady: No.</p>
+<p>[Laughter.] It's inside us.</p>
+<p>Srila Prabhupada: Actually, the fighting has been going on constantly.</p>
+<p>Mr.O'Grady: Well, what do you suggest we do about it? I mean, is it morally correct for me to be sitting here... Srila Prabhupada: As long as we remain illusioned by the bodily conception of life, thinking we are these bodies, one man thinking &quot;I am Irish,&quot; another thinking &quot;I am Italian,&quot; &quot;... American,&quot; &quot;... Indian,&quot; and so on--as long as this goes on, the fighting will go on.</p>
+<p>You cannot stop fighting between dogs and cats.</p>
+<p>Why do they fight? The dog simply thinks, &quot;I am a big dog.&quot; And the cat thinks, &quot;I am a big cat.&quot; In the same way, if we think, &quot;I am an Irishman&quot; or &quot;I am an Englishman,&quot; then we are no better than the cats and dogs.</p>
+<p>As long as people remain in a bodily conception of life, there will be fighting.</p>
+<p>Mr.O'Grady: What was Mahatma Gandhi fighting in the House of Commons? Srila Prabhupada: That was another dog-ism.</p>
+<p>There is no difference.</p>
+<p>A dog thinks, &quot;I am a dog,&quot; because he has the body of a dog.</p>
+<p>If I am thinking that I am Indian because this body was born on Indian soil, then how am I different from the dog? The bodily conception of life is simply animalism.</p>
+<p>When we understand that we are not these bodies but are spirit souls, there will be peace.</p>
+<p>There cannot be any peace otherwise.</p>
+<p>Sa eva go-kharah.</p>
+<p>The Vedic literatures state that a person in the bodily concept of life is exactly like a cow or an ass.</p>
+<p>People have to transcend this inferior conception of the self.</p>
+<p>How is that done? mam ca yo 'vyabhicarena bhakti-yogena sevate sa gunan samatityaitan brahma-bhuyaya kalpate &quot;One who engages in the spiritual activities of unalloyed devotional service at once transcends the modes of material nature and is elevated to the spiritual platform.&quot; (Bhagavad-gita 14.25) In our society, there are many Mexicans, Canadians, Indians, Jews, and Muslims, but they no longer consider themselves Muslims, Christians, Jews, or whatever.</p>
+<p>They are all servants of Krishna.</p>
+<p>That is Brahman realization.</p>
+<p>Mr.O'Grady: That's giving it a name also.</p>
+<p>Srila Prabhupada: Yes, a name must be there.</p>
+<p>But although, for example, your name is different from that of another Irishman, you nonetheless all feel that you are Irish.</p>
+<p>One's name may be different, but that doesn't matter.</p>
+<p>The quality should be one.</p>
+<p>That is required.</p>
+<p>When we acquire Krishna's quality, then, despite different names, there will be peace.</p>
+<p>That is called so 'ham.</p>
+<p>The names of different people in a nation may be different, but all the people feel the same nationality.</p>
+<p>Varieties may exist, but if the quality is the same, that is oneness, brahma-bhuta.</p>
+<p>brahma-bhutah prasannatma na socati na kanksati samah sarvesu bhutesu mad-bhaktim labhate param &quot;One who is thus transcendentally situated at once realizes the Supreme Brahman.</p>
+<p>He never laments nor desires to have anything; he is equally disposed to every living entity.</p>
+<p>In that state he attains pure devotional service unto Me.&quot; (Bg.18.54) This world is miserable for the materially infected person, but for the devotee, the entire world is as good as Vaikuntha.</p>
+<p>For the impersonalist, achieving the Brahman stage, becoming one with the Absolute, is the last word.</p>
+<p>Mr.O'Grady: Is the Absolute external or internal? Srila Prabhupada: There is no external or internal.</p>
+<p>The Absolute is without duality.</p>
+<p>Mr.O'Grady: OK, but on an individual level... Srila Prabhupada: We are not absolute.</p>
+<p>When we are situated on the absolute platform, we are absolute.</p>
+<p>However, now we are in the relative world.</p>
+<p>The Absolute Truth is here also, but our senses are not sufficiently elevated to understand that Absolute Truth.</p>
+<p>As long as we are under the control of time, there is no question of becoming absolute.</p>
+<p>Mr.O'Grady: So &quot;absolute&quot; means life beyond time? Srila Prabhupada: That is stated in the Bhagavad-gita (4.9): janma karma ca me divyam evam yo vetti tattvatah tyaktva deham punar janma naiti mam eti so 'rjuna &quot;One who knows the transcendental nature of My appearance and activities does not, upon leaving the body, take his birth again in this material world, but attains My eternal abode, O Arjuna.&quot; That is absolute--going back home, back to Godhead.</p>
+<p>As long as one is in the material world and identifies with this body, he transmigrates from one body to another.</p>
+<p>That is not absolute.</p>
+<p>This is clearly stated here.</p>
+<p>When one goes back to the spiritual world, he attains the absolute position.</p>
+<p>Mr.O'Grady: All right, but this is my question: Is it sufficient for us to sit here--you sitting there and we as friends sitting with you engaging in the gentle art of conversation, while across the ocean... Srila Prabhupada: The point you have missed is that although you are sitting in one place and I am sitting in a different place, this difference does not affect our actual existence.</p>
+<p>We are both human beings.</p>
+<p>The conceptions of &quot;Irishman,&quot; &quot; Englishman,&quot; &quot;Protestant,&quot; &quot;Catholic,&quot; and so on are but different dresses.</p>
+<p>One has to become free from these designations.</p>
+<p>When one is thus free, he becomes purified.</p>
+<p>sarvopadhi-vinirmuktam tat-paratvena nirmalam hrsikena hrsikesasevanam bhaktir ucyate (Bhakti-rasamrta-sindhu 1.1.12) When you have purified your senses and engaged those purified senses in the service of the master of the senses, Krishna, you have perfected your life.</p>
+<p>That is nonduality, and that is absolute.</p>
+<p>Mr.O'Grady: But the system insists that you think yourself American or Indian or African or whatever.</p>
+<p>Srila Prabhupada: Yes.</p>
+<p>Materialistic society means duality.</p>
+<p>Mr.O'Grady: But that is unavoidable.</p>
+<p>How can you avoid material existence? Srila Prabhupada: That is possible in Krishna consciousness.</p>
+<p>The lotus lives in the water but never touches the water.</p>
+<p>Mr.O'Grady: I don't think you can explain situations in one area with metaphors from another.</p>
+<p>How can you argue political problems in terms of vague spiritual concepts? Their nature is completely different.</p>
+<p>Srila Prabhupada: Sometimes a variety of examples helps us to understand or appreciate the problem better.</p>
+<p>In the vase there is a variety of flowers, and that variety helps us better appreciate the idea of flowers.</p>
+<p>From any point of view, Krishna can resolve all problems.</p>
+<p>Why just the problems of Irishmen or Englishmen? All problems.</p>
+<p>That is called unity in diversity.</p>
+<p>Our students come from different backgrounds, but because they are all in Krishna consciousness, they are unified.</p>
+<p>Mr.O'Grady: Very good.</p>
+<p>Yes, I accept that.</p>
+<p>I would like to know, though, that when you say &quot;Krishna consciousness,&quot; is there any difference between that and Christ consciousness? Srila Prabhupada: No, there is no difference.</p>
+<p>Christ came to preach the message of God.</p>
+<p>If you actually become Christ conscious, you become Krishna conscious.</p>
+<p>Mr.O'Grady: And does becoming Krishna conscious or God conscious mean becoming self-conscious? That is, conscious of who we really are? Srila Prabhupada: Yes, God consciousness includes self-consciousness, but selfconsciousness is not necessarily God consciousness.</p>
+<p>Mr.O'Grady: But it may be? Srila Prabhupada: No.</p>
+<p>Mr.O'Grady: One may achieve consciousness of the God that is within.</p>
+<p>Srila Prabhupada: That means he is God conscious.</p>
+<p>You are now in the sunlight, and consciousness of the sun includes your ability to see yourself.</p>
+<p>In the darkness you cannot see yourself.</p>
+<p>At night you can't even see your own hands or legs, but if you come before the sun, you see the sun and yourself also.</p>
+<p>Without sunlight, without God consciousness, self-consciousness is incomplete.</p>
+<p>However, God consciousness makes self-consciousness very clear.</p>
+<p>Mr.O'Grady: We meet a lot of young people in our teaching profession, and we don't try to teach them any kind of didactic salvation.</p>
+<p>We do try to direct them toward an awareness of what is best and what is most beautiful and what is most spiritually nourishing in the world about them--that is, insofar as the system allows us.</p>
+<p>Very frequently the students are not neutral enough to be in a spiritual condition; they are more in an emotional one.</p>
+<p>What we are faced with often is the basic question of &quot;Who am I?&quot; or, &quot;What is it all about?&quot; Srila Prabhupada: Yes.</p>
+<p>Mr.O'Grady: Or they ask, &quot;Why am I here?&quot; Srila Prabhupada: Yes, very good.</p>
+<p>Mr.O'Grady: We are asked, &quot;Why should I be here? Who are you, teacher, and what gives you the right to tell us what to think or what to be or what not to be? Why should I read Shakespeare? Why should I listen to Mozart? I prefer Bob Dylan.&quot; These kind of questions seem to emanate from a very disillusioned state of mind, and insecurity, and uncertainty, and a lack of credibility in the total structure of things as they are.</p>
+<p>Frequently we have to answer these questions in a cataclysmic sort of way.</p>
+<p>Rather than presenting direct answers, we must answer indirectly, taking account of the conditioning that prompted students to ask these questions in the first place.</p>
+<p>Do you think that we should try to reach them more directly? Srila Prabhupada: You are talking about the problem of... Mr.O'Grady: Modern education.</p>
+<p>Srila Prabhupada: Yes.</p>
+<p>So many questions are there, but they are not answered by modern education.</p>
+<p>&quot;Why have I come here? What is the purpose?&quot; These questions should be answered perfectly.</p>
+<p>Therefore the Vedas enjoin: tad-vijnanartham sa gurum evabhigacchet.</p>
+<p>To find answers to all these questions, one must approach a bona fide spiritual master.</p>
+<p>Mr.O'Grady: What if you have none? What if we are told that Mr.</p>
+<p>Nixon is the bona fide spiritual master? What do we do? Srila Prabhupada: No, no.</p>
+<p>[Laughter.] There is a standard for bona fide spiritual masters.</p>
+<p>You have only heard one line of the verse.</p>
+<p>Who is the spiritual master? That is the next line: srotriyam brahma-nistham.</p>
+<p>The word srotriyam refers to one who has heard from another bona fide source.</p>
+<p>A spiritual master is he who has taken the message from another qualified spiritual master.</p>
+<p>This is just like a medical man who has taken the knowledge of medical science from another medical man.</p>
+<p>Similarly, the bona fide spiritual master must come in a line of successive spiritual masters.</p>
+<p>The original spiritual master is God.</p>
+<p>Mr.O'Grady: Yes.</p>
+<p>Granted.</p>
+<p>Srila Prabhupada: One who has heard from God explains the same message to his disciples.</p>
+<p>If the disciple doesn't change the message, he is a bona fide spiritual master.</p>
+<p>That is our process.</p>
+<p>We take lessons by hearing from Krishna, God, and from Him understand who is perfect.</p>
+<p>Or we hear from His representative, who does not contradict Krishna and who has realized His message.</p>
+<p>It is not that we speak one thing and do all nonsense.</p>
+<p>One who does so is not a spiritual master.</p>
+<p>Mr.O'Grady: Now there's my poor old father, living west of Ireland.</p>
+<p>A simple old man, seventy-eight years now, your generation.</p>
+<p>He has gotten to the point at his age where he says, &quot;They tell me, the priests, they tell me ultimately that it's God who knows.</p>
+<p>But I want to know who told God.&quot; Then he comes to me and says, &quot;You went to school, and you read books.</p>
+<p>Tell me, who told God?&quot; So I have no answer.</p>
+<p>That is the difference between seventy-eight and thirty-nine years.</p>
+<p>Srila Prabhupada: No, it is not a difference of age.</p>
+<p>The difference is knowledge.</p>
+<p>In the Brahma-sutra the question is raised: Who is God? First of all there is this question.</p>
+<p>Mr.O'Grady: Who taught God? Srila Prabhupada: No.</p>
+<p>First of all there is the question who is God.</p>
+<p>Then we shall ask who taught God.</p>
+<p>The Vedanta-sutra says, athato brahma jijnasa: now we should inquire who is God.</p>
+<p>Unless you know who God is, how can you raise the question of who instructed God? If you don't know God, the question does not arise who instructed God.</p>
+<p>Is this not so? Mr.O'Grady: Yes.</p>
+<p>Srila Prabhupada: Who God is, is explained in the Brahma-sutra.</p>
+<p>Janmady asya yatah: God is He from whom everything emanates.</p>
+<p>That is God--the Supreme Being from whom everything emanates.</p>
+<p>Now, what is the nature of that Supreme Being? Is He a dead stone or a living entity? That is also explained.</p>
+<p>Janmady asya yato 'nvayad itaratas carthesv abhijnah svarat (Srimad-Bhagavatam 1.1.1): the Supreme Being is fully cognizant of everything, directly and indirectly.</p>
+<p>Unless He is fully cognizant of everything, He cannot be God.</p>
+<p>Then the question that you raised comes, Who taught God? And that is also answered.</p>
+<p>Svarat: He is fully independent.</p>
+<p>He does not need to take lessons from anyone.</p>
+<p>That is God.</p>
+<p>If one needs to take lessons from others, he is not God.</p>
+<p>Krishna spoke the Bhagavad-gita, and He did not have to learn it from anyone.</p>
+<p>I had to learn it from my spiritual master, but Krishna did not have to learn it from anyone.</p>
+<p>One who does not need to take lessons from others is God.</p>
+<p>Mr.O'Grady: Where does human love come in? Srila Prabhupada: Everything is coming from God.</p>
+<p>Being part and parcel of God, we manifest partial love because the original love is there in Him.</p>
+<p>Nothing can exist if it is not in God; therefore love is there in God.</p>
+<p>Mr.O'Grady: And manifestations of love are manifestations of God? Srila Prabhupada: Unless the loving propensity is there in God, how can we manifest it? A son born of a particular father has the symptoms of the father.</p>
+<p>Because the loving propensity is in God, we have that same propensity.</p>
+<p>Mr.O'Grady: Maybe love is generated in you by the need.</p>
+<p>Srila Prabhupada: No, there is no question of &quot;maybe.&quot; We are defining God in absolute terms.</p>
+<p>Janmady asya yatah: God is He from whom everything has emanated.</p>
+<p>The fighting propensity is also there in God, but His fighting and His loving are absolute.</p>
+<p>In the material world we experience that fighting is just the opposite of loving, but in God the fighting propensity and the loving propensity are one and the same.</p>
+<p>That is the meaning of &quot;absolute.&quot; We learn from the Vedic scriptures that when the so-called enemies of God are killed by God, they attain liberation.</p>
+<p>Mr.O'Grady: Is it possible to arrive at this understanding of God alone? Srila Prabhupada: No.</p>
+<p>Therefore we have cited this verse: tad-vijnanartham sa gurum evabhigacchet.</p>
+<p>The word abhigacchet means &quot;must.&quot; It is not possible alone.</p>
+<p>In Sanskrit grammar this is called the vidhilin form of a verb, and this form is used when there is no choice.</p>
+<p>The word abhigacchet means that one must approach a guru.</p>
+<p>That is the Vedic version.</p>
+<p>Therefore in the Bhagavad-gita you will find that Arjuna was talking to Krishna, but when he saw that things were not being resolved, he surrendered himself to Krishna and accepted Him as his guru.</p>
+<p>karpanya-dosopahata-svabhavah prcchami tvam dharma-sammudha-cetah yac chreyah syan niscitam bruhi tan me sisyas te 'ham sadhi mam tvam prapannam &quot;Now I am confused about my duty and have lost all composure because of weakness.</p>
+<p>In this condition I am asking You to tell me clearly what is best for me.</p>
+<p>Now I am Your disciple, and a soul surrendered unto You.</p>
+<p>Please instruct me.&quot; (Bg.2.7) So here we can see that Arjuna is confused about his duty.</p>
+<p>Mr.O'Grady: Is this duty to the self, to others, or to the state? Srila Prabhupada: A soldier's duty is to fight with the enemy.</p>
+<p>Arjuna was a soldier, and Krishna advised him, &quot;The opposite party is your enemy, and you are a soldier.</p>
+<p>Why are you trying to be nonviolent? This is not good.&quot; Then Arjuna said, &quot;Actually, I am confused.</p>
+<p>In this confusion I cannot make the right decision.</p>
+<p>I therefore accept You as my spiritual master.</p>
+<p>Please give me the proper lesson.&quot; In a chaotic condition, in a confused state of life, one should approach another, who is in full knowledge of the matter.</p>
+<p>You go to a lawyer to solve legal problems, and you go to a physician to solve medical problems.</p>
+<p>Everyone in the material world is confused about spiritual identity.</p>
+<p>It is therefore our duty to approach a bona fide spiritual master, who can give us real knowledge.</p>
+<p>Mr.O'Grady: I am very confused.</p>
+<p>Srila Prabhupada: So you must approach a spiritual master.</p>
+<p>Mr.O'Grady: And he makes a decision on how to help me stop this confusion? Srila Prabhupada: Yes, the spiritual master is one who solves all confusion.</p>
+<p>If the spiritual master cannot save his disciple from confusion, he is not a spiritual master.</p>
+<p>That is the test.</p>
+<p>samsara-davanala-lidha-lokatranaya karunya-ghanaghanatvam praptasya kalyana-gunarnavasya vande guroh sri-caranaravindam This whole confused world is just like a blazing forest fire.</p>
+<p>In a forest fire all the animals are confused.</p>
+<p>They do not know where to go to save their lives.</p>
+<p>In the blazing fire of the material world, everyone is confused.</p>
+<p>How can that blazing forest fire be extinguished? It is not possible to utilize your man-made fire brigade, nor is it possible to simply pour buckets of water.</p>
+<p>The solution comes when rain from the clouds falls on the forest fire.</p>
+<p>Only then can the fire be extinguished.</p>
+<p>That ability is not in your hands, but is in the mercy of God.</p>
+<p>So, human society is in a confused state, and it cannot find a solution.</p>
+<p>The spiritual master is one who has received the mercy of God, and he can deliver the solution to the confused man.</p>
+<p>One who has received the mercy of God can become a spiritual master and deliver that mercy to others.</p>
+<p>Mr.O'Grady: The problem is to find this spiritual master.</p>
+<p>Srila Prabhupada: That is not the problem.</p>
+<p>The problem is whether you are sincere.</p>
+<p>You have problems, but God is within your heart.</p>
+<p>Isvarah sarva-bhutanam.</p>
+<p>God is not far away.</p>
+<p>If you are sincere, God sends you a spiritual master.</p>
+<p>Therefore God is also called caitya-guru, the spiritual master within the heart.</p>
+<p>God helps from within and from without.</p>
+<p>Everything is thus described in the Bhagavad-gita.</p>
+<p>This material body is like a machine, but within the heart is the soul, and with the soul is the Supersoul, Krishna, who gives directions.</p>
+<p>The Lord says, &quot;You wanted to do this; now here is the chance.</p>
+<p>Go and do it.&quot; If you are sincere, you say, &quot;Now, God, I want You.&quot; Then He will give you directions.</p>
+<p>&quot;Yes, now you come and get Me like this.&quot; This is His kindness.</p>
+<p>However, if we want something else, that is all right.</p>
+<p>We can have it.</p>
+<p>God is very kind.</p>
+<p>When I want something, He is in my heart directing me and telling me how to have it.</p>
+<p>So why should He not give directions on how to have a spiritual master? First of all we must again be eager to revive our God consciousness.</p>
+<p>Then God will give us a spiritual master.</p>
+<p>Mr.O'Grady: Thank you very much.</p>
+<p>Srila Prabhupada: Thank you very much.</p>
+<p>My request to you is this.</p>
+<p>You are a poet.</p>
+<p>Just describe God.</p>
+<p>You are expert in describing, and therefore I ask you to kindly describe God in your occupation.</p>
+<p>Then your life will be successful.</p>
+<p>And if one hears you, his life will also be successful.</p>
+<p>That is the injunction: idam hi pumsas tapasah srutasya va svistasya suktasya ca buddhi-dattayoh avicyuto 'rthah kavibhir nirupito yad uttamasloka-gunanuvarnanam (Srimad-Bhagavatam 1.5.22) There are many leaders in society who are poets, scientists, religionists, philosophers, politicians, and so on.</p>
+<p>Those who are so expert are given this injunction: Your duty is to perfect your occupation by describing the glories of the Supreme Being.</p>
+<p>Mr.O'Grady: My experience is that, for some extraordinary reason, one is chosen to do a particular thing.</p>
+<p>Srila Prabhupada: That reason is given here.</p>
+<p>Avicyutah.</p>
+<p>The infallible choice is this: &quot;Let them describe the glories of the Lord.&quot; Mr.O'Grady: But you were saying that the spiritual master is chosen.</p>
+<p>The spiritual master, the poet, the priest, is chosen by God.</p>
+<p>This person is chosen to write poems or paint pictures or make music.</p>
+<p>Srila Prabhupada: So when you compose music, compose music about God.</p>
+<p>That is your perfection.</p>
+<p>Mr.O'Grady: When one works for God in his line, then his line becomes his perfection? Srila Prabhupada: Yes.</p>
+<p>Mr.O'Grady: Thank you very much.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

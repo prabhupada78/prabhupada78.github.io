@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch5 - Matchless Gift</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html" class="active">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Matchless Gift</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#learning-steadiness-in-kṛṣṇa-consciousness" id="learning-steadiness-in-kṛṣṇa-consciousness">Learning Steadiness in Kṛṣṇa Consciousness</a></h1>
+<p>When one reaches the topmost position of material opulence, the tendency for renunciation is natural.</p>
+<p>There are two tendencies in this material world—bhoga (sense enjoyment) and tyāga (renunciation of this material world).</p>
+<p>Without guidance, however, one does not know how to renounce.</p>
+<p>First of all, one wants to enjoy, and when he is frustrated in enjoyment, he renounces.</p>
+<p>Again, when he is tired of renunciation, he enjoys, like a clock pendulum which swings from side to side.</p>
+<p>We are thus all vacillating from the platform of enjoyment to the platform of renunciation and back again.</p>
+<p>Karmīs, fruitive workers, try to enjoy this world and reap the fruits of it.</p>
+<p>Consequently, they are constantly traveling on expressways all day and night to engage in material enjoyment.</p>
+<p>On the other hand, there are others, predominantly the discontented youth, who don’t want any part of this.</p>
+<p>Thus the world contains those engaged in bhoga and those engaged in tyāga.</p>
+<p>However, we will not be happy by following either of these paths because it is not our proper position to either enjoy or renounce.</p>
+<p>Since everything belongs to Kṛṣṇa and nothing belongs to anyone else, whatever we possess is actually Kṛṣṇa’s property (īśāvāsyam idaṁ sarvaṁ).</p>
+<p>Since we have not produced the trees, plants, waters or the land, we cannot claim them.</p>
+<p>Since we actually have nothing, we can renounce nothing, or, as it is said, naked we come into this world and naked we go out.</p>
+<p>In the interim we falsely claim, “This is my country, this is my home, this is my wife, these are my children, this is my property, this is my bank balance, etc.” Such claims are false because when we come into the world, we come in empty-handed, and when we go out, we go out empty-handed.</p>
+<p>What then is the meaning of bhoga and tyāga? In the light of the actual facts, they have no actual meaning.</p>
+<p>Bhoga is thievery, and tyāga, renunciation of what never belonged to us, is a form of lunacy.</p>
+<p>In this regard, Kṛṣṇa gives us this direction: sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja.</p>
+<p>(Bg.18.66) Although we have created different types of religion based on bhoga and tyāga, we are thus advised to give up all of them and to surrender unto Kṛṣṇa.</p>
+<p>It is not within our power to enjoy or to renounce.</p>
+<p>When renunciation is recommended in Bhagavad-gītā, it refers to renunciation of everything that we falsely claim to possess.</p>
+<p>A child may take a hundred dollar bill from his father and try to keep it although he may not know how to use it.</p>
+<p>The father may beg the child, “Dear boy, kindly give it to me.” The child does not know that the money actually belongs to the father, nor does he know that he had best hand it to his father, for he simply does not know how to use it.</p>
+<p>Similarly, Kṛṣṇa says, “Renounce your work for Me.</p>
+<p>Renounce your wealth and property for Me.” Kṛṣṇa is not a beggar, for everything belongs to Him, but He does treat us like small children.</p>
+<p>Compliance to His request to give everything to Him is called tyāga, renunciation, and is one of the means by which one can attain elevation to Kṛṣṇa consciousness.</p>
+<p>Austerity, celibacy, equanimity and charity are all required for realization of the ultimate or Absolute Truth.</p>
+<p>Kṛṣṇa consciousness is not concerned with the relative truth but with the Absolute.</p>
+<p>In ŚrīmadBhāgavatam Vyāsadeva offers his obeisances to the Supreme Absolute Truth ( satyaṁ paraṁ dhīmahi).</p>
+<p>He offers his respects not to the relative categorical truths, but to the summum bonum, the Absolute Truth.</p>
+<p>It is the duty of brāhmaṇas to practice those qualities by which the Absolute Truth can be realized.</p>
+<p>Brāhmaṇas must be qualified by practicing cleanliness, truthfulness, control of the mind and the senses, simplicity, and by cultivating faith in the Vedas and particularly in Bhagavad-gītā.</p>
+<p>When Kṛṣṇa says, “I am the Supreme Lord,” we have to accept Him with faith, not foolishly, but with full knowledge, and practically apply this acceptance in our daily life.</p>
+<p>A brāhmaṇa is not created by birth, but by education, practice and knowledge.</p>
+<p>It is not a question of birth, but quality, as pointed out by Kṛṣṇa in Bhagavad-gītā: cātur-varṇyaṁ mayā sṛṣṭaṁ guṇa-karma-vibhāgaśaḥ tasya kartāram api māṁ viddhy akartāram avyayam “According to the three modes of material nature and the work ascribed to them, the four divisions of human society were created by Me.</p>
+<p>And, although I am the creator of this system, you should know that I am yet the non-doer, being unchangeable.” (Bg.4.13) One must not only have the qualities of a brāhmaṇa, but one should also work as a brāhmaṇa, for one’s qualities are tested by his work.</p>
+<p>If one is a qualified engineer but simply sits down at home and does not work, what is his value? Similarly, unless one works as a brāhmaṇa, there is no value to his simply saying, “I am a brāhmaṇa.” One must therefore work as a brāhmaṇa by fully engaging in the service of Paraṁ Brahman, Kṛṣṇa, the Supreme Brahman.</p>
+<p>How can service to the Absolute Truth be executed? Yamena niyamena ca: the practice of yoga, or linking with the supreme, is based on the principles of regulation and control.</p>
+<p>Regulation cannot be executed without control; therefore one must be thoughtful and purify himself.</p>
+<p>If one wants to pass an examination, he has to go to school, follow the principles of the school, and take some pains in his study, and then gradually he comes to be successful.</p>
+<p>If he plays all day on the street, how can he expect success? Therefore in the process being explained by Śukadeva Gosvāmī, the first necessity is tapasya, austerity.</p>
+<p>Even if austerity and brahmacarya are painful because we want to be unrestricted, as soon as we are regulated, what appeared to be painful is in practice not painful.</p>
+<p>There are two classes of men—those who are sober (dhīra) and those who are extravagant (adhīra).</p>
+<p>When one, in spite of provocation or in spite of the presence of a source of mental agitation, can remain steady in his position, he is called dhīra.</p>
+<p>An example of a dhīra is given by Kālidāsa Paṇḍita, a great Sanskrit poet who wrote a book c a l l e d Kumāra-sambhava, wherein he has given an example concerning Lord Śiva.</p>
+<p>It appears that when the demigods were fighting the demons and were being defeated, they decided that they could be saved by a commander-in-chief born from the semina of Lord Śiva.</p>
+<p>Lord Śiva, however, was in meditation, and to acquire the needed semina was very difficult.</p>
+<p>They therefore sent Pārvatī, a young girl, who appeared before Lord Śiva and worshiped his genitals.</p>
+<p>Although this young girl sat before Lord Śiva and touched his genitals, Lord Śiva was steady in meditation.</p>
+<p>Kālidāsa says, “Here is an example of a dhīra, for despite a young girl’s touching his genitals, he was undisturbed.” Similarly, someone sent a young prostitute to disturb Haridāsa Ṭhākura, and upon hearing her appeals for intercourse, Haridāsa Ṭhākura said, “Yes, your proposal is very nice.</p>
+<p>please sit down and let me finish my chanting, and then we shall enjoy.” Morning came and the prostitute became impatient, but Haridāsa Ṭhākura replied, “I’m very sorry.</p>
+<p>I could not finish my chanting.</p>
+<p>Come tonight again.” The prostitute came for three nights, and on the third night she fell down at his feet, confessed her intentions, and pleaded with him, “I was induced to perform this act by a man who is your enemy.</p>
+<p>Kindly excuse me.” Haridāsa Ṭhākura then replied, “I know all about that, but I allowed you to come here for three days so that you could be converted and become a devotee.</p>
+<p>Now take these chanting beads, and go on chanting.</p>
+<p>I am leaving this place.” Here is another example of a dhīra who has control of his body (deha), words (vāc), and intelligence (buddhi).</p>
+<p>One’s body, words and intelligence should be controlled by one who is dhīra and who actually knows the principles of religion.</p>
+<p>We have been continuously committing sinful activities since time immemorial, and we do not know when this began, but this life is meant for rectification of all the mistakes that we have committed.</p>
+<p>If one sets fire to unwanted grass and creepers in a field, they will all be burned.</p>
+<p>Similarly, by the process of austerity and penance, one can liquidate all sinful activities and become purified.</p>
+<p>But Śukadeva Gosvāmī suggests an alternate process: kecit kevalayā bhaktyā vāsudeva-parāyaṇāḥ/ aghaṁ dhunvanti kārtsnyena nīhāram iva bhāskaraḥ .</p>
+<p>Generally, if one leads an austere and pious life of celibacy, equanimity, charity, etc., people will say that he is a very pious man, but simply by becoming Kṛṣṇa conscious, one can kill all the resultant actions of his past sinful life.</p>
+<p>A fog disappears as soon as the sun rises, and Kṛṣṇa rises with the brilliance of thousands of suns.</p>
+<p>This process is accepted only by someone who is very fortunate.</p>
+<p>Caitanya Mahāprabhu therefore said: brahmāṇḍa bhramite kona bhāgyavān jīva/ guru-kṛṣṇa-prasāde pāya bhakti-latā-bīja: “ By the grace of Kṛṣṇa and the spiritual master, a fortunate person, after wandering throughout the universe in different species of life, receives the seed of pure devotional service.” Kṛṣṇa consciousness is meant for the very fortunate, for simply by accepting this one process a person can surpass all the duties of austerity, renunciation, celibacy, etc.</p>
+<p>Śukadeva Gosvāmī declares: kecit kevalayā bhaktyā: “One who is extremely fortunate takes to the process of pure devotional service.” Kevala bhakti refers to pure unalloyed devotional service in which there is no desire but to please Kṛṣṇa.</p>
+<p>One should not render devotional service just to increase his income.</p>
+<p>We want money to become happy, but if we take to Kṛṣṇa consciousness, automatically we will become so happy that we will neglect money.</p>
+<p>Money will automatically come.</p>
+<p>Happiness will come.</p>
+<p>There is no need to endeavor for these things separately.</p>
+<p>It was Dhruva Mahārāja who lamented, “How foolish I was that I took to devotional service with a desire for material profit.” Ordinarily for material profit one goes to his boss or some rich man or demigod, but a devotee does not go anywhere but to Kṛṣṇa, even if he has material desires.</p>
+<p>If one goes to Kṛṣṇa even for material advantages, the day will come when he forgets material desires, just like Dhruva Mahārāja.</p>
+<p>He was repentant, and said, “I came to Kṛṣṇa and asked for something material, just like one who has pleased a very rich man and who asks him for a few grains of rice.” If a rich man agrees to give us whatever we want, but we ask him only for a few grains of rice, is that very intelligent? Asking Kṛṣṇa for material benefit is exactly like this.</p>
+<p>One need not ask Kṛṣṇa extraneously for material happiness, for material happiness will automatically roll before his very feet, pleading, “Please take me, please take me.” Those who are practicing Kṛṣṇa consciousness are not in need of the material opulences—wives, children, happiness, home—for all is acquired automatically by the grace of Kṛṣṇa.</p>
+<p>There is no need to ask Kṛṣṇa for these material things, but one should simply request Him: “Please engage me in Your service.” In Bhagavad-gītā Kṛṣṇa also promises that if one engages in His service, He will supply what is needed and preserve whatever is already possessed.</p>
+<p>One of His final instructions to Arjuna indicates total dependence on Him: cetasā sarva-karmāṇi mayi sannyasya mat-paraḥ buddhi-yogam upāśritya mac-cittaḥ satataṁ bhava “In all activities, and for their results, just depend upon Me, and work always under My protection.</p>
+<p>In such devotional service, be fully conscious of Me.” (Bg.18.57)</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

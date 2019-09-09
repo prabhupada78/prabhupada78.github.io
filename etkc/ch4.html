@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch4 - Elevation to Krsna Consciousness</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html" class="active">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Elevation to Krsna Consciousness</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#knowing-krishna-as-he-is" id="knowing-krishna-as-he-is">Knowing Krishna as He Is</a></h1>
+<p>We do not need any high qualifications to offer prayers to the Supreme personality of Godhead.</p>
+<p>Whatever our social or intellectual position may be, we can offer prayers.</p>
+<p>We do not have to be very learned or very scholarly, nor do we have to present our prayers in nicely selected words that are poetical, rhetorical or metaphorical.</p>
+<p>None of this is required, although if it is there it is very nice.</p>
+<p>We simply have to express our feelings, but in order to be able to do this we have to be aware of our position.</p>
+<p>Once we are aware of our position, our feelings can be expressed sincerely and automatically.</p>
+<p>What is our position? This has been taught by Lord Caitanya Mahaprabhu, who teaches us how to pray in his prayer: na dhanam na janam na sundarim kavitam va jagadisa kamaye mama janmani janmanisvare bhavatad bhaktir ahaituki tvayi &quot;O almighty Lord! I have no desire to accumulate wealth, nor have I any desire to enjoy beautiful women, nor do I want any number of followers.</p>
+<p>What I want only is that I may have Your causeless devotional service in my life--birth after birth.&quot; (Siksastaka 4 ) In this prayer the word jagadisa means &quot;Lord of the universe.&quot; Jagat means universe, and isa means Lord.</p>
+<p>Whether we are Hindu, Moslem or Christian or whatever, we must acknowledge that there is a supreme controller of this universe.</p>
+<p>This cannot be denied by anyone who has faith in God.</p>
+<p>Our conviction should be that our Supreme Father is Jagadisa, or Lord of the entire universe.</p>
+<p>Only Lord Jagadisa is in control; everyone else is controlled.</p>
+<p>The atheists, however, do not like this term because they like to think that they are in control, but actually this is not the case.</p>
+<p>All beings in the material world are subject to the three modes of material nature--goodness, passion and ignorance--but the Supreme Lord is above these modes.</p>
+<p>tribhir gunamayair bhavair ebhih sarvam idam jagat mohitam nabhijanati mam ebhyah param avyayam &quot;Deluded by the three modes (goodness, passion, and ignorance), the whole world does not know Me who am above them and inexhaustible.&quot; (Bg.7.13) The Brahma-samhita also gives us information regarding Jagadisa, the Supreme.</p>
+<p>In that work, Lord Brahma says that the supreme controller is Lord Krishna Himself (isvarah paramah Krishnah).</p>
+<p>The word isvarah means controller, and the word paramah means supreme.</p>
+<p>All of us are controllers to some limited extent.</p>
+<p>If we have nothing to control, sometimes we keep a dog or cat so we can say, &quot;My dear dog, please come here.&quot; In this way we can think, &quot;I am the controller.&quot; Sometimes the tables turn, however, and we find that the dog controls the master.</p>
+<p>This happens because actually no one is the controller, and everyone is controlled.</p>
+<p>Unfortunately we are forgetful of this situation, and this forgetfulness is called maya.</p>
+<p>We refuse to accept any controller of this universe because if we accept a controller we have to account for our sinful activities, just as when we accept the government we have to account for our unlawful activities.</p>
+<p>Our position is that we want to continue in our sinful activities, and therefore we deny the existence of a controller.</p>
+<p>This is the basic principle of godlessness.</p>
+<p>The current propaganda that &quot;God is dead&quot; is spread because people want to continue being rascals without restriction.</p>
+<p>This is the basic principle underlying the denial of God's existence.</p>
+<p>But however much we deny His existence, He will not die.</p>
+<p>In this regard, there is a Bengali proverb that says: sakuni sape gorumarana.</p>
+<p>The word sakuni means vulture.</p>
+<p>Vultures enjoy dead animal carcasses, especially the carcass of the cow.</p>
+<p>Sometimes a vulture may go for days without a carcass; therefore this proverb says that the vulture curses the cow, wishing him to die.</p>
+<p>But this does not mean that the cow will die just to oblige the vulture.</p>
+<p>Similarly, these atheistic vultures want to see God dead so they can take pleasure in thinking, &quot;Now God is dead, and I can do anything I like.&quot; We must know then for certain that there is a controller; that is the beginning of knowledge.</p>
+<p>Why should we deny this truth? In every field of activity we find some finite controller, so how can we deny the existence of an infinite controller in this creation? It is not without reason therefore that Lord Caitanya Mahaprabhu particularly uses this word Jagadisa, Lord of the universe.</p>
+<p>He does not manufacture the term, for it is found in many different Vedic mantras.</p>
+<p>For instance: tava kara-kamala-vare nakham adbhuta-srngam dalita-hiranyakasipu-tanu-bhrngam kesava dhrta-narahari-rupa jaya jagadisa hare &quot;O my Lord, Your hands are very beautiful, like the lotus flower, but with Your long nails You have ripped apart the wasp Hiranyakasipu.</p>
+<p>Unto You, Lord of the universe, do I offer my humble obeisances.&quot; Hiranyakasipu was an atheist who denied the existence of God, but God came as Lord Nrsimhadeva, a half-man, half-lion incarnation, and killed him.</p>
+<p>Therefore praise is given to the Lord as supreme controller of the universe and all living entities (jaya jagadisa hare).</p>
+<p>There is also another prayer: jagannatha-svami nayana-patha-gami bhavatu me: &quot;O Lord of the universe, please be visible unto me.&quot; In all these prayers, and in many others, the supreme controller of the universe is acknowledged.</p>
+<p>Everyone is trying to become supreme controllers, but it is not possible by individual, communal or national effort.</p>
+<p>Because everyone is trying to be supreme, there is great competition in the world.</p>
+<p>The world is created in such a way, however, that no one can become supreme.</p>
+<p>Regardless of what position we place ourselves in, we will find that someone is inferior to us and that someone is superior.</p>
+<p>No one individual can say, &quot;I am the supreme.</p>
+<p>No one is above me.&quot; Nor can anyone say, &quot;I am the most inferior.</p>
+<p>No one is below me.&quot; Once we think that we are the most inferior, we'll immediately find that someone is inferior to us; and once we think that we are supreme, we'll immediately find someone superior.</p>
+<p>This is our position.</p>
+<p>God's position, however, is not like this.</p>
+<p>In Bhagavad-gita Krishna asserts His superiority Himself in this way: mattah parataram nanyat kincid as ti dhananjaya mayi sarvam idam protam sutre mani-gana iva &quot;O conqueror of wealth (Arjuna), there is no truth superior to Me.</p>
+<p>Everything rests upon Me, as pearls are strung on a thread.&quot; (Bg.7.7) God is asamaurdhva, which means that no one is equal to or superior to Him.</p>
+<p>If we find someone who has no superior, we can accept him as God.</p>
+<p>God can be defined as one who has no superior and who has no equal.</p>
+<p>This is the Vedic version.</p>
+<p>In the Upanisads it is said, na tat samas cabhyadhikas ca drsyate: no one is found equal to or greater than Him.</p>
+<p>Another characteristic of God is that He has nothing to do.</p>
+<p>In the material world, when a man is considered very important, he always has a great number of things to do.</p>
+<p>The President of the United States, for instance, is considered to be the supreme man in the country, but as soon as there is some disturbance in Central Europe or in any other place in the world, he immediately has to call a meeting of his cabinet to consider how to deal with the situation.</p>
+<p>So even he is required to do so many things.</p>
+<p>If he does not do anything, he is no longer the supreme man.</p>
+<p>In Vedic literatures, however, we find that God has nothing to do (na tasya karyam karanam ca vidyate).</p>
+<p>Krishna may act in so many ways in the world, but it is not because He is required to do so.</p>
+<p>This is indicated in Bhagavad-gita.</p>
+<p>na me parthasti kartavyam trisu lokesu kincana nanavaptam avaptavyam varta eva ca karmani &quot;O son of Prtha, there is no work prescribed for Me within all the three planetary systems.</p>
+<p>Neither am I in want of anything, nor have I the need to obtain anything-and yet I am engaged in work.&quot; (Bg.3.22) In this respect it is interesting to note that one European gentleman, who went to Calcutta and visited several temples, noted that in the temple of the goddess Kali, the deity had a very ferocious figure, with a chopper in hand, and was cutting off the heads of demons and wearing them as garlands.</p>
+<p>In other temples he saw the deity engaged in similar activities, but when he came to the Radha-Krishna temple, he said, &quot;I find that in this temple there is God.&quot; When asked how he concluded this, he said, &quot;In every temple I saw that the deity was doing something, but here I see that God is simply playing a flute and enjoying Himself.</p>
+<p>He obviously has nothing to do.&quot; This is a very intelligent conclusion; indeed, it is the Vedic conclusion.</p>
+<p>Nowadays it is becoming fashionable for people to claim that they are becoming God by meditation.</p>
+<p>This means that by meditation it is possible to transform oneself into God; in other words, God meditates, and by His meditation He becomes God.</p>
+<p>This is all nonsense.</p>
+<p>God is God, and He was always God and will always be God.</p>
+<p>Even as an infant on the lap of His mother Krishna is God.</p>
+<p>No meditation was required, no austerity or penance.</p>
+<p>When Putana, the demonic witch, came to poison Baby Krishna, she came as a beautiful young girl and asked Mother Yasoda, &quot;Oh, Yasodamayi, you have a very nice baby.</p>
+<p>Will you kindly give Him to me so I can nurse Him?&quot; Yasoda was a very simple village woman, and she said, &quot;Oh yes, you can take my child.&quot; Putana had smeared poison on her breasts, and she intended to kill Krishna by letting Him suck them.</p>
+<p>This is the demonic spirit; demons are always wanting to kill Krishna so they can say, &quot;God is dead.</p>
+<p>There is no God.</p>
+<p>God is impersonal.&quot; Krishna was so kind to Putana that He allowed her to nurse Him, but when He sucked her breasts He not only sucked out the poison but her life as well.</p>
+<p>Putana fell to the ground dead and was immediately transformed into her original demonic form.</p>
+<p>So this is God; in the lap of His mother He is God.</p>
+<p>He does not have to become God by meditation, penance, austerity or by following rules or regulations.</p>
+<p>He is substantially and eternally God, and He has nothing to do.</p>
+<p>If one claims that he can become God by worshiping such and such a deity or by meditating, we should immediately take it that he is not a god, but a dog.</p>
+<p>In understanding God, we must be careful to accept the Vedic conclusion only: na tasya karyam karanam ca vidyate: God has nothing to do.</p>
+<p>Why would God have to do something to become God? If we manufacture gold, that is artificial gold, not real gold.</p>
+<p>Gold is natural, and similarly God is natural.</p>
+<p>In His childhood pastimes, in the lap of His mother, He is God; while He is playing with His boyfriends, He is God; while He is dancing, He is God; while He is fighting at Kuruksetra, He is God; while He is married to His queens, He is God; and while He is speaking, He is God.</p>
+<p>There is no difficulty in understanding God.</p>
+<p>All that is required of us is that we listen to Krishna.</p>
+<p>In Bhagavad-gita Krishna tells Arjuna: aham sarvasya prabhavo mattah sarvam pravartate iti matva bhajante mam budha bhava-samanvitah &quot;I am the source of everything; from Me the entire creation flows.</p>
+<p>Knowing this, the wise worship Me with all their hearts.&quot; (Bg.10.8) This means that Sri Krishna is the fountainhead of Lord Siva and the origin of Visnu and of Brahma, and, of course, of all other demigods and other living creatures.</p>
+<p>He says further: mamaivamso jiva-loke jiva-bhutah sanatanah manah-sasthanindriyani prakrti-sthani karsati &quot;The living entities in this conditional world are My fragmental parts, and they are eternal.</p>
+<p>But due to conditioned life, they are struggling very hard with the six senses, which include the mind.&quot; (Bg.15.7) In the Brahma-samhita Lord Brahma explains that if we are looking for God, here is God.</p>
+<p>premanjana-cchurita-bhakti-vilocanena santah sadaiva hrdayesu vilokayanti yam syamasundaram acintya-guna-svarupam govindam adi-purusam tam aham bhajami &quot;I worship Govinda, the primeval Lord, Who is Syamasundara, Krishna Himself, with inconceivable innumerable attributes, whom the pure devotees see in their heart of hearts with the eye of devotion tinged with the salve of love.&quot; (Brahma-samhita 5.38) There are similar descriptions everywhere in Vedic literature, but rascals and demons are so obstinate that even though Krishna is confirmed to be the Supreme God by the twelve standard acaryas (Brahma, Narada, Siva, Bhisma, the Kumaras, Kapila, Manu, etc.) and by Vyasa, Devala and many other devotees, they still refuse to accept Him.</p>
+<p>Lord Caitanya Mahaprabhu also confirms that Krishna is the Supreme Godhead, and the Srimad-Bhagavatam says, Krishnas tu bhagavan svayam.</p>
+<p>SrimadBhagavatam gives a list of all incarnations of God, and at last concludes that the name Krishna, which appears on this list, indicates the Supreme personality of Godhead, whereas all other names represent manifestations or incarnations.</p>
+<p>Ete camsa-kalah pumsah.</p>
+<p>All other names of God are either parts of God or portions of parts.</p>
+<p>The parts are called amsa, and the portions of parts are called kalah.</p>
+<p>As living entities, we are amsa, but we are very fragmental amsa.</p>
+<p>All others are either amsa or kalah, but Krishna is bhagavan svayam--the Supreme personality of Godhead.</p>
+<p>Our prayers should be directed to the Supreme personality of Godhead and none else.</p>
+<p>Therefore we pray with Brahma: cintamani-prakara-sadmasu kalpa-vrksalaksavrtesu surabhir abhipalayantam laksmi-sahasra-sata-sambhrama-sevyamanam govindam adi-purusam tam aham bhajami &quot;I worship Govinda, the primeval Lord, the first progenitor, who is tending the cows, fulfilling all desire, in abodes built with spiritual gems, surrounded by millions of wish-fulfilling trees, always served with great reverence and affection by hundreds of thousands of Laksmis, or gopis.&quot; (Brahma-samhita 5.29) Here Krishna is called the original person (adi-purusam).</p>
+<p>We are all persons.</p>
+<p>Our father is a person, and therefore we are persons.</p>
+<p>If we trace our father's father back, we will find that he was also a person, and that his father was a person, and so on all the way back to Lord Brahma, who was the first created person in this universe.</p>
+<p>Then we will also find that Lord Brahma's father, Visnu, is also a person.</p>
+<p>Everyone is a person, and Krishna is the supreme person.</p>
+<p>The impersonalists' understanding of God is called nirarca.</p>
+<p>Nih means &quot;negative&quot; and arca means &quot;form,&quot; so nirarca means &quot;negative form.&quot; The impersonalists are mistaken when they think that God has no form at all.</p>
+<p>The word nirarca does not indicate that He has no form, but that he has no material form as we do.</p>
+<p>Form is there, but it is not material; it is spiritual form.</p>
+<p>What is the value of our form? This form will be changed after a few years, as soon as we give up the body.</p>
+<p>Our forms are changed just as we change our suits and dresses, but God doesn't have a form like this; therefore He is sometimes called nirarca.</p>
+<p>Form is there, and that also has been explained in the Brahma-samhita.</p>
+<p>Lord Brahma describes His form in this way: venum kvanantam aravinda-dalayataksam barhavatamsam asitambuda-sundarangam kandarpa-koti-kamaniya-visesa-sobham govindam adi-purusam tam aham bhajami angani yasya sakalendriya-vrttimanti pasyanti panti kalayanti ciram jaganti ananda-cinmaya-sad-ujjvala-vigrahasya govindam adi-purusam tam aham bhajami &quot;I worship Govinda, the primeval Lord, who is adept at playing on His flute, with blooming eyes like lotus petals, with head bedecked with a peacock's feather, with the figure of beauty tinged with the hue of blue clouds, and His unique loveliness charming millions of Cupids.</p>
+<p>I worship Govinda, the primeval Lord, whose transcendental form is full of bliss, truth and substantiality and is thus full of the most dazzling splendor.</p>
+<p>Each of the limbs of that transcendental figure possesses, in Himself, the full-fledged functions of all the organs, and eternally sees, maintains and manifests the infinite universes, both spiritual and mundane.&quot; (Brahma-samhita 5.30,32) This form has nothing whatsoever to do with material forms.</p>
+<p>Impersonalists say, &quot;Oh, you say Krishna has a form.</p>
+<p>If so, how can you say that He is the Supreme? The impersonal Brahman is the Supreme, and the impersonal Brahman is formless.&quot; But we have information from Bhagavad-gita that Krishna is the source of the impersonal Brahman.</p>
+<p>brahmano hi pratisthaham amrtasyavyayasya ca sasvatasya ca dharmasya sukhasyaikantikasya ca &quot;And I am the basis of the impersonal Brahman, which is immortal and imperishable, eternal, the constitutional position of ultimate happiness.&quot; (Bg.14.27) Krishna certainly has form, but His form, as stated before, is sac-cid-ananda-vigraha, eternal, full of bliss, and full of knowledge.</p>
+<p>The attributes of His transcendental body are summarized by Lord Brahma in this way: isvarah paramah Krishnah sac-cid-ananda-vigrahah anadir adir govindah sarva-karana-karanam &quot;Krishna, who is known as Govinda, is the Supreme Godhead.</p>
+<p>He has an eternal, blissful spiritual body.</p>
+<p>He is the origin of all.</p>
+<p>He has no other origin and He is the prime cause of all causes.&quot; (Brahma-samhita 5.1) The word Govinda means &quot;He who gives pleasure to the senses.&quot; We perceive pleasure through our senses, and therefore Krishna, who is the reservoir of pleasure, is called Govinda.</p>
+<p>If we serve Krishna with purified senses, we will begin to relish the pleasure of that supreme reservoir.</p>
+<p>How can we describe God or understand His glories? It is not possible.</p>
+<p>God is unlimited.</p>
+<p>Regardless of our finite limitations, however, we can express our own feelings and say, &quot;My God, my Lord.&quot; This will be accepted.</p>
+<p>Lord Caitanya Mahaprabhu teaches us to pray in this way: ayi nanda-tanuja kinkaram patitam mam visame bhavambudhau krpaya tava pada-pankajasthita-dhuli-sadrsam vicintaya &quot;O son of Maharaja Nanda, I am Your eternal servitor, and although I am so, somehow or other I have fallen in the ocean of birth and death.</p>
+<p>please, therefore, pick me up from this ocean of death and fix me as one of the atoms at Your lotus feet.&quot; (Siksastaka 5) This should be the standard of prayer; we should only want to be placed as one of the atoms at Krishna's lotus feet to render service unto Him.</p>
+<p>Everyone is praying to God with some interest, but even if we pray to God, &quot;Give me some money, give me some relief, a nice house, a nice wife, or nice food,&quot; that is also good.</p>
+<p>Yet this is not to the standard of Lord Caitanya Mahaprabhu's prayer.</p>
+<p>Our only prayer should be that the Lord enable us to serve Him birth after birth.</p>
+<p>Our prayer should be, &quot;Dear Lord, You are so great that I want to engage in Your service.</p>
+<p>I have been serving all these rascals, and I am not satisfied.</p>
+<p>Now I have come to You.</p>
+<p>please engage me in Your service.&quot; This is the last word in prayer.</p>
+<p>Some people complain that when they pray to God they do not feel His presence.</p>
+<p>We should know that this is due to our incapacities, not God's.</p>
+<p>There are two conceptions of presence--the physical conception and the vibrational conception.</p>
+<p>The physical conception is temporary, whereas the vibrational conception is eternal.</p>
+<p>When we enjoy or relish the vibration of Krishna's teachings in Bhagavad-gita, or when we chant Hare Krishna, we should know that by those vibrations He is immediately present.</p>
+<p>He is absolute, and because of this His vibration is just as important as His physical presence.</p>
+<p>When we feel separation from Krishna or the spiritual master, we should just try to remember their words of instructions, and we will no longer feel that separation.</p>
+<p>Such association with Krishna and the spiritual master should be association by vibration, not physical presence.</p>
+<p>That is real association.</p>
+<p>We put so much stress on seeing, but when Krishna was present on this earth, so many people saw Him and did not realize that He is God; so what is the advantage of seeing? By seeing Krishna, we will not understand Him, but by listening carefully to His teachings, we can come to the platform of understanding.</p>
+<p>We can touch Krishna immediately by sound vibration; therefore we should give more stress to the sound vibration of Krishna and of the spiritual master-then we'll feel happy and won't feel separation.</p>
+<p>From Srimad-Bhagavatam we understand that when Krishna departed from this world, Arjuna was overwhelmed with sorrow, but when he began to remember the instructions of Bhagavad-gita, he became pacified.</p>
+<p>Arjuna was Krishna's constant friend, so when Krishna went to His abode, Arjuna was overwhelmed, but just by remembering His teachings he got relief from the pains of separation.</p>
+<p>Thus whenever we feel separation, it is best to remember the teachings.</p>
+<p>The teachings of Bhagavadgita were imparted to Arjuna for his happiness and for the happiness of all men.</p>
+<p>This is indicated by Krishna, at the beginning of the Tenth Chapter, when He says: bhuya eva maha-baho srnu me paramam vacah yat te 'ham priyamanaya vaksyami hita-kamyaya &quot;Again, O mighty-armed Arjuna, listen to My supreme word, which I shall impart to you for your benefit and which will give you great joy.&quot; (Bg.10.1) By hearing the words of Lord Krishna and following them carefully, we will attain not only peace in the world, but the supreme peace (param santim).</p>
+<p>All that is required is that we seek refuge in the lotus feet of Krishna and render service unto Him by chanting His glories and pushing this Krishna consciousness movement in every town and village of the world.</p>
+<p>It is Krishna's promise that by such surrender peace and eternal life will come automatically.</p>
+<p>tam eva saranam gaccha sarva-bhavena bharata tat-prasadat param santim sthanam prapsyasi sasvatam &quot;O scion of Bharata, surrender unto Him in all respects, so that by His mercy you can have transcendental peace and the eternal abode.&quot; (Bg.18.62)</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

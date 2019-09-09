@@ -1,0 +1,2132 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Teachings of Prahlada</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Teachings of Prahlada</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Teachings of Prahlada</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;ch1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch2.html&quot;&gt;ch2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch3.html&quot;&gt;ch3&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch4.html&quot;&gt;ch4&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch5.html&quot;&gt;ch5&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Teachings of Prahlada&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;!DOCTYPE HTML&gt;
+</code></pre>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Teachings of Prahlada</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+
+&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+
+&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;
+
+&amp;lt;!-- Custom theme stylesheets --&amp;gt;
+
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+
+        if (theme.startsWith('&amp;quot;') &amp;amp;&amp;amp; theme.endsWith('&amp;quot;')) {
+            localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+        }
+
+        if (sidebar.startsWith('&amp;quot;') &amp;amp;&amp;amp; sidebar.endsWith('&amp;quot;')) {
+            localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+        }
+    } catch (e) { }
+&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var theme;
+    try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+    if (theme === null || theme === undefined) { theme = default_theme; }
+    document.body.className = theme;
+    document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var html = document.querySelector('html');
+    var sidebar = 'hidden';
+    if (document.body.clientWidth &amp;gt;= 1080) {
+        try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+        sidebar = sidebar || 'visible';
+    }
+    html.classList.remove('sidebar-visible');
+    html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;
+
+&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+        &amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;
+
+&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;
+
+    &amp;lt;div class=&amp;quot;page&amp;quot;&amp;gt;
+        
+        &amp;lt;div id=&amp;quot;menu-bar&amp;quot; class=&amp;quot;menu-bar&amp;quot;&amp;gt;
+            &amp;lt;div id=&amp;quot;menu-bar-sticky-container&amp;quot;&amp;gt;
+                &amp;lt;div class=&amp;quot;left-buttons&amp;quot;&amp;gt;
+                    &amp;lt;button id=&amp;quot;sidebar-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Toggle Table of Contents&amp;quot; aria-label=&amp;quot;Toggle Table of Contents&amp;quot; aria-controls=&amp;quot;sidebar&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-bars&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    &amp;lt;button id=&amp;quot;theme-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Change theme&amp;quot; aria-label=&amp;quot;Change theme&amp;quot; aria-haspopup=&amp;quot;true&amp;quot; aria-expanded=&amp;quot;false&amp;quot; aria-controls=&amp;quot;theme-list&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-paint-brush&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    &amp;lt;ul id=&amp;quot;theme-list&amp;quot; class=&amp;quot;theme-popup&amp;quot; aria-label=&amp;quot;Themes&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;light&amp;quot;&amp;gt;Light&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;rust&amp;quot;&amp;gt;Rust (default)&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;coal&amp;quot;&amp;gt;Coal&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;navy&amp;quot;&amp;gt;Navy&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;ayu&amp;quot;&amp;gt;Ayu&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                    &amp;lt;/ul&amp;gt;
+                    
+                    &amp;lt;button id=&amp;quot;search-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Search. (Shortkey: s)&amp;quot; aria-label=&amp;quot;Toggle Searchbar&amp;quot; aria-expanded=&amp;quot;false&amp;quot; aria-keyshortcuts=&amp;quot;S&amp;quot; aria-controls=&amp;quot;searchbar&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-search&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;h1 class=&amp;quot;menu-title&amp;quot;&amp;gt;Teachings of Prahlada&amp;lt;/h1&amp;gt;
+
+                &amp;lt;div class=&amp;quot;right-buttons&amp;quot;&amp;gt;
+                    &amp;lt;a href=&amp;quot;print.html&amp;quot; title=&amp;quot;Print this book&amp;quot; aria-label=&amp;quot;Print this book&amp;quot;&amp;gt;
+                        &amp;lt;i id=&amp;quot;print-button&amp;quot; class=&amp;quot;fa fa-print&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                    
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        
+        &amp;lt;div id=&amp;quot;search-wrapper&amp;quot; class=&amp;quot;hidden&amp;quot;&amp;gt;
+            &amp;lt;form id=&amp;quot;searchbar-outer&amp;quot; class=&amp;quot;searchbar-outer&amp;quot;&amp;gt;
+                &amp;lt;input type=&amp;quot;search&amp;quot; name=&amp;quot;search&amp;quot; id=&amp;quot;searchbar&amp;quot; name=&amp;quot;searchbar&amp;quot; placeholder=&amp;quot;Search this book ...&amp;quot; aria-controls=&amp;quot;searchresults-outer&amp;quot; aria-describedby=&amp;quot;searchresults-header&amp;quot;&amp;gt;
+            &amp;lt;/form&amp;gt;
+            &amp;lt;div id=&amp;quot;searchresults-outer&amp;quot; class=&amp;quot;searchresults-outer hidden&amp;quot;&amp;gt;
+                &amp;lt;div id=&amp;quot;searchresults-header&amp;quot; class=&amp;quot;searchresults-header&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+                &amp;lt;ul id=&amp;quot;searchresults&amp;quot;&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+
+        &amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;gt;
+        &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+            document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+            document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+            Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+            });
+        &amp;lt;/script&amp;gt;
+
+        &amp;lt;div id=&amp;quot;content&amp;quot; class=&amp;quot;content&amp;quot;&amp;gt;
+            &amp;lt;main&amp;gt;
+                &amp;lt;!DOCTYPE HTML&amp;gt;
+</code></pre>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Teachings of Prahlada</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+
+    if (sidebar.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; sidebar.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+    }
+} catch (e) { }
+</code></pre>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+    
+    &amp;amp;lt;div id=&amp;amp;quot;menu-bar&amp;amp;quot; class=&amp;amp;quot;menu-bar&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;div id=&amp;amp;quot;menu-bar-sticky-container&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;div class=&amp;amp;quot;left-buttons&amp;amp;quot;&amp;amp;gt;
+                &amp;amp;lt;button id=&amp;amp;quot;sidebar-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Toggle Table of Contents&amp;amp;quot; aria-label=&amp;amp;quot;Toggle Table of Contents&amp;amp;quot; aria-controls=&amp;amp;quot;sidebar&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-bars&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                &amp;amp;lt;button id=&amp;amp;quot;theme-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Change theme&amp;amp;quot; aria-label=&amp;amp;quot;Change theme&amp;amp;quot; aria-haspopup=&amp;amp;quot;true&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot; aria-controls=&amp;amp;quot;theme-list&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-paint-brush&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                &amp;amp;lt;ul id=&amp;amp;quot;theme-list&amp;amp;quot; class=&amp;amp;quot;theme-popup&amp;amp;quot; aria-label=&amp;amp;quot;Themes&amp;amp;quot; role=&amp;amp;quot;menu&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;light&amp;amp;quot;&amp;amp;gt;Light&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;rust&amp;amp;quot;&amp;amp;gt;Rust (default)&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;coal&amp;amp;quot;&amp;amp;gt;Coal&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;navy&amp;amp;quot;&amp;amp;gt;Navy&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;ayu&amp;amp;quot;&amp;amp;gt;Ayu&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                &amp;amp;lt;/ul&amp;amp;gt;
+                
+                &amp;amp;lt;button id=&amp;amp;quot;search-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Search. (Shortkey: s)&amp;amp;quot; aria-label=&amp;amp;quot;Toggle Searchbar&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;S&amp;amp;quot; aria-controls=&amp;amp;quot;searchbar&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-search&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                
+            &amp;amp;lt;/div&amp;amp;gt;
+
+            &amp;amp;lt;h1 class=&amp;amp;quot;menu-title&amp;amp;quot;&amp;amp;gt;Teachings of Prahlada&amp;amp;lt;/h1&amp;amp;gt;
+
+            &amp;amp;lt;div class=&amp;amp;quot;right-buttons&amp;amp;quot;&amp;amp;gt;
+                &amp;amp;lt;a href=&amp;amp;quot;print.html&amp;amp;quot; title=&amp;amp;quot;Print this book&amp;amp;quot; aria-label=&amp;amp;quot;Print this book&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i id=&amp;amp;quot;print-button&amp;amp;quot; class=&amp;amp;quot;fa fa-print&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+                
+            &amp;amp;lt;/div&amp;amp;gt;
+        &amp;amp;lt;/div&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+
+    
+    &amp;amp;lt;div id=&amp;amp;quot;search-wrapper&amp;amp;quot; class=&amp;amp;quot;hidden&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;form id=&amp;amp;quot;searchbar-outer&amp;amp;quot; class=&amp;amp;quot;searchbar-outer&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;input type=&amp;amp;quot;search&amp;amp;quot; name=&amp;amp;quot;search&amp;amp;quot; id=&amp;amp;quot;searchbar&amp;amp;quot; name=&amp;amp;quot;searchbar&amp;amp;quot; placeholder=&amp;amp;quot;Search this book ...&amp;amp;quot; aria-controls=&amp;amp;quot;searchresults-outer&amp;amp;quot; aria-describedby=&amp;amp;quot;searchresults-header&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;/form&amp;amp;gt;
+        &amp;amp;lt;div id=&amp;amp;quot;searchresults-outer&amp;amp;quot; class=&amp;amp;quot;searchresults-outer hidden&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;div id=&amp;amp;quot;searchresults-header&amp;amp;quot; class=&amp;amp;quot;searchresults-header&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;
+            &amp;amp;lt;ul id=&amp;amp;quot;searchresults&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;/ul&amp;amp;gt;
+        &amp;amp;lt;/div&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+    
+
+    &amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;gt;
+    &amp;amp;lt;script type=&amp;amp;quot;text/javascript&amp;amp;quot;&amp;amp;gt;
+        document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+        document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+        Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+            link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+        });
+    &amp;amp;lt;/script&amp;amp;gt;
+
+    &amp;amp;lt;div id=&amp;amp;quot;content&amp;amp;quot; class=&amp;amp;quot;content&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;main&amp;amp;gt;
+            &amp;amp;lt;!DOCTYPE HTML&amp;amp;gt;
+</code></pre>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Teachings of Prahlada</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+            
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;search-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;S&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-search&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            
+        &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+        &amp;amp;amp;lt;h1 class=&amp;amp;amp;quot;menu-title&amp;amp;amp;quot;&amp;amp;amp;gt;Teachings of Prahlada&amp;amp;amp;lt;/h1&amp;amp;amp;gt;
+
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;right-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;a href=&amp;amp;amp;quot;print.html&amp;amp;amp;quot; title=&amp;amp;amp;quot;Print this book&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Print this book&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i id=&amp;amp;amp;quot;print-button&amp;amp;amp;quot; class=&amp;amp;amp;quot;fa fa-print&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+            
+        &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/form&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+        &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+
+&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+    });
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;
+
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;main&amp;amp;amp;gt;
+        &amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Teachings of Prahlada</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+        
+    &amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+
+    &amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;Teachings of Prahlada&amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;gt;
+
+    &amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;gt;
+        
+    &amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Teachings of Prahlada</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+
+&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Teachings of Prahlada&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;
+
+&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+    
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - </title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;light&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;light&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;h1&amp;amp;amp;gt;&amp;amp;amp;lt;a class=&amp;amp;amp;quot;header&amp;amp;amp;quot; href=&amp;amp;amp;quot;#home&amp;amp;amp;quot; id=&amp;amp;amp;quot;home&amp;amp;amp;quot;&amp;amp;amp;gt;Home&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/h1&amp;amp;amp;gt;</p>
+<pre><code>&amp;amp;amp;amp;lt;/main&amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;lt;nav class=&amp;amp;amp;amp;quot;nav-wrapper&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Page navigation&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;lt;!-- Mobile navigation buttons --&amp;amp;amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;amp;amp;lt;a rel=&amp;amp;amp;amp;amp;quot;next&amp;amp;amp;amp;amp;quot; href=&amp;amp;amp;amp;amp;quot;index.html&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;mobile-nav-chapters next&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Next chapter&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Next chapter&amp;amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;amp;quot;Right&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;div style=&amp;amp;amp;amp;amp;quot;clear: both&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/nav&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+            
+
+            &amp;amp;lt;div style=&amp;amp;quot;clear: both&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;
+        &amp;amp;lt;/nav&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+&amp;amp;lt;/div&amp;amp;gt;
+
+&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+    
+
+    
+        &amp;amp;lt;a href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+        &amp;amp;lt;/a&amp;amp;gt;
+    
+&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+                
+
+                
+                    &amp;lt;a rel=&amp;quot;next&amp;quot; href=&amp;quot;index.html&amp;quot; class=&amp;quot;mobile-nav-chapters next&amp;quot; title=&amp;quot;Next chapter&amp;quot; aria-label=&amp;quot;Next chapter&amp;quot; aria-keyshortcuts=&amp;quot;Right&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-angle-right&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                
+
+                &amp;lt;div style=&amp;quot;clear: both&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+            &amp;lt;/nav&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;nav class=&amp;quot;nav-wide-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+        
+
+        
+            &amp;lt;a href=&amp;quot;index.html&amp;quot; class=&amp;quot;nav-chapters next&amp;quot; title=&amp;quot;Next chapter&amp;quot; aria-label=&amp;quot;Next chapter&amp;quot; aria-keyshortcuts=&amp;quot;Right&amp;quot;&amp;gt;
+                &amp;lt;i class=&amp;quot;fa fa-angle-right&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+            &amp;lt;/a&amp;gt;
+        
+    &amp;lt;/nav&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+
+
+
+
+&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+
+&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;index.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+
+            
+                &lt;a href=&quot;index.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+<h1><a class="header" href="#the-dearmost-person" id="the-dearmost-person">The Dearmost Person</a></h1>
+<p>Today I shall speak before you of the history of a boy devotee.</p>
+<p>His name is Prahlāda Mahārāja, and he was born in a family which was stubbornly atheistic.</p>
+<p>There are two kinds of men in this world; one is called the demon, and the other is called the demigod.</p>
+<p>What is the difference between them? The main difference is that the demigods or godly persons are devoted to the Supreme Lord, whereas the demons are atheistic.</p>
+<p>They do not believe in God because they are materialists.</p>
+<p>These two classes of men always exist in this world.</p>
+<p>At the present moment, due to this age of Kali (Quarrel), the number of demons has increased, but the classification has existed since the beginning of creation.</p>
+<p>This incident which I am narrating to you occurred very, very long ago, a few million years after the time of creation.</p>
+<p>This boy Prahlāda Mahārāja happened to be the son of the most atheistic person and the most materially powerful as well­so you will be interested to rear this history.</p>
+<p>Because the society was materialistic, this boy had no opportunity to glorify the Supreme Lord.</p>
+<p>The characteristic of a great soul is that he is very eager to broadcast glorification of the Supreme Lord.</p>
+<p>Lord Jesus Christ for example, was very much eager to broadcast the glorification of God, but demoniac people misunderstood him and crucified him.</p>
+<p>Prahlāda Mahārāja was a five­year­old boy, and, when he was in school, as soon as there was a recreation period, when the teacher was off, he would say to his friends, &quot;My dear friends, come on.</p>
+<p>We shall speak about Kṛṣṇa consciousness.&quot; I am just opening a scene.</p>
+<p>This is Srīmad­ Bhāgavatam, Seventh Canto, Sixth Chapter.</p>
+<p>The devotee Prahlāda is saying, &quot;My dear boys, my dear friends, this is the time, in this young age, to prosecute Kṛṣṇa consciousness.&quot; Before that, he had held discussions with his little friends, but they said, &quot;Oh, we shall now play.</p>
+<p>Why take up Kṛṣṇa consciousness?&quot; In answer to this, Prahlāda Mahārāja is stating, &quot;If you are intelligent, then you must begin Kṛṣṇa consciousness from childhood!&quot; Srīmad­ Bhāgavatam offers bhāgavata­dharma, or scientific knowledge about God.</p>
+<p>Bhāgavatam means the Supreme Personality of Godhead, and dharma means the regulative principles of understanding Kṛṣṇa consciousness.</p>
+<p>This human form of life is very rare.</p>
+<p>It is a great opportunity.</p>
+<p>Therefore, Prahlāda says, &quot;My dear friends, you are born as civilized human beings, so this is the greatest opportunity.&quot; Although it is temporary, do not know what is the length of my life­it is calculated that in this age the human body is meant to exist not more than a hundred years.</p>
+<p>But as the age of Kali advances, duration of life, memory, mercy, religiousness and all other such assets decrease.</p>
+<p>Although it is temporary, you can achieve the highest perfection of life while in this human form.</p>
+<p>Why is this so important? This is the opportunity­you can understand the Supreme Lord, the all­pervading Lord.</p>
+<p>For other life forms this is not possible, By the gradual evolutionary process we come to this plane, so this is the opportunity, this human form of life.</p>
+<p>By nature's law, a human body is ultimately given to you so that you can promote yourself to the spiritual life and go back home, back to Godhead.</p>
+<p>The ultimate goal of life is Viṣṇu.</p>
+<p>In another verse, Prahlāda Mahārāja will say: &quot;People who are in this material world enamored by the material energy, do not know what the goal of human life is.&quot; Why? They have been enchanted by the glaring external energy.</p>
+<p>They have forgotten that they are spiritual energy.</p>
+<p>This is explained later on, but here he says, &quot;This life is an opportunity to understand the ultimate goal of perfection, Viṣṇu.&quot; Why should we be very anxious to know Viṣṇu, or God? Prahlāda Mahārāja gives a reason: &quot;Viṣṇu is the dearmost person.</p>
+<p>That we have forgotten.&quot; We all seek for some dear friend­everyone searches in this way.</p>
+<p>A man searches for dear friendship in woman, and woman searches.</p>
+<p>for dear friendship in man.</p>
+<p>Or else a man searches in man, and woman searches in woman.</p>
+<p>Everyone searches after some dear friend, some sweet friend.</p>
+<p>Why? We want the cooperation of a dear friend who will help us.</p>
+<p>This is part of the struggle for existence, and this is natural.</p>
+<p>But we do not know that our most dear friend is Viṣṇu, the Supreme Personality of Godhead.</p>
+<p>We are searching after some dear friend, but we do not know who this dear friend can be.</p>
+<p>Those who have read Bhagavad­gītā will find this nice verse in the Fifth Chapter: &quot;If you make friendship with Kṛṣṇa, the Supreme Lord, then you can understand perfectly that everything that exists in this world or other worlds is all the property of Kṛṣṇa.</p>
+<p>He is the proprietor and enjoyer of everything.&quot; Why are you performing austerity? Why are you performing religious rituals? Why are you giving in charity? Why do you engage in righteous activities? Whatever formulas you have manufactured are meant for pleasing the Supreme Lord, and nothing more.</p>
+<p>By your actions, by your righteous activities, when the Supreme Lord is pleased, you will get the result.</p>
+<p>If by your actions you want to gain either material happiness or spiritual happiness, if you want to live on this planet or on other planets, if you want to be a human being or you want to be a tiger, cat or dog, whatever you like you will get.</p>
+<p>Therefore He is the most sincere friend.</p>
+<p>Whatever you want from Him, you can get.</p>
+<p>But the intelligent man does not want anything that is materially contaminated.</p>
+<p>In Bhagavad­gītā you will find that Kṛṣṇa says that one can elevate oneself to the highest planet, which is known as Brahmaloka, where the duration of life is millions and millions of years.</p>
+<p>You cannot figure the duration of life there: your arithmetic will be ineffective.</p>
+<p>The statement in Bhagvad­gītā is that Brahma's life is so long that 4,200,000 years make one day to him.</p>
+<p>Kṛṣṇa says, &quot;Whatever position you want, beginning from the ant right up to Brahma, you can have.</p>
+<p>But the repetition of birth and death will be there.</p>
+<p>However, if, somehow or other, by discharging Kṛṣṇa consciousness in devotional service, you come to Me, then you don't have to come back again to this miserable material condition.&quot; Prahlāda Mahārāja said the same thing: We are searching for the most dear friend, Kṛṣṇa, the Supreme Lord.</p>
+<p>Why is He the most dear friend? By nature He is dear.</p>
+<p>What is the dearmost thing within yourself? Have you analyzed? You are yourself the dearmost thing.</p>
+<p>I am sitting here, but if there is a fire alarm I shall at once take care of myself: &quot;How can I save myself?&quot; We forget our friends and even our children: &quot;Let me first of all save myself.&quot; Self­preservation is the first law of nature.</p>
+<p>Ātmā, self, in the grossest sense refers to the body.</p>
+<p>In the subtler sphere the mind is ātmā, and in the real sense ātmā means the soul.</p>
+<p>In the gross stage we are very fond of protecting the body, and in a subtler stage we are very fond of protecting the mind.</p>
+<p>But above this mental, intellectual plane, where the atmosphere is spiritualized, we can understand: &quot;I am not this mind and not this body.</p>
+<p>Aham brahmāsmi—am a part and parcel of the Supreme Lord.&quot; That is the platform of real understanding.</p>
+<p>Prahād Mahārāja says that of all living entities, Viṣṇu is the supreme well­wisher.</p>
+<p>Therefore we are all searching for Him.</p>
+<p>When a child cries, what does he long for? He longs for the mother.</p>
+<p>But he has no language to express this.</p>
+<p>By nature, he has his body, born of the mother's body, so there is an intimate relation with the mother's body.</p>
+<p>The child won't like any other woman.</p>
+<p>The child cries, but when the woman who is the child's mother comes and picks him up, at once he is pacified.</p>
+<p>He has no language to express all this, but the real demand is there.</p>
+<p>Similarly, we are trying to protect the body.</p>
+<p>This is self­preservation.</p>
+<p>It is a natural law of the living entity, just as eating is a natural law and sleeping is a natural law.</p>
+<p>I defend the body because within the body there is soul.</p>
+<p>What is this soul? The soul is a part and parcel of the Supreme Lord.</p>
+<p>As we want to protect the hand or the finger because it is a part of the whole body, similarly we try to save ourselves because this is the defending process of the Supreme.</p>
+<p>The Supreme does not need defense, but this is a manifestation of our love towards Him, which is now perverted.</p>
+<p>The finger and the hand are meant to act in the interests of the whole body; as soon as I want the hand to come here, it comes, and as soon as I want the finger to play on the drum, it plays.</p>
+<p>This is the natural position.</p>
+<p>Similarly, we are searching for God, to dovetail our energy for the Supreme, but, under the spell of illusory energy, we do not know it.</p>
+<p>That is our mistake.</p>
+<p>Now, here is an opportunity, in human life.</p>
+<p>You have come to understand about Kṛṣṇa consciousness, about your real goal of life, because you are human beings.</p>
+<p>I cannot invite cats and dogs and human beings.</p>
+<p>A human being can understand the necessity of life.</p>
+<p>If he loses the opportunity, it is a great catastrophe.</p>
+<p>Prahlāda Mahārāja said, &quot;God is the dearmost personality of all.</p>
+<p>We have to search for God.&quot; Then what about the material necessities of life? Prahlāda Mahārāja replies to this, &quot;You are after sense gratification.</p>
+<p>I know that.</p>
+<p>Sense gratification is automatically achieved by contact with this body.&quot; Because a hog has a certain type of body, his sense gratification comes from eating stool, the very thing which is most obnoxious to you.</p>
+<p>At once, after evacuating, you leave to get free from the bad smell­but the hog is waiting.</p>
+<p>As soon as you evacuate, he will at once enjoy.</p>
+<p>Other animals are not attracted because one's form of pleasure­seeking is due to his particular body.</p>
+<p>There are different types of sense gratification according to different types of bodies.</p>
+<p>Therefore, Prahlāda says, &quot;My dear friends, sense gratification is achieved according to one's particular type of body.&quot; Everyone who has a material body receives sense gratification.</p>
+<p>Don't think that the hogs eating stools are unhappy.</p>
+<p>No, they are getting fat in that way.</p>
+<p>They are very happy.</p>
+<p>Now, if a hog can achieve sense gratification, why not a human being? But that is not our achievement.</p>
+<p>That is given by nature; the facilities of a hog's body are offered by nature, and the facilities of a dog's body are also offered by nature, or God.</p>
+<p>Why should you labor for facilities which you are destined to receive anyway, by nature's law? In every form of life the bodily demands are satisfied by the arrangement of nature.</p>
+<p>This gratification is arranged, just as there is an arrangement for distress.</p>
+<p>Do you like fever? No.</p>
+<p>Why does it come? I do not know.</p>
+<p>But it does come, does it not? Yes.</p>
+<p>Did you try for it? No.</p>
+<p>So how does it come? &quot;By nature.</p>
+<p>That is the only answer.</p>
+<p>Similarly, if miseries come by nature, your happiness will also come by nature.</p>
+<p>Don't bother about it.</p>
+<p>That is the instruction of Prahlāda Mahārāja.</p>
+<p>If you can receive the miseries of life without effort, similarly, you can have your happiness also without effort.</p>
+<p>Then, what is the real purpose of this human form of life? You have to cultivate Kṛṣṇa consciousness.</p>
+<p>Other things will be obtained by nature's law, or God's law.</p>
+<p>Even if I don't try, whatever I am to achieve because of my past work and my particular type of body will be supplied.</p>
+<p>At any stage or in any form of life, facility is given for sense gratification.</p>
+<p>As you do not try for misery, so also happiness will take place without your control.</p>
+<p>Your real concern, therefore; ,should be to seek out the higher goal of human life.</p>
+<p>Prahlāda Mahārāja was a boy devotee—a born sage, who, at only five years of age, used to speak to his school friends thus:— &quot;My dear friends, now is the time to prosecute Krishna Consciousness, while we are still young (or at least young at heart) unless we start immediately we'll never get out of the sufferings of the material entanglement.</p>
+<p>So please at once take up the chanting of­ HARE KRISHNA HARE KRISHNA KRISHNA KRISHNA HARE HARE HARE RAMA HARE RAMA RAMA RAMA HARE HARE.</p>
+<h1><a class="header" href="#we-are-spoiling-our-lives" id="we-are-spoiling-our-lives">We Are Spoiling Our Lives!</a></h1>
+<p>Prahlāda Mahārāja instructs his young friends: &quot;My dear friends, material enjoyment involves agitating the senses.</p>
+<p>You have this material sense enjoyment, my dear friends, and your only thought is how to enjoy these senses.</p>
+<p>That's all.&quot; In possession of a particular body, we have particular senses, and we enjoy.</p>
+<p>For example, a camel enjoys thorny twigs.</p>
+<p>Why? Camels are very fond of thorny twigs because when they chew the twigs, blood comes out of the tongue, and they taste their own blood.</p>
+<p>The camel thinks this is very nice.</p>
+<p>He eats thorny twigs, the twigs cut his tongue, and blood oozes out.</p>
+<p>He tastes his own blood, but he thinks, &quot;I am enjoying.&quot; This is sense gratification.</p>
+<p>Sex life is also like that.</p>
+<p>We taste our own blood, and we think we are enjoying.</p>
+<p>This is our foolishness.</p>
+<p>The living entity who has contacted this material body is a spiritual being, but because he has a tendency to enjoy, to exploit this material energy, he has contacted a body.</p>
+<p>There are 8,400,000 species of living entities, each with a different body, and according to the body, they have particular senses in order to enjoy a particular type of pleasure.</p>
+<p>Prahlāda Mahārāja says that this body and its particular type of enjoyment go together.</p>
+<p>Suppose you are given thorny grass or twigs: &quot;Ladies and gentlemen, here is very nice food.</p>
+<p>It is certified by the camels.</p>
+<p>It is very good:&quot; Would you like to take it? &quot;No! What nonsense are you offering me?” Because you have a different body, you have no taste for that.</p>
+<p>But if you offer it to a camel, because of his particular body, it is a very nice meal.</p>
+<p>One man's food is another man's poison.</p>
+<p>If one is offered something which is not his food, he cannot take it.</p>
+<p>The stool­eating hog will not accept nice foodstuffs such as cake.</p>
+<p>Give him stool, and it will be very nice.</p>
+<p>But if you are offered the stool, because you have a different body you will say, &quot;What are you offering?&quot; There are different kinds of material enjoyment, but those who are actually intelligent know that such enjoyment is due to the body.</p>
+<p>Actual happiness, however, is that which is not enjoyed by material senses but by the spiritual senses.</p>
+<p>Because we are spirit, we have spiritual senses.</p>
+<p>Now these are covered by matter, and therefore we are entrapped.</p>
+<p>Therefore, you should not endeavor to achieve material happiness.</p>
+<p>It will come.</p>
+<p>The lower animals have no business profession, but still they eat and live.</p>
+<p>So Prahlāda Mahārāja says, &quot;You need not endeavor for material pleasure.</p>
+<p>That will come.</p>
+<p>Because you have a body, it is predestined that bodily enjoyment—?as you are fit to enjoy it—will come.</p>
+<p>If misery comes without our calling for it, so happiness will come without our calling for it.&quot; Therefore, we should not be very anxious to aggravate our senses to increase material happiness; In any civilization, those who have no spiritual happiness always hanker after sense enjoyment.</p>
+<p>Prahlāda: Mahārāja says, &quot;Your life is limited.</p>
+<p>Although it is very valuable, it,is also very limited.</p>
+<p>And our duty is to dovetail ourselves in some way in Kṛṣṇa consciousness and to act accordingly.</p>
+<p>You should not try to increase your material sense enjoyment.</p>
+<p>You cannot increase it.</p>
+<p>There are so many different kinds of bodies, and they are guided by nature's law: you have to eat like this, you have to live like this, you have to.</p>
+<p>sleep like this.</p>
+<p>It has already been arranged.&quot; Our higher intelligence comes with this human body.</p>
+<p>Because we have higher consciousness, we should try for the higher enjoyment in life, which is spiritual enjoyment.</p>
+<p>And how can that spiritual enjoyment be achieved? You, should not waste your time simply hankering for material pleasure.</p>
+<p>Then, what is to be done? One should absorb himself in serving the Supreme Lord, who gives the pleasure of liberation: We should turn our attention to achieving the lotus feet of Kṛṣṇa, who can give us liberation from this material world.</p>
+<p>How long do we have to engage ourselves? Prahlāda Mahārāja says, &quot;We are now in&quot;material.entanglement.</p>
+<p>Now I have this body, I will quit this body after a few years, and then I will have to accept another body ..</p>
+<p>Once you take up one body and enjoy as your body's senses dictate, you prepare another body by such sense enjoyment and you get another body as you want it.&quot; There is no guarantee that you will get a human body.</p>
+<p>That will depend on your work.</p>
+<p>It you worked just like a demigod, you get a demigod's body.</p>
+<p>And if you worked just like a dog, then you get a dog's body.</p>
+<p>This is not in your hands; it is in the hand of nature.</p>
+<p>Our duty is not to speculate on what we are going to get next.</p>
+<p>At the present moment, let us,understand that we have this material body.</p>
+<p>Now, if we want to develop our spiritual consciousness or Kṛṣṇa consciousness, then we should at once engage ourselves in this Kṛṣṇa activity.</p>
+<p>That is auspicious for further progress.</p>
+<p>How long should you do it? As long as this body does not stop working.</p>
+<p>We do not know when it will stop functioning.</p>
+<p>The great saint Parīkṣit Mahārāja got seven days notice: &quot;Your body will fall in a week.” But we do not know when our body will faii.As soon as we are on the road, there may immediately be some accident.</p>
+<p>We should always be prepared.</p>
+<p>Death is always there.</p>
+<p>We should not optimistically think, &quot;Everyone is dying, I shall live.&quot; Why will you live if everyone is dying? Your father has died, your mother has died, your sister, your other relatives—why should you live? You will also die.</p>
+<p>And your children will also die.</p>
+<p>Therefore, before death comes, as long as we have this human intelligence, let us engage in Kṛṣṇa consciousness.</p>
+<p>This is the prescription of Prahlāda Mahārāja.</p>
+<p>This material body is called puruṣam.</p>
+<p>Everyone is anxious to enjoy.</p>
+<p>Puruṣa means to enjoy, or the enjoyer.</p>
+<p>There is no one in this material world who does not like to enjoy sense gratification.</p>
+<p>Therefore, the body may be what it is—either male or female—but the desire, the ambition, is to enjoy material life.</p>
+<p>So the body is called puruṣām.</p>
+<p>We do not know when this body will stop, but let us immediately engage in Kṛṣṇa consciousness and act accordingly.</p>
+<p>&quot;But if I immediately engage myself in Kṛṣṇa consciousness, what about my living?&quot; That is arranged for.</p>
+<p>I am very happy to inform you of the confidence of a student in one of our branches.</p>
+<p>There was a disagreement.</p>
+<p>One student said, &quot;You are not looking after how to maintain the establishment,&quot; and he replied, &quot;Oh, Kṛṣṇa will supply.&quot; This is a very nice conviction; I was glad to hear it.</p>
+<p>If cats and dogs and hogs can get food, and if we are going to be Kṛṣṇa conscious and fully devote our service to Kṛṣṇa, will He not arra for our food also? Is Kṛṣṇa ungracious? No.</p>
+<p>In Bhagavad­gītā you will find that the Lord says, &quot;My dear Arjuna, I am equal to everyone.</p>
+<p>No one is the object of My envy, and no one is My special friend, but for one who engages in Kṛṣṇa consciousness, I have special attention.&quot; If a small child is completely dependent on the mercy of his parents, the parents have special attention for that child.</p>
+<p>Although' the parents are equally good to all the children, for the small children who are.</p>
+<p>always crying, &quot;Mother!&quot; they have great concern.</p>
+<p>&quot;Yes, my dear child? Yes?&quot; This is natural.</p>
+<p>If you are completely dependent on Kṛṣṇa, who is supplying food to the dogs, birds, bees—to 8,400,000 species of life—why should He not supply to you? This conviction is called surrender.</p>
+<p>But we should not think, &quot;Because Kṛṣṇa is supplying rny food, I shall now sleep.&quot; No, you have to work, but without fear.</p>
+<p>One should engage himself in Kṛṣṇa consciousness.</p>
+<p>Now calculate our duration of life.</p>
+<p>In this age it is calculated that we can live at most to a hundred years.</p>
+<p>Formerly, a human being used to live up to 100,000 years.</p>
+<p>In the Satya Yuga, or age of Goodness, they used to live 100,000 years.</p>
+<p>In the next age, Tretā Yuga, they used to live for 10,000 years, and in the next.</p>
+<p>called Dvāpara Yuga, they used to live for 1,000 years.</p>
+<p>Now, in this age, called Kali Yuga, the estimation is for 100 years.</p>
+<p>But gradually as the Kali Yuga progresses, our duration of life decreases still further.</p>
+<p>Anyone can understand this.</p>
+<p>Suppose' my grandfather lived 100 years, and my son is going to live for fifty years, and his son is going to live for thirty years.</p>
+<p>This is the progress of our modern civilization.</p>
+<p>We are very proud that we are happy and are improving our civilization.</p>
+<p>The result, however, is that 'We try to 'enjoy material life, but the duration of our life is shortened.</p>
+<p>This is called māyā, illusion.</p>
+<p>Now, accepting that we live for 100 years, the duration of life is reduced for those who have no information of spiritual life, who have not conquered sense enjoyment, or who are unable to control .the mind.</p>
+<p>The lifetime of those who are too much addicted to sense gratification, according to this calculation, is at the atmost fifty years.</p>
+<p>Even if one has fifty years, if he has no information of spiritual life; his night is wasted in sleeping and sex life.</p>
+<p>That's all.</p>
+<p>He has no other interest: And in the daytime, what is his concern? ''Where is money? Where is money? I must maintain this body.&quot; Arid when he has money: &quot;Now let me spend for my wife and children.'' Then where is his spiritual realization? At night he spends his time in this way, and by day he spends time in that way.</p>
+<p>Is that his mission in life? How horrible such a life is.</p>
+<p>The average person is illusioned in childhood—playing football and sporting.</p>
+<p>Up to twenty years, easily, you can go on like that.</p>
+<p>Then when you become old, for another twenty years you cannot do anything.</p>
+<p>When a man becomes old, his senses cannot function.</p>
+<p>You have seen many old men; they have nothing to do but rest.</p>
+<p>Just now we have received a letter from one of our students that his grandmother is paralyzed and has been suffering for the last three and a half years.</p>
+<p>So, in old age, everything is finished as soon as you are sixty years old.</p>
+<p>Therefore, from the beginning to twenty years of age, everything is spoiled; and even it you live for a hundred years, another twenty in the last stage of life is also spoiled.</p>
+<p>So forty years of your life are spoiled in that way.</p>
+<p>And in the middle age there is a very strong sex appetite, so another twenty years can be lost.</p>
+<p>Twenty years, twenty years, and twenty years—sixty years gone.</p>
+<p>How long are you going to live? This is the analysis of life by Prahlāda Mahārāja.</p>
+<p>We are spoiling our life instead of using it.</p>
+<h1><a class="header" href="#family-illusion" id="family-illusion">Family Illusion</a></h1>
+<p>Prahlāda Mahārāja told his friends.</p>
+<p>&quot;You have to begin Kṛṣṇa consciousness immediately.&quot; All the boys were born of atheistic, materialistic families, but fortunately Prahlāda was a great devotee of the Lord from his birth.</p>
+<p>Whenever he 'found an opportunity, when the teacher was out of the room, he used to speak: &quot;My dear friends, this is the time.</p>
+<p>This is the time to begin Kṛṣṇa consciousness.&quot; Now, as we have stated, someone might have said, &quot;But we are just boys.</p>
+<p>Let us play.</p>
+<p>We are not going to die immediately.</p>
+<p>Let us have some enjoyment, and then we shall begin Kṛṣṇa consciousness.&quot; People do not know that Kṛṣṇa consciousness is the highest enjoyment.</p>
+<p>They think that the.</p>
+<p>boys who have joined this Kṛṣṇa consciousness movement are foolish.</p>
+<p>&quot;They have left everything, and by Prabhupada's influence they have joined.&quot; But actually this is not so.</p>
+<p>They are all intelligent, educated boys, coming from very respectable families; they are not fools.</p>
+<p>They are actually enjoying life, otherwise they would not have spared their valuable time for this movement.</p>
+<p>Actually there is joyful life, but people do not know.</p>
+<p>They say, &quot;What is this Kṛṣṇa consciousness?&quot; When one grows into the sense gratification process, it is very difficult to get out of it.</p>
+<p>Therefore, according to Vedic regulations, in student life, beginning from five years of age, boys are taught about spiritual life.</p>
+<p>That is called brahmacarya.</p>
+<p>A brahmacārī is one who has dedicated his life for supreme Kṛṣṇa consciousness or Brahman consciousness.</p>
+<p>He is called a brahmacārī.</p>
+<p>He is always situated in the Supreme (Brahman).</p>
+<p>Brahmacarya has so many rules and regulations: according to brahmacārī regulations, however rich one's father may be, one should be trained by the brahmacārī system, under the guidance of a spiritual master, and he should work in the asrama of the spiritual master just like a menial servant.</p>
+<p>How is this 'possible? We are getting actual experience that very nice boys coming from very respectable families do not hesitate to do any work here.</p>
+<p>They are washing dishes, cleansing floors­everything.</p>
+<p>One student's mother was astonished at her boy when he visited home.</p>
+<p>Before, he would not even go to the store, and now he is engaged twenty­four hours a day.</p>
+<p>Unless one feels pleasure, how is it possible that he can engage himself in such a process as Kṛṣṇa consciousness? This is only due to Hare Kṛṣṇa.</p>
+<p>This is our single asset—Hare Kṛṣṇa.</p>
+<p>One can be very jolly, simply by Kṛṣṇa consciousness.</p>
+<p>Actually there is joyful life.</p>
+<p>But unless one is trained, one cannot live it.</p>
+<p>Prahlāda Mahārāja says that everyone is attached to family affection.</p>
+<p>If one is attached to family affairs, he cannot controls his senses.</p>
+<p>Naturally, everyone wants to love.</p>
+<p>Society, friendship and love are needed.</p>
+<p>They are demands of the spirit soul, but they are being pervertedly reflected.</p>
+<p>Generally, I have seen that many ladies and gentlemen in your country have no family life, but they have placed their love in cats and dogs.</p>
+<p>Because he or she wants to love someone but does not see anyone suitable to his desire, he therefore prefers to place his valuable love in cats and dogs.</p>
+<p>Our concern is just to transfer the love which has to be placed somewhere—to Kṛṣṇa.</p>
+<p>This is Kṛṣṇa consciousness.</p>
+<p>If you transfer the love to Kṛṣṇa, that is perfection.</p>
+<p>But, because we do not know where to place our love, being frustrated and cheated, we at: last place our love in cats and dogs.</p>
+<p>Everyone is entangled by this material, perverted love.</p>
+<p>It is very difficult to develop spiritual life when one is advanced in material love.</p>
+<p>It is very difficult because this bondag'e of love.</p>
+<p>is very strong.</p>
+<p>Therefore, Prahlāda's proposition.was that one.</p>
+<p>should learn Kṛṣṇa consciousness immediately from: childhood.</p>
+<p>When a boy is five or six years old, he is sent to school to be trained: When he is too young it&quot;is not possible for him to go to school, but as soon as his consciousness is developed, he is sent for education.</p>
+<p>Prahlāda Mahārāja says that one's education should be Kṛṣṇa conscious: and it should begin.&quot;immediately.</p>
+<p>When one­ is between the ages of­five to fifteen years, he is considered a boy.</p>
+<p>After sixteen years one becomes a young man.</p>
+<p>He goes on to forty years, and then after forty years he is elderly; then, after sixty years, he is an old man.</p>
+<p>Prahlāda Mahārāja says that one should be taught Kṛṣṇa consciousness from the beginning, from five to fifteen years of age.</p>
+<p>This is a very valuable time; you can .train any boy in Kṛṣṇa consciousness, and he will be perfect.</p>
+<p>When one becomes a little more advanced in materialism, it is difficult to develop spiritual life.</p>
+<p>What is materialism? Materialism mean? that every one of us in this material world, although we are spirit soul, somehow or other wants to enjoy this material world.</p>
+<p>Don’t try to find out when it began, but actually that is the situation.</p>
+<p>This world is meant for enjoyment.</p>
+<p>Enjoyment is already present in our spirit soul, but we have come here to partake of contaminated enjoyment, just like a man who is on the Bowery and thinks he's enjoying.</p>
+<p>Some animals enjoy by eating stool.</p>
+<p>According to the body, we have different kinds of enjoyment.</p>
+<p>The basic principle of enjoyment is sex life.</p>
+<p>Therefore, you will find sex life not only in human society; but in cat society, dog society, bird society­everywhere.</p>
+<p>During daytime.</p>
+<p>a pigeon has sex at least twenty times.</p>
+<p>This is his enjoyment.</p>
+<p>The basic principle of material life is sex life.</p>
+<p>Srīmad­ Bhāgavatam says that material enjoyment is based upon nOthing more than the combination of man and woman in sex life.</p>
+<p>In the beginning a boy thinks, &quot;Oh, that girl is nice,&quot; or the girl says.</p>
+<p>&quot;That boy is nice.'' And when they meet, that material contamination becomes more prominent.</p>
+<p>My heart is already attached to material enjoyment, but as soon as I actually enjoy it, it becomes more attached, completely attached.</p>
+<p>How? As soon as a boy and girl are married, they want an apartment.</p>
+<p>Then, to maintain that apartment, they need some income.</p>
+<p>Then, when there is income, they want to have children.</p>
+<p>Then when they have children.</p>
+<p>they want social recognition—society, friendship and love.</p>
+<p>This goes on increasing.</p>
+<p>Everything requires money: where is money? A man who is too materialistic will cheat anyone, kill anyone, beg, borrow or steal anything to bring money.</p>
+<p>He knows that his buildings, his family, his wife and children cannot continue to exist here.</p>
+<p>They are just like bubbles in the ocean: they have come into existence, and after a little while they will be gone.</p>
+<p>But he is too much attached.</p>
+<p>He will sacrifice his spiritual advancement in life for this.</p>
+<p>His perverted consciousness—”I am this body.</p>
+<p>I belong to this material world.</p>
+<p>I belong to this country.</p>
+<p>I belong to this community.</p>
+<p>I belong to this religion.&quot;—becomes greater and greater.</p>
+<p>Where is his Kṛṣṇa consciousness? He becomes so entangled that money becomes more valuable to him than his own life.</p>
+<p>He can risk even his own life for money.</p>
+<p>Everyone is trying to get money.</p>
+<p>Who? The householder, the labourer, the merchant, the thief, the dacoit, the rogue.</p>
+<p>What is the distinction? Everyone is after money.</p>
+<p>This is called illusion.</p>
+<p>One loses himself in the midst of this entanglement.</p>
+<p>Prahlāda Mahārāja says that in this state, when you are too much implicated in materialism, you cannot at once begin Kṛṣṇa consciousness.</p>
+<p>Of course, Lord Caitanya Mahaprabhu is so kind that even if you have missed the chance to become Kṛṣṇa conscious in your childhood, it is better late than never.</p>
+<p>If you do understand, then begin immediately in whatever position you are.</p>
+<p>Even though you missed the opportunity to begin Kṛṣṇa consciousness from childhood, begin now.</p>
+<p>That is Caitanya Mahāprabhu’s teaching.</p>
+<p>He never said, &quot;Because you did not begin Krishna consciousness from your childhood, you cannot make progress.&quot; No.</p>
+<p>He is very kind.</p>
+<p>He has given us this nice process of chanting: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>Whether you are a young man or an old manna matter what you are—just begin.</p>
+<p>You do not know when your life will be finished.</p>
+<p>If you begin sincerely, even for a moment, it will have great effect.</p>
+<p>It will save you from the greatest danger.</p>
+<p>Although only five years old, Prahlāda Mahārāja speaks just like a very experienced man because he received experience from his spiritual master.</p>
+<p>That will be disclosed later.</p>
+<p>Experience should not be derived from age, but from knowledge received from a superior source: One cannot become a wise man simply by advancement of age.</p>
+<p>No.</p>
+<p>That is not possible.</p>
+<p>Knowledge has to be received from a superior source.</p>
+<p>It doesn't matter whether he is a five­year­old boy or a fifty­year­old man.</p>
+<p>In Sanskrit this is phrased: &quot;One becomes an old man without age.&quot; He is only five years old; how can he become an old man? One becomes old by advancement in knowledge.</p>
+<p>Prahlāda Mahārāja is speaking just like an old man.</p>
+<p>Suppose a man ' is already married and Prahlāda says, &quot;You take to Kṛṣṇa consciousness.&quot; He will think, &quot;Oh, how can I leave my wife? We talk so nicely together, sit together and enjoy.</p>
+<p>How can I leave?&quot; It is a very strong combination.</p>
+<p>I am an old man, seventy­two years old.</p>
+<p>I have been away from my family during the last fourteen years.</p>
+<p>Yet sometimes I also think of my wife.</p>
+<p>This is quite natural.</p>
+<p>But that does not mean that I have to go back.</p>
+<p>This is knowledge.</p>
+<p>One should at once under stand: this is illusion.</p>
+<p>According to the Vedic system, one has to forcibly give up family life at the age of fifty.</p>
+<p>One must go.</p>
+<p>There is no alternative.</p>
+<p>The first twenty­five years are for student life.</p>
+<p>From five years to twenty­five years, one should be educated very nicely in Kṛṣṇa consciousness.</p>
+<p>The whole basic principle should be Kṛṣṇa conscious, nothing else.</p>
+<p>Then life will be successful.</p>
+<p>Life will be pleasing and successful, both in this world and in the next.</p>
+<p>For twenty years, from five to twenty­five, a boy should be trained in Kṛṣṇa consciousness which necessitates giving up material consciousness altogether.</p>
+<p>That is called perfect Kṛṣṇa consciousness.</p>
+<p>But if someone is not able to capture the essence of Kṛṣṇa consciousness, then he is allowed to have a good wife, be married, and live a peaceful householder life.</p>
+<p>And, because he has the basic principle of Kṛṣṇa consciousness, he will not entangle himself in the material world.</p>
+<p>If one lives a simple life—plain living and high thinking­he can progress and can cultivate the same Kṛṣṇa consciousness even within the family.</p>
+<p>So family life is not condemned.</p>
+<p>But if a man forgets his spiritual identity and simply becomes entangled in material affairs, then he is lost.</p>
+<p>His life's mission is lost.</p>
+<p>If one thinks, &quot;I cannot protect myself from the attack of māyā,&quot; then let him be married.</p>
+<p>That is prescribed.</p>
+<p>We don't have illicit sex life.</p>
+<p>If you want a girl, if you want a boy, get married.</p>
+<p>Live in Kṛṣṇa consciousness.</p>
+<p>A person who is trained from the very beginning naturally becomes disinclined toward the material way of life, and at the age of fifty he gives it up.</p>
+<p>How do you start giving it up? That is also a concession: the husband and wife leave the children.</p>
+<p>If from twenty­five to fifty he remains in family life, he must have some grown­up children.</p>
+<p>So he entrusts all his family affairs to them.</p>
+<p>According to the Vedic system, a boy is married at the age of twenty, and a girl is married at twelve years.</p>
+<p>So, family affairs are entrusted to some of the boys who are family men, and the husband and wife go on pilgrimages to try to forget these attachments.</p>
+<p>When the gentleman is completely matured, he asks his wife to go home to his children, and he remains alone.</p>
+<p>That is the system.</p>
+<p>Otherwise, if we remain attached to material consciousness, then we will not perfect our Kṛṣṇa consciousness.</p>
+<p>So we have to give ourselves a chance, step by step.</p>
+<p>Otherwise, if we become too materially complicated, we shall miss the opportunity of this human form of life.</p>
+<p>Family life means that we have very loving children, and we are loved.</p>
+<p>We attract, our wife talks very nicely, and we give very nice instructions.</p>
+<p>&quot;You do this.</p>
+<p>You do that.&quot; Thus we enjoy life.</p>
+<p>But we do not know that this enjoyment is false.</p>
+<p>We are standing on a false platform.</p>
+<p>At once, in the twinkling of an eye, we may have to give this up.</p>
+<p>Death is not under our control.</p>
+<p>From Bhagavad­gītā we learn that if one dies while too much attached to one's wife, the result will be that he will get his next life as a female.</p>
+<p>And if the wife is very attached to the husband, it is for her benefit; she gets the next life as a man.</p>
+<p>Therefore, according to the Vedic system, chastity is greatly stressed.</p>
+<p>This has nothing to do with Kṛṣṇa consciousness; it is simply a matter of ending material consciousness.</p>
+<p>If a woman is chaste and simply thinks of one man, then the result will be that she will get a man's body in the next life.</p>
+<p>Similarly, if you are not a family man but are attached to a cat or dog, then your next life will be as a cat or dog.</p>
+<p>That is.</p>
+<p>also a fact.</p>
+<p>It is better to love a woman and be attached to her.</p>
+<p>It is better to have a woman's body than to have a cat's or dog's body.</p>
+<p>These are the rules of karma, or material nature.</p>
+<p>The whole point is that one should begin.</p>
+<p>If one thinks, &quot;After finishing my sporting life, when I am old and there is nothing else to do, then I shall go to the Krishna Consciousness Society and hear something.&quot; At that time one can go, but one should have the opportunity now and should utilize one's life from the very beginning.</p>
+<p>Therefore, this Society's main object is to give everyone a chance to begin Kṛṣṇa consciousness at any stage.</p>
+<p>And, by this process of Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare, it is very quick.</p>
+<p>There is an immediate result.</p>
+<p>We shall request all the ladies and gentlemen who are very kindly attending our lectures or reading our literature to go home, and at at your leisure hour, dance and chant, or read our books.</p>
+<p>You will find it very nice.</p>
+<p>That is our request.</p>
+<p>That is what our Society is spreading.</p>
+<h1><a class="header" href="#i-love-kṛṣṇa-more-than-anything" id="i-love-kṛṣṇa-more-than-anything">I Love Kṛṣṇa More Than Anything!</a></h1>
+<p>Now Prahlāda Mahārāja makes a further statement about the complications of material life.</p>
+<p>We must always remember that Kṛṣṇa consciousness is not a method for criticizing household life.</p>
+<p>Household life is recommended, but under the condition that one should not forget about his spiritual advancement in life.</p>
+<p>The difficulty is that in the material concept of life we forget our spiritual ideal.</p>
+<p>We should, therefore, be very cautious in dealing with the materialistic world.</p>
+<p>Because our position is forgetfulness, there are so many regulations on how to become a householder, how to become a brahmacārī and how to execute the renounced order, of life.</p>
+<p>So we have to revive our Kṛṣṇa consciousness, which is the privilege of this human form.</p>
+<p>If we fail to revive our Kṛṣṇa consciousness, then we miss the highest opportunity.</p>
+<p>We should always remember that.</p>
+<p>Prahlāda Mahārāja's position is that one should learn Kṛṣṇa consciousness from one's childhood.</p>
+<p>Why? If we do not practice Kṛṣṇa consciousness from childhood, in the advanced stage of materialistic life we may be completely forgetful.</p>
+<p>Although in his childhood he preached in this way, Prahlāda Mahārāja himself was a householder, but he was a cautious householder.</p>
+<p>It is not harmful to become a householder and live with family, children and wife, but one should not forget his spiritual advancement­he should be Kṛṣṇa conscious.</p>
+<p>Prahlāda Mahārāja always reminds us that if we do not practice, if we do not know what the aim of our human form of life is, then we will miss the opportunity for perfection.</p>
+<p>That is the point.</p>
+<p>Here it is said that if you do not practice, if you do not know Kṛṣṇa consciousness from childhood, it is very difficult later, when you are materially advanced.</p>
+<p>There is a very simple example: if a boy is not educated from childhood? it is not possible when he is advanced in age.</p>
+<p>I have actual experience of this.</p>
+<p>A father and a daughter both took a B.A.</p>
+<p>examination, and the daughter came out successful while the father failed.</p>
+<p>In the advanced stage of life it is no longer.</p>
+<p>possible to absorb any sort of education.</p>
+<p>If in our advanced stage we sit down for the matriculation examination, we shall fail, and a boy of fourteen will pass.</p>
+<p>Therefore Prahlāda Mahārāja warns that everyone should learn the importance of the science of Godhead from childhood.</p>
+<p>Otherwise, when one is complicated in family life, it will be impossible.</p>
+<p>Of course for this age, as I have already explained, Kṛṣṇa consciousness is easily obtainable by the process of chanting.</p>
+<p>Generally, however, in the advanced stage of life it is very difficult to have any sort of education.</p>
+<p>Prahlāda Mahārāja also gives another picture.</p>
+<p>First of all, the attraction for wife has already been explained.</p>
+<p>Now he explains the attraction for children.</p>
+<p>It is customary in the Vedic system that a daughter is given in charity to the son­in­law at the age of twelve or thirteen years.</p>
+<p>At that time she goes to her father­in­law’s house.</p>
+<p>Her father thinks, &quot;Oh, how can she go?&quot; She is always on her father's mind, and he also thinks of his brother, his old father­all these complications.</p>
+<p>Similarly, Arjuna was thinking, &quot;How am I to kill my grandfather? How is this possible?&quot; These family relationships and family affections are very predominant, and they are all impediments to becoming Kṛṣṇa conscious.</p>
+<p>We have to be very cautious that our family affections do not overcloud our Kṛṣṇa consciousness.</p>
+<p>We should always know that the family relationships of this material world are simply a perverted reflection of the real relationships in the spiritual world.</p>
+<p>This family is false­not exactly false, but temporary.</p>
+<p>lt.</p>
+<p>is temporary, but we are eternal; we should not be misled by temporary affection.</p>
+<p>That is being explained here.</p>
+<p>Sometimes we are strongly attached to our nicely decorated apartments and nicely made dresses.</p>
+<p>We think, &quot;How shall I leave these?&quot; This is the materialistic way of life­there is no end to it.</p>
+<p>Here is a very nice example.</p>
+<p>The silk worm entangles itself in its own saliva, and when the imprisonment is finally made, the silk merchants go there and take the silk prison house of the worm and remove the silk.</p>
+<p>Before the worm comes out the silk merchant takes the cell, otherwise, if the silk worm cuts its way out, there is no silk.</p>
+<p>In the same way, our entanglement becomes so tight that we cannot come out of this cell of family attraction.</p>
+<p>Even though there are so many miseries in the materialistic way of life, we cannot break free.</p>
+<p>Why? We think that sex life and palatable eating are very nice.</p>
+<p>Therefore, in spite of so many miserable conditions, we cannot give them up.</p>
+<p>In this way, when one is too much entangled in family life, one cannot think of his real benefit­to escape from material life.</p>
+<p>He becomes entangled.</p>
+<p>Although he is always disturbed by the threefold miseries of materialistic life, still because there is family affection he cannot come out.</p>
+<p>He does not know that he is spoiling his limited duration of life simply for the affection of family.</p>
+<p>He is spoiling the life that was meant for realizing his eternal self, for realizing his real spiritual life.</p>
+<p>But, since he is entangled in such family affection, he does not understand what he is doing.</p>
+<p>If we inquired of every family man, or anyone, whether or not he is happy in his material way of life, everyone will say, “I am not happy.&quot; But still, no one can cease material activities.</p>
+<p>Why? Because everyone has become entangled.</p>
+<p>Although one is unhappy, he does not express that unhappiness.</p>
+<p>Why? He is expected to maintain the family which he has created.</p>
+<p>His only affection is maintenance of the family; and he becomes more and more entangled.</p>
+<p>Even if one is educated, due to that affection one commits so many sinful activities.</p>
+<p>Prahlāda Mahārāja is trying to impress upon us that detachment is not possible, even if one is highly educated, unless one is trained from the very beginning.</p>
+<p>That is Prahlāda's point of view.</p>
+<p>Even in the Srīmad­ Bhāgavatam it is stated that unless one is Kṛṣṇa conscious, he cannot become a perfect gentleman.</p>
+<p>No one can become qualified with high character unless he is Kṛṣṇa conscious.</p>
+<p>Why? Because he is hovering on the mental plane, a person who is not in Kṛṣṇa conscious has no other direction than to commit sinful activities.</p>
+<p>Prahlāda Mahārāja says that material entanglement is something like a prison house.</p>
+<p>If we are not trained from the very beginning of our life about Kṛṣṇa consciousness, the.</p>
+<p>aim of human life, then we are shackled, just as in the prison house o.ne is shackled with iron chains, We should always remember that the aim of human life is to get out of this material entanglement.</p>
+<p>If we are not taught at an early age, from the very beginning of school life, or at some stage of life, then the opportunity of this huamn life will be lost.</p>
+<p>That is his instruction.</p>
+<p>&quot;Therefore, my demoniac friends,&quot; he addresses them again, &quot;please give up the company of those who are simply after material enjoyment.&quot; &quot;Just make your associations with persons who have taken to Kṛṣṇa consciousness.&quot; That is his advice.</p>
+<p>He says to his friends that this Kṛṣṇa consciousness is not difficult to attain.</p>
+<p>Why? Kṛṣṇa consciousness is very dear to us, but we do not understand it.</p>
+<p>Anyone who takes to Kṛṣṇa consciousness becomes more and more affected by it and forgets his material consciousness.</p>
+<p>How? It is very dear to us, but we have forgotten it.</p>
+<p>If you are in a foreign country, you might have forgotten your home and family, your family members and friends who are very dear to you.</p>
+<p>But all of a sudden, if you remember about your home and friends, you at once become very preoccupied, &quot;How shall I meet them?&quot; I know in San Francisco one of our friends left his young children and went to another country, and the eldest child has now grown up.</p>
+<p>A letter came from the eldest child, and at once the father remembered and sent some money.</p>
+<p>That affection automatically came, even though he had forgotten for so many years.</p>
+<p>Similarly, our affection for Kṛṣṇa is so intimate that as soon as there is some touch of Kṛṣṇa consciousness, we at once revive our whole relationship with Him.</p>
+<p>Everyone has some particular relationship with Kṛṣṇa the Supreme Lord, that he has forgotten.</p>
+<p>As soon as we are devetailed with Kṛṣṇa consciousness, gradually the old consciousness of our relationship with Kṛṣṇa is revived.</p>
+<p>And when our consciousness is actually in the clear stage, we can understand our particular relationship with Kṛṣṇa.</p>
+<p>Someone has a relationship with Kṛṣṇa as friend.</p>
+<p>Someone has a relationship with Kṛṣṇa as son and parent, or as lover and beloved or husband and wife.</p>
+<p>All these relationships are pervertedly reflected in life in the material world.</p>
+<p>But as soon as we come to the platform of Kṛṣṇa consciousness, that old relationship with Kṛṣṇa is revived.</p>
+<p>We love—everyone of us.</p>
+<p>I love myself.</p>
+<p>That is a fact.</p>
+<p>I love myself, and that self has an intimate relationship with Kṛṣṇa because the self is part and parcel of Kṛṣṇa.</p>
+<p>The self is within this body, and I love my self better than the body.</p>
+<p>Similarly, because my self is part and parcel of Kṛṣṇa, I love Kṛṣṇa more than anything.</p>
+<p>But we have forgotten that Kṛṣṇa is all­pervading.</p>
+<p>God is all­pervading.</p>
+<p>This memory has simply to be revived.</p>
+<p>As soon as we revive our Kṛṣṇa consciousness we can study everything in relationship with Kṛṣṇa.</p>
+<p>Everything then becomes factually lovable.</p>
+<p>Now I love you &quot; or you love me.</p>
+<p>That love is on the ephemeral stage of this body.</p>
+<p>But when love of Kṛṣṇa is developed.</p>
+<p>I will not love you only, but I will love every living entity because the outward designation, this body, is forgotten.</p>
+<p>When a man becomes fully Kṛṣṇa conscious, he does not see, &quot;Here is a man, here is an animal, here is a cat.</p>
+<p>here is a dog, and here is a worm.&quot; He sees everything as part and parcel of Kṛṣṇa.</p>
+<p>This is very nicely explained in the Bhagavad­gītā: &quot;One who is actually learned in Kṛṣṇa consciousness becomes a lover of the universe.&quot; Unless one is situated on the Kṛṣṇa conscious platform, there is no question of universal brotherhood.</p>
+<p>Now we are talking of universal brotherhood.</p>
+<p>If we actually want to implement the idea of universal brotherhood, then we will have to come to the platform of Kṛṣṇa consciousness, not material consciousness.</p>
+<p>As long as we are in material consciousness, our lovable objects will be limited.</p>
+<p>But when we are actually in Kṛṣṇa consciousness, our lovable objects will be universal.</p>
+<p>That is stated by Prahlāda Mahārāja.</p>
+<p>&quot;Beginning from the ant or the nonmovable plants and trees and extending to the highest living creature, Brahma, the Supreme Personality of Godhead is present everywhere by His expansion as the Paramātmā, the feature of the Lord in everyone's heart.</p>
+<p>As soon as we become Kṛṣṇā conscious, that extension of the Supreme Personality of Godhead, Paramātmā, induces us to love every object in relation with Kṛṣṇā.&quot;</p>
+<h1><a class="header" href="#god-realization-is-everywhere" id="god-realization-is-everywhere">God Realization Is Everywhere</a></h1>
+<p>Mahārāja Prahlāda informed his class fellows about the all­pervasiveness of the Supreme Lord.</p>
+<p>The Supreme Soul is all­pervasive, but that does not mean that He has lost His personality.</p>
+<p>That is significant.</p>
+<p>Although He is all­pervading, still He is a person.</p>
+<p>According to our material perception, if something is all­pervading, then it has no personality, no localized aspect.</p>
+<p>But God is not like that.</p>
+<p>For example, the sunshine is all­pervading, but the sun also has a localized aspect.</p>
+<p>The sun is localized in one place, and you can see it.</p>
+<p>Not only is there the sun, but within the sun planet there is a sun­god, whose name is Vivasvān.</p>
+<p>We get this information from Vedic literature; there is no way to understand what takes place on other planets but by hearing from authorized sources.</p>
+<p>The difference in modern civilization is that we hear a scientist say, &quot;We have seen the moon; it is such and such,&quot; and we believe it.</p>
+<p>We have not gone with the scientist to see the moon, but we believe him.</p>
+<p>Belief is the basic principle of understanding.</p>
+<p>You either believe me or him; that depends on you.</p>
+<p>If you believe a scientist that is information, and if you believe the Vedas, that is also information.</p>
+<p>It is up to you which source you believe.</p>
+<p>According to Vedic instruction, we take infallible information from the Vedas.</p>
+<p>As I have explained, an ordinary man who is conditioned by material nature ' has four defects.</p>
+<p>What are those four defects? The first is that a human being is sure to commit mistakes, however great a scientist he may be.</p>
+<p>Not very long ago in this country, there was a disaster when a scientist sent a satellite up but at once it burned to ashes.</p>
+<p>So there was a mistake.</p>
+<p>There must be mistakes.</p>
+<p>This is the nature of conditioned life.</p>
+<p>The mistake may be very great or very slight­that doesn't matter.</p>
+<p>But a human being conditioned by material nature is sure to commit mistakes.</p>
+<p>Further, man is illusioned.</p>
+<p>He accepts one thing for something else because his senses are imperfect.</p>
+<p>For example, we accept this body as the self.</p>
+<p>Actually, I am not this body; therefore the acceptance of the body as self is called illusion.</p>
+<p>The whole world is going on under the illusion that &quot;I am this body.&quot; Therefore there is no peace because everyone is illusioned.</p>
+<p>I am thinking that I am Indian, you are American, and a Chinese man is thinking that he is Chinese.</p>
+<p>What is this &quot;Chinese,&quot; &quot;American,&quot; and &quot;Indian&quot;? It is the body.</p>
+<p>This is illusion.</p>
+<p>To cheat is another condition of life.</p>
+<p>I am a fool, but I will boast that I am very learned.</p>
+<p>Everyone who is illusioned and commits mistakes is a fool, but still one poses himself as being freed from all mistakes.</p>
+<p>And above all, our senses are imperfect.</p>
+<p>We view the sun as a small disc.</p>
+<p>Why? It is far, far greater than this earth, but we see it just as a disc.</p>
+<p>We have these imperfect senses, and we are subject to become illusioned and commit mistakes, and we are influenced by the propensity to cheat.</p>
+<p>How can one expect real knowledge from such conditioned souls? There is no possibility to receive actual knowledge from them.</p>
+<p>So, in this world, whether a man is a scientist.</p>
+<p>a philosopher or whatever he may be, or however educated he may be, because he is conditioned, he cannot give complete information.</p>
+<p>This is a fact.</p>
+<p>How do you get complete information? The process is the disciplic succession of Vedic knowledge.</p>
+<p>You can read in Bhagavad­gītā that Lord Kṛṣṇa says to Arjuna, &quot;The knowledge of Bhagavad­gītā was first spoken by Me to the sun­god, and the sun­god spoke it to his son, Manu.</p>
+<p>In turn, Manu spoke this knowledge to his son lkṣvāku, and then lkṣvāku spoke the same to his son.</p>
+<p>In this way the knowledge has come down, but unfortunately that disciplic succession is now broken.</p>
+<p>Therefore, O Arjuna, I am now preaching the same knowledge to you because you are My very dear friend and good devotee.&quot; This is the process of accepting knowledge.</p>
+<p>We have to accept the transcendental vibration.</p>
+<p>The entire Vedic knowledge is a transcendental vibration to help us to understand the Supreme Lord.</p>
+<p>So Prahlāda Mahārāja says that the Supreme Soul is identical with the all­pervading Supreme Personality of Godhead.</p>
+<p>In the Brahma­saṁhitā also the same information appears­that the Supreme Lord, although situated in His own transcendental abode, is all­pervading.</p>
+<p>Although He is all­pervading, present everywhere, still by our imperfect senses we cannot see Him.</p>
+<p>Prahlāda Mahārāja says, &quot;Although He is not seen, He can still be perceived.</p>
+<p>One who is intelligent can perceive the presence of the Supreme Lord everywhere.&quot; How is this possible? During the daytime one who is in the light can see that the sun is up, even though he is in a.</p>
+<p>room.</p>
+<p>Because it is daytime, because it is light, he can understand that the sun is shining.</p>
+<p>Similarly, those who have understood the whole material creation, those who have understood the whole cosmic situation, know that everything is an expansion of the energy of the Supreme Lord.</p>
+<p>What do we see with these present material senses? We can hear and understand the five gross elements and also the finer elements; we can understand that we have mind and intelligence.</p>
+<p>Similarly, we can understand that there is soul.</p>
+<p>We can understand fire, water, earth, sky, mind and intelligence.</p>
+<p>And, if a man is further advanced, he can understand that there is a soul, and, above all, there is Supersoul.</p>
+<p>We see what is visible to the material eye.</p>
+<p>We can see earth, water, fire.</p>
+<p>But we cannot see air, although we can perceive it.</p>
+<p>By touch we can understand the air.</p>
+<p>We can understand that there is sky by sound.</p>
+<p>We can understand that we have mind because we are thinking, feeling and willing.</p>
+<p>Similarly, we can understand that we have an intelligence that guides the mind.</p>
+<p>If we go still further, we can understand, &quot;I am consciousness.&quot; The visible things around us are also expansions of the inferior energy of the Supreme Lord.</p>
+<p>It is stated in the Bhagavad­gītā that we should try to understand that which is spread all over the body because that is eternal.</p>
+<p>We have to understand from the authorities, but we can also perceive it.</p>
+<p>We know that there is consciousness spread all over the body.</p>
+<p>If I pinch any part of my body, there is consciousness.</p>
+<p>Similarly, consciousness is spread all over this universe.</p>
+<p>But that is not our consciousness.</p>
+<p>That is God's consciousness.</p>
+<p>We know every part of our body.</p>
+<p>We can perceive, &quot;This is my finger,&quot; or &quot;This is my ear.&quot; Similarly, God, the Supreme Soul, is all­pervading by His consciousness.</p>
+<p>That is Kṛṣṇa consciousness.</p>
+<p>Our process is to dovetail our consciousness with Kṛṣṇa consciousness—that will make us perfect.</p>
+<p>It is not that we merge into that consciousness.</p>
+<p>In one sense we can say &quot;merge,&quot; but still we keep our individuality.</p>
+<p>That is the difference between impersonalist philosophy and Kṛṣṇa’s conscious philosophy.</p>
+<p>The impersonalist philosophy says that we merge into the Supreme and lose our individuality.</p>
+<p>We can say that we merge into the Supreme, but we keep our individuality.</p>
+<p>How is that? An airplane starts from the airport and climbs up and up, and when it goes very high we cannot see it because it merges into the higher sky.</p>
+<p>We can simply see sky, but the airplane is not lost—it is still there.</p>
+<p>Another example is that if a green bird enters into a big green tree, we cannot distinguish the bird from the tree, but they both exist.</p>
+<p>Similarly, the supreme consciousness is Kṛṣṇa, and when we dovetail our individual consciousness with the Supreme, we then become perfect.</p>
+<p>An outsider may see that there is no distinction between God and men, but it is due only to a poor fund of knowledge.</p>
+<p>Every individual person, every individual being, maintains his individuality, even though he is dovetailed with the Supreme.</p>
+<p>Prahlāda Mahārāja says that we cannot see consciousness either supreme consciousness or individual—but it is there.</p>
+<p>How is it there? We can understand the supreme consciousness and our individual consciousness by perception of blissfulness.</p>
+<p>Because we have consciousness, we can feel ānanda, or pleasure.</p>
+<p>Without consciousness there is no feeling of pleasure.</p>
+<p>Because of that consciousness we can enjoy life by applying our senses in whatever way we like.</p>
+<p>But as soon as consciousness is gone, we cannot enjoy.</p>
+<p>I am present because of consciousness, and I am part and parcel of Kṛṣṇa, as stated in Bhagavad­gītā.</p>
+<p>This consciousness exists because we are part and parcel of the supreme consciousness.</p>
+<p>For example, a spark is a tiny part and parcel of the fire, yet the spark is also the fire.</p>
+<p>A drop of the Atlantic Ocean possesses the same quality as all the ocean water—it is also salty.</p>
+<p>Similarly the pleasure poetency which we feel is the presence of consciousness, and that same pleasure potency also exists in the Supreme Lord.</p>
+<p>Paramesvara means the supreme controller.</p>
+<p>We are also iśvara, or controller, because we are in some control.</p>
+<p>For example, I have some controlling power to take a drink of water when I cough.</p>
+<p>According to our capacity, everyone of us has some controlling power.</p>
+<p>But we are not the supreme controller.</p>
+<p>The supreme controller is God.</p>
+<p>Because He is the supreme controller, He is controlling all these universal energies by His different potencies.</p>
+<p>We can also understand and feel.</p>
+<p>I am controlling my bodily affairs as far as possible, but because I am not the supreme controller, if there is something wrong in this body, I have no control.</p>
+<p>I speak of this hand as &quot;my hand&quot; because I am working with this hand and am moving it according to my desire.</p>
+<p>I am actually the controller of my hand.</p>
+<p>But I am not the controller of your hand.</p>
+<p>If I desire that your hand move, that is not in my power; that is in your power.</p>
+<p>You can move your hand if you like.</p>
+<p>I am not the controller of your body, but the Supreme Soul is the controller of both your body and my body.</p>
+<p>That is explained in the Bhagavad­gītā.</p>
+<p>The Lord says that you are present in your body and that this body is the field of your activities.</p>
+<p>Whatever you are doing according to the body is limited.</p>
+<p>An animal which is bound up in a certain tract of land can move there and cannot go beyond what that space allows.</p>
+<p>Similarly, your activity and my activity are bound up within the limits of our bodies.</p>
+<p>My body is my field of activities, and your body is your field of activities.</p>
+<p>But Kṛṣṇa says, &quot;I am present in every field.&quot; He is present as Supersoul.</p>
+<p>I know when I cough, but you do not know how I feel, and similarly, I do not know what you are doing.</p>
+<p>Kṛṣṇa however, as Paramātmā, knows what is going on in my body, in your body, and in thousands of millions and billions of other bodies.</p>
+<p>Therefore He is the supreme controller.</p>
+<p>We have our limited energy, but He is transcendental to this limited energy.</p>
+<p>He has unlimited opulence.</p>
+<p>By His controlling power, by His supreme will, this material creation is moving.</p>
+<p>That is also confirmed in the Bhagavad­gītā where Kṛṣṇa states, &quot;Under My superintendence the whole material natures working.</p>
+<p>All wonderful things that you see in this material world are due to My supervision, My supreme control.&quot; Prahlāda Mahārāja now gives his conclusion.</p>
+<p>&quot;My dear friends, because the Supreme Lord is present everywhere and because we are part and parcel of the Supreme Lord, our duty is to be merciful to all living entities.&quot; When a person is in a lower position, we have a duty to help him.</p>
+<p>Because he is helpless, the small child is dependent on the mercy of the parent.</p>
+<p>In the relationship of the small child and the parent there is a reciprocation of feeling.</p>
+<p>The child is always dependent on the parent.</p>
+<p>&quot;Mother, I want this.&quot; &quot;Yes, my dear child.&quot; We should be compassionate to all living entities and should show them mercy.</p>
+<p>How can we show our mercy? There are millions and millions of poor men, so how can we show them all mercy? They want so many things.</p>
+<p>People are very proud that they are going to serve the poor.</p>
+<p>In what way are they going to serve? Are we able to supply clothing and food to all the needy persons of the world? That is not possible.</p>
+<p>How, then, can we be merciful to every living entity? The fact is 'that we cannot show any mercy to the living entities through material considerations.</p>
+<p>That is not possible.</p>
+<p>Prahlāda Mahārāja is showing his class friends real mercy.</p>
+<p>They were all fools, devoid of Kṛṣṇa consciousness, and therefore he was showing them how to become Kṛṣṇa conscious.</p>
+<p>This is the highest mercy.</p>
+<p>If you want to show any mercy at all to the living entities, then enlighten them in Kṛṣṇa consciousness as Prahlāda Mahārāja did.</p>
+<p>Otherwise, it is materially beyond your power to show mercy.</p>
+<p>&quot;My dear demoniac friends,&quot; Prahlāda says, &quot;give up this demoniac life.</p>
+<p>Give up this nonsense.&quot; The belief that there is no God is the demoniac feature that Prahlāda Mahārāja requests his demoniac friends to give up.</p>
+<p>They were thinking, &quot;Who is God? There is no God.&quot; We find in the Bhagavad­gītā that people of this mentality are called miscreants, for they always try to make mischief.</p>
+<p>They are very well educated attorneys, lawyers and so on, but their plan is to cheat.</p>
+<p>We have practically experienced it.</p>
+<p>They are highly educated with so many qualifications and are nicely dressed, but their mentality is more base than that of a dog.</p>
+<p>&quot;This man has some money, so let us conspire to cheat him.&quot; They are simply miscreants.</p>
+<p>Why are they cheating for? Simply for sense gratification, just an ass who does not know the purpose of life.</p>
+<p>He takes the hundred pounds burdens on tils back, and he is kept by the washerman, who loads his back as much as possible.</p>
+<p>In this way the ass works the whole day with this burden simply for a few morsels of grass.</p>
+<p>Similarly, materialistic people will simply be satisfied to eat a simple piece of bread or something similar, but they work very hard.</p>
+<p>Therefore they are compared to asses.</p>
+<p>They are always planning something mischievous.</p>
+<p>They are the lowest of mankind because they do not believe in God.</p>
+<p>Why? Their actual knowledge has been plundered by the influence of this material energy.</p>
+<p>Because they deny the existence of God, illusion impells them: &quot;Yes, there is no God.</p>
+<p>Work hard and commit sins so that you may go to hell.&quot; Prahlāda Mahārāja requests his demoniac friends to just give up this idea that there is no God.</p>
+<p>If we give up this nonsensical idea, then the Supreme lord who is beyond our perception, will be pleased and show His mercy to us.</p>
+<p>SAM KIRTAN The Devotees are here seen chanting the Holy Names of God.</p>
+<p>This, in these dark days of quarrel and hypocrisy, practice called Sam Kirtan is the most recommended activity for developing God Consciousness.</p>
+<p>HARE KRISHNA HARE KRISHNA KRISHNA KRISHNA HARE HARE HARE RAMA HARE RAMA RAMA RAMA HARE HARE HIS DIVINE GRACE A.C.</p>
+<p>Bhaktivedanta Swami Prabhupada Founder­Acharya of the International Society for Krishna Consciousness</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

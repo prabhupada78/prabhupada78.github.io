@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch3 - Raja Vidya: The King of Knowledge</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html" class="active">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Raja Vidya: The King of Knowledge</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#knowledge-of-krsnas-energies" id="knowledge-of-krsnas-energies">Knowledge of Krsna's Energies</a></h1>
+<p>It may be noted at this point that the Ninth Chapter of Bhagavad-gita is especially meant for those who have already accepted Sri Krsna as the Supreme Personality of Godhead.</p>
+<p>In other words, it is meant for His devotees.</p>
+<p>If one does not accept Sri Krsna as the Supreme, this Ninth Chapter will appear as something different from what it actually is.</p>
+<p>As stated in the beginning, the subject matter of the Ninth Chapter is the most confidential material in the entire Bhagavad-gita.</p>
+<p>If one doesn't accept Krsna as the Supreme, he will think the chapter to be a mere exaggeration.</p>
+<p>This is especially the case with the verses dealing with Krsna's relationship with His creation.</p>
+<p>maya tatam idam sarvam jagad avyakta-murtina mat-sthani sarva-bhutani na caham tesv avasthitah &quot;By Me, in My unmanifested form, this entire universe is pervaded.</p>
+<p>All beings are in Me, but I am not in them.&quot; (Bg.9.4) The world which we see is also Krsna's energy, His maya.</p>
+<p>Here, maya means &quot;by Me,&quot; as if one says, &quot;This work has been done by me.&quot; This &quot;by Me&quot; does not mean that He has done His work and has finished or retired.</p>
+<p>If I start a large factory and I say, &quot;This factory was started by me,&quot; in no case should it be concluded that I am lost or in any way not present.</p>
+<p>Although a manufacturer may refer to his products as being &quot;manufactured by me,&quot; it does not mean that he personally created or constructed his product, but that the product was produced by his energy.</p>
+<p>Similarly, if Krsna says, &quot;Whatever you see in the world was created by Me,&quot; we are not to suppose that He is no longer existing.</p>
+<p>It is not very difficult to see God everywhere in the creation, for He is everywhere present.</p>
+<p>Just as in the Ford factory the workers see Mr.</p>
+<p>Ford in every corner, those who are conversant with the science of Krsna can see Him in every atom of the creation.</p>
+<p>Everything is resting on Krsna (matsthani sarva bhutani), but Krsna is not there (na caham tesv avasthitah).</p>
+<p>Krsna and His energy are non-different, yet the energy is not Krsna.</p>
+<p>The sun and the sunshine are not different, but the sunshine is not the sun.</p>
+<p>The sunshine may come through our window and enter our room, but this is not to say that the sun is in our room.</p>
+<p>The Visnu Purana states: parasya brahmanah saktih: parasya means supreme, brahmanah means Absolute Truth, and saktih means energy.</p>
+<p>The energy of the Supreme Absolute is everything, but in that energy Krsna is not to be found.</p>
+<p>There are two kinds of energy--material and spiritual.</p>
+<p>Jivas, or individual souls, belong to the superior energy of Krsna, but because they are prone to be attracted to the material energy, they are called marginal energy.</p>
+<p>But actually there are only two energies.</p>
+<p>All of the planetary systems and universes are resting on the energies of Krsna.</p>
+<p>Just as all the planets in the solar system are resting in the sunshine, everything within the creation is resting on Krsna-shine.</p>
+<p>All of these potencies of the Lord give pleasure to a devotee, but one who is envious of Krsna rejects them.</p>
+<p>When one is a nondevotee, the statements of Krsna seem to be so much bluff, but when one is a devotee, he thinks, &quot;Oh, my Lord is so powerful,&quot; and he becomes filled with love and adoration.</p>
+<p>Nondevotees think that because Krsna says, &quot;I am God,&quot; they and everyone else can say the same.</p>
+<p>But if asked to show their universal form, they cannot do it.</p>
+<p>That is the difference between a pseudo god and the real God.</p>
+<p>Krsna's pastimes cannot be imitated.</p>
+<p>Krsna married over 16,000 wives and kept them nicely in 16,000 palaces, but an ordinary man cannot even keep one wife nicely.</p>
+<p>It is not that Krsna just spoke so many wonderful things; He also acted wonderfully.</p>
+<p>We should not believe one thing that Krsna says or does and reject another; if belief is there, it must be full belief.</p>
+<p>In this regard, there is a story of Narada Muni, who was once asked by a brahmana: &quot;Oh, you are going to meet the Lord? Will you please ask Him when I'm going to get my salvation?&quot; &quot;All right,&quot; Narada agreed.</p>
+<p>&quot;I shall ask Him.&quot; As Narada proceeded, he met a cobbler who was sitting under a tree mending shoes, and the cobbler similarly asked Narada, &quot;Oh, you are going to see God? Will you please inquire of Him when my salvation will come?&quot; When Narada Muni went to the Vaikuntha planets, he fulfilled their request and asked Narayana (God) about the salvation of the brahmana and the cobbler, and Narayana replied, &quot;After leaving this body, the cobbler shall come here to me.&quot; &quot;What about the brahmana?&quot; Narada asked.</p>
+<p>&quot;He will have to remain there for a number of births.</p>
+<p>I do not know when he is coming.&quot; Narada Muni was astonished, and he finally said, &quot;I can't understand the mystery of this.&quot; &quot;That you will see,&quot; Narayana said.</p>
+<p>&quot;When they ask you what I am doing in My abode, tell them that I am threading the eye of a needle with an elephant.&quot; When Narada returned to earth and approached the brahmana, the brahmana said, &quot;Oh, you have seen the Lord? What was He doing?&quot; &quot;He was threading an elephant through the eye of a needle,&quot; Narada answered.</p>
+<p>&quot;I don't believe such nonsense,&quot; the brahmana replied.</p>
+<p>Narada could immediately understand that the man had no faith and that he was simply a reader of books.</p>
+<p>Narada then left and went on to the cobbler, who asked him, &quot;Oh, you have seen the Lord? Tell me, what was He doing?&quot; &quot;He was threading an elephant through the eye of a needle,&quot; Narada replied.</p>
+<p>The cobbler began to weep, &quot;Oh, my Lord is so wonderful, He can do anything.&quot; &quot;Do you really believe that the Lord can push an elephant through the hole of a needle?&quot; Narada asked.</p>
+<p>&quot;Why not?&quot; the cobbler said, &quot;Of course I believe it.&quot; &quot;How is that?&quot; &quot;You can see that I am sitting under this banyan tree,&quot; the cobbler answered, &quot;and you can see that so many fruits are falling daily, and in each seed there is a banyan tree like this one.</p>
+<p>If, within a small seed there can be a big tree like this, is it difficult to accept that the Lord is pushing an elephant through the eye of a needle?&quot; So this is called faith.</p>
+<p>It is not a question of blindly believing.</p>
+<p>There is reason behind the belief.</p>
+<p>If Krsna can put a large tree within so many little seeds, is it so astounding that He is keeping all the planetary systems floating in space through His energy? Although scientists may think that the planets are being held in space simply by nature alone, behind nature there is the Supreme Lord.</p>
+<p>Nature is acting under His guidance.</p>
+<p>As Sri Krsna states: mayadhyaksena prakrtih suyate sa-caracaram hetunanena kaunteya jagad viparivartate &quot;This material nature is working under My direction, O son of Kunti, and is producing all moving and unmoving beings.</p>
+<p>By its rule this manifestation is being created and annihilated again and again.&quot; (Bg.9.10) Mayadhyaksena means &quot;under My supervision.&quot; Material nature cannot act so wonderfully unless the Lord's hand is behind it.</p>
+<p>We cannot give any example of material things automatically working.</p>
+<p>Matter is inert, and without the spiritual touch there is no possibility of its acting.</p>
+<p>Matter cannot act independently or automatically.</p>
+<p>Machines may be very wonderfully constructed, but unless a man touches that machine, it cannot work.</p>
+<p>And what is that man? He is a spiritual spark.</p>
+<p>Without spiritual touch, nothing can move; therefore everything is resting on Krsna's impersonal energy.</p>
+<p>Krsna's energy is impersonal, but He is a person.</p>
+<p>We often hear of persons performing wonderful actions, yet despite their energetic accomplishments, they still remain persons.</p>
+<p>If this is possible for human beings, why isn't it possible for the Supreme Lord? We are all persons, but we are all dependent upon Krsna, the Supreme Person.</p>
+<p>We have often seen pictures of Atlas, a stout man bearing a large planet on his shoulders and struggling very hard to hold it up.</p>
+<p>We may think that because Krsna is maintaining the universe, He is struggling under its burden like Atlas.</p>
+<p>But this is not the case.</p>
+<p>na ca mat-sthani bhutani pasya me yogam aisvaram bhuta-bhrn na ca bhuta-stho mamatma bhuta-bhavanah &quot;And yet everything that is created does not rest in Me.</p>
+<p>Behold My mystic opulence.</p>
+<p>Although I am the maintainer of all living entities and although I am everywhere, still My Self is the very source of creation.&quot; (Bg.9.5) Although all beings in the universe are resting in Krsna's energy, still they are not in Him.</p>
+<p>Krsna is maintaining all living entities, and His energy is all-pervading, yet He is elsewhere.</p>
+<p>This is Krsna's inconceivable mystic power.</p>
+<p>He is everywhere, yet He is aloof from everything.</p>
+<p>We can perceive his energy, but we cannot see Him because He cannot be seen with material eyes.</p>
+<p>However, when we develop our spiritual qualities, we sanctify our senses so that even within this energy we can see Him.</p>
+<p>Electricity, for instance, is everywhere, and an electrician is capable of utilizing it.</p>
+<p>Similarly, the energy of the Supreme Lord is everywhere, and when we become transcendentally situated, we can see God eye to eye everywhere.</p>
+<p>That spiritualization of the senses is possible through devotional service and love of God.</p>
+<p>The Lord is all-pervading all over the universe and is within the soul, the heart, water, air--everywhere.</p>
+<p>Thus if we make an image of God in anything--clay, stone, wood or whatever--it should not be considered to be just a doll.</p>
+<p>That also is God.</p>
+<p>If we have sufficient devotion, the image will also speak to us.</p>
+<p>God is everywhere impersonally (maya tatam idam sarvam), but if we make His personal form from anything, or if we create an image of God within ourselves, He will be present personally for us.</p>
+<p>In the sastras, there are eight kinds of images recommended, and any kind of image can be worshiped because God is everywhere.</p>
+<p>One may protest and ask, &quot;Why should God be worshiped in images and not in His original spiritual form?&quot; The answer is that we cannot see God immediately in His spiritual form.</p>
+<p>With our material eyes we can only see stone, earth, wood--something tangible.</p>
+<p>Therefore Krsna comes as arca-vigraha, a form conveniently presented by the Supreme Lord in order for us to see Him.</p>
+<p>The result is that if we concentrate upon the image and make offerings with love and devotion, Krsna will respond through the image.</p>
+<p>There are many instances of this happening.</p>
+<p>In India, there is one temple called Saksi-Gopala (Krsna is often called Gopala).</p>
+<p>The Gopala murti or statue was at one time located in a temple in Vrndavana.</p>
+<p>Once two brahmanas, one old and one young, went to visit Vrndavana on a pilgrimage.</p>
+<p>It was a long trip, and in those days there were no railways, so travelers underwent many hardships.</p>
+<p>The old man was much obliged to the youth for helping him on the journey, and upon arriving in Vrndavana, he said to him: &quot;My dear boy, you have rendered me so much service, and I am much obliged to you.</p>
+<p>I would like very much to return that service and give you some reward.&quot; &quot;My dear sir,&quot;the youth said, &quot;you are an old man just like my father.</p>
+<p>It is my duty to serve you.</p>
+<p>I don't require any reward.&quot; &quot;No, I'm obliged to you, and I must reward you,&quot; the old man insisted.</p>
+<p>He then promised to give the young man his young daughter in marriage.</p>
+<p>The old man was a very rich man, and the youth, although a learned brahmana, was very poor.</p>
+<p>Considering this, the youth said, &quot;Don't promise this, for your family will never agree.</p>
+<p>I am such a poor man, and you are aristocratic, so this marriage will not take place.</p>
+<p>Don't promise this way before the Deity.&quot; The conversation was taking place in the temple before the Deity of Gopala Krsna, and the young man was anxious not to offend the Deity.</p>
+<p>However, despite the youth's pleas, the old man insisted on the marriage.</p>
+<p>After staying in Vrndavana for some time, they finally returned home, and the old man informed his eldest son that his young sister was to be married to the poor brahmana youth.</p>
+<p>The eldest son became very angry.</p>
+<p>&quot;Oh, how have you selected that pauper as husband for my sister? This cannot be.&quot; The old man's wife also came to him and said, &quot;If you marry our daughter to that boy, I shall commit suicide.&quot; The old man was thus perplexed.</p>
+<p>After some time, the brahmana youth became very anxious.</p>
+<p>&quot;He has promised to marry his daughter to me, and he made that promise before the Deity.</p>
+<p>Now he is not coming to fulfill it.&quot; He then went to see the old man to remind him of his promise.</p>
+<p>&quot;You promised before Lord Krsna,&quot; the youth said, &quot;and you are not fulfilling that promise.</p>
+<p>How is that?&quot; The old man was silent.</p>
+<p>He began praying to Krsna, for he was perplexed.</p>
+<p>He didn't want to marry his daughter to the youth and cause such great trouble within his family.</p>
+<p>In the meantime the elder son came out and began to accuse the brahmana youth.</p>
+<p>&quot;You have plundered my father in the place of pilgrimage.</p>
+<p>You gave him some intoxicant and took all his money, and now you are saying that he has promised to offer you my youngest sister.</p>
+<p>You rascal!&quot; In this way there was much noise, and people began to gather.</p>
+<p>The youth could understand that the old man was still agreeable but that the family was making it difficult for him.</p>
+<p>People began to gather about because of the noise which the elder son was raising, and the brahmana youth began to exclaim to them that the old man made this promise before the Deities but that he could not fulfill it because the family was objecting.</p>
+<p>The eldest son, who was an atheist, suddenly interrupted the youth and said, &quot;You say that the Lord was witnessing.</p>
+<p>Well, if He comes and bears witness to this promise of my father's, you can have my sister in marriage.&quot; The youth replied, &quot;Yes, I shall ask Krsna to come as a witness.&quot; He was confident that God would come.</p>
+<p>An agreement was then made before everyone that the girl would be given in marriage if Krsna came from Vrndavana as a witness to the old man's promise.</p>
+<p>The brahmana youth returned to Vrndavana and began to pray to Gopala Krsna.</p>
+<p>&quot;Dear Lord, You must come with me.&quot; He was such a staunch devotee that he spoke to Krsna just as one would speak to a friend.</p>
+<p>He was not thinking that the Gopala was a mere statue or image, but he considered Him to be God Himself.</p>
+<p>Suddenly the Deity spoke to him: &quot;How do you think that I can go with you? I am a statue.</p>
+<p>I can't go anywhere.&quot; &quot;Well, if a statue can speak, he can also walk,&quot; the boy replied.</p>
+<p>&quot;All right then,&quot; the Deity said finally.</p>
+<p>&quot;I shall go with you, but on one condition.</p>
+<p>In no case shall you look back to see Me.</p>
+<p>I will follow you, and you will know that I am following by the jingle of My leg bangles.&quot; The youth agreed, and in this way they left Vrndavana to go to the other town.</p>
+<p>When the trip was nearly over, just as they were about to enter his home village, the youth could no longer hear the sound of the bangles, and he began to fear.</p>
+<p>&quot;Oh, where is Krsna?&quot; Unable to contain himself any longer, he looked back.</p>
+<p>He saw the statue standing still.</p>
+<p>Because he looked back, it would go no further.</p>
+<p>He immediately ran into the town and told the people to come out and see Krsna who had come as a witness.</p>
+<p>Everyone was astounded that such a large statue had come from such a distance, and they built a temple on the spot in honor of the Deity, and today people are still worshiping Saksi-Gopala, the Lord as a witness.</p>
+<p>We should therefore conclude that because God is everywhere, He is also in His statue, in the image made of Him.</p>
+<p>If Krsna is everywhere, as even the impersonalists admit, then why isn't He in His image? Whether an image or statue speaks to us or not is dependent on the degree of our devotion.</p>
+<p>But if we choose to see the image merely as a piece of wood or stone, Krsna will always remain wood or stone for us.</p>
+<p>Krsna is everywhere, but as we advance in spiritual consciousness we can begin to see Him as He is.</p>
+<p>If we put a letter into a mailbox, it will go to its destination because the mailbox is authorized.</p>
+<p>Similarly, if we worship an authorized image of God, our faith will have some effect.</p>
+<p>If we are prepared to follow the various rules and regulations--that is to say, if we become qualified--it is possible to see God anywhere and everywhere.</p>
+<p>When a devotee is present, Krsna, by His omnipresent energies, will manifest Himself anywhere and everywhere, but when His devotee is not there, He will not do this.</p>
+<p>There are many instances of this.</p>
+<p>Prahlada Maharaja saw Krsna in a pillar.</p>
+<p>There are many other examples.</p>
+<p>Krsna is there; all that is required is our qualification to see Him.</p>
+<p>Krsna Himself gives an example of His omnipresence in this way:.</p>
+<p>yathakasa sthito nityam vayuh sarvatra-go mahan tatha sarvani bhutani mat-sthanity upadharaya &quot;As the mighty wind, blowing everywhere, always rests in ethereal space, know that in the same manner all beings rest in Me.&quot; (Bg.9.6) Everyone knows that the wind blows within space, and on earth it is blowing everywhere.</p>
+<p>There is no place where there is no air or wind.</p>
+<p>If we wish to drive out air, we have to create a vacuum artificially by some machine.</p>
+<p>Just as the air is blowing everywhere in space, so everything is existing within Krsna.</p>
+<p>If this is the case, when the material creation is dissolved, where does it go? sarva-bhutani kaunteya prakrtim yanti mamikam kalpa-ksaye punas tani kalpadau visrjamy aham &quot;O son of Kunti, at the end of the millennium every material manifestation enters into My nature, and at the beginning of another millennium, by My potency I again create.&quot; (Bg.9.7) Krsna sets His nature (prakrti) into motion, as one may wind up a clock, and when nature unwinds, it is absorbed into the Lord.</p>
+<p>The spiritual creation, however, is not like this, for it is permanent.</p>
+<p>In the material creation everything is temporary.</p>
+<p>Just as our bodies are developing due to the spiritual spark that is within, the whole creation is coming into being, developing and passing out of being, due to the spirit of the Lord which is within it.</p>
+<p>Just as our spirit is present within the body, the Lord is present within the universe as Paramatma.</p>
+<p>Due to the presence of Ksirodakasayi Visnu, the material creation exists, just as due to our presence our bodies are existing.</p>
+<p>Sometimes Krsna manifests the material creation, and sometimes He does not.</p>
+<p>In all cases, its existence is due to His presence.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

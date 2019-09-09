@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch6 - Nectar of Instruction</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Preface</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html" class="active">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Instruction</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#text-six" id="text-six">TEXT SIX</a></h1>
+<p>dṛṣṭaiḥ svabhāva-janitair vapuṣaś ca doṣair na prākṛtatvam iha bhakta janasya paśyet gaṅgāmbhasāṁ na khalu budbuda-phena-paṅkair brahma-dravatvam apagacchati nīra-dharmaiḥ</p>
+<p><strong>SYNONYMS</strong></p>
+<p>dṛṣṭaiḥ—seen by ordinary vision; svabhāva-janitaiḥ—born of one’s own nature; vapuṣaḥ—of the body; ca—and; doṣaiḥ—by the faults; na—not; prākṛtatvam —the state of being material; iha—in this world; bhakta janasya—of a pure devotee; paśyet—one should see; gaṅgā-ambhasām—of the Ganges waters; na— not; khalu—certainly; budbuda-phena-paṅkaiḥ—by bubbles, foam and mud; brahma-dravatvam—the transcendental nature; apagacchati—is spoiled; nīra-dharmaiḥ—the characteristics of water.</p>
+<p><strong>TRANSLATION</strong></p>
+<p>Being situated in his original Kṛṣṇa conscious position, a pure devotee does not identify with the body.</p>
+<p>Such a devotee should not be seen from a materialistic point of view.</p>
+<p>Indeed, one should overlook a devotee’s having a body born in a low family, a body with a bad complexion, a deformed body, or a diseased or infirm body.</p>
+<p>According to ordinary vision, such imperfections may seem prominent in the body of a pure devotee, but despite such seeming defects, the body of a pure devotee cannot be polluted.</p>
+<p>It is exactly like the waters of the Ganges, which sometimes during the rainy season are full of bubbles, foam and mud.</p>
+<p>The Ganges waters do not become polluted.</p>
+<p>Those who are advanced in spiritual understanding will bathe in the Ganges without considering the condition of the water.</p>
+<p><strong>PURPORT</strong></p>
+<p>Śuddha-bhakti, the activity of the soul proper—in other words, engagement in the transcendental loving service of the Lord—is performed in a liberated condition.</p>
+<p>In Bhagavad-gītā (14.26) it is stated: māṁ ca yo ’vyabhicāreṇa bhakti-yogena sevate sa guṇān samatītyaitān brahma-bhūyāya kalpate “One who engages in full devotional service, who does not fall down in any circumstance, at once transcends the modes of material nature and thus comes to the level of Brahman.” Avyabhicāriṇī bhakti means unalloyed devotion.</p>
+<p>A person engaged in devotional service must be free from material motives.</p>
+<p>In this Kṛṣṇa consciousness movement, one’s consciousness must be changed.</p>
+<p>If consciousness is aimed toward material enjoyment, it is material consciousness, and if it is aimed toward serving Kṛṣṇa, it is Kṛṣṇa consciousness.</p>
+<p>A surrendered soul serves Kṛṣṇa without material considerations (anyābhilāṣitā-śūnyam ).</p>
+<p>Jñāna-karmādy-anāvṛtam: unalloyed devotional service, which is transcendental to the activities of the body and mind, such as jñāna (mental speculation) and karma (fruitive work), is called pure bhakti-yoga.</p>
+<p>Bhakti-yoga is the proper activity of the soul, and when one actually engages in unalloyed, uncontaminated devotional service, he is already liberated (sa guṇān samatītyaitān).</p>
+<p>Kṛṣṇa’s devotee is not subjected to material condition, even though his bodily features may appear materially conditioned.</p>
+<p>One should therefore not see a pure devotee from a materialistic point of view.</p>
+<p>Unless one is actually a devotee, he cannot see another devotee perfectly.</p>
+<p>As explained in the previous verse, there are three types of devotees —kaniṣṭha-adhikārī, madhyama-adhikārī and uttama-adhikārī.</p>
+<p>The kaniṣṭha-adhikārī cannot distinguish between a devotee and nondevotee.</p>
+<p>He is simply concerned with worshiping the Deity in the temple.</p>
+<p>A madhyama-adhikārī, however, can distinguish between the devotee and nondevotee, as well as between the devotee and the Lord.</p>
+<p>Thus he treats the Supreme Personality of Godhead, the devotee and the nondevotee in different ways.</p>
+<p>No one should criticize the bodily defects of a pure devotee.</p>
+<p>If there are such defects, they should be overlooked.</p>
+<p>What should be taken into account is the spiritual master’s main business, which is devotional service, pure service to the Supreme Lord.</p>
+<p>As stated in Bhagavad-gītā (9.30): api cet sudurācāro bhajate mām ananya-bhāk sādhur eva sa mantavyaḥ samyag vyavasito hi saḥ Even if a devotee sometimes seems to engage in abominable activities, he should be considered a sādhu, a saintly person, because his actual identity is that of one engaged in the loving service of the Lord.</p>
+<p>In other words, he is not to be considered an ordinary human being.</p>
+<p>Even though a pure devotee may not be born in a brāhmaṇa or gosvāmī family, if he is engaged in the service of the Lord he should not be neglected.</p>
+<p>In actuality there cannot be a family of gosvāmīs based on material considerations, caste or heredity.</p>
+<p>The gosvāmī title is actually the monopoly of the pure devotees; thus we speak of the six Gosvāmīs, headed by Rūpa Gosvāmī and Sanātana Gosvāmī.</p>
+<p>Rūpa Gosvāmī and Sanātana Gosvāmī had practically become Mohammedans and had therefore changed their names to Dabira Khāsa and Sākara Mallika, but Śrī Caitanya Mahāprabhu Himself made them gosvāmīs.</p>
+<p>Therefore the gosvāmī title is not hereditary.</p>
+<p>The word gosvāmī refers to one who can control his senses, who is master of the senses.</p>
+<p>A devotee is not controlled by the senses, but is the controller of the senses.</p>
+<p>Consequently he should be called svāmī or gosvāmī, even though he may not be born in a gosvāmī family.</p>
+<p>According to this formula, the gosvāmīs who are descendants of Śrī Nityānanda Prabhu and Śrī Advaita Prabhu are certainly devotees, but devotees coming from other families should not be discriminated against; indeed, whether the devotees come from a family of previous ācāryas or from an ordinary family, they should be treated equally.</p>
+<p>One should not think, “Oh, here is an American gosvāmī,” and discriminate against him.</p>
+<p>Nor should one think, “Here is a nityānanda-vaṁśa-gosvāmī.” There is an undercurrent of protest against our awarding the title gosvāmī to the American Vaiṣṇavas of the Kṛṣṇa consciousness movement.</p>
+<p>Sometimes people flatly tell the American devotees that their sannyāsa or title of gosvāmī is not bona fide.</p>
+<p>However, according to the statements of Śrīla Rūpa Gosvāmī in this verse, an American gosvāmī and a gosvāmī in a family of ācāryas are nondifferent.</p>
+<p>On the other hand, a devotee who has attained the title of gosvāmī but is not born of a brāhmaṇa father or of a gosvāmī  in the family of Nityānanda or Advaita Prabhu should not be artificially puffed up by thinking that he has become a gosvāmī.</p>
+<p>He should always remember that as soon as he becomes materially puffed up, he immediately falls down.</p>
+<p>This Kṛṣṇa consciousness movement is a transcendental science, and there is no room for jealousy.</p>
+<p>This movement is meant for the paramahaṁsas who are completely free from all jealousy (paramaṁ nirmatsarāṇām).</p>
+<p>One should not be jealous, whether he is born in a family of gosvāmīs or has the title of gosvāmī awarded to him.</p>
+<p>As soon as anyone becomes envious, he falls from the platform of paramahaṁsa.</p>
+<p>If we consider the bodily defects of a Vaiṣṇava, we should understand that we are committing an offense at the lotus feet of the Vaiṣṇava.</p>
+<p>An offense at the lotus feet of a Vaiṣṇava is very serious.</p>
+<p>Indeed, Śrī Caitanya Mahāprabhu has described this offense as hātī-mātā, the mad elephant offense.</p>
+<p>A mad elephant can create a disaster, especially when it enters into a nicely trimmed garden.</p>
+<p>One should therefore be very careful not to commit any offense against a Vaiṣṇava.</p>
+<p>Every devotee should be ready to take instructions from a superior Vaiṣṇava, and a superior Vaiṣṇava must be ready to help an inferior Vaiṣṇava in all respects.</p>
+<p>One is superior or inferior according to his spiritual development in Kṛṣṇa consciousness.</p>
+<p>One is forbidden to observe the activities of a pure Vaiṣṇava from a material point of view.</p>
+<p>For the neophyte especially, considering a pure devotee from a material point of view is very injurious.</p>
+<p>One should therefore avoid observing a pure devotee externally, but should try to see the internal features and understand how he is engaged in the transcendental loving service of the Lord.</p>
+<p>In this way one can avoid seeing the pure devotee from a material point of view, and thus one can gradually become a purified devotee himself.</p>
+<p>Those who think that Kṛṣṇa consciousness is limited to a certain section of people, a certain section of devotees or a certain tract of land are generally prone to see the external features of the devotee.</p>
+<p>Such neophytes, unable to appreciate the exalted service of the advanced devotee, try to bring the mahā-bhāgavata to their platform.</p>
+<p>We experience such difficulty in propagating this Kṛṣṇa consciousness all over the world.</p>
+<p>Unfortunately we are surrounded by neophyte Godbrothers who do not appreciate the extraordinary activities of spreading Kṛṣṇa consciousness all over the world.</p>
+<p>They simply try to bring us to their platform, and they try to criticize us in every respect.</p>
+<p>We very much regret their naive activities and poor fund of knowledge.</p>
+<p>An empowered person who is actually engaged in the confidential service of the Lord should not be treated as an ordinary human being, for it is stated that unless one is empowered by Kṛṣṇa, one cannot spread the Kṛṣṇa consciousness movement all over the world.</p>
+<p>When one thus criticizes a pure devotee, he commits an offense (vaiṣṇava-aparādha) that is very obstructive and dangerous for those who desire to advance in Kṛṣṇa consciousness.</p>
+<p>A person cannot derive any spiritual benefit when he offends the lotus feet of a Vaiṣṇava.</p>
+<p>Everyone should therefore be very careful not to be jealous of an empowered Vaiṣṇava, or a śuddha-vaiṣṇava.</p>
+<p>It is also an offense to consider an empowered Vaiṣṇava an object of disciplinary action.</p>
+<p>It is offensive to try to give him advice or to correct him.</p>
+<p>One can distinguish between a neophyte Vaiṣṇava and an advanced Vaiṣṇava by their activities.</p>
+<p>The advanced Vaiṣṇava is always situated as the spiritual master, and the neophyte is always considered his disciple.</p>
+<p>The spiritual master must not be subjected to the advice of a disciple, nor should a spiritual master be obliged to take instructions from those who are not his disciples.</p>
+<p>This is the sum and substance of Śrīla Rūpa Gosvāmī’s advice in the sixth verse.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

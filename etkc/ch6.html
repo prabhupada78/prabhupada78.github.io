@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch6 - Elevation to Krsna Consciousness</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html" class="active">ch6</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Elevation to Krsna Consciousness</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#taking-to-krishna-consciousness" id="taking-to-krishna-consciousness">Taking to Krishna Consciousness</a></h1>
+<p>In India all scriptures and great spiritual teachers, including Sankaracarya, an impersonalist, accept Krishna as the Supreme Lord.</p>
+<p>In the beginning of his commentary on the Bhagavad-gita, Sankaracarya says that Narayana is transcendental to this manifested and unmanifested creation, and in the same commentary he says that the Supreme Personality of Godhead, Narayana, is Krishna appearing as the son of Devaki and Vasudeva.</p>
+<p>Thus in this respect there is little difference of opinion about Krishna.</p>
+<p>Those who are authorities, be they personalists or impersonalists, are in agreement that Krishna is the Supreme Lord.</p>
+<p>When Krishna was present on this planet, He proved by His activities and opulence that He is the Supreme Lord.</p>
+<p>If we are actually anxious to understand who and what the Supreme Lord is, all of the information is given in Vedic literatures.</p>
+<p>If we utilize whatever we have in our possession to understand God, Krishna will prove that He is the Supreme personality of Godhead.</p>
+<p>If we but accept this one fact, then all of our education is complete.</p>
+<p>It is fashionable to research to try to find out who is God, but this is not necessary.</p>
+<p>God is present, and He Himself says: mattah parataram nanyat kincid asti dhananjaya mayi sarvam idam protam sutre mani-gana iva &quot;O conqueror of wealth (Arjuna), there is no truth superior to Me.</p>
+<p>Everything rests upon Me, as pearls are strung on a thread.&quot; (Bg.7.7) This information is not only given in Bhagavad-gita but in other scriptures as well, and it has been accepted from the very beginning by great acaryas (teachers) like Sankaracarya, Ramanujacarya, Madhvacarya, Lord Caitanya and many other stalwart authorities.</p>
+<p>Even at the present moment those who do not accept Krishna as the Supreme Lord are accepting the knowledge given by Krishna to Arjuna.</p>
+<p>So in this way they are accepting Krishna indirectly.</p>
+<p>If one accepts Bhagavad-gita as a great book of knowledge, he is also accepting Krishna.</p>
+<p>There is no doubt that the Supreme Absolute Truth is Krishna and that we have our eternal relationship with Him.</p>
+<p>Our eternal relationship with God is sabhajana: God is great, and we are subordinate.</p>
+<p>He is the predominator, and we are the predominated.</p>
+<p>The duty of the subordinate is to please the predominator.</p>
+<p>Similarly, if we want to be happy, we must learn how to make Krishna happy.</p>
+<p>This is the process of Krishna consciousness.</p>
+<p>But how is it to be understood that the Supreme Lord is satisfied by our service and labor? It is actually possible to perfect our service or occupational duty.</p>
+<p>Everyone has some service to perform according to his designations.</p>
+<p>He may be an Indian or American, Hindu, Muslim or Christian, man, woman, brahmana, ksatriya, vaisya, sudra or whatever--in any case he is meant to do some sort of work, and that work is his occupational duty.</p>
+<p>Perfection of duty can be tested by seeing whether the Supreme Lord is satisfied by its execution.</p>
+<p>The Supreme Lord's satisfaction can be tested by the Lord's representative, the spiritual master.</p>
+<p>Therefore it is important to seek out a real representative of the Supreme Personality of Godhead and work under him.</p>
+<p>If he is satisfied, then we should know that the Supreme Lord is also satisfied.</p>
+<p>That is explained by Visvanatha Cakravarti Thakura: yasya prasadad bhagavat-prasado yasyaprasadan na gatih kuto 'pi dhyayam stuvams tasya yasas tri-sandhyam vande guroh sri-caranaravindam &quot;By the mercy of the spiritual master one is benedicted by the mercy of Krishna.</p>
+<p>Without the grace of the spiritual master no one can make any advancement.</p>
+<p>Therefore I should always remember the spiritual master.</p>
+<p>At least three times a day I should offer my respectful obeisances unto the lotus feet of my spiritual master.&quot; (Sri Gurvastakam, Verse 8) The spiritual master is the representative of the Supreme Lord.</p>
+<p>How does he become the representative? If one says that such and such an object is a pair of spectacles, and if he teaches his disciple in that way, there is no mistake as to the identity of the object.</p>
+<p>The spiritual master is he who has captured the words of a particular disciplic succession.</p>
+<p>In the case given, the key word is &quot;spectacles&quot;--that's all.</p>
+<p>The spiritual master does not have to say anything beyond that.</p>
+<p>This is the qualification.</p>
+<p>Krishna says, &quot;I am the Supreme,&quot; and the spiritual master says, &quot;Krishna is the Supreme.&quot; It is not that to be a representative of Krishna or to be a spiritual master one has to have any extraordinary qualification.</p>
+<p>He simply has to carry the message from the authority as it is without any personal interpretation.</p>
+<p>As soon as there is some personal interpretation, the message is lost and the instructions become offensive.</p>
+<p>A person who interprets the scriptures according to his own whims should be immediately rejected.</p>
+<p>Once Lord Caitanya Mahaprabhu said, &quot;You must at least have enough sense to test to find out who is a spiritual master and who is not.&quot; For instance, if we want to purchase something, we must at least have some idea of what that thing is, otherwise we will be cheated.</p>
+<p>If we want to purchase a mango from the market, we must at least know what type of food a mango is and what it looks like.</p>
+<p>Similarly, we must have some preliminary knowledge of the qualifications for a bona fide spiritual master.</p>
+<p>Bhagavad-gita itself gives some information about the succession of spiritual masters.</p>
+<p>Lord Sri Krishna says: imam vivasvate yogam proktavan aham avyayam vivasvan manave praha manur iksvakave 'bravit evam parampara-praptam imam rajarsayo viduh sa kaleneha mahata yogo nastah parantapa sa evayam maya te 'dya yogah proktah puratanah bhakto 'si me sakha ceti rahasyam hy etad uttamam &quot;I instructed this imperishable science of yoga to the sun-god Vivasvan, and Vivasvan instructed it to Manu, the father of mankind, and Manu in turn instructed it to Iksvaku.</p>
+<p>This supreme science was thus received through the chain of disciplic succession, and the saintly kings understood it in that way.</p>
+<p>But in course of time the succession was broken, and therefore the science as it is appears to be lost.</p>
+<p>That very ancient science of the relationship with the Supreme is today told by Me to you because you are My devotee as well as My friend; therefore, you can understand the transcendental mystery of this science.&quot; (Bg.4.1-3) That original spiritual disciplic succession was broken, but now we can receive the same message by studying Bhagavad-gita.</p>
+<p>In Bhagavad-gita Krishna speaks to Arjuna just as in a far distant time He spoke to the sun-god.</p>
+<p>If we accept the words of Arjuna and Krishna, it may be possible for us to understand Bhagavad-gita, but if we want to interpret it in our own way, the results will be nonsensical.</p>
+<p>The best way to understand Bhagavad-gita is to accept a bona fide spiritual master.</p>
+<p>This is not very difficult.</p>
+<p>Arjuna says that he accepts all that Krishna has said to him because Krishna is the Supreme personality of Godhead: nasto mohah smrtir labdha tvat prasadan mayacyuta sthito 'smi gata-sandehah karisye vacanam tava &quot;Arjuna said, My dear Krishna, O infallible one, my illusion is now gone.</p>
+<p>I have regained my memory by Your mercy, and now I am fixed without any doubt, prepared to act according to Your instructions.&quot; (Bg.18.73) As Arjuna, we should accept Krishna as the Supreme personality of Godhead and do as He says: yat karosi yad asnasi yaj juhosi dadasi yat yat tapasyasi kaunteya tat kurusva mad-arpanam &quot;O son of Kunti, all that you do, all that you eat, all that you offer and give away, as well as all austerities that you may perform, should be done as an offering unto Me.&quot; (Bg.9.27) By accepting Krishna in this spirit, we can attain complete knowledge.</p>
+<p>If, however, we do not accept Krishna and interpret Bhagavad-gita in our own way, then everything will be spoiled.</p>
+<p>If we are sincere, we will get a sincere spiritual master by the grace of Krishna.</p>
+<p>If, however, we want to be cheated, Krishna will send us a cheater, and we will be cheated throughout our lives.</p>
+<p>That is actually going on.</p>
+<p>For those who do not want to understand Krishna as He is but want to understand by dint of their own imperfect vision, Krishna, God, remains unknown.</p>
+<p>The whole process is to accept Krishna and His instructions and therefore to render devotional service unto Him.</p>
+<p>It is Srimati Radharani who is the very embodiment of perfect devotional service.</p>
+<p>In the Brahma-samhita Radharani is described as Krishna's expansion of His spiritual potency.</p>
+<p>In this way, She is nondifferent from Krishna.</p>
+<p>The gopis, who tend Radha and Krishna, are not ordinary women or girls; they are expansions of Krishna's pleasure potency.</p>
+<p>Radharani and the gopis should never be accepted as ordinary women; indeed, to understand their position we need the guidance of a spiritual master.</p>
+<p>If we living entities want to actually associate with Radharani, that may be possible, although She is not an ordinary woman.</p>
+<p>We can become associates of Radharani by qualifying ourselves in advanced devotional service.</p>
+<p>In devotional service there is no frustration; even if we perform only a small amount, it will grow.</p>
+<p>Devotional service is never lost.</p>
+<p>As far as material things are concerned, whatever we gain in the world will be lost when the body is finished.</p>
+<p>But since we are eternal spiritual sparks, our spiritual assets go with us, gradually fructifying.</p>
+<p>In this way those who have previously cultivated transcendental consciousness come in contact with Krishna consciousness through this movement.</p>
+<p>Interest in Krishna consciousness is not commonplace.</p>
+<p>In Bhagavad-gita it is said that out of many millions and billions of persons, only one is interested in achieving perfection.</p>
+<p>If we can advertise that simply by reading this book and meditating for fifteen minutes anyone can immediately get power, become successful in business and pass his examination, many people would be attracted to the book.</p>
+<p>people are not attracted to Krishna consciousness because they prefer to be cheated by maya.</p>
+<p>They think that the perfection of life is in eating a great supply of food, or in sleeping twenty hours, or in having a new mate every night or every day.</p>
+<p>People are interested in these things, but not in the perfection of life.</p>
+<p>Every intelligent man should at least experiment with Krishna consciousness.</p>
+<p>He should say, &quot;All right.</p>
+<p>I have been enjoying this eating and sleeping for so many lives.</p>
+<p>These things were available for me to enjoy in my bird and animal bodies.</p>
+<p>Now in this life let me restrict the four principles of animalistic life--eating, sleeping, defending and mating--and let me devote my time to developing Krishna consciousness.</p>
+<p>In this way my life will be successful.&quot; It is not that we have coined this term &quot;Krishna consciousness.&quot; Krishna consciousness is the oldest phrase in the history of the world: man-mana bhava mad-bhakto mad-yaji mam namaskuru mam evaisyasi satyam te pratijane priyo 'si me man-mana bhava mad-bhakto mad-yaji mam namaskuru mam evaisyasi yuktvaivam atmanam mat-parayanah &quot;Always think of Me.</p>
+<p>Become My devotee.</p>
+<p>Worship Me, and offer your homage unto Me.</p>
+<p>The result is that you will come to Me without fail.</p>
+<p>I promise you this, because you are My very dear friend.</p>
+<p>Engage your mind always in thinking of Me, engage your body in My service; and surrender unto Me.</p>
+<p>Completely absorbed in Me, surely will you come to Me.&quot; (Bg.18.65, 9.34) The phrase man-mana bhava mad-bhakto means &quot;just be always conscious of Me.&quot; This then is Krishna consciousness.</p>
+<p>In Bhagavad-gita Krishna is repeatedly saying that we should worship Him, offer obeisances unto Him and then come to Him.</p>
+<p>Bhagavadgita clearly points to the absolute necessity of Krishna consciousness, and Bhagavadgita is accepted as the essence of the Upanisads.</p>
+<p>Even from the historical point of view, it has no comparison.</p>
+<p>It has been calculated on the basis of archeological evidence that Krishna spoke Bhagavad-gita on the Battlefield of Kuruksetra more than five thousand years ago.</p>
+<p>So this Krishna consciousness movement, even from the historical point of view, is five thousand years old.</p>
+<p>Its philosophy is the oldest in the history of the world.</p>
+<p>If we wish to trace it even further back, we find that Sri Krishna spoke it earlier to the sun-god.</p>
+<p>Krishna is eternal, and consciousness of Krishna is also eternal.</p>
+<p>In this way Krishna consciousness should be approached.</p>
+<p>It should not simply be considered a theory.</p>
+<p>When Krishna consciousness is covered by any other consciousness, we experience our contaminated conditional life.</p>
+<p>When the sky is clear, we can see the sun's brilliant effulgence, but when it is covered by clouds, we cannot see it.</p>
+<p>We may be able to perceive the sunlight, but we cannot see the sun disc itself.</p>
+<p>When the sky is clear, it is in its natural condition.</p>
+<p>Similarly, our consciousness is eternally Krishna consciousness because we are part and parcel of Krishna eternally.</p>
+<p>This is asserted in the Fifteenth Chapter of Bhagavad-gita: mamaivamso jiva-loke jiva-bhutah sanatanah manah-sasthanindriyani prakrti-sthani karsati &quot;The living entities in this conditional world are My fragmental parts, and they are eternal.</p>
+<p>But due to conditioned life, they are struggling very hard with the six senses, which include the mind.&quot; (Bg.15.7) Somehow or other we have come in contact with material nature, and because of the mind and the six senses, we are struggling hard to exist.</p>
+<p>That is Darwin's theory--the struggle for existence, survival of the fittest.</p>
+<p>However, the actual fact is that our constitutional position is not one of struggle.</p>
+<p>Struggle is the position of animal life.</p>
+<p>Human life should be blissful and should have as its goal spiritual advancement.</p>
+<p>At one time that was India's principle of life, and there was a class of people, the brahmanas, who engaged themselves exclusively in spiritual culture.</p>
+<p>Although brahminical cultural life is enunciated in the scriptures of India, it is not for Indians alone, but for all human beings.</p>
+<p>The Vedas were written for all mankind, but it so happened that when the Vedas were written, what is now known as the Indian culture was the only one extant.</p>
+<p>At that time, the whole planet was called Bharatavarsa, after Emperor Bharata Maharaja, the son of Rsabhadeva.</p>
+<p>Bharata Maharaja ruled the whole planet, but gradually the planet was divided up.</p>
+<p>So the dharma of Vedic culture should not simply be considered Indian or Hindu in a sectarian sense.</p>
+<p>Often the word dharma is translated to mean religion, but to conceive of dharma as a religion is to misconceive the word.</p>
+<p>In general usage, the word religion refers to a particular type of faith.</p>
+<p>The word dharma does not.</p>
+<p>Dharma indicates the natural occupation of the living entity.</p>
+<p>For example, wherever there is fire, there is heat and light, so it may be said that heat and light are the dharma of fire.</p>
+<p>Fire cannot change its dharma.</p>
+<p>In the same way, liquidity is an intrinsic quality of water, and this quality cannot be changed.</p>
+<p>If it is, it can no longer be considered water.</p>
+<p>The dharma of the individual soul can never be changed, and that dharma is the occupational duty of rendering service unto the Supreme Lord.</p>
+<p>Faiths and religions can be changed.</p>
+<p>Today I may be a Hindu, but tomorrow I may become a Christian or Moslem.</p>
+<p>In this way faiths can be changed, but dharma is a natural sequence, a natural occupation or connection.</p>
+<p>Krishna says that as soon as there is a discrepancy in the discharge of the dharmas of the living entities, when there is an upsurge of unnatural activities, He descends.</p>
+<p>One of the principal purposes of His descent is to reestablish religious principles.</p>
+<p>The best system of religion is that which best trains us to surrender unto the Supreme Lord.</p>
+<p>This is the basic principle underlying Bhagavad-gita.</p>
+<p>We can select our own religion and be Hindu, Moslem, Buddhist, Christian or whatever, as long as we know the real purpose of religion.</p>
+<p>Indeed, Srimad-Bhagavatam does not recommend that we give up our present religion, but it does hint at the purpose of religion.</p>
+<p>That purpose is love of Godhead, and that religion which teaches us best how to love the Supreme Lord is the best religion.</p>
+<p>In this age especially there is a general decay in the consciousness of the masses of people.</p>
+<p>A few people remember that there is a God, but for the most part people are forgetting Him.</p>
+<p>Therefore they cannot be happy.</p>
+<p>People are thinking that God is dead, or that we have no obligation to God, or that there is no God.</p>
+<p>This sort of thinking will never make for happiness.</p>
+<p>When civilization is godless or atheistic, as it is today, God or His representative comes to remind people of their relationship with the supreme consciousness.</p>
+<p>When Sanatana Gosvami inquired from Lord Caitanya, &quot;What am I? Why am I always in a miserable condition? What is the position of all living entities?&quot; Sri Caitanya Mahaprabhu immediately answered that the real identity is that of servant of God.</p>
+<p>We should not understand the word &quot;servant&quot; in the sense of materialistic servant.</p>
+<p>To become a servant of God is a great position.</p>
+<p>People are always trying to get some government post or some position in a reputed business firm because the service rendered in such positions earns great profits.</p>
+<p>Although we are very anxious to get good positions in the government service, we do not stop to think of getting a position in God's service.</p>
+<p>God is the government of all governments.</p>
+<p>God's service is dharma.</p>
+<p>This dharma may be described differently in different countries according to different cultural and climatic conditions or situations, but in every religious scripture obedience to God is instructed.</p>
+<p>No scripture says that there is no God or that we as living entities are independent--not the Bible, the Koran, the Vedas or even the Buddhist literatures.</p>
+<p>Generally, according to Buddhist philosophy, there is no individual soul and no supreme soul, but actually since Lord Buddha is accepted by Vedic literatures as an incarnation of God, by obeying Lord Buddha one is actually following God.</p>
+<p>In the Srimad-Bhagavatam there is a list of incarnations, and Lord Buddha is accepted as one of them.</p>
+<p>Srimad-Bhagavatam was compiled by Vyasadeva five thousand years ago, and Lord Buddha appeared about 2,600 years ago, so Srimad-Bhagavatam actually foretold the event of his incarnation.</p>
+<p>Lord Buddha preached that there is no God and no soul, that this body is a combination of matter, and that when we dissolve this material combination, sensations of misery and happiness will no longer exist.</p>
+<p>Then Sankaracarya appeared to preach that the external feature of Brahman, the body, is merely an illusion.</p>
+<p>In all religions, temple worship and acceptance of authority are present.</p>
+<p>We may accept Krishna, or Lord Jesus Christ, or Jehovah, or Lord Buddha, or Sankaracarya, or Guru Nanak, but in any case acceptance of authority is required.</p>
+<p>In Bhagavad-gita Lord Sri Krishna is accepted as the supreme authority.</p>
+<p>Sometimes Krishna descends personally, and sometimes He descends by His incarnations.</p>
+<p>Sometimes He descends as sound vibration, and sometimes He descends as a devotee.</p>
+<p>There are many different categories of avataras.</p>
+<p>In this present age Krishna has descended in His holy name, Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare.</p>
+<p>Hare Rama, Hare Rama, Rama Rama, Hare Hare.</p>
+<p>Lord Caitanya Mahaprabhu also confirmed that in this age of Kali, Krishna has descended in the form of sound vibration.</p>
+<p>Sound is one of the forms which the Lord takes.</p>
+<p>Therefore it is stated that there is no difference between Krishna and His name.</p>
+<p>Today people have forgotten their relationship with God, but this incarnation of Krishna in the form of His holy names, this chanting of Hare Krishna, will deliver all the people of the world from their forgetfulness.</p>
+<p>Lord Caitanya Mahaprabhu says that if we chant or associate with the chanting of the holy names of Krishna, we will reach the highest perfectional stage of life.</p>
+<p>According to Srimad-Bhagavatam there are different processes for different ages, but the principle of each process remains valid in all ages.</p>
+<p>It is not that the chanting of Hare Krishna is effective in this age and not in Satya-yuga.</p>
+<p>Nor is it that people were not chanting the holy names of Krishna in Satya-yuga.</p>
+<p>In Satya-yuga meditation was the main process, and great munis meditated for periods extending upwards of 60,000 years.</p>
+<p>In this age, however, perfection by that means of meditation is not possible because we are so short-lived.</p>
+<p>Consequently in this age it is especially recommended that we all sit down together and chant Hare Krishna.</p>
+<p>It is very easy, and everyone can take part in it.</p>
+<p>There is no necessity of education, nor are any previous qualifications required.</p>
+<p>In this age people are also very slow and unfortunate, and they are contaminated with bad association.</p>
+<p>Caitanya Mahaprabhu introduced the chanting of Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare.</p>
+<p>Hare Rama, Hare Rama, Rama Rama, Hare Hare as a great means of propaganda for spreading love of God.</p>
+<p>It is not that it is recommended only for Kali-yuga.</p>
+<p>Actually, it is recommended for every age.</p>
+<p>There have always been many devotees who have chanted and reached perfection in all ages.</p>
+<p>That is the beauty of this Krishna consciousness movement.</p>
+<p>It is not simply for one age, or for one country, or for one class of people.</p>
+<p>Hare Krishna can be chanted by any man in any social position, in any country and in any age, for Krishna is the Supreme Lord of all people in all social positions, in all countries, in all ages.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

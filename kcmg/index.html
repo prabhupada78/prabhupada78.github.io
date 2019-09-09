@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch1 - Matchless Gift</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html" class="active">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Matchless Gift</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#spiritual-knowledge-through-kṛṣṇa" id="spiritual-knowledge-through-kṛṣṇa">Spiritual Knowledge Through Kṛṣṇa</a></h1>
+<p>The aim of this Kṛṣṇa consciousness movement is to bring all living entities back to their original consciousness.</p>
+<p>All living entities within the material world are, to varying degrees, afflicted with a type of madness.</p>
+<p>This Kṛṣṇa consciousness movement aims at curing man of his material disease and reestablishing his original consciousness.</p>
+<p>In a Bengali poem a great Vaiṣṇava poet has written, “When a man is haunted by ghosts, he can only speak nonsense.</p>
+<p>Similarly, anyone who is under the influence of material nature should be considered haunted, and whatever he speaks should be considered nonsense.” One may be considered a great philosopher or great scientist, but if he is haunted by the ghost of māyā, illusion, whatever he theorizes and whatever he speaks is more or less nonsensical.</p>
+<p>Today we are given the example of a psychiatrist who, when requested to examine a murderer, proclaimed that since all the patients with whom he had come in contact were more or less crazy, the court could excuse the murderer on those grounds if it so desired.</p>
+<p>The point is that in the material world it is very difficult to find a sane living entity.</p>
+<p>The prevailing atmosphere of insanity in this world is all caused by the infection of material consciousness.</p>
+<p>The purpose of this Hare Kṛṣṇa movement is to bring man back to his original consciousness, which is Kṛṣṇa consciousness, clear consciousness.</p>
+<p>When water falls from the clouds, it is uncontaminated like distilled water, but as soon as it touches the ground it becomes muddy and discolored.</p>
+<p>Similarly, we are originally pure spirit soul, part and parcel of Kṛṣṇa, and therefore our original constitutional position is as pure as God’s.</p>
+<p>In Bhagavad-gītā Sri Kṛṣṇa says: mamaivāṁśo jīva-loke jīva-bhūtaḥ sanātanaḥ manaḥ ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati “The living entities in this conditional world are My fragmental parts, and they are eternal.</p>
+<p>But due to conditioned life, they are struggling very hard with the six senses, which include the mind.” (Bg.15.7) Thus all living entities are part and parcel of Kṛṣṇa.</p>
+<p>By Kṛṣṇa it should always be remembered that we are speaking of God, Kṛṣṇa denoting the all-attractive Supreme Personality of Godhead.</p>
+<p>As a fragment of gold is qualitatively the same as a gold reservoir, so the minute particles of Kṛṣṇa’s body are therefore qualitatively as good as Kṛṣṇa.</p>
+<p>The chemical composition of God’s body and the eternal spiritual body of the living entity is the same-spiritual.</p>
+<p>Thus originally, in our uncontaminated condition, we possessed a form as good as God’s, but just as rain falls to the ground, so we come in contact with this material world, which is manipulated by the external material energy of Kṛṣṇa.</p>
+<p>When we speak of external energy or material nature, the question may be raised,“Whose energy? Whose nature?” Material energy or nature is not active independently.</p>
+<p>Such a concept is foolish.</p>
+<p>In Bhagavad-gītā it is clearly stated that material nature does not work independently.</p>
+<p>When a foolish man sees a machine he may think that it is working automatically, but actually it is not—there is a driver, someone in control, although we sometimes cannot see the controller behind the machine due to our defective vision.</p>
+<p>There are many electronic mechanisms which work very wonderfully, but behind these intricate systems there is a scientist who pushes the button.</p>
+<p>This is very simple to understand: since a machine is matter, it cannot work on its own accord but must work under spiritual direction.</p>
+<p>A tape recorder works, but it works according to the plans and under the direction of a living entity, a human being.</p>
+<p>The machine is complete, but unless it is manipulated by a spirit soul, it cannot work.</p>
+<p>Similarly, we should understand that this cosmic manifestation which we call nature is a great machine and that behind this machine there is God, Kṛṣṇa.</p>
+<p>This is also affirmed in Bhagavad-gītā where Kṛṣṇa says: mayādhyakṣeṇa prakṛtiḥ sūyate sa-carācaram hetunānena kaunteya jagad viparivartate “This material nature is working under My direction, O son of Kuntī, producing all the moving and unmoving beings, and by its rule this manifestation is created and annihilated again and again.” (Bg.9.10) There are two kinds of entities—the moving (such as human beings, animals and insects) and nonmoving (such as trees and mountains).</p>
+<p>Kṛṣṇa says that material nature, which controls both kinds of entities, is acting under His direction.</p>
+<p>Thus behind everything there is a supreme controller.</p>
+<p>Modern civilization does not understand this due to lack of knowledge; it is the purpose of this Society for Kṛṣṇa consciousness, therefore, to enlighten all people who have been maddened by the influence of the three modes of material nature.</p>
+<p>In other words, our aim is to awaken mankind to its normal condition.</p>
+<p>There are many universities, especially in the United States, and many departments of knowledge, but they are not discussing these points.</p>
+<p>Where is the department for this knowledge that we find given by Śrī Kṛṣṇa in Bhagavad-gītā? When I spoke before students and some faculty members at the Massachusetts Institute of Technology, the first question raised was: “Where is the technological department which is investigating the difference between a dead man and a living man?” When a man dies, something is lost.</p>
+<p>Where is the technology to replace it? Why don’t scientists try to solve this problem? Because this is a very difficult subject matter, they set it aside and busily engage in the technology of eating, sleeping, mating and defending.</p>
+<p>However, Vedic literatures inform us that this is animal technology.</p>
+<p>Animals are also trying their best to eat well, to have an enjoyable sex life, to sleep peacefully, and to defend themselves.</p>
+<p>What then is the difference between man’s knowledge and animal’s knowledge? The fact is that man’s knowledge should be developed to explore that difference between a living man and a dead man, a living body and a dead body.</p>
+<p>That spiritual knowledge was imparted by Kṛṣṇa to Arjuna in the beginning of Bhagavad-gītā.</p>
+<p>Being a friend of Kṛṣṇa’s, Arjuna was a very intelligent man, but his knowledge, as all men’s, was limited.</p>
+<p>Kṛṣṇa spoke, however, of subject matters which were beyond Arjuna’s finite knowledge.</p>
+<p>These subjects are called adhokṣaja because our direct perception by which we acquire material knowledge fails to approach them.</p>
+<p>For example, we have many powerful microscopes to see what we cannot see with our limited vision, but there is no microscope that can show us the soul within the body.</p>
+<p>Nevertheless, the soul is there.</p>
+<p>Bhagavad-gītāinforms us that in this body there is a proprietor.</p>
+<p>I am the proprietor, and others are the proprietors of their bodies.</p>
+<p>I say, “My hand,” but not “I hand.” Since it is “my hand,” I am different from the hand, being its owner.</p>
+<p>Similarly, we speak of “My eye,” “My leg,” “My this,” “My that.” In the midst of all of these objects which belong to me, where am I? The search for the answer to this question is the process of meditation.</p>
+<p>In real meditation, we ask, “Where am I? What am I?” We cannot find the answers to these questions by any material effort, and because of this all the universities are setting these questions aside.</p>
+<p>They say, “It is too difficult a subject.” Or they brush it aside: “It is irrelevant.” Thus engineers direct their attention to creating and attempting to perfect the horseless carriage and wingless bird.</p>
+<p>Formerly, horses were drawing carriages and there was no air pollution, but now there are cars and rockets, and the scientists are very proud.</p>
+<p>“We have invented horseless carriages and wingless birds,” they boast.</p>
+<p>Although they invent imitation wings for the airplane or rocket, they cannot invent a soulless body.</p>
+<p>When they are able to actually do this, they will deserve credit.</p>
+<p>But such an attempt would necessarily be frustrated, for we know that there is no machine that can work without a spirit soul behind it.</p>
+<p>Even the most complicated computers need trained men to handle them.</p>
+<p>Similarly, we should know that this great machine, which is known as the cosmic manifestation, is manipulated by a supreme spirit.</p>
+<p>That is Kṛṣṇa.</p>
+<p>Scientists are searching for the ultimate cause or the ultimate controller of this material universe and are postulating different theories and proposals, but the real means for knowledge is very easy and perfect: we need only hear from the perfect person, Kṛṣṇa.</p>
+<p>By accepting the knowledge imparted in Bhagavad-gītā, anyone can immediately know that this great cosmic machine, of which the earth is a part, is working so wonderfully because there is a driver behind it—Kṛṣṇa.</p>
+<p>Our process of knowledge is very easy.</p>
+<p>Kṛṣṇa’s instruction, Bhagavad-gītā, is the principal book of knowledge given by the ādipuruṣa Himself, the Supreme primeval person, the Supreme Personality of Godhead.</p>
+<p>He is indeed the perfect person.</p>
+<p>It may be argued that although we have accepted Him as a perfect person, there are many others who do not.</p>
+<p>But one should not think that this acceptance is whimsical; He is accepted as the perfect person on the evidence of many authorities.</p>
+<p>We do not accept Kṛṣṇa as perfect simply on the basis of our whims or sentiments.</p>
+<p>No—Kṛṣṇa is accepted as God by many Vedic authorities like Vyāsadeva, the author of all Vedic literatures.</p>
+<p>The treasure house of knowledge is contained in the Vedas, and their author, Vyāsadeva, accepts Kṛṣṇa as the Supreme Personality of Godhead, and Vyāsadeva’s spiritual master, Nārada, also accepts Kṛṣṇa as such.</p>
+<p>Nārada’s spiritual master, Brahmā, accepts Kṛṣṇa not only as the Supreme person but the supreme controller as well—īśvaraḥ paramaḥ kṛṣṇaḥ: “The supreme controller is Kṛṣṇa.” There is no one in the creation who can claim that he is not controlled.</p>
+<p>Everyone, regardless of how important or powerful, has a controller over his head.</p>
+<p>Kṛṣṇa, however, has no controller; therefore He is God.</p>
+<p>He is the controller of everyone, but there is no one superior to Him, no one to control Him; nor is there anyone equal to Him, no one to share His platform of absolute control.</p>
+<p>This may sound very strange, for there are many so-called gods nowadays.</p>
+<p>Indeed, gods have become very cheap, being especially imported from India.</p>
+<p>people in other countries are fortunate that gods are not manufactured there, but in India gods are manufactured practically every day.</p>
+<p>We often hear that God is coming to Los Angeles or New York and that people are gathering to receive Him, etc.</p>
+<p>But Kṛṣṇa is not the type of God manufactured in a mystic factory.</p>
+<p>No.</p>
+<p>He was not made God, but He is God.</p>
+<p>We should know then on the basis of authority that behind this gigantic material nature, the cosmic manifestation, there is God— Kṛṣṇa—and that He is accepted by all Vedic authorities.</p>
+<p>Acceptance of authority is not new for us; everyone accepts authority in some form or another.</p>
+<p>For education we go to a teacher or to a school or simply learn from our father and mother.</p>
+<p>They are all authorities, and our nature is to learn from them.</p>
+<p>In our childhood we asked, “Father, what is this?” and father would say, “This is a pen,” “These are spectacles,” or “This is a table.” In this way from the very beginnings of life a child learns from his father and mother.</p>
+<p>He learns the names of things and the basic relations of one thing to another by questioning his parents.</p>
+<p>A good father and mother never cheat when their son inquires from them; they give exact and correct information.</p>
+<p>Similarly, if we get spiritual information from an authority and if the authority is not a cheater, then our knowledge is perfect.</p>
+<p>If we attempt to reach conclusions by dint of our own speculative powers, however, we are subject to fall into error.</p>
+<p>The process of induction, by which, reasoning from particular facts or individual cases, one can arrive at a general conclusion, is never a perfect process.</p>
+<p>Because we are limited and our experience is limited, it will always remain imperfect.</p>
+<p>If we receive information from the perfect source, Kṛṣṇa, and if we repeat that information, then what we are speaking can also be accepted as perfect and authoritative.</p>
+<p>The process of paramparā or disciplic succession is this very process of hearing from Kṛṣṇa or from authorities who have accepted Kṛṣṇa and repeating exactly what they have said.</p>
+<p>In Bhagavad-gītā Kṛṣṇa recommends this process of knowledge: evam paramparā-prāptam imaṁ rājarṣayo viduḥ “This supreme science was thus received through the chain of disciplic succession, and the saintly kings understood it in that way.” (Bg.4.2) Formerly knowledge was passed down by great saintly kings who were the authorities.</p>
+<p>In previous ages, however, these kings were ṛṣis — great learned scholars and devotees—and because they were not ordinary men the government which they headed worked very nicely.</p>
+<p>There are many instances in Vedic civilization of kings who attained perfection as devotees of God.</p>
+<p>For example, Dhruva Mahārāja went to the forest to search out God and by practice of severe penance and austerity found God within six months.</p>
+<p>Although he was only a fiveyear-old prince with a very delicate body, he was successful because he followed the directions of his spiritual master, Nārada.</p>
+<p>The first month Dhruva Mahārāja was in the forest, he simply ate some fruits and vegetables once every three days and drank a little water every six days.</p>
+<p>He finally restricted his inhalation of air and stood for six months on one leg only.</p>
+<p>After he executed these severe austerities for half a year, God became manifest before him, eye to eye.</p>
+<p>It is not necessary for us to practice such severe austerities, but simply by following in the footsteps of Vedic authorities we also can see God eye to eye.</p>
+<p>This vision of God is the perfection of life.</p>
+<p>The Kṛṣṇa consciousness process is based on austerity, but it is not very difficult.</p>
+<p>There are restrictions governing eating and sex life (only prasādam, food first offered to Kṛṣṇa, is taken, and sex is restricted to married life), and there are other regulations which facilitate and foster spiritual realization.</p>
+<p>It is not possible in these days to imitate Dhruva Mahārāja, but by following certain basic Vedic principles, we can make advancement in spiritual consciousness, Kṛṣṇa consciousness.</p>
+<p>As we advance, we become perfect in knowledge.</p>
+<p>What is the use in becoming a scientist or a philosopher if we cannot say what our next life will be? A realized student of Kṛṣṇa consciousness can very easily say what his next life is, what God is, what the living entity is and what his relationship with God is.</p>
+<p>His knowledge is perfect because it is coming from perfect books of knowledge such as Bhagavad-gītā and Śrīmad-Bhāgavatam.</p>
+<p>This, then, is the process of Kṛṣṇa consciousness.</p>
+<p>It is very easy, and anyone can adopt it and make his life perfect.</p>
+<p>If someone says, “I’m not educated at all, and I cannot read books,” he is still not disqualified.</p>
+<p>He can still perfect his life by simply chanting the mahāmantra: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>Kṛṣṇa has given us a tongue and two ears, and we may be surprised to know that Kṛṣṇa is realized through the ears and tongue, not through the eyes.</p>
+<p>By hearing His message, we learn to control the tongue, and after the tongue is controlled, the other senses follow.</p>
+<p>Of all the senses, the tongue is the most voracious and difficult to control, but it can be controlled simply by chanting Hare Kṛṣṇa and tasting Kṛṣṇa prasādam, food offered to Kṛṣṇa.</p>
+<p>We cannot understand Kṛṣṇa by sensual perception or by speculation.</p>
+<p>It is not possible, for Kṛṣṇa is so great that He is beyond our sensual range.</p>
+<p>But He can be understood by surrender.</p>
+<p>Kṛṣṇa therefore recommends this process: sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja ahaṁ tvāṁ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ “Give up all varieties of religiousness, and just surrender unto Me; and in return I shall protect you from all sinful reactions.</p>
+<p>Therefore, you have nothing to fear.” (Bg.18.66) Unfortunately, our disease is that we are rebellious—we automatically resist authority.</p>
+<p>Yet although we say that we don’t want authority, nature is so strong that it forces authority upon us.</p>
+<p>We are forced to accept the authority of nature.</p>
+<p>What can be more pathetic than a man who claims to answer to no authority but who follows his senses blindly wherever they lead him? Our false claim to independence is simply foolishness.</p>
+<p>We are all under authority, yet we say that we don’t want authority.</p>
+<p>This is called māyā, illusion.</p>
+<p>We do, however, have a certain independence—we can choose to be under the authority of our senses or the authority of Kṛṣṇa.</p>
+<p>The best and ultimate authority is Kṛṣṇa, for He is our eternal well-wisher, and He always speaks for our benefit.</p>
+<p>Since we have to accept some authority, why not accept His? Simply by hearing of His glories from Bhagavad-gītā and Śrīmad-Bhāgavatam and by chanting His names— Hare Kṛṣṇa—we can swiftly perfect our lives.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch2 - Topmost Yoga System</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html" class="active">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Topmost Yoga System</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#yoga-and-the-master-of-yoga" id="yoga-and-the-master-of-yoga">Yoga and the Master of Yoga</a></h1>
+<p>Yoga means the connecting link between the soul and the Supersoul, or the Supreme and the minute living creatures.</p>
+<p>Lord Śrī Kṛṣṇa is that Supreme, the Personality of Godhead.</p>
+<p>Being, therefore, the ultimate object of yoga, Kṛṣṇa's name is yogeśvara, the master of yoga.</p>
+<p>At the conclusion of the Bhagavad-gītā, it is said: &quot;Where there is Kṛṣṇa, and where there is Arjuna, the greatest of bowmen, there, undoubtedly, is victory.&quot; The Bhagavad-gītā is a narrative spoken by Sañjaya, the secretary of Mahārāja Dhṛtarāṣṭra.</p>
+<p>This is just like airwaves from the radio: the play is going on in the auditorium, but you can hear from your room.</p>
+<p>So, just as we now have such a mechanical arrangement, at that time there were also certain arrangements, although there was no machine.</p>
+<p>Anyway, the secretary of Dhṛtarāṣṭra could see what was going on in the battlefield, and he was in the palace, telling this to Mahārāja Dhṛtarāṣṭra, who was blind.</p>
+<p>Now, the conclusion made by Sañjaya was that Kṛṣṇa is the Supreme Personality of Godhead.</p>
+<p>When the yoga performance is described, it is said that Kṛṣṇa's name is yogeśvara.</p>
+<p>No one can be a better yogī than the master of yoga, and Kṛṣṇa is the master.</p>
+<p>There are many different types of yoga.</p>
+<p>Yoga means the system, and yogi means the person who practices that system.</p>
+<p>The object of yoga, the ultimate goal, is to understand Kṛṣṇa.</p>
+<p>Therefore, Kṛṣṇa consciousness means to practice the topmost type of yoga.</p>
+<p>This topmost yoga system was described by Kṛṣṇa in the Gītā to His most intimate friend, Arjuna.</p>
+<p>In the beginning, the Lord said that this system can be practiced only by a person who has developed attachment for it.</p>
+<p>This Kṛṣṇa conscious yoga system cannot be practiced by an ordinary man who has no attachment for Kṛṣṇa, for it is a different system, and the topmost—bhakti-yoga.</p>
+<p>There are five types of direct attachment, and there are seven types of indirect attachment.</p>
+<p>Indirect attachment is not bhakti.</p>
+<p>Direct attachment is called bhakti.</p>
+<p>If you are attached to Kṛṣṇa by the direct method, it is called devotional service, and if you are attached to Kṛṣṇa by an indirect method, it is not devotional service.</p>
+<p>But that is also attachment.</p>
+<p>King Kaṁsa, for example, was the maternal uncle of Kṛṣṇa; and there was a warning that Kaṁsa would be killed by one of his sister's sons.</p>
+<p>So he became very anxious about the sons of his sister, and he decided to kill his sister.</p>
+<p>Devakī, Kṛṣṇa's mother, was saved by her husband, Vasudeva, who made a compromise and proposed to his brother-in-law as follows: &quot;You are afraid of the son of your sister.</p>
+<p>So your sister herself is not going to kill you.&quot; He requested, &quot;Don't kill your sister.</p>
+<p>Save her, and I promise that all the sons born of her will be brought to you, and if you like you can kill them.&quot; Vasudeva did this in order that his poor wife might be saved.</p>
+<p>And Vasudeva thought, &quot;When Devakī's son is born, Kaṁsa may have a change of heart.&quot; But Kaṁsa was such a great demon that he killed all the sons of Devakī.</p>
+<p>It was told that the eighth son of the sister would kill him.</p>
+<p>So, when Kṛṣṇa was in the womb of His mother, Kaṁsa was always thinking of Kṛṣṇa.</p>
+<p>You may say that he was not Kṛṣṇa conscious, but actually he was.</p>
+<p>Not directly, not for love's sake, but as an enemy.</p>
+<p>He was Kṛṣṇa conscious as an enemy.</p>
+<p>So, that is not devotional service.</p>
+<p>One in devotional service is Kṛṣṇa conscious as Kṛṣṇa's friend, Kṛṣṇa's servant, His parent, or His lover.</p>
+<p>You may want Kṛṣṇa as your lover, or as your son; you may want Kṛṣṇa as your friend, you may want Kṛṣṇa as your master, you may want Kṛṣṇa as the Supreme Sublime.</p>
+<p>These five different kinds of direct relationships with Kṛṣṇa are called devotion, or bhakti.</p>
+<p>They entail no material profit.</p>
+<p>The concept of accepting God as a son is superior to the concept of accepting God as a father.</p>
+<p>There is a distinction.</p>
+<p>The relationship between father and son is that the son wants to take something from the father.</p>
+<p>The father's relationship with the son is that the father always wants to give something to the son.</p>
+<p>Therefore, the relationship with God or Kṛṣṇa as son is better than the relationship with Kṛṣṇa by one who thinks, &quot;If I accept God as my father, then my business will be to ask for my necessities from the father.&quot; But, if I become the father of Kṛṣṇa, then from the very beginning of His childhood, my business will be to serve Him.</p>
+<p>The father is the parent of the child from the very beginning of his birth; therefore the concept of this relationship of Vasudeva and Devakī is sublime.</p>
+<p>Kṛṣṇa's foster mother, Yaśodā, is thinking, &quot;If I do not feed Kṛṣṇa sumptuously, He will die.&quot; She for.</p>
+<p>gets that Kṛṣṇa is the Supreme Lord, that He is sustaining the three worlds.</p>
+<p>She forgets that only one Lord is supplying the necessities of all the living entities.</p>
+<p>This same Personality of Godhead has become the son of Yaśodā, and she is thinking, &quot;If I do not feed Him nicely, He will die.&quot; This is love.</p>
+<p>She has forgotten that it is the Supreme Personality of Godhead who has appeared before her as a little child.</p>
+<p>This relationship of attachment is very sublime.</p>
+<p>It requires time to understand, but there is a position where, instead of asking, &quot;O God, please give us our daily bread,&quot; you can instead think that God will die if you do not supply bread to Him.</p>
+<p>This is the ecstasy of extreme love.</p>
+<p>There is such a relationship between Kṛṣṇa and His devotee Rādhārāṇī, the greatest devotee, the greatest lover of Kṛṣṇa.</p>
+<p>Mother Yaśodā is His lover as a parent; Sudāmā is His lover as a friend; Arjuna also as a friend—there are millions and billions of different kinds of direct devotees of Kṛṣṇa.</p>
+<p>So the yoga systems as described here lead to bhakti-yoga, and bhakti-yoga can be practiced by persons who have developed attachment to Kṛṣṇa.</p>
+<p>Others cannot practice it.</p>
+<p>And, if anyone is able to develop that attachment, the relationship will be that he will understand God, Kṛṣṇa, perfectly.</p>
+<p>However we may try to understand God by our different theories or speculations, it is still a difficult job.</p>
+<p>We may say that we have understood God, but it is not possible to understand Him as He is, because we have limited senses, and He is unlimited.</p>
+<p>It is said in the Śrīmad-Bhāgavatam that our senses are imperfect, all of them.</p>
+<p>We cannot understand even the material world perfectly.</p>
+<p>You have seen so many planets and stars in the sky at night, but you do not know what they are.</p>
+<p>You do not even know what the moon planet is, though men have been trying for so many years to go there in sputniks.</p>
+<p>Even this one planet, Earth! We do not know what varieties there are even on this planet! If you go to the sea, to the sky, your perception is limited.</p>
+<p>Our knowledge is, therefore, always imperfect.</p>
+<p>On that we must agree.</p>
+<p>If we foolishly think that we have acquired all forms of knowledge and we have advanced in science, this is another foolishness.</p>
+<p>It is not possible.</p>
+<p>And, when it is not possible to understand even the material things which we daily see with our eyes, what can we say of the spiritual world and Kṛṣṇa, the Supreme Personality of Godhead? He is the supreme spiritual form, and it is not possible to understand Him by our limited senses.</p>
+<p>Then why are we bothering so much for Kṛṣṇa consciousness, if it is not possible? If these imperfect senses cannot realize Kṛṣṇa as He is? The answer is that if you become submissive, if you develop the spiritual attitude of following Kṛṣṇa, and you are as a servant or a friend, as a parent or as a lover—if you begin to give service to the Supreme Lord then you can begin to know Him.</p>
+<p>Your service begins with the tongue.</p>
+<p>How? By the tongue you can chant Hare Kṛṣṇa, and by the tongue you can taste Kṛṣṇa prasādam, spiritual food.</p>
+<p>So, the beginning of the process is very nice.</p>
+<p>You can chant Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare—and whenever prasādam is offered to you by Kṛṣṇa, by His kindness, you accept it.</p>
+<p>The result will be that if you become submissive, and if you begin this service— chanting and eating prasādam—Kṛṣṇa will reveal Himself before you.</p>
+<p>You can't understand Kṛṣṇa by speculation; that is not Possible, because your senses are imperfect.</p>
+<p>But if you begin this process of service, then it will be possible—one day Kṛṣṇa will reveal Himself to you: &quot;I am like this.&quot; just as Kṛṣṇa is revealing to Arjuna.</p>
+<p>Arjuna is a devotee, and he is submissive, and he is in contact with Kṛṣṇa as a friend.</p>
+<p>Therefore Kṛṣṇa is revealing to him.</p>
+<p>The Bhagavad-gītā was spoken to Arjuna, not to any Vedāntist philosophical speculator.</p>
+<p>In the beginning of the Fourth Chapter, you will note that Kṛṣṇa says, &quot;I am speaking to you that ancient system of yoga.&quot; It is stated, &quot;unto you.&quot; Arjuna was a kṣatriya, a fighter.</p>
+<p>He was a householder, not even a sannyāsī, not a renouncer—but these are not qualifications to understand Kṛṣṇa.</p>
+<p>Suppose I say I have become a sannyāsī mendicant—this is not a qualification, that I can now understand Kṛṣṇa.</p>
+<p>Then what is the qualification? This: One who has developed the service spirit, with love and devotion, can understand Me.&quot; No other.</p>
+<p>Not the big scholars and mental speculators; but a child can understand Kṛṣṇa, if he has full faith in Him.</p>
+<p>So faith and devotion qualify one.</p>
+<p>Simply by such faith and service you will understand that Kṛṣṇa is the Supreme Personality of Godhead.</p>
+<p>Just as we are preaching Kṛṣṇa consciousness; we are not wasting your time or our time, because we are in full faith that Kṛṣṇa is the Supreme Personality of Godhead.</p>
+<p>Theoretically or practically, you should accept Kṛṣṇa as the Supreme Person.</p>
+<p>Theoretically, there is the revealed scripture.</p>
+<p>You will understand from the Vedic literature, from the great devotees in the past and in the present.</p>
+<p>For the present, there is Lord Caitanya.</p>
+<p>Lord Caitanya is the great authority.</p>
+<p>None is greater.</p>
+<p>He was mad after Kṛṣṇa.</p>
+<p>And then, after Him, His six disciples, the gosvāmīs, have left us an immensely valuable literature—especially Jīva Gosvāmī.</p>
+<p>They have written volumes on Kṛṣṇa.</p>
+<p>So, under disciplic succession, we have come to this point; and if you like past history, then go back a long, long time to Vyāsadeva.</p>
+<p>He is known to have written the Śrīmad-Bhāgavatam and other literature on Kṛṣṇa.</p>
+<p>Śrīmad-Bhāgavatam is nothing but a description of Kṛṣṇa.</p>
+<p>Vyāsa is also the writer of the Bhagavad-gītā.</p>
+<p>The Gītā was spoken by Kṛṣṇa and noted down by Vyāsa, who put this Gītā into the Mahābhārata.</p>
+<p>So Vyāsadeva accepts Kṛṣṇa as the Supreme Person.</p>
+<p>In the Śrīmad-Bhāgavatam he has given the description of the different incarnations; there are twenty-five of Them.</p>
+<p>And, in the conclusion, he says that the descriptions that are given of different incarnations are all parts of the representations of God.</p>
+<p>But Kṛṣṇa is the Supreme Personality of Godhead Himself.</p>
+<p>He is not part, but one hundred percent—one hundred percent God.</p>
+<p>So there is the evidence of authority.</p>
+<p>And, practically, if we believe the śāstras, the scriptures, then we can see: Who can be more powerful than Kṛṣṇa? Who can be more beautiful than Kṛṣṇa? Who can be more famous than Kṛṣṇa? Kṛṣṇa appeared five thousand years ago, but His knowledge, which He gave in the form of the Śrīmad Bhagavad-gītā, is still worshiped.</p>
+<p>It is worshiped not only by the Hindus or the Indians, but is read all over the world.</p>
+<p>In your country there are at least fifty different editions of the Bhagavad-gītā, written by different men.</p>
+<p>Similarly, in England, in Germany, in France and in all other countries, you will find hundreds of editions of the Gītā.</p>
+<p>So, who can be more famous? There are many other evidences, if you believe in śāstra: Kṛṣṇa married 16,108 wives, and He provided each one of them with a big palace, and each one of them had 10 children, and from the 10 children there were many other children born.</p>
+<p>So we have the evidence of revealed Scriptures; and in the Brahma-saṁhitā also, Kṛṣṇa is accepted as the Supreme Personality of Godhead.</p>
+<p>This is a very old book, supposed to have been written by Brahmā, the first living being in the universe.</p>
+<p>In that Brahma-saṁhitā, it is said, īśvaraḥ paramaḥ kṛṣṇaḥ [Bs.5.1].</p>
+<p>Īśvara means God.</p>
+<p>There are many gods.</p>
+<p>It is said that there are so many demigods, and there is the Supreme God.</p>
+<p>So Brahma-saṁhitā says, īśvaraḥ paramaḥ kṛṣṇaḥ—He is the God of gods.</p>
+<p>Īśvaraḥ paramaḥ kṛṣṇaḥ, and then: sac-cid-ānanda-vigrahaḥ— and His body is eternal, and full of bliss and knowledge.</p>
+<p>And next: anādiḥ—He has no beginning, but He is the beginning of everyone.</p>
+<p>Anādir ādir govindaḥ.</p>
+<p>Go means senses, go means cow, and go means land.</p>
+<p>He is the proprietor of all land, He is the proprietor of all cows, and He is the creator of all senses.</p>
+<p>We are after sense pleasure, but our perfection of sense pleasure can be achieved only when we reciprocate our pleasure with Kṛṣṇa.</p>
+<p>Therefore, His name is Govinda, the Supreme Original Personality of Godhead.</p>
+<p>The same Personality of Godhead personally spoke about Himself to Arjuna in the Gītā.</p>
+<p>How can you say that somebody, by his thinking, by speculation, can say something about God that is more important than what is being said by Kṛṣṇa Himself? It is not possible.</p>
+<p>No one can speak better than Kṛṣṇa about God, because God Himself is speaking.</p>
+<p>If you speak about yourself personally, who can say more than you? So, if you have faith, if you believe theoretically or practically in Kṛṣṇa as the Supreme Personality of Godhead, then, by the speeches that are delivered by Kṛṣṇa in the Bhagavad-gītā, you can understand God.</p>
+<p>There is no difficulty.</p>
+<p>And, if you believe Kṛṣṇa, then the result will be that you can understand God— how He is working, how His energies are acting, how He is manifesting, what is this material world, what is the spiritual world, what are the living creatures, what is their relationship—so many things are to be found in God's literature.</p>
+<p>The whole Vedic literature deals with three things: the first is your relationship with God; then, next, after you understand your relationship with God, you can act in that way.</p>
+<p>just as a man or woman may not be related, but as soon as the relationship is established that one is husband and the other is wife, then the dealings begin.</p>
+<p>Once they understand their relationship with God, people generally believe that God is the father, and the son's business is to ask Father for whatever he needs.</p>
+<p>But that is really a lesser relationship.</p>
+<p>If you understand God perfectly, then there are intimate relationships also.</p>
+<p>Your intimate relationship will be revealed when you are perfectly liberated.</p>
+<p>Each and every living creature has a particular relationship with God, but we have, for now, forgotten.</p>
+<p>When that relationship is revealed in the process of devotional activities, or Kṛṣṇa consciousness, you will know that that is the perfection of your life.</p>
+<p>Kṛṣṇa consciousness is a great science; it is not a sentimental speculation regarding love.</p>
+<p>It is based on scientific propositions described in the Bhagavad-gītā, in the Vedas, and in the Brahmasaṁhitā; and it is accepted by authorities like Lord Caitanya, Rāmānujācārya, Madhvācārya, Nārada, Asita, Vyāsa—there are so many authorities.</p>
+<p>Kṛṣṇa consciousness is not an ordinary lovemaking or moneymaking business; it is reality, and if you stick to it seriously, your life will be perfect.</p>
+<p>Kṛṣṇa says in Bhagavad-gītā, &quot;After giving up this body, one who knows Me in truth does not come back again to this material world to accept a material body.&quot; Then what happens to him? He goes to Kṛṣṇa, back home, back to Godhead.</p>
+<p>This Kṛṣṇa consciousness movement is directly giving people understanding of Kṛṣṇa.</p>
+<p>We are giving knowledge of Kṛṣṇa based on these authorized scriptures: Bhagavad-gītā and the Vedas.</p>
+<p>Veda means knowledge, and Vedānta means the ultimate end of knowledge.</p>
+<p>What is that end of knowledge? That is Kṛṣṇa.</p>
+<p>Vedaiś ca sarvair aham eva vedyaḥ [Bg.15.15].</p>
+<p>By knowing all the Vedas, the ultimate conclusion should be Kṛṣṇa.</p>
+<p>This conclusion comes after many, many births.</p>
+<p>After culturing knowledge for many, many births, when one actually becomes wise, then he surrenders unto Kṛṣṇa.</p>
+<p>How can he surrender? He knows that Vāsudeva, Kṛṣṇa, is everything.</p>
+<p>Whatever we see is simply a manifestation of the energy of Vāsudeva.</p>
+<p>One must be convinced on this point, and then he becomes a devotee.</p>
+<p>Kṛṣṇa therefore advises that whether you understand or not, simply surrender unto Him.</p>
+<p>What Kṛṣṇa taught in Bhagavad-gītā, we are also teaching, without different manufactured ideas.</p>
+<p>That is our Kṛṣṇa consciousness movement.</p>
+<p>It is open to everyone, and the process is very simple.</p>
+<p>We have our centers.</p>
+<p>If you want to take advantage of this movement, you are welcome.</p>
+<p>You will be happy.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

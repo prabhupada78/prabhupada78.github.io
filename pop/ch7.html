@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch7 - Path of Perfection</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html" class="active">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Path of Perfection</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#perception-of-the-supersoul" id="perception-of-the-supersoul">Perception of the Supersoul</a></h1>
+<p>prasanta-manasam hy enam yoginam sukham uttamam upaiti santa-rajasam brahma-bhutam akalmasam &quot;The yogi whose mind is fixed on Me verily attains the highest happiness.</p>
+<p>By virtue of his identity with Brahman, he is liberated; his mind is peaceful, his passions are quieted, and he is freed from sin.&quot; (Bg.6.27) yunjann evam sadatmanam yogi vigata-kalmasah sukhena brahma-samsparsam atyantam sukham asnute &quot;Steady in the Self, being freed from all material contamination, the yogi achieves the highest perfectional stage of happiness in touch with the Supreme Consciousness.&quot; (Bg.6.28) So here is the perfection: &quot;The yogi whose mind is fixed on Me.&quot; Since Krsna is speaking, the &quot;Me&quot; refers to Krsna.</p>
+<p>If I am speaking and saying, &quot;Give me a glass of water,&quot; I do not intend that the water be supplied to someone else.</p>
+<p>We must therefore clearly understand that, since Bhagavad-gita is being spoken by Sri Krsna, when He says &quot;unto Me,&quot; He means unto Krsna.</p>
+<p>Unfortunately, there are many commentators who deviate from these clear instructions.</p>
+<p>I do not know why; their motives are no doubt nefarious.</p>
+<p>sarva-bhuta-stham atmanam sarva-bhutani catmani iksate yoga-yuktatma sarvatra sama-darsanah &quot;A true yogi observes Me in all beings, and also sees every being in Me.</p>
+<p>Indeed, the self-realized man sees Me everywhere.&quot; (Bg.6.29) Sarva-bhuta-stham atmanam: &quot;A true yogi observes Me in all beings.&quot; How is this possible? Some people say that all beings are Krsna and that therefore there is no point in worshiping Krsna separately.</p>
+<p>Consequently, such people take to humanitarian activities, claiming that such work is better.</p>
+<p>They say, &quot;Why should Krsna be worshiped? Krsna says that one should see Krsna in every being.</p>
+<p>Therefore let us serve daridra-narayana, the man in the street.&quot; Such misinterpreters do not know the proper techniques, which have to be learned under a bona fide spiritual master.</p>
+<p>A true yogi, as explained before, is the devotee of Krsna, and the most advanced devotee goes forth to preach Krsna consciousness.</p>
+<p>Why? Because he sees Krsna in all beings.</p>
+<p>How is this? Because he sees that all beings are part and parcel of Krsna.</p>
+<p>He also understands that since these beings have forgotten Krsna, it is his duty to awaken them to Krsna consciousness.</p>
+<p>Sometimes missionaries go forth to educate primitive, uneducated people just because they see that they are human beings and so deserve to be educated in order to understand the value of life.</p>
+<p>This is due to the missionary's sympathy.</p>
+<p>The devotee is similarly motivated.</p>
+<p>He understands that everyone should know himself to be part and parcel of Krsna.</p>
+<p>The devotee understands that people are suffering due to their forgetfulness of Krsna.</p>
+<p>Thus the devotee sees Krsna in everything.</p>
+<p>He is not under the illusion that everything has become Krsna.</p>
+<p>Rather, he sees every living being as the son of God.</p>
+<p>If I say that this boy is the son of Mr.</p>
+<p>Johnson, do I mean that this boy is Mr.</p>
+<p>Johnson himself? I may see Mr.</p>
+<p>Johnson in this boy because this boy is his son, but the distinction remains.</p>
+<p>If I see every living being as the son of Krsna, I see Krsna in every being.</p>
+<p>This should not be difficult to understand.</p>
+<p>It is neither an association nor a vision but a fact.</p>
+<p>When a devotee sees a cat or a dog, he sees Krsna in him.</p>
+<p>He knows that a cat, for instance, is a living being, and that due to his past deeds he has received the body of a cat.</p>
+<p>This is due to his forgetfulness.</p>
+<p>The devotee helps the cat by giving it some krsna-prasada so that someday the cat will come to Krsna consciousness.</p>
+<p>This is seeing Krsna in the cat.</p>
+<p>The devotee does not think, &quot;Oh, here is Krsna.</p>
+<p>Let me embrace this cat and serve this cat as God.&quot; Such thinking is nonsensical.</p>
+<p>If one sees a tiger, he does not say, &quot;Oh, here is Krsna.</p>
+<p>Come one, please eat me.&quot; The devotee does not embrace all beings as Krsna but rather sympathizes with every living being because he sees all beings as part and parcel of Krsna.</p>
+<p>In this way, &quot;the true yogi observes Me in all beings.&quot; This is real vision.</p>
+<p>Whatever is done in Krsna consciousness, knowingly or unknowingly, will have its effect.</p>
+<p>Children who bow down or try to vibrate Krsna's names or clap during kirtana are actually accumulating so much in their bank account of Krsna consciousness.</p>
+<p>Fire will act, whether one is a child or an adult.</p>
+<p>If a child touches fire, the fire will burn.</p>
+<p>The fire does not say, &quot;Oh, I will not burn him.</p>
+<p>He is a child and does not know.&quot; No, the fire will always act as fire.</p>
+<p>Similarly, Krsna is the supreme spirit, and if a child partakes in Krsna consciousness, he will be affected.</p>
+<p>Krsna will act, whether the child knows or does not know.</p>
+<p>Every living being should be given a chance to partake of Krsna consciousness because Krsna is there and will act.</p>
+<p>Therefore everyone is being invited to come and take prasada, because this prasada will someday take effect.</p>
+<p>We should be careful not to make the mistake of thinking that everyone is Krsna; rather, we should see Krsna in everyone.</p>
+<p>Krsna is all-pervading.</p>
+<p>Why is He to be seen only in human beings? As stated in Brahma-samhita, He is also present within the atom: andantara-sthaparamanu-cayantara-stham.</p>
+<p>The word paramanu means &quot;atom,&quot; and we should understand that Krsna is present within every atom.</p>
+<p>&quot;A true yogi observes Me in all beings and also sees every being in Me.&quot; How does the yogisee every being &quot;in Me&quot;? This is possible because the true yogi knows that everything that we see is Krsna.</p>
+<p>We are sitting on this floor or on this carpet, but in actuality we are sitting on Krsna.</p>
+<p>We should know this to be a fact.</p>
+<p>How is this carpet Krsna? It is Krsna because it is made of Krsna's energy.</p>
+<p>The Supreme Lord has various energies, of which there are three primary divisions--material energy, spiritual energy, and marginal energy.</p>
+<p>Parasya saktir vividhaiva sruyate.</p>
+<p>We living entities are marginal energy, the material world is material energy, and the spiritual world is spiritual energy.</p>
+<p>We are marginal energy in the sense that we can be either spiritually or materially situated.</p>
+<p>There is no third alternative; either we become materialistic or spiritualistic.</p>
+<p>As long as we are in the material world, we are seated on the material energy, and therefore we are situated in Krsna, because Krsna's energy is not separate from Krsna.</p>
+<p>A flame contains both heat and illumination, two energies.</p>
+<p>Neither the heat nor the illumination are separate from the flame; therefore in one sense heat is fire, and illumination is fire, but they can be distinguished.</p>
+<p>Similarly, this material energy is also Krsna, and although we are thinking that we are sitting on this floor, we are actually sitting on Krsna.</p>
+<p>Therefore it is stated, &quot;The self-realized man sees Me everywhere.&quot; Seeing Krsna everywhere means seeing every living being as well as everything else in relationship to Krsna.</p>
+<p>In the Seventh Chapter of Bhagavad-gita (7.8), Lord Krsna tells Arjuna how He can be seen in various manifestations.</p>
+<p>raso 'ham apsu kaunteya prabhasmi sasi-suryayoh pranavah sarva- vedesu sabdah khe paurusam nrsu &quot;O son of Kunti [Arjuna], I am the taste of water, the light of the sun and the moon, the syllable om in the Vedic mantras; I am the sound in ether and ability in man.&quot; Water is drunk by all living entities, and is needed by birds, beasts, and man.</p>
+<p>It is not only used for drinking, but for washing and for cultivating plants as well.</p>
+<p>A soldier on the battlefield can understand how important water is.</p>
+<p>When fighting, soldiers become thirsty, and if they have no water, they die.</p>
+<p>Once a person has learned the philosophy of Bhagavad-gita, whenever he drinks water, he sees Krsna.</p>
+<p>And when does a day pass when we do not drink water? This is the way of Krsna consciousness.</p>
+<p>&quot;I am the light of the sun and the moon.&quot; So whether in the day or the night, we see either sunshine or moonshine.</p>
+<p>How, then, can we forget Krsna? This, then, is the way of perfect yoga.</p>
+<p>We have to see Krsna everywhere and at all times.</p>
+<p>yo mam pasyati sarvatra sarvam ca mayi pasyati tasyaham na pranasyami sa ca me na pranasyati &quot;For one who sees Me everywhere and sees everything in Me, I am never lost, nor is he ever lost to Me.&quot; (Bg.6.30) This is sada tadbhava-bhavitah.: always remembering Krsna.</p>
+<p>If we practice living in this way, we never lose Krsna and are never lost to Krsna, and at the time of death we are therefore sure to go to Krsna.</p>
+<p>If we are not lost to Krsna, where can we go but to Krsna? In the Ninth Chapter, Krsna tells Arjuna, kaunteya pratijanihi na me bhaktah pranasyati (Bg.9.31): &quot;O son of Kunti, declare it boldly that My devotee never perishes.&quot; Simply don't lose sight of Krsna.</p>
+<p>That is the perfection of life.</p>
+<p>We can forget everything else, but we should never forget Krsna.</p>
+<p>If we can remember Krsna, we are the richest of men, even though people may see us as very poor.</p>
+<p>Although Rupa Gosvami and Sanatana Gosvami were learned scholars and very opulent ministers, they adopted the poor life of mendicants.</p>
+<p>In his Sri Sad-gosvamy-astaka (verse 4), Srinivasa Acarya thus describes the six Gosvamis: tyaktva turnam asesa-mandala-pati-srenim sada tuccha vat bhutva dina-ganesakau karunaya kaupina-kanthasritau gopi-bhava-rasamrtabdhi-lahari-kallola-magnau muhur vande rupa-sanatanau raghu-yugau srijiva-gopalakau &quot;I offer my respectful obeisances unto the six Gosvamis--Sri Rupa Gosvami, Sri Sanatana Gosvami, Sri Raghunatha Bhatta Gosvami, Sri Raghunatha dasa Gosvami, Sri Jiva Gosvami, and Sri Gopala Bhatta Gosvami--who cast off all aristocratic association as insignificant.</p>
+<p>To deliver poor, conditioned souls, they accepted loincloths and became mendicants, but they were always merged in the ecstatic ocean of the gopis' love for Krsna, and they were always bathing repeatedly in the waves of that ocean.&quot; The words kaupina-kanthasritau indicate that the Gosvamis were simply wearing underwear and a loincloth and nothing else.</p>
+<p>In other words, they accepted the poorest way of life as mendicants.</p>
+<p>Generally, if one is habituated to living according to a high standard, he cannot immediately lower his standard.</p>
+<p>If a rich man accepts such a poor condition, he cannot live, but the Gosvamis lived very happily.</p>
+<p>How was this possible? Gopi-bhava-rasamrtabdhi-lahari-kallola-magnau muhur/ vande rupa-sanatanau raghu-yugau sri-iiva-gopalakau.</p>
+<p>They were actually rich because they were constantly dipping themselves in the ocean of the loving affairs of the gopis.</p>
+<p>If one simply thinks of the gopis' love for Krsna, one is not lost.</p>
+<p>There are many ways not to lose sight of Krsna.</p>
+<p>If we do not lose sight of Krsna, then we will not be lost.</p>
+<p>A person in Krsna consciousness certainly sees Lord Krsna everywhere, and he sees everything in Krsna.</p>
+<p>Such a person may appear to see all separate manifestations of the material nature, but in each and every instance he is conscious of Krsna, knowing that everything is the manifestation of Krsna's energy.</p>
+<p>Nothing can exist without Krsna, and Krsna is the Lord of everything--this is the basic principle of Krsna consciousness.</p>
+<p>How does the devotee know that everything is the manifestation of Krsna's energy? First of all, a Krsna conscious person is a philosopher.</p>
+<p>If he sees a tree, he thinks, &quot;What is this tree?&quot; He then sees that the tree has a material body--just as he has a material body--and that the tree is also a living entity, but due to the tree's past misdeeds, he has obtained such an abominable body that he cannot even move.</p>
+<p>The tree's body is material, material energy, and the devotee automatically questions, &quot;Whose energy? Krsna's energy.</p>
+<p>Therefore the tree is connected to Krsna.</p>
+<p>Being a living entity, the tree is part and parcel of Krsna.&quot; In this way, the Krsna conscious person does not see the tree, but sees Krsna present.</p>
+<p>That is Krsna consciousness: you don't see the tree.</p>
+<p>You see Krsna.</p>
+<p>That is the perfection of yoga, and that is also samadhi.</p>
+<p>Krsna consciousness is the development of love of Krsna--a position transcendental even to material liberation.</p>
+<p>Why does the Krsna conscious person take such an account of the tree? Because he has love for Krsna.</p>
+<p>If you love your child and your child is away, you think of him when you see his shoes.</p>
+<p>You think, &quot;Oh, this is my dear child's shoe.&quot; It is not that you love the shoe, but the child.</p>
+<p>The shoe, however, evokes that love.</p>
+<p>Similarly, as soon as we see Krsna's energy manifested in a living entity, we love that entity because we love Krsna.</p>
+<p>Therefore, if we love Krsna, universal love is accounted for.</p>
+<p>Otherwise &quot;universal love&quot; is nonsensical, because it is not possible to love everybody without loving Krsna.</p>
+<p>If we love Krsna, universal love is automatically there.</p>
+<p>Without being Krsna conscious, a person may say, &quot;Here is my American brother, and here is my Indian brother.</p>
+<p>Now let us eat this cow.&quot; Such a person may look on other humans as brothers, but he looks on the cow as food.</p>
+<p>Is this universal love? A Krsna conscious person, however, thinks, &quot;Oh, here is a cow.</p>
+<p>Here is a dog.</p>
+<p>They are part and parcel of Krsna, but somehow or other they have acquired different bodies.</p>
+<p>This does not mean that they are not my brothers.</p>
+<p>How can I kill and eat my brothers?&quot; That is true universal love--rooted in love for Krsna.</p>
+<p>Without such Krsna consciousness, there is no question of love at all.</p>
+<p>Krsna consciousness is the stage beyond self-realization in which the devotee becomes one with Krsna in the sense that Krsna becomes everything for the devotee, and the devotee becomes full in loving Krsna.</p>
+<p>An intimate relationship between the Lord and the devotee then exists.</p>
+<p>In that stage, the living entity attains his immortality.</p>
+<p>Nor is the Personality of Godhead ever out of sight of the devotee.</p>
+<p>To merge in Krsna is spiritual annihilation.</p>
+<p>A devotee takes no such risk.</p>
+<p>It is stated in the Brahma-samhita (5.38), premanja na-cch urita-bhakti- vilocanena santah sadaiva hrdayesu vilokayanti yam syamasundaram acintya-guna-svarupam govindam adi-purusam tam aham bhajami &quot;I worship the primeval Lord, Govinda, who is always seen by the devotee whose eyes are anointed with the pulp of love.</p>
+<p>He is seen in His eternal form of Syamasundara, situated within the heart of the devotee.&quot; One who has developed such a love for Krsna sees Syamasundara, Kartamesana, always within his heart.</p>
+<p>At this stage, Lord Krsna never disappears from the sight of the devotee, nor does the devotee ever lose sight of the Lord.</p>
+<p>In the case of a yogi who sees the Lord as Paramatma within the heart, the same applies.</p>
+<p>Such a yogi turns into a pure devotee and cannot bear to live for a moment without seeing the Lord within himself.</p>
+<p>This is the real process by which we can see God.</p>
+<p>God is not our order supplier.</p>
+<p>We cannot demand, &quot;Come and show Yourself.&quot; No, we first have to qualify ourselves.</p>
+<p>Then we can see God at every moment and everywhere.</p>
+<p>sarva-bhuta-sthitam yo mam bhajaty ekatvam asthitah sarvatha vartamano 'pi sa yogi mayi vartate &quot;The yogi who knows that I and the Supersoul within all creatures are one worships Me and remains always in Me in all circumstances.&quot; (Bg.6.31) A yogi who is practicing meditation on the Supersoul sees within himself the plenary portion of Krsna as Visnu--with four hands, holding conchshell, wheel, club, and lotus flower.</p>
+<p>This manifestation of Visnu, which is the yogi's object of concentration, is Krsna's plenary portion.</p>
+<p>As stated in Brahma-samhita (5.48), yasyaika-ninasita-kalam athavalambya jivanti loma-vila-ja jagad-anda-nathah visnur mahan sa iha yasya kala-viseso govindam adi-purusam tam aham bhajami &quot;The Brahmas and other lords of the mundane worlds appear from the pores of Maha-Visnu and remain alive for the duration of His one exhalation.</p>
+<p>I adore the primeval Lord, Govinda, for Maha-Visnu is a portion of His plenary portion.&quot; The words govindam adi-purusam tam aham bhajami (&quot;I worship Govinda, the primeval Lord&quot;) are most important.</p>
+<p>The word adi means &quot;original,&quot; and purusam means &quot;the Lord as the original male, the original enjoyer.&quot; And who is this Govinda whose plenary portion is the Maha-Visnu? And what is the function of the Maha-Visnu? In every universe there is a primary, original living entity known as Brahma.</p>
+<p>The life of Brahma is the life of the universe, and this life exists during only one breathing period (exhalation and inhalation) of the Maha-Visnu.</p>
+<p>The Maha-Visnu lies on the Causal Ocean, and when He exhales, millions of universes issue from His body as bubbles and then develop.</p>
+<p>When the Maha-Visnu inhales, these millions of universes return within Him, and this is called the process of annihilation.</p>
+<p>That, in essence, is the position of these material universes: they come out from the body of the Maha-Visnu and then again return.</p>
+<p>In the Ninth Chapter of Bhagavad-gita (9.7) it is also indicated that these material universes are manifest at a certain period and are then annihilated.</p>
+<p>sarva-bhutani kaunteya prakrtim yanti mamikam kalpa-ksaye punas tani kalpadau visriamy aham &quot;O son of Kunti, at the end of the millennium, every material manifestation enters into My nature, and at the beginning of another millennium, by My potency I again create.&quot; The creation, maintenance, and annihilation of this material cosmic manifestation are completely dependent on the supreme will of the Personality of Godhead.</p>
+<p>&quot;At the end of the millennium&quot; means at the death of Brahma.</p>
+<p>Brahma lives for one hundred years, and his one day is calculated at 4,300,000,000 of our earthly years.</p>
+<p>His night is of the same duration.</p>
+<p>His month consists of thirty such days and nights, and his year of twelve months.</p>
+<p>After one hundred such years, when Brahma dies, the devastation or annihilation takes place; this means that the energy manifested by the Supreme Lord is again wound up in Himself.</p>
+<p>That is, the Maha-Visnu inhales.</p>
+<p>Then again, when there is need to manifest the cosmic world, it is done by His will: &quot;Although I am one, I shall become many.&quot; This is the Vedic aphorism.</p>
+<p>He expands Himself in this material energy, and the whole cosmic manifestation again takes place.</p>
+<p>Since the entire creation and annihilation of the material universes depend on the exhaling and inhaling of the Maha-Visnu, we can hardly imagine the magnitude of that Maha-Visnu.</p>
+<p>And yet it is said here that this Maha-Visnu is but a plenary portion of the plenary portion of Krsna, who is the original Govinda.</p>
+<p>The Maha-Visnu enters into each universe as Garbhodakasayi Visnu, and Garbhodakasayi Visnu further expands as Ksirodakasayi Visnu, and it is this Visnu form that enters into the heart of every living entity.</p>
+<p>In this way, Visnu is manifest throughout the creation.</p>
+<p>Thus the yogis concentrate their minds on the Ksirodakasayi Visnu form within the heart.</p>
+<p>As stated in the last chapter of Bhagavad-gita (18.61), inarah sarva-bhutanam hrd-dese 'rjuna tisthati bhramayan sa rva-bhutani yantrarudhani mayaya &quot;The Supreme Lord is situated in everyone's heart, O Arjuna, and is directing the wanderings of all living entities, who are seated as on a machine, made of the material energy.&quot; Thus, according to the yogic process, the yogi finds out where the Ksirodakasayi Visnu is seated within the heart, and when he finds this form there, he concentrates on Him.</p>
+<p>The yogi should know that this Visnu is not different from Krsna.</p>
+<p>Krsna in this form of Supersoul is situated in everyone's heart.</p>
+<p>Furthermore, there is no difference between the innumerable Supersouls present in the innumerable hearts of living entities.</p>
+<p>For example, there is only one sun in the sky, but this sun may be reflected in millions of buckets of water.</p>
+<p>Or, one may ask millions and trillions of people, &quot;Where is the sun?&quot; And each will say, &quot;Over my head.&quot; The sun is one, but it is reflected countless times.</p>
+<p>According to the Vedas, the living entities are innumerable; there is no possibility of counting them.</p>
+<p>Just as the sun can be reflected in countless buckets of water, Visnu, the Supreme Personality of Godhead, can live in each and everyone's heart.</p>
+<p>It is this form that is Krsna's plenary portion, and it is this form on which the yogi concentrates.</p>
+<p>One who is engaged in Krsna consciousness is already a perfect yogi.</p>
+<p>In fact, there is no difference between a Krsna conscious devotee always engaged in the transcendental loving service of Krsna and a perfect yogi engaged in meditation on the Supersoul.</p>
+<p>There is no difference between a yogi in samadhi (in a trance meditating on the Visnu form) and a Krsna conscious person engaged in different activities.</p>
+<p>The devotee--even though engaged in various activities while in material existence--remains always situated in Krsna.</p>
+<p>This is confirmed in the Bhakti-rasamrta-sindhu of Srila Rupa Gosvami: nikhilasv apy avasthasu/ivan-muktah saucyate.</p>
+<p>A devotee of the Lord, always acting in Krsna consciousness, is automatically liberated.</p>
+<p>This is also confirmed in the Fourteenth Chapter of Bhagavad-gita (14.26): mam ca yo 'vyabhicarena bhakti-yogena se vate sa gunan samatityaitan brahma-bhuyaya kalpate &quot;One who engages in full devotional service, who does not fall down in any circumstance, at once transcends the modes of material nature and thus comes to the level of Brahman.&quot; Thus the devotee engaged in unalloyed devotional service has already transcended the material modes of nature.</p>
+<p>Being situated on the Brahman platform means being liberated.</p>
+<p>There are three platforms: the bodily, or sensual; the mental; and the spiritual.</p>
+<p>The spiritual platform is called the Brahman platform, and liberation means being situated on that platform.</p>
+<p>Being conditioned souls, we are presently situated on the bodily, or sensual, platform.</p>
+<p>Those who are a little advanced--speculators, philosophers--are situated on the mental platform.</p>
+<p>Above this is the platform of liberation, of Brahman realization.</p>
+<p>That the devotee, always acting in Krsna consciousness, is automatically situated on the liberated platform of Brahman is also confirmed in the Narada-pancaratra.: dik-kalady-ana vacchinne krsne ceto vidhaya ca tan-mayo bha vati ksipram jivo brahmani yojayet &quot;By concentrating one's attention on the transcendental form of Krsna, who is all-pervading and beyond time and space, one becomes absorbed in thinking of Krsna and then attains the happy state of transcendental association with Him.&quot; Krsna consciousness is the highest stage of trance in yoga practice.</p>
+<p>This very understanding that Krsna is present as Paramatma in everyone's heart makes the yogi faultless.</p>
+<p>The Vedas confirm this inconceivable potency of the Lord as follows: eko 'pi san bahudha yo 'vabhati ainaryad rupam ekam ca surya vad bahudheyate &quot;Visnu is one, and yet He is certainly all-pervading.</p>
+<p>By His inconceivable potency, in spite of His one form, He is present everywhere.</p>
+<p>As the sun, He appears in many places at once.&quot; atmaupamyena sarvatra samam pasyati yo 'rjuna sukham va yadi va duhkham sa yogi paramo matah &quot;He is a perfect yogi who, by comparison to his own self, sees the true equality of all beings, both in their happiness and distress, O Arjuna!&quot; (Bg.6.32) This is true universal vision.</p>
+<p>It is not that God is sitting in my heart and not in the heart of a dog, cat, or cow.</p>
+<p>Sarvabhutanam means that He is sitting in the hearts of all living entities, in the human heart and in the ant's heart.</p>
+<p>The only difference is that cats and dogs cannot realize this.</p>
+<p>A human being, if he tries to follow the sankhya-yoga or bhakti-yoga system, is able to understand, and this is the prerogative of human life.</p>
+<p>If we miss this opportunity, we suffer a great loss, for we have undergone the evolutionary process and have passed through more than eight million species of life in order to get this human form.</p>
+<p>We should therefore be conscious of this and careful not to miss this opportunity.</p>
+<p>We have a good body, the human form, and intelligence and civilization.</p>
+<p>We should not live like animals and struggle hard for existence but should utilize our time thinking peacefully and understanding our relationship with the Supreme Lord.</p>
+<p>This is the instruction of Bhagavad-gita: Don't lose this opportunity; utilize it properly.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch3 - Teachings of Prahlada</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html" class="active">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Teachings of Prahlada</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#family-illusion" id="family-illusion">Family Illusion</a></h1>
+<p>Prahlāda Mahārāja told his friends.</p>
+<p>&quot;You have to begin Kṛṣṇa consciousness immediately.&quot; All the boys were born of atheistic, materialistic families, but fortunately Prahlāda was a great devotee of the Lord from his birth.</p>
+<p>Whenever he 'found an opportunity, when the teacher was out of the room, he used to speak: &quot;My dear friends, this is the time.</p>
+<p>This is the time to begin Kṛṣṇa consciousness.&quot; Now, as we have stated, someone might have said, &quot;But we are just boys.</p>
+<p>Let us play.</p>
+<p>We are not going to die immediately.</p>
+<p>Let us have some enjoyment, and then we shall begin Kṛṣṇa consciousness.&quot; People do not know that Kṛṣṇa consciousness is the highest enjoyment.</p>
+<p>They think that the.</p>
+<p>boys who have joined this Kṛṣṇa consciousness movement are foolish.</p>
+<p>&quot;They have left everything, and by Prabhupada's influence they have joined.&quot; But actually this is not so.</p>
+<p>They are all intelligent, educated boys, coming from very respectable families; they are not fools.</p>
+<p>They are actually enjoying life, otherwise they would not have spared their valuable time for this movement.</p>
+<p>Actually there is joyful life, but people do not know.</p>
+<p>They say, &quot;What is this Kṛṣṇa consciousness?&quot; When one grows into the sense gratification process, it is very difficult to get out of it.</p>
+<p>Therefore, according to Vedic regulations, in student life, beginning from five years of age, boys are taught about spiritual life.</p>
+<p>That is called brahmacarya.</p>
+<p>A brahmacārī is one who has dedicated his life for supreme Kṛṣṇa consciousness or Brahman consciousness.</p>
+<p>He is called a brahmacārī.</p>
+<p>He is always situated in the Supreme (Brahman).</p>
+<p>Brahmacarya has so many rules and regulations: according to brahmacārī regulations, however rich one's father may be, one should be trained by the brahmacārī system, under the guidance of a spiritual master, and he should work in the asrama of the spiritual master just like a menial servant.</p>
+<p>How is this 'possible? We are getting actual experience that very nice boys coming from very respectable families do not hesitate to do any work here.</p>
+<p>They are washing dishes, cleansing floors­everything.</p>
+<p>One student's mother was astonished at her boy when he visited home.</p>
+<p>Before, he would not even go to the store, and now he is engaged twenty­four hours a day.</p>
+<p>Unless one feels pleasure, how is it possible that he can engage himself in such a process as Kṛṣṇa consciousness? This is only due to Hare Kṛṣṇa.</p>
+<p>This is our single asset—Hare Kṛṣṇa.</p>
+<p>One can be very jolly, simply by Kṛṣṇa consciousness.</p>
+<p>Actually there is joyful life.</p>
+<p>But unless one is trained, one cannot live it.</p>
+<p>Prahlāda Mahārāja says that everyone is attached to family affection.</p>
+<p>If one is attached to family affairs, he cannot controls his senses.</p>
+<p>Naturally, everyone wants to love.</p>
+<p>Society, friendship and love are needed.</p>
+<p>They are demands of the spirit soul, but they are being pervertedly reflected.</p>
+<p>Generally, I have seen that many ladies and gentlemen in your country have no family life, but they have placed their love in cats and dogs.</p>
+<p>Because he or she wants to love someone but does not see anyone suitable to his desire, he therefore prefers to place his valuable love in cats and dogs.</p>
+<p>Our concern is just to transfer the love which has to be placed somewhere—to Kṛṣṇa.</p>
+<p>This is Kṛṣṇa consciousness.</p>
+<p>If you transfer the love to Kṛṣṇa, that is perfection.</p>
+<p>But, because we do not know where to place our love, being frustrated and cheated, we at: last place our love in cats and dogs.</p>
+<p>Everyone is entangled by this material, perverted love.</p>
+<p>It is very difficult to develop spiritual life when one is advanced in material love.</p>
+<p>It is very difficult because this bondag'e of love.</p>
+<p>is very strong.</p>
+<p>Therefore, Prahlāda's proposition.was that one.</p>
+<p>should learn Kṛṣṇa consciousness immediately from: childhood.</p>
+<p>When a boy is five or six years old, he is sent to school to be trained: When he is too young it&quot;is not possible for him to go to school, but as soon as his consciousness is developed, he is sent for education.</p>
+<p>Prahlāda Mahārāja says that one's education should be Kṛṣṇa conscious: and it should begin.&quot;immediately.</p>
+<p>When one­ is between the ages of­five to fifteen years, he is considered a boy.</p>
+<p>After sixteen years one becomes a young man.</p>
+<p>He goes on to forty years, and then after forty years he is elderly; then, after sixty years, he is an old man.</p>
+<p>Prahlāda Mahārāja says that one should be taught Kṛṣṇa consciousness from the beginning, from five to fifteen years of age.</p>
+<p>This is a very valuable time; you can .train any boy in Kṛṣṇa consciousness, and he will be perfect.</p>
+<p>When one becomes a little more advanced in materialism, it is difficult to develop spiritual life.</p>
+<p>What is materialism? Materialism mean? that every one of us in this material world, although we are spirit soul, somehow or other wants to enjoy this material world.</p>
+<p>Don’t try to find out when it began, but actually that is the situation.</p>
+<p>This world is meant for enjoyment.</p>
+<p>Enjoyment is already present in our spirit soul, but we have come here to partake of contaminated enjoyment, just like a man who is on the Bowery and thinks he's enjoying.</p>
+<p>Some animals enjoy by eating stool.</p>
+<p>According to the body, we have different kinds of enjoyment.</p>
+<p>The basic principle of enjoyment is sex life.</p>
+<p>Therefore, you will find sex life not only in human society; but in cat society, dog society, bird society­everywhere.</p>
+<p>During daytime.</p>
+<p>a pigeon has sex at least twenty times.</p>
+<p>This is his enjoyment.</p>
+<p>The basic principle of material life is sex life.</p>
+<p>Srīmad­ Bhāgavatam says that material enjoyment is based upon nOthing more than the combination of man and woman in sex life.</p>
+<p>In the beginning a boy thinks, &quot;Oh, that girl is nice,&quot; or the girl says.</p>
+<p>&quot;That boy is nice.'' And when they meet, that material contamination becomes more prominent.</p>
+<p>My heart is already attached to material enjoyment, but as soon as I actually enjoy it, it becomes more attached, completely attached.</p>
+<p>How? As soon as a boy and girl are married, they want an apartment.</p>
+<p>Then, to maintain that apartment, they need some income.</p>
+<p>Then, when there is income, they want to have children.</p>
+<p>Then when they have children.</p>
+<p>they want social recognition—society, friendship and love.</p>
+<p>This goes on increasing.</p>
+<p>Everything requires money: where is money? A man who is too materialistic will cheat anyone, kill anyone, beg, borrow or steal anything to bring money.</p>
+<p>He knows that his buildings, his family, his wife and children cannot continue to exist here.</p>
+<p>They are just like bubbles in the ocean: they have come into existence, and after a little while they will be gone.</p>
+<p>But he is too much attached.</p>
+<p>He will sacrifice his spiritual advancement in life for this.</p>
+<p>His perverted consciousness—”I am this body.</p>
+<p>I belong to this material world.</p>
+<p>I belong to this country.</p>
+<p>I belong to this community.</p>
+<p>I belong to this religion.&quot;—becomes greater and greater.</p>
+<p>Where is his Kṛṣṇa consciousness? He becomes so entangled that money becomes more valuable to him than his own life.</p>
+<p>He can risk even his own life for money.</p>
+<p>Everyone is trying to get money.</p>
+<p>Who? The householder, the labourer, the merchant, the thief, the dacoit, the rogue.</p>
+<p>What is the distinction? Everyone is after money.</p>
+<p>This is called illusion.</p>
+<p>One loses himself in the midst of this entanglement.</p>
+<p>Prahlāda Mahārāja says that in this state, when you are too much implicated in materialism, you cannot at once begin Kṛṣṇa consciousness.</p>
+<p>Of course, Lord Caitanya Mahaprabhu is so kind that even if you have missed the chance to become Kṛṣṇa conscious in your childhood, it is better late than never.</p>
+<p>If you do understand, then begin immediately in whatever position you are.</p>
+<p>Even though you missed the opportunity to begin Kṛṣṇa consciousness from childhood, begin now.</p>
+<p>That is Caitanya Mahāprabhu’s teaching.</p>
+<p>He never said, &quot;Because you did not begin Krishna consciousness from your childhood, you cannot make progress.&quot; No.</p>
+<p>He is very kind.</p>
+<p>He has given us this nice process of chanting: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>Whether you are a young man or an old manna matter what you are—just begin.</p>
+<p>You do not know when your life will be finished.</p>
+<p>If you begin sincerely, even for a moment, it will have great effect.</p>
+<p>It will save you from the greatest danger.</p>
+<p>Although only five years old, Prahlāda Mahārāja speaks just like a very experienced man because he received experience from his spiritual master.</p>
+<p>That will be disclosed later.</p>
+<p>Experience should not be derived from age, but from knowledge received from a superior source: One cannot become a wise man simply by advancement of age.</p>
+<p>No.</p>
+<p>That is not possible.</p>
+<p>Knowledge has to be received from a superior source.</p>
+<p>It doesn't matter whether he is a five­year­old boy or a fifty­year­old man.</p>
+<p>In Sanskrit this is phrased: &quot;One becomes an old man without age.&quot; He is only five years old; how can he become an old man? One becomes old by advancement in knowledge.</p>
+<p>Prahlāda Mahārāja is speaking just like an old man.</p>
+<p>Suppose a man ' is already married and Prahlāda says, &quot;You take to Kṛṣṇa consciousness.&quot; He will think, &quot;Oh, how can I leave my wife? We talk so nicely together, sit together and enjoy.</p>
+<p>How can I leave?&quot; It is a very strong combination.</p>
+<p>I am an old man, seventy­two years old.</p>
+<p>I have been away from my family during the last fourteen years.</p>
+<p>Yet sometimes I also think of my wife.</p>
+<p>This is quite natural.</p>
+<p>But that does not mean that I have to go back.</p>
+<p>This is knowledge.</p>
+<p>One should at once under stand: this is illusion.</p>
+<p>According to the Vedic system, one has to forcibly give up family life at the age of fifty.</p>
+<p>One must go.</p>
+<p>There is no alternative.</p>
+<p>The first twenty­five years are for student life.</p>
+<p>From five years to twenty­five years, one should be educated very nicely in Kṛṣṇa consciousness.</p>
+<p>The whole basic principle should be Kṛṣṇa conscious, nothing else.</p>
+<p>Then life will be successful.</p>
+<p>Life will be pleasing and successful, both in this world and in the next.</p>
+<p>For twenty years, from five to twenty­five, a boy should be trained in Kṛṣṇa consciousness which necessitates giving up material consciousness altogether.</p>
+<p>That is called perfect Kṛṣṇa consciousness.</p>
+<p>But if someone is not able to capture the essence of Kṛṣṇa consciousness, then he is allowed to have a good wife, be married, and live a peaceful householder life.</p>
+<p>And, because he has the basic principle of Kṛṣṇa consciousness, he will not entangle himself in the material world.</p>
+<p>If one lives a simple life—plain living and high thinking­he can progress and can cultivate the same Kṛṣṇa consciousness even within the family.</p>
+<p>So family life is not condemned.</p>
+<p>But if a man forgets his spiritual identity and simply becomes entangled in material affairs, then he is lost.</p>
+<p>His life's mission is lost.</p>
+<p>If one thinks, &quot;I cannot protect myself from the attack of māyā,&quot; then let him be married.</p>
+<p>That is prescribed.</p>
+<p>We don't have illicit sex life.</p>
+<p>If you want a girl, if you want a boy, get married.</p>
+<p>Live in Kṛṣṇa consciousness.</p>
+<p>A person who is trained from the very beginning naturally becomes disinclined toward the material way of life, and at the age of fifty he gives it up.</p>
+<p>How do you start giving it up? That is also a concession: the husband and wife leave the children.</p>
+<p>If from twenty­five to fifty he remains in family life, he must have some grown­up children.</p>
+<p>So he entrusts all his family affairs to them.</p>
+<p>According to the Vedic system, a boy is married at the age of twenty, and a girl is married at twelve years.</p>
+<p>So, family affairs are entrusted to some of the boys who are family men, and the husband and wife go on pilgrimages to try to forget these attachments.</p>
+<p>When the gentleman is completely matured, he asks his wife to go home to his children, and he remains alone.</p>
+<p>That is the system.</p>
+<p>Otherwise, if we remain attached to material consciousness, then we will not perfect our Kṛṣṇa consciousness.</p>
+<p>So we have to give ourselves a chance, step by step.</p>
+<p>Otherwise, if we become too materially complicated, we shall miss the opportunity of this human form of life.</p>
+<p>Family life means that we have very loving children, and we are loved.</p>
+<p>We attract, our wife talks very nicely, and we give very nice instructions.</p>
+<p>&quot;You do this.</p>
+<p>You do that.&quot; Thus we enjoy life.</p>
+<p>But we do not know that this enjoyment is false.</p>
+<p>We are standing on a false platform.</p>
+<p>At once, in the twinkling of an eye, we may have to give this up.</p>
+<p>Death is not under our control.</p>
+<p>From Bhagavad­gītā we learn that if one dies while too much attached to one's wife, the result will be that he will get his next life as a female.</p>
+<p>And if the wife is very attached to the husband, it is for her benefit; she gets the next life as a man.</p>
+<p>Therefore, according to the Vedic system, chastity is greatly stressed.</p>
+<p>This has nothing to do with Kṛṣṇa consciousness; it is simply a matter of ending material consciousness.</p>
+<p>If a woman is chaste and simply thinks of one man, then the result will be that she will get a man's body in the next life.</p>
+<p>Similarly, if you are not a family man but are attached to a cat or dog, then your next life will be as a cat or dog.</p>
+<p>That is.</p>
+<p>also a fact.</p>
+<p>It is better to love a woman and be attached to her.</p>
+<p>It is better to have a woman's body than to have a cat's or dog's body.</p>
+<p>These are the rules of karma, or material nature.</p>
+<p>The whole point is that one should begin.</p>
+<p>If one thinks, &quot;After finishing my sporting life, when I am old and there is nothing else to do, then I shall go to the Krishna Consciousness Society and hear something.&quot; At that time one can go, but one should have the opportunity now and should utilize one's life from the very beginning.</p>
+<p>Therefore, this Society's main object is to give everyone a chance to begin Kṛṣṇa consciousness at any stage.</p>
+<p>And, by this process of Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare, it is very quick.</p>
+<p>There is an immediate result.</p>
+<p>We shall request all the ladies and gentlemen who are very kindly attending our lectures or reading our literature to go home, and at at your leisure hour, dance and chant, or read our books.</p>
+<p>You will find it very nice.</p>
+<p>That is our request.</p>
+<p>That is what our Society is spreading.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

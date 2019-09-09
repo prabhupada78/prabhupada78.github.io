@@ -1,0 +1,352 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch4 - Matchless Gift</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html" class="active">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Matchless Gift</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#learning-tapasya-self-control" id="learning-tapasya-self-control">Learning Tapasya, Self-Control</a></h1>
+<p>If one does not come to Kṛṣṇa consciousness, he may be relieved for the time being from the reactions of sinful activities, but he will again commit transgressions.</p>
+<p>Therefore Parīkṣit Mahārāja said: kvacin nivartate ’bhadrāt kvacic carati tat punaḥ prāyaścittam ato ’pārtham:“Repetitive sinning and atoning seem to me like nothing but a waste of time.” He gave the example of an elephant which cleanses his body thoroughly in a lake or reservoir, but as soon as he comes onto shore he takes dust and throws it all over his body and immediately becomes dirty again.</p>
+<p>Thus Parīkṣit Mahārāja said that although one may cleanse himself in the process of atonement, if he again commits the same sinful acts, what is the use? Therefore the second question put by Parīkṣit Mahārāja to Śukadeva Gosvāmī is very important: How can one ultimately become free from all contamination brought about by the material modes of nature? If one cannot achieve liberation, what is the use of atonement? In answer, Śukadeva Gosvāmī said that merely counteracting karma, fruitive activities, by other activities cannot bring one’s miseries to a final end.</p>
+<p>For example, the United Nations is attempting to establish peace in the world, but they cannot stop war.</p>
+<p>War breaks out again and again.</p>
+<p>After the First World War statesmen and diplomats manufactured the League of Nations.</p>
+<p>Then the Second World War came, and now they have devised the United Nations, but war is still going on.</p>
+<p>The actual goal is to stop war, but that cannot be done.</p>
+<p>By one action war is created, and by another action war is stopped for the time being, but again at the next opportunity there is another war.</p>
+<p>The cycle of sinful activities and atonement is like that.</p>
+<p>What we actually want is to be free from suffering and war, but that does not happen.</p>
+<p>Śukadeva Gosvāmī said that one kind of war causes a disturbance, and another kind of war stops it for some time, but that is not the ultimate solution to the problem.</p>
+<p>Śukadeva states that these troubles happen due to ignorance: avidvad-adhikāritvāt.</p>
+<p>Avidvat means “lack of knowledge.” Avidvat-adhikāritvāt prāyaścittaṁ vimarśanam.</p>
+<p>Real atonement is performed in knowledge.</p>
+<p>Why is there fighting and why are there miseries? Unless these “why” questions, which in the Vedas are called Kena Upaniṣad, arise in one’s mind, one is not fulfilling the proper function of his human life.</p>
+<p>These questions must arise: “Why am I suffering? Wherefrom have I come? What is my constitutional position? Where shall I go after death? Why am I put into a miserable form of life? Why are there birth, death, old age and disease?” How can these questions be solved? Śukadeva Gosvāmī says: nāśnataḥ pathyam evānnaṁ vyādhayo ’bhibhavanti hi/ evaṁ niyamakṛd rājan śanaiḥ kṣemāya kalpate.</p>
+<p>If one wants to actually stop diseased life, he must follow a regulative principle.</p>
+<p>If a person does not follow the program given by a physician to cure his disease, he cannot be cured.</p>
+<p>Similarly, if one does not think or act wisely, as Vedic knowledge prescribes, how can he stop the problems of life? Simply by atonement there may be a temporary suppression of difficulties, but they will arise again.</p>
+<p>Śukadeva Gosvāmī says that in material or sinful life we act in a way in which we are forced to commit sins and suffer as a result.</p>
+<p>This is so, and if we want to stop this cycle of suffering and victimization, we have to advance in knowledge.</p>
+<p>Ordinary people, or karmīs, are fruitive actors who work all day and night to get some enjoyable results and then again suffer.</p>
+<p>Thus the problems of such karmīs are never solved.</p>
+<p>It is suggested therefore that one elevate himself to the platform of knowledge as prescribed in Śrīmad-Bhāgavatam.</p>
+<p>The first necessity is tapasya, or acceptance of austerity.</p>
+<p>If a doctor advises a diabetic patient not to eat but to starve for some days, although no one likes to starve, the patient must voluntarily accept starvation if he wants to be cured.</p>
+<p>This is tapasya: voluntary acceptance of a miserable condition.</p>
+<p>The ability to do this is good, and human life is meant for that purpose.</p>
+<p>Indeed, Vedic culture prescribes tapasya, and one can see many tapasvīs undergoing austerities in India.</p>
+<p>In the winter they stand in water up to their necks and meditate.</p>
+<p>Standing in water during severe cold is not very comfortable, but they voluntarily do it.</p>
+<p>In the summer they also ignite fires all around themselves and sit down in the midst of the blazes and meditate.</p>
+<p>These are examples of severe tapasya undertaken by many ascetics in India.</p>
+<p>Some tapasya is certainly required.</p>
+<p>Without it, one can not advance in spiritual life or knowledge.</p>
+<p>If we simply engage in the animal propensities of eating, sleeping, mating and defending, not accepting the tapasya process, human life is a failure.</p>
+<p>If one wants to become an initiated member of our Kṛṣṇa consciousness society, we first of all ask him to undergo tapasya.</p>
+<p>In the Western countries especially it is a great tapasya to give up illicit sex life, intoxication, meat-eating and gambling.</p>
+<p>Although we require only these austerities, it is very difficult to observe them.</p>
+<p>In England, a wealthy aristocrat inquired from a Vaiṣṇava Godbrother: “Swāmījī, can you make me a brāhmaṇa?” The Swāmījī replied, “Yes, why not? You just have to observe these four principles—no illicit sex, intoxication, gambling and meat-eating.” “Impossible,” the Britisher replied.</p>
+<p>Yes, it is impossible, for in Europe or in America self-indulgence is the way of life from the very beginning.</p>
+<p>Indian gentlemen often come to the West to learn these indulgences, and they think themselves to be thus advancing.</p>
+<p>Indians are automatically taught tapasya through their Vedic culture, but they come to America to forget that culture and accept another type of life.</p>
+<p>The real fact is, however, that if one wants to advance in spiritual understanding and solve all the problems of life, he must accept this life of tapasya—austerity and restriction.</p>
+<p>Restriction is for human beings, not for animals.</p>
+<p>We encounter restrictions daily in our common dealings.</p>
+<p>We cannot drive a car on the left or run a red light without risking apprehension by the law.</p>
+<p>If a dog, however, walks on the left side of the street or crosses against a red light, it is not punished because it is an animal.</p>
+<p>The law therefore makes distinctions between human beings and animals because human beings supposedly have advanced consciousness.</p>
+<p>If we do not follow rules and regulations, we again lapse into animalism.</p>
+<p>Apparently propaganda is being made celebrating freedom as opposed to a regulated life, but one who sees things as they are can understand that freedom from all restriction is animal life.</p>
+<p>Therefore Śukadeva Gosvāmī recommends tapasya.</p>
+<p>If we want actual freedom from the problems of life, we have to accept a life of austerity.</p>
+<p>Bondage to material life is the only other alternative.</p>
+<p>What is tapasya? What is austerity? The first principal of austerity is brahmacarya, restricted sex life.</p>
+<p>The real meaning of brahmacarya is complete celibacy, and according to Vedic culture in the beginning of life one should strictly follow the regulations of brahmacarya.</p>
+<p>When he is grown up, the brahmacārī can marry and become gṛhastha, and as a gṛhastha he can have sex, but in the brahmacarya life strict celibacy is the rule.</p>
+<p>In the present age people have become degraded for want of tapasya because they are not taught how to execute tapasvī life.</p>
+<p>Criticism for its own sake will not do; one must be effectively trained in the life of tapasya.</p>
+<p>In the Vedas it is said that those who execute a regulated life of tapasya are brāhmaṇas.</p>
+<p>Etad akṣaraṁ gārgi viditvāsmāl lokāt praiti sa brāhmaṇaḥ/ etad akṣaraṁ gārgy aviditvāsmāl lokāt praiti sa kṛpaṇaḥ.</p>
+<p>Everyone is dying, for no one can live here permanently, but one who dies after executing a life of tapasya is a brāhmaṇa, and one who dies like a cat or dog, without executing tapasya, is called a kṛpaṇa.</p>
+<p>These two words are used frequently in Vedic literature —brāhmaṇa and kṛpaṇa.</p>
+<p>Kṛpaṇa means “miser” and brāhmaṇa refers to a liberal, broad-minded person.</p>
+<p>Brahma jānātīti brāhmaṇaḥ: One who knows the supreme, the Absolute Truth, is a brāhmaṇa, but one who does not know is an animal.</p>
+<p>This is the difference between animal and man; man, to deserve the name, must be educated to understand the Absolute Truth.</p>
+<p>Because human life is meant for knowledge, there are schools and colleges, philosophers and scientists and mathematicians.</p>
+<p>The processes of eating, sleeping, mating and defending need not be taught, for they are learned instinctively.</p>
+<p>Human life is obviously meant for more.</p>
+<p>It is meant for tapasya and knowledge.</p>
+<p>There are descriptions in the Vedas of brahmacarya, celibacy, which characterize the beginning of a life dedicated to tapasya: Smaraṇaṁ kīrtanaṁ keliḥ prekṣaṇaṁ guhyabhāṣaṇam/ saṅkalpo ’dhyavasāyaś ca kriyā-nirvṛttir eva ca (Śrīdhara 6.1.12).</p>
+<p>To properly execute celibacy, one should not even think or even talk of sex life.</p>
+<p>Reading modern literature and newspapers which are filled with sexual material is also against the principles of brahmacarya.</p>
+<p>Similarly, indulging in sex in any way, looking at and whispering with girls, and determining or endeavoring to engage in sex life are all against the principles of brahmacarya.</p>
+<p>One executes real brahmacarya when all these activities come to a halt.</p>
+<p>By austerity, celibacy, and control of the mind and senses one can advance in pure life.</p>
+<p>Similarly, advancement can be made through charity properly directed.</p>
+<p>That is called tyāga, renunciation.</p>
+<p>If one has a million dollars, he should not keep it, but, as long as it is within his jurisdiction, he should spend it for Kṛṣṇa.</p>
+<p>Money or energy is properly utilized when it is directed to Kṛṣṇa.</p>
+<p>As soon as one quits his body, all his monetary resources and everything else that he has collected in connection with his body is finished, for the spirit soul transmigrates to another body, and one does not know where the money which he earned in his previous body is being kept or how it is being spent.</p>
+<p>A person may leave the world declaring how the money should be spent by his sons or heirs, but even if one leaves millions of dollars, in his next life he has no claim to it.</p>
+<p>Therefore as long as it is in one’s hand, it is better to spend it for a good purpose.</p>
+<p>If one spends it for bad purposes, he becomes entangled, but if he spends it for good purposes, he gets good in return.</p>
+<p>This is very clearly stated in Bhagavad-gītā.</p>
+<p>Bhagavad-gītā explains that there are three kinds of charity— charity in the mode of goodness, passion and ignorance.</p>
+<p>A person in the mode of goodness knows where charity should be given.</p>
+<p>In Bhagavad-gītā Kṛṣṇa says: samo ’haṁ sarva-bhūteṣu na me dveṣyo ’sti na priyaḥ ye bhajanti tu māṁ bhaktyā mayi te teṣu cāpy aham “I envy no one, nor am I partial to anyone.</p>
+<p>I am equal to all.</p>
+<p>But whoever renders service unto Me in devotion is a friend, is in Me, and I am also a friend to him.” (Bg.9.29) Kṛṣṇa is not in want of money, for He is the original proprietor of everything (Īśāvāsyam idaṁ sarvam).</p>
+<p>But still He asks us for charity.</p>
+<p>For example, Kṛṣṇa, in the guise of Vāmana, a dwarf brāhmaṇa, went to beg from Bali Mahārāja.</p>
+<p>Even though He is sarva-lokamaheśvaram, the proprietor of all the planets, He nonetheless says, “Please give in charity to Me.” Why? It is for our interest, for the sooner we return Kṛṣṇa’s money to Kṛṣṇa, the better situated we will be.</p>
+<p>Of course this may not be very pleasant to hear, but actually we are all thieves, for we have stolen God’s property.</p>
+<p>If one who has something is not God conscious, it is to be understood that he has stolen God’s property.</p>
+<p>That is the nature of material life.</p>
+<p>If this is considered thoughtfully and if one comes to real knowledge, he will realize that if we do not understand God, whose property we are using, whatever we possess is stolen property.</p>
+<p>It is also stated in Bhagavad-gītā that if one does not spend his money for yajña, sacrifice, he is understood to be a thief (yo bhuṅkte stena eva saḥ).</p>
+<p>For instance, if one earns a great deal of money but tries to hide it to avoid paying income tax, the government considers him to be a criminal.</p>
+<p>He cannot say, “I have earned this money.</p>
+<p>Why shall I pay tax to the government?” No, he must pay or risk punishment.</p>
+<p>Similarly, in the higher sense everything we have is Kṛṣṇa’s or God’s, and it must be utilized in accordance with His desires.</p>
+<p>We may wish to construct a building, but where do we get the stone, wood and earth that the construction requires? We cannot artificially produce the wood; it is God’s property.</p>
+<p>We cannot produce the metal; we must take it from the mine, which is also God’s property.</p>
+<p>The earth and the bricks which are made from it are also God’s.</p>
+<p>We simply give our labor, but that labor is also God’s property.</p>
+<p>We work with our hands, but they are not our hands but God’s, for when the power to use the hand is withdrawn by God, the hand becomes useless.</p>
+<p>We should use this great opportunity, human life, to understand all these points which are mentioned in the authoritative books of Vedic knowledge like Śrīmad-Bhāgavatam and Bhagavad-gītā.</p>
+<p>In the Bhāgavatam Śukadeva Gosvāmī declares that real atonement necessitates thoughtfulness, sobriety and meditation.</p>
+<p>One must consider whether he is the body or whether he is transcendental to the body, and one must try to know what God is.</p>
+<p>These ideas are to be studied in Kṛṣṇa consciousness.</p>
+<p>We should not be frivolous or waste time.</p>
+<p>If one wants this knowledge, he has to practice austerity, tapasya, and the beginning of tapasya, as already explained, is brahmacarya—celibacy or restricted sex life.</p>
+<p>The pivot of material attraction is sex, not only for human society but for animal society also.</p>
+<p>Sparrows and pigeons have sex three hundred times daily, although they are strict vegetarians, and the lion, which is not a vegetarian, has sex once a year.</p>
+<p>Spiritual life is not a question of vegetarianism but of understanding higher knowledge.</p>
+<p>When one comes to the platform of elevated knowledge, he naturally becomes a vegetarian.</p>
+<p>Paṇḍitāḥ sama-darśinaḥ: one who is very highly learned does not distinguish between a learned scholar, a brāhmaṇa, an elephant, a dog and a cow.</p>
+<p>He is sama-darśī; his vision enables him to see them all equally.</p>
+<p>How is this? He does not see the body but the soul, the spiritual spark (Brahman).</p>
+<p>He thinks: “Here is a dog, but it is also a living entity, although by his past karma he has become a dog.</p>
+<p>And this learned scholar is also a living spark, but he has taken good birth because of his past karma.” When one comes to that position, he does not see the body, but the spiritual spark, and he does not distinguish between one living entity and another.</p>
+<p>Actually we do not make distinctions between carnivores and vegetarians, for the grass has life just as the cow or the lamb.</p>
+<p>A guideline, however, should be the Vedic instruction given in Īśopaniṣad: īśāvāsyam idaṁ sarvaṁ yat kiñca jagatyāṁ jagat tena tyaktena bhuñjīthā mā gṛdhaḥ kasya svid dhanam “Everything animate or inanimate that is within the universe is controlled and owned by the Lord.</p>
+<p>One should therefore accept only those things necessary for himself, which are set aside as his quota, and one must not accept other things, knowing well to whom they belong.” (Īśopaniṣad, Mantra 1) Since everything is the property of the Supreme Lord, one can only enjoy what is allotted to him by the Lord, and one cannot touch another’s property.</p>
+<p>According to Vedic life and according to all Vedic scriptures, a man should live on fruits and vegetables, for his teeth are made in such a way that these can be very easily eaten and digested.</p>
+<p>Although it is nature’s law that one has to live by eating other living entities (jīvo jīvasya jīvanam), one must use discretion.</p>
+<p>Fruits, flowers, vegetables, rice, grain and milk are made for human beings.</p>
+<p>Milk, for example, is an animal product, the blood of an animal transformed, but the cow delivers more milk than is needed by her calf because milk is intended for man.</p>
+<p>Man should simply take the milk and let the cows live, and thus following nature’s law, man will be happy.</p>
+<p>Tena tyaktena bhuñjīthā: one should take whatever God allots to him and thus live comfortably.</p>
+<p>We have to elevate our consciousness through this science of Kṛṣṇa.</p>
+<p>Charity is within everyone’s heart, but we do not know how to make the best use of it.</p>
+<p>Whatever we spend in terms of energy should be for Kṛṣṇa, for it all belongs to Him.</p>
+<p>By spending for Kṛṣṇa, one will not be a loser.</p>
+<p>Kṛṣṇa is so kind that when we offer Him food, He accepts and yet leaves everything for us to eat.</p>
+<p>Simply by offering food to Kṛṣṇa we can become devotees.</p>
+<p>We need not spend an extra farthing.</p>
+<p>In the higher sense, everything belongs to Kṛṣṇa, but if we offer everything to Kṛṣṇa, we will be elevated.</p>
+<p>This is a sublime and proven way for advancement in pure life.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
