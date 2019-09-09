@@ -1,11 +1,12 @@
-# Reading Gurus Books in Order
+# Reading Srila Prabhupada's Books in [Order](https://iskcondesiretree.com/profiles/blogs/suggested-orderscheme-of)
 
 Please find typos. Thank you!
 
-For a Pull Request edit source files in **isrc** folder. I can then regenerate the site.
+Edit the files in **isrc** folder for a **Pull Request**.
 
-*Created using* [mdBook](https://github.com/rust-lang-nursery/mdBook)
+**Created with** [mdBook](https://github.com/rust-lang-nursery/mdBook)
 
 Hare Krsna!
 
 Jaya Srila Prabhupada!
+
