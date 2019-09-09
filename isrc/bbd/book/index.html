@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch1 - Beyond Birth and Death</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html" class="active">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Beyond Birth and Death</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#we-are-not-these-bodies" id="we-are-not-these-bodies">We Are Not These Bodies</a></h1>
+<p>dehī nityam avadhyo ’yaṁ dehe sarvasya bhārata tasmāt sarvāṇi bhūtāni na tvaṁ śocitum arhasi “O descendant of Bharata, he who dwells in the body is eternal and can never be slain.</p>
+<p>Therefore you need not grieve for any creature.” (Bhagavad-gītā 2.30) The very first step in self-realization is realizing one’s identity as separate from the body.</p>
+<p>“I am not this body but am spirit soul” is an essential realization for anyone who wants to transcend death and enter into the spiritual world beyond.</p>
+<p>It is not simply a matter of saying “I am not this body,” but of actually realizing it.</p>
+<p>This is not as simple as it may seem at first.</p>
+<p>Although we are not these bodies but are pure consciousness, somehow or other we have become encased with the bodily dress.</p>
+<p>If we actually want the happiness and independence that transcend death we have to establish ourselves and remain in our constitutional position as pure consciousness.</p>
+<p>Living in the bodily conception, our idea of happiness is like that of a man in delirium.</p>
+<p>Some philosophers claim that this delirious condition of bodily identification should be cured by abstaining from all action.</p>
+<p>Because these material activities have been a source of distress for us, they claim that we should actually stop these activities.</p>
+<p>Their culmination of perfection is in a kind of Buddhistic nirvāṇa in which no activities are performed.</p>
+<p>Buddha maintained that due to a combination of material elements, this body has come into existence, and that somehow or other if these material elements are separated or dismantled, the cause of suffering is removed.</p>
+<p>If the tax collectors give us too much difficulty because we happen to possess a large house, one simple solution is to destroy the house.</p>
+<p>However, Bhagavad-gītā indicates that this material body is not all in all.</p>
+<p>Beyond this combination of material elements, there is spirit, and the symptom of that spirit is consciousness.</p>
+<p>Consciousness cannot be denied.</p>
+<p>A body without consciousness is a dead body.</p>
+<p>As soon as consciousness is removed from the body, the mouth will not speak, the eye will not see, nor the ears hear.</p>
+<p>A child can understand that.</p>
+<p>It is a fact that consciousness is absolutely necessary for the animation of the body.</p>
+<p>What is this consciousness? Just as heat or smoke are symptoms of fire, so consciousness is the symptom of the soul.</p>
+<p>The energy of the soul or self is produced in the shape of consciousness.</p>
+<p>Indeed, consciousness proves that the soul is present.</p>
+<p>This is not only the philosophy of Bhagavad-gītā but the conclusion of all Vedic literature.</p>
+<p>The impersonalist school of Śaṅkarācārya, as well as the Vaiṣṇavas following in the disciplic succession from Lord Śrī Kṛṣṇa, acknowledge the factual existence of the soul, but the Buddhist philosophers do not.</p>
+<p>The Buddhists contend that at a certain stage the combination of matter produces consciousness, but this argument is refuted by the fact that although we may have all the constituents of matter at our disposal, we cannot produce consciousness from them.</p>
+<p>All the material elements may be present in a dead man, but we cannot revive that man to consciousness.</p>
+<p>This body is not like a machine.</p>
+<p>When a part of a machine breaks down, it can be replaced, and the machine will work again, but when the body breaks down and consciousness leaves the body, there is no possibility of our replacing the broken part and rejuvenating the consciousness.</p>
+<p>The soul is different from the body, and as long as the soul is there, the body is animate.</p>
+<p>But there is no possibility of making the body animate in the absence of the soul.</p>
+<p>Because we cannot perceive the soul by our gross senses, we deny it.</p>
+<p>Actually there are so many things that are there which we cannot see.</p>
+<p>We cannot see air, radio waves or sound, nor can we perceive minute bacteria with our blunt senses, but this does not mean they are not there.</p>
+<p>By the aid of the microscope and other instruments, many things can be perceived which had previously been denied by the imperfect senses.</p>
+<p>Just because the soul, which is atomic in size, has not been perceived yet by senses or instruments, we should not conclude that it is not there.</p>
+<p>It can, however, be perceived by its symptoms and effects.</p>
+<p>In Bhagavad-gītā Śrī Kṛṣṇa points out that all of our miseries are due to false identification with the body.</p>
+<p>mātrā-sparśās tu kaunteya sītoṣṇa-sukha-duḥkha dāḥ āgamāpāyino ’nityās tāṁs titikṣasva bhārata “O son of Kuntī, the nonpermanent appearance of heat and cold, happiness and distress, and their disappearance in due course, are like the appearance and disappearance of winter and summer seasons.</p>
+<p>They arise from sense perception, O scion of Bharata, and one must learn to tolerate them without being disturbed.” (Bg.2.14) In the summertime we may feel pleasure from contact with water, but in the winter we may shun that very water because it is too cold.</p>
+<p>In either case, the water is the same, but we perceive it as pleasant or painful due to its contact with the body.</p>
+<p>All feelings of distress and happiness are due to the body.</p>
+<p>Under certain conditions the body and mind feel happiness and distress.</p>
+<p>Factually we are hankering after happiness, for the soul’s constitutional position is that of happiness.</p>
+<p>The soul is part and parcel of the Supreme Being, who is sac-cidānanda-vigrahaḥ-the embodiment of knowledge, bliss and eternity.</p>
+<p>Indeed, the very name Kṛṣṇa, which is nonsectarian, means “the greatest pleasure.” Kṛṣ means greatest and ṇa means pleasure.</p>
+<p>Kṛṣṇa is the epitome of pleasure, and being part and parcel of Him, we hanker for pleasure.</p>
+<p>A drop of ocean water has all the properties of the ocean itself, and we, although minute particles of the Supreme Whole, have the same energetic properties of the Supreme.</p>
+<p>The atomic soul, although so small, is moving the entire body to act in so many wonderful ways.</p>
+<p>In the world we see so many cities, highways, bridges, great buildings, monuments and great civilizations, but who has done all this? It is all done by the minute spirit spark within the body.</p>
+<p>If such wonderful things can be performed by the minute spirit spark, we cannot begin to imagine what can be accomplished by the Supreme Spirit Whole.</p>
+<p>The natural hankering of the minute spirit spark is for the qualities of the Whole—knowledge, bliss and eternality—but these hankerings are being frustrated due to the material body.</p>
+<p>The information on how to attain the soul’s desire is given in Bhagavad-gītā.</p>
+<p>At present we are trying to attain eternity, bliss and knowledge by means of an imperfect instrument.</p>
+<p>Actually our progress toward these goals is being blocked by the material body; therefore we have to come to the realization of our existence beyond the body.</p>
+<p>Theoretical knowledge that we are not these bodies will not do.</p>
+<p>We have to keep ourselves always separate as masters of the body, not as servants.</p>
+<p>If we know how to drive a car well, it will give us good service; but if we do not know how, we will be in danger.</p>
+<p>The body is composed of senses, and the senses are always hungry after their objects.</p>
+<p>The eyes see a beautiful person and tell us, “Oh, there is a beautiful girl, a beautiful boy.</p>
+<p>Let’s go see.” The ears are telling us, “Oh there is very nice music.</p>
+<p>Let us go hear it.” The tongue is saying, “Oh, there is a very nice restaurant with palatable dishes.</p>
+<p>Let us go.” In this way the senses are dragging us from one place to another, and because of this we are perplexed.</p>
+<p>indriyāṇāṁ hi caratāṁ yan mano ’nuvidhīyate tad asya harati prajñāṁ vāyur nāvam ivāmbhasi “As a boat on the water is swept away by a strong wind, even one of the senses on which the mind focuses can carry away a man’s intelligence.” (Bg.2.67) It is imperative that we learn how to control the senses.</p>
+<p>The name gosvāmī is given to someone who has learned how to master the senses.</p>
+<p>Go means senses, and svāmī means controller, so one who can control the senses is to be considered a gosvāmī.</p>
+<p>Kṛṣṇa indicates that one who identifies with the illusory material body cannot establish himself in his proper identity as spirit soul.</p>
+<p>Bodily pleasure is flickering and intoxicating, and we cannot actually enjoy it because of its momentary nature.</p>
+<p>Actual pleasure is of the soul, not the body.</p>
+<p>We have to mold our lives in such a way that we will not be diverted by bodily pleasure.</p>
+<p>If somehow we are diverted, it is not possible for us to establish our consciousness in its true identity beyond the body.</p>
+<p>bhogaiśvarya-prasaktānāṁ tayāpahṛta-cetasām vyavasāyātmikā buddhiḥ samādhau na vidhīyate traiguṇya viṣayā vedā nistraiguṇyo bhavārjuna nirdvandvo nitya-sattva-stho niryoga-kṣema ātmavān “In the minds of those who are too attached to sense enjoyment and material opulence, and who are bewildered by such things, the resolute determination for devotional service to the Supreme Lord does not take place.</p>
+<p>The Vedas deal with the subject of the three modes of material nature.</p>
+<p>Rise above these modes, O Arjuna.</p>
+<p>Be transcendental to all of them.</p>
+<p>Be free from all dualities and from all anxieties for gain and safety, and be established in the Self.” (Bg.2.44–45) The word veda means book of knowledge.</p>
+<p>There are many books of knowledge which vary according to the country, population, environment, etc.</p>
+<p>In India, the books of knowledge are referred to as the Vedas.</p>
+<p>In the West, they are called the Old Testament and New Testament.</p>
+<p>The Muhammadans accept the Koran.</p>
+<p>What is the purpose for all these books of knowledge? They are to train us to understand our position as pure soul.</p>
+<p>Their purpose is to restrict bodily activities by certain rules and regulations, and these rules and regulations are known as codes of morality.</p>
+<p>The Bible, for instance, has ten commandments intended to regulate our lives.</p>
+<p>The body must be controlled in order for us to reach the highest perfection, and without regulated principles, it is not possible to perfect our lives.</p>
+<p>The regulative principles may differ from country to country or from scripture to scripture, but that doesn’t matter, for they are made according to the time and circumstances and mentality of the people.</p>
+<p>But the principle of regulated control is the same.</p>
+<p>Similarly, the government sets down certain regulations to be obeyed by its citizens.</p>
+<p>There is no possibility of making advancement in government or civilization without some regulations.</p>
+<p>In the verse above, Śrī Kṛṣṇa tells Arjuna that the regulative principles of the Vedas are meant to control the three modes of material nature—goodness, passion and ignorance (traiguṇya-viṣayā vedā).</p>
+<p>However, Kṛṣṇa is advising Arjuna to establish himself in his pure constitutional position as spirit soul beyond the dualities of material nature.</p>
+<p>As we have already pointed out, these dualities—such as heat and cold, pleasure and pain—arise due to the contact of the senses with their objects.</p>
+<p>In other words, they are born of identification with the body.</p>
+<p>Kṛṣṇa indicates that those who are devoted to enjoyment and power are carried away by the words of the Vedas which promise pain or heavenly enjoyment by sacrifice and regulated activity.</p>
+<p>Enjoyment is our birthright, for it is the characteristic of the spirit soul, but the spirit soul tries to enjoy materially, and this is the mistake.</p>
+<p>Everyone is turning to material subjects for enjoyment and is compiling as much knowledge as possible.</p>
+<p>Someone is becoming a chemist, physicist, politician or artist or whatever.</p>
+<p>Everyone knows something of everything and everything of something, and this is generally known as knowledge.</p>
+<p>But as soon as we leave the body, all of this knowledge is vanquished.</p>
+<p>In a previous life, one may be a great man of knowledge, but in this life he has to start again by going to school and learning how to read and write from the beginning.</p>
+<p>Whatever knowledge was acquired in the previous life is forgotten.</p>
+<p>The situation is that we are actually seeking eternal knowledge, but this cannot be acquired by this material body.</p>
+<p>We are all seeking enjoyment through these bodies, but bodily enjoyment is not our actual enjoyment.</p>
+<p>It is artificial.</p>
+<p>We have to understand that if we want to continue in this artificial enjoyment, we will not be able to attain our position of eternal enjoyment.</p>
+<p>The body must be considered a diseased condition.</p>
+<p>A diseased man cannot enjoy himself properly; a man with jaundice, for instance, will taste sugar candy as bitter, but a healthy man can taste its sweetness.</p>
+<p>In either case, the sugar candy is the same, but according to our condition it tastes different.</p>
+<p>Unless we are cured of this diseased conception of bodily life, we cannot taste the sweetness of spiritual life.</p>
+<p>Indeed, it will taste bitter to us.</p>
+<p>At the same time, by increasing our enjoyment of material life, we are further complicating our diseased condition.</p>
+<p>A typhoid patient cannot eat solid food, and if someone gives it to him to enjoy, and he eats it, he is further complicating his malady and is endangering his life.</p>
+<p>If we really want freedom from the miseries of material existence, we must minimize our bodily demands and pleasures.</p>
+<p>Actually material enjoyment is not enjoyment at all.</p>
+<p>Real enjoyment does not cease.</p>
+<p>In the Mahābhārata there is a verse—ramante yogino ’nante—to the effect that the yogīs (yoginaḥ), those who are endeavoring to elevate themselves to the spiritual platform, are actually enjoying (ramante), but their enjoyment is ananteendless.</p>
+<p>This is because their enjoyment is in relation to the supreme enjoyer (Rāma), Śrī Kṛṣṇa.</p>
+<p>Bhagavān Śrī Kṛṣṇa is the real Enjoyer, and Bhagavad-gītā confirms this.</p>
+<p>bhoktāraṁ yajña-tapasāṁ sarva-loka-maheśvaram suhṛdaṁ sarva-bhūtānāṁ jñātvā māṁ śāntim ṛcchati “The sages, knowing Me as the ultimate enjoyer of all sacrifices and austerities, the Supreme Lord of all planets and demigods and the benefactor and well-wisher of all living entities, attain peace from the pangs of material miseries.” (Bg.5.</p>
+<ol start="29">
+<li>Bhoga means enjoyment, and our enjoyment comes from understanding our position as the enjoyed.</li>
+</ol>
+<p>The real enjoyer is the Supreme Lord, and we are enjoyed by Him.</p>
+<p>An example of this relationship can be found in the material world between the husband and the wife; the husband is the enjoyer (puruṣa), and the wife is the enjoyed (prakṛti).</p>
+<p>The word pri means woman.</p>
+<p>Puruṣa, or spirit, is the subject, and prakṛti, or nature, is the object.</p>
+<p>The enjoyment, however, is participated in both by the husband and the wife.</p>
+<p>When actual enjoyment is there, there is no distinction that the husband is enjoying more or the wife is enjoying less.</p>
+<p>Although the male is the predominator, and the female is the predominated, there is no division when it comes to enjoyment.</p>
+<p>On a larger scale, no living entity is the enjoyer.</p>
+<p>God expanded into many, and we constitute those expansions.</p>
+<p>God is one without a second, but He willed to become many in order to enjoy.</p>
+<p>We have experience that there is little or no enjoyment in sitting alone in a room talking to oneself.</p>
+<p>However, if there are five people present, our enjoyment is enhanced, and if we can discuss Kṛṣṇa before many, many people, the enjoyment is all the greater.</p>
+<p>Enjoyment means variety.</p>
+<p>God became many for His enjoyment, and thus our position is that of enjoyed.</p>
+<p>That is our constitutional position and the purpose for our creation.</p>
+<p>Both enjoyer and enjoyed have consciousness, but the consciousness of the enjoyed is subordinate to the consciousness of the enjoyer.</p>
+<p>Although Kṛṣṇa is the enjoyer and we the enjoyed, the enjoyment can be participated in equally by everyone.</p>
+<p>Our enjoyment can be perfected when we participate in the enjoyment of God.</p>
+<p>There is no possibility in our enjoying separately on the bodily platform.</p>
+<p>Material enjoyment on the gross bodily platform is discouraged throughout Bhagavad-gītā: mātrā-sparśās tu kaunteya śītoṣṇa-sukha-duḥkha-dāḥ āgamāpāyino ’nityās tāṁs titikṣasva bhārata “O son of Kuntī, the nonpermanent appearance of heat and cold, happiness and distress, and their disappearance in due course, are like the appearance and disappearance of winter and summer seasons.</p>
+<p>They arise from sense perception, O scion of Bharata, and one must learn to tolerate them without being disturbed.” (Bg.2.14) The gross material body is a result of the interaction of the modes of material nature, and it is doomed to destruction.</p>
+<p>antavanta ime dehā nityasyoktāḥ śarīriṇaḥ anāśino ’prameyasya tasmād yudhyasva bhārata “Only the material body of the indestructible, immeasurable and eternal living entity is subject to destruction; therefore, fight, O descendant of Bharata.” (Bg.2.18) Śrī Kṛṣṇa therefore encourages us to transcend the bodily conception of existence and attain to our actual spiritual life.</p>
+<p>guṇān etān atītya trīn dehī deha-samudbhavān janma-mṛtyu-jarā-duḥkhair vimukto ’mṛtam aśnute “When the embodied being is able to transcend these three modes (goodness, passion and ignorance), he can become free from birth, death, old age and their distresses and can enjoy nectar even in this life.” (Bg.14.20) To establish ourselves on the pure brahma-bhūta spiritual platform, above the three modes, we must take up the method of Kṛṣṇa consciousness.</p>
+<p>The gift of Caitanya Mahāprabhu, the chanting of the names of Kṛṣṇa-Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare, facilitates this process.</p>
+<p>This method is called bhakti-yoga or mantra-yoga, and it is employed by the highest transcendentalists.</p>
+<p>How the transcendentalists realize their identity beyond birth and death, beyond the material body, and transfer themselves from the material universe to the spiritual universes are the subjects of the following chapters.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

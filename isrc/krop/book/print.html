@@ -1,0 +1,2233 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Krsna Reservoir of Pleasure</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Krsna Reservoir of Pleasure</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;ch1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch2.html&quot;&gt;ch2&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Krsna Reservoir of Pleasure&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;!DOCTYPE HTML&gt;
+</code></pre>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+
+&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+
+&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;
+
+&amp;lt;!-- Custom theme stylesheets --&amp;gt;
+
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+
+        if (theme.startsWith('&amp;quot;') &amp;amp;&amp;amp; theme.endsWith('&amp;quot;')) {
+            localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+        }
+
+        if (sidebar.startsWith('&amp;quot;') &amp;amp;&amp;amp; sidebar.endsWith('&amp;quot;')) {
+            localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+        }
+    } catch (e) { }
+&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var theme;
+    try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+    if (theme === null || theme === undefined) { theme = default_theme; }
+    document.body.className = theme;
+    document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var html = document.querySelector('html');
+    var sidebar = 'hidden';
+    if (document.body.clientWidth &amp;gt;= 1080) {
+        try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+        sidebar = sidebar || 'visible';
+    }
+    html.classList.remove('sidebar-visible');
+    html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;
+
+&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+        &amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;
+
+&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;
+
+    &amp;lt;div class=&amp;quot;page&amp;quot;&amp;gt;
+        
+        &amp;lt;div id=&amp;quot;menu-bar&amp;quot; class=&amp;quot;menu-bar&amp;quot;&amp;gt;
+            &amp;lt;div id=&amp;quot;menu-bar-sticky-container&amp;quot;&amp;gt;
+                &amp;lt;div class=&amp;quot;left-buttons&amp;quot;&amp;gt;
+                    &amp;lt;button id=&amp;quot;sidebar-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Toggle Table of Contents&amp;quot; aria-label=&amp;quot;Toggle Table of Contents&amp;quot; aria-controls=&amp;quot;sidebar&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-bars&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    &amp;lt;button id=&amp;quot;theme-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Change theme&amp;quot; aria-label=&amp;quot;Change theme&amp;quot; aria-haspopup=&amp;quot;true&amp;quot; aria-expanded=&amp;quot;false&amp;quot; aria-controls=&amp;quot;theme-list&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-paint-brush&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    &amp;lt;ul id=&amp;quot;theme-list&amp;quot; class=&amp;quot;theme-popup&amp;quot; aria-label=&amp;quot;Themes&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;light&amp;quot;&amp;gt;Light&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;rust&amp;quot;&amp;gt;Rust (default)&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;coal&amp;quot;&amp;gt;Coal&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;navy&amp;quot;&amp;gt;Navy&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;ayu&amp;quot;&amp;gt;Ayu&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                    &amp;lt;/ul&amp;gt;
+                    
+                    &amp;lt;button id=&amp;quot;search-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Search. (Shortkey: s)&amp;quot; aria-label=&amp;quot;Toggle Searchbar&amp;quot; aria-expanded=&amp;quot;false&amp;quot; aria-keyshortcuts=&amp;quot;S&amp;quot; aria-controls=&amp;quot;searchbar&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-search&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;h1 class=&amp;quot;menu-title&amp;quot;&amp;gt;Krsna Reservoir of Pleasure&amp;lt;/h1&amp;gt;
+
+                &amp;lt;div class=&amp;quot;right-buttons&amp;quot;&amp;gt;
+                    &amp;lt;a href=&amp;quot;print.html&amp;quot; title=&amp;quot;Print this book&amp;quot; aria-label=&amp;quot;Print this book&amp;quot;&amp;gt;
+                        &amp;lt;i id=&amp;quot;print-button&amp;quot; class=&amp;quot;fa fa-print&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                    
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        
+        &amp;lt;div id=&amp;quot;search-wrapper&amp;quot; class=&amp;quot;hidden&amp;quot;&amp;gt;
+            &amp;lt;form id=&amp;quot;searchbar-outer&amp;quot; class=&amp;quot;searchbar-outer&amp;quot;&amp;gt;
+                &amp;lt;input type=&amp;quot;search&amp;quot; name=&amp;quot;search&amp;quot; id=&amp;quot;searchbar&amp;quot; name=&amp;quot;searchbar&amp;quot; placeholder=&amp;quot;Search this book ...&amp;quot; aria-controls=&amp;quot;searchresults-outer&amp;quot; aria-describedby=&amp;quot;searchresults-header&amp;quot;&amp;gt;
+            &amp;lt;/form&amp;gt;
+            &amp;lt;div id=&amp;quot;searchresults-outer&amp;quot; class=&amp;quot;searchresults-outer hidden&amp;quot;&amp;gt;
+                &amp;lt;div id=&amp;quot;searchresults-header&amp;quot; class=&amp;quot;searchresults-header&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+                &amp;lt;ul id=&amp;quot;searchresults&amp;quot;&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+
+        &amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;gt;
+        &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+            document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+            document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+            Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+            });
+        &amp;lt;/script&amp;gt;
+
+        &amp;lt;div id=&amp;quot;content&amp;quot; class=&amp;quot;content&amp;quot;&amp;gt;
+            &amp;lt;main&amp;gt;
+                &amp;lt;!DOCTYPE HTML&amp;gt;
+</code></pre>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+
+    if (sidebar.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; sidebar.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+    }
+} catch (e) { }
+</code></pre>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+    
+    &amp;amp;lt;div id=&amp;amp;quot;menu-bar&amp;amp;quot; class=&amp;amp;quot;menu-bar&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;div id=&amp;amp;quot;menu-bar-sticky-container&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;div class=&amp;amp;quot;left-buttons&amp;amp;quot;&amp;amp;gt;
+                &amp;amp;lt;button id=&amp;amp;quot;sidebar-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Toggle Table of Contents&amp;amp;quot; aria-label=&amp;amp;quot;Toggle Table of Contents&amp;amp;quot; aria-controls=&amp;amp;quot;sidebar&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-bars&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                &amp;amp;lt;button id=&amp;amp;quot;theme-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Change theme&amp;amp;quot; aria-label=&amp;amp;quot;Change theme&amp;amp;quot; aria-haspopup=&amp;amp;quot;true&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot; aria-controls=&amp;amp;quot;theme-list&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-paint-brush&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                &amp;amp;lt;ul id=&amp;amp;quot;theme-list&amp;amp;quot; class=&amp;amp;quot;theme-popup&amp;amp;quot; aria-label=&amp;amp;quot;Themes&amp;amp;quot; role=&amp;amp;quot;menu&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;light&amp;amp;quot;&amp;amp;gt;Light&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;rust&amp;amp;quot;&amp;amp;gt;Rust (default)&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;coal&amp;amp;quot;&amp;amp;gt;Coal&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;navy&amp;amp;quot;&amp;amp;gt;Navy&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;ayu&amp;amp;quot;&amp;amp;gt;Ayu&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                &amp;amp;lt;/ul&amp;amp;gt;
+                
+                &amp;amp;lt;button id=&amp;amp;quot;search-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Search. (Shortkey: s)&amp;amp;quot; aria-label=&amp;amp;quot;Toggle Searchbar&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;S&amp;amp;quot; aria-controls=&amp;amp;quot;searchbar&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-search&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                
+            &amp;amp;lt;/div&amp;amp;gt;
+
+            &amp;amp;lt;h1 class=&amp;amp;quot;menu-title&amp;amp;quot;&amp;amp;gt;Krsna Reservoir of Pleasure&amp;amp;lt;/h1&amp;amp;gt;
+
+            &amp;amp;lt;div class=&amp;amp;quot;right-buttons&amp;amp;quot;&amp;amp;gt;
+                &amp;amp;lt;a href=&amp;amp;quot;print.html&amp;amp;quot; title=&amp;amp;quot;Print this book&amp;amp;quot; aria-label=&amp;amp;quot;Print this book&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i id=&amp;amp;quot;print-button&amp;amp;quot; class=&amp;amp;quot;fa fa-print&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+                
+            &amp;amp;lt;/div&amp;amp;gt;
+        &amp;amp;lt;/div&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+
+    
+    &amp;amp;lt;div id=&amp;amp;quot;search-wrapper&amp;amp;quot; class=&amp;amp;quot;hidden&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;form id=&amp;amp;quot;searchbar-outer&amp;amp;quot; class=&amp;amp;quot;searchbar-outer&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;input type=&amp;amp;quot;search&amp;amp;quot; name=&amp;amp;quot;search&amp;amp;quot; id=&amp;amp;quot;searchbar&amp;amp;quot; name=&amp;amp;quot;searchbar&amp;amp;quot; placeholder=&amp;amp;quot;Search this book ...&amp;amp;quot; aria-controls=&amp;amp;quot;searchresults-outer&amp;amp;quot; aria-describedby=&amp;amp;quot;searchresults-header&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;/form&amp;amp;gt;
+        &amp;amp;lt;div id=&amp;amp;quot;searchresults-outer&amp;amp;quot; class=&amp;amp;quot;searchresults-outer hidden&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;div id=&amp;amp;quot;searchresults-header&amp;amp;quot; class=&amp;amp;quot;searchresults-header&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;
+            &amp;amp;lt;ul id=&amp;amp;quot;searchresults&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;/ul&amp;amp;gt;
+        &amp;amp;lt;/div&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+    
+
+    &amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;gt;
+    &amp;amp;lt;script type=&amp;amp;quot;text/javascript&amp;amp;quot;&amp;amp;gt;
+        document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+        document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+        Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+            link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+        });
+    &amp;amp;lt;/script&amp;amp;gt;
+
+    &amp;amp;lt;div id=&amp;amp;quot;content&amp;amp;quot; class=&amp;amp;quot;content&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;main&amp;amp;gt;
+            &amp;amp;lt;!DOCTYPE HTML&amp;amp;gt;
+</code></pre>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+            
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;search-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;S&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-search&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            
+        &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+        &amp;amp;amp;lt;h1 class=&amp;amp;amp;quot;menu-title&amp;amp;amp;quot;&amp;amp;amp;gt;Krsna Reservoir of Pleasure&amp;amp;amp;lt;/h1&amp;amp;amp;gt;
+
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;right-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;a href=&amp;amp;amp;quot;print.html&amp;amp;amp;quot; title=&amp;amp;amp;quot;Print this book&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Print this book&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i id=&amp;amp;amp;quot;print-button&amp;amp;amp;quot; class=&amp;amp;amp;quot;fa fa-print&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+            
+        &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/form&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+        &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+
+&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+    });
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;
+
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;main&amp;amp;amp;gt;
+        &amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+        
+    &amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+
+    &amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;Krsna Reservoir of Pleasure&amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;gt;
+
+    &amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;gt;
+        
+    &amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+
+&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Krsna Reservoir of Pleasure&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;
+
+&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+    
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Krsna Reservoir of Pleasure&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Krsna Reservoir of Pleasure</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch1.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Krsna Reservoir of Pleasure&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;h1&amp;amp;amp;gt;&amp;amp;amp;lt;a class=&amp;amp;amp;quot;header&amp;amp;amp;quot; href=&amp;amp;amp;quot;#home&amp;amp;amp;quot; id=&amp;amp;amp;quot;home&amp;amp;amp;quot;&amp;amp;amp;gt;Home&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/h1&amp;amp;amp;gt;</p>
+<pre><code>&amp;amp;amp;amp;lt;/main&amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;lt;nav class=&amp;amp;amp;amp;quot;nav-wrapper&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Page navigation&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;lt;!-- Mobile navigation buttons --&amp;amp;amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;amp;amp;lt;a rel=&amp;amp;amp;amp;amp;quot;next&amp;amp;amp;amp;amp;quot; href=&amp;amp;amp;amp;amp;quot;ch1.html&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;mobile-nav-chapters next&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Next chapter&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Next chapter&amp;amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;amp;quot;Right&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;div style=&amp;amp;amp;amp;amp;quot;clear: both&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/nav&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;ch1.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+            
+
+            &amp;amp;lt;div style=&amp;amp;quot;clear: both&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;
+        &amp;amp;lt;/nav&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+&amp;amp;lt;/div&amp;amp;gt;
+
+&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+    
+
+    
+        &amp;amp;lt;a href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+        &amp;amp;lt;/a&amp;amp;gt;
+    
+&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+                
+
+                
+                    &amp;lt;a rel=&amp;quot;next&amp;quot; href=&amp;quot;index.html&amp;quot; class=&amp;quot;mobile-nav-chapters next&amp;quot; title=&amp;quot;Next chapter&amp;quot; aria-label=&amp;quot;Next chapter&amp;quot; aria-keyshortcuts=&amp;quot;Right&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-angle-right&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                
+
+                &amp;lt;div style=&amp;quot;clear: both&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+            &amp;lt;/nav&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;nav class=&amp;quot;nav-wide-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+        
+
+        
+            &amp;lt;a href=&amp;quot;index.html&amp;quot; class=&amp;quot;nav-chapters next&amp;quot; title=&amp;quot;Next chapter&amp;quot; aria-label=&amp;quot;Next chapter&amp;quot; aria-keyshortcuts=&amp;quot;Right&amp;quot;&amp;gt;
+                &amp;lt;i class=&amp;quot;fa fa-angle-right&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+            &amp;lt;/a&amp;gt;
+        
+    &amp;lt;/nav&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+
+
+
+
+&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+
+&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;index.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+
+            
+                &lt;a href=&quot;index.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+<h1><a class="header" href="#krsna-the-reservoir-of-pleasure" id="krsna-the-reservoir-of-pleasure">KRSNA THE RESERVOIR OF PLEASURE</a></h1>
+<p>Krsna— this sound is transcendental.</p>
+<p>Krsna means the highest pleasure.</p>
+<p>All of us, every living being, seeks pleasure.</p>
+<p>But we do not know how to seek pleasure perfectly.</p>
+<p>With a materialistic concept of life, we are frustrated at every step in satisfying our pleasure because we have no information regarding the real level on which to have real pleasure.</p>
+<p>For the last few weeks we have been learning that we are not this body; we are consciousness.</p>
+<p>Not exactly consciousness, for consciousness is actually the symptom of our real identity: we are pure soul, now merged within this material body.</p>
+<p>Modern material science lays no stress on this; therefore the scientists are sometimes misled in their understanding of spirit soul.</p>
+<p>But spirit soul is a fact, which anyone can understand by the presence of consciousness.</p>
+<p>Any child can understand that consciousness is the symptom of the spirit soul.</p>
+<p>Now the whole process we are trying to learn from the Bhagavad-gita (The Song of God) is how to bring ourselves to this level of consciousness.</p>
+<p>And if we act from the level of consciousness, then we may not be pushed again into the level of this bodily conception; and, if we can continue on that level, if we can continue to act in pure consciousness, then, at the end of this body we shall be free from material contamination, our spiritual life will be revived, and the ultimate result will be that in our next life, after leaving this body, we shall have our full, eternal spiritual life.</p>
+<p>Spirit, as we have already discussed, is described as eternal.</p>
+<p>Even after the destruction of this body, consciousness is not destroyed.</p>
+<p>Rather, consciousness is transferred to another type of body and again makes us aware of the material conception of life.</p>
+<p>That is also described in the Bhagavad-gita.</p>
+<p>At the time of death, if our consciousness is pure, we can be sure that our next life will not be material—our next life will be spiritual.</p>
+<p>If our consciousness is not pure at the point of death, then, after leaving this body, we shall have to take another material body.</p>
+<p>That is the process which is going on.</p>
+<p>That is Nature’s law.</p>
+<p>We have now a final body.</p>
+<p>The body which we see is the gross body.</p>
+<p>It is just like a shirt and coat: within the coat there is a shirt, and within the shirt there is a body.</p>
+<p>Similarly, the pure soul is covered by a shirt and coat.</p>
+<p>The garments are the mind, intelligence and false ego.</p>
+<p>False ego means the misconception that I am matter, that I am a product of this material world.</p>
+<p>This misconception makes me localized.</p>
+<p>For example, because I have taken my birth in India, I think myself Indian.</p>
+<p>Because I have taken my birth in America, I think myself American.</p>
+<p>But as pure soul, I am neither Indian nor American.</p>
+<p>I am pure soul.</p>
+<p>These others are designations.</p>
+<p>American, or Indian, or German, or Englishman; cat or dog, or bee or bat, man or wife: all these are designations.</p>
+<p>In spiritual consciousness we become free from all such designations.</p>
+<p>That freedom is achieved when we are constantly in touch with the supreme spirit, Krsna.</p>
+<p>The International Society for Krishna Consciousness is simply intended to keep us in constant touch with Krsna.</p>
+<p>Krsna can be in constant companionship with us because He is omnipotent.</p>
+<p>Therefore, He can be fully in touch with us by His words.</p>
+<p>His words and He are not different.</p>
+<p>That is omnipotence.</p>
+<p>Omnipotence means that everything relating to Him has the same potency.</p>
+<p>For example, here in this material world, if we are thirsty and we want water, simply repeating “Water, water, water, water,” will not satisfy our thirst, because this word has not the same potency as water itself.</p>
+<p>We require the water in substance.</p>
+<p>Then our thirst will be satisfied.</p>
+<p>But in the transcendental, absolute world, there is no such difference— Krsna’s name, Krsna’s quality, Krsna’s word—everything is Krsna and provides the same satisfaction.</p>
+<p>Some people argue that Arjuna was talking with Krsna because Krsna was present before him, whereas in my case, Krsna is not present.</p>
+<p>So how can I get directions? But that is not a fact.</p>
+<p>Krsna is present by His words—the Bhagavad-gita.</p>
+<p>In India, when we speak on the Bhagavad-gita or Srimad-Bhagavatam, we regularly perform worship with flowers, or with other paraphernalia, as is required for worshiping.</p>
+<p>In the Sikh religion also, although they have no form of the Deity, they worship the book Granthasahib.</p>
+<p>Perhaps some of you are acquainted with this Sikh community.</p>
+<p>They worship this Grantha.</p>
+<p>Similarly, the Moslems worship the Koran.</p>
+<p>Similarly, in the Christian world, the Bible is worshiped.</p>
+<p>It is a fact that the Lord Jesus Christ is present by His words.</p>
+<p>Krsna is also present by His words.</p>
+<p>These personalities, either God or the son of God, who come from the transcendental world, keep their transcendental identities without being contaminated by the material world.</p>
+<p>That is their omnipotence.</p>
+<p>We are in the habit of saying that God is omnipotent.</p>
+<p>Omnipotence means that He is not different from His name, from His quality, from His pastimes, from His instruction.</p>
+<p>Therefore, the discussion of Bhagavad-gita is as good as discussion with Krsna Himself.</p>
+<p>Krsna is seated in your heart, and in my heart too.</p>
+<p>Isvarah sarva-bhutanam hrddese’rjuna tisthati.</p>
+<p>God is situated in everyone’s heart.</p>
+<p>God is not away from us.</p>
+<p>He is present.</p>
+<p>He is so friendly that He remains with us in our repeated change of births.</p>
+<p>He is waiting to see when we shall turn to Him.</p>
+<p>He is so kind that though we may forget Him, He never forgets us.</p>
+<p>Although a son may forget his father, a father never forgets his son.</p>
+<p>Similarly, God, the original father of everything, everybody, all living entities, will never forsake us.</p>
+<p>We may have different bodies, but they are our shirt-coats.</p>
+<p>That has nothing to do with our real identity.</p>
+<p>Our real identity is pure soul, and that pure soul is part and parcel of the Supreme Lord.</p>
+<p>There are 8,400,000 species of life.</p>
+<p>Even the biologist and the anthropologist cannot calculate this accurately, but from authoritative, revealed scripture we get this information.</p>
+<p>Human beings represent 400,000 species, and there are 8,000,000 other species.</p>
+<p>But Krsna, the Supreme Lord, claims that all of them, whether beast, man, snake, god, semi-god, demigod—anything whatever—all of them are, in reality, His sons.</p>
+<p>The father gives the seed, and the mother receives the seed.</p>
+<p>The body is then formed, according to the mother’s body.</p>
+<p>And when the body is completely formed, it comes out—either from cats, from dogs, or from man.</p>
+<p>That is the process of generation.</p>
+<p>The father gives the seed, and it is emulsified with two kinds of secretion in the womb of the mother, and on the first night the body is formed just like a pea.</p>
+<p>Then, gradually, it develops.</p>
+<p>There are nine holes that develop: two ears, two eyes, nostrils, a mouth, a navel, a penis, and an anus.</p>
+<p>According to his last karma, or action, one gets this body to enjoy, or to suffer.</p>
+<p>That is the process of birth and death.</p>
+<p>And after finishing this life, again one dies, and again one enters into the womb of some mother.</p>
+<p>Another type of body then comes out.</p>
+<p>This is the process of reincarnation.</p>
+<p>We should be very diligent as to how we can discontinue this process of repeated birth and death and change of body.</p>
+<p>That is the prerogative of the human form of life.</p>
+<p>We can stop this process of repeated change through birth and death.</p>
+<p>We can get our actual spiritual form again and be blissful, full of knowledge and eternal life.</p>
+<p>That is the purpose of evolution.</p>
+<p>We should not miss this.</p>
+<p>The entire process of liberation begins just as we have now begun this chanting and hearing.</p>
+<p>I wish to point out that this chanting of the holy name of God (HARE KRSNA, HARE KRSNA, KRSNA KRSNA, HARE HARE/ HARE RAMA, HARE RAMA, RAMA RAMA, HARE HARE) and hearing the truths of the Gita is as good as bodily association with Krsna.</p>
+<p>That is stated in the Gita.</p>
+<p>This process is called kirtan.</p>
+<p>Even if one does not understand the language, still, just by hearing, he acquires some piety.</p>
+<p>His assets lead him to a pious life, even if he does not understand—it has such power.</p>
+<p>There are two topics concerning Krsna.</p>
+<p>Two kinds of topics, actually.</p>
+<p>One topic is this Bhagavad-gita.</p>
+<p>It is spoken by Krsna.</p>
+<p>And the other topic concerning Krsna is Srimad-Bhagavatam.</p>
+<p>That is spoken about Krsna.</p>
+<p>So there are two types of Krsna katha (topics), and both of them are equally potent because they are connected with Krsna.</p>
+<p>Because the Bhagavad-gita is spoken on the Battlefield of Kuruksetra some people have asked what we have to do with the battlefield.</p>
+<p>We have nothing to do with any battlefield.</p>
+<p>We are after knowledge of the spiritual sphere.</p>
+<p>Then, why should we bother about this battlefield? Because Krsna is on the battlefield, and therefore the whole battlefield has become Krsna-ized.</p>
+<p>Just as when an electric current is passed into some metal, the whole metal becomes surcharged with electricity; so too, when Krsna is interested in some matter, that matter becomes Krsna-ized.</p>
+<p>Otherwise, there would be no need of discussing the Battlefield of Kuruksetra.</p>
+<p>That is His omnipotence.</p>
+<p>This omnipotence is also described in Srimad-Bhagavatam.</p>
+<p>There are many Krsna kathas.</p>
+<p>The Vedic literature is full of them.</p>
+<p>Vedas mean that they are Krsna kathas.</p>
+<p>Scripture, including the Vedas, may appear to be different, but they are all meant for Krsna katha.</p>
+<p>If we simply hear these topics on Krsna, then what will be the result? It is pure transcendental vibration, and the result will be spiritual consciousness.</p>
+<p>We have accumulated many inauspicious things within our hearts due to our material contamination during the course of many, many births.</p>
+<p>Many, many births —not only this birth, but past births as well.</p>
+<p>So, when we search into our hearts with the Krsna katha, then the contamination we have accumulated will be washed off.</p>
+<p>Our hearts will be cleansed of all rubbish.</p>
+<p>And, as soon as all the rubbish is cleared off, then we are situated in pure consciousness.</p>
+<p>It is very difficult to eradicate all the false designations from oneself.</p>
+<p>For example, I am Indian.</p>
+<p>It is not very easy to immediately think that I am not Indian, but pure soul.</p>
+<p>Similarly, it is not a very easy task for anyone to end his identification with these bodily designations.</p>
+<p>But still, if we continue hearing the Krsna katha, it will be very easy.</p>
+<p>Make an experiment.</p>
+<p>Make an experiment to see how easily you’ll be able to free yourself from all these designations.</p>
+<p>Of course, it is not possible to clear out the rubbish from the mind all of a sudden, but we are immediately aware that the influence of the material nature has become slackened.</p>
+<p>The material nature is working in three modes—goodness, passion, and ignorance.</p>
+<p>Ignorance is hopeless life.</p>
+<p>Passion is materialistic.</p>
+<p>One who is influenced by the modes of passion wants this false enjoyment of material existence.</p>
+<p>Because he does not know the truth, he wants to squeeze out the energy of the body just to enjoy this matter.</p>
+<p>That is called the mode of passion.</p>
+<p>As for those in the mode of ignorance, they have neither passion nor goodness.</p>
+<p>They are in the deepest darkness of life.</p>
+<p>Situated in the mode of goodness, we can understand, at least theoretically, what I am, what this world is, what God is, and what our interrelationship is.</p>
+<p>This is the mode of goodness.</p>
+<p>By hearing Krsna katha, we will be freed from the stages of ignorance and passion.</p>
+<p>We will be situated in the mode of goodness.</p>
+<p>At least we’ll have the real knowledge —knowledge of what we are.</p>
+<p>Ignorance is like the animal existence.</p>
+<p>The animal’s life is full of suffering, but the animal does not know that he is suffering.</p>
+<p>Take the case of a hog.</p>
+<p>Of course, here in New York City no hog is seen.</p>
+<p>But in villages in India one sees the hog.</p>
+<p>Oh, how miserable his life is, living in a filthy place, eating stools and always unclean.</p>
+<p>Yet the hog is very happy by eating stools, and having constant sexual intercourse with the she-hog and just getting fat.</p>
+<p>The hog gets very fat, because of the spirit of enjoyment which is there—although, for him, it is sensual enjoyment.</p>
+<p>We should not be like the hog, falsely thinking that we are very happy.</p>
+<p>Working hard all day and night, then having some sex life—we think that in this way we are very happy.</p>
+<p>But this is not happiness.</p>
+<p>This has been described in the Bhagavatam as a hog’s happiness.</p>
+<p>Man's happiness is when he is situated in the mode of goodness.</p>
+<p>Then he can understand what true happiness is.</p>
+<p>In our daily routine, if we hear this Krsna katha, the result will be that all the dirty things in the heart, accumulated life after life, will be cleared out.</p>
+<p>As a matter of fact, we will see that we are no longer in ignorance or in passion, but are situated in the mode of goodness.</p>
+<p>What is that position? We will find ourselves joyful in every circumstance of life.</p>
+<p>We will never feel morose.</p>
+<p>In the Bhagavad-gita we find that this is our brahma-bhuta (highest stage of goodness) situation.</p>
+<p>The Vedas teach us that we are not this matter.</p>
+<p>We are Brahman.</p>
+<p>Aham brahmasmi.</p>
+<p>Lord Sankaracarya preached this gospel to the world.</p>
+<p>We are not this matter; we are Brahman, spirit.</p>
+<p>When spiritual realization is actually accomplished, then our symptoms will change.</p>
+<p>What are those symptoms? When one is situated in his own spiritual consciousness, then he will have no hankering and no lamentation.</p>
+<p>Lamentation is for loss, and hankering is for gain.</p>
+<p>Two diseases characterize this material world: What we do not possess, we hanker after.</p>
+<p>“If I get these things I’ll be happy.</p>
+<p>I have no money, but if I get a million dollars, then I’ll be happy.” And when we have a million dollars, somehow it will be lost.</p>
+<p>So we’ll cry, “Oh, I have lost it!” When we hanker for earning, that is a kind of distress.</p>
+<p>And when we suffer loss, that is also distress.</p>
+<p>But if we are situated in brahma-bhuta, we will neither be distressed nor will we hanker.</p>
+<p>We will view equally everyone and everything.</p>
+<p>Even if we are situated in the midst of fiery turbulence, we will not be disturbed.</p>
+<p>That is the mode of goodness.</p>
+<p>Bhagavatam means the science of God.</p>
+<p>If the science of God is perservered in, we will be situated in the brahma-bhuta status.</p>
+<p>From that brahma-bhuta status, we have to work, for work is recommended here.</p>
+<p>So long as we have this material body, we have to work.</p>
+<p>We cannot stop working; it is not possible.</p>
+<p>But we have to adopt the tactics of yoga, and in this way, even by doing some ordinary work, which, by destiny or circumstances we are put into, there is no harm.</p>
+<p>Suppose that, in one’s own occupation, one must speak a lie or his business can’t go on.</p>
+<p>Lying is not a very good thing, so one concludes that the business is not based on very moral principles and one should therefore give it up.</p>
+<p>In the Bhagavad-gita, however, we find instruction not to give it up.</p>
+<p>Even if we are put in such circumstances that our livelihood cannot go on without some unfair practice, we should not give it up.</p>
+<p>But we should try to make it purified.</p>
+<p>How is it purified? We should not take the fruitive result of our work.</p>
+<p>That is meant for God.</p>
+<p>Sukrta means pious activities.</p>
+<p>And duskrta means impious activities.</p>
+<p>On the material level we can be pious or impious.</p>
+<p>Either we are performing some pious activities, or we are performing some impious activities—or we have a mixture, pious and impious.</p>
+<p>Lord Krsna advises that we should act with knowledge of, or devotion to the Supreme.</p>
+<p>What does that knowledge mean? It means that I am the part and parcel of the supreme consciousness, or that I am not this body.</p>
+<p>If I identify myself as an American, as an Indian, or this or that, then I am on the material plane.</p>
+<p>We should identify ourselves as neither Americans nor Indians, but as pure consciousness.</p>
+<p>I am a subordinate consciousness of the supreme consciousness; in other words, I am the servant of God.</p>
+<p>God is the supreme consciousness, and I am His servant.</p>
+<p>So, for our present understanding, subordinate means servant.</p>
+<p>We don’t ordinarily carry out the work of a servant in relationship to God.</p>
+<p>Nobody wants to be a servant, but everyone wants to be the master, because to become a servant is not a very palatable thing.</p>
+<p>But to become the servant of God is not exactly like this.</p>
+<p>Sometimes the servant of God becomes the master of God.</p>
+<p>The real position of the living entity is to be the servant of God, but in the Bhagavad-gita we can see that the master, Krsna, became the servant of Arjuna.</p>
+<p>Arjuna is sitting in the chariot, and Krsna is his driver.</p>
+<p>Arjuna is not the owner of the chariot, but in the spiritual relationship we should not cling to the concept of the material relationship.</p>
+<p>Although the whole relationship, just as we have experience of it in this world, is there in the spiritual world, that relationship is not contaminated by matter.</p>
+<p>Therefore it is pure and transcendental.</p>
+<p>It is of a different nature.</p>
+<p>As we become advanced in the spiritual conception of life, we can understand what the actual position in the spiritual, transcendental world is.</p>
+<p>Here the Lord instructs us in buddhi-yoga.</p>
+<p>Buddhi-yoga means that we have full consciousness that we are not this body; and if I act with this understanding, then I am not body—I am consciousness.</p>
+<p>That is a fact.</p>
+<p>Now, if we act on the level of consciousness, then we can overcome the fruitive result of good work or bad work.</p>
+<p>It is a transcendental stage.</p>
+<p>It means that we are acting on another’s account—on the Supreme’s account.</p>
+<p>We are not liable to loss or gain.</p>
+<p>When there is gain, we should not be puffed up.</p>
+<p>We should think, “This gain is for the Lord.” And when there is loss, we should know that this is not our responsibility.</p>
+<p>It is God’s work—His.</p>
+<p>Then we will be happy.</p>
+<p>This we have to practice: everything on account of the Supreme.</p>
+<p>This transcendental nature we have to develop.</p>
+<p>This is the trick of doing work under these present circumstances.</p>
+<p>As soon as we work on the level of bodily consciousness, we become bound by the reaction of our work.</p>
+<p>But when we work through spiritual consciousness, we are not bound either by pious activities or by vicious activities.</p>
+<p>That is the technique.</p>
+<p>Manisinah—this word is very significant.</p>
+<p>Manisin means thoughtful.</p>
+<p>Unless one is thoughtful, he cannot understand that he is not this body.</p>
+<p>But if one is a little thoughtful he can understand, “Oh, I am not this body.</p>
+<p>I am consciousness.” Sometimes, in our leisure time, we can see, “Oh, this is my finger, and this is my hand.</p>
+<p>This is my ear, and this is my nose.</p>
+<p>Everything is mine, but what I, what I?” I am feeling this is mine, and that I am.</p>
+<p>Simply a little thought is required.</p>
+<p>Everything is mine—my eyes, my finger, my hand.</p>
+<p>My, my, my, and what is the I? The I is that consciousness, in which I am thinking, “This is mine.” Now, if I am not this body, then why should I act for this body? I should act for myself.</p>
+<p>Then, how can I work for myself? What is my position? I am consciousness.</p>
+<p>But what kind of consciousness? Subordinate consciousness—I am part of the supreme consciousness.</p>
+<p>Then, what will my activities be? My activities will be under the guidance of the supreme consciousness, just as in the office, the managing director is the supreme consciousness.</p>
+<p>For example, in the office everyone is working under the direction of the manager; therefore they have no responsibility.</p>
+<p>They have only to discharge their duties.</p>
+<p>Either pious or impious duties—never mind.</p>
+<p>In the military line, too, the order of the captain or the commander is there.</p>
+<p>The soldier has to execute it.</p>
+<p>He does not consider whether it is pious or impious.</p>
+<p>That does not matter.</p>
+<p>He simply has to act, then he is a real soldier.</p>
+<p>He acts in that way and he gets his reward.</p>
+<p>He gets title and honor.</p>
+<p>He doesn’t care.</p>
+<p>The commander says, Just go and kill the enemy, and he is rewarded.</p>
+<p>Do you think that by killing one gets reward? No—it is for the duty discharged.</p>
+<p>Similarly, here the situation is that Krsna is instructing Arjuna.</p>
+<p>Krsna is the supreme consciousness.</p>
+<p>I am consciousness, the part and parcel of the supreme consciousness.</p>
+<p>So my duty is to act according to that supreme consciousness.</p>
+<p>For example, I consider my hand as a part of my body.</p>
+<p>Now, it is moving in its own way.</p>
+<p>“As I want, let my hand be moved.</p>
+<p>Let my legs be moved.</p>
+<p>Let my eyes be opened and see.” So, I am dictating, and these parts are working.</p>
+<p>Similarly, we are all parts and parcels of the Supreme.</p>
+<p>When we train ourselves to move and act in accordance with supreme consciousness, then we become transcendental to all these pious or impious activities.</p>
+<p>That is the technique.</p>
+<p>What will the result of this technique be? We become free from the bondage of birth and death.</p>
+<p>No more birth and death.</p>
+<p>Modern scientists and philosophers do not think about these four things: birth, death, disease, and old age.</p>
+<p>They set them aside.</p>
+<p>“Oh, let us be happy.</p>
+<p>Let us enjoy this life.” But human life is meant for finding a solution to this bondage of birth, death, disease and old age.</p>
+<p>If any civilization has not found a solution to these four problems, then that is not a human civilization.</p>
+<p>Human civilization is meant for finding a complete solution to these things.</p>
+<p>So herein the Bhagavad-gita, the Lord says, Karmajam buddhi-yuktah.</p>
+<p>Karmajam means whenever there is action there will be some reaction.</p>
+<p>If one acts in badness, there will be a bad reaction.</p>
+<p>But reaction, either good or bad, is, in the higher sense, all suffering.</p>
+<p>Suppose that by good action I get a good birth, fine bodily features, and a good education.</p>
+<p>All these good things I may have, but that does not mean that I am free from material pains.</p>
+<p>The material pains are birth, death, old age and disease.</p>
+<p>Even if I am a rich man, a beautiful man, an educated man, born in an aristocratic family, etc., I still cannot avoid death, old age, and disease.</p>
+<p>So, we must not be concerned with pious activities or impious activities.</p>
+<p>We must be concerned with transcendental activities only.</p>
+<p>That will save us from this bondage of birth, death, old age and disease.</p>
+<p>That should be our aim in life.</p>
+<p>We should not be hankering after good or bad things.</p>
+<p>For example, suppose one is suffering from some disease.</p>
+<p>He is lying in bed, eating, passing nature’s call uncomfortably, and taking bitter medicines.</p>
+<p>He always has to be kept clean by the nurses; otherwise there is an obnoxious smell.</p>
+<p>While he is lying in this condition some friends come to him and ask how he is feeling.</p>
+<p>“Yes, I am feeling well.” What is this well? Lying in bed uncomfortably taking bitter medicine, and unable to move! Yet despite all these inconveniences he says, “I am well.” Similarly, in our material conception of life, if we think,”! am happy,” that is foolishness.</p>
+<p>There is no happiness in material life.</p>
+<p>It is impossible to have happiness here.</p>
+<p>In this condition, we do not know the meaning of happiness.</p>
+<p>That's why this very word is used, manisinah—thoughtful.</p>
+<p>We seek happiness by some extraneous, artificial means, but how long does it last? It will not endure.</p>
+<p>We again come back to sorrow.</p>
+<p>Suppose, by intoxication, we feel happy.</p>
+<p>That is not our actual happiness.</p>
+<p>Suppose I am made unconscious by chloroform, and I don't feel the pain of an operation.</p>
+<p>That does not mean that I am not having an operation.</p>
+<p>This is artificial.</p>
+<p>Real pleasure, real life exists.</p>
+<p>As is commanded in the Bhagavad-gita by Sri Krsna, the thoughtful give up the reaction of work, being situated on the level of pure consciousness.</p>
+<p>The result is that this bondage of birth and death, disease and old age comes to an end.</p>
+<p>This end is in union with the true identity, Krsna, the reservoir of pleasure and eternal bliss.</p>
+<p>There, indeed, is the true happiness for which we are intended.</p>
+<h1><a class="header" href="#who-is-crazy" id="who-is-crazy">WHO IS CRAZY?</a></h1>
+<p>Lord Sri Krsna says, “My dear Arjuna, there are different classes of men.</p>
+<p>One class of men, they are sleeping.</p>
+<p>And another class of men, they are awake.</p>
+<p>They are not sleeping.” And how is this so? This chanting, which we have performed just now, is the wakening process for the sleeping soul.</p>
+<p>The soul is sleeping, covered by this material body.</p>
+<p>These bodily activities are in the sleeping stage.</p>
+<p>Just as we see dreams in the sleeping stage, similarly, all these bodily activities are dreams.</p>
+<p>Just think for yourself: how many incidents have there been in your past life? If you think of them, they will appear just like dreams.</p>
+<p>At least for myself this is the case.</p>
+<p>I was born in India, educated, then married, then I had very good days with my wife, got some children, some of whom died, some of whom are living, some of whom are married; now they have begotten children.</p>
+<p>All this occurred in my past life.</p>
+<p>Now it is all a dream.</p>
+<p>I have no connection with it.</p>
+<p>Similarly, in dreams I sometimes find that I have become a king.</p>
+<p>Oh, there are so many riches and so much opulence.</p>
+<p>Then, as soon as the dream is over, I come home and all is gone.</p>
+<p>So actually, these bodily activities which we are now engaged in are not our actual life.</p>
+<p>Therefore, the Vedic mantra says, “O human race, please wake up.</p>
+<p>Just utilize the opportunity which you now have.” You have a special opportunity.</p>
+<p>And what is that? This human form of life.</p>
+<p>Utilize it; don’t waste it.</p>
+<p>Don’t go on sleeping.</p>
+<p>This very same matter is taken up by Sri Krsna.</p>
+<p>Those who are accustomed to the yoga process know this.</p>
+<p>The first principle of the yoga process is to control the senses.</p>
+<p>This is so for every process.</p>
+<p>In any bona fide process for spiritual realization, the first principle is to control the senses.</p>
+<p>This is because the senses are dragging us into the darkest region of life.</p>
+<p>But we do not realize this.</p>
+<p>In the Srimad-Bhagavatam there is a nice verse.</p>
+<p>It says, first, man is too much addicted to this materialistic way of life.</p>
+<p>The materialistic way of life involves eating, drinking, making merry, and enjoying.</p>
+<p>That’s it—that’s all.</p>
+<p>Have very good food, sleep well, and defend yourself so that enemies may not enter into your country, or into your home.</p>
+<p>And, have sexual enjoyment to your heart's content.</p>
+<p>This is the materialistic way of life.</p>
+<p>But persons who are so sleeping do not realize that their real self-interest is different.</p>
+<p>Our real self-interest is that we must know of our lost relationship with the Supreme Absolute Truth.</p>
+<p>The Supreme Absolute Truth is realized from different angles of vision, as impersonal Brahman, or localized Supersoul, or the Supreme Personality of Godhead, Sri Krsna.</p>
+<p>One who realizes the Supreme Personality of Godhead, Sri Krsna, automatically understands the other two features.</p>
+<p>But one who has approached only the impersonal feature of the Supreme Absolute Truth has no information of the Supreme Personality of Godhead, Sri Krsna.</p>
+<p>Now here, in the Bhagavad-gita, the Supreme Personality of Godhead is present before you.</p>
+<p>Here is the picture of Sri Krsna, with his eternal consort Srimati Radharani, His pleasure potency.</p>
+<p>In this material world, the reflection of Sri Krsna and His pleasure potency exists pervertedly.</p>
+<p>As one can see in the picture, Sri Krsna is always consorting with Srimati Radharani.</p>
+<p>His features are described in Vedic literature: He stands in a very nice curved posture, blowing His flute.</p>
+<p>This picture is not drawn from artistic imagination.</p>
+<p>It is a descriptive painting from the Vedic literature.</p>
+<p>This description is in the Vedic literature.</p>
+<p>So, in the material world there is the perverted reflection of Sri Krsna’s pastime with Radharani.</p>
+<p>It is not sex life as we have it, although it appears to be like that.</p>
+<p>It is transcendental.</p>
+<p>But that which we are after here—that is real.</p>
+<p>A young man wants a young woman, and a young woman wants a young man—this is natural.</p>
+<p>This is not artificial.</p>
+<p>It is natural because we are all part and parcel of that Supreme Being, Krsna.</p>
+<p>His attitude is in me because I am His part and parcel, just as the quality of gold is present in the minute particles of gold.</p>
+<p>The chemical composition of gold is one hundred per cent present in a small particle of gold.</p>
+<p>Qualitatively.</p>
+<p>Therefore the enjoyment which we want between man and woman is not a perversion of love and friendship.</p>
+<p>It is simply a perverted reflection.</p>
+<p>The real enjoyment is awakened in association with the Supreme Lord, Sri Krsna.</p>
+<p>It is the same pleasure, but is in its pure form.</p>
+<p>That same bliss is there for you, but don’t become entangled in this perverted form of enjoyment.</p>
+<p>Don't remain asleep.</p>
+<p>Don’t remain in this dreaming condition.</p>
+<p>Have the real thing.</p>
+<p>Awaken from the dream.</p>
+<p>That is the message of the Vedas.</p>
+<p>This is the opportunity.</p>
+<p>If you miss this opportunity in the human form of life— the developed consciousness—you will slip again into the cycle of 8,400,000 species of life that is developing, one form after another.</p>
+<p>That is the gradual process of evolution.</p>
+<p>We are still within the evolutionary process, but that evolutionary process should be forward, progressive.</p>
+<p>Not degraded.</p>
+<p>Don’t slide.</p>
+<p>Don’t go downward.</p>
+<p>By your many years of endeavor, you have come forward to this stage of life.</p>
+<p>Now, make further progress.</p>
+<p>Progress toward Sri Krsna.</p>
+<p>Don't go back.</p>
+<p>The Srimad-Bhagavatam says that most people do not know their self-interest in life.</p>
+<p>It is like coming to a crossroads and not knowing the way.</p>
+<p>Suppose you are going to Philadelphia, and after crossing New York City, you see a crossroads, and you do not know the road.</p>
+<p>Of course, in America, there is a very efficient system of direction on the roads.</p>
+<p>That way, you have no misguidance.</p>
+<p>Similarly, in the scriptures the Vedic literature gives you direction.</p>
+<p>Yes, here is a crossing.</p>
+<p>If you want to go this way, you may.</p>
+<p>So the Bhagavatam says that people do not know the direction by which to make progress.</p>
+<p>One must know that he must make further progress toward Visnu.</p>
+<p>Why? Because this is a very highly developed life.</p>
+<p>In this form of life, we have very high intelligence.</p>
+<p>We have more intelligence than cats and dogs and other animals.</p>
+<p>Why misdirect it? The misdirection is due to being attracted to this bodily concept of life.</p>
+<p>One is thinking, “I shall be happy utilizing the body and the senses to the utmost.” Because we do not know what our progressive life is, we are trying to squeeze the essence out of this body.</p>
+<p>To enjoy it.</p>
+<p>In the Bhagavatam there is a very good example cited about these foolish men.</p>
+<p>They are compared to the camel.</p>
+<p>The camel is a desert animal very fond of twigs containing thorns.</p>
+<p>They have very long necks, and they take a bunch of twigs with thorns and begin to chew.</p>
+<p>By contact with the thorns, blood oozes out the tongue.</p>
+<p>Naturally, if you chew thorns, your tongue will be cut.</p>
+<p>So, when they take those thorns within the mouth and begin to chew, the blood comes out.</p>
+<p>And when the blood is mixed up in that form, they eat it, because blood has a taste he likes.</p>
+<p>He thinks that twigs with thorns are very tasteful.</p>
+<p>Our sex life is like that.</p>
+<p>Just squeeze it out of the body, and we think we are enjoying it.</p>
+<p>This is our position.</p>
+<p>Another example is given.</p>
+<p>In India the washermen keep asses.</p>
+<p>They load the ass as much as possible.</p>
+<p>The ass works all day and in the evening, he is offered some grass, and he's satisfied.</p>
+<p>For a morsel of grass, he is ready to work the whole day with half ton of clothing on his back.</p>
+<p>Similarly, we also, the karmins, are very busy working all day and all night.</p>
+<p>And when we come home, we eat only one piece of bread.</p>
+<p>For one piece of bread, which costs no more than ten cents, one is working all day and all night.</p>
+<p>So the comparison is to the ass.</p>
+<p>The ass does not know for whom he is working so hard, and taking some bread.</p>
+<p>“This is the aim of my life.” Is it my aim of life—to eat something and go to sleep, and have some sex pleasure and then die? No, this is not the aim of life.</p>
+<p>Your aim of life should be to realize yourself—that you are part and parcel of the Supreme Absolute Personality of Godhead, Sri Krsna.</p>
+<p>Krsna is awaiting your arrival, so that you can enjoy life in His association.</p>
+<p>One does not know what the progressive way of life is.</p>
+<p>Why? Because he has understood that this sense enjoyment is life’s greatest pleasure.</p>
+<p>He is foolishly thinking that he will be happy by this sense enjoyment.</p>
+<p>This is just like having a horse which is not properly bridled.</p>
+<p>It is running on, running on, and you do not know where it will throw you.</p>
+<p>Similarly, uncontrolled senses are just like unbridled horses, dragging your chariot.</p>
+<p>You do not know where it will throw you.</p>
+<p>We do not realize how responsible we are for every action.</p>
+<p>To every small part of our action, there is a reaction.</p>
+<p>And our uncontrolled senses are putting us through the chain of action and reaction and dragging us into the darkest part of the universe.</p>
+<p>Therefore, Lord Sri Krsna says that one who has learned how to control the senses is called svamin.</p>
+<p>To a controlled person, worldly activities are darkness.</p>
+<p>Those who are situated in pure consciousness see that people who work hard simply for eating, sleeping, mating, and defending—these people are sleeping.</p>
+<p>And, to the persons who are engaged in these material activities, we are sleeping.</p>
+<p>They see that Swamiji has come to America to preach something to make us inactive.</p>
+<p>He is just trying to drag us from our general engagement, and he’s trying to engage us in the process of kirtan and hearing Bhagavad-gita and wasting time.</p>
+<p>So, they believe we are sleeping.</p>
+<p>Somebody may think, “These poor fellows have gathered here to waste their time in discussing something dry, which has no meaning, which is not bringing forth anything.</p>
+<p>Let us have some business discussion, so that we can gain something from it.” We see that these people are sleeping and they that we are sleeping.</p>
+<p>Now, actually, who is sleeping? He is awake who comes to the platform of consciousness that I am not this body—I am consciousness.</p>
+<p>One is awake who has understood this simple fact, that I am not this body, I am consciousness.</p>
+<p>Without consciousness, my body is useless.</p>
+<p>Therefore, I am actually consciousness.</p>
+<p>I am pure soul, and the symptom of my presence is consciousness.</p>
+<p>I am not this body.</p>
+<p>When I think deeply, I can understand that this is my body.</p>
+<p>This is not I, body.</p>
+<p>This is my body.</p>
+<p>So, one who has understood this—he is awake.</p>
+<p>Now, the whole process described in the Bhagavad-gita is to be awake.</p>
+<p>You are pure consciousness—spirit soul.</p>
+<p>And, not only to be awake, but to act accordingly, so that, at the ultimate end, your pure consciousness may be liberated from this bodily entanglement.</p>
+<p>Then you’ll get your healthy life.</p>
+<p>This is a disease, this material life.</p>
+<p>This material body is the symptom of my diseased form of life.</p>
+<p>I am not actually subject to birth and death.</p>
+<p>I am eternal.</p>
+<p>I never take my birth.</p>
+<p>I never die.</p>
+<p>This is my real position.</p>
+<p>Then, what is this birth and death? It is due to this body.</p>
+<p>Changing the body like a dress is called birth and death.</p>
+<p>But actually, I am pure soul.</p>
+<p>Now, people are saying that God is dead.</p>
+<p>This theory is popular.</p>
+<p>They are making propaganda that the Lord is dead.</p>
+<p>But neither God nor we will ever die; neither do we have birth.</p>
+<p>In Bhagavad-gita, Bhagavan, the Supreme Personality of Godhead, Sri Krsna, says, “Arjuna, why are you afraid of fighting? Myself, yourself, and all these kings and soldiers who have assembled before us—all of them—they existed before, and they're existing now, and they will continue to exist in the future.</p>
+<p>There is no birth and death.</p>
+<p>So, this warfare should be on the condition of the body.</p>
+<p>Don’t be afraid of it.” This point we have already discussed.</p>
+<p>One must understand this point: I am pure soul.</p>
+<p>My presence as pure soul is symptomatized by my consciousness.</p>
+<p>I know what has happened in my past life.</p>
+<p>And what is happening, that I can remember also.</p>
+<p>And, I can guess about my future life.</p>
+<p>At least, I make plans for my future.</p>
+<p>Unless I have my future, why should 1 plan? But, I am beyond this past, present and future.</p>
+<p>I am eternal.</p>
+<p>The Lord is eternal, and I am eternal also, as part and parcel of the Supreme God.</p>
+<p>Therefore, my self-interest is to attain that life of eternity.</p>
+<p>Life of full bliss.</p>
+<p>Life of full knowledge.</p>
+<p>That is the mission of my life.</p>
+<p>And one who takes that position seriously, who has taken up this mission of life, and is trying for that perfection, he is actually awake.</p>
+<p>And others who are not at this point, they are sleeping.</p>
+<p>This is the mark of a sleeping man.</p>
+<p>A man who is working strenuously the whole day, he is not actually awake.</p>
+<p>He is sleeping because his real intelligence is asleep.</p>
+<p>He has lost his self-interest.</p>
+<p>He does not know what the real interest of human life is.</p>
+<p>All Vedic literature is imploring us, “Don’t sleep! Don’t sleep! Be awake! Be awake! Get up! Get up from this sleep! Utilize the boon which you now have.</p>
+<p>Don’t be foolish.” People are working hard, and earning enough to eat.</p>
+<p>Especially in your country, there are sufficient means for eating, and nobody is starving.</p>
+<p>That’s all right, but they are still not satisfied.</p>
+<p>I have studied this very carefully.</p>
+<p>The younger people all appear to be frustrated.</p>
+<p>It is not a very good condition, when the young generation, which is the future hope of the country, feels that there is no hope.</p>
+<p>Their future is dark.</p>
+<p>Why? Because they have no direction.</p>
+<p>What is the aim of life? What will they become? The philosophy is, work hard, get dollars, and enjoy as you like.</p>
+<p>This is misguidance.</p>
+<p>Therefore, the young are not happy.</p>
+<p>So, they take center of something which is objectionable for satisfaction.</p>
+<p>But that cannot give total satisfaction.</p>
+<p>Now, here is an opportunity.</p>
+<p>The Bhagavad-gita can show you your actual life.</p>
+<p>Take advantage of it.</p>
+<p>Appeal especially to the younger people.</p>
+<p>Don’t be frustrated; don’t be disappointed.</p>
+<p>There is full enjoyment in your future.</p>
+<p>You are all part and parcel of the Supreme.</p>
+<p>Isvara parama Krsna, sac-cid-ananda vigraha.</p>
+<p>The Lord says, “Oh, these poor living entities.</p>
+<p>They are suffering so much.</p>
+<p>They are feeling frustrated.</p>
+<p>Oh, they are My parts and parcels.” So He comes to claim you.</p>
+<p>“My dear boys, My dear children, why are you suffering? Please hear Me.</p>
+<p>Give up all your engagements.</p>
+<p>Just hear Me.</p>
+<p>Try to follow what I say.</p>
+<p>I shall liberate you from all the reactions of sin.” You’ll find in the Bhagavad-gita that this is guaranteed.</p>
+<p>Simply surrender unto the Lord.</p>
+<p>Not only Sri Krsna, of course.</p>
+<p>Lord Jesus Christ also spoke in the same way: “Come unto me, all ye that labour and are heavy laden, and I will give you rest.</p>
+<p>Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls.</p>
+<p>For my yoke is easy, and my burden is light.” (Matthew: 11:28-30) That is the message of all persons who come from that spiritual world—from the kingdom of Godhead.</p>
+<p>That is the only message.</p>
+<p>So, actually, this Bhagavad-gita is giving you the light to a happy life.</p>
+<p>Don’t miss this opportunity.</p>
+<p>Try to hear it, to have it.</p>
+<p>Sri Caitanya Mahaprabhu has made it very easy.</p>
+<p>To fulfill the mission of our life, there are nine different processes of devotional service: hearing, chanting, remembering, worshipping, accepting, service, offering everything, friendship and praying.</p>
+<p>Out of these nine, the first two processes, which are principle and primary, are sravanam kirtanam visnu.</p>
+<p>Hear and glorify.</p>
+<p>That will cleanse your heart of the dust which has accumulated for so many lifetimes, and you will see things very clearly.</p>
+<p>Svamin and gosvamin are synonymous words meaning “a person who is in full control of the senses.” Don’t be thinking that you cannot control your senses.</p>
+<p>Everyone is able.</p>
+<p>You’ll get strength by this process.</p>
+<p>This chanting of Hare Krsna, Hare Krsna, Krsna Krsna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare will help you.</p>
+<p>Don’t be dejected by thinking that you have no strength.</p>
+<p>You’ll get strength.</p>
+<p>Continue this process.</p>
+<p>Kirtanam sravanam means chanting Hare Krsna, Hare Krsna, Krsna Krsna, Hare Hare.</p>
+<p>And, hear some passages from the Bhagavad-gita and Srimad-Bhagavatam.</p>
+<p>Utilize these two processes, and you’ll find strength for your spiritual life.</p>
+<p>One has to become situated in that position of sense control.</p>
+<p>Now, you have no doubt seen the ocean.</p>
+<p>How full it is! The ocean is so powerful that, if it rose, all New York City would be submerged under water.</p>
+<p>But it does not disturb us.</p>
+<p>It does not go beyond its limits.</p>
+<p>For example, the Narrows is the brink of the ocean.</p>
+<p>The ocean does not come on the other side of the Narrows.</p>
+<p>This is the example.</p>
+<p>When we have controlled the senses, we shall be just like the big ocean— although full with spiritual knowledge, calm and quiet without disturbing anyone, and without being disturbed.</p>
+<p>Peaceful.</p>
+<p>In Bengal there are about five hundred rivers.</p>
+<p>All these rivers flow down water, to the ocean.</p>
+<p>But still, the ocean, the Bay of Bengal, is calm and quiet.</p>
+<p>Quiet.</p>
+<p>Similarly, for those who have become as full and as big as the ocean, material desires may come, but they are not disturbed.</p>
+<p>Although so many rivers are flowing down water, you won't see an inch of water out of it, and you can pour any amount of water into it.</p>
+<p>The sea level is always the same.</p>
+<p>This example is given.</p>
+<p>Desires we must have.</p>
+<p>We cannot extinguish desires.</p>
+<p>It is foolishness to think that we can subdue desires.</p>
+<p>Desires are the symptoms of life.</p>
+<p>Let there be desires.</p>
+<p>If I have life and consciousness, then desire must also be there.</p>
+<p>Just as, when the water flows down from the rivers to the ocean, the ocean is not disturbed, so a person need not be disturbed by these desires.</p>
+<p>This is the art.</p>
+<p>This is the secret of the perfection of your life.</p>
+<p>Desires may come, but if you are fixed with a proper understanding, you convert your desires.</p>
+<p>The whole process is to dovetail your desires with the Lord's.</p>
+<p>The example is that Arjuna desires not to fight, but after hearing Bhagavad-gita, his desire changed.</p>
+<p>He said, “Yes, I shall fight!” He desired to fight.</p>
+<p>So, there was desire.</p>
+<p>The mode of desire was changed, that's all.</p>
+<p>Similarly, we cannot stop desiring.</p>
+<p>That is not possible.</p>
+<p>But we have to change the quality of the desire.</p>
+<p>That is all.</p>
+<p>It’s not very difficult: I shall do this, I shall not do this.</p>
+<p>Bhagavad-gita is meant to show us these things.</p>
+<p>Arjuna desired something before hearing Bhagavad-gita, and he desired something else after hearing Bhagavad-gita.</p>
+<p>The quality of desire changed.</p>
+<p>Similarly, by hearing the Gita you can change your desire.</p>
+<p>You don’t have to stop your desire.</p>
+<p>You simply have to purify your desires.</p>
+<p>Then you’ll not be disturbed by them.</p>
+<p>When your desires disturb you, you may know that you are not yet spiritually established.</p>
+<p>And when your desires enlighten you, enliven you, give you happiness—you may know that that desire is spiritual.</p>
+<p>Just as with Arjuna, the desire has to be changed.</p>
+<p>Let desires be.</p>
+<p>Now, you can change the desires.</p>
+<p>Desire for Krsna.</p>
+<p>Don’t desire for yourself.</p>
+<p>Desire for Krsna.</p>
+<p>How can I desire for Krsna? Take a practical example.</p>
+<p>Krsna came to this material world to call us: “My dear boys please give up all your nonsensical engagements.</p>
+<p>Become a follower of Mine, and I shall protect you.” This is Krsna’s message.</p>
+<p>Now Bhagavad-gita is present, the message of Krsna.</p>
+<p>If you desire to preach this message of the Gita to the people of the world, that means you have changed your desire.</p>
+<p>And you can thereby purify yourself.</p>
+<p>There will be sufficient activities to execute the desire.</p>
+<p>But all those activities will be purified.</p>
+<p>So, we don’t have to stop our activities, nor our desires.</p>
+<p>But we have to dovetail them with the desires of the Lord, as Arjuna did.</p>
+<p>After dovetailing his desires with Sri Krsna’s, his activities became more responsible.</p>
+<p>Just like a coward, he was refusing to fight.</p>
+<p>He was a ksatriya, a military man.</p>
+<p>His duty was to fight for a good cause.</p>
+<p>And what is a good cause? Sri Krsna instructed him to fight: “It is My plan.” What can be a better cause than this? When the Supreme Personality of Godhead says that this is My wish, what can be more important? And what can be a better purpose than one which is coming directly from the Supreme Personality of Godhead? When we dovetail with the desire of the Supreme Lord, then our responsibility becomes more imperative, and we become more active than we are otherwise.</p>
+<p>In material activity you will get tired.</p>
+<p>This is the difference between material activity and spiritual activity.</p>
+<p>When you are engaged in spiritual activities, you’ll not get tired.</p>
+<p>You will have newer and newer strength to act.</p>
+<p>Therefore, desire is not to be stopped; activities are not to be stopped.</p>
+<p>Whatever potency you have in you, that is the potency given by the Supreme Lord, because you are the part and parcel of the Supreme Lord.</p>
+<p>And if you utilize it for the purposes of the Supreme Lord, then you become dovetailed with Him, and your life becomes successful.</p>
+<p>You’ll not be disturbed by material desires, you’ll attain peace.</p>
+<p>The peace for which you are hankering in life after life, moment after moment—that you’ll get at that time when your desires are purified and dovetailed with the Lord’s.</p>
+<p>One who desires sense gratification, the enjoyment of material satisfaction, will never be happy.</p>
+<p>That is not possible.</p>
+<p>If you want peace, if you want happiness, if you want perfection in your life, then just begin to dovetail your desires, activities, and potential with the Supreme Personality of Godhead.</p>
+<p>Then you will see what real happiness is, and will be able to tell who is really crazy.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

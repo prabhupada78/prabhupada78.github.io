@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch5 - Beyond Birth and Death</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html" class="active">ch5</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Beyond Birth and Death</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#associating-with-kṛṣṇa" id="associating-with-kṛṣṇa">Associating with Kṛṣṇa</a></h1>
+<p>If one gets something superior, he naturally gives up all inferior things.</p>
+<p>We want enjoyment, but impersonalism and voidism has created such an atmosphere that we have become addicted to material enjoyment.</p>
+<p>There must be enjoyment in connection with the Supreme Person (puruṣaḥ sa paraḥ), whom we can see face to face.</p>
+<p>In the spiritual sky we are able to speak personally with God, to play, eat with Him, etc.</p>
+<p>All of this can be attained by bhaktyā—transcendental loving service.</p>
+<p>However, this service must be without adulteration, that is to say that we must love God without expecting material remuneration.</p>
+<p>Loving God to become one with Him is also a form of adulteration.</p>
+<p>One of the major differences between the spiritual sky and the material sky is that in the spiritual sky the head or leader of the spiritual planets has no rival.</p>
+<p>In all cases, the predominating personality in the spiritual planets is a plenary expansion of Śrī Kṛṣṇa.</p>
+<p>The Supreme Lord and His multifarious manifestations preside over all the Vaikuṇṭha planets.</p>
+<p>On earth, for instance, there is rivalry for the position of president or prime minister, but in the spiritual sky everyone acknowledges the Supreme Personality of Godhead to be supreme.</p>
+<p>Those who do not acknowledge Him and attempt to rival Him are placed into the material universe, which is just like a prison house.</p>
+<p>As in any city there is a prison, and the prison forms a very insignificant part of the whole city, so the material universe is a prison for the conditioned souls.</p>
+<p>It forms an insignificant part of the spiritual sky, but it is not outside the spiritual sky, just as a prison is not outside of the city.</p>
+<p>The inhabitants of the Vaikuṇṭha planets in the spiritual sky are all liberated souls.</p>
+<p>In Śrīmad-Bhāgavatam we are informed that their bodily features are exactly like God’s.</p>
+<p>On some of these planets God is manifested with two arms, and on others He has four.</p>
+<p>The inhabitants of these planets, like the Supreme Lord, also manifest two and four arms, and it is said that one cannot distinguish between them and the Supreme Person.</p>
+<p>In the spiritual world there are five kinds of liberation.</p>
+<p>Sāyujya-mukti is a form of liberation in which one merges into the impersonal existence of the Supreme Lord, called Brahman.</p>
+<p>Another form of liberation is sārupya-mukti, by which one receives features exactly like God’s.</p>
+<p>Another is sālokya-mukti, by which one can live in the same planet with God.</p>
+<p>By sārṣṭi-mukti one can have opulences similar to the Supreme Lord’s.</p>
+<p>Another type enables one to remain always with God as one of His associates, just like Arjuna, who is always with Kṛṣṇa as His friend.</p>
+<p>One can have any of these five forms of liberation, but of the five the sāyujya-mukti, merging with the impersonal aspect, is not accepted by Vaiṣṇava devotees.</p>
+<p>A Vaiṣṇava wishes to worship God as He is and retain his separate individuality to serve Him, whereas the Māyāvādī impersonal philosopher wishes to lose his individuality and merge into the existence of the Supreme.</p>
+<p>This merging is neither recommended by Śrī Kṛṣṇa in Bhagavad-gītā nor by the disciplic succession of Vaiṣṇava philosophers.</p>
+<p>Lord Caitanya Mahāprabhu wrote on this subject in His Śikṣāṣṭakam: na dhanaṁ na janaṁ na sundarīṁ kavitāṁ vā jagadīśa kāmaye mama janmani janmanīśvare bhavatādbhaktir ahaitukī tvayi “O almighty Lord! I have no desire to accumulate wealth, nor have I any desire to enjoy beautiful women, nor do I want any number of followers.</p>
+<p>What I want only is that I may have Your causeless devotional service in my life-birth after birth.”(Śikṣāṣṭakam, 4) Here Lord Caitanya Mahāprabhu refers to “birth after birth.” When there is birth after birth, there is no liberation.</p>
+<p>In liberation either one attains the spiritual planets or merges into the existence of the Supreme—in either case, there is no question of rebirth into the material world.</p>
+<p>But Caitanya Mahāprabhu doesn’t care whether He is liberated or not: His only concern is to be engaged in Kṛṣṇa consciousness, to serve the Supreme Lord.</p>
+<p>The devotee doesn’t care where he is, nor does he care whether he is born in the animal society, human society, demigod society or whatever—he only prays to God that he shall not forget Him and that he will always be able to engage in His transcendental service.</p>
+<p>These are symptoms of pure devotion.</p>
+<p>Of course a devotee, wherever he is, remains in the spiritual kingdom, even while in this material body.</p>
+<p>But he does not demand anything from God for his own personal elevation or comfort.</p>
+<p>Although Śrī Kṛṣṇa indicates that He can be easily reached by one who is devoted to Him, there is an element of risk involved for the yogīs who practice other methods of yoga.</p>
+<p>For them, He has given directions in Bhagavad-gītā regarding the proper time to leave the gross body.</p>
+<p>yatra kāle anāvṛttim āvṛttiṁ caiva yoginaḥ prayātā yānti taṁ kālaṁ vakṣyāmi bharatarṣabha “O best of the Bhāratas, I shall now explain to you the different times at which, passing away from this world, one does or does not come back.”(Bg .</p>
+<p>8.23) Here Kṛṣṇa indicates that if one is able to leave his body at a particular time, he can become liberated, never to return to the material world.</p>
+<p>On the other hand, he indicates that if one dies at another time, he has to return.</p>
+<p>There is this element of chance, but there is no question of chance for a devotee always in Kṛṣṇa consciousness, for he is guaranteed entrance into the abode of Kṛṣṇa by dint of his devotion to the Lord.</p>
+<p>agnir jyotir ahaḥ śuklaḥ ṣaṇ-māsā uttarāyaṇam tatra prayātā gacchanti brahma brahma-vido janāḥ “Those who know the Supreme Brahman pass away from the world during the influence of the fiery god, in the light, at an auspicious moment, during the fortnight of the moon and the six months when the sun travels in the north.” (Bg.8.24) The sun spends six months on the northern side of the equator and six months on the southern side.</p>
+<p>In Śrīmad-Bhāgavatam we have information that as the planets are moving, so also the sun is moving.</p>
+<p>If one dies when the sun is situated in the northern hemisphere, he attains liberation.</p>
+<p>dhūmo rātris tathā kṛṣṇaḥ ṣaṇ-māsā dakṣiṇāyanam tatra cāndramasaṁ jyotir yogī prāpya nivartate śukla-kṛṣṇe gatī hy ete jagataḥ śāśvate mate ekayā yāty anāvṛttim anyayāvartate punaḥ “The mystic who passes away from this world during the smoke, the night, the moonless fortnight, or in the six months when the sun passes to the south, or who reaches the moon planet, again comes back.</p>
+<p>According to the Vedas, there are two ways of passing from this world—one in light and one in darkness.</p>
+<p>When one passes in light, he does not come back; but when one passes in darkness, he returns.” (Bg.8.25–26) This is all by chance.</p>
+<p>We do not know when we are going to die, and we may die accidentally at any time.</p>
+<p>But for one who is a bhakti-yogī, who is established in Kṛṣṇa consciousness, there is no question of chance.</p>
+<p>He is always sure.</p>
+<p>naite sṛtī pārtha jānan yogī muhyati kaścana tasmāt sarveṣu kāleṣu yoga-yukto bhavārjuna “The devotees who know these two paths, O Arjuna, are never bewildered.</p>
+<p>Therefore, be always fixed in devotion.” (Bg.8.27) It has already been ascertained that at the time of death if one can think of Kṛṣṇa, he is immediately transferred to the abode of Kṛṣṇa.</p>
+<p>anta-kāle ca mām eva smaran muktvā kalevaram yaḥ prayāti sa mad-bhāvaṁ yāti nāsty atra saṁśayaḥ abhyāsa-yoga-yuktena cetasā nānya-gāminā paramaṁ puruṣaṁ divyaṁ yāti pārthānucintayan “And whoever, at the time of death, quits his body remembering Me alone, at once attains My nature.</p>
+<p>Of this there is no doubt.</p>
+<p>He who meditates on the Supreme Personality of Godhead, his mind constantly engaged in remembering Me, undeviated from the path, he, O Pārtha [Arjuna], is sure to reach Me.” (Bg.8.5,8.8) Such meditation on Kṛṣṇa may seem very difficult, but it is not.</p>
+<p>If one practices Kṛṣṇa consciousness by chanting the mahā-mantra Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare, he will be quickly helped.</p>
+<p>Kṛṣṇa and His name are nondifferent, and Kṛṣṇa and His transcendental abode are also nondifferent.</p>
+<p>By sound vibration we can have Kṛṣṇa associate with us.</p>
+<p>If, for instance, we chant Hare Kṛṣṇa on the street, we will see that Kṛṣṇa is going with us, just as when we look up and see the moon overhead, we perceive that it is also going with us.</p>
+<p>If Kṛṣṇa’s inferior energy may appear to go with us, is it not possible for Kṛṣṇa Himself to be with us when we are chanting His names? He will keep us company, but we have to qualify to be in His company.</p>
+<p>If, however, we are always merged in the thought of Kṛṣṇa, we should rest assured that Kṛṣṇa is always with us.</p>
+<p>Lord Caitanya Mahāprabhu prays, nāmnāmakāri bahudhā nija-sarva-śaktis tatrārpitā niyamitaḥ smaraṇe na kālaḥ etādṛśī tava kṛpā bhagavan mamāpi durdaivamīdṛśa-mihājani nānurāgaḥ “Oh my Lord! Your holy name alone can render all benediction upon the living beings, and therefore You have hundreds and millions of names, like Kṛṣṇa and Govinda.</p>
+<p>In these transcendental names You have invested all Your transcendental energies, and there is no hard and fast rule for chanting these holy names.</p>
+<p>O my Lord! You have so kindly made approach to You easy by Your holy names, but unfortunate as I am, I have no attraction for them.” (Śikṣāṣṭakam, 2) Merely by chanting we can have all the advantages of personal association with Kṛṣṇa.</p>
+<p>Lord Caitanya Mahāprabhu, who is not only considered to be a realized soul but an incarnation of Kṛṣṇa Himself, has pointed out that in this age of Kali, although men have no real facilities for self-realization, Kṛṣṇa is so kind that He has given this śabda (sound incarnation) to be utilized as the yuga-dharma or way of realization of this age.</p>
+<p>No special qualification is necessary for this method; we need not even know Sanskrit.</p>
+<p>The vibrations of Hare Kṛṣṇa are so potent that anyone can immediately begin chanting them without any knowledge of Sanskrit whatsoever.</p>
+<p>vedeṣu yajñeṣu tapaḥsu caiva dāneṣu yat puṇya-phalaṁ pradiṣṭam atyeti tat sarvam idaṁ viditvā yogī paraṁ sthānam upaiti cādyam “A person who accepts the path of devotional service is not bereft of the results derived from studying the Vedas, performing austere sacrifices, giving charity or pursuing philosophical and fruitive activities.</p>
+<p>At the end he reaches the supreme abode.” (Bg.8.28) Here Kṛṣṇa says that the purpose of all Vedic instructions is to achieve the ultimate goal of life—to go back to Godhead.</p>
+<p>All scriptures from all countries aim at this goal.</p>
+<p>This has also been the message of all religious reformers or ācāryas.</p>
+<p>In the West, for example, Lord Jesus Christ spread this same message.</p>
+<p>Similarly, Lord Buddha and Mohammad.</p>
+<p>No one advises us to make our permanent settlement here in this material world.</p>
+<p>There may be small differences according to country, time and circumstance and according to scriptural injunction, but the main principle that we are not meant for this material world but for the spiritual world is accepted by all genuine transcendentalists.</p>
+<p>All indications for the satisfaction of our soul’s innermost desires point to those worlds of Kṛṣṇa beyond birth and death.</p>
+<p>END</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

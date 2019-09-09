@@ -1,0 +1,2067 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html" class="active">Home</a></li><li class="affix"><a href="index.html">Preface</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Instruction</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;Preface&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;ch1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch2.html&quot;&gt;ch2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch3.html&quot;&gt;ch3&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch4.html&quot;&gt;ch4&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch5.html&quot;&gt;ch5&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch6.html&quot;&gt;ch6&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch7.html&quot;&gt;ch7&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch8.html&quot;&gt;ch8&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch9.html&quot;&gt;ch9&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch10.html&quot;&gt;ch10&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch11.html&quot;&gt;ch11&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Nectar of Instruction&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;!DOCTYPE HTML&gt;
+</code></pre>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+
+&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+
+&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;
+
+&amp;lt;!-- Custom theme stylesheets --&amp;gt;
+
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+
+        if (theme.startsWith('&amp;quot;') &amp;amp;&amp;amp; theme.endsWith('&amp;quot;')) {
+            localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+        }
+
+        if (sidebar.startsWith('&amp;quot;') &amp;amp;&amp;amp; sidebar.endsWith('&amp;quot;')) {
+            localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+        }
+    } catch (e) { }
+&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var theme;
+    try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+    if (theme === null || theme === undefined) { theme = default_theme; }
+    document.body.className = theme;
+    document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    var html = document.querySelector('html');
+    var sidebar = 'hidden';
+    if (document.body.clientWidth &amp;gt;= 1080) {
+        try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+        sidebar = sidebar || 'visible';
+    }
+    html.classList.remove('sidebar-visible');
+    html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;
+
+&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+        &amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;
+
+&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;
+
+    &amp;lt;div class=&amp;quot;page&amp;quot;&amp;gt;
+        
+        &amp;lt;div id=&amp;quot;menu-bar&amp;quot; class=&amp;quot;menu-bar&amp;quot;&amp;gt;
+            &amp;lt;div id=&amp;quot;menu-bar-sticky-container&amp;quot;&amp;gt;
+                &amp;lt;div class=&amp;quot;left-buttons&amp;quot;&amp;gt;
+                    &amp;lt;button id=&amp;quot;sidebar-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Toggle Table of Contents&amp;quot; aria-label=&amp;quot;Toggle Table of Contents&amp;quot; aria-controls=&amp;quot;sidebar&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-bars&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    &amp;lt;button id=&amp;quot;theme-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Change theme&amp;quot; aria-label=&amp;quot;Change theme&amp;quot; aria-haspopup=&amp;quot;true&amp;quot; aria-expanded=&amp;quot;false&amp;quot; aria-controls=&amp;quot;theme-list&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-paint-brush&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    &amp;lt;ul id=&amp;quot;theme-list&amp;quot; class=&amp;quot;theme-popup&amp;quot; aria-label=&amp;quot;Themes&amp;quot; role=&amp;quot;menu&amp;quot;&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;light&amp;quot;&amp;gt;Light&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;rust&amp;quot;&amp;gt;Rust (default)&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;coal&amp;quot;&amp;gt;Coal&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;navy&amp;quot;&amp;gt;Navy&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                        &amp;lt;li role=&amp;quot;none&amp;quot;&amp;gt;&amp;lt;button role=&amp;quot;menuitem&amp;quot; class=&amp;quot;theme&amp;quot; id=&amp;quot;ayu&amp;quot;&amp;gt;Ayu&amp;lt;/button&amp;gt;&amp;lt;/li&amp;gt;
+                    &amp;lt;/ul&amp;gt;
+                    
+                    &amp;lt;button id=&amp;quot;search-toggle&amp;quot; class=&amp;quot;icon-button&amp;quot; type=&amp;quot;button&amp;quot; title=&amp;quot;Search. (Shortkey: s)&amp;quot; aria-label=&amp;quot;Toggle Searchbar&amp;quot; aria-expanded=&amp;quot;false&amp;quot; aria-keyshortcuts=&amp;quot;S&amp;quot; aria-controls=&amp;quot;searchbar&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-search&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/button&amp;gt;
+                    
+                &amp;lt;/div&amp;gt;
+
+                &amp;lt;h1 class=&amp;quot;menu-title&amp;quot;&amp;gt;Nectar of Instruction&amp;lt;/h1&amp;gt;
+
+                &amp;lt;div class=&amp;quot;right-buttons&amp;quot;&amp;gt;
+                    &amp;lt;a href=&amp;quot;print.html&amp;quot; title=&amp;quot;Print this book&amp;quot; aria-label=&amp;quot;Print this book&amp;quot;&amp;gt;
+                        &amp;lt;i id=&amp;quot;print-button&amp;quot; class=&amp;quot;fa fa-print&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                    
+                &amp;lt;/div&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        
+        &amp;lt;div id=&amp;quot;search-wrapper&amp;quot; class=&amp;quot;hidden&amp;quot;&amp;gt;
+            &amp;lt;form id=&amp;quot;searchbar-outer&amp;quot; class=&amp;quot;searchbar-outer&amp;quot;&amp;gt;
+                &amp;lt;input type=&amp;quot;search&amp;quot; name=&amp;quot;search&amp;quot; id=&amp;quot;searchbar&amp;quot; name=&amp;quot;searchbar&amp;quot; placeholder=&amp;quot;Search this book ...&amp;quot; aria-controls=&amp;quot;searchresults-outer&amp;quot; aria-describedby=&amp;quot;searchresults-header&amp;quot;&amp;gt;
+            &amp;lt;/form&amp;gt;
+            &amp;lt;div id=&amp;quot;searchresults-outer&amp;quot; class=&amp;quot;searchresults-outer hidden&amp;quot;&amp;gt;
+                &amp;lt;div id=&amp;quot;searchresults-header&amp;quot; class=&amp;quot;searchresults-header&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+                &amp;lt;ul id=&amp;quot;searchresults&amp;quot;&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+        
+
+        &amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;gt;
+        &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+            document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+            document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+            Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+            });
+        &amp;lt;/script&amp;gt;
+
+        &amp;lt;div id=&amp;quot;content&amp;quot; class=&amp;quot;content&amp;quot;&amp;gt;
+            &amp;lt;main&amp;gt;
+                &amp;lt;!DOCTYPE HTML&amp;gt;
+</code></pre>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+
+    if (sidebar.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; sidebar.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+    }
+} catch (e) { }
+</code></pre>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+    
+    &amp;amp;lt;div id=&amp;amp;quot;menu-bar&amp;amp;quot; class=&amp;amp;quot;menu-bar&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;div id=&amp;amp;quot;menu-bar-sticky-container&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;div class=&amp;amp;quot;left-buttons&amp;amp;quot;&amp;amp;gt;
+                &amp;amp;lt;button id=&amp;amp;quot;sidebar-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Toggle Table of Contents&amp;amp;quot; aria-label=&amp;amp;quot;Toggle Table of Contents&amp;amp;quot; aria-controls=&amp;amp;quot;sidebar&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-bars&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                &amp;amp;lt;button id=&amp;amp;quot;theme-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Change theme&amp;amp;quot; aria-label=&amp;amp;quot;Change theme&amp;amp;quot; aria-haspopup=&amp;amp;quot;true&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot; aria-controls=&amp;amp;quot;theme-list&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-paint-brush&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                &amp;amp;lt;ul id=&amp;amp;quot;theme-list&amp;amp;quot; class=&amp;amp;quot;theme-popup&amp;amp;quot; aria-label=&amp;amp;quot;Themes&amp;amp;quot; role=&amp;amp;quot;menu&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;light&amp;amp;quot;&amp;amp;gt;Light&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;rust&amp;amp;quot;&amp;amp;gt;Rust (default)&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;coal&amp;amp;quot;&amp;amp;gt;Coal&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;navy&amp;amp;quot;&amp;amp;gt;Navy&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                    &amp;amp;lt;li role=&amp;amp;quot;none&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;button role=&amp;amp;quot;menuitem&amp;amp;quot; class=&amp;amp;quot;theme&amp;amp;quot; id=&amp;amp;quot;ayu&amp;amp;quot;&amp;amp;gt;Ayu&amp;amp;lt;/button&amp;amp;gt;&amp;amp;lt;/li&amp;amp;gt;
+                &amp;amp;lt;/ul&amp;amp;gt;
+                
+                &amp;amp;lt;button id=&amp;amp;quot;search-toggle&amp;amp;quot; class=&amp;amp;quot;icon-button&amp;amp;quot; type=&amp;amp;quot;button&amp;amp;quot; title=&amp;amp;quot;Search. (Shortkey: s)&amp;amp;quot; aria-label=&amp;amp;quot;Toggle Searchbar&amp;amp;quot; aria-expanded=&amp;amp;quot;false&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;S&amp;amp;quot; aria-controls=&amp;amp;quot;searchbar&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-search&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/button&amp;amp;gt;
+                
+            &amp;amp;lt;/div&amp;amp;gt;
+
+            &amp;amp;lt;h1 class=&amp;amp;quot;menu-title&amp;amp;quot;&amp;amp;gt;Nectar of Instruction&amp;amp;lt;/h1&amp;amp;gt;
+
+            &amp;amp;lt;div class=&amp;amp;quot;right-buttons&amp;amp;quot;&amp;amp;gt;
+                &amp;amp;lt;a href=&amp;amp;quot;print.html&amp;amp;quot; title=&amp;amp;quot;Print this book&amp;amp;quot; aria-label=&amp;amp;quot;Print this book&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i id=&amp;amp;quot;print-button&amp;amp;quot; class=&amp;amp;quot;fa fa-print&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+                
+            &amp;amp;lt;/div&amp;amp;gt;
+        &amp;amp;lt;/div&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+
+    
+    &amp;amp;lt;div id=&amp;amp;quot;search-wrapper&amp;amp;quot; class=&amp;amp;quot;hidden&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;form id=&amp;amp;quot;searchbar-outer&amp;amp;quot; class=&amp;amp;quot;searchbar-outer&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;input type=&amp;amp;quot;search&amp;amp;quot; name=&amp;amp;quot;search&amp;amp;quot; id=&amp;amp;quot;searchbar&amp;amp;quot; name=&amp;amp;quot;searchbar&amp;amp;quot; placeholder=&amp;amp;quot;Search this book ...&amp;amp;quot; aria-controls=&amp;amp;quot;searchresults-outer&amp;amp;quot; aria-describedby=&amp;amp;quot;searchresults-header&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;/form&amp;amp;gt;
+        &amp;amp;lt;div id=&amp;amp;quot;searchresults-outer&amp;amp;quot; class=&amp;amp;quot;searchresults-outer hidden&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;div id=&amp;amp;quot;searchresults-header&amp;amp;quot; class=&amp;amp;quot;searchresults-header&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;
+            &amp;amp;lt;ul id=&amp;amp;quot;searchresults&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;/ul&amp;amp;gt;
+        &amp;amp;lt;/div&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+    
+
+    &amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;gt;
+    &amp;amp;lt;script type=&amp;amp;quot;text/javascript&amp;amp;quot;&amp;amp;gt;
+        document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+        document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+        Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+            link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+        });
+    &amp;amp;lt;/script&amp;amp;gt;
+
+    &amp;amp;lt;div id=&amp;amp;quot;content&amp;amp;quot; class=&amp;amp;quot;content&amp;amp;quot;&amp;amp;gt;
+        &amp;amp;lt;main&amp;amp;gt;
+            &amp;amp;lt;!DOCTYPE HTML&amp;amp;gt;
+</code></pre>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+            
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;search-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;S&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-search&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            
+        &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+        &amp;amp;amp;lt;h1 class=&amp;amp;amp;quot;menu-title&amp;amp;amp;quot;&amp;amp;amp;gt;Nectar of Instruction&amp;amp;amp;lt;/h1&amp;amp;amp;gt;
+
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;right-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;a href=&amp;amp;amp;quot;print.html&amp;amp;amp;quot; title=&amp;amp;amp;quot;Print this book&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Print this book&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i id=&amp;amp;amp;quot;print-button&amp;amp;amp;quot; class=&amp;amp;amp;quot;fa fa-print&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+            
+        &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/form&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+        &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+
+
+&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+    });
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;
+
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;main&amp;amp;amp;gt;
+        &amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+        
+    &amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+
+    &amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;Nectar of Instruction&amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;gt;
+
+    &amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;gt;
+        
+    &amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch1.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+
+&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Nectar of Instruction&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;
+
+&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+    
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch1.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Nectar of Instruction&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch1.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Nectar of Instruction&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch1.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Nectar of Instruction&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Nectar of Instruction</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;</p>
+<p>&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;custom.css&amp;quot;&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;rust&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch1.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;Nectar of Instruction&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;!DOCTYPE HTML&amp;amp;amp;gt;
+</code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<p></code></pre></p>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - </title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+<pre><code>&amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;favicon.png&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/variables.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/general.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/chrome.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/print.css&amp;quot; media=&amp;quot;print&amp;quot;&amp;gt;
+<p>&amp;lt;!-- Fonts --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;FontAwesome/css/font-awesome.css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;
+&amp;lt;link href=&amp;quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Highlight.js Stylesheets --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;highlight.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;tomorrow-night.css&amp;quot;&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;ayu-highlight.css&amp;quot;&amp;gt;</p>
+<p>&amp;lt;!-- Custom theme stylesheets --&amp;gt;
+</code></pre></p>
+<p>&lt;/head&gt;
+&lt;body class=&quot;light&quot;&gt;
+&lt;!-- Provide site root to javascript --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var path_to_root = &quot;&quot;;
+var default_theme = &quot;light&quot;;
+&lt;/script&gt;</p>
+<pre><code>&amp;lt;!-- Work around some values being stored in localStorage wrapped in quotes --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+    try {
+        var theme = localStorage.getItem('mdbook-theme');
+        var sidebar = localStorage.getItem('mdbook-sidebar');
+<pre><code>    if (theme.startsWith('&amp;amp;quot;') &amp;amp;amp;&amp;amp;amp; theme.endsWith('&amp;amp;quot;')) {
+        localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+    }
+<pre><code>if (sidebar.startsWith('&amp;amp;amp;quot;') &amp;amp;amp;amp;&amp;amp;amp;amp; sidebar.endsWith('&amp;amp;amp;quot;')) {
+    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+}
+</code></pre>
+<p>} catch (e) { }
+</code></pre></p>
+<p>&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Set the theme before any content is loaded, prevents flash --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var theme;
+try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+if (theme === null || theme === undefined) { theme = default_theme; }
+document.body.className = theme;
+document.querySelector('html').className = theme + ' js';
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Hide / unhide sidebar before it is displayed --&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+var html = document.querySelector('html');
+var sidebar = 'hidden';
+if (document.body.clientWidth &amp;gt;= 1080) {
+try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+sidebar = sidebar || 'visible';
+}
+html.classList.remove('sidebar-visible');
+html.classList.add(&amp;quot;sidebar-&amp;quot; + sidebar);
+&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;nav id=&amp;quot;sidebar&amp;quot; class=&amp;quot;sidebar&amp;quot; aria-label=&amp;quot;Table of contents&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;sidebar-scrollbox&amp;quot;&amp;gt;
+&amp;lt;ol class=&amp;quot;chapter&amp;quot;&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;../index.html&amp;quot; class=&amp;quot;active&amp;quot;&amp;gt;Home&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;index.html&amp;quot;&amp;gt;Preface&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch1.html&amp;quot;&amp;gt;ch1&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch2.html&amp;quot;&amp;gt;ch2&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch3.html&amp;quot;&amp;gt;ch3&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch4.html&amp;quot;&amp;gt;ch4&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch5.html&amp;quot;&amp;gt;ch5&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch6.html&amp;quot;&amp;gt;ch6&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch7.html&amp;quot;&amp;gt;ch7&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch8.html&amp;quot;&amp;gt;ch8&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch9.html&amp;quot;&amp;gt;ch9&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch10.html&amp;quot;&amp;gt;ch10&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=&amp;quot;affix&amp;quot;&amp;gt;&amp;lt;a href=&amp;quot;ch11.html&amp;quot;&amp;gt;ch11&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id=&amp;quot;sidebar-resize-handle&amp;quot; class=&amp;quot;sidebar-resize-handle&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/nav&amp;gt;</p>
+<p>&amp;lt;div id=&amp;quot;page-wrapper&amp;quot; class=&amp;quot;page-wrapper&amp;quot;&amp;gt;</p>
+<pre><code>&amp;amp;lt;div class=&amp;amp;quot;page&amp;amp;quot;&amp;amp;gt;
+<pre><code>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot; class=&amp;amp;amp;quot;menu-bar&amp;amp;amp;quot;&amp;amp;amp;gt;
+    &amp;amp;amp;lt;div id=&amp;amp;amp;quot;menu-bar-sticky-container&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;div class=&amp;amp;amp;quot;left-buttons&amp;amp;amp;quot;&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;sidebar-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Toggle Table of Contents&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;sidebar&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-bars&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;button id=&amp;amp;amp;quot;theme-toggle&amp;amp;amp;quot; class=&amp;amp;amp;quot;icon-button&amp;amp;amp;quot; type=&amp;amp;amp;quot;button&amp;amp;amp;quot; title=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Change theme&amp;amp;amp;quot; aria-haspopup=&amp;amp;amp;quot;true&amp;amp;amp;quot; aria-expanded=&amp;amp;amp;quot;false&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-paint-brush&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/button&amp;amp;amp;gt;
+            &amp;amp;amp;lt;ul id=&amp;amp;amp;quot;theme-list&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme-popup&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Themes&amp;amp;amp;quot; role=&amp;amp;amp;quot;menu&amp;amp;amp;quot;&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;light&amp;amp;amp;quot;&amp;amp;amp;gt;Light (default)&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;rust&amp;amp;amp;quot;&amp;amp;amp;gt;Rust&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;coal&amp;amp;amp;quot;&amp;amp;amp;gt;Coal&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;navy&amp;amp;amp;quot;&amp;amp;amp;gt;Navy&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+                &amp;amp;amp;lt;li role=&amp;amp;amp;quot;none&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;button role=&amp;amp;amp;quot;menuitem&amp;amp;amp;quot; class=&amp;amp;amp;quot;theme&amp;amp;amp;quot; id=&amp;amp;amp;quot;ayu&amp;amp;amp;quot;&amp;amp;amp;gt;Ayu&amp;amp;amp;lt;/button&amp;amp;amp;gt;&amp;amp;amp;lt;/li&amp;amp;amp;gt;
+            &amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+<pre><code>        &amp;amp;amp;amp;lt;button id=&amp;amp;amp;amp;quot;search-toggle&amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;quot;icon-button&amp;amp;amp;amp;quot; type=&amp;amp;amp;amp;quot;button&amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;quot;Search. (Shortkey: s)&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Toggle Searchbar&amp;amp;amp;amp;quot; aria-expanded=&amp;amp;amp;amp;quot;false&amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;quot;S&amp;amp;amp;amp;quot; aria-controls=&amp;amp;amp;amp;quot;searchbar&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+            &amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;quot;fa fa-search&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;&amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;lt;/button&amp;amp;amp;amp;gt;
+<pre><code>&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;h1 class=&amp;amp;amp;amp;amp;quot;menu-title&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/h1&amp;amp;amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;amp;amp;lt;div class=&amp;amp;amp;amp;amp;quot;right-buttons&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;a href=&amp;amp;amp;amp;amp;quot;print.html&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Print this book&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;i id=&amp;amp;amp;amp;amp;quot;print-button&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;fa fa-print&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<br />
+&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;search-wrapper&amp;amp;amp;quot; class=&amp;amp;amp;quot;hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;form id=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchbar-outer&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;input type=&amp;amp;amp;quot;search&amp;amp;amp;quot; name=&amp;amp;amp;quot;search&amp;amp;amp;quot; id=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; name=&amp;amp;amp;quot;searchbar&amp;amp;amp;quot; placeholder=&amp;amp;amp;quot;Search this book ...&amp;amp;amp;quot; aria-controls=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; aria-describedby=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/form&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-outer&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-outer hidden&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;div id=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot; class=&amp;amp;amp;quot;searchresults-header&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;ul id=&amp;amp;amp;quot;searchresults&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;/ul&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&amp;amp;amp;gt;
+&amp;amp;amp;lt;script type=&amp;amp;amp;quot;text/javascript&amp;amp;amp;quot;&amp;amp;amp;gt;
+document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+});
+&amp;amp;amp;lt;/script&amp;amp;amp;gt;</p>
+<p>&amp;amp;amp;lt;div id=&amp;amp;amp;quot;content&amp;amp;amp;quot; class=&amp;amp;amp;quot;content&amp;amp;amp;quot;&amp;amp;amp;gt;
+&amp;amp;amp;lt;main&amp;amp;amp;gt;
+&amp;amp;amp;lt;h1&amp;amp;amp;gt;&amp;amp;amp;lt;a class=&amp;amp;amp;quot;header&amp;amp;amp;quot; href=&amp;amp;amp;quot;#home&amp;amp;amp;quot; id=&amp;amp;amp;quot;home&amp;amp;amp;quot;&amp;amp;amp;gt;Home&amp;amp;amp;lt;/a&amp;amp;amp;gt;&amp;amp;amp;lt;/h1&amp;amp;amp;gt;</p>
+<pre><code>&amp;amp;amp;amp;lt;/main&amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;lt;nav class=&amp;amp;amp;amp;quot;nav-wrapper&amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;quot;Page navigation&amp;amp;amp;amp;quot;&amp;amp;amp;amp;gt;
+&amp;amp;amp;amp;lt;!-- Mobile navigation buttons --&amp;amp;amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;amp;amp;lt;a rel=&amp;amp;amp;amp;amp;quot;next&amp;amp;amp;amp;amp;quot; href=&amp;amp;amp;amp;amp;quot;index.html&amp;amp;amp;amp;amp;quot; class=&amp;amp;amp;amp;amp;quot;mobile-nav-chapters next&amp;amp;amp;amp;amp;quot; title=&amp;amp;amp;amp;amp;quot;Next chapter&amp;amp;amp;amp;amp;quot; aria-label=&amp;amp;amp;amp;amp;quot;Next chapter&amp;amp;amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;amp;amp;quot;Right&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;
+        &amp;amp;amp;amp;amp;lt;i class=&amp;amp;amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/i&amp;amp;amp;amp;amp;gt;
+    &amp;amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;amp;gt;
+<p>&amp;amp;amp;amp;amp;lt;div style=&amp;amp;amp;amp;amp;quot;clear: both&amp;amp;amp;amp;amp;quot;&amp;amp;amp;amp;amp;gt;&amp;amp;amp;amp;amp;lt;/div&amp;amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;amp;lt;/nav&amp;amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre></p>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+<pre><code>        &amp;amp;amp;lt;div style=&amp;amp;amp;quot;clear: both&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/nav&amp;amp;amp;gt;
+&amp;amp;amp;lt;/div&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/div&amp;amp;gt;</p>
+<p>&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+</p>
+<pre><code>    &amp;amp;amp;lt;a href=&amp;amp;amp;quot;index.html&amp;amp;amp;quot; class=&amp;amp;amp;quot;nav-chapters next&amp;amp;amp;quot; title=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-label=&amp;amp;amp;quot;Next chapter&amp;amp;amp;quot; aria-keyshortcuts=&amp;amp;amp;quot;Right&amp;amp;amp;quot;&amp;amp;amp;gt;
+        &amp;amp;amp;lt;i class=&amp;amp;amp;quot;fa fa-angle-right&amp;amp;amp;quot;&amp;amp;amp;gt;&amp;amp;amp;lt;/i&amp;amp;amp;gt;
+    &amp;amp;amp;lt;/a&amp;amp;amp;gt;
+</code></pre>
+<p>&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre></p>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+<pre><code>                &amp;amp;lt;a rel=&amp;amp;quot;next&amp;amp;quot; href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;mobile-nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+                    &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+                &amp;amp;lt;/a&amp;amp;gt;
+            
+
+            &amp;amp;lt;div style=&amp;amp;quot;clear: both&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;
+        &amp;amp;lt;/nav&amp;amp;gt;
+    &amp;amp;lt;/div&amp;amp;gt;
+&amp;amp;lt;/div&amp;amp;gt;
+
+&amp;amp;lt;nav class=&amp;amp;quot;nav-wide-wrapper&amp;amp;quot; aria-label=&amp;amp;quot;Page navigation&amp;amp;quot;&amp;amp;gt;
+    
+
+    
+        &amp;amp;lt;a href=&amp;amp;quot;index.html&amp;amp;quot; class=&amp;amp;quot;nav-chapters next&amp;amp;quot; title=&amp;amp;quot;Next chapter&amp;amp;quot; aria-label=&amp;amp;quot;Next chapter&amp;amp;quot; aria-keyshortcuts=&amp;amp;quot;Right&amp;amp;quot;&amp;amp;gt;
+            &amp;amp;lt;i class=&amp;amp;quot;fa fa-angle-right&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/i&amp;amp;gt;
+        &amp;amp;lt;/a&amp;amp;gt;
+    
+&amp;amp;lt;/nav&amp;amp;gt;
+</code></pre>
+<p>&amp;lt;/div&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;</p>
+<p>&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre></p>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+<pre><code>            &amp;lt;nav class=&amp;quot;nav-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+                &amp;lt;!-- Mobile navigation buttons --&amp;gt;
+                
+
+                
+                    &amp;lt;a rel=&amp;quot;next&amp;quot; href=&amp;quot;index.html&amp;quot; class=&amp;quot;mobile-nav-chapters next&amp;quot; title=&amp;quot;Next chapter&amp;quot; aria-label=&amp;quot;Next chapter&amp;quot; aria-keyshortcuts=&amp;quot;Right&amp;quot;&amp;gt;
+                        &amp;lt;i class=&amp;quot;fa fa-angle-right&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+                    &amp;lt;/a&amp;gt;
+                
+
+                &amp;lt;div style=&amp;quot;clear: both&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+            &amp;lt;/nav&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;nav class=&amp;quot;nav-wide-wrapper&amp;quot; aria-label=&amp;quot;Page navigation&amp;quot;&amp;gt;
+        
+
+        
+            &amp;lt;a href=&amp;quot;index.html&amp;quot; class=&amp;quot;nav-chapters next&amp;quot; title=&amp;quot;Next chapter&amp;quot; aria-label=&amp;quot;Next chapter&amp;quot; aria-keyshortcuts=&amp;quot;Right&amp;quot;&amp;gt;
+                &amp;lt;i class=&amp;quot;fa fa-angle-right&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+            &amp;lt;/a&amp;gt;
+        
+    &amp;lt;/nav&amp;gt;
+
+&amp;lt;/div&amp;gt;
+
+
+
+
+
+
+
+
+&amp;lt;script src=&amp;quot;elasticlunr.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;mark.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;searcher.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+
+&amp;lt;script src=&amp;quot;clipboard.min.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;highlight.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;book.js&amp;quot; type=&amp;quot;text/javascript&amp;quot; charset=&amp;quot;utf-8&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;!-- Custom JS scripts --&amp;gt;
+</code></pre>
+<p>&lt;/body&gt;
+</code></pre></p>
+</html>
+<pre><code>                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;index.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+
+            
+                &lt;a href=&quot;index.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

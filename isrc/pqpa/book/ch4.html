@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch4 - Perfec Questions, Perfect Answers</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html" class="active">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Perfec Questions, Perfect Answers</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-real-goal-of-life" id="the-real-goal-of-life">The Real Goal of Life</a></h1>
+<p>February 28, 1972 (continued)</p>
+<p>ŚRĪLA PRABHUPĀDA: This movement is especially meant to enable a human being to reach the real goal of life.</p>
+<p>BOB: The real goal ... ?</p>
+<p>ŚRĪLA PRABHUPĀDA: The real goal of life.</p>
+<p>BOB: Is the real goal of life to know God?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes. To go back home, back to Godhead. That is the real goal of life.</p>
+<p>The water that comes from the sea forms clouds, the clouds fall down as rain, and the actual goal is to flow down the river and again enter the sea.</p>
+<p>So, we have come from God, and now we are embarrassed by material life.</p>
+<p>Therefore, our aim should be to get out of this embarrassing situation and go back home, back to Godhead.</p>
+<p>This is the real goal of life.</p>
+<p>mām upetya punar janma duḥkhālayam aśāśvatam nāpnuvanti mahātmānaḥ saṁsiddhiṁ paramāṁ gatāḥ [&quot;After attaining Me, the great souls, who are yogīs in devotion, never return to this temporary world, which is full of miseries, because they have attained the highest perfection.&quot;] That is the version of Bhagavad-gītā.</p>
+<p>If anyone comes to Me—mām upetya: he does not come back again.</p>
+<p>Where? To this place—duḥkhālayam aśāśvatam.</p>
+<p>This place is the abode of miseries.</p>
+<p>Everyone knows, but they have been befooled by so-called leaders.</p>
+<p>Material life is miserable life.</p>
+<p>Kṛṣṇa says, God says, that this place is duḥkhālayam—it is a place of miseries.</p>
+<p>And it is also aśāśvatam, temporary.</p>
+<p>You cannot make a compromise: &quot;All right, let it be miserable.</p>
+<p>I shall remain here as an American or Indian.&quot; No.</p>
+<p>That also you cannot do.</p>
+<p>You cannot remain an American.</p>
+<p>You may think that, having been born in America, you are very happy.</p>
+<p>But you cannot remain an American for long.</p>
+<p>You will have to be kicked out of that place.</p>
+<p>And your next life you do not know! Therefore, it is duḥkhālayam aśāśvatam—miserable and temporary.</p>
+<p>That is our philosophy.</p>
+<p>BOB: But when you have some knowledge of God, then life is not so miserable?</p>
+<p>ŚRĪLA PRABHUPĀDA: No! Some knowledge will not do.</p>
+<p>You must have perfect knowledge.</p>
+<p>janma karma ca me divyam evaṁ yo vetti tattvataḥ Tattvataḥ means &quot;perfectly.&quot; Perfect knowledge is being taught in Bhagavad-gītā.</p>
+<p>So, we are giving everyone in human society a chance to learn Bhagavad-gītā as it is and make his life perfect.</p>
+<p>That is the Kṛṣṇa consciousness movement.</p>
+<p>What does your science say about the transmigration of the soul?</p>
+<p>BOB: I think ... that science ... cannot deny or affirm it. Science does not know it.</p>
+<p>ŚRĪLA PRABHUPĀDA: Therefore I say that science is imperfect.</p>
+<p>BOB: Science may, though, say something.</p>
+<p>It is said in science that energy is never destroyed; it is changed.</p>
+<p>ŚRĪLA PRABHUPĀDA: That's all right.</p>
+<p>But how the energy is working in the future—that science does not know.</p>
+<p>How is the energy diverted? How, by different manipulations, is the energy working differently? For instance, electrical energy.</p>
+<p>By different handling it is operating the heater, and it is operating the refrigerator.</p>
+<p>They are just the opposite, but the electrical energy is the same.</p>
+<p>Similarly, this energy—living energy—how is it being directed? Which way is it going? How is it fructifying in the next life? That they do not know.</p>
+<p>But in Bhagavad-gītā it is very simply stated.</p>
+<p>vāsāṁsi jīrṇāni yathā vihāya You are covered by a dress, by a shirt.</p>
+<p>When this shirt is unusable, you change it.</p>
+<p>Similarly, this body is just like a shirt and coat.</p>
+<p>When it is no longer workable, we have to change it.</p>
+<p>BOB: What is the &quot;we&quot; that has to change? What is constant?</p>
+<p>ŚRĪLA PRABHUPĀDA: That is the soul.</p>
+<p>BOB: From one life to the next?</p>
+<p>ŚRĪLA PRABHUPĀDA: That is the soul—I.</p>
+<p>What &quot;you&quot; is speaking? You! What &quot;I&quot; is speaking? Identity: ātmā, or soul.</p>
+<p>BOB: My soul is different from your soul?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>You are an individual soul, I am an individual soul.</p>
+<p>BOB: You have removed yourself from karmic influences.</p>
+<p>If I was to remove myself from karmic influences, would our souls be the same or different?</p>
+<p>ŚRĪLA PRABHUPĀDA: The soul is of the same quality in all.</p>
+<p>You are under a certain conception of life at the present moment, and these countrymen of yours [the Kṛṣṇa conscious devotees] were under a certain conception of life, but by training they have taken to another conception of life.</p>
+<p>So the ultimate training is how to become Kṛṣṇa conscious.</p>
+<p>That is the perfection.</p>
+<p>BOB: If two people are Kṛṣṇa conscious, is their soul the same?</p>
+<p>ŚRĪLA PRABHUPĀDA: The soul is always the same.</p>
+<p>BOB: In each person? In each person is it the same?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: [pointing to two devotees] If these two are Kṛṣṇa conscious, are their souls the same?</p>
+<p>ŚRĪLA PRABHUPĀDA: The soul is the same but always individual, even if one is not Kṛṣṇa conscious.</p>
+<p>For instance, you are a human being, and I am a human being.</p>
+<p>Even if I am not a Christian, even if you are not a Hindu, still we are human beings.</p>
+<p>Similarly, the soul may not be Kṛṣṇa conscious, or he may be Kṛṣṇa conscious—it doesn't matter.</p>
+<p>But the soul is the soul.</p>
+<p>BOB: Can you tell me more about this?</p>
+<p>ŚRĪLA PRABHUPĀDA: Soul—as pure spirit, all souls are equal.</p>
+<p>Even in an animal.</p>
+<p>Therefore it is said, paṇḍitāḥ sama-darśinaḥ: those who are actually learned do not see the outward covering, either in a human being or in an animal.</p>
+<p>BOB: If I may ask another question on this?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: I have considered the soul somewhat as part of God.</p>
+<p>At times I think I feel God.</p>
+<p>I'm here, and you may say God is here.</p>
+<p>So if the soul is inside me, then should I be able to feel God inside me? Not all of God, I mean, but a ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Part of God.</p>
+<p>BOB: But I don't feel God in me, but God may be here, separate—separate from me.</p>
+<p>But should I be able to feel God inside me, since my soul is Part of God?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>God is inside also.</p>
+<p>God is everywhere.</p>
+<p>God is inside and outside also.</p>
+<p>This is to be known.</p>
+<p>BOB: How do you feel God inside you?</p>
+<p>ŚRĪLA PRABHUPĀDA: Not in the beginning, but you have to know from the śāstras [scriptures], by the Vedic information.</p>
+<p>For example, in the Bhagavad-gītā it is said, īśvaraḥ sarva-bhūtānāṁ hṛd-deśe 'rjuna tiṣṭhati: God is there in everyone's heart.</p>
+<p>Paramāṇu-cayāntara-stham: God is also within every atom.</p>
+<p>So this is the first information.</p>
+<p>And then, by the yogic process, you have to realize it.</p>
+<p>BOB: Yogic process?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: Is chanting Hare Kṛṣṇa such a yogic process?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, it is also a yogic process.</p>
+<p>BOB: What kind of yogic process must I do to find out—to feel this information— to feel the soul inside?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, there are many different yogic processes, but for this age this process is very nice.</p>
+<p>BOB: Chanting.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: Through this I can feel not only God outside but God inside?</p>
+<p>ŚRĪLA PRABHUPĀDA: You'll understand everything of God—how God is inside, how God is outside, how God is working.</p>
+<p>Everything will be revealed.</p>
+<p>By this attitude of service, God will reveal Himself.</p>
+<p>You cannot understand God by your endeavor.</p>
+<p>Only if God reveals Himself.</p>
+<p>For instance, when the sun is out of your sight at night, you cannot see it by your torchlight, or any light.</p>
+<p>But in the morning you can see the sun automatically, without any torchlight.</p>
+<p>Similarly, you have to create a situation—you have to put yourself in a situation—in which God will be revealed.</p>
+<p>It is not that by some method you can ask God, &quot;Please come.</p>
+<p>I will see You.&quot; No, God is not your order carrier.</p>
+<p>BOB: You must please God for Him to reveal Himself.</p>
+<p>Is that correct?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>ŚYĀMASUNDARA: How do we know when we are pleasing God?</p>
+<p>ŚRĪLA PRABHUPĀDA: When we see Him.</p>
+<p>Then you will understand.</p>
+<p>Just as, when you eat, you do not require to ask anyone whether you are feeling strength or your hunger is satisfied.</p>
+<p>If you eat, you understand that you are feeling energy.</p>
+<p>You don't need to inquire from anyone.</p>
+<p>Similarly, if you actually serve God, then you will understand, &quot;God is dictating to me.</p>
+<p>God is there.</p>
+<p>I am seeing God.&quot;</p>
+<p>A DEVOTEE: Or God's representative.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>DEVOTEE: It comes easier.</p>
+<p>ŚRĪLA PRABHUPĀDA: You have to go through God's representative.</p>
+<p>yasya prasādād bhagavat-prasādaḥ &quot;By the mercy of the spiritual master one is benedicted by the mercy of Kṛṣṇa.&quot; If you please God's representative, then automatically God becomes pleased, and thus you can directly see Him.</p>
+<p>AN INDIAN GENTLEMAN: How to please God's representative?</p>
+<p>ŚRĪLA PRABHUPĀDA: You have to carry out his orders, that's all.</p>
+<p>God's representative is the guru.</p>
+<p>He asks you to do this, to do that—if you do that, that is pleasing.</p>
+<p>yasyāprasādān na gatiḥ kuto 'pi &quot;Without the grace of the spiritual master one cannot make any advancement.&quot; If you displease him, then you are nowhere.</p>
+<p>Therefore we worship the guru.</p>
+<p>sākṣād-dharitvena samasta-śāstrair uktas tathā bhāvyata eva sadbhiḥ kintu prabhor yaḥ priya eva tasya vande guroḥ śrī-caraṇāravindam [&quot;The spiritual master is to be honored as much as the Supreme Lord because of his being the most confidential servitor of the Lord.</p>
+<p>This is acknowledged by all revealed scriptures and is followed by all authorities.</p>
+<p>Therefore I offer my respectful obeisances unto the lotus feet of such a spiritual master, who is a bona fide representative of Lord Kṛṣṇa.&quot;] The guru should be accepted as God.</p>
+<p>That is the injunction of all śāstra.</p>
+<p>BOB: The guru should be accepted as a representative of God?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, the guru is God's representative.</p>
+<p>The guru is the external manifestation of Kṛṣṇa.</p>
+<p>BOB: But different from the incarnations of Kṛṣṇa that come?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: In what way is the external manifestation of the guru different from the external manifestation of, let us say, Kṛṣṇa or Caitanya when They come to earth?</p>
+<p>ŚRĪLA PRABHUPĀDA: The guru is the representative of Kṛṣṇa.</p>
+<p>So there are symptoms of who is a guru.</p>
+<p>The general symptoms are described in the Vedas.</p>
+<p>tad-vijñānārthaṁ sa gurum evābhigacchet samit-pāṇiḥ śrotriyaṁ brahma-niṣṭham A guru must come in a disciplic succession, and he must have heard thoroughly about the Vedas from his spiritual master.</p>
+<p>Generally a guru's symptom is that he is a perfect devotee, that's all.</p>
+<p>And he serves Kṛṣṇa by preaching His message.</p>
+<p>BOB: Lord Caitanya—He was a different type of guru than you are?</p>
+<p>ŚRĪLA PRABHUPĀDA: No, no.</p>
+<p>Gurus cannot be of different types.</p>
+<p>All gurus are of one type.</p>
+<p>BOB: But He was—was He also an incarnation at the same time?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, He is Kṛṣṇa Himself, but He is representing the guru.</p>
+<p>BOB: I ... I see.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: And then ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Because Kṛṣṇa was God, He demanded: sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja &quot;Abandon all varieties of religion and just surrender unto Me.&quot; But people misunderstood Him.</p>
+<p>Therefore Kṛṣṇa again came as a guru and taught people how to surrender to Kṛṣṇa.</p>
+<p>ŚYĀMASUNDARA: Doesn't He say in Bhagavad-gītā, &quot;I am the spiritual master&quot;?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, He is the original spiritual master because He was accepted as spiritual master by Arjuna.</p>
+<p>So what is the difficulty? Śiṣyas te 'haṁ śādhi māṁ tvāṁ prapannam.</p>
+<p>Arjuna told the Lord, &quot;I am Your disciple, and a soul surrendered unto You.</p>
+<p>Please instruct me.&quot; So unless He is a spiritual master, how does Arjuna become His disciple? He is the original guru.</p>
+<p>Tene brahma hṛdā ya ādi-kavaye: &quot;It is He only who first imparted Vedic knowledge unto the heart of Brahmā, the first created being.&quot; Therefore He is the original guru.</p>
+<p>BOB: Kṛṣṇa.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>He is the original guru.</p>
+<p>Then His disciple Brahmā is a guru, then his disciple Nārada is a guru, then his disciple Vyāsa is a guru—in this way there is a guru-paramparā [disciplic succession of gurus].</p>
+<p>Evaṁ paramparā-prāptam: the transcendental knowledge is received through the disciplic succession.</p>
+<p>BOB: So a guru receives his knowledge through the disciplic succession, not directly from Kṛṣṇa? Do you receive some knowledge directly from Kṛṣṇa?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>Kṛṣṇa's direct instruction is there: Bhagavad-gītā.</p>
+<p>BOB: I see, but ...</p>
+<p>ŚRĪLA PRABHUPĀDA: But you have to learn it through the disciplic succession, otherwise you will misunderstand it.</p>
+<p>BOB: But presently you do not receive information directly from Kṛṣṇa? It comes through the disciplic succession from the books?</p>
+<p>ŚRĪLA PRABHUPĀDA: There is no difference.</p>
+<p>Suppose I say that this is a pencil.</p>
+<p>If you say to him, &quot;There is a pencil,&quot; and if he says to another man, &quot;This is a pencil,&quot; then what is the difference between his instruction and my instructions?</p>
+<p>BOB: Kṛṣṇa's mercy allows you to know this now?</p>
+<p>ŚRĪLA PRABHUPĀDA: You can take Kṛṣṇa's mercy also, provided it is delivered as it is.</p>
+<p>Just as we are teaching Bhagavad-gītā.</p>
+<p>In Bhagavad-gītā Kṛṣṇa says: sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja &quot;Just give up all other forms of religion and simply surrender unto Me.&quot; Now we are saying that you should give up everything and surrender to Kṛṣṇa.</p>
+<p>Therefore, there is no difference between Kṛṣṇa's instruction and our instruction.</p>
+<p>There is no deviation.</p>
+<p>So if you receive knowledge in that perfect way, that is as good as receiving instruction directly from Kṛṣṇa.</p>
+<p>But we don't change anything.</p>
+<p>BOB: When I pray reverently, faithfully, does Kṛṣṇa hear me?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: From me to Him?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, because He is within your heart He is always hearing you—whether you are praying or not praying.</p>
+<p>When you are doing some nonsense, He is also hearing you.</p>
+<p>And when you pray, that is very good— welcome.</p>
+<p>BOB: To Kṛṣṇa's ear, is praying louder than nonsense?</p>
+<p>ŚRĪLA PRABHUPĀDA: No.</p>
+<p>He is all-perfect.</p>
+<p>He can hear everything.</p>
+<p>Even if you don't speak, even if you simply think, &quot;I shall do it,&quot; then He hears you.</p>
+<p>Sarvasya cāhaṁ hṛdi sanniviṣṭaḥ: Kṛṣṇa is seated in everyone's heart.</p>
+<p>BOB: But one should pray—is that so?</p>
+<p>ŚRĪLA PRABHUPĀDA: That is his business—praying.</p>
+<p>BOB: Whose business?</p>
+<p>ŚRĪLA PRABHUPĀDA: Every living entity's.</p>
+<p>That is the only business.</p>
+<p>Eko bahūnāṁ yo vidadhāti kāmān.</p>
+<p>That is the statement of the Vedas.</p>
+<p>BOB: What does that mean?</p>
+<p>ŚRĪLA PRABHUPĀDA: He supplies everything to everyone.</p>
+<p>He is supplying food to everyone.</p>
+<p>So He is the Father.</p>
+<p>So why should you not pray, &quot;Father, give me this&quot;? Just as in the Christian Bible there is, &quot;Father, give us our daily bread.&quot; That is good—they are accepting the Supreme Father.</p>
+<p>But grown-up children should not ask from the father; rather, they should be prepared to serve the father.</p>
+<p>That is bhakti [devotion].</p>
+<p>BOB: My questions you solve so nicely.</p>
+<p>[Everyone laughs with affection.]</p>
+<p>ŚRĪLA PRABHUPĀDA: Thank you very much.</p>
+<p>BOB: So, should I ask you another question now?</p>
+<p>ŚRĪLA PRABHUPĀDA: Oh, yes.</p>
+<p>Yes!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

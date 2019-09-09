@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch11 - Nectar of Instruction</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Preface</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html" class="active">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Instruction</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#text-eleven" id="text-eleven">TEXT ELEVEN</a></h1>
+<p>kṛṣṇasyoccaiḥ praṇaya-vasatiḥ preyasībhyo ’pi rādhā kuṇḍaṁ cāsyā munibhir abhitas tādṛg eva vyadhāyi yat preṣṭhair apy alam asulabhaṁ kiṁ punar bhakti-bhājāṁ tat premedaṁ sakṛd api saraḥ snātur āviṣkaroti</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kṛṣṇasya—of Lord Śrī Kṛṣṇa; uccaiḥ—very highly; praṇaya-vasatiḥ—object of love; preyasībhyaḥ—out of the many lovable gopīs; api—certainly; rādhā —Śrīmatī Rādhārāṇī; kuṇḍam—lake; ca—also; asyāḥ—of Her; munibhiḥ—by great sages; abhitaḥ—in all respects; tādṛk eva—similarly; vyadhāyi—is described; yat—which; preṣṭhaiḥ—by the most advanced devotees; api—even; alam—enough; asulabham—difficult to obtain; kim— what; punaḥ—again; bhakti-bhājām—for persons engaged in devotional service; tat—that; prema— love of Godhead; idam—this; sakṛt—once; api—even; saraḥ—lake; snātuḥ—of one who has bathed; āviṣkaroti—arouses.</p>
+<p><strong>TRANSLATION</strong></p>
+<p>Of the many objects of favored delight and of all the lovable damsels of Vrajabhūmi, Śrīmatī Rādhārāṇī is certainly the most treasured object of Kṛṣṇa’s love.</p>
+<p>And, in every respect, Her divine kuṇḍa is described by great sages as similarly dear to Him.</p>
+<p>Undoubtedly Rādhā- kuṇḍa is very rarely attained even by the great devotees; therefore it is even more difficult for ordinary devotees to attain.</p>
+<p>If one simply bathes once within those holy waters, one’s pure love of Kṛṣṇa is fully aroused.</p>
+<p><strong>PURPORT</strong></p>
+<p>Why is Rādhā-kuṇḍa so exalted? The lake is so exalted because it belongs to Śrīmatī Rādhārāṇī, who is the most beloved object of Śrī Kṛṣṇa.</p>
+<p>Among all the gopīs, She is the most beloved.</p>
+<p>Similarly, Her lake, Śrī Rādhā-kuṇḍa, is also described by great sages as the lake that is as dear to Kṛṣṇa as Rādhā Herself.</p>
+<p>Indeed, Kṛṣṇa’s love for Rādhā-kuṇḍa and Śrīmatī Rādhārāṇī is the same in all respects.</p>
+<p>Rādhā-kuṇḍa is very rarely attained, even by great personalities fully engaged in devotional service, not to speak of ordinary devotees who are only engaged in the practice of vaidhī bhakti.</p>
+<p>It is stated that a devotee will at once develop pure love of Kṛṣṇa in the wake of the gopīs if he once takes a bath in Rādhā-kuṇḍa.</p>
+<p>Śrīla Rūpa Gosvāmī recommends that even if one cannot live permanently on the banks of Rādhā-kuṇḍa, he should at least take a bath in the lake as many times as possible.</p>
+<p>This is a most important item in the execution of devotional service.</p>
+<p>Śrīla Bhaktivinoda Ṭhākura writes in this connection that Śrī Rādhā-kuṇḍa is the most select place for those interested in advancing their devotional service in the wake of the lady friends (sakhīs) and confidential serving maids (mañjarīs) of Śrīmatī Rādhārāṇī.</p>
+<p>Living entities who are eager to return home to the transcendental kingdom of God, Goloka Vṛndāvana, by means of attaining their spiritual bodies (siddha-deha) should live at Rādhā-kuṇḍa, take shelter of the confidential serving maids of Śrī Rādhā and under their direction engage constantly in Her service.</p>
+<p>This is the most exalted method for those engaged in devotional service under the protection of Śrī Caitanya Mahāprabhu.</p>
+<p>In this connection Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura writes that even great sages and great devotees like Nārada and Sanaka do not get an opportunity to come to Rādhā-kuṇḍa to take their baths.</p>
+<p>What, then, to speak of ordinary devotees? If, by great fortune, one gets an opportunity to come to Rādhā-kuṇḍa and bathe even once, he can develop his transcendental love for Kṛṣṇa, exactly as the gopīs did.</p>
+<p>It is also recommended that one should live on the banks of Rādhā-kuṇḍa and should be absorbed in the loving service of the Lord.</p>
+<p>One should bathe there regularly and give up all material conceptions, taking shelter of Śrī Rādhā and Her assistant gopīs.</p>
+<p>If one is thus constantly engaged during his lifetime, after giving up the body he will return back to Godhead to serve Śrī Rādhā in the same way as he contemplated during his life on the banks of Rādhā-kuṇḍa.</p>
+<p>The conclusion is that to live on the banks of the Rādhā-kuṇḍa and to bathe there daily constitute the highest perfection of devotional service.</p>
+<p>It is a difficult position to attain, even for great sages and devotees like Nārada.</p>
+<p>Thus there is no limit to the glory of Śrī Rādhā-kuṇḍa.</p>
+<p>By serving Rādhā-kuṇḍa, one can get an opportunity to become an assistant of Śrīmatī Rādhārāṇī under the eternal guidance of the gopīs.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch10.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch10.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch7 - Topmost Yoga System</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html" class="active">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Topmost Yoga System</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#how-bhakti-yoga-works" id="how-bhakti-yoga-works">How Bhakti-yoga Works</a></h1>
+<p>In the Bhagavad-gītā Kṛṣṇa tells His disciple Arjuna, &quot;I am disclosing a most confidential part of knowledge to you, because you are My dear friend.&quot; As is stated in the Fourth Chapter, the Bhagavad-gītā is spoken to Arjuna because of his one qualification: he was a devotee.</p>
+<p>The Lord says that the mystery of the Bhagavad-gītā is very confidential.</p>
+<p>Without being an unalloyed devotee you cannot know it.</p>
+<p>In India there are 645 different commentaries on the Gītā.</p>
+<p>One professor has proposed that Kṛṣṇa is a doctor and Arjuna is His patient and has made his commentary in that way.</p>
+<p>Similarly, there are commentators and people who have taken it that everyone is perfect, and that they can interpret scripture in their own way.</p>
+<p>As far as we are concerned, we agree to read the Bhagavad-gītā according to the instructions given in the Gītā itself.</p>
+<p>This has to be taken through the paramparā, the system of disciplic succession.</p>
+<p>It is being taught by the Supreme Person because &quot;you are My dear friend.</p>
+<p>I desire that you may become prosperous and happy.</p>
+<p>Therefore I speak to you.&quot; Kṛṣṇa wants everyone to be happy and peaceful and prosperous, but they do not want it.</p>
+<p>Sunshine is open to everyone, but if someone wishes to remain in darkness, what can the sunshine do for him? So the Gītā is open to everyone.</p>
+<p>There are different species of life, and lower and higher grades of understanding exist—that is a fact.</p>
+<p>But Kṛṣṇa says that this knowledge is for anyone.</p>
+<p>If one has lower birth or whatever, it doesn't matter.</p>
+<p>The Bhagavad-gītā offers transcendental subject matter everyone can understand provided he goes along with the principle as stated in the Fourth Chapter.</p>
+<p>That is, that the Gītā is coming down in disciplic succession: &quot;I first of all instructed this yoga system to the sun-god Vivasvān, who taught it to Manu, who taught it to Ikṣvāku.&quot; From Kṛṣṇa the disciplic succession is coming down, but &quot;in course of time the disciplic succession was broken.&quot; Arjuna is therefore made the new disciple.</p>
+<p>In the Second Chapter, Arjuna surrenders: &quot;So far we have been talking as friends, but now I accept You as my spiritual master.&quot; Anyone following the principle in this line accepts the guru as Kṛṣṇa, and the student must represent Arjuna.</p>
+<p>Kṛṣṇa is speaking as the spiritual master of Arjuna, and Arjuna says, &quot;Whatever You are saying I accept.&quot; Read it like that— not: &quot;I like this, so I accept it; this I don't like, and so I reject it.&quot; Such reading is useless nonsense.</p>
+<p>The teacher must be a representative of Kṛṣṇa, a devotee, and the student must be like Arjuna.</p>
+<p>Then this Kṛṣṇa consciousness study is perfect.</p>
+<p>Otherwise it is a waste of time.</p>
+<p>In the Śrīmad-Bhāgavatam it is stated: &quot;If anyone wants to understand the science of Kṛṣṇa, he should associate with pure devotees.</p>
+<p>When discussions take place among pure devotees, the potency of spiritual language is revealed.&quot; Scholarly discussion of the Gītā is futile.</p>
+<p>In the Upaniṣads it is stated: &quot;To one who has firm faith in God, and similar faith in God's representative, all the import of Vedic language will be revealed.&quot; We must have the qualification of being a devotee.</p>
+<p>Become dear to God.</p>
+<p>My spiritual master used to say, &quot;Don't try to see God.</p>
+<p>Act in such a way that God will see you.&quot; We have to qualify ourselves.</p>
+<p>By your qualification God Himself will come and see you.</p>
+<p>If one can perceive God, he is transcendental to all material demands.</p>
+<p>We are always dissatisfied in the material world in circumstances that won't continue; happiness is temporary, and temporary plight also will not exist for much time.</p>
+<p>Cold, heat, duality—it is all coming and going.</p>
+<p>To get to the absolute stage is the process of Kṛṣṇa consciousness.</p>
+<p>Kṛṣṇa is seated in everyone's heart, and as you become purified He will show you the path.</p>
+<p>And in the end you will quit this body, and you will go to the spiritual sky.</p>
+<p>&quot;No one knows Me,&quot; Kṛṣṇa says, &quot;My influence, My power and My extent.</p>
+<p>Even the maharṣis [the great thinkers] don't know.</p>
+<p>I am the origin of all demigods and the origin of all ṛṣis.&quot; There are so many forefathers we don't know of, and there are Brahmā and the demigods—what do we know? We can't reach to the platform where we can grasp God.</p>
+<p>We gather knowledge by limited senses, and Kṛṣṇa can't be reached by the mind, the center of the senses.</p>
+<p>Imperfect senses can't grasp perfect knowledge.</p>
+<p>Mind and sense manipulation can't reach Him.</p>
+<p>If you engage the senses in the service of the Lord, however, then He will reveal Himself through your senses.</p>
+<p>People may say, &quot;What is the use of understanding God? What is the use? Let Him stay in His place, let me stay in my place.&quot; But in the śāstras, the scriptures, it is stated that pious activities will raise us to beauty, knowledge and good birth; and that by impious (sinful) activities, we suffer.</p>
+<p>Suffering is always there, pious or impious, but a distinction is made.</p>
+<p>He who knows God, however, becomes freed from all possible sinful reactions, which no amount of piety can accomplish.</p>
+<p>If we reject God we can never be happy.</p>
+<p>Not even considering human society, if you take the demigods who are more advanced and intelligent, they also don't know Kṛṣṇa.</p>
+<p>The seven great sages whose planet is near the North Star also do not know.</p>
+<p>Kṛṣṇa says: &quot;I am the original, the source of all these demigods.&quot; He is the father of everything, not only the origin of demigods, but of the sages—and the universe.</p>
+<p>The ŚrīmadBhāgavatam describes how the universal form took place, and everything is emanating from Him.</p>
+<p>Also Kṛṣṇa is the origin of Paramātmā, the Supersoul; and the impersonal brahmajyoti, the shining effulgence, is in Him.</p>
+<p>Of everything, of every conception, &quot;I am the source.&quot; The Absolute Truth may be realized in three phases, but is one nondual truth.</p>
+<p>Brahman (the glowing effulgence), localized Supersoul, and Bhagavān—the Supreme Person—are three features or aspects of God.</p>
+<p>If no one knows the Supreme Personality of Godhead, how can He be known? He can be known when the Supreme Lord comes before you and reveals Himself to you.</p>
+<p>Then you can know.</p>
+<p>Our senses are imperfect, and they cannot realize the Supreme Truth.</p>
+<p>When you adopt a submissive attitude and chant, realization begins from the tongue.</p>
+<p>To eat and to vibrate sound is the business of the tongue.</p>
+<p>If you can control your tongue for prasādam, spiritual food, and make the sound vibration of the holy name, then by surrender of the tongue you can control all the other senses.</p>
+<p>If you cannot control your tongue, you cannot control your senses.</p>
+<p>Taste prasādam and become spiritually advanced.</p>
+<p>You can have this process at your home: offer vegetarian foods to Kṛṣṇa, chant the Hare Kṛṣṇa mantra and offer obeisances: namo brahmaṇya-devāya go-brāhmaṇa-hitāya ca jagat-hitāya kṛṣṇāya govindāya namo namaḥ Everyone can offer, and then take the food with friends.</p>
+<p>And chant before the picture of Kṛṣṇa, and lead a pure life.</p>
+<p>Just see the result—the whole world will become Vaikuṇṭha, where there is no anxiety.</p>
+<p>All is anxious with us because we have accepted this material life.</p>
+<p>Just the opposite is so in the spiritual world.</p>
+<p>No one, however, knows how to get out of the material concept.</p>
+<p>Taking an intoxicant doesn't help; the same anxieties are there when you are finished being drunk.</p>
+<p>If you want to be free and want life eternal with bliss and knowledge, take to Kṛṣṇa.</p>
+<p>No one can know God, but there is this way:.</p>
+<p>the process of Kṛṣṇa consciousness.</p>
+<p>In the Śrīmad-Bhāgavatam it is stated that no one can conquer Him or approach Him, but He becomes conquered.</p>
+<p>How? Let people remain in their own positions, but let them give up nonsense speculation through volumes of books.</p>
+<p>Thousands of books are printed and read, and after six months thrown away.</p>
+<p>This way and that—how can you know the Supreme by speculation on the information supplied by your blunt senses? Give up research—throw it away— just become submissive; acknowledge that you are limited and subordinate to material nature and to God.</p>
+<p>No one can be equal to or greater than God.</p>
+<p>So be submissive.</p>
+<p>Try to hear about the glories of the Supreme Lord from authorized sources.</p>
+<p>Such authority is handed over by disciplic succession.</p>
+<p>If we can understand by the same authority as Arjuna, that is real authority.</p>
+<p>God is always ready to reveal; you just become Kṛṣṇa conscious.</p>
+<p>Follow the path traversed by the great ācāryas, the devoted teachers, and then everything will be known.</p>
+<p>Although He is unconquerable and unknowable, He can be known in your home.</p>
+<p>If you take to this process and follow the principles, what will be the result? As soon as you understand, you will know that the Supreme Lord is the cause of all causes, but that He is not caused by any other cause.</p>
+<p>And He is the master of all planets.</p>
+<p>This is not accepting blindly.</p>
+<p>God has given you the power of reason, the power of arguing—but don't argue falsely.</p>
+<p>If you want to know the transcendental science you must surrender.</p>
+<p>Surrender to authority and know Him by signs.</p>
+<p>Don't surrender to a fool or a rascal.</p>
+<p>Find one who is coming in disciplic succession, one who is fully convinced about the Supreme Absolute Truth.</p>
+<p>If you find such a person, surrender and try to please him, serve him and question him.</p>
+<p>Surrender unto Him is surrender to God.</p>
+<p>Question to learn, not to waste time.</p>
+<p>The process is there, but if we waste time by intoxication we will never see Him, the unconquerable Lord.</p>
+<p>Follow the principles and slowly but surely, without doubt, you will know.</p>
+<p>&quot;Yes, I'm making progress,&quot; you'll say.</p>
+<p>And it is very easy, and you can execute it and be in a happy mood.</p>
+<p>Study, take part with music, eat prasādam.</p>
+<p>And no one can cheat you by this process.</p>
+<p>But if you want to be cheated—go to the cheaters.</p>
+<p>Try to understand it from the authoritative source and apply it in your life.</p>
+<p>Amongst the dying mortals, you will become the most intelligent because you are freed from sinful actions.</p>
+<p>If you act only for Kṛṣṇa, then you are freed from all reactions.</p>
+<p>You will have no anxiety over what is auspicious or inauspicious because you will be in touch with the most auspicious.</p>
+<p>This is the process.</p>
+<p>Ultimately, we can get in touch with Kṛṣṇa.</p>
+<p>Life will be successful.</p>
+<p>Anyone can adopt it, because it is very simple.</p>
+<p>Here is a nice formula presented by Kṛṣṇa Himself: one should understand the position of Kṛṣṇa.</p>
+<p>He is unborn and without any cause.</p>
+<p>We have experience, all of us, that we are born, and we have a cause; our father is our cause.</p>
+<p>If someone poses himself as God, he has to prove that he is unborn and uncaused.</p>
+<p>Our practical experience is that we are born.</p>
+<p>Kṛṣṇa is not born.</p>
+<p>We have to understand this.</p>
+<p>Understanding this is to be firmly convinced He is the cause, but is not caused; and since He is not caused He is the proprietor of all manifestation.</p>
+<p>One who understands this simple philosophy is not illusioned.</p>
+<p>We are generally illusioned.</p>
+<p>We are claiming ownership of the land.</p>
+<p>But before my birth the land was here, and after my death it will still be here.</p>
+<p>How long will I go on claiming, in body after body, &quot;This is my land! This is my land!&quot;? Is it not nonsense? One has to be out of illusion.</p>
+<p>We should know that whatever we are doing in the material concept of life is illusion.</p>
+<p>We have to understand whether we are illusioned or not.</p>
+<p>And all conditioned souls are illusioned.</p>
+<p>He who learns to be disillusioned gets free of all encumbrances.</p>
+<p>If we want freedom from all bonds, then we have to understand God.</p>
+<p>There is no neglecting this; it is our prime duty.</p>
+<p>Out of millions of entities, one may be enlightened.</p>
+<p>Generally we are all born fools.</p>
+<p>As soon as I take birth I am nurtured by parents and educated to falsely claim a land as my own.</p>
+<p>National education means to make you more foolish.</p>
+<p>Am I not foolish? I am changing my body like a dress life after life.</p>
+<p>You have so many minds, so many dresses—why do you claim this one? Why don't you understand: &quot;This dress is nice, but next moment I may be in another.&quot; You are in the grip of nature.</p>
+<p>You cannot say what dress you will have: &quot;Nature, make me American.&quot; No; material nature controls.</p>
+<p>If you live like a dog—here, take a dog's dress.</p>
+<p>If you live a godly life—here, take God.</p>
+<p>Out of many fools someone tries to understand what I actually am.</p>
+<p>Dog? American? Russian? This real inquiry goes on.</p>
+<p>If you inquire, you have to ask someone, not just yourself.</p>
+<p>When crossing the street in a place you don't know, you have to ask the policeman or some gentleman.</p>
+<p>For &quot;what I am&quot; you have to go to an authority also.</p>
+<p>What is a spiritual master? He is a person conversant with the science of Kṛṣṇa.</p>
+<p>Ordinarily nobody inquires; but if a man does, he can make progress and come to this understanding: Kṛṣṇa is the cause of all causes.</p>
+<p>Four kinds of people, followers of scripture and higher authority, inquire about Kṛṣṇa.</p>
+<p>Those addicted to sinful activities can't inquire.</p>
+<p>They go on in intoxication.</p>
+<p>The righteous, pious man inquires and goes to God.</p>
+<p>Facility is given to people in this process by the authority—to make people happy, not to exploit people.</p>
+<p>The purpose of ISKCON is, in this way, to understand the science of God.</p>
+<p>You want happiness.</p>
+<p>Here it is.</p>
+<p>You are distressed by sinful reactions.</p>
+<p>But if there is no sinful reaction there is no suffering.</p>
+<p>One who knows Kṛṣṇa without doubt is relieved of all reactions.</p>
+<p>Kṛṣṇa says, &quot;Come to Me, and I will give you freedom from all reactions.&quot; Don't disbelieve it.</p>
+<p>He can give you shelter; He has all power.</p>
+<p>If I give you such a promise, because I have no such power I may break the promise.</p>
+<p>If you associate yourself with Kṛṣṇa consciousness your dormant relationship with Kṛṣṇa will be evoked.</p>
+<p>You have a relationship with Him.</p>
+<p>There is no question of disbelieving; it is simply foolishness.</p>
+<p>The dormant relationship is there.</p>
+<p>You want to serve Kṛṣṇa, but simply by the spell of illusion we think we have no connection with Kṛṣṇa.</p>
+<p>We go on doing all &quot;independent&quot; nonsense and we are always anxious.</p>
+<p>When we associate with these dormant feelings for Kṛṣṇa, however, we will become engaged in Kṛṣṇa consciousness.</p>
+<p>&quot;God is unborn&quot; indicates that He is different from the material world.</p>
+<p>We have no such experience of the unborn.</p>
+<p>This city was born—history is filled with dates.</p>
+<p>Spiritual nature, however, is unborn, and at once we can see the difference.</p>
+<p>The material nature is born.</p>
+<p>You have to understand; if Kṛṣṇa is unborn then He is spiritual, not like one of us.</p>
+<p>Kṛṣṇa is not some &quot;extraordinary person who was also born.&quot; He is not born.</p>
+<p>So how can I decide He is an ordinary man? &quot;Those who are fools and rascals think of Me as an ordinary man,&quot; Kṛṣṇa says in the Gītā.</p>
+<p>He is different from everything in this world.</p>
+<p>He is anādi, without cause.</p>
+<p>Kṛṣṇa may be spiritual, but there are other spiritual bodies.</p>
+<p>We have spiritual bodies like Kṛṣṇa's, but they are born.</p>
+<p>They are not exactly born; it is like the sparks of the fire.</p>
+<p>The sparks are not born from the fire; they are actually there.</p>
+<p>We are also not born; we are sparks that come out of the original form.</p>
+<p>Even if we are not born, the spark comes out of Kṛṣṇa, so we are different; the sparks of the fire are fire, but they are not the original fire.</p>
+<p>As for quality, we are the same as Kṛṣṇa.</p>
+<p>It is like the difference between father and son.</p>
+<p>Father and son are different and nondifferent at the same time.</p>
+<p>The son is an expansion of the father, but he cannot claim that he is the father; that would be nonsense.</p>
+<p>Because Kṛṣṇa is declaring Himself supreme proprietor, He is therefore different from anything.</p>
+<p>If I am the proprietor of New York State, I am still not New York State.</p>
+<p>In every step there is duality.</p>
+<p>No one can say we are completely one with God.</p>
+<p>When you can understand Kṛṣṇa's and your own position in a nice analytical way, then at once you become free from sinful reactions.</p>
+<p>This process will help you.</p>
+<p>Chant Hare Kṛṣṇa and cleanse your mind, and you will receive the message.</p>
+<p>One has to be qualified.</p>
+<p>If you chant and hear, for no payment, you will approach God.</p>
+<p>All things will become clear and illuminated.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

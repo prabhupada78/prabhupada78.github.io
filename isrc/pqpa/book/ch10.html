@@ -1,0 +1,547 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch10 - Perfec Questions, Perfect Answers</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html" class="active">ch10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Perfec Questions, Perfect Answers</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#deciding-for-the-future" id="deciding-for-the-future">Deciding for the Future</a></h1>
+<p>New York—July 4, 1972</p>
+<p>BOB: I received your very kind letter.</p>
+<p>ŚRĪLA PRABHUPĀDA: Oh.</p>
+<p>BOB: About a week ago.</p>
+<p>ŚRĪLA PRABHUPĀDA: Now, you are a very intelligent boy.</p>
+<p>You can try to understand this philosophy.</p>
+<p>It is very important.</p>
+<p>For sense gratification people are wasting so much energy.</p>
+<p>They are not aware of what is going to happen in the next life.</p>
+<p>There is a next life, but foolish people are ignorant.</p>
+<p>This life is preparation for the next life.</p>
+<p>That they do not know.</p>
+<p>The modern education and its universities are completely in darkness about this simple knowledge.</p>
+<p>We are changing bodies every moment—that is a medical fact.</p>
+<p>After leaving this body, we will have to accept another body.</p>
+<p>How are we going to accept that body? What kind of body? This can also be known.</p>
+<p>For example, if someone is being educated, one can understand that when he passes his examination, he is going to be an engineer or medical practitioner.</p>
+<p>Similarly, in this life, you can prepare yourself to become something in the next life.</p>
+<p>BARBARA [Bob's wife]: Can we decide what we want to be next life?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, you can decide.</p>
+<p>We have decided that next life we are going to Kṛṣṇa.</p>
+<p>This is our decision—back home, back to Godhead.</p>
+<p>Suppose you want to become educated.</p>
+<p>After this decision that you are going to be an engineer or you are going to be a medical practitioner, with that objective you prepare and educate yourself.</p>
+<p>Similarly, you can decide what you are going to do next life.</p>
+<p>But if you don't decide, then the material nature will decide.</p>
+<p>BARBARA: Could I have been Kṛṣṇa conscious in my last life?</p>
+<p>ŚRĪLA PRABHUPĀDA: It doesn't matter.</p>
+<p>But you can become.</p>
+<p>Take advantage of our Kṛṣṇa consciousness movement.</p>
+<p>A DEVOTEE: She's asking if it was possible that in her last life she was a Kṛṣṇa devotee and has come back again.</p>
+<p>ŚRĪLA PRABHUPĀDA: When one is perfectly Kṛṣṇa's devotee, he does not come back.</p>
+<p>But if there is a little deficiency, then there is a possibility of coming back.</p>
+<p>But even though there is a deficiency, he comes back to a nice family.Śucīnāṁ śrīmatāṁ gehe yoga-bhraṣṭo 'bhijāyate.</p>
+<p>[&quot;The unsuccessful yogī takes birth in a religious or aristocratic family.&quot;] Human intelligence can decide for the future.</p>
+<p>That is human intelligence.</p>
+<p>The animal cannot decide.</p>
+<p>We have discriminatory power.</p>
+<p>If I do this, I will be benefited; if I do that, I will not be benefited.</p>
+<p>This is there in human life.</p>
+<p>So you have to use it properly.</p>
+<p>You should know what is our goal of life and decide in that way.</p>
+<p>That is human civilization ...</p>
+<p>BARBARA: Have you ever seen Kṛṣṇa?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BARBARA: You have?</p>
+<p>ŚRĪLA PRABHUPĀDA: Daily.</p>
+<p>Every moment.</p>
+<p>BARBARA: But not in the material body?</p>
+<p>ŚRĪLA PRABHUPĀDA: He has no material body.</p>
+<p>BARBARA: Well, in the temple here they have pictures of Kṛṣṇa ...</p>
+<p>ŚRĪLA PRABHUPĀDA: That is not a material body.</p>
+<p>You are seeing materially because you have material eyes.</p>
+<p>Because you have material eyes, you cannot see the spiritual form.</p>
+<p>Therefore He kindly appears to be in a material body so that you can see.</p>
+<p>However, because He has kindly made Himself just fit for your seeing, that does not mean He has a material body.</p>
+<p>Suppose the President of the United States kindly comes to your house.</p>
+<p>That does not mean that his position and your position are the same.</p>
+<p>It is his kindness.</p>
+<p>Out of love, he may come to your house, but that does not mean he is on the same level as you.</p>
+<p>Similarly, because we cannot see Kṛṣṇa with our present eyes, Kṛṣṇa therefore appears before us as a painting, as made of stone, as made of wood.</p>
+<p>And Kṛṣṇa is not different from these paintings and wood because everything is Kṛṣṇa.</p>
+<p>BARBARA: After we die, what happens to our spirit?</p>
+<p>ŚRĪLA PRABHUPĀDA: You get another body.</p>
+<p>BARBARA: Immediately?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>Just as when you change your apartment: you fix up your new apartment first; then you leave this one and go there.</p>
+<p>BARBARA: So do we know what type of body we will get?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, provided you are qualified.</p>
+<p>Otherwise nature will arrange for it.</p>
+<p>Those who know—they know what is there.</p>
+<p>But for those who do not know, nature will arrange things.</p>
+<p>If you do not know, this means you have not prepared your life, so accidentally, at the time of death, your mentality will create another body, and nature will supply it.</p>
+<p>BARBARA: And chanting—what does chanting do?</p>
+<p>ŚRĪLA PRABHUPĀDA: That you can ask these boys [the devotees].</p>
+<p>They will explain.</p>
+<p>BOB: If Kṛṣṇa controls everything, how does Kṛṣṇa control a nondevotee?</p>
+<p>ŚRĪLA PRABHUPĀDA: By māyā.</p>
+<p>Just as the government controls everything.</p>
+<p>A kingdom is controlled by the king's departments.</p>
+<p>BOB: And how does Kṛṣṇa control a devotee?</p>
+<p>ŚRĪLA PRABHUPĀDA: Just as you control your beloved.</p>
+<p>For example, if you have a beloved child, you control him for his benefit.</p>
+<p>If he is going to touch fire, you will immediately tell him, &quot;No, no, my dear child.</p>
+<p>Don't touch it.&quot; So a Kṛṣṇa conscious person, a devotee, is never misled, because Kṛṣṇa is always guiding him, whereas those who are not Kṛṣṇa conscious are in the charge of māyā, and māyā will do the needful, as you have seen.</p>
+<p>BOB: Is it preset, when we're born, the time that we'll die?</p>
+<p>ŚRĪLA PRABHUPĀDA: What?</p>
+<p>BOB: Is the time that I'm going to die, and others are going to die, preset before we are born? When I'm born, do I have a certain given life span?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>A DEVOTEE: And he cannot change that?</p>
+<p>ŚRĪLA PRABHUPĀDA: No, he cannot change it, but Kṛṣṇa can change it.</p>
+<p>DEVOTEE: If he commits suicide, is that also preset?</p>
+<p>ŚRĪLA PRABHUPĀDA: Not preset.</p>
+<p>That you can do because you have a little independence.</p>
+<p>It is not natural to commit suicide; it is unnatural.</p>
+<p>So because we have independence, we can go from nature to &quot;un-nature.&quot; A prisoner cannot go out of the prison house naturally, but somehow or other he arranges to jump over the wall and goes away.</p>
+<p>Then he becomes a criminal for further imprisonment.</p>
+<p>Naturally, the prisoner cannot go out of the prison house, but if somehow or other he manages to escape, that means he becomes again a criminal.</p>
+<p>He will be arrested again, and his term of imprisonment will be increased, or he will be punished more.</p>
+<p>So, naturally we cannot violate destiny.</p>
+<p>But if we do it, then we will suffer.</p>
+<p>But our destiny can be changed by Kṛṣṇa when we are Kṛṣṇa conscious.</p>
+<p>We do not do it, but Kṛṣṇa will do it.</p>
+<p>Kṛṣṇa says: ahaṁ tvāṁ sarva-pāpebhyo mokṣayiṣyāmi: &quot;I shall give you protection.&quot; That change takes place for my protection.</p>
+<p>There are two stages—nondevotee and devotee.</p>
+<p>The nondevotee is under the control of material nature, and the devotee is under the direct control of Kṛṣṇa.</p>
+<p>In the office of a big man, an executive of a big company, there are many employees, and they are controlled by different departmental superintendents.</p>
+<p>But although outside of home he controls indirectly, the same man at home is controlling his children directly.</p>
+<p>But he is always a controller.</p>
+<p>Similarly, God is the controller always.</p>
+<p>When one becomes a devotee, he is controlled by God; when he is a nondevotee, he is controlled by His agent, māyā.</p>
+<p>But he has to be controlled.</p>
+<p>For example, every citizen of America is controlled by the government.</p>
+<p>When he is all right, the civil department controls him; when he is not all right, the criminal department controls him.</p>
+<p>But he cannot say, &quot;I am not controlled.&quot; That is not possible.</p>
+<p>Everyone is controlled.</p>
+<p>If somebody says, &quot;I am not controlled,&quot; he is not sane; he is crazy.</p>
+<p>Everyone is controlled.</p>
+<p>So either you are controlled directly by God, or you are controlled by His agency, māyā.</p>
+<p>Being controlled by māyā, you spoil your life; you remain in material existence one birth after another, changing your bodies.</p>
+<p>But if you choose to be controlled by God, then after this body, you go back home, back to Godhead.</p>
+<p>Then your life is successful.</p>
+<p>You cannot exist without being controlled; that is not possible.</p>
+<p>That is intelligence.</p>
+<p>And that is stated in the Bhagavad-gītā.</p>
+<p>Bahūnāṁ janmanām ante jñānavān māṁ prapadyate: &quot;After many births of traveling or speculation, one surrenders unto Me.&quot; Vāsudevaḥ sarvam iti: &quot;Kṛṣṇa, You are everything.</p>
+<p>So I have come.</p>
+<p>Accept me.</p>
+<p>I am now fully surrendered unto You, and You control me.</p>
+<p>I am controlled.</p>
+<p>For so long I have been controlled by these rascals.</p>
+<p>There is no benefit.</p>
+<p>I have been controlled by my senses.</p>
+<p>So under the control of the senses I have served so-called family, society, country, nation—up to serving the dogs.</p>
+<p>But nothing has given me satisfaction.</p>
+<p>Therefore now I have good sense; I put myself under Your control.</p>
+<p>Instead of being controlled by dog, let me be controlled by God.&quot; This is Kṛṣṇa consciousness.</p>
+<p>Have you not seen how a man is controlled by a dog? In the street the dog stops, passes stool, and his master will stand and wait.</p>
+<p>Is it not? He is passing stool and urine, and the master is thinking, &quot;I am master.&quot; But he is being controlled.</p>
+<p>That is māyā.</p>
+<p>He has become servant of the dog, but he is thinking, &quot;I am master.&quot; So unless one is Kṛṣṇa conscious, one cannot understand.</p>
+<p>We can understand that this rascal is being controlled by his dog, but he is thinking that he is the master.</p>
+<p>We can understand.</p>
+<p>What do you think? Has he not become controlled by the dog?</p>
+<p>BOB: That is so.</p>
+<p>ŚRĪLA PRABHUPĀDA: But he is thinking, &quot;I am the master of the dog.&quot; A family man is controlled by his wife, his children, by his servants, by everyone, but he is thinking, &quot;I am master.&quot; President Nixon is thinking that he is master of his country, but he is controlled.</p>
+<p>At once he can be dismissed by the public, his servants! And he will take a position, claiming, &quot;I will give you very good service,&quot; and &quot;I shall be a first-class servant.&quot; Therefore people vote, &quot;All right, you become president.&quot; And he is advertising: &quot;Reelect me! Reelect me!&quot; That means he is a servant.</p>
+<p>But he is thinking, &quot;I am master.&quot; That is the position.</p>
+<p>Māyā.</p>
+<p>One who is controlled by māyā is thinking himself master, but he is a servant.</p>
+<p>And a devotee never thinks to himself, &quot;I am master,&quot; only &quot;I am servant.&quot; That is the difference between māyā and reality.</p>
+<p>He at least knows: &quot;I am never master.</p>
+<p>I am always a servant.&quot; When a servant is thinking, &quot;I am master,&quot; that is called illusion.</p>
+<p>But when a servant thinks, &quot;I am a servant,&quot; that is not illusion.</p>
+<p>That is mukti, liberation.</p>
+<p>Because he is not controlled by false thoughts.</p>
+<p>Try to think about this subject matter.</p>
+<p>A devotee is never controlled by false thoughts.</p>
+<p>He knows his position.</p>
+<p>Svarūpena vyavasthitiḥ.</p>
+<p>Mukti, liberation, means to be situated in one's own constitutional position.</p>
+<p>I am a servant.</p>
+<p>So if I know that I am a servant, that is my liberation.</p>
+<p>And if I think that I am master, that is bondage.</p>
+<p>This is the difference between conditioned life and liberated life.</p>
+<p>So these Kṛṣṇa conscious devotees are always thinking that they are servants of Kṛṣṇa.</p>
+<p>Therefore they are all liberated.</p>
+<p>They do not endeavor for liberation.</p>
+<p>They are already liberated because they are situated in their constitutional position.</p>
+<p>They are not artificially thinking, &quot;I am master.&quot; Otherwise, everyone is thinking, &quot;I am master.&quot; That is illusion.</p>
+<p>You cannot be master in any state of your life; you must remain a servant.</p>
+<p>That is your position.</p>
+<p>When one thinks artificially that he is master, that is his conditioned life.</p>
+<p>And when one voluntarily surrenders to the supreme master, that is his liberation.</p>
+<p>A devotee does not try for liberation separately.</p>
+<p>As soon as he surrenders to Kṛṣṇa or Kṛṣṇa's representative, he is liberated.</p>
+<p>BOB: Prabhupāda, people that engage in religions, like these &quot;Jesus freaks&quot; and other people, claim that Jesus is guiding them.</p>
+<p>Can this be so?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, but they are not taking the guidance.</p>
+<p>Just like the Christians.</p>
+<p>Jesus is guiding them, &quot;Thou shalt not kill,&quot; but they are killing.</p>
+<p>Where is the Jesus guidance? Simply saying, &quot;I am guided by Jesus Christ&quot;—will that do? &quot;But I don't care for his words.&quot; Is that guidance? Nobody is being guided by Jesus Christ.</p>
+<p>Their claim is false.</p>
+<p>It is very hard to find a man who is actually being guided by Jesus Christ.</p>
+<p>Jesus Christ's guidance is available, but nobody is caring for him.</p>
+<p>They have taken Jesus Christ as contractor to take up their sins.</p>
+<p>That is their philosophy.</p>
+<p>They commit all kinds of sins, and poor Jesus Christ will be responsible.</p>
+<p>That is their religion.</p>
+<p>Therefore they say, &quot;We have a very good religion.</p>
+<p>For all our sinful activities, Jesus Christ will die.&quot; So is that good religion? They have no sympathy for Jesus Christ.</p>
+<p>He died for our sins.</p>
+<p>Why should we commit sins again? Such a great life has been sacrificed for our sins, so we should be guided by Jesus Christ.</p>
+<p>But if you take it otherwise—&quot;Ah, we shall go on committing all sins, and Jesus Christ will make a contract to nullify all my sins; I'll simply go to the church and confess and come back and again do all nonsense&quot;—do you think that shows very good intelligence?</p>
+<p>BOB: No.</p>
+<p>ŚRĪLA PRABHUPĀDA: Actually, one who is guided by Jesus Christ will certainly get liberation.</p>
+<p>But it is very hard to find a man who is actually being guided by Jesus Christ.</p>
+<p>BOB: What about the &quot;Jesus freaks,&quot; the young people that have joined the Jesus movement? They read the Bible very often, and they try to—</p>
+<p>ŚRĪLA PRABHUPĀDA: But violence is against the Bible's injunctions.</p>
+<p>How can they kill if they are following the Bible?</p>
+<p>BOB: I asked one this, and he claimed that Jesus was also eating meat in the Bible.</p>
+<p>ŚRĪLA PRABHUPĀDA: That's all right.</p>
+<p>He may eat anything.</p>
+<p>He is powerful.</p>
+<p>But he has ordered, &quot;Thou shalt not kill.</p>
+<p>You must stop killing.&quot; He is powerful.</p>
+<p>He can eat the whole world.</p>
+<p>But you cannot compare to Jesus Christ.</p>
+<p>You cannot imitate Jesus Christ; you have to abide by his order.</p>
+<p>Then you are guided by Jesus Christ.</p>
+<p>That is actually obedience.</p>
+<p>That is explained in the Bhāgavata.</p>
+<p>One who is īśvara, who is empowered, can do anything, but we cannot imitate.</p>
+<p>We have to abide by his order: &quot;What he says to me, that I will do.&quot; You cannot imitate.</p>
+<p>You say that Jesus Christ ate meat.</p>
+<p>Admitting that, you do not know in what condition he ate meat.</p>
+<p>He is himself eating meat, but he is advising others not to kill.</p>
+<p>Do you think that Jesus Christ was contradicting himself?</p>
+<p>BOB: No.</p>
+<p>ŚRĪLA PRABHUPĀDA: He cannot do that.</p>
+<p>That is real faith in him—that he cannot do that.</p>
+<p>So why has he eaten meat? He knows, but he has asked me not to kill.</p>
+<p>I have to follow.</p>
+<p>That is the real system.</p>
+<p>You are not Jesus Christ; you cannot imitate him.</p>
+<p>He has sacrificed his life for God.</p>
+<p>Can you do that? So why shall you imitate Jesus Christ? You are imitating Jesus Christ by eating meat.</p>
+<p>Why not imitate Jesus Christ and sacrifice your life for spreading God consciousness? What do you think? Yes, when you preach you can say what you think.</p>
+<p>They are socalled Christians—but what are they doing for God? Just consider the sun.</p>
+<p>The sun is absorbing urine.</p>
+<p>Can you drink urine? If you want to imitate the sun—&quot;Oh, here is the sun absorbing urine.</p>
+<p>Let me drink urine&quot;—can you? Jesus Christ is powerful; he can do everything.</p>
+<p>But we cannot imitate; we have to simply abide by his order.</p>
+<p>That is real Christianity.</p>
+<p>We cannot imitate a powerful man.</p>
+<p>That is wrong.</p>
+<p>In our Vedic literature, there was a poison ocean, so people could not find out what to do with it.</p>
+<p>Then Lord Śiva said, &quot;All right, I'll drink it.&quot; So he drank the whole poison ocean and kept it in his throat.</p>
+<p>Can you drink poison? Not the ocean—just one cup? So how can we imitate Lord Śiva? Lord Śiva never advised that we drink poison.</p>
+<p>So you have to abide by the advice, not imitate.</p>
+<p>These LSD and marijuana people say that Lord Śiva used to smoke gañja.</p>
+<p>But Lord Śiva drank the whole poisoned ocean.</p>
+<p>Can you do that? Lord Śiva's instructions should be taken.</p>
+<p>He says that the best worship is worship of Viṣṇu.</p>
+<p>Viṣṇor ārādhanaṁ param.</p>
+<p>When he was asked by Pārvatī what method of worship is best, then he said, &quot;The best worship is worship of Lord Viṣṇu [Kṛṣṇa].&quot; There are many demigods, but he recommended Viṣṇu worship as the best.</p>
+<p>And better than Viṣṇu worship is worship of a Vaiṣṇava.</p>
+<p>Tadīyānām—His servants, or those who are in relation to Him.</p>
+<p>For instance, we are worshiping this plant, tulasī.</p>
+<p>We are not worshiping all plants, but because this tulasī has a very intimate connection with Kṛṣṇa, Viṣṇu, we are therefore worshiping her.</p>
+<p>Similarly, if anything is intimately related with Kṛṣṇa, worship of that thing is better than worship of Viṣṇu.</p>
+<p>BOB: Why is that?</p>
+<p>ŚRĪLA PRABHUPĀDA: Because Kṛṣṇa will be pleased.</p>
+<p>Suppose you have a dog and some friends come and pat your dog.</p>
+<p>[Śrīla Prabhupāda makes big patting motions.] You become pleased.</p>
+<p>You become pleased: &quot;Oh, he is my good friend.&quot; You see how they think.</p>
+<p>We see this—some friend comes and says, &quot;My, what a nice dog you have.&quot; [Laughter.] [Some Indian guests enter the room.]</p>
+<p>ŚRĪLA PRABHUPĀDA: Please have some prasāda.</p>
+<p>[Śrīla Prabhupāda continues speaking with his guests, sometimes in English and sometimes Hindi.</p>
+<p>It is his last day in New York, and his plane to London is scheduled to leave in only a few hours, Bob has brought a car to drive Śrīla Prabhupāda to Kennedy Airport.</p>
+<p>The devotees are scurrying about, bringing luggage to the car, putting the manuscripts of Śrīla Prabhupāda's latest translating work in order, and making other last-minute arrangements.]</p>
+<p>ŚYĀMASUNDARA: Everything's ready, Śrīla Prabhupāda.</p>
+<p>The car is waiting for us.</p>
+<p>ŚRĪLA PRABHUPĀDA: So? We can go now? All right.</p>
+<p>Hare Kṛṣṇa! Concluding words Concluding words On July 19, 1976, His Divine Grace Śrīla Prabhupāda accepted my wife and me as his disciples and initiated us with the names Bhakti-devī dāsī and Brahmatīrtha dāsa.</p>
+<p>As I reflect back on that day, I can see how fortunate I was to have met His Divine Grace and my Godbrothers in the Hare Kṛṣṇa movement.</p>
+<p>When I was handed my beads at initiation, I promised to follow the regulative principles and to chant God's names daily.</p>
+<p>Four years previously, Śrīla Prabhupāda had advised me to follow these principles, and within six months, he said, I could be like the other devotees; all unnecessary things (anarthas), such as mundane movies and restaurants, would cease to attract me.</p>
+<p>&quot;The whole human life is meant for purification,&quot; he said.</p>
+<p>I was interested in being purified, even though I did not really know what purification meant.</p>
+<p>I had gone to India with the Peace Corps hoping to find a higher level of consciousness.</p>
+<p>I could not believe that satisfying the senses was the all in all, yet I myself was bound by the senses.</p>
+<p>Later I could understand that yoga means becoming free from the dictation of the senses.</p>
+<p>Upon returning to America, I started graduate school in geology, got married, and became somewhat entangled in domestic responsibilities, but I would very often think of my conversations with Śrīla Prabhupāda and of his instructions.</p>
+<p>One of his primary instructions was simply to associate with the devotees, and this I gladly did.</p>
+<p>Devotees are different: by understanding that loving service to the Supreme Lord is the goal of life, they avoid getting caught up in the petty affairs of sense gratification and false ego.</p>
+<p>Visiting the temple was most refreshing.</p>
+<p>Gradually, my wife and I became friends with many devotees and wanted somehow to do some service for the movement.</p>
+<p>I sponsored a Bhakti-yoga club at the university, and our apartment served as a way station for traveling parties of devotees.</p>
+<p>As we followed Śrīla Prabhupāda's instructions, even our eating became purified.</p>
+<p>In India I had told Śrīla Prabhupāda that I could not offer my food as the devotees do because I did not understand that Kṛṣṇa is God.</p>
+<p>So he told me simply to thank God for my food before eating.</p>
+<p>This we did, and finally our devotion matured, and we started actually offering our food to the Supreme Lord.</p>
+<p>What a wonderful feeling, to be cooking for the Supreme Lord! This actually freed us from the control of the tongue.</p>
+<p>Finally, we were ready to become involved fully in temple life.</p>
+<p>By Kṛṣṇa's grace, I obtained a job near a temple in Texas and began to take part in all the temple programs.</p>
+<p>In this way, all the anarthas disappeared, just as Śrīla Prabhupāda had predicted.</p>
+<p>It was like having a burden lifted from our shoulders.</p>
+<p>We were no longer servants of our senses, but servants of God and His devotees.</p>
+<p>The value of Śrīla Prabhupāda's instructions had become clear.</p>
+<p>A human being is not meant to labor like an ass and enjoy like a dog.</p>
+<p>Purification means coming to a higher level of consciousness.</p>
+<p>Even though I have been initiated, I still admire my Godbrothers' spiritual awareness and wish to advance.</p>
+<p>Actually, initiation is the beginning.</p>
+<p>Brahmatīrtha dāsa Adhikārī (Bob Cohen) Houston, Texas October 16, 1976 His Divine Grace A.C.Bhaktivedanta Swami Prabhupada His Divine Grace A.C.Bhaktivedanta Swami Prabhupāda His Divine Grace A.C.Bhaktivedanta Swami Prabhupāda appeared in this world in 1896 in Calcutta, India.</p>
+<p>He first met his spiritual master, Śrīla Bhaktisiddhānta Sarasvatī Gosvāmi, in Calcutta in 1922.</p>
+<p>Bhaktisiddhānta Sarasvatī, a prominent devotional scholar and the founder of sixty-four Gauḍīya Maṭhas (Vedic institutes), liked this educated young man and convinced him to dedicate his life to teaching Vedic knowledge.</p>
+<p>Śrīla Prabhupāda became his student, and eleven years later (1933) at Allahabad he became his formally initiated disciple.</p>
+<p>At their first meeting, in 1922, Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura requested Śrīla Prabhupāda to broadcast Vedic knowledge through the English language.</p>
+<p>In the years that followed, Śrīla Prabhupāda wrote a commentary on the Bhagavad-gītā, assisted the Gauḍīya Maṭha in its work and, in 1944, without assistance, started an English fortnightly magazine, edited it, typed the manuscripts and checked the galley proofs.</p>
+<p>He even distributed the individual copies freely and struggled to maintain the publication.</p>
+<p>Once begun, the magazine never stopped; it is now being continued by his disciples in the West.</p>
+<p>Recognizing Śrīla Prabhupāda's philosophical learning and devotion, the Gauḍīya Vaiṣṇava Society honored him in 1947 with the title &quot;Bhaktivedanta.&quot; In 1950, at the age of fifty-four, Śrīla Prabhupāda retired from married life, and four years later he adopted the vānaprastha (retired) order to devote more time to his studies and writing.</p>
+<p>Śrīla Prabhupāda traveled to the holy city of Vṛndāvana, where he lived in very humble circumstances in the historic medieval temple of RādhāDāmodara.</p>
+<p>There he engaged for several years in deep study and writing.</p>
+<p>He accepted the renounced order of life (sannyāsa) in 1959.</p>
+<p>At Rādhā-Dāmodara, Śrīla Prabhupāda began work on his life's masterpiece: a multivolume translation and commentary on the eighteen-thousand-verse Śrīmad-Bhāgavatam (Bhāgavata Purāṇa).</p>
+<p>He also wrote Easy Journey to Other Planets.</p>
+<p>After publishing three volumes of Bhāgavatam, Śrīla Prabhupāda came to the United States, in 1965, to fulfill the mission of his spiritual master.</p>
+<p>Since that time, His Divine Grace has written over forty volumes of authorita tive translations, commentaries and summary studies of the philosophical and religious classics of India.</p>
+<p>In 1965, when he first arrived by freighter in New York City, Śrīla Prabhupāda was practically penniless.</p>
+<p>It was after almost a year of great difficulty that he established the International Society for Krishna Consciousness in July of 1966.</p>
+<p>Under his careful guidance, the Society has grown within a decade to a worldwide confederation of almost one hundred āśramas, schools, temples, institutes and farm communities.</p>
+<p>In 1968, Śrīla Prabhupāda created New Vṛndāvana, an experimental Vedic community in the hills of West Virginia.</p>
+<p>Inspired by the success of New Vṛndāvana, now a thriving farm community of more than one thousand acres, his students have since founded several similar communities in the United States and abroad.</p>
+<p>In 1972, His Divine Grace introduced the Vedic system of primary and secondary education in the West by founding the Gurukula school in Dallas, Texas.</p>
+<p>The school began with three children in 1972, and by the beginning of 1975 the enrollment had grown to one hundred fifty.</p>
+<p>Śrīla Prabhupāda has also inspired the construction of a large international center at Śrīdhāma Māyāpur in West Bengal, India, which is also the site for a planned Institute of Vedic Studies.</p>
+<p>A similar project is the magnificent KṛṣṇaBalarāma Temple and International Guest House in Vṛndāvana, India.</p>
+<p>These are centers where Westerners can live to gain firsthand experience of Vedic culture.</p>
+<p>Śrīla Prabhupāda's most significant contribution, however, is his books.</p>
+<p>Highly respected by the academic community for their authoritativeness, depth and clarity, they are used as standard textbooks in numerous college courses.</p>
+<p>His writings have been translated into eleven languages.</p>
+<p>The Bhaktivedanta Book Trust, established in 1972 exclusively to publish the works of His Divine Grace, has thus become the world's largest publisher of books in the field of Indian religion and philosophy.</p>
+<p>Its latest project is the publishing of Śrīla Prabhupāda's most recent work: a seventeenvolume translation and commentary—completed by Śrīla Prabhupāda in only eighteen months—on the Bengali religious classic Śrī Caitanya-caritāmrta.</p>
+<p>In the past ten years, in spite of his advanced age, Śrīla Prabhupāda has circled the globe twelve times on lecture tours that have taken him to six continents.</p>
+<p>In spite of such a vigorous schedule, Śrīla Prabhupāda continues to write prolifically.</p>
+<p>His writings constitute a veritable library of Vedic philosophy, religion, literature and culture.</p>
+<p>A Note from the Secretary of the International Society for Krishna Consciousness A Note from the Secretary of the International Society for Krishna Consciousness Dear Reader: After finishing Perfect Questions, Perfect Answers, you may want to go further in understanding Kṛṣṇa consciousness.</p>
+<p>You may want to find out more about the Kṛṣṇa conscious philosophy; you may want to practice some of the techniques of bhakti-yoga; you may even want to become a fully Kṛṣṇa conscious devotee.</p>
+<p>In any case, there's much you can do.</p>
+<p>First, we have a virtual library of Kṛṣṇa conscious books.</p>
+<p>We generally recommend starting off with Bhagavad-gītā As It Is, our spiritual master's translation and commentary for the famous Bhagavad-gītā, to which he so often referred in his talks with Bob.</p>
+<p>After the Gītā comes Śrīmad-Bhāgavatam, a multivolume work that could be called a postgraduate study for spiritual life.</p>
+<p>All told, we've published some fifty large books of Kṛṣṇa conscious philosophy, enough to read and study for a whole lifetime.</p>
+<p>We also have a monthly magazine, Back to Godhead, and records and tape cassettes of transcendental chanting.</p>
+<p>If you'd like to meet and talk with devotees and get some firsthand experience of Kṛṣṇa consciousness in action, we have about one hundred centers around the world, most of them in the United States.</p>
+<p>Generally our centers are in large cities, although we also have some fifteen Kṛṣṇa conscious farm communities for &quot;simple living and high thinking.&quot; All of our centers have regular classes every day, feast programs every Sunday, and also special festivals throughout the year.</p>
+<p>For more specific information, you can write or call the center nearest you.</p>
+<p>And if you ever travel to India, you can visit our International Center at Śrīdhāma Māyāpura, the holy city where the conversations in this book took place.</p>
+<p>We also have a wonderful International Center and Guest House in Vṛndāvana, the ancient Indian city of Lord Kṛṣṇa's eternal pastimes.</p>
+<p>Of course, wherever you are, you can always take advantage of chanting the Hare Kṛṣṇa mantra: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>Our spiritual master says, &quot;Just chant Hare Kṛṣṇa, and your life will be sublime.&quot; Finally, for any questions at all that you might have about spiritual life in Kṛṣṇa consciousness, please feel free to get in touch with us here at our central office in Los Angeles, and we'll do whatever we can to be of service.</p>
+<p>Yours in the service of Kṛṣṇa, Swarup das Adhikari Secretary The International Society for Krishna Consciousness 3764 Watseka Avenue Los Angeles, California 90034 Telephone: (213)871-0717</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch9.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch9.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

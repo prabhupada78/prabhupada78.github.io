@@ -1,0 +1,454 @@
+# The Real Goal of Life
+
+February 28, 1972 (continued)
+
+ŚRĪLA PRABHUPĀDA: This movement is especially meant to enable a human being to reach the real goal of life.
+
+BOB: The real goal ... ?
+
+ŚRĪLA PRABHUPĀDA: The real goal of life.
+
+BOB: Is the real goal of life to know God?
+
+ŚRĪLA PRABHUPĀDA: Yes. To go back home, back to Godhead. That is the real goal of life.
+
+The water that comes from the sea forms clouds, the clouds fall down as rain, and the actual goal is to flow down the river and again enter the sea.
+
+So, we have come from God, and now we are embarrassed by material life.
+
+Therefore, our aim should be to get out of this embarrassing situation and go back home, back to Godhead.
+
+This is the real goal of life.
+
+mām upetya punar janma duḥkhālayam aśāśvatam nāpnuvanti mahātmānaḥ saṁsiddhiṁ paramāṁ gatāḥ ["After attaining Me, the great souls, who are yogīs in devotion, never return to this temporary world, which is full of miseries, because they have attained the highest perfection."] That is the version of Bhagavad-gītā.
+
+If anyone comes to Me—mām upetya: he does not come back again.
+
+Where? To this place—duḥkhālayam aśāśvatam.
+
+This place is the abode of miseries.
+
+Everyone knows, but they have been befooled by so-called leaders.
+
+Material life is miserable life.
+
+Kṛṣṇa says, God says, that this place is duḥkhālayam—it is a place of miseries.
+
+And it is also aśāśvatam, temporary.
+
+You cannot make a compromise: "All right, let it be miserable.
+
+I shall remain here as an American or Indian." No.
+
+That also you cannot do.
+
+You cannot remain an American.
+
+You may think that, having been born in America, you are very happy.
+
+But you cannot remain an American for long.
+
+You will have to be kicked out of that place.
+
+And your next life you do not know! Therefore, it is duḥkhālayam aśāśvatam—miserable and temporary.
+
+That is our philosophy.
+
+BOB: But when you have some knowledge of God, then life is not so miserable?
+
+ŚRĪLA PRABHUPĀDA: No! Some knowledge will not do.
+
+You must have perfect knowledge.
+
+janma karma ca me divyam evaṁ yo vetti tattvataḥ Tattvataḥ means "perfectly." Perfect knowledge is being taught in Bhagavad-gītā.
+
+So, we are giving everyone in human society a chance to learn Bhagavad-gītā as it is and make his life perfect.
+
+That is the Kṛṣṇa consciousness movement.
+
+What does your science say about the transmigration of the soul?
+
+BOB: I think ... that science ... cannot deny or affirm it. Science does not know it.
+
+ŚRĪLA PRABHUPĀDA: Therefore I say that science is imperfect.
+
+BOB: Science may, though, say something.
+
+It is said in science that energy is never destroyed; it is changed.
+
+ŚRĪLA PRABHUPĀDA: That's all right.
+
+But how the energy is working in the future—that science does not know.
+
+How is the energy diverted? How, by different manipulations, is the energy working differently? For instance, electrical energy.
+
+By different handling it is operating the heater, and it is operating the refrigerator.
+
+They are just the opposite, but the electrical energy is the same.
+
+Similarly, this energy—living energy—how is it being directed? Which way is it going? How is it fructifying in the next life? That they do not know.
+
+But in Bhagavad-gītā it is very simply stated.
+
+vāsāṁsi jīrṇāni yathā vihāya You are covered by a dress, by a shirt.
+
+When this shirt is unusable, you change it.
+
+Similarly, this body is just like a shirt and coat.
+
+When it is no longer workable, we have to change it.
+
+BOB: What is the "we" that has to change? What is constant?
+
+ŚRĪLA PRABHUPĀDA: That is the soul.
+
+BOB: From one life to the next?
+
+ŚRĪLA PRABHUPĀDA: That is the soul—I.
+
+What "you" is speaking? You! What "I" is speaking? Identity: ātmā, or soul.
+
+BOB: My soul is different from your soul?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+You are an individual soul, I am an individual soul.
+
+BOB: You have removed yourself from karmic influences.
+
+If I was to remove myself from karmic influences, would our souls be the same or different?
+
+ŚRĪLA PRABHUPĀDA: The soul is of the same quality in all.
+
+You are under a certain conception of life at the present moment, and these countrymen of yours [the Kṛṣṇa conscious devotees] were under a certain conception of life, but by training they have taken to another conception of life.
+
+So the ultimate training is how to become Kṛṣṇa conscious.
+
+That is the perfection.
+
+BOB: If two people are Kṛṣṇa conscious, is their soul the same?
+
+ŚRĪLA PRABHUPĀDA: The soul is always the same.
+
+BOB: In each person? In each person is it the same?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+BOB: [pointing to two devotees] If these two are Kṛṣṇa conscious, are their souls the same?
+
+ŚRĪLA PRABHUPĀDA: The soul is the same but always individual, even if one is not Kṛṣṇa conscious.
+
+For instance, you are a human being, and I am a human being.
+
+Even if I am not a Christian, even if you are not a Hindu, still we are human beings.
+
+Similarly, the soul may not be Kṛṣṇa conscious, or he may be Kṛṣṇa conscious—it doesn't matter.
+
+But the soul is the soul.
+
+BOB: Can you tell me more about this?
+
+ŚRĪLA PRABHUPĀDA: Soul—as pure spirit, all souls are equal.
+
+Even in an animal.
+
+Therefore it is said, paṇḍitāḥ sama-darśinaḥ: those who are actually learned do not see the outward covering, either in a human being or in an animal.
+
+BOB: If I may ask another question on this?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+BOB: I have considered the soul somewhat as part of God.
+
+At times I think I feel God.
+
+I'm here, and you may say God is here.
+
+So if the soul is inside me, then should I be able to feel God inside me? Not all of God, I mean, but a ...
+
+ŚRĪLA PRABHUPĀDA: Part of God.
+
+BOB: But I don't feel God in me, but God may be here, separate—separate from me.
+
+But should I be able to feel God inside me, since my soul is Part of God?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+God is inside also.
+
+God is everywhere.
+
+God is inside and outside also.
+
+This is to be known.
+
+BOB: How do you feel God inside you?
+
+ŚRĪLA PRABHUPĀDA: Not in the beginning, but you have to know from the śāstras [scriptures], by the Vedic information.
+
+For example, in the Bhagavad-gītā it is said, īśvaraḥ sarva-bhūtānāṁ hṛd-deśe 'rjuna tiṣṭhati: God is there in everyone's heart.
+
+Paramāṇu-cayāntara-stham: God is also within every atom.
+
+So this is the first information.
+
+And then, by the yogic process, you have to realize it.
+
+BOB: Yogic process?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+BOB: Is chanting Hare Kṛṣṇa such a yogic process?
+
+ŚRĪLA PRABHUPĀDA: Yes, it is also a yogic process.
+
+BOB: What kind of yogic process must I do to find out—to feel this information— to feel the soul inside?
+
+ŚRĪLA PRABHUPĀDA: Yes, there are many different yogic processes, but for this age this process is very nice.
+
+BOB: Chanting.
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+BOB: Through this I can feel not only God outside but God inside?
+
+ŚRĪLA PRABHUPĀDA: You'll understand everything of God—how God is inside, how God is outside, how God is working.
+
+Everything will be revealed.
+
+By this attitude of service, God will reveal Himself.
+
+You cannot understand God by your endeavor.
+
+Only if God reveals Himself.
+
+For instance, when the sun is out of your sight at night, you cannot see it by your torchlight, or any light.
+
+But in the morning you can see the sun automatically, without any torchlight.
+
+Similarly, you have to create a situation—you have to put yourself in a situation—in which God will be revealed.
+
+It is not that by some method you can ask God, "Please come.
+
+I will see You." No, God is not your order carrier.
+
+BOB: You must please God for Him to reveal Himself.
+
+Is that correct?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+ŚYĀMASUNDARA: How do we know when we are pleasing God?
+
+ŚRĪLA PRABHUPĀDA: When we see Him.
+
+Then you will understand.
+
+Just as, when you eat, you do not require to ask anyone whether you are feeling strength or your hunger is satisfied.
+
+If you eat, you understand that you are feeling energy.
+
+You don't need to inquire from anyone.
+
+Similarly, if you actually serve God, then you will understand, "God is dictating to me.
+
+God is there.
+
+I am seeing God."
+
+A DEVOTEE: Or God's representative.
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+DEVOTEE: It comes easier.
+
+ŚRĪLA PRABHUPĀDA: You have to go through God's representative.
+
+yasya prasādād bhagavat-prasādaḥ "By the mercy of the spiritual master one is benedicted by the mercy of Kṛṣṇa." If you please God's representative, then automatically God becomes pleased, and thus you can directly see Him.
+
+AN INDIAN GENTLEMAN: How to please God's representative?
+
+ŚRĪLA PRABHUPĀDA: You have to carry out his orders, that's all.
+
+God's representative is the guru.
+
+He asks you to do this, to do that—if you do that, that is pleasing.
+
+yasyāprasādān na gatiḥ kuto 'pi "Without the grace of the spiritual master one cannot make any advancement." If you displease him, then you are nowhere.
+
+Therefore we worship the guru.
+
+sākṣād-dharitvena samasta-śāstrair uktas tathā bhāvyata eva sadbhiḥ kintu prabhor yaḥ priya eva tasya vande guroḥ śrī-caraṇāravindam ["The spiritual master is to be honored as much as the Supreme Lord because of his being the most confidential servitor of the Lord.
+
+This is acknowledged by all revealed scriptures and is followed by all authorities.
+
+Therefore I offer my respectful obeisances unto the lotus feet of such a spiritual master, who is a bona fide representative of Lord Kṛṣṇa."] The guru should be accepted as God.
+
+That is the injunction of all śāstra.
+
+BOB: The guru should be accepted as a representative of God?
+
+ŚRĪLA PRABHUPĀDA: Yes, the guru is God's representative.
+
+The guru is the external manifestation of Kṛṣṇa.
+
+BOB: But different from the incarnations of Kṛṣṇa that come?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+BOB: In what way is the external manifestation of the guru different from the external manifestation of, let us say, Kṛṣṇa or Caitanya when They come to earth?
+
+ŚRĪLA PRABHUPĀDA: The guru is the representative of Kṛṣṇa.
+
+So there are symptoms of who is a guru.
+
+The general symptoms are described in the Vedas.
+
+tad-vijñānārthaṁ sa gurum evābhigacchet samit-pāṇiḥ śrotriyaṁ brahma-niṣṭham A guru must come in a disciplic succession, and he must have heard thoroughly about the Vedas from his spiritual master.
+
+Generally a guru's symptom is that he is a perfect devotee, that's all.
+
+And he serves Kṛṣṇa by preaching His message.
+
+BOB: Lord Caitanya—He was a different type of guru than you are?
+
+ŚRĪLA PRABHUPĀDA: No, no.
+
+Gurus cannot be of different types.
+
+All gurus are of one type.
+
+BOB: But He was—was He also an incarnation at the same time?
+
+ŚRĪLA PRABHUPĀDA: Yes, He is Kṛṣṇa Himself, but He is representing the guru.
+
+BOB: I ... I see.
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+BOB: And then ...
+
+ŚRĪLA PRABHUPĀDA: Because Kṛṣṇa was God, He demanded: sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja "Abandon all varieties of religion and just surrender unto Me." But people misunderstood Him.
+
+Therefore Kṛṣṇa again came as a guru and taught people how to surrender to Kṛṣṇa.
+
+ŚYĀMASUNDARA: Doesn't He say in Bhagavad-gītā, "I am the spiritual master"?
+
+ŚRĪLA PRABHUPĀDA: Yes, He is the original spiritual master because He was accepted as spiritual master by Arjuna.
+
+So what is the difficulty? Śiṣyas te 'haṁ śādhi māṁ tvāṁ prapannam.
+
+Arjuna told the Lord, "I am Your disciple, and a soul surrendered unto You.
+
+Please instruct me." So unless He is a spiritual master, how does Arjuna become His disciple? He is the original guru.
+
+Tene brahma hṛdā ya ādi-kavaye: "It is He only who first imparted Vedic knowledge unto the heart of Brahmā, the first created being." Therefore He is the original guru.
+
+BOB: Kṛṣṇa.
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+He is the original guru.
+
+Then His disciple Brahmā is a guru, then his disciple Nārada is a guru, then his disciple Vyāsa is a guru—in this way there is a guru-paramparā [disciplic succession of gurus].
+
+Evaṁ paramparā-prāptam: the transcendental knowledge is received through the disciplic succession.
+
+BOB: So a guru receives his knowledge through the disciplic succession, not directly from Kṛṣṇa? Do you receive some knowledge directly from Kṛṣṇa?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+Kṛṣṇa's direct instruction is there: Bhagavad-gītā.
+
+BOB: I see, but ...
+
+ŚRĪLA PRABHUPĀDA: But you have to learn it through the disciplic succession, otherwise you will misunderstand it.
+
+BOB: But presently you do not receive information directly from Kṛṣṇa? It comes through the disciplic succession from the books?
+
+ŚRĪLA PRABHUPĀDA: There is no difference.
+
+Suppose I say that this is a pencil.
+
+If you say to him, "There is a pencil," and if he says to another man, "This is a pencil," then what is the difference between his instruction and my instructions?
+
+BOB: Kṛṣṇa's mercy allows you to know this now?
+
+ŚRĪLA PRABHUPĀDA: You can take Kṛṣṇa's mercy also, provided it is delivered as it is.
+
+Just as we are teaching Bhagavad-gītā.
+
+In Bhagavad-gītā Kṛṣṇa says: sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja "Just give up all other forms of religion and simply surrender unto Me." Now we are saying that you should give up everything and surrender to Kṛṣṇa.
+
+Therefore, there is no difference between Kṛṣṇa's instruction and our instruction.
+
+There is no deviation.
+
+So if you receive knowledge in that perfect way, that is as good as receiving instruction directly from Kṛṣṇa.
+
+But we don't change anything.
+
+BOB: When I pray reverently, faithfully, does Kṛṣṇa hear me?
+
+ŚRĪLA PRABHUPĀDA: Yes.
+
+BOB: From me to Him?
+
+ŚRĪLA PRABHUPĀDA: Yes, because He is within your heart He is always hearing you—whether you are praying or not praying.
+
+When you are doing some nonsense, He is also hearing you.
+
+And when you pray, that is very good— welcome.
+
+BOB: To Kṛṣṇa's ear, is praying louder than nonsense?
+
+ŚRĪLA PRABHUPĀDA: No.
+
+He is all-perfect.
+
+He can hear everything.
+
+Even if you don't speak, even if you simply think, "I shall do it," then He hears you.
+
+Sarvasya cāhaṁ hṛdi sanniviṣṭaḥ: Kṛṣṇa is seated in everyone's heart.
+
+BOB: But one should pray—is that so?
+
+ŚRĪLA PRABHUPĀDA: That is his business—praying.
+
+BOB: Whose business?
+
+ŚRĪLA PRABHUPĀDA: Every living entity's.
+
+That is the only business.
+
+Eko bahūnāṁ yo vidadhāti kāmān.
+
+That is the statement of the Vedas.
+
+BOB: What does that mean?
+
+ŚRĪLA PRABHUPĀDA: He supplies everything to everyone.
+
+He is supplying food to everyone.
+
+So He is the Father.
+
+So why should you not pray, "Father, give me this"? Just as in the Christian Bible there is, "Father, give us our daily bread." That is good—they are accepting the Supreme Father.
+
+But grown-up children should not ask from the father; rather, they should be prepared to serve the father.
+
+That is bhakti [devotion].
+
+BOB: My questions you solve so nicely.
+
+[Everyone laughs with affection.]
+
+ŚRĪLA PRABHUPĀDA: Thank you very much.
+
+BOB: So, should I ask you another question now?
+
+ŚRĪLA PRABHUPĀDA: Oh, yes.
+
+Yes!
+

@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch8 - Path of Perfection</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html" class="active">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Path of Perfection</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#yoga-for-the-modern-age" id="yoga-for-the-modern-age">Yoga for the Modern Age</a></h1>
+<p>arjuna uvaca yo 'yam yogas tvaya proktah samyena madhusudana etasyaham na pasyami cancaiatvat sthitim sthiram &quot;Arjuna said: O Madhusudana, the system of yoga which You have summarized appears impractical and unendurable to me, for the mind is restless and unsteady.&quot; (Bg.6.33) This is the crucial test of the eightfold astanga-yoga system expounded herein by Lord Sri Krsna.</p>
+<p>It has already been explained that one must sit in a certain way and concentrate the mind on the form of Visnu seated within the heart.</p>
+<p>According to the astanga-yoga system, first of all one has to control the senses, follow all the rules and regulations, practice the sitting posture and the breathing process, concentrate the mind on the form of Visnu within the heart, and then become absorbed in that form.</p>
+<p>There are eight processes in this astangayoga system, but herein Arjuna says quite frankly that this astanga-yoga system is very difficult.</p>
+<p>Indeed, he says that it &quot;appears impractical and unendurable to me.&quot; Actually, the astanga-yoga system is not impractical, for were it impractical, Lord Krsna would not have taken so much trouble to describe it.</p>
+<p>It is not impractical, but it appears impractical.</p>
+<p>What may be impractical for one man may be practical for another.</p>
+<p>Arjuna is representative of the common man in the sense that he is not a mendicant or a sannyasi or a scholar.</p>
+<p>He is on the battlefield fighting for his kingdom, and in this sense he is an ordinary man engaged in a worldly activity.</p>
+<p>He is concerned with earning a livelihood, supporting his family, and so on.</p>
+<p>Arjuna has many problems, just as the common man, and generally this system of astanga-yoga is impractical for the ordinary common man.</p>
+<p>That is the point being made.</p>
+<p>It is practical for one who has already completely renounced everything and can sit in a secluded, sacred place on the side of a hill or in a cave.</p>
+<p>But who can do this in this age? Although Arjuna was a great warrior, a member of the royal family, and a very advanced person, he proclaims this yoga system impractical.</p>
+<p>And what are we in comparison to Arjuna? If we attempt this system, failure is certain.</p>
+<p>Therefore this system of mysticism described by Lord Krsna to Arjuna beginning with the words sucau dese and ending with yogi paramah is here rejected by Arjuna out of a feeling of inability.</p>
+<p>As stated before, it is not possible for an ordinary man to leave home and go to a secluded place in the mountains or jungles to practice yoga in this age of Kali.</p>
+<p>The present age is characterized by a bitter struggle for a life of short duration.</p>
+<p>As Kali-yuga progresses, our life span gets shorter and shorter.</p>
+<p>Our forefathers lived for a hundred years or more, but now people are dying at the age of sixty or seventy.</p>
+<p>Gradually the life span will decrease even further.</p>
+<p>Memory, mercy, and other good qualities will also decrease in this age.</p>
+<p>In Kali-yuga, people are not serious about self-realization even by simple, practical means, and what to speak of this difficult yoga system, which regulates the mode of living, the manner of sitting, selection of place, and detachment of the mind from material engagements.</p>
+<p>As a practical man, Arjuna thought it was impossible to follow this system of yoga, even though he was favorably endowed in many ways.</p>
+<p>He was not prepared to become a pseudo yogi and practice some gymnastic feats.</p>
+<p>He was not a pretender but a soldier and a family man.</p>
+<p>Therefore he frankly admitted that for him this system of yoga would be a waste of time.</p>
+<p>Arjuna belonged to the royal family and was highly elevated in terms of numerous qualities; he was a great warrior, he had great longevity, and, above all, he was the most intimate friend of Lord Krsna, the Supreme Personality of Godhead.</p>
+<p>Five thousand years ago, when Arjuna was living, the life span was very long.</p>
+<p>At that time, people used to live up to one thousand years.</p>
+<p>In the present age of Kali-yuga, the life span is limited to a hundred years; in Dvapara-yuga, the life span was a thousand years; in Treta-yuga, the life span was ten thousand years; and in Satya-yuga, the life span was one hundred thousand years.</p>
+<p>Thus as the yugas degenerate, the life span decreases.</p>
+<p>Even though Arjuna was living at a time when one would live and practice meditation for a thousand years, he still considered this system impossible.</p>
+<p>Five thousand years ago, Arjuna had much better facilities than we do now, yet he refused to accept this system of yoga.</p>
+<p>In fact, we do not find any record in history of his practicing it at any time.</p>
+<p>Therefore, this system must be considered generally impossible in this age of Kali.</p>
+<p>Of course, it may be possible for some very few, rare men, but for the people in general it is an impossible proposal.</p>
+<p>If this were so five thousand years ago, what of the present day? Those who are imitating this yoga system in different so-called schools and societies, although complacent, are certain!y wasting their time.</p>
+<p>They are completely ignorant of the desired goal.</p>
+<p>Since this astanga-yoga system is considered impossible, the bhakti-yoga system is recommended for everyone.</p>
+<p>Without training or education, one can automatically participate in bhakti-yoga.</p>
+<p>Even a small child can clap at kirtana.</p>
+<p>Therefore Lord Caitanya Mahaprabhu has proclaimed bhakti-yoga the only system practical for this age.</p>
+<p>harer nama harer nama harer namaiva kevalam kalau nasty eva nasty eva nasty eva gatir anyatha &quot;In this age of quarrel and hypocrisy the only means of deliverance is chanting the holy name of the Lord.</p>
+<p>There is no other way.</p>
+<p>There is no other way.</p>
+<p>There is no other way.&quot; Chanting is very simple, and one will feel the results immediately.</p>
+<p>Pratyaksavagamam dharmyam.</p>
+<p>If we attempt to practice other yoga systems, we will remain in darkness; we will not know whether or not we are making progress.</p>
+<p>In bhakti-yoga, one can understand, &quot;Yes, now I am making progress.&quot; This is the only yoga system by which one can quickly attain self-realization and liberation in this life.</p>
+<p>One doesn't have to wait for another lifetime.</p>
+<p>cancalam hi manah krsna pramathi bala vad drdham tyayaham nigraham manye vayor iva suduskaram &quot;For the mind is restless, turbulent, obstinate, and very strong, O Krsna, and to subdue it is, it seems to me, more difficult than controlling the wind.&quot; (Bg.6.34) By chanting Hare Krsna, one captures the mind immediately.</p>
+<p>Just by saying the name Krsna and hearing it, the mind is automatically fixed on Krsna.</p>
+<p>This means that the yoga system is immediately attained.</p>
+<p>The entire yoga system aims at concentration on the form of Visnu, and Krsna is the original personality from whom all these Visnu forms are expanded.</p>
+<p>Krsna is like the original candle from which all other candles are lit.</p>
+<p>If one candle is lit, one can light any number of candles, and there is no doubt that each candle is as powerful as the original candle.</p>
+<p>Nonetheless, one has to recognize the original candle as the original.</p>
+<p>Similarly, from Krsna millions of Visnu forms expand, and each Visnu form is as good as Krsna, but Krsna remains the original.</p>
+<p>Thus one who concentrates his mind on Lord Sri Krsna, the original Supreme Personality of Godhead, immediately attains the perfection of yoga.</p>
+<p>sri-bhagavan uvaca asamsayam maha-baho mano durnigraham calam abhyasena tu kaunteya vairagyena ca grhyate &quot;The Blessed Lord said: O mighty-armed son of Kunti, it is undoubtedly very difficult to curb the restless mind, but it is possible by constant practice and by detachment.&quot; (Bg.6.35) Krsna does not say that it is not difficult.</p>
+<p>Rather, He admits that it is difficult, but possible by means of constant practice.</p>
+<p>Constant practice means engaging ourselves in some activities that remind us of Krsna.</p>
+<p>In this Society for Krsna consciousness we therefore have many activities--kirtana, temple activities, prasada, publications, and so on.</p>
+<p>Everyone is engaged in some activity with Krsna at the center.</p>
+<p>Therefore whether one is typing for Krsna, cooking for Krsna, chanting for Krsna, or distributing literature for Krsna, he is in the yoga system, and he is also in Krsna.</p>
+<p>We engage in activities just as in material life, but these activities are molded in such a way that they are directly connected with Krsna.</p>
+<p>Thus through every activity, Krsna consciousness is possible, and perfection in yoga follows automatically.</p>
+<p>asamyatatmana yogo dusprapa iti me matih vasyatmana tu yatata sakyo 'vaptum upayatah &quot;For one whose mind is unbridled, self-realization is difficult work.</p>
+<p>But he whose mind is controlled and who strives by right means is assured of success.</p>
+<p>That is My opinion.&quot; (Bg.6.36) The Supreme Personality of Godhead declares that one who does not accept the proper treatment to detach the mind from material engagement can hardly achieve success in self-realization.</p>
+<p>Trying to practice yoga while engaging the mind in material enjoyment is like trying to ignite a fire while pouring water on it.</p>
+<p>Similarly, yoga practice without mental control is a waste of time.</p>
+<p>I may sit down to meditate and focus my mind on Krsna, and that is very commendable, but there are many yoga societies that teach their students to concentrate on the void or on some color.</p>
+<p>That is, they do not recommend concentration on the form of Visnu.</p>
+<p>Trying to concentrate the mind on the impersonal or the void is very difficult and troublesome.</p>
+<p>It is stated by Sri Krsna in the Twelfth Chapter of Bhagavad-gita (12.5), kleso 'dhikataras tesam avyaktasakta-cetasam avyakta hi gatir duhkham deha vadbhir a vapyate &quot;For those whose minds are attached to the unmanifested, impersonal feature of the Supreme, advancement is very troublesome.</p>
+<p>To make progress in that discipline is always difficult for those who are embodied.&quot; In the temple, the devotee tries to concentrate on the form of Krsna.</p>
+<p>Concentrating on nothingness, on void, is very difficult, and naturally the mind is very flickering.</p>
+<p>Therefore instead of concentrating on the void, the mind searches out something else.</p>
+<p>The mind must be engaged in thinking of something, and if it is not thinking of Krsna, it must be thinking of maya.</p>
+<p>Therefore, pseudomeditation on the impersonal void is simply a waste of time.</p>
+<p>Such a show of yoga practice may be materially lucrative, but useless as far as spiritual realization is concerned.</p>
+<p>I may open a class in yogic meditation and charge people money for sitting down and pressing their nose this way and that, but if my students do not attain the real goal of yoga practice, they have wasted their time and money, and I have cheated them.</p>
+<p>Therefore one has to concentrate his mind steadily and constantly on the form of Visnu, and that is called samadhi.</p>
+<p>In Krsna consciousness, the mind is controlled by engaging it constantly in the transcendental loving service of the Lord.</p>
+<p>Unless one is engaged in Krsna consciousness, he cannot steadily control the mind.</p>
+<p>A Krsna conscious person easily achieves the result of yoga practice without separate endeavor, but a yoga practitioner cannot achieve success without becoming Krsna conscious.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

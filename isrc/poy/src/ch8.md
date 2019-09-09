@@ -1,0 +1,48 @@
+# The Perfection Of Yoga
+
+It is a fact therefore that in the progress of the living entity toward the perfection of yoga, birth in a family of yogīs or devotees is a great boon, for such a birth gives one a special impetus.
+
+prayatnād yatamānas tu yogī saṁśuddha-kilbiṣaḥ aneka-janma-saṁsiddhas tato yāti parāṁ gatim “But when the yogī engages himself with sincere endeavor in making further progress, being washed of all contaminations, then ultimately, after many, many births of practice, he attains the supreme goal.” (Bg.6.45) When one is finally freed from all contaminations, he attains the supreme perfection of the yoga system—Kṛṣṇa consciousness.
+
+Absorption in Kṛṣṇa is the perfect stage, as Kṛṣṇa Himself confirms: bahūnāṁ janmanām ante jñānavān māṁ prapadyate vāsudevaḥ sarvam iti sa mahātmā sudurlabhaḥ “After many births and deaths, he who is actually in knowledge surrenders unto Me, knowing Me to be the cause of all causes and all that is.
+
+Such a great soul is very rare.” (Bg.7.19) Thus after many lifetimes of executing pious activities, when one becomes freed from all contaminations arising from illusory dualities, he engages in the transcendental service of the Lord.
+
+Śrī Kṛṣṇa concludes His discourse on this subject in this way: yoginām api sarveṣāṁ mad-gatenāntarātmanā śraddhāvān bhajate yo māṁ sa me yuktatamo mataḥ “And of all yogīs, he who always abides in Me with great faith, worshiping Me in transcendental loving service, is most intimately united with Me in yoga and is the highest of all.” (Bg.6.47) It therefore follows that the culmination of all yogas lies in bhakti-yoga, the rendering of devotional service unto Kṛṣṇa.
+
+Actually, all of the yogas delineated in Bhagavad-gītā end on this note, for Kṛṣṇa is the ultimate destination of all the yoga systems.
+
+From the beginning of karma-yoga to the end of bhakti-yoga is a long way to self-realization.
+
+Karma-yoga, without fruitive results, is the beginning of this path.
+
+When karma-yoga increases in knowledge and renunciation, the stage is called jñāna-yoga, or the yoga of knowledge.
+
+When jñāna-yoga increases in meditation on the Supersoul by different physical processes, and the mind is on Him, it is called aṣṭāṅga-yoga.
+
+And, when one surpasses aṣṭāṅga-yoga and comes to worship the Supreme Personality of Godhead, Kṛṣṇa, that is called bhakti-yoga, the culmination.
+
+Factually, bhakti-yoga is the ultimate goal, but to analyze bhakti-yoga minutely one has to understand the other processes.
+
+The yogī who is progressive is therefore on the true path to eternal good fortune.
+
+One who sticks to a particular point and does not make further progress is called by that particular name—karma-yogī, jñāna-yogī, dhyana-yogī, rājā-yogī, hatha-yogī, etc.—but if one is fortunate enough to come to the point of bhakti-yoga, Kṛṣṇa consciousness, it is to be understood that he has surpassed all the other yoga systems.
+
+Kṛṣṇa consciousness is the last link in the yogic chain, the link that binds us to the Supreme Person, Lord Śrī Kṛṣṇa.
+
+Without this final link, the chain is practically useless.
+
+Those who are truly interested in the perfection of the yoga process should immediately take to Kṛṣṇa consciousness by chanting Hare Kṛṣṇa, understanding Bhagavad-gītā, and rendering service to Kṛṣṇa through this Society for Kṛṣṇa consciousness and thereby surpass all other systems and attain the ultimate goal of all yoga—love of Kṛṣṇa.
+
+Śrīmad-Bhāgavatam Never before has this sublime text been available to the English-speaking world.
+
+Now ISKCON Press announces the forthcoming publication of Cantos I and II of Śrīmad-Bhāgavatam in five richly illustrated hardcover volumes.
+
+The science of God is greater than all other sciences, and this spiritual technology is rationally and authoritatively explained in the 18,000 verses of Śrīmad-Bhāgavatam, India's sublime contribution of culture, philosophy, politics, sociology, religion and love.
+
+His Divine Grace A.C.
+
+Bhaktivedanta Swami Prabhupāda has undertaken the mighty task of rendering this supremely potent work into the English language along with Sanskrit transliterations, word-for-word synonyms and elaborate English purports.
+
+Thus in each verse one will find new enlightenment regarding the Absolute Truth, the origin of all emanations.
+

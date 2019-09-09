@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch1 - Elevation to Krsna Consciousness</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html" class="active">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Elevation to Krsna Consciousness</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#choosing-human-and-animal-lives" id="choosing-human-and-animal-lives">Choosing Human and Animal Lives</a></h1>
+<p>om ajnana-timirandhasya jnananjana-salakaya caksur unmilitam yena tasmai sri-gurave namah &quot;I offer my respectful obeisances unto my spiritual master, who has opened my eyes, blinded by the darkness of ignorance, with the torchlight of knowledge.&quot; It is customary with this verse to offer obeisances to the spiritual master who enlightens his disciples in the matter of transcendental knowledge.</p>
+<p>The Vedic process does not involve research work.</p>
+<p>In mundane scholarship, we have to show our academic learning by some research, but the Vedic process is different.</p>
+<p>In the Vedic process the research work is already done; it is complete, and it is simply handed down by disciplic succession from teacher to student.</p>
+<p>There is no question of research work because the instruments and the means with which one conducts such research work are blunt and imperfect.</p>
+<p>At this stage of our material existence, we are conditioned by many laws of nature.</p>
+<p>All conditioned souls are subject to four defects due to the imperfection of their senses.</p>
+<p>One defect is that the conditioned soul is certain to commit mistakes.</p>
+<p>There is no man who does not commit mistakes.</p>
+<p>In India, for instance, Mahatma Gandhi was supposed to be a very great personality, but he also committed mistakes.</p>
+<p>Five minutes before he came to the meeting at which he was killed, he was warned by confidential associates not to go, but he persisted.</p>
+<p>To commit mistakes is very natural in the conditioned state of life.</p>
+<p>Indeed, the popular saying has arisen: &quot;To err is human.&quot; Another imperfection of the conditioned soul is that he is sure to be illusioned.</p>
+<p>Being illusioned means accepting something which is not, phantasmagoria to be factual.</p>
+<p>Every one of us is under the impression that we are these bodies, but actually we are not.</p>
+<p>Accepting the body to be the self is called illusion, or maya.</p>
+<p>The third imperfection is that conditioned souls have a tendency to cheat.</p>
+<p>We have often heard a storekeeper say, &quot;Because you are my friend, I won't make any profit off you.&quot; But in actuality we know that he is making at least 50% profit.</p>
+<p>There are so many instances of this cheating propensity.</p>
+<p>There are also many examples of teachers who actually know nothing but put forth theories in words like &quot;perhaps&quot; or &quot;it may be,&quot; while in actuality they are simply cheating their students.</p>
+<p>The fourth imperfection is that the senses of the living entity are not perfect.</p>
+<p>Our vision is so limited that we cannot see very far away nor very near.</p>
+<p>The eye can see only under certain conditions, and therefore it is understood that our vision is limited.</p>
+<p>Similarly, all our other senses are also limited.</p>
+<p>It is not possible to understand the unlimited by these imperfect, limited senses.</p>
+<p>The conclusion is that the Vedic process does not encourage us to endeavor to learn the Absolute Truth by employing our present senses, which are conditioned in so many ways.</p>
+<p>If we are to have knowledge, it must come from a superior source which is not conditioned by these four imperfections.</p>
+<p>That source is Krishna.</p>
+<p>He is the supreme authority of Bhagavad-gita, and He is accepted as the perfect authority by so many saints and sages.</p>
+<p>Those who are serious students of Vedic literature accept authority.</p>
+<p>Bhagavad-gita, for example, is not a scholarly presentation which arose out of so much research work.</p>
+<p>It is perfect knowledge that was taught by Lord Krishna to Arjuna on the battlefield of Kuruksetra, and we receive information from it that in previous ages Sri Krishna also taught it to the sun-god Vivasvan, and it was handed down from time immemorial from Vivasvan by disciplic succession.</p>
+<p>imam vivasvate yogam proktavan aham avyayam vivasvan manave praha manur iksvakave 'bravit &quot;The Blessed Lord said: I instructed this imperishable science of yoga to the sun-god Vivasvan, and Vivasvan instructed it to Manu, the father of mankind, and Manu in turn instructed it to Iksvaku.&quot; (Bg.4.1) If we study Bhagavad-gita according to academic knowledge or according to our own mental speculation, we are certain to commit mistakes.</p>
+<p>It is not possible to understand Bhagavad-gita in this way.</p>
+<p>It is necessary to follow carefully in the footsteps of Arjuna.</p>
+<p>In previous ages, due to interpretation and mental speculation, the real purport of Bhagavad-gita was lost; therefore Krishna re-established the teachings by giving them to Arjuna.</p>
+<p>evam parampara-praptam imam rajarsayo viduh sa kaleneha mahata yogo nastah parantapa sa evayam maya te 'dya yogah proktah puratanah bhakto 'si me sakha ceti rahasyam hy etad uttamam &quot;This supreme science was thus received through the chain of disciplic succession, and the saintly kings understood it in that way.</p>
+<p>But in course of time the succession was broken, and therefore the science as it is appears to be lost.</p>
+<p>That very ancient science of the relationship with the Supreme is today told by Me to you because you are My devotee as well as My friend; therefore, you can understand the transcendental mystery of this science.&quot; (Bg.4.2,3) Thus whoever follows in the footsteps of Arjuna, approaching Krishna in a spirit of devotion, can understand the purpose of Bhagavad-gita as well as all other Vedic literatures.</p>
+<p>There are four Vedas--Sama, Rg, Yajur and Atharva, and there are 108 Upanisads, including the Isopanisad, Katha Upanisad and Taittiriya Upanisad, as well as the Vedanta-sutra, Srimad-Bhagavatam and Bhagavad-gita.</p>
+<p>These literatures are not meant for any particular class of men but for the totality of human society.</p>
+<p>All societies can take advantage of Vedic knowledge to perfect human life.</p>
+<p>As pointed out before, human life is not meant for sense gratification, but for understanding God, the universe and our own identity.</p>
+<p>From Vedic literatures we can understand that this material world is only a partial manifestation of the complete creation of God.</p>
+<p>The larger portion of God's creation is found in the spiritual world of the Vaikunthas.</p>
+<p>Above and beyond this material nature there is a superior spiritual nature, as Sri Krishna states in Bhagavad-gita: bhumir apo 'nalo vayuh kham mano buddhir eva ca ahankara itiyam me bhinna prakrtir astadha apareyam itas tv anyam prakrtim viddhi me param jiva-bhutam maha-baho yayedam dharyate jagat &quot;Earth, water, fire, air, ether, mind, intelligence, and false ego--altogether these eight comprise My separated material energies.</p>
+<p>Besides this inferior nature, O mighty Arjuna, there is a superior energy of Mine which is all living entities who are struggling with material nature and sustaining the universe.&quot; (Bg.7.4,5) There are many material universes clustered together, and all these universes constitute the material creation.</p>
+<p>Beyond these clusters of countless material universes is the spiritual sky, which is also mentioned in Bhagavad-gita.</p>
+<p>na tad bhasayate suryo na sasanko na pavakah yad gatva na nivartante tad dhama paramam mama &quot;That abode of Mine is not illumined by the sun or moon, nor by electricity.</p>
+<p>And anyone who reaches it never comes back to this material world.&quot; (Bg.15.6) That superior nature which is beyond this material nature is eternal.</p>
+<p>There is no history of its ever having begun; it has neither beginning nor end.</p>
+<p>paras tasmat tu bhavo 'nyo 'vyakto 'vyaktat sanatanah yah sa sarvesu bhutesu nasyatsu na vinasyati avyakto 'ksara ity uktas tam ahuh paramam gatim yam prapya na nivartante tad dhama paramam mama &quot;There is another, eternal nature, which is transcendental to this manifested and non-manifested matter.</p>
+<p>It is supreme and is never annihilated.</p>
+<p>When all in this world is annihilated, that part remains as it is.</p>
+<p>That supreme status is called unmanifested and infallible, and is the highest destination.</p>
+<p>Going there, one never returns from that, My supreme abode.&quot; (Bg.8.20,21) The Vedic religion, or varnasrama-dharma, is also called eternal because no one can trace out its beginning.</p>
+<p>The Christian religion has a history of 2,000 years, and the Mohammedan religion has a history of 1,300 years, but if we try to trace out the origins of Vedic religion, we will not be able to find a beginning.</p>
+<p>Varnasrama-dharma is accepted as the eternal religion of the living entity.</p>
+<p>We often say that God created this material world, and this means that God existed before the world.</p>
+<p>Since the Lord was existing before this material manifestation, He is not subject to this creation.</p>
+<p>If He were subject to the laws of the material world, how could He have created it? That the Lord is simultaneously identical with His creation and yet exists in His completeness apart from it is stated in Bhagavad-gita.</p>
+<p>maya tatam idam sarvam jagad avyakta-murtina mat-sthani sarva-bhutani ma caham tesv avasthitah na ca mat-sthani bhutani pasya me yogam aisvaram bhuta-bhrn na ca bhuta-stho mamatma bhuta-bhavanah &quot;In My transcendental form I pervade all this creation.</p>
+<p>All things are resting in Me, but I am not in them.</p>
+<p>Again, everything that is created does not rest on Me.</p>
+<p>Behold My mystic opulence: Although I am the maintainer of all living entities, and although I am everywhere, still My Self is the very source of creation.&quot; (Bg.9.4,5) Actually we are all spirit souls and are intended to associate with God in the spiritual sky where there are innumerable spiritual planets and innumerable spiritual living entities.</p>
+<p>However, those who are not fit to live in that spiritual world are sent to this material world.</p>
+<p>This very idea is expressed by Milton in Paradise Lost.</p>
+<p>Although spirit soul, we have voluntarily accepted this material body and by accepting it have also accepted the threefold miseries of material nature.</p>
+<p>Exactly when we accepted it and how we accepted it cannot be traced out.</p>
+<p>No one can trace out the history of when the conditioned soul first began accepting these material bodies.</p>
+<p>At present Darwin's theory of the evolution of organic matter is very prominent in institutions of higher learning, but there is information given in the Padma Purana and other authoritative scriptures of the living entities' spiritual evolution from one bodily form to another.</p>
+<p>This Purana informs us that species amongst plants and vegetables alone.</p>
+<p>At present everyone is giving stress to Darwin's theory, but in Vedic literature there is immense information about the different species.</p>
+<p>Darwin expresses the opinion that the species are evolving from lower forms of life, but this is not the whole truth.</p>
+<p>The soul may progress from lower forms to higher forms, but in the beginning of creation all species were created by Sri Krishna, as indicated in Bhagavad-gita.</p>
+<p>sarva-bhutani kaunteya prakrtim yan ti mamikam kalpa-ksaye punas tani kalpadau visrjamy aham prakrtim svam avastabhya visrjami punah punah bhuta-gramam imam krtsnam avasam prakrter vasat &quot;O son of Kunti, at the end of the millennium every material manifestation enters unto My nature, and at the beginning of another millennium, by My potency I again create.</p>
+<p>The whole cosmic order is under Me.</p>
+<p>By My will is it manifested again and again, and by My will is it annihilated at the end.&quot; (Bg.9.7,8) All of these living entities are subject to the threefold miseries, including those miseries pertaining to the body and mind.</p>
+<p>Animals cannot understand that they are suffering, but human beings can.</p>
+<p>One who does not know that he is suffering is in animal consciousness.</p>
+<p>Animals may be standing behind a fence to be slaughtered, but they do not understand this.</p>
+<p>As human beings, we should be cognizant that we are suffering the pains of birth, old age, disease and death and should be inquisitive to know how to avoid these miseries.</p>
+<p>We have been suffering from the beginning of our birth when as a baby we were tightly placed for nine months in the womb of a mother.</p>
+<p>After birth, suffering continues; although a mother may take much care for her child, the baby still cries.</p>
+<p>Why? Because he is suffering.</p>
+<p>Either a bug is biting, or there is a pain in the stomach or some other malady.</p>
+<p>Whatever the case, the suffering goes on.</p>
+<p>The child also suffers when he is forced to go to school when he does not want to.</p>
+<p>The child does not want to study, but the teacher gives him tasks anyway.</p>
+<p>If we carefully analyze our lives, we will find that they are full of suffering.</p>
+<p>Generally speaking, conditioned souls are not very intelligent, and therefore they go on suffering without ever inquiring why.</p>
+<p>We should understand, however, that this suffering is there, and if there is a remedy we must take advantage of it.</p>
+<p>The great sage Rsabhadeva instructed his sons in this way: &quot;My dear boys, in this life you have acquired these beautiful bodies.</p>
+<p>Now you should know that they are not meant for sense gratification like the bodies of hogs and dogs but for spiritual realization.&quot; Essentially what Rsabhadeva is saying is that a life of sense gratification is meant for stool eaters like hogs, and now that we have a higher form of life, we should not try to imitate the lower forms.</p>
+<p>Recently we were surprised to see, while walking in Central park in New York City, that a group of young American boys and girls were engaged in worshiping hogs.</p>
+<p>While we were chanting Hare Krishna, these groups of youngsters were chanting, &quot;Hog! Hog! Hog!&quot; They were actually parading with hogs in Central park and bowing down before them and worshiping them.</p>
+<p>They actually wanted one hog to become president, and they wanted the hogs to lead them.</p>
+<p>This has gone to such lengths that at one be-in in Seattle there was a demonstration with hogs in which the boys and girls undressed themselves and got in the mud and played with the hogs, and in this way they were associating with the hogs and pigs which they worshiped.</p>
+<p>All this is going on in a country where the young people have good looking bodies, a great deal of money and so many other advantages over the young people of other nations.</p>
+<p>The result of gaining all these advantages is that they have simply taken to hog worship.</p>
+<p>Such hog worship was anticipated long, long ago and was described in Srimad-Bhagavatam, which was compiled at least 5,000 years ago.</p>
+<p>The point is that a beautiful situation in life should be utilized for a beautiful end, not for degraded forms of worship.</p>
+<p>In the Vedic histories we find that there were many, many exalted emperors and kings who practiced austerities and penances.</p>
+<p>Dhruva Maharaja, Ambarisa Maharaja and Yudhisthira Maharaja were all great kings and were most opulent, but at the same time they were great sages.</p>
+<p>Thus they set the example for those who have acquired this good opportunity of a beautiful human form of life with all the facilities for economic development and good living.</p>
+<p>This opportunity should be used to attain an even better life, and this can be actualized by practice of penance.</p>
+<p>At present we are existing in these material bodies, but if we take to the process of Krishna consciousness, our consciousness will be purified.</p>
+<p>Although American and European, the young students who are voluntarily practicing Krishna consciousness are very pleased to practice it.</p>
+<p>The process is not troublesome but pleasing.</p>
+<p>Now they are realizing that purified existence constitutes the difference between animal life and human life.</p>
+<p>If we purify our existence simply by following the basic regulations of Krishna consciousness, which involve abstaining from illicit sexual connection, meat-eating, intoxication and gambling, we will gradually rise to attain our spiritual existence, which is completely pure.</p>
+<p>The sage Rsabhadeva told his sons that once they purified their existence they would have unlimited happiness.</p>
+<p>We are all intended to attain peace and happiness, but whatever peace and happiness we find in this material world is limited.</p>
+<p>If we but purify our existence and attain spiritual existence, we will experience unlimited peace and happiness.</p>
+<p>The spiritual world is not dry or abstract; as pointed out before, there is variegatedness there.</p>
+<p>A part of the spiritual pleasure experienced in the Vaikunthas is the pleasure of dancing.</p>
+<p>There are also young girls and young boys there.</p>
+<p>Indeed, there is no such thing as old age, or disease, or death, or the pains of birth.</p>
+<p>If we want to participate in the unlimited happiness, knowledge and eternal life which constitute our actual heritage in the spiritual world, we should not waste this life by working hard for sense gratification and worshiping hogs.</p>
+<p>We should accept a life devoted to the cultivation of Krishna consciousness, and then we will get unlimited happiness and unlimited pleasure.</p>
+<p>This is the sum and substance of the Krishna consciousness movement.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

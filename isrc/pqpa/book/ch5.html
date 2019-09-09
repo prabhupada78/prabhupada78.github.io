@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch5 - Perfec Questions, Perfect Answers</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html" class="active">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Perfec Questions, Perfect Answers</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-three-modes-of-nature" id="the-three-modes-of-nature">The Three Modes Of Nature</a></h1>
+<p>February 28, 1972 (continued)</p>
+<p>BOB: I have read that there are three guṇas—passion, ignorance and goodness—in life.</p>
+<p>I was wishing that you would explain this somewhat, especially what is meant by the mode of ignorance and the mode of goodness.</p>
+<p>ŚRĪLA PRABHUPĀDA: In goodness you can understand things—knowledge.</p>
+<p>You can know that there is God, that this world was created by Him, and so many things, actual things—the sun is this, the moon is this—perfect knowledge.</p>
+<p>If one has some knowledge, even though it may not be perfect, that is goodness.</p>
+<p>And in passion one identifies with his material body and tries to gratify his senses.</p>
+<p>That is passion.</p>
+<p>And ignorance is animal life—in ignorance, one does not know what is God, how to become happy, why we are in this world.</p>
+<p>For example, if you take an animal to the slaughterhouse, it will go.</p>
+<p>This is ignorance.</p>
+<p>But a man will protest.</p>
+<p>If a goat is to be killed after five minutes but you give it a morsel of grass, it is happy because it is eating.</p>
+<p>Just like a child—even if you are planning to kill her or kill him, he is happy and laughs because he is innocent.</p>
+<p>That is ignorance.</p>
+<p>BOB: Being in these modes determines your karma.</p>
+<p>Is that correct?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>According to the association of the modes of nature, your activities are being contaminated.</p>
+<p>kāraṇaṁ guṇa-saṅgo 'sya sad-asad-yoni-janmasu A man gets a higher birth or lower birth according to the association of the guṇas, or the modes of nature.</p>
+<p>BOB: So cheating and like that—what mode is that?</p>
+<p>ŚRĪLA PRABHUPĀDA: Cheating is mixed passion and ignorance.</p>
+<p>Suppose one man cheats another.</p>
+<p>That means he wants to obtain something; he is passionate.</p>
+<p>But if he commits murder, he does not know that he will have to suffer for it, so it is a mixture of passion and ignorance.</p>
+<p>BOB: And what about when somebody helps another person?</p>
+<p>ŚRĪLA PRABHUPĀDA: That is goodness.</p>
+<p>BOB: Why is that goodness? What intelligence is that? I mean—this represents knowledge of what? You said that goodness is when you have knowledge.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: Intelligence.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>BOB: So helping another person?</p>
+<p>ŚRĪLA PRABHUPĀDA: That means that he is ignorant and you are trying to enlighten him.</p>
+<p>BOB: So giving intelligence ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, that is goodness.</p>
+<p>BOB: And what about just giving assistance?</p>
+<p>ŚRĪLA PRABHUPĀDA: That is also goodness.</p>
+<p>BOB: If a beggar has nothing and you give him alms ...</p>
+<p>ŚRĪLA PRABHUPĀDA: So that may still be goodness.</p>
+<p>But in your Bowery Street, they give some charity, and immediately he purchases one bottle of wine and drinks and lies down flat.</p>
+<p>[All laugh.] So that is charity.</p>
+<p>But that is not goodness; that is ignorance.</p>
+<p>BOB: Charity is ignorance?</p>
+<p>ŚRĪLA PRABHUPĀDA: There are three kinds of charities—good, passionate and ignorant.</p>
+<p>Goodness is giving charity where charity must be given.</p>
+<p>Just like this Kṛṣṇa consciousness movement—if anyone gives charity to this movement, that is goodness because it is spreading God consciousness, Kṛṣṇa consciousness.</p>
+<p>That is goodness.</p>
+<p>And if one gives charity for some return, that is passion.</p>
+<p>And if somebody gives in charity in an improper place and time, without respect and to an unworthy person, just like the Bowery man, that is ignorance.</p>
+<p>But Kṛṣṇa says: yat karoṣi yad aśnāsi yaj juhoṣi dadāsi yat &quot;All that you do, all that you eat, all that you offer and give away, as well as all austerities that you may perform, should be done as an offering unto Me.&quot; If Kṛṣṇa takes, that is the perfection of charity.</p>
+<p>Or anyone who is a representative of Kṛṣṇa —if he takes, that is perfection.</p>
+<p>BOB: And what kind of charity is it when you give food to somebody who is hungry?</p>
+<p>ŚRĪLA PRABHUPĀDA: Well, that depends on the circumstances.</p>
+<p>For example, a doctor has forbidden his patient to take any solid food, and if the patient is asking, &quot;Give me some solids,&quot; and if you give him solid food in charity, then you are not doing good to him.</p>
+<p>That is ignorance.</p>
+<p>BOB: Are the devotees beyond accumulating karma? These devotees—do they feel karma? Do they work in these modes? Are they in the mode of goodness?</p>
+<p>ŚRĪLA PRABHUPĀDA: They are above goodness! Śuddha-sattva.</p>
+<p>The devotees are not in this material world.</p>
+<p>They are in the spiritual world.</p>
+<p>That is stated in the Bhagavad-gītā: māṁ ca yo 'vyabhicāreṇa bhakti-yogena sevate sa guṇān samatītyaitān brahma-bhūyāya kalpate [&quot;One who engages in full devotional service, who does not fall down in any circumstances, at once transcends the modes of material nature and thus comes to the level of Brahman.&quot;] Devotees are neither in goodness, passion nor ignorance.</p>
+<p>They are transcendental to all these qualities.</p>
+<p>BOB: A devotee who is very faithful reaches this stage?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes. Devotee ... You can become a devotee as they have become. It is not difficult.</p>
+<p>Simply you have to engage yourself in the transcendental loving service of the Lord, that's all.</p>
+<p>BOB: I wish to gain more knowledge of God and be able to feel God's presence more.</p>
+<p>The reason for this is because I feel life has little meaning without this.</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes! If you miss this human form of life, then it is a great loss.</p>
+<p>That is a great chance given to the living entity to get out of the entanglement of material existence.</p>
+<p>BOB: I feel thankful that I've been able to ask these questions ...</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes, you can learn more and more.</p>
+<p>BOB: But I still have ... my connections at home. Marriage is ... I am engaged.</p>
+<p>ŚRĪLA PRABHUPĀDA: No, no.</p>
+<p>There are so many marriages.</p>
+<p>[He indicates Śyāmasundara.] He is married.</p>
+<p>Marriage is no barrier.</p>
+<p>I told you that there are four different orders of spiritual life—brahmacārī, gṛhastha, vānaprastha and sannyāsa.</p>
+<p>So after brahmacārī life, one can marry.</p>
+<p>That is not obligatory.</p>
+<p>One may remain naiṣṭika-brahmacārī for his whole life.</p>
+<p>But a brahmacārī can marry.</p>
+<p>And after marriage, there is vānaprastha life.</p>
+<p>This means that one is a little aloof from family—the husband and wife live separately.</p>
+<p>At that time there is no sex life.</p>
+<p>Then when he is fully renounced, detached from family life, he takes sannyāsa.</p>
+<p>BOB: Does somebody forget his wife completely then?</p>
+<p>ŚRĪLA PRABHUPĀDA: Yes.</p>
+<p>Forgetting is not very difficult, if you try to forget.</p>
+<p>Out of sight, out of mind.</p>
+<p>[All laugh.] Just as I have my wife, children, grandchildren—everything.</p>
+<p>But, out of sight, out of mind, that's all.</p>
+<p>Therefore, vānaprastha, sannyāsa—everything is nicely arranged by the Vedic system.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch4.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch6.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch4.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch6.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

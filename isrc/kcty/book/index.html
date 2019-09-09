@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch1 - Topmost Yoga System</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html" class="active">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Topmost Yoga System</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-perfection-of-yoga" id="the-perfection-of-yoga">The Perfection of Yoga</a></h1>
+<p>Lord Kṛṣṇa, the Supreme Personality of Godhead, speaks about the topmost system of yoga in the Sixth Chapter of Bhagavad-gītā.</p>
+<p>There He has explained the haṭha-yoga system.</p>
+<p>Please remember that we are preaching this Kṛṣṇa consciousness movement on the authority of Bhagavad-gītā.</p>
+<p>It is nothing manufactured.</p>
+<p>The bhakti-yoga system is authorized, and if you want to know about God, then you have to adopt this bhakti-yoga system because in the Sixth Chapter of Bhagavad-gītā it is concluded that the topmost yogī is he who is always thinking of Kṛṣṇa within himself.</p>
+<p>Kṛṣṇa, the supreme authority, recommended the eightfold yoga system.</p>
+<p>The first step of this yoga system is to select a very secluded and sacred place.</p>
+<p>Eightfold meditation cannot be performed in a fashionable city.</p>
+<p>It is not possible.</p>
+<p>In India, therefore, those who are very serious about practicing yoga go to Hardwar, a very secluded place in the Himalayas, where they remain alone and follow a very restrictive process for eating and sleeping.</p>
+<p>There is no question of mating.</p>
+<p>Those rules and regulations must be followed very strictly.</p>
+<p>Simply to make a show of gymnastics is not perfection of yoga.</p>
+<p>Yoga means control of the senses.</p>
+<p>If you indulge your senses unrestrictedly but make a show of yoga practice, you will never be successful.</p>
+<p>You have to select a sacred place; then you have to sit with half-closed eyes and concentrate on the tip of your nose.</p>
+<p>You cannot change your posture.</p>
+<p>There are many rules and regulations which cannot possibly be followed at the present.</p>
+<p>Even 5,000 years ago, when circumstances in the world were different, this yoga system was not practicable.</p>
+<p>Even such a great personality as Arjuna, who belonged to the royal family and was a great warrior and an intimate friend of Kṛṣṇa's, constantly living with Him, after hearing this process of yoga from Kṛṣṇa in a face-to-face discussion, said, &quot;My dear Kṛṣṇa, it is not possible to follow.&quot; He flatly admitted, &quot;For me these rules and regulations and practice for controlling the mind are not possible.&quot; We have to think, then: 5,000 years ago a personality like Arjuna expressed his inability to practice this eightfold yoga system, so how can we follow it now? In this age people are very short-lived.</p>
+<p>In India the average duration of life is thirty-five years.</p>
+<p>In your country it may be more than that.</p>
+<p>But actually, whereas your grandfather lived for 100 years, you cannot.</p>
+<p>These things are changing.</p>
+<p>The duration of life will be reduced.</p>
+<p>There are predictions in the scriptures that in this age, man's duration of life, his mercy and his intelligence are being reduced.</p>
+<p>Men are not very powerful; their duration of life is very short.</p>
+<p>We are always disturbed, and we have practically no knowledge about spiritual science.</p>
+<p>For example, in the hundreds and thousands of universities all over the world there is no department of knowledge where the science of the soul is taught.</p>
+<p>Actually, we are all spirit soul.</p>
+<p>From Bhagavad-gītā we understand that we are transmigrating from one body to another, even in our present lives.</p>
+<p>All of us had at one time the body of a small baby.</p>
+<p>Where is that body? That body is gone.</p>
+<p>Presently I am an old man, but I remember that I was once a small baby.</p>
+<p>I still remember when I was about six months old; I was lying down on the lap of my elder sister, who was knitting, and I was playing.</p>
+<p>I can remember that, so it is possible for everyone to remember that he had a small body.</p>
+<p>After the baby's body I had a boy's body; then I had a youthful body, and now I am in this body.</p>
+<p>Where are those bodies? They are gone now.</p>
+<p>This is a different body.</p>
+<p>It is explained in Bhagavad-gītā that when I give up this body, I will have to accept another body.</p>
+<p>It is very simple to understand.</p>
+<p>I have changed so many bodies, not only from childhood to boyhood to youth, but according to medical science we are changing bodies every second, imperceptibly.</p>
+<p>This Process indicates that the soul is permanent.</p>
+<p>Although I have changed many bodies, I remember my baby body and my childhood body—I am the same person, soul.</p>
+<p>Similarly, when ultimately I change this body, I shall have to accept another.</p>
+<p>This simple formula is stated in Bhagavad-gītā.</p>
+<p>Everyone can reflect on it, and there must be scientific research done in this area.</p>
+<p>Recently I received a letter from a doctor in Toronto.</p>
+<p>He suggested that there is body and there is soul.</p>
+<p>I corresponded with him.</p>
+<p>Actually, it is a fact.</p>
+<p>The soul is there.</p>
+<p>There is so much evidence, not only in the Vedic literature but even by ordinary experience.</p>
+<p>The soul is there, and it is transmigrating from one body to another, but unfortunately there is no serious study on this subject in the universities.</p>
+<p>This is not very good.</p>
+<p>The Vedānta-sūtra says, &quot;This human form of life is meant for searching out the spirit, the Absolute Truth.&quot; The yoga system is used to search out the spiritual principles within this material world.</p>
+<p>That process for searching is recommended in Bhagavad-gītā by Kṛṣṇa Himself.</p>
+<p>When Arjuna said, &quot;The system You are recommending, the haṭha-yoga system, is not possible for me,&quot; Kṛṣṇa assured him that he was the greatest of all yogīs.</p>
+<p>He pacified him by saying not to bother about being unable to practice haṭha-yoga.</p>
+<p>He told him, &quot;Of all different types of yogīs-haṭha-yogīs, jñāna-yogīs, dhyānayogīs, bhakta-yogīs, karma-yogīs—you are the best yogī.&quot; Kṛṣṇa says, &quot;Of all yogīs, the one who is constantly thinking of Me within himself, meditating upon Me within the heart, is the first-class yogī.&quot; Who can think of Kṛṣṇa always within himself? This is very easy to understand.</p>
+<p>If you love someone, you can think of him always within you; otherwise it is not possible.</p>
+<p>If you love someone, then naturally you think of him always.</p>
+<p>That is described in the Brahma-saṁhitā.</p>
+<p>One who has developed love of God, Kṛṣṇa, can think of Him constantly.</p>
+<p>When I speak of Kṛṣṇa you should understand that He is God.</p>
+<p>Another name for Kṛṣṇa is Śyāmasundara, which means that He is blackish like a cloud but very beautiful.</p>
+<p>In one verse of Brahma-saṁhitā it is said that a santa, a saintly person, who has developed love for Śyāmasundara, Kṛṣṇa, thinks of the Lord constantly within his heart.</p>
+<p>Actually, when one comes to the point of samādhi in the yoga system, he thinks, without cessation, of the Viṣṇu form of the Lord within the heart.</p>
+<p>He is absorbed in that thought.</p>
+<p>Kṛṣṇa, Śyāmasundara, is the original Viṣṇu.</p>
+<p>That is stated in Bhagavad-gītā.</p>
+<p>Kṛṣṇa includes Brahmā, Viṣṇu, Śiva and everyone else.</p>
+<p>According to Vedic scripture, He expands first as Baladeva, Baladeva expands as Saṅkarṣaṇa, Saṅkarṣaṇa expands as Nārāyaṇa, and Nārāyaṇa expands as Viṣṇu (Mahā-Viṣṇu, Garbhodakaśāyī Viṣṇu and Kṣīrodakaśāyī Viṣṇu).</p>
+<p>These are Vedic statements.</p>
+<p>We can understand that Kṛṣṇa is the original Viṣṇu, Śyāmasundara.</p>
+<p>This is the perfect system.</p>
+<p>Anyone who is thinking of Kṛṣṇa always within himself is a first-class yogī.</p>
+<p>If you want perfection in yoga, don't be satisfied only by practicing codes.</p>
+<p>You have to go further.</p>
+<p>Actually, the perfection of yoga is reached when you are in samādhi, always thinking of the Viṣṇu form of the Lord within your heart, without being disturbed.</p>
+<p>Therefore yogīs go to a secluded place, and by controlling all the senses and the mind and concentrating everything on the form of Viṣṇu, they reach samādhi.</p>
+<p>That is called perfection of yoga.</p>
+<p>Actually this yoga system is very, very difficult.</p>
+<p>It may be possible for some solitary man, but for the general mass of people it is not recommended in the scriptures: harer nāma harer nāma harer nāmaiva kevalam/ kalau nāsty eva nāsty eva nāsty eva gatir anyathā [Cc.</p>
+<p>Ādi 17.21].</p>
+<p>&quot;In this age of Kali one must chant the holy names of the Lord for deliverance.</p>
+<p>There is no other alternative.</p>
+<p>There is no other alternative.</p>
+<p>There is no other alternative.&quot; (Bṛhan-Nāradīya Purāṇa) The yoga system, as it was recommended in the Satya-yuga, the Golden Age, was to always meditate on Viṣṇu.</p>
+<p>In the Tretā-yuga one could practice yoga by performing great sacrifices, and in the next age, Dvāpara-yuga, one could achieve perfection by temple worship.</p>
+<p>The present age is called Kali-yuga.</p>
+<p>Kaliyuga means the age of quarrel and disagreement.</p>
+<p>No one agrees with anyone else.</p>
+<p>Everyone has his own theory; everyone has his own philosophy.</p>
+<p>If I don't agree with you, you fight me.</p>
+<p>This is the symptom of Kali-yuga.</p>
+<p>The only method recommended in this age is chanting the holy name.</p>
+<p>Simply by chanting the holy name of God, one can attain that perfect self-realization which was attained by the yoga system in the Satya-yuga, by performance of great sacrifices in the Tretā-yuga, and by large-scale temple worship in the Dvāpara-yuga.</p>
+<p>That perfection can be attained by the simple method of Hari kīrtana.</p>
+<p>Hari means the Supreme Personality of Godhead; kīrtana means to glorify.</p>
+<p>This method is recommended in the scriptures, and it was given to us by Caitanya Mahāprabhu 500 years ago.</p>
+<p>He appeared in a town which is known as Navadvīpa.</p>
+<p>It is about sixty miles north of Calcutta.</p>
+<p>People still go there.</p>
+<p>We have a temple center there.</p>
+<p>It is also a sacred place of pilgrimage.</p>
+<p>Caitanya Mahāprabhu appeared there, and He started this mass saṅkīrtana movement, which is conducted without discrimination.</p>
+<p>He predicted that this saṅkīrtana movement would be spread all over the world and that the Hare Kṛṣṇa mantra would be chanted in every village and town on the surface of the globe.</p>
+<p>In pursuance of the order of Lord Caitanya Mahāprabhu, following in His footsteps, we are trying to introduce this saṅkīrtana movement, chanting Hare Kṛṣṇa, and it is proving very successful everywhere.</p>
+<p>I am preaching especially in foreign countries, all over Europe, America, Japan, Canada, Australia, Malaysia, etc.</p>
+<p>I have introduced this saṅkīrtana movement, and now we have centers around the world.</p>
+<p>All eighty centers are being received with great enthusiasm.</p>
+<p>I have not imported these boys and girls from India, but they are taking this movement very seriously because it appeals to the soul directly.</p>
+<p>We have different stages of our life—the bodily concept of life, the mental concept of life, the intellectual concept of life, and the spiritual concept of life.</p>
+<p>Actually we are concerned with the spiritual concept.</p>
+<p>Those who are allured by the bodily concept are no better than cats and dogs.</p>
+<p>If we accept that &quot;I am this body,&quot; then we are not better than the cats and dogs because their concept of life is like that.</p>
+<p>We must understand that &quot;I am not this body,&quot; as Kṛṣṇa wanted to impress upon Arjuna in the beginning of His teaching of Bhagavad-gītā: &quot;First of all, try to understand what you are.</p>
+<p>Why are you lamenting in the bodily concept of life? You have to fight.</p>
+<p>Certainly you have to fight with your brothers, brothers-in-law and nephews, and you are lamenting.</p>
+<p>But first of all understand whether you are body or not.&quot; That is the beginning of Bhagavad-gītā.</p>
+<p>Kṛṣṇa tried to make Arjuna understand that he was not his body.</p>
+<p>This instruction was not for Arjuna exclusively, but for everyone.</p>
+<p>First of all we have to learn that &quot;I am not this body,&quot; that &quot;I am spirit soul.&quot; That is Vedic instruction.</p>
+<p>As soon as you come to this point of being firmly convinced that you are not this body, that is called the brahma-bhūta [SB 4.30.20] stage of Brahman realization.</p>
+<p>That is knowledge, real knowledge.</p>
+<p>Advancement of knowledge for eating, sleeping and mating is animal knowledge.</p>
+<p>A dog also knows how to eat, how to sleep, how to mate and how to defend.</p>
+<p>If our education extends only to these points (the dog is eating according to his nature, and we are also eating, but in a nice place, with nicely cooked food on a nice table), that is not advancement.</p>
+<p>The principle is still eating.</p>
+<p>Similarly, you may sleep in a very nice apartment in a sixstory building or in a 122-story building, and the dog may lie in a street, but when he sleeps and when you sleep, there is no difference.</p>
+<p>You cannot know whether you are sleeping in a skyscraper or on the ground because you are dreaming something which has taken you from your bed.</p>
+<p>You have forgotten that your body is lying there on the bed, and you are flying in the air, dreaming.</p>
+<p>Therefore, to improve the sleeping method is not advancement of civilization.</p>
+<p>Similarly, the dog has no social custom for mating.</p>
+<p>Whenever there is a she-dog, he mates on the street.</p>
+<p>You may mate very silently, in a secret place (although now people are learning how to mate like dogs), but the mating is there.</p>
+<p>The same principle applies to defending.</p>
+<p>A dog has teeth and nails with which he can defend himself, and you have atom bombs.</p>
+<p>But the purpose is defending, that's all.</p>
+<p>Therefore, scripture says that human life is not meant only for these four principles of life, bodily demands.</p>
+<p>There is another thing—a human being should be inquisitive to learn what is Absolute Truth.</p>
+<p>That education is lacking.</p>
+<p>According to Vedic civilization a brāhmaṇa is a learned man, or one who knows the spirit.</p>
+<p>In India, brāhmaṇas are addressed as learned men, but in fact they cannot be brāhmaṇas by birth.</p>
+<p>They are expected to know what is spirit.</p>
+<p>By birth everyone is a śūdra, a fourth-class man, but he may be reformed by the purificatory process.</p>
+<p>There are ten kinds of purificatory processes.</p>
+<p>One undergoes all these processes and at last comes to the spiritual master who gives him the sacred thread as recognition of his second birth.</p>
+<p>One birth is by your father and mother, and the other birth is by the spiritual master and Vedic knowledge.</p>
+<p>That is called second birth.</p>
+<p>At that time the candidate is given a chance to study and understand what is Veda.</p>
+<p>By studying all the Vedas very nicely, he actually realizes what is spirit and what is his relationship with God, and then he becomes a brāhmaṇa.</p>
+<p>Above that situation of impersonal Brahman understanding, he comes to the platform of understanding Lord Viṣṇu, the Supreme Personality of Godhead; then he becomes a Vaiṣṇava.</p>
+<p>This is the perfectional process.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

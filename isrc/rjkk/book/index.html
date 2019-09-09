@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch1 - Raja Vidya: The King of Knowledge</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html" class="active">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Raja Vidya: The King of Knowledge</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#raja-vidya-the-king-of-knowledge" id="raja-vidya-the-king-of-knowledge">Raja-Vidya: The King of Knowledge</a></h1>
+<p>sri bhagavan uvaca idam tu te guhyatamam pravaksyamy anasuyave jnanam vijnana-sahitam yaj jnatva moksyase 'subhat &quot;The Supreme Lord said: My dear Arjuna, because you are never envious of Me, I shall impart to you this most secret wisdom, knowing which you shall be relieved of the miseries of material existence.&quot; (Bg.9.1) The opening words of the Ninth Chapter of Bhagavad-gita indicate that the Supreme Godhead is speaking.</p>
+<p>Here Sri Krsna is referred to as Bhagavan.</p>
+<p>Bhaga means opulences, and van means one who possesses.</p>
+<p>We have some conception of God, but in the Vedic literature there are definite descriptions and definitions of what is meant by God, and what is meant is described in one word-Bhagavan.</p>
+<p>Bhagavan possesses all opulences, the totality of knowledge, wealth, power, beauty, fame and renunciation.</p>
+<p>When we find someone who possesses these opulences in full, we are to know that he is God.</p>
+<p>There are many rich, wise, famous, beautiful and powerful men, but no one man can claim to possess all of these opulences.</p>
+<p>Only Krsna claims to possess them in totality.</p>
+<p>bhoktaram yajna-tapasam sarva-loka-mahesvaram suhrdam sarva-bhutanam jnatva mam santim rcchati &quot;The sages, knowing Me as the ultimate purpose of all sacrifices and austerities, the Supreme Lord of all planets and demigods and the benefactor and well-wisher of all living entities, attain peace from the pangs of material miseries.&quot; (Bg.5.29) Here Krsna proclaims that He is the enjoyer of all activities and the proprietor of all planets (sarva-loka-mahesvaram).</p>
+<p>An individual may possess a large tract of land, and he may be proud of his ownership, but Krsna claims to possess all planetary systems.</p>
+<p>Krsna also claims to be the friend of all living entities (suhrdam sarva-bhutanam).</p>
+<p>When a person understands that God is the proprietor of everything, the friend of everyone and the enjoyer of all, he becomes very peaceful.</p>
+<p>This is the actual peace formula.</p>
+<p>No one can have peace as long as he thinks, &quot;I am the proprietor.&quot; Who is capable of claiming proprietorship? Only a few hundred years ago the red Indians were considered to be the proprietors of America.</p>
+<p>Today we in our turn are claiming that proprietorship, but in four hundred or a thousand years perhaps someone else will come to claim the same.</p>
+<p>The land is here, and we come here and falsely claim ourselves to be proprietors of it.</p>
+<p>This philosophy of false proprietorship is not in line with Vedic injunctions.</p>
+<p>Sri Isopanisad states that &quot;everything animate or inanimate that is within the universe is controlled and owned by the Lord (isavasyam idam sarvam).&quot; The truth of this statement is factual, but under illusion we are thinking that we are the proprietors.</p>
+<p>In actuality God owns everything, and therefore He is called the richest.</p>
+<p>Of course there are many men who claim to be God.</p>
+<p>In India, for instance, at any time, one has no difficulty in finding at least one dozen people claiming to be God.</p>
+<p>But if you ask them if they are the proprietor of everything, they find this difficult to answer.</p>
+<p>This is a criterion by which we can understand who God is.</p>
+<p>God is the proprietor of everything, and, being so, He must be more powerful than anyone or anything else.</p>
+<p>When Krsna was personally present on this earth, no one could conquer Him.</p>
+<p>There is no record of His ever having lost a battle.</p>
+<p>He belonged to a ksatriya (warrior) family, and the ksatriyas are meant to give protection to the weak.</p>
+<p>As far as His opulence is concerned, He married 16,108 wives.</p>
+<p>Every wife had her own separate palace, and Krsna expanded Himself 16,108 times in order to enjoy them all.</p>
+<p>This may seem difficult to believe, but it is stated in Srimad-Bhagavatam, and the great sages of India recognize this as scripture and recognize Krsna as God.</p>
+<p>In the first verse of this Ninth Chapter, by the word guhyatamam, Sri Krsna intimates that He is imparting the most confidential knowledge to Arjuna.</p>
+<p>Why is He proclaiming this to Arjuna? It is because Arjuna is anasuyu--non-envious.</p>
+<p>In the material world if someone is greater than us, we are envious.</p>
+<p>We are not only envious of one another, but of God.</p>
+<p>Also when Krsna says, &quot;I am the proprietor,&quot; we disbelieve it.</p>
+<p>But this is not the case with Arjuna, who listens to Krsna without envy.</p>
+<p>Arjuna does not cavil with Krsna but agrees with whatever He says.</p>
+<p>This is his special qualification, and this is the way of understanding Bhagavad-gita.</p>
+<p>It is not possible to understand what God is by our own mental speculations; we have to hear, and we have to accept.</p>
+<p>Because Arjuna is not envious, Krsna speaks this special knowledge to him.</p>
+<p>This is not only theoretical knowledge but practical knowledge (vijnana-sahitam).</p>
+<p>Whatever knowledge we receive from Bhagavad-gita should not be taken for sentimentality or fanaticism.</p>
+<p>The knowledge is both jnana and vijnana, theoretical wisdom and scientific knowledge.</p>
+<p>If one becomes well-versed in this knowledge, liberation is certain.</p>
+<p>Life in this material world is by nature inauspicious and miserable.</p>
+<p>Moksa means liberation, and the promise is that by dint of understanding this knowledge one will attain liberation from all miseries.</p>
+<p>It is important then to understand what Krsna says about this knowledge.</p>
+<p>raja-vidya raja-guhyam pavitram idam uttamam pratyaksavagamam dharmyam su-sukham kartum avyayam &quot;This knowledge is the king of education, the most secret of all secrets.</p>
+<p>It is the purest knowledge, and because it gives direct perception of the self by realization, it is the perfection of religion.</p>
+<p>It is everlasting, and it is joyfully performed.&quot; (Bg.9.2) According to Bhagavad-gita, the topmost knowledge (raja-vidya raja-guhyam) is Krsna consciousness because in Bhagavad-gita we find that the symptom of one who is actually in knowledge is that he has surrendered unto Krsna.</p>
+<p>As long as we go on speculating about God but do not surrender, it is understood that we have not attained the perfection of knowledge.</p>
+<p>The perfection of knowledge is: bahunam janmanam ante jnanavan mam prapadyate vasudevah sarvam iti sa mahatma sudurlabhah &quot;After many births and deaths, he who is actually in knowledge surrenders unto Me, knowing Me to be the cause of all causes and all that is.</p>
+<p>Such a great soul is very rare.&quot; (Bg.7.19) As long as we do not surrender, we cannot understand God.</p>
+<p>Surrender to God may take many births, but if we accept that God is great, it is possible to surrender unto Him immediately.</p>
+<p>But generally this is not our position in the material world.</p>
+<p>We are characteristically envious and consequently think, &quot;Oh, why should I surrender unto God? I am independent.</p>
+<p>I shall work independently.&quot; Therefore in order to rectify this misgiving, we have to work for many births.</p>
+<p>In this regard, the name of Krsna is especially significant.</p>
+<p>Krs means &quot;repetition of birth,&quot; and na means &quot;one who checks.&quot; Our repetition of birth can be checked only by God.</p>
+<p>No one can check his repetition of birth and death without the causeless mercy of God.</p>
+<p>The subject matter of the Ninth Chapter is raja-vidya.</p>
+<p>Raja means &quot;king,&quot; and vidya means &quot;knowledge.&quot; In ordinary life we find one person king in one subject and another in another subject.</p>
+<p>This knowledge, however, is sovereign over all others, and all other knowledge is subject or relative to it.</p>
+<p>The word raja-guhyam indicates that this sovereign knowledge is very confidential, and the word pavitram means that it is very pure.</p>
+<p>This knowledge is also uttamam; ud means &quot;transcend,&quot; and tama means &quot;darkness,&quot; and that knowledge which surpasses this world and the knowledge of this world is called uttamam.</p>
+<p>It is the knowledge of light, and darkness has been separated from it.</p>
+<p>If one follows this path of knowledge, he will personally understand how far he has progressed down the path of perfection (pratyaksavagamam dharmyam).</p>
+<p>Su-sukham kartum indicates that this knowledge is very happy and joyful to execute.</p>
+<p>And avyayam indicates that this knowledge is permanent.</p>
+<p>We may work in this material world for education or riches, but these things are not avyayam, for as soon as this body is finished, everything else is also finished.</p>
+<p>With death, our education, advanced degrees, bank balances, family--everything--are all finished.</p>
+<p>Whatever we're doing in this material world is not eternal.</p>
+<p>However, this knowledge is not like that.</p>
+<p>nehabhikrama-naso 'sti pratyavayo na vidyate svalpam apy asya dharmasya trayate mahato bhayat &quot;In this endeavor there is no loss or diminution, and a little advancement on this path can protect one from the most dangerous type of fear.&quot; (Bg.2.40) Knowledge in Krsna consciousness is so perfect that if one performs work in Krsna consciousness and yet does not attain perfection, in his next life he takes up from wherever he left off.</p>
+<p>In other words, actions performed in Krsna consciousness are durable.</p>
+<p>On the other hand, material achievements, because they pertain to the body, are vanquished at death.</p>
+<p>Knowledge that pertains to designations does not endure.</p>
+<p>I am thinking that I am a man or a woman, an American or Indian, a Christian or Hindu--these are all designations pertaining to the body, and when the body is finished, they will also be finished.</p>
+<p>We are actually spirit, and therefore our spiritual activities will go with us wherever we go.</p>
+<p>Sri Krsna indicates that this king of knowledge is also happily performed.</p>
+<p>We can easily see that activities in Krsna consciousness are joyfully done.</p>
+<p>There is chanting and dancing, eating prasadam (food that has been offered to Krsna) and discussing Bhagavad-gita.</p>
+<p>These are the main processes.</p>
+<p>There are no stringent rules and regulations that we have to sit so straight for so long or do so many gymnastics, or control our breath.</p>
+<p>No, the process is very easily and happily done.</p>
+<p>Everyone wants to dance, to sing, to eat and to hear the truth.</p>
+<p>This process is truly susukham--very happy.</p>
+<p>In the material world there are so many gradations of education.</p>
+<p>Some people never finish grammar school or high school, whereas others go on and receive a university education, a BA, MA, PhD, and so on.</p>
+<p>But what is this raja-vidya, the king of education, the summum bonum of knowledge? It is this Krsna consciousness.</p>
+<p>Real knowledge is understanding &quot;what I am.&quot; Unless we come to the point of understanding what we are, we cannot attain real knowledge.</p>
+<p>When Sanatana Gosvami left his government post and came to Caitanya Mahaprabhu for the first time, he asked the Lord, &quot;What is education?&quot; Although Sanatana Gosvami knew a number of languages, including Sanskrit, he still inquired about real education.</p>
+<p>&quot;The general populace calls me highly educated,&quot; Sanatana Gosvami told the Lord, &quot;and I am such a fool that I actually believe them.&quot; The Lord replied, &quot;Why should you not think you're well educated? You're a great scholar in Sanskrit and Persian.&quot; &quot;That may be,&quot; Sanatana Gosvami said, &quot;but I do not know what I am.&quot; He then went on to tell the Lord: &quot;I do not wish to suffer, but these material miseries are forced upon me.</p>
+<p>I neither know where I've come from nor where I'm going, but people are calling me educated.</p>
+<p>When they call me a great scholar, I am satisfied, but in truth I am such a great fool that I know not what I am.&quot; Sanatana Gosvami was actually speaking for all of us, for this is our present situation.</p>
+<p>We may be proud of our academic education, but if asked what we are, we are not able to say.</p>
+<p>Everyone is under the conception that this body is the self, but we learn from Vedic sources that this is not so.</p>
+<p>Only after realizing that we are not these bodies can we enter into real knowledge and understand what we actually are.</p>
+<p>This then, is the beginning of knowledge.</p>
+<p>Raja-vidya may be further defined as not only knowing what one is, but acting accordingly.</p>
+<p>If we do not know who we are, how can our activities be proper? If we are mistaken about our identity, we will also be mistaken about our activities.</p>
+<p>Simply knowing that we are not these material bodies is not sufficient; we must act according to the conviction that we are spiritual.</p>
+<p>Action based on this knowledge--spiritual activity--is work in Krsna consciousness.</p>
+<p>This kind of knowledge may not seem to be so easily attainable, but it is made very easy by the mercy of Krsna and Lord Caitanya Mahaprabhu who made this knowledge easily available through the process of chanting Hare Krsna, Hare Krsna, Krsna Krsna, Hare Hare.</p>
+<p>Hare Rama, Hare Rama, Rama Rama, Hare Hare.</p>
+<p>Caitanya Mahaprabhu divided the living entities into two major categories: those that are moving and those that are not moving.</p>
+<p>Trees, grass, plants, stones, etc., do not move because they do not have sufficiently developed consciousness.</p>
+<p>Their consciousness is there, but is covered.</p>
+<p>If a living being does not understand his position, he is stonelike, although dwelling in a human body.</p>
+<p>The living entities--birds, reptiles, animals, insects, human beings, demigods, etc.--number over 8,000,000 species, and of these a very small number are human beings.</p>
+<p>Lord Caitanya further points out that out of 400,000 species of human beings, some are civilized; and out of many civilized persons, there are only a few who are devoted to the scriptures.</p>
+<p>In the present day most people claim to be devoted to some religion--Christian, Hindu, Moslem, Buddhist, etc.--but in fact they do not really believe in the scriptures.</p>
+<p>Those who do believe in the scriptures are, by and large, attached to pious philanthropic activities.</p>
+<p>They believe that religion means yajna (sacrifice), dana (charity) and tapas (penance).</p>
+<p>One who engages in tapasya undertakes voluntarily very rigid regulations, such as brahmacari students (celibates) or sannyasis (renounced order) undertake.</p>
+<p>Charity means voluntarily giving away one's material possessions.</p>
+<p>In the present age there is no sacrifice, but from historical literatures like the Mahabharata we get information that kings performed sacrifices by distributing rubies, gold and silver.</p>
+<p>Yajna was primarily for kings, and charity, on a much smaller scale, was meant for householders.</p>
+<p>Those who actually believed in scriptures usually adopted some of these principles.</p>
+<p>But generally in this age people simply say that they belong to a religion but in actuality do nothing.</p>
+<p>Out of millions of such people, a very small number actually perform charity, sacrifice and penance.</p>
+<p>Caitanya Mahaprabhu further points out that out of millions who perform such religious principles all over the universe, only a few attain perfect knowledge and understand what they are.</p>
+<p>Just knowing &quot;I am not this body but am spirit soul&quot; is not sufficient.</p>
+<p>We have to escape this entanglement of material nature.</p>
+<p>This is called mukti, liberation.</p>
+<p>Out of many thousands of persons who are in self-knowledge as to what and who they are, only one or two may be actually liberated.</p>
+<p>And out of many thousands who are liberated, only one or two may understand what and who Krsna is.</p>
+<p>So understanding Krsna is not such an easy job.</p>
+<p>Thus in this age of Kali, an age characterized by ignorance and chaos, liberation is out of the reach of practically everyone.</p>
+<p>One has to go through the whole ordeal of becoming civilized, then religious, and then one has to perform charities and sacrifices and come to the platform of knowledge, then to the stage of liberation, and finally, after liberation, to the understanding of what Krsna is.</p>
+<p>This process is also indicated in Bhagavad-gita: brahma-bhutah prasannatma na socati na kanksati samah sarvesu bhutesu mad-bhaktim labhate param &quot;One who is thus transcendentally situated at once realizes the Supreme Brahman.</p>
+<p>He never laments or desires to have anything; he is equally disposed to every living entity.</p>
+<p>In that state he attains pure devotional service unto Me.&quot; (Bg.18.54) These are the signs of liberation.</p>
+<p>The first symptom of one who is liberated is that he is very happy.</p>
+<p>It is not possible to find him morose.</p>
+<p>Nor does he have any anxiety.</p>
+<p>He never frets, &quot;This thing I don't have.</p>
+<p>Oh, I must secure this thing.</p>
+<p>Oh, this bill I have to pay.</p>
+<p>I have to go here, there.&quot; One who is liberated has no anxieties at all.</p>
+<p>He may be the poorest man in the world, but he neither laments nor thinks that he is poor.</p>
+<p>Why should he think that he is poor? When we think that we are these material bodies and that we have possessions to go with them, then we think that we are poor or rich, but one who is liberated from the material conception of life has nothing to do with possessions or lack of possessions.</p>
+<p>&quot;I have nothing to lose and nothing to gain,&quot; he thinks.</p>
+<p>&quot;I am completely separate from all this.&quot; Nor does he see anyone else as rich or poor, educated or uneducated, beautiful or ugly, etc.</p>
+<p>He does not see any material dualities, for his vision is completely on the spiritual platform, and he sees that every living entity is part and parcel of Krsna.</p>
+<p>Thus seeing all entities in their true identity, he tries to take them back to Krsna consciousness.</p>
+<p>His viewpoint is that everyone--whether he be brahmana or sudra, black or white, Hindu, Christian, or whatever--should come to Krsna consciousness.</p>
+<p>When one is situated in this way, then: madbhaktim labhate param--he becomes eligible for becoming a pure devotee of Krsna's.</p>
+<p>Practically speaking, this process is not very easy in this age of Kali.</p>
+<p>In Srimad-Bhagavatam a description is given of the people of this age.</p>
+<p>Their duration of life is said to be very short, they tend to be phlegmatic and slow and to sleep a great deal, and when they're not sleeping, they are busy earning money.</p>
+<p>At the most they only have two hours a day for spiritual activities, so what is the hope for spiritual understanding? It is also stated that even if one is anxious to make spiritual progress, there are many pseudo-spiritual societies to take advantage of him.</p>
+<p>People are also characterized in this age as being unfortunate.</p>
+<p>They have a great deal of difficulty meeting the primary demands of life--eating, defending, mating, and sleeping--necessities which are met even by the animals.</p>
+<p>Even if people are meeting these necessities in this age, they are always anxious about war, either defending themselves from aggressors or having to go to war themselves.</p>
+<p>In addition to this, there are always disturbing diseases and economic problems in Kali-yuga.</p>
+<p>Therefore Lord Sri Krsna considered that in this age it is impossible for people to come to the perfectional stage of liberation by following the prescribed rules and regulations.</p>
+<p>Thus out of His causeless mercy, Sri Krsna came as Lord Caitanya Mahaprabhu and distributed the means to the highest perfection of life and spiritual ecstasy by the chanting of Hare Krsna, Hare Krsna, Krsna Krsna, Hare Hare.</p>
+<p>Hare Rama, Hare Rama, Rama Rama, Hare Hare.</p>
+<p>This process of chanting is most practical, and it does not depend on whether one is liberated or not, or whether one's condition is conducive to spiritual life or not--whoever takes to this process becomes immediately purified.</p>
+<p>Therefore it is called pavitram (pure).</p>
+<p>Furthermore, for one who takes to this Krsna consciousness process, the seeds of latent reactions to his sinful actions are all nullified.</p>
+<p>just as a fire turns whatever we put into it to ashes, this process turns to ashes all the sinful reactions of our past lives.</p>
+<p>We must understand that our suffering is due to our sinful activity, and sinful activity is due to our ignorance.</p>
+<p>Sins, or transgressions, are committed by those who do not know what is what.</p>
+<p>A child, for instance, will naively put his hand in a fire because of ignorance.</p>
+<p>He is thus burned immediately, for the fire is impartial and does not allow any special consideration for the innocent child.</p>
+<p>It will simply act as fire.</p>
+<p>Similarly, we do not know how this material world is functioning, who its controller is, nor how it is controlled, and due to our ignorance we act in foolish ways, but nature is so stringent that she does not allow us to escape the reactions to our actions.</p>
+<p>Whether we commit an act knowingly or unknowingly, the reactions and consequent sufferings are there.</p>
+<p>However, through knowledge we can understand what the actual situation is, who God is, and what our relationship with Him is.</p>
+<p>This knowledge by which we can gain release from suffering is possible in the human form of life, not in the animal form.</p>
+<p>To give us knowledge, to give us proper direction, there are scriptures written in various languages in all parts of the world.</p>
+<p>Lord Caitanya Mahaprabhu pointed out that people are forgetful from time immemorial about their relationship with the Supreme Lord; therefore Krsna has sent so many representatives to impart the scriptures to man.</p>
+<p>We should take advantage of these, especially of Bhagavad-gita, which is the prime scripture for the modern world.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

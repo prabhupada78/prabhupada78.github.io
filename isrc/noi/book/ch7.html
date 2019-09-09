@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch7 - Nectar of Instruction</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Preface</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html" class="active">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Instruction</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#text-seven" id="text-seven">TEXT SEVEN</a></h1>
+<p>syāt kṛṣṇa-nāma-caritādi-sitāpy avidyā- pittopatapta-rasanasya na rocikā nu kintv ādarād anudinaṁ khalu saiva juṣṭā svādvī kramād bhavati tad-gada-mūla-hantrī</p>
+<p><strong>SYNONYMS</strong></p>
+<p>syāt—is; kṛṣṇa—of Lord Kṛṣṇa; nāma—the holy name; carita-ādi—character, pastimes and so forth; sitā—sugar candy; api—although; avidyā—of ignorance; pitta—by the bile; upatapta—afflicted; rasanasya—of the tongue; na—not; rocikā—palatable; nu—oh, how wonderful it is; kintu—but; ādarāt—carefully; anudinam—every day, or twenty-four hours daily; khalu—naturally; sā—that (sugar candy of the holy name); eva—certainly; juṣṭā—taken or chanted; svādvī—relishable; kramāt—gradually; bhavati—becomes; tat-gada—of that disease; mūla—of the root; hantrī—the destroyer.</p>
+<p><strong>TRANSLATION</strong></p>
+<p>The holy name, character, pastimes and activities of Kṛṣṇa are all transcendentally sweet like sugar candy.</p>
+<p>Although the tongue of one afflicted by the jaundice of avidyā [ignorance] cannot taste anything sweet, it is wonderful that simply by carefully chanting these sweet names every day, a natural relish awakens within his tongue, and his disease is gradually destroyed at the root.</p>
+<p><strong>PURPORT</strong></p>
+<p>The holy name of Lord Kṛṣṇa, His quality, pastimes and so forth are all of the nature of absolute truth, beauty and bliss.</p>
+<p>Naturally they are very sweet, like sugar candy, which appeals to everyone.</p>
+<p>Nescience, however, is compared to the disease called jaundice, which is caused by bilious secretions.</p>
+<p>Attacked by jaundice, the tongue of a diseased person cannot palatably relish sugar candy.</p>
+<p>Rather, a person with jaundice considers something sweet to taste very bitter.</p>
+<p>Avidyā (ignorance) similarly perverts the ability to relish the transcendentally palatable name, quality, form and pastimes of Kṛṣṇa.</p>
+<p>Despite this disease, if one with great care and attention takes to Kṛṣṇa consciousness, chanting the holy name and hearing Kṛṣṇa’s transcendental pastimes, his ignorance will be destroyed and his tongue enabled to taste the sweetness of the transcendental nature of Kṛṣṇa and His paraphernalia.</p>
+<p>Such a recovery of spiritual health is possible only by the regular cultivation of Kṛṣṇa consciousness.</p>
+<p>When a man in the material world takes more interest in the materialistic way of life than in Kṛṣṇa consciousness, he is considered to be in a diseased condition.</p>
+<p>The normal condition is to remain an eternal servant of the Lord (jīvera ‘svarūpa’ haya— kṛṣṇera ‘nitya-dāsa’ [).</p>
+<p>This healthy condition is lost when the living entity forgets Kṛṣṇa due to being attracted by the external features of Kṛṣṇa’s māyā energy.</p>
+<p>This world of māyā is called durāśraya, which means “false or bad shelter.” One who puts his faith in durāśraya becomes a candidate for hoping against hope.</p>
+<p>In the material world everyone is trying to become happy, and although their material attempts are baffled in every way, due to their nescience they cannot understand their mistakes.</p>
+<p>People try to rectify one mistake by making another mistake.</p>
+<p>This is the way of the struggle for existence in the material world.</p>
+<p>If one in this condition is advised to take to Kṛṣṇa consciousness and be happy, he does not accept such instructions.</p>
+<p>This Kṛṣṇa consciousness movement is being spread all over the world just to remedy this gross ignorance.</p>
+<p>People in general are misled by blind leaders.</p>
+<p>The leaders of human society—the politicians, philosophers and scientists—are blind because they are not Kṛṣṇa conscious.</p>
+<p>According to Bhagavad-gītā, because they are bereft of all factual knowledge due to their atheistic way of life, they are actually sinful rascals and are the lowest among men.</p>
+<p>na māṁ duṣkṛtino mūḍhāḥ prapadyante narādhamāḥ māyayāpahṛta jñānā- āsuraṁ bhāvam āśritāḥ “Those miscreants who are grossly foolish, lowest among mankind, whose knowledge is stolen by illusion, and who partake of the atheistic nature of demons, do not surrender unto Me.” (Bg.7.15) Such people never surrender to Kṛṣṇa, and they oppose the endeavor of those who wish to take Kṛṣṇa’s shelter.</p>
+<p>When such atheists become leaders of society, the entire atmosphere is surcharged with nescience.</p>
+<p>In such a condition, people do not become very enthusiastic to receive this Kṛṣṇa consciousness movement, just as a diseased person suffering from jaundice does not relish the taste of sugar candy.</p>
+<p>However, one must know that for jaundice, sugar candy is the only specific medicine.</p>
+<p>Similarly, in the present confused state of humanity, Kṛṣṇa consciousness, the chanting of the holy name of the Lord—Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare—is the only remedy for setting the world aright.</p>
+<p>Although Kṛṣṇa consciousness may not be very palatable for a diseased person, Śrīla Rūpa Gosvāmī nonetheless advises that if one wants to be cured of the material disease, he must take to it with great care and attention.</p>
+<p>One begins his treatment by chanting the Hare Kṛṣṇa mahā-mantra because by chanting this holy name of the Lord a person in the material condition will be relieved from all misconceptions (ceto- darpaṇa-mārjanam).</p>
+<p>Avidyā, a misconception about one’s spiritual identity, provides the foundation for ahaṅkāra, or false ego within the heart.</p>
+<p>The real disease is in the heart.</p>
+<p>If the mind is cleansed, however, if consciousness is cleansed, a person cannot be harmed by the material disease.</p>
+<p>To cleanse the mind and heart from all misconceptions, one should take to this chanting of the Hare Kṛṣṇa mahā-mantra.</p>
+<p>This is both easy and beneficial.</p>
+<p>By chanting the holy name of the Lord, one is immediately freed from the blazing fire of material existence.</p>
+<p>There are three stages in chanting the holy name of the Lord—the offensive stage, the stage of lessening offenses, and the pure stage.</p>
+<p>When a neophyte takes to the chanting of the Hare Kṛṣṇa mantra, he generally commits many offenses.</p>
+<p>There are ten basic offenses, and if the devotee avoids these, he can glimpse the next stage, which is situated between offensive chanting and pure chanting.</p>
+<p>When one attains the pure stage, he is immediately liberated.</p>
+<p>This is called bhava-mahā-dāvāgni- nirvāpanam.</p>
+<p>As soon as one is liberated from the blazing fire of material existence, he can relish the taste of transcendental life.</p>
+<p>The conclusion is that in order to get freed from the material disease, one must take to the chanting of the Hare Kṛṣṇa mantra.</p>
+<p>The Kṛṣṇa consciousness movement is especially meant for creating an atmosphere in which people can take to the chanting of the Hare Kṛṣṇa mantra.</p>
+<p>One must begin with faith, and when this faith is increased by chanting, a person can become a member of the Society.</p>
+<p>We are sending saṅkīrtana parties all over the world, and they are experiencing that even in the remotest part of the world, where there is no knowledge of Kṛṣṇa, the Hare Kṛṣṇa mahā-mantra attracts thousands of men to our camp.</p>
+<p>In some areas, people begin to imitate the devotees by shaving their heads and chanting the Hare Kṛṣṇa mahā- mantra, only a few days after hearing the mantra.</p>
+<p>This may be imitative, but imitation of a good thing is desired.</p>
+<p>Some imitators gradually become interested in being initiated by the spiritual master and offer themselves for initiation.</p>
+<p>If one is sincere, he is initiated, and this stage is called bhajana-kriyā.</p>
+<p>One then actually engages in the service of the Lord by regularly chanting the Hare Kṛṣṇa mahā-mantra, sixteen rounds daily, and refraining from illicit sex, intoxicants, meat- eating and gambling.</p>
+<p>By bhajana-kriyā one attains freedom from the contamination of materialistic life.</p>
+<p>He no longer goes to a restaurant or hotel to taste so-called palatable dishes made with meat and onions, nor does he care to smoke or drink tea or coffee.</p>
+<p>He not only refrains from illicit sex, but avoids sex life entirely.</p>
+<p>Nor is he interested in wasting his time in speculating or gambling.</p>
+<p>In this way it is to be understood that one is becoming cleansed of unwanted things (anartha-nivṛtti).</p>
+<p>The word anartha refers to unwanted things.</p>
+<p>Anarthas are vanquished when one becomes attached to the Kṛṣṇa consciousness movement.</p>
+<p>When a person is relieved from unwanted things, he becomes fixed in executing his Kṛṣṇa activities.</p>
+<p>Indeed, he becomes attached to such activities and experiences ecstasy in executing devotional service.</p>
+<p>This is called bhāva, the preliminary awakening of dormant love of Godhead.</p>
+<p>Thus the conditioned soul becomes free from material existence and loses interest in the bodily conception of life, including material opulence, material knowledge and material attraction of all variety.</p>
+<p>At such a time one can understand who the Supreme Personality of Godhead is and what His maya is.</p>
+<p>Although māyā may be present, it cannot disturb a devotee once he attains the bhāva stage.</p>
+<p>This is because the devotee can see the real position of māyā.</p>
+<p>Māyā means forgetfulness of Kṛṣṇa, and forgetfulness of Kṛṣṇa and Kṛṣṇa consciousness stand side by side like light and shadow.</p>
+<p>If one remains in shadow, he cannot enjoy the facilities offered by light, and if one remains in light, he cannot be disturbed by the darkness of shadow.</p>
+<p>By taking to Kṛṣṇa consciousness, one gradually becomes liberated and remains in light.</p>
+<p>Indeed, he does not even touch the darkness.</p>
+<p>As confirmed in Caitanya-caritāmṛta (Madhya 22.31): kṛṣṇa——sūrya-sama; māyā haya andhakāra yāhāṅ kṛṣṇa, tāhāṅ nāhi māyāra adhikāra “Kṛṣṇa is compared to sunshine, and māyā is compared to darkness.</p>
+<p>Wherever there is sunshine, there cannot be darkness.</p>
+<p>As soon as one takes to Kṛṣṇa consciousness, the darkness of illusion, the influence of the external energy, will immediately vanish.”</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

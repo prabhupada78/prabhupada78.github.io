@@ -1,0 +1,1227 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch1 - Science of Self-Realization</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Foreword</a></li><li class="affix"><a href="intro.html">Introduction</a></li><li class="affix"><a href="ch1.html" class="active">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Science of Self-Realization</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#learning-the-science-of-the-self" id="learning-the-science-of-the-self">Learning the Science of the Self</a></h1>
+<h2><a class="header" href="#discovering-the-self" id="discovering-the-self">Discovering the Self</a></h2>
+<p>Who are you?</p>
+<p>Are you your body? Or your mind? Or are you something higher? Do you know who you are, or do you merely think you know? And does it really matter? Our materialistic society, with its unenlightened leadership, has made it virtually taboo to inquire into our real, higher self.</p>
+<p>Instead we use our valuable time maintaining, decorating, and pampering the body for its own sake.</p>
+<p>Might there be an alternative? This very important Krishna consciousness movement is meant to save human society from spiritual death.</p>
+<p>At present human society is being misled by leaders who are blind, for they do not know the aim and objective of human life, which is selfrealization and the reestablishment of our lost relationship with the Supreme Personality of Godhead.</p>
+<p>That is the missing point.</p>
+<p>The Krishna consciousness movement is trying to enlighten human society in this important matter.</p>
+<p>According to Vedic civilization, the perfection of life is to realize one's relationship with Krishna, or God.</p>
+<p>In the Bhagavad-gita, which is accepted by all authorities in transcendental science as the basis of all Vedic knowledge, we understand that not only human beings but all living entities are parts and parcels of God.</p>
+<p>The parts are meant for serving the whole, just as the legs, hands, fingers, and ears are meant for serving the total body.</p>
+<p>We living entities, being parts and parcels of God, are duty-bound to serve Him.</p>
+<p>Actually our position is that we are always rendering service to someone, either to our family, country, or society.</p>
+<p>If we have no one to serve, sometimes we keep a pet cat or dog and render service to it.</p>
+<p>All these factors prove that we are constitutionally meant to render service, yet in spite of serving to the best of our ability, we are not satisfied.</p>
+<p>Nor is the person to whom we are rendering that service satisfied.</p>
+<p>On the material platform, everyone is frustrated.</p>
+<p>The reason for this is that the service being rendered is not properly directed.</p>
+<p>For example, if we want to render service to a tree, we must water the root.</p>
+<p>If we pour water on the leaves, branches, and twigs, there is little benefit.</p>
+<p>If the Supreme Personality of Godhead is served, all other parts and parcels will be automatically satisfied.</p>
+<p>Consequently all welfare activities as well as service to society, family, and nation are realized by serving the Supreme Personality of Godhead.</p>
+<p>It is the duty of every human being to understand his constitutional position with God and to act accordingly.</p>
+<p>If this is possible, then our lives become successful.</p>
+<p>Sometimes, however, we feel challenging and say, &quot;There is no God,&quot; or &quot;I am God,&quot; or even, &quot;I don't care for God.&quot; But in actuality this challenging spirit will not save us.</p>
+<p>God is there, and we can see Him at every moment.</p>
+<p>If we refuse to see God in our life, then He will be present before us as cruel death.</p>
+<p>If we do not choose to see Him in one feature, we will see Him in another.</p>
+<p>There are different features of the Supreme Personality of Godhead because He is the original root of the entire cosmic manifestation.</p>
+<p>In one sense, it is not possible for us to escape Him.</p>
+<p>This Krishna consciousness movement is not blind religious fanaticism, nor is it a revolt by some recent upstart; rather, it is an authorized, scientific approach to the matter of our eternal necessity in relation with the Absolute Personality of Godhead, the Supreme Enjoyer.</p>
+<p>Krishna consciousness simply deals with our eternal relationship with Him and the process of discharging our relative duties to Him.</p>
+<p>Thus, Krishna consciousness enables us to achieve the highest perfection of life attainable in the present human form of existence.</p>
+<p>We must always remember that this particular form of human life is attained after an evolution of many millions of years in the cycle of transmigration of the spirit soul.</p>
+<p>In this particular form of life, the economic question is more easily solved than in the lower, animal forms.</p>
+<p>There are swine, dogs, camels, asses, and so on, whose economic necessities are just as important as ours, but the economic questions of these animals and others are solved under primitive conditions, whereas the human being is given all the facilities for leading a comfortable life by the laws of nature.</p>
+<p>Why is a man given a better chance to live than swine or other animals? Why is a highly posted government officer given better facilities for a comfortable life than an ordinary clerk? The answer is very simple: the important officer has to discharge duties of a more responsible nature than those of an ordinary clerk.</p>
+<p>Similarly, the human being has to discharge higher duties than the animals, who are always busy with filling their hungry stomachs.</p>
+<p>But by the laws of nature, the modern animalistic standard of civilization has only increased the problems of filling the stomach.</p>
+<p>When we approach some of these polished animals for spiritual life, they say that they only want to work for the satisfaction of their stomachs and that there is no necessity of inquiring about the Godhead.</p>
+<p>Yet despite their eagerness to work hard, there is always the question of unemployment and so many other impediments incurred by the laws of nature.</p>
+<p>Despite this, they still denounce the necessity of acknowledging the Godhead.</p>
+<p>We are given this human form of life not just to work hard like the swine or dog, but to attain the highest perfection of life.</p>
+<p>If we do not want that perfection, then we will have to work very hard, for we will be forced to by the laws of nature.</p>
+<p>In the closing days of Kali-yuga (this present age) men will have to work hard like asses for only a scrap of bread.</p>
+<p>This process has already begun, and every year the necessity for harder work for lesser wages will increase.</p>
+<p>Yet human beings are not meant to work hard like animals, and if a man fails to discharge his duties as a human being, he is forced to transmigrate to the lower species of life by the laws of nature.</p>
+<p>The Bhagavad-gita very vividly describes how a spirit soul, by the laws of nature, takes his birth and gets a suitable body and sense organs for enjoying matter in the material world.</p>
+<p>In the Bhagavad-gita it is also stated that those who attempt but do not complete the path of approaching God--in other words, those who have failed to achieve complete success in Krishna consciousness--are given the chance to appear in the families of the spiritually advanced or in financially well-to-do mercantile families.</p>
+<p>If the unsuccessful spiritual aspirants are offered such chances of noble parentage, what of those who have actually attained the required success? Therefore an attempt to go back to Godhead, even if half finished, guarantees a good birth in the next life.</p>
+<p>Both the spiritual and the financially well-to-do families are beneficial for spiritual progress because in both families one can get a good chance to make further progress from the point where he stopped in his previous birth.</p>
+<p>In spiritual realization the atmosphere generated by a good family is favorable for the cultivation of spiritual knowledge.</p>
+<p>The Bhagavad-gita reminds such fortunate well-born persons that their good fortune is due to their past devotional activities.</p>
+<p>Unfortunately, the children of these families do not consult the Bhagavad-gita, being misguided by maya (illusion).</p>
+<p>Birth in a well-to-do family solves the problem of having to find sufficient food from the beginning of life, and later a comparatively easier and more comfortable way of life can be led.</p>
+<p>Being so situated, one has a good chance to make progress in spiritual realization, but as ill luck would have it, due to the influence of the present iron age (which is full of machines and mechanical people) the sons of the wealthy are misguided for sense enjoyment, and they forget the good chance they have for spiritual enlightenment.</p>
+<p>Therefore nature, by her laws, is setting fires in these golden homes.</p>
+<p>It was the golden city of Lanka, under the regime of the demoniac Ravana, that was burned to ashes.</p>
+<p>That is the law of nature.</p>
+<p>The Bhagavad-gita is the preliminary study of the transcendental science of Krishna consciousness, and it is the duty of all responsible heads of state to chalk out their economic and other programs by referring to the Bhagavad-gita.</p>
+<p>We are not meant to solve economic questions of life by balancing on a tottering platform; rather, we are meant to solve the ultimate problems of life which arise due to the laws of nature.</p>
+<p>Civilization is static unless there is spiritual movement.</p>
+<p>The soul moves the body, and the living body moves the world.</p>
+<p>We are concerned about the body, but we have no knowledge of the spirit that is moving that body.</p>
+<p>Without the spirit, the body is motionless, or dead.</p>
+<p>The human body is an excellent vehicle by which we can reach eternal life.</p>
+<p>It is a rare and very important boat for crossing over the ocean of nescience which is material existence.</p>
+<p>On this boat there is the service of an expert boatman, the spiritual master.</p>
+<p>By divine grace, the boat plies the water in a favorable wind.</p>
+<p>With all these auspicious factors, who would not take the opportunity to cross over the ocean of nescience? If one neglects this good chance, it should be known that he is simply committing suicide.</p>
+<p>There is certainly a great deal of comfort in the first-class coach of a train, but if the train does not move toward its destination, what is the benefit of an air-conditioned compartment? Contemporary civilization is much too concerned with making the material body comfortable.</p>
+<p>No one has information of the real destination of life, which is to go back to Godhead.</p>
+<p>We must not just remain seated in a comfortable compartment; we should see whether or not our vehicle is moving toward its real destination.</p>
+<p>There is no ultimate benefit in making the material body comfortable at the expense of forgetting the prime necessity of life, which is to regain our lost spiritual identity.</p>
+<p>The boat of human life is constructed in such a way that it must move toward a spiritual destination.</p>
+<p>Unfortunately this body is anchored to mundane consciousness by five strong chains, which are: (1) attachment to the material body due to ignorance of spiritual facts, (2) attachment to kinsmen due to bodily relations, (3) attachment to the land of birth and to material possessions such as house, furniture, estates, property, business papers, etc., (4) attachment to material science, which always remains mysterious for want of spiritual light, and (5) attachment to religious forms and holy rituals without knowing the Personality of Godhead or His devotees, who make them holy.</p>
+<p>These attachments, which anchor the boat of the human body, are explained in detail in the Fifteenth Chapter of the Bhagavad-gita.</p>
+<p>There they are compared to a deeply rooted banyan tree which is ever increasing its hold on the earth.</p>
+<p>It is very difficult to uproot such a strong banyan tree, but the Lord recommends the following process: &quot;The real form of this tree cannot be perceived in this world.</p>
+<p>No one can understand where it ends, where it begins, or where its foundation is.</p>
+<p>But with determination one must cut down this tree with the weapon of detachment.</p>
+<p>So doing, one must seek that place from which, having once gone, one never returns, and there surrender to that Supreme Personality of Godhead from whom everything has begun and in whom everything is abiding since time immemorial.&quot; (Bg.15.3-4) Neither the scientists nor speculative philosophers have yet arrived at any conclusion concerning the cosmic situation.</p>
+<p>All they have done is posit different theories about it.</p>
+<p>Some of them say that the material world is real, others say that it is a dream, and yet others say that it is ever existing.</p>
+<p>In this way different views are held by mundane scholars, but the fact is that no mundane scientist or speculative philosopher has ever discovered the beginning of the cosmos or its limitations.</p>
+<p>No one can say when it began or how it floats in space.</p>
+<p>They theoretically propose some laws, like the law of gravitation, but actually they cannot put this law to practical use.</p>
+<p>For want of actual knowledge of the truth, everyone is anxious to promote his own theory to gain certain fame, but the actual fact is that this material world is full of miseries and that no one can overcome them simply by promoting some theories about the subject.</p>
+<p>The Personality of Godhead, who is fully cognizant of everything in His creation, informs us that it is in our best interest that we desire to get out of this miserable existence.</p>
+<p>We must detach ourselves from everything material.</p>
+<p>To make the best use of a bad bargain, our material existence must be one-hundred-percent spiritualized.</p>
+<p>Iron is not fire, but it can be turned into fire by constant association with fire.</p>
+<p>Similarly, detachment from material activities can be effected by spiritual activities, not by material inertia.</p>
+<p>Material inertia is the negative side of material action, but spiritual activity is not only the negation of material action but the activation of our real life.</p>
+<p>We must be anxious to search out eternal life, or spiritual existence in Brahman, the Absolute.</p>
+<p>The eternal kingdom of Brahman is described in the Bhagavad-gita as that eternal country from which no one returns.</p>
+<p>That is the kingdom of God.</p>
+<p>The beginning of our present material life cannot be traced, nor is it necessary for us to know how we became conditioned in material existence.</p>
+<p>We have to be satisfied with the understanding that somehow or other this material life has been going on since time immemorial and now our duty is to surrender unto the Supreme Lord, who is the original cause of all causes.</p>
+<p>The preliminary qualification for going back to Godhead is given in the Bhagavad-gita (15.5): &quot;One who is free from illusion, false prestige, and false association, who understands the eternal, who is done with material lust and is free from the duality of happiness and distress, and who knows how to surrender unto the Supreme Person attains that eternal kingdom.&quot; One who is convinced of his spiritual identity and is freed from the material conception of existence, who is free from illusion and is transcendental to the modes of material nature, who constantly engages in understanding spiritual knowledge and who has completely severed himself from sense enjoyment can go back to Godhead.</p>
+<p>Such a person is called amudha, as distinguished from mudha, or the foolish and ignorant, for he is freed from the duality of happiness and distress.</p>
+<p>And what is the nature of the kingdom of God? It is described in the Bhagavad-gita (15.6) as follows: &quot;That abode of Mine is not illumined by the sun or moon, nor by electricity.</p>
+<p>One who reaches it never returns to this material world.&quot; Although every place in the creation is within the kingdom of God because the Lord is the supreme proprietor of all planets, there is still the Lord's personal abode, which is completely different from the universe in which we are now living.</p>
+<p>And this abode is called paramam, or the supreme abode.</p>
+<p>Even on this earth there are countries where the standard of living is high and countries where the standard of living is low.</p>
+<p>Besides this earth, there are innumerable other planets distributed all over the universe, and some are considered superior places and some inferior places.</p>
+<p>In any case, all planets within the jurisdiction of the external energy, material nature, require the rays of a sun or the light of fire for their existence, because the material universe is a region of darkness.</p>
+<p>Beyond this region, however, is a spiritual realm, which is described as functioning under the superior nature of God.</p>
+<p>That realm is described in the Upanisads thus: &quot;There is no need of sun, moon, or stars, nor is that abode illumined by electricity or any form of fire.</p>
+<p>All these material universes are illumined by a reflection of that spiritual light, and because that superior nature is always self-luminous, we can experience a glow of light even in the densest darkness of night.&quot; In the Hari-vamsa the spiritual nature is explained by the Supreme Lord Himself as follows: &quot;The glaring effulgence of the impersonal Brahman [the impersonal Absolute] illuminates all existences, both material and spiritual.</p>
+<p>But, O Bharata, you must understand that this Brahman illumination is the effulgence of My body.&quot; In the Brahma-samhita this conclusion is also confirmed.</p>
+<p>We should not think that we can attain that abode by any material means such as spaceships, but we should know for certain that one who can attain that spiritual abode of Krishna can enjoy eternal, spiritual bliss without interruption.</p>
+<p>As fallible living entities, we have two phases of existence.</p>
+<p>One is called material existence, which is full of the miseries of birth, death, old age, and disease, and the other is called spiritual existence, in which there is an incessant spiritual life of eternity, bliss, and knowledge.</p>
+<p>In material existence we are ruled by the material conception of the body and the mind, but in spiritual existence we can always relish the happy, transcendental contact of the Personality of Godhead.</p>
+<p>In spiritual existence, the Lord is never lost to us.</p>
+<p>The Krishna consciousness movement is trying to bring that spiritual existence to humanity at large.</p>
+<p>In our present material consciousness, we are attached to the sensual material conception of life, but this conception can be removed at once by devotional service to Krishna, or Krishna consciousness.</p>
+<p>If we adopt the principles of devotional service, we can become transcendental to the material conceptions of life and be liberated from the modes of goodness, passion, and ignorance, even in the midst of various material engagements.</p>
+<p>Everyone who is engaged in material affairs can derive the highest benefit from the pages of Back to Godhead and the other literatures of this Krishna consciousness movement.</p>
+<p>These literatures help all people sever the roots of the indefatigable banyan tree of material existence.</p>
+<p>These literatures are authorized to train us to renounce everything related to the material conception of life and to relish spiritual nectar in every object.</p>
+<p>This stage is obtainable only by devotional service and nothing else.</p>
+<p>By rendering such service, one can at once get liberation (mukti) even during this present life.</p>
+<p>Most spiritual endeavors are tinged with the colors of materialism, but pure devotional service is transcendental to all material pollution.</p>
+<p>Those who desire to go back to Godhead need only adopt the principles of this Krishna consciousness movement and simply aim their consciousness at the lotus feet of the Supreme Lord, the Personality of Godhead, Krishna.</p>
+<h2><a class="header" href="#what-is-krishna-consciousness" id="what-is-krishna-consciousness">What Is Krishna Consciousness?</a></h2>
+<p>The following interview with freelance reporter Sandy Nixon took place in July 1975, in Srila Prabhupada's quarters at the Krishna center in Philadelphia.</p>
+<p>This discussion serves as a superb introduction to Krishna consciousness and covers such basic topics as the Hare Krishna mantra, the relationship between the spiritual master and God, the difference between genuine and fake gurus, the role of women in Krishna consciousness, the Indian caste system, and the relationship between Christ consciousness and Krishna consciousness.</p>
+<p>Ms.Nixon: My first question is very basic.</p>
+<p>What is Krishna consciousness?</p>
+<p>Srila Prabhupada: Krishna means God.</p>
+<p>We are all intimately connected with Him because He is our original father.</p>
+<p>But we have forgotten this connection.</p>
+<p>When we become interested in knowing, &quot;What is my connection with God? What is the aim of life?&quot; then we are called Krishna conscious.</p>
+<p>Ms.Nixon: How does Krishna consciousness develop in the practitioner?</p>
+<p>Srila Prabhupada: Krishna consciousness is already there in the core of everyone's heart.</p>
+<p>But because of our materially conditioned life, we have forgotten it.</p>
+<p>The process of chanting the Hare Krishna maha-mantra--Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare.</p>
+<p>Hare Rama, Hare Rama, Rama Rama, Hare Hare--revives the Krishna consciousness we already have.</p>
+<p>For example, a few months ago these American and European boys and girls did not know about Krishna, but just yesterday we saw how they were chanting Hare Krishna and dancing in ecstasy throughout the whole Ratha-yatra procession [an annual festival sponsored by the Krishna consciousness movement in cities around the world].</p>
+<p>Do you think that was artificial? No.</p>
+<p>Artificially, nobody can chant and dance for hours together.</p>
+<p>They have actually awakened their Krishna consciousness by following a bona fide process.</p>
+<p>This is explained in the Caitanya-caritamrta (Madhya 22.</p>
+<ol start="107">
+<li>nitya-siddha Krishna-prema 'sadhya' kabhu naya sravanadi-suddha-citte karaye udaya Krishna consciousness is dormant in everyone's heart, and when one comes in contact with devotees, it is awakened.</li>
+</ol>
+<p>Krishna consciousness is not artificial.</p>
+<p>Just as a young boy awakens his natural attraction for a young girl in her association, similarly, if one hears about Krishna in the association of devotees, he awakens his dormant Krishna consciousness.</p>
+<p>Ms.Nixon: What is the difference between Krishna consciousness and Christ consciousness?</p>
+<p>Srila Prabhupada: Christ consciousness is also Krishna consciousness, but because at present people do not follow the rules and regulations of Christianity--the commandments of Jesus Christ--they do not come to the standard of God consciousness.</p>
+<p>Ms.Nixon: What is unique about Krishna consciousness among all religions?</p>
+<p>Srila Prabhupada: Primarily, religion means to know God and to love Him.</p>
+<p>That is religion.</p>
+<p>Nowadays, because of a lack of training, nobody knows God, what to speak of loving Him.</p>
+<p>People are satisfied simply going to church and praying, &quot;O God, give us our daily bread.&quot; In the Srimad-Bhagavatam this is called a cheating religion, because the aim is not to know and love God but to gain some personal profit.</p>
+<p>In other words, if I profess to follow some religion but I do not know who God is or how to love Him, I am practicing a cheating religion.</p>
+<p>As far as the Christian religion is concerned, ample opportunity is given to understand God, but no one is taking it.</p>
+<p>For example, the Bible contains the commandment &quot;Thou shall not kill,&quot; but Christians have built the world's best slaughterhouses.</p>
+<p>How can they become God conscious if they disobey the commandments of Lord Jesus Christ? And this is going on not just in the Christian religion, but in every religion.</p>
+<p>The title &quot;Hindu,&quot; &quot;Muslim,&quot; or &quot;Christian&quot; is simply a rubber stamp.</p>
+<p>None of them knows who God is and how to love Him.</p>
+<p>Ms.Nixon: How can one tell a bona fide spiritual master from a fake?</p>
+<p>Srila Prabhupada: Whoever teaches how to know God and how to love Him--he is a spiritual master.</p>
+<p>Sometimes bogus rascals mislead people.</p>
+<p>&quot;I am God,&quot; they claim, and people who do not know what God is believe them.</p>
+<p>You must be a serious student to understand who God is and how to love Him.</p>
+<p>Otherwise, you will simply waste your time.</p>
+<p>So the difference between others and us is that we are the only movement that can actually teach one how to know God and how to love Him.</p>
+<p>We are presenting the science of how one can know Krishna, the Supreme Personality of Godhead, by practicing the teachings of the Bhagavad-gita and the Srimad-Bhagavatam.</p>
+<p>They teach us that our only business is to love God.</p>
+<p>Our business is not to ask God for our necessities.</p>
+<p>God gives necessities to everyone--even to one who has no religion.</p>
+<p>For example, cats and dogs have no religion, yet Krishna supplies them with the necessities of life.</p>
+<p>So why should we bother Krishna for our daily bread? He is already supplying it.</p>
+<p>Real religion means to learn how to love Him.</p>
+<p>The Srimad-Bhagavatam (1.2.6) says, sa vai pumsam paro dharmo yato bhaktir adhoksaje ahaituky apratihata yayatma suprasidati First-class religion teaches one how to love God without any motive.</p>
+<p>If I serve God for some profit, that is business--not love.</p>
+<p>Real love of God is ahaituky apratihata: it cannot be checked by any material cause.</p>
+<p>It is unconditional.</p>
+<p>If one actually wants to love God, there is no impediment.</p>
+<p>One can love Him whether one is poor or rich, young or old, black or white.</p>
+<p>Ms.Nixon: Do all paths lead to the same end?</p>
+<p>Srila Prabhupada: No.</p>
+<p>There are four classes of men--the karmis, the jnanis, the yogis, and the bhaktas--and each achieves a different goal.</p>
+<p>The karmis work for some material profit.</p>
+<p>For example, in the city, many people work hard day and night, and their purpose is to get some money.</p>
+<p>Thus, they are fruitive workers, or karmis.</p>
+<p>A jnani is a person who thinks, &quot;Why am I working so hard? The birds, bees, elephants, and other creatures have no profession, yet they are also eating.</p>
+<p>So why should I unnecessarily work so hard? Rather, let me try to solve the problems of life--birth, death, old age, and disease.&quot; Jnanis try to become immortal.</p>
+<p>They think that if they merge into God's existence, then they will become immune to birth, death, old age, and disease.</p>
+<p>And yogis try to acquire some mystic power to exhibit a wonderful show.</p>
+<p>For instance, a yogi can become very small: if you put him into a locked room, he can come out through any little space.</p>
+<p>By showing this kind of magic, the yogi is immediately accepted as a very wonderful man.</p>
+<p>Of course, modern yogis simply show some gymnastics--they have no real power.</p>
+<p>But a real yogi has some power, which is not spiritual but material.</p>
+<p>So the yogi wants mystic power, the jnani wants salvation from the miseries of life, and the karmi wants material profit.</p>
+<p>But the bhakta--the devotee--doesn't want anything for himself.</p>
+<p>He simply wants to serve God out of love, just as a mother serves her child.</p>
+<p>There is no question of profit in a mother's service to her child.</p>
+<p>Out of pure affection and love, she cares for him.</p>
+<p>When you come to this stage of loving God, that is perfection.</p>
+<p>Neither the karmi, the jnani, nor the yogi can know God--only the bhakta.</p>
+<p>As Krishna says in the Bhagavadgita (18.55), bhaktya mam abhijanati: &quot;Only through the process of bhakti can one understand God.&quot; Krishna never says one can understand Him by other processes.</p>
+<p>No.</p>
+<p>Only through bhakti.</p>
+<p>If you are interested in knowing God and loving Him, then you must accept the devotional process.</p>
+<p>No other process will help you.</p>
+<p>Ms.Nixon: What transformation does one undergo on the path...</p>
+<p>Srila Prabhupada: No transformation--your original consciousness is Krishna consciousness.</p>
+<p>Now your consciousness is covered with so much rubbish.</p>
+<p>You have to cleanse it, and then--Krishna consciousness.</p>
+<p>Our consciousness is like water.</p>
+<p>Water is by nature clear and transparent, but sometimes it becomes muddy.</p>
+<p>If you filter all the mud out of the water, it again comes to its original clear, transparent state.</p>
+<p>Ms.Nixon: Can one function better in society by becoming Krishna conscious?</p>
+<p>Srila Prabhupada: Yes, you can see that my disciples are not drunkards or meat-eaters, and from a physiological point of view they are very clean--they'll never be attacked by serious diseases.</p>
+<p>Actually, giving up meat-eating is not a question of Krishna consciousness but of civilized human life.</p>
+<p>God has given human society so many things to eat--nice fruits, vegetables, grain, and first-class milk.</p>
+<p>From milk one can prepare hundreds of nutritious foods, but no one knows the art.</p>
+<p>Instead, people maintain big slaughterhouses and eat meat.</p>
+<p>They are not even civilized.</p>
+<p>When man is uncivilized, he kills poor animals and eats them.</p>
+<p>Civilized men know the art of preparing nutritious foods from milk.</p>
+<p>For instance, on our New Vrndavana farm in West Virginia, we make hundreds of first-class preparations from milk.</p>
+<p>Whenever visitors come, they are astonished that from milk such nice foods can be prepared.</p>
+<p>The blood of the cow is very nutritious, but civilized men utilize it in the form of milk.</p>
+<p>Milk is nothing but cow's blood transformed.</p>
+<p>You can make milk into so many things--yogurt, curd, ghee (clarified butter), and so on--and by combining these milk products with grains, fruits, and vegetables, you can make hundreds of preparations.</p>
+<p>This is civilized life--not directly killing an animal and eating its flesh.</p>
+<p>The innocent cow is simply eating grass given by God and supplying milk, which you can live on.</p>
+<p>Do you think cutting the cow's throat and eating its flesh is civilized?</p>
+<p>Ms.Nixon: No, I agree with you one hundred percent....</p>
+<p>One thing I'm very curious about: can the Vedas be taken symbolically as well as literally?</p>
+<p>Srila Prabhupada: No.</p>
+<p>They must be taken as they are, not symbolically.</p>
+<p>That is why we are presenting the Bhagavad-gita As It Is.</p>
+<p>Ms.Nixon: Are you attempting to revive the ancient Indian caste system in the West? The Gita mentions the caste system...</p>
+<p>Srila Prabhupada: Where does the Bhagavad-gita mention the caste system? Krishna says, catur-varnyam maya srstam guna-karma-vibhagasah: &quot;I created four divisions of men according to their quality and work.&quot; (Bg.4.13) For instance, you can understand that there are engineers as well as medical practitioners in society.</p>
+<p>Do you say they belong to different castes--that one is in the engineer caste and the other is in the medical caste? No.</p>
+<p>If a man has qualified himself in medical school, you accept him as a doctor; and if another man has a degree in engineering, you accept him as an engineer.</p>
+<p>Similarly, the Bhagavad-gita defines four classes of men in society: a class of highly intelligent men, a class of administrators, a class of productive men, and ordinary workers.</p>
+<p>These divisions are natural.</p>
+<p>For example, one class of men is very intelligent.</p>
+<p>But to actually meet the qualifications of first-class men as described in the Bhagavadgita, they need to be trained, just as an intelligent boy requires training in a college to become a qualified doctor.</p>
+<p>So in the Krishna consciousness movement we are training the intelligent men how to control their minds, how to control their senses, how to become truthful, how to become clean internally and externally, how to become wise, how to apply their knowledge in practical life, and how to become God conscious.</p>
+<p>All these boys [gestures toward seated disciples] have first-class intelligence, and now we are training them to use it properly.</p>
+<p>We are not introducing the caste system, in which any rascal born in a brahmana family is automatically a brahmana.</p>
+<p>He may have the habits of a fifth-class man, but he is accepted as first class because of his birth in a brahmana family.</p>
+<p>We don't accept that.</p>
+<p>We recognize a man as first class who is trained as a brahmana.</p>
+<p>It doesn't matter whether he is Indian, European, or American; lowborn or highborn--it doesn't matter.</p>
+<p>Any intelligent man can be trained to adopt first-class habits.</p>
+<p>We want to stop the nonsensical idea that we are imposing the Indian caste system on our disciples.</p>
+<p>We are simply picking out men with first-class intelligence and training them how to become first class in every respect.</p>
+<p>Ms.Nixon: How do you feel about women's liberation?</p>
+<p>Srila Prabhupada: So-called equal rights for women means that the men cheat the women.</p>
+<p>Suppose a woman and a man meet, they become lovers, they have sex, the woman becomes pregnant, and the man goes away.</p>
+<p>The woman has to take charge of the child and beg alms from the government, or else she kills the child by having an abortion.</p>
+<p>This is the woman's independence.</p>
+<p>In India, although a woman may be poverty-stricken, she stays under the care of her husband, and he takes responsibility for her.</p>
+<p>When she becomes pregnant, she is not forced to kill the child or maintain him by begging.</p>
+<p>So, which is real independence--to remain under the care of the husband or to be enjoyed by everyone?</p>
+<p>Ms.Nixon: How about in spiritual life--can women also succeed in Krishna consciousness?</p>
+<p>Srila Prabhupada: We make no distinction on the basis of sex.</p>
+<p>We give Krishna consciousness to both men and women equally.</p>
+<p>We welcome women, men, the poor, the rich--everyone.</p>
+<p>Krishna says in the Bhagavad-gita (5.18): vidya-vinaya-sampanne brahmane ga vi hastini suni caiva svapake ca panditah sama-darsinah &quot;The humble sage, by virtue of true knowledge, sees with equal vision a learned and gentle brahmana, a cow, an elephant, a dog, and a dog-eater.&quot;</p>
+<p>Ms.Nixon: Could you explain the meaning of the Hare Krishna mantra?</p>
+<p>Srila Prabhupada: It is very simple.</p>
+<p>Hare means, &quot;O energy of the Lord,&quot; and Krishna means, &quot;O Lord Krishna.&quot; Just as there are males and females in the material world, similarly, God is the original male (purusa), and His energy (prakrti) is the original female.</p>
+<p>So, when we chant Hare Krishna, we are saying, &quot;O Lord Krishna, O energy of Krishna, kindly engage me in Your service.&quot;</p>
+<p>Ms.Nixon: Could you please tell me a little bit about your life and how you knew that you were the spiritual master of the Krishna consciousness movement?</p>
+<p>Srila Prabhupada: My life is simple.</p>
+<p>I was a householder with a wife and children--now I have grandsons--when my spiritual master ordered me to go to the Western countries and preach the cult of Krishna consciousness.</p>
+<p>So I left everything on the order of my spiritual master, and now I am trying to execute his order and the orders of Krishna.</p>
+<p>Ms.Nixon: How old were you when he told you to go to the West?</p>
+<p>Srila Prabhupada: At our first meeting, he ordered me to preach Krishna consciousness in the West.</p>
+<p>I was then twenty-five years old, a married man with two children.</p>
+<p>I tried my best to carry out his orders and started managing Back to Godhead magazine in 1944, when I was still in household life.</p>
+<p>I started writing books in 1959 after retiring from family life, and in 1965 I came to the United States.</p>
+<p>Ms.Nixon: You have said that you are not God, and yet it appears to me, as an outsider, that your devotees treat you as if you were God.</p>
+<p>Srila Prabhupada: Yes, that is their duty.</p>
+<p>Because the spiritual master is executing God's order, he should be respected as much as God, just as a government officer should be respected as much as the government because he executes the government's order.</p>
+<p>Even if an ordinary policeman comes, you have to respect him because he is a government man.</p>
+<p>But that does not mean he is the government.</p>
+<p>Saksad-dharitvena samasta-sastrair.</p>
+<p>uktas tatha bhavyata eva sadbhih: &quot;The spiritual master is to be honored as much as the Supreme Lord because he is the most confidential servitor of the Lord.</p>
+<p>This is acknowledged in all revealed scriptures and followed by all authorities.&quot;</p>
+<p>Ms.Nixon: I also wonder about the many beautiful material things that the devotees bring you.</p>
+<p>For instance, you left the airport in a beautiful, fancy car.</p>
+<p>I wonder about this because...</p>
+<p>Srila Prabhupada: That teaches the disciples how to regard the spiritual master as good as God.</p>
+<p>If you respect the government representative as much as you respect the government, then you must treat him opulently.</p>
+<p>If you respect the spiritual master as much as God, then you must offer him the same facilities you would offer to God.</p>
+<p>God travels in a golden car.</p>
+<p>If the disciples offer the spiritual master an ordinary motorcar, it would not be sufficient, because the spiritual master has to be treated like God.</p>
+<p>If God comes to your home, will you bring him an ordinary motorcar--or will you arrange for a golden car?</p>
+<p>Ms.Nixon: One of the most difficult aspects of Krishna consciousness for an outsider to accept is the Deity in the temple--how it represents Krishna.</p>
+<p>Could you talk a little bit about that?</p>
+<p>Srila Prabhupada: Yes.</p>
+<p>At the present moment, because you have not been trained to see Krishna, He kindly appears before you so you can see Him.</p>
+<p>You can see wood and stone, but you cannot see what is spiritual.</p>
+<p>Suppose your father is in the hospital, and he dies.</p>
+<p>You are crying by his bedside, &quot;Now my father is gone!&quot; But why do you say he is gone? What is that thing which is gone?</p>
+<p>Ms.Nixon: Well, his spirit is gone.</p>
+<p>Srila Prabhupada: And have you seen that spirit?</p>
+<p>Ms.Nixon: No.</p>
+<p>Srila Prabhupada: So you cannot see spirit, and God is the Supreme Spirit.</p>
+<p>Actually, He is everything--spirit and matter--but you cannot see Him in His spiritual identity.</p>
+<p>Therefore, to show kindness toward you, He appears out of His unbounded mercy in the form of a wooden or stone Deity so that you can see Him.</p>
+<p>Ms.Nixon: Thank you very much.</p>
+<p>Srila Prabhupada: Hare Krishna!</p>
+<h2><a class="header" href="#a-definition-of-god" id="a-definition-of-god">A Definition of God</a></h2>
+<p>Modern man's concepts of God are many and varied.</p>
+<p>Children tend to imagine an old man with a white beard.</p>
+<p>Many adults regard God as an invisible force or a mental concept or as all humanity, the universe, or even oneself.</p>
+<p>In this lecture, Srila Prabhupada describes in detail the Krishna consciousness concept--a surprisingly intimate view of God.</p>
+<p>Ladies and gentlemen, I thank you very much for kindly participating in this Krishna consciousness movement.</p>
+<p>When this society was registered in 1966 in New York, a friend suggested that it be named the Society for God Consciousness.</p>
+<p>He thought that the name Krishna was sectarian.</p>
+<p>The dictionary also says that Krishna is a Hindu god's name.</p>
+<p>But in actuality, if any name can be attributed to God, it is &quot;Krishna.&quot; Actually God has no particular name.</p>
+<p>By saying He has no name, we mean that no one knows how many names He has.</p>
+<p>Since God is unlimited, His names also must be unlimited.</p>
+<p>Therefore we cannot settle on one name.</p>
+<p>For instance, Krishna is sometimes called Yasoda-nandana, the son of mother Yasoda; or Devaki-nandana, the son of Devaki; or Vasudeva-nandana, the son of Vasudeva; or Nanda-nandana, the son of Nanda.</p>
+<p>Sometimes He is called Partha-sarathi, indicating that He acted as the charioteer of Arjuna, who is sometimes called Partha, the son of Prtha.</p>
+<p>God has many dealings with His many devotees, and according to those dealings, He is called certain names.</p>
+<p>Since He has innumerable devotees and innumerable relations with them, He also has innumerable names.</p>
+<p>We cannot hit on any one name.</p>
+<p>But the name Krishna means &quot;all-attractive.&quot; God attracts everyone; that is the definition of God.</p>
+<p>We have seen many pictures of Krishna, and we see that He attracts the cows, calves, birds, beasts, trees, plants, and even the water in Vrndavana.</p>
+<p>He is attractive to the cowherd boys, to the gopis, to Nanda Maharaja, to the Pandavas, and to all human society.</p>
+<p>Therefore if any particular name can be given to God, that name is &quot;Krishna.&quot; Parasara Muni, a great sage and the father of Vyasadeva, who compiled all the Vedic literatures, gave the following definition of God: aisvaryasya samagrasya viryasya yasasah sriyah jnana-vairagyayos caiva sannam bhaga itingana (Visnu Purana 6.5.47) Bhagavan, the Supreme Personality of Godhead, is thus defined by Parasara Muni as one who is full in six opulences--who has full strength, fame, wealth, knowledge, beauty, and renunciation.</p>
+<p>Bhagavan, the Supreme Personality of Godhead, is the proprietor of all riches.</p>
+<p>There are many rich men in the world, but no one can claim that he possesses all the wealth.</p>
+<p>Nor can anyone claim that no one is richer than he.</p>
+<p>We understand from the Srimad-Bhagavatam, however, that when Krishna was present on this earth He had 16,108 wives, and each wife lived in a palace made of marble and bedecked with jewels.</p>
+<p>The rooms were filled with furniture made of ivory and gold, and there was great opulence everywhere.</p>
+<p>These descriptions are all given vividly in the SrimadBhagavatam.</p>
+<p>In the history of human society we cannot find anyone who had sixteen thousand wives or sixteen thousand palaces.</p>
+<p>Nor did Krishna go to one wife one day and another wife another day.</p>
+<p>No, He was personally present in every palace at the same time.</p>
+<p>This means that He expanded Himself in 16,108 forms.</p>
+<p>This is impossible for an ordinary man, but it is not very difficult for God.</p>
+<p>If God is unlimited, He can expand Himself in unlimited forms, otherwise there is no meaning to the word unlimited.</p>
+<p>God is omnipotent; He can maintain not only sixteen thousand wives but sixteen million and still encounter no difficulty, otherwise there is no meaning to the word omnipotent.</p>
+<p>These are all attractive features.</p>
+<p>We experience in this material world that if a man is very rich, he is attractive.</p>
+<p>In America, for instance, Rockefeller and Ford are very attractive because of their riches.</p>
+<p>They are attractive even though they do not possess all the wealth of the world.</p>
+<p>How much more attractive, then, is God, who is the possessor of all riches.</p>
+<p>Similarly, Krishna has unlimited strength.</p>
+<p>His strength was present from the moment of His birth.</p>
+<p>When Krishna was only three months old, the Putana demon attempted to kill Him, but instead she was killed by Krishna.</p>
+<p>That is God.</p>
+<p>God is God from the beginning.</p>
+<p>He does not become God by some meditation or mystic power.</p>
+<p>Krishna is not that type of God.</p>
+<p>Krishna was God from the very beginning of His appearance.</p>
+<p>Krishna also has unlimited fame.</p>
+<p>Of course, we are devotees of Krishna and know of Him and glorify Him, but apart from us, many millions in the world are aware of the fame of the Bhagavad-gita.</p>
+<p>In all countries all over the world the Bhagavad-gita is read by philosophers, psychologists, and religionists.</p>
+<p>We are also finding very good sales with our Bhagavad-gita As It Is.</p>
+<p>This is because the commodity is pure gold.</p>
+<p>There are many editions of the Bhagavad-gita, but they are not pure.</p>
+<p>Ours is selling more because we are presenting the Bhagavad-gita as it is.</p>
+<p>The fame of the Bhagavad-gita is Krishna's fame.</p>
+<p>Beauty, another opulence, is possessed unlimitedly by Krishna.</p>
+<p>Krishna Himself is very beautiful, as are all His associates.</p>
+<p>Those who were pious in a previous life receive an opportunity in this material world to take birth in good families and good nations.</p>
+<p>The American people are very rich and beautiful, and these opulences are a result of pious activities.</p>
+<p>All over the world people are attracted to the Americans because they are advanced in scientific knowledge, riches, beauty, and so on.</p>
+<p>This planet is an insignificant planet within the universe, yet within this planet, one country--America--has so many attractive features.</p>
+<p>We can just imagine, then, how many attractive features must be possessed by God, who is the creator of the entire cosmic manifestation.</p>
+<p>How beautiful He must be--He who has created all beauty.</p>
+<p>A person is attractive not only because of his beauty, but also because of his knowledge.</p>
+<p>A scientist or philosopher may be attractive because of his knowledge, but what knowledge is more sublime than that given by Krishna in the Bhagavad-gita? There is no comparison in the world to such knowledge.</p>
+<p>At the same time, Krishna possesses full renunciation (vairagya).</p>
+<p>So many things are working under Krishna's direction in this material world, but actually Krishna is not present here.</p>
+<p>A big factory may continue to work, although the owner may not be present.</p>
+<p>Similarly, Krishna's potencies are working under the direction of His assistants, the demigods.</p>
+<p>Thus Krishna Himself is aloof from the material world.</p>
+<p>This is all described in the revealed scriptures.</p>
+<p>God, therefore, has many names according to His activities, but because He possesses so many opulences, and because with these opulences He attracts everyone, He is called Krishna.</p>
+<p>The Vedic literature asserts that God has many names, but &quot;Krishna&quot; is the principal name.</p>
+<p>The purpose of this Krishna consciousness movement is to propagate God's name, God's glories, God's activities, God's beauty, and God's love.</p>
+<p>There are many things within this material world, and all of them are within Krishna.</p>
+<p>The most prominent feature of this material world is sex, and that also is present in Krishna.</p>
+<p>We are worshiping Radha and Krishna, and attraction exists between them, but material attraction and spiritual attraction are not the same.</p>
+<p>In Krishna, sex is real, but here in the material world it is unreal.</p>
+<p>Everything we deal with here is present in the spiritual world, but here it has no real value.</p>
+<p>It is only a reflection.</p>
+<p>In store windows we see many mannequins, but no one cares about them, because everyone knows they are false.</p>
+<p>A mannequin may be very beautiful, but still it is false.</p>
+<p>When people see a beautiful woman, however, they are attracted because they think she is real.</p>
+<p>In actuality, the socalled living are also dead, because this body is simply a lump of matter; as soon as the soul leaves the body, no one would care to see the so-called beautiful body of the woman.</p>
+<p>The real factor, the real attracting force, is the spiritual soul.</p>
+<p>In the material world everything is made of dead matter; therefore it is simply an imitation.</p>
+<p>The reality of things exists in the spiritual world.</p>
+<p>Those who have read the Bhagavad-gita can understand what the spiritual world is like, for there it is described: paras tasmat tu bhavo 'nyo 'vyakto 'vyaktat sanatanah yah sa sarvesu bhutesu nasyatsu na vinasyati &quot;Yet there is another nature, which is eternal and is transcendental to this manifested and unmanifested matter.</p>
+<p>It is supreme and is never annihilated.</p>
+<p>When all in this world is annihilated, that part remains as it is.&quot; (Bhagavad-gita 8.20) Scientists are attempting to calculate the length and breadth of this material world, but they cannot begin.</p>
+<p>It will take them thousands of years simply to travel to the nearest star.</p>
+<p>And what to speak of the spiritual world? Since we cannot know the material world, how can we know what is beyond it? The point is that we must know from authoritative sources.</p>
+<p>The most authoritative source is Krishna, for He is the reservoir of all knowledge.</p>
+<p>No one is wiser or more knowledgeable than Krishna.</p>
+<p>Krishna informs us that beyond this material world is a spiritual sky, which is filled with innumerable planets.</p>
+<p>That sky is far, far greater than material space, which constitutes only one fourth of the entire creation.</p>
+<p>Similarly, the living entities within the material world are but a small portion of the living entities throughout the creation.</p>
+<p>This material world is compared to a prison, and just as prisoners represent only a small percentage of the total population, so the living entities within the material world constitute but a fragmental portion of all living entities.</p>
+<p>Those who have revolted against God--who are criminal--are placed in this material world.</p>
+<p>Sometimes criminals say that they don't care for the government, but nonetheless they are arrested and punished.</p>
+<p>Similarly, living entities who declare their defiance of God are placed in the material world.</p>
+<p>Originally the living entities are all part and parcel of God and are related to Him just as sons are related to their father.</p>
+<p>Christians also consider God the supreme father.</p>
+<p>Christians go to church and pray, &quot;Our Father, who art in heaven.', The conception of God as father is also in the Bhagavad-gita (14.4): sarva-yonisu kaunteya murtayah sambhavanti yah tasam brahma mahad yonir aham bija-pradah pita &quot;It should be understood that all the species of life, O son of Kunti, are made possible by birth in this material nature, and that I am the seed-giving father.&quot; There are 8,400,000 species of life--including aquatics, plants, birds, beasts, insects, and human beings.</p>
+<p>Of the human species, most are uncivilized, and out of the few civilized species only a small number of human beings take to religious life.</p>
+<p>Out of many so-called religionists, most identify themselves by designations, claiming, &quot;I am Hindu,&quot; &quot;I am Muslim,&quot; &quot;I am Christian,&quot; and so on.</p>
+<p>Some engage in philanthropic work, some give to the poor, and open schools and hospitals.</p>
+<p>This altruistic process is called karma-kanda.</p>
+<p>Out of millions of these karma-kandis, there may be one jnani (&quot;one who knows&quot;).</p>
+<p>Out of millions of jnanis, one may be liberated, and out of billions of liberated souls, one may be able to understand Krishna.</p>
+<p>This, then, is the position of Krishna.</p>
+<p>As Krishna Himself says in the Bhagavad-gita (7.3): manusyanam sahasresu kascid yatati siddhaye yatatam api siddhanam kascin mam vetti tattvatah &quot;Out of many thousands among men, one may endeavor for perfection, and of those who have achieved perfection, hardly one knows Me in truth.&quot; Understanding Krishna, then, is very difficult.</p>
+<p>But although the understanding of God is a difficult subject, God explains Himself in the Bhagavad-gita.</p>
+<p>He says, &quot;I am like this, and I am like this.</p>
+<p>The material nature is like this, and the spiritual nature is like that.</p>
+<p>The living entities are like this, and the Supreme Soul is like that.&quot; Thus everything is completely described in the Bhagavad-gita.</p>
+<p>Although understanding God is very difficult, it is not difficult when God Himself gives us His own knowledge.</p>
+<p>Actually that is the only process by which we can understand God.</p>
+<p>To understand God by our own speculation is not possible, for God is unlimited and we are limited.</p>
+<p>Our knowledge and perception are both very limited, so how can we understand the unlimited? If we simply accept the version of the unlimited, we can come to understand Him.</p>
+<p>That understanding is our perfection.</p>
+<p>Speculative knowledge of God will lead us nowhere.</p>
+<p>If a boy wants to know who his father is, the simple process is to ask his mother.</p>
+<p>The mother will then say, &quot;This is your father.&quot; This is the way of perfect knowledge.</p>
+<p>Of course, one may speculate about one's father, wondering if this is the man or if that is the man, and one may wander over the whole city, asking, &quot;Are you my father? Are you my father?&quot; The knowledge derived from such a process, however, will always remain imperfect.</p>
+<p>One will never find his father in this way.</p>
+<p>The simple process is to take the knowledge from an authority--in this case, the mother.</p>
+<p>She simply says, &quot;My dear boy, here is your father.&quot; In this way our knowledge is perfect.</p>
+<p>Transcendental knowledge is similar.</p>
+<p>I was just previously speaking of a spiritual world.</p>
+<p>This spiritual world is not subject to our speculation.</p>
+<p>God says, &quot;There is a spiritual world, and that is My headquarters.&quot; In this way we receive knowledge from Krishna, the best authority.</p>
+<p>We may not be perfect, but our knowledge is perfect because it is received from the perfect source.</p>
+<p>The Krishna consciousness movement is meant to give perfect knowledge to human society.</p>
+<p>By such knowledge one can understand who he is, who God is, what the material world is, why we have come here, why we must undergo so much tribulation and misery, and why we have to die.</p>
+<p>Of course, no one wants to die, but death will come.</p>
+<p>No one wants to become an old man, but still old age comes.</p>
+<p>No one wants to suffer from disease, but surely enough, disease comes.</p>
+<p>These are the real problems of human life, and they are yet to be solved.</p>
+<p>Civilization attempts to improve eating, sleeping, mating, and defense, but these are not the real problems.</p>
+<p>A man sleeps, and a dog sleeps.</p>
+<p>A man is not more advanced simply because he has a nice apartment.</p>
+<p>In both cases, the business is the same--sleeping.</p>
+<p>Man has discovered atomic weapons for defense, but the dog also has teeth and claws and can also defend himself.</p>
+<p>In both cases, defense is there.</p>
+<p>Man cannot say that because he has the atomic bomb he can conquer the entire world or the entire universe.</p>
+<p>That is not possible.</p>
+<p>Man may possess an elaborate method for defense, or a gorgeous method for eating, sleeping, or mating, but that does not make him advanced.</p>
+<p>We may call his advancement polished animalism, and that is all.</p>
+<p>Real advancement means knowing God.</p>
+<p>If we are lacking knowledge of God, we are not actually advanced.</p>
+<p>Many rascals deny the existence of God because if there is no God they can continue their sinful activities.</p>
+<p>It may be very nice for them to think that there is no God, but God will not die simply because we deny Him.</p>
+<p>God is there, and His administration is there.</p>
+<p>By His orders the sun is rising, the moon is rising, the water flows, and the ocean abides by the tide.</p>
+<p>Thus everything functions under His order.</p>
+<p>Since everything is going on very nicely, how can one realistically think that God is dead? If there is mismanagement, we may say that there is no government, but if there is good management, how can we say that there is no government? Just because people do not know God, they say that God is dead, that there is no God, or that God has no form.</p>
+<p>But we are firmly convinced that there is God and that Krishna is God.</p>
+<p>Therefore we are worshiping Him.</p>
+<p>That is the process of Krishna consciousness.</p>
+<p>Try to understand it.</p>
+<p>Thank you very much.</p>
+<h2><a class="header" href="#reincarnation-and-beyond" id="reincarnation-and-beyond">Reincarnation and Beyond</a></h2>
+<p>In August of 1976, Srila Prabhupada spent a few weeks at Bhaktivedanta Manor, fifteen miles north of London.</p>
+<p>During that time Mike Robinson of London Broadcasting Company interviewed him in his quarters.</p>
+<p>In their conversation, which was broadcast shortly afterward, Srila Prabhupada revealed that Krishna consciousness is &quot;not some ritualistic ceremony of 'I believe, you believe,' &quot; but a profound philosophical system in which the science of reincarnation is explained clearly and concisely.</p>
+<p>Mike Robinson: Can you tell me what you believe--what the philosophy of the Hare Krishna movement is? Srila Prabhupada: Yes.</p>
+<p>Krishna consciousness is not a question of belief; it is a science.</p>
+<p>The first step is to know the difference between a living body and a dead body.</p>
+<p>What is the difference? The difference is that when someone dies, the spirit soul, or the living force, leaves the body.</p>
+<p>And therefore the body is called &quot;dead.&quot; So, there are two things: one, this body; and the other, the living force within the body.</p>
+<p>We speak of the living force within the body.</p>
+<p>That is the difference between the science of Krishna consciousness, which is spiritual, and ordinary material science.</p>
+<p>As such, in the beginning it is very, very difficult for an ordinary man to appreciate our movement.</p>
+<p>One must first understand that he is a soul, or something other than his body.</p>
+<p>Mike Robinson: And when will we understand that? Srila Prabhupada: You can understand at any moment, but it requires a little intelligence.</p>
+<p>For example, as a child grows, he becomes a boy, the boy becomes a young man, the young man becomes an adult, and the adult becomes an old man.</p>
+<p>Throughout all this time, although his body is changing from a child to an old man, he still feels himself to be the same person, with the same identity.</p>
+<p>Just see: the body is changing, but the occupier of the body, the soul, is remaining the same.</p>
+<p>So we should logically conclude that when our present body dies, we get another body.</p>
+<p>This is called transmigration of the soul.</p>
+<p>Mike Robinson: So when people die it is just the physical body that dies? Srila Prabhupada: Yes.</p>
+<p>That is explained very elaborately in the Bhagavad-gita (2.20): na jayate mriyate va kadacin...</p>
+<p>na hanyate hanyamane sarire.</p>
+<p>Mike Robinson: Do you often quote references? Srila Prabhupada: Yes, we quote many references.</p>
+<p>Krishna consciousness is a serious education, not an ordinary religion.</p>
+<p>[To a devotee:] Find that verse in the Bhagavad-gita.</p>
+<p>Disciple: na jayate mriyate va kadacin nayam bhutva bhavita va na bhuyah ajo nityah sasvato 'yam purano na hanyate hanyamane sarire &quot;For the soul, there is never birth nor death.</p>
+<p>Nor, having once been, does he ever cease to be.</p>
+<p>He is unborn, eternal, ever-existing, undying, and primeval.</p>
+<p>He is not slain when the body is slain.&quot; Mike Robinson: Thank you very much for reading that.</p>
+<p>So can you explain to me just a bit more? If the soul is undying, does everybody's soul go to be with God when they die? Srila Prabhupada: Not necessarily.</p>
+<p>If one is qualified--if he qualifies himself in this life to go back home, back to Godhead--then he can go.</p>
+<p>If he does not qualify himself, then he gets another material body.</p>
+<p>And there are 8,400,000 different bodily forms.</p>
+<p>According to his desires and karma, the laws of nature give him a suitable body.</p>
+<p>It is just like when a man contracts some disease and then develops that disease.</p>
+<p>Is that difficult to understand? Mike Robinson: It's very difficult to understand all of it.</p>
+<p>Srila Prabhupada: Suppose somebody has contracted smallpox.</p>
+<p>So, after seven days he develops the symptoms.</p>
+<p>What is that period called? Mike Robinson: Incubation? Srila Prabhupada: Incubation.</p>
+<p>So you cannot avoid it.</p>
+<p>If you have contracted some disease it will develop, by nature's law.</p>
+<p>Similarly, during this life you associate with various modes of material nature, and that association will decide what kind of body you are going to get in the next life.</p>
+<p>That is strictly under the laws of nature.</p>
+<p>Everyone is controlled by the laws of nature--they're completely dependent--but out of ignorance people think that they are free.</p>
+<p>They're not free; they're imagining that they're free, but they are completely under the laws of nature.</p>
+<p>So, your next birth will be decided according to your activities--sinful or pious, as the case may be.</p>
+<p>Mike Robinson: Your Grace, could you go back over that just for a minute? You said that nobody is free.</p>
+<p>Are you saying that if we live a good life, we in some way determine a good future for ourselves? Srila Prabhupada: Yes.</p>
+<p>Mike Robinson: So we are free to choose what we believe to be important? Religion is important, because if we believe in God and lead a good life...</p>
+<p>Srila Prabhupada: It is not a question of belief.</p>
+<p>Do not bring in this question of belief.</p>
+<p>It is law.</p>
+<p>For instance, there is a government.</p>
+<p>You may believe or not believe, but if you break the law, you'll be punished by the government.</p>
+<p>Similarly, whether you believe or don't believe, there is a God.</p>
+<p>If you don't believe in God and you independently do whatever you like, then you'll be punished by the laws of nature.</p>
+<p>Mike Robinson: I see.</p>
+<p>Does it matter what religion you believe? Would it matter if one was a devotee of Krishna? Srila Prabhupada: It is not a question of religion.</p>
+<p>It is a question of science.</p>
+<p>You are a spiritual being, but because you are materially conditioned, you are under the laws of material nature.</p>
+<p>So you may believe in the Christian religion, and I may believe in the Hindu religion, but that does not mean that you are going to become an old man and I am not.</p>
+<p>We're talking of the science of growing old.</p>
+<p>This is natural law.</p>
+<p>It is not that because you are Christian you are becoming old or because I am Hindu I am not becoming old.</p>
+<p>Everyone is becoming old.</p>
+<p>So, similarly, all the laws of nature are applicable to everyone.</p>
+<p>Whether you believe this religion or that religion, it doesn't matter.</p>
+<p>Mike Robinson: So, you're saying that there's only one God controlling all of us? Srila Prabhupada: There's one God, and one nature's law, and we are all under that nature's law.</p>
+<p>We are controlled by the Supreme.</p>
+<p>So if we think that we are free or that we can do anything we like, that is our foolishness.</p>
+<p>Mike Robinson: I see.</p>
+<p>Can you explain to me what difference it makes, being a member of the Hare Krishna movement? Srila Prabhupada: The Hare Krishna movement is meant for those who are serious about understanding this science.</p>
+<p>There's no question of our being some sectarian group.</p>
+<p>No.</p>
+<p>Anyone can join.</p>
+<p>Students in college can be admitted.</p>
+<p>You may be a Christian, you may be a Hindu, you may be a Muhammadan--it doesn't matter.</p>
+<p>The Krishna consciousness movement admits anyone who wants to understand the science of God.</p>
+<p>Mike Robinson: And what difference would it make to someone--being taught how to be a Hare Krishna person? Srila Prabhupada: His real education would begin.</p>
+<p>The first thing is to understand that you are a spirit soul.</p>
+<p>And because you are a spirit soul, you are changing your body.</p>
+<p>This is the ABC of spiritual understanding.</p>
+<p>So, when your body is finished, annihilated, you are not finished.</p>
+<p>You get another body, just as you may change your coat and shirt.</p>
+<p>If you come to see me tomorrow wearing a different shirt and a different coat, does that mean you are a different person? No.</p>
+<p>Similarly, each time you die you change bodies, but you, the spirit soul within the body, remain the same.</p>
+<p>This point has to be understood; then one can make further progress in the science of Krishna consciousness.</p>
+<p>Mike Robinson: I am beginning to understand, but what I'm finding difficult is how this ties in with the large numbers of your people we see handing out Hare Krishna literature on Oxford Street.</p>
+<p>Srila Prabhupada: This literature is meant to convince people about the need for spiritual life.</p>
+<p>Mike Robinson: And you're really not concerned whether or not they join the Hare Krishna movement? Srila Prabhupada: It doesn't matter.</p>
+<p>Our mission is to educate them.</p>
+<p>People are in ignorance; they are living in a fool's paradise, thinking that when their body is finished, everything is finished.</p>
+<p>That is foolishness.</p>
+<p>Mike Robinson: And you are basically just concerned to tell them that there is a spiritual dimension to life? Srila Prabhupada: Our first concern is to tell you that you are not this body, that the body is your covering (your shirt and coat) and that within the body you are living.</p>
+<p>Mike Robinson: Yes, I think I've got that now.</p>
+<p>If we could go on from there--you said that how you lived made a difference in your life after death, that there are natural laws that determine your next life.</p>
+<p>How does the process of transmigration work? Srila Prabhupada: The process is very subtle.</p>
+<p>The spirit soul is invisible to our material eyes.</p>
+<p>It is atomic in size.</p>
+<p>After the destruction of the gross body, which is made up of the senses, blood, bone, fat, and so forth, the subtle body of mind, intelligence, and ego goes on working.</p>
+<p>So at the time of death this subtle body carries the small spirit soul to another gross body.</p>
+<p>The process is just like air carrying a fragrance.</p>
+<p>Nobody can see where this rose fragrance is coming from, but we know that it is being carried by the air.</p>
+<p>You cannot see how, but it is being done.</p>
+<p>Similarly, the process of transmigration of the soul is very subtle.</p>
+<p>According to the condition of the mind at the time of death, the minute spirit soul enters into the womb of a particular mother through the semen of a father, and then the soul develops a particular type of body given by the mother.</p>
+<p>It may be a human being, it may be a cat, a dog, or anything.</p>
+<p>Mike Robinson: Are you saying that we were something else before this life? Srila Prabhupada: Yes.</p>
+<p>Mike Robinson: And we keep corning back as something else the next time? Srila Prabhupada: Yes, because you are eternal.</p>
+<p>According to your work, you are simply changing bodies.</p>
+<p>Therefore, you should want to know how to stop this business, how you can remain in your original, spiritual body.</p>
+<p>That is Krishna consciousness.</p>
+<p>Mike Robinson: I see.</p>
+<p>So if I become Krishna conscious, I wouldn't risk coming back as a dog? Srila Prabhupada: No.</p>
+<p>[To a devotee:] Find this verse: janma karma ca me divyam...</p>
+<p>Disciple: janma karma ca me divyam evam yo vetti tattvatah tyaktva deham punar janma naiti mam eti so 'rjuna &quot;One who knows the transcendental nature of My appearance and activities does not, upon leaving the body, take his birth again in this material world, but attains My eternal abode, O Arjuna.&quot; (Bg.4.9) Srila Prabhupada: God is saying, &quot;Anyone who understands Me is free from birth and death.&quot; But one cannot understand God by materialistic speculation.</p>
+<p>That is not possible.</p>
+<p>One must first come to the spiritual platform.</p>
+<p>Then he gets the intelligence required to understand God.</p>
+<p>And when he understands God, he does not get any more material bodies.</p>
+<p>He goes back home, back to Godhead.</p>
+<p>He lives eternally; no more change of body.</p>
+<p>Mike Robinson: I see.</p>
+<p>Now, you've read twice from your scriptures.</p>
+<p>Where do these scriptures come from? Can you briefly explain that? Srila Prabhupada: Our scriptures are coming from Vedic literature, which has existed from the beginning of creation.</p>
+<p>Whenever there is some new material creation--like this microphone, for instance--there is also some literature explaining how to deal with it.</p>
+<p>Isn't that so? Mike Robinson: Yes, that's right, there is.</p>
+<p>Srila Prabhupada: And that literature comes along with the creation of the microphone.</p>
+<p>Mike Robinson: That's right, yes.</p>
+<p>Srila Prabhupada: So, similarly, the Vedic literature comes along with the cosmic creation, to explain how to deal with it.</p>
+<p>Mike Robinson: I see.</p>
+<p>So, these scriptures have been in existence since the beginning of creation.</p>
+<p>Now, if we could move on to something I believe you feel very strongly about.</p>
+<p>What is the main difference between Krishna consciousness and the other Eastern disciplines being taught in the West? Srila Prabhupada: The difference is that we are following the original literature, and they are manufacturing their own literature.</p>
+<p>That is the difference.</p>
+<p>When there is some question on spiritual matters, you must consult the original literature, not some literature issued by a bogus man.</p>
+<p>Mike Robinson: What about the chanting of Hare Krishna, Hare Krishna...</p>
+<p>Srila Prabhupada: Chanting Hare Krishna is the easiest process by which to become purified, especially in this age, when people are so dull that they cannot very easily understand spiritual knowledge.</p>
+<p>If one chants Hare Krishna, then his intelligence becomes purified, and he can understand spiritual things.</p>
+<p>Mike Robinson: Can you tell me how you are guided in what you do? Srila Prabhupada: We take guidance from the Vedic literature.</p>
+<p>Mike Robinson: From the scriptures you quoted? Srila Prabhupada: Yes, it's all in the literatures.</p>
+<p>We're explaining them in English.</p>
+<p>But we're not manufacturing anything.</p>
+<p>If we were to manufacture knowledge, then everything would be spoiled.</p>
+<p>The Vedic literature is something like the literature that explains how to set up this microphone.</p>
+<p>It says, &quot;Do it like this: some of the screws should be on this side, around the metal.&quot; You cannot make any change; then everything would be spoiled.</p>
+<p>Similarly, because we are not manufacturing anything, one simply has to read one of our books, and he receives real spiritual knowledge.</p>
+<p>Mike Robinson: How can the philosophy of Krishna consciousness affect the way people live? Srila Prabhupada: It can relieve people's suffering.</p>
+<p>People are suffering because they are misunderstanding themselves to be the body.</p>
+<p>If you think that you are your coat and shirt, and you very carefully wash the coat and shirt but you forget to eat, will you be happy? Mike Robinson: No, I wouldn't.</p>
+<p>Srila Prabhupada: Similarly, everyone is simply washing the &quot;coat and shirt&quot; of the body, but forgetting about the soul within the body.</p>
+<p>They have no information about what is within the &quot;coat and shirt&quot; of the body.</p>
+<p>Ask anybody what he is, and he will say, &quot;Yes, I am an Englishman,&quot; or &quot;I am an Indian.&quot; And if we say, &quot;I can see you have an English or an Indian body, but what are you?&quot;--that he cannot say.</p>
+<p>Mike Robinson: I see.</p>
+<p>Srila Prabhupada: The whole modern civilization is operating on the misunderstanding that the body is the self (dehatma-buddhi).</p>
+<p>This is the mentality of the cats and dogs.</p>
+<p>Suppose I try to enter England, and you stop me at the border: &quot;I am an Englishman,&quot; you say, &quot;but you are Indian.</p>
+<p>Why have you come here?&quot; And the dog barks, &quot;Rau, rau, why are you coming?&quot; So what is the difference in mentality? The dog is thinking he's a dog and I'm a stranger, and you are thinking you are an Englishman and I am an Indian.</p>
+<p>There's no difference in mentality.</p>
+<p>So if you keep people in the darkness of a dog's mentality and declare that you are advancing in civilization, you are most misguided.</p>
+<p>Mike Robinson: Now, moving on to another point, I gather the Hare Krishna movement has some concern for areas of the world where there is suffering.</p>
+<p>Srila Prabhupada: Yes, we have the only concern.</p>
+<p>Others are simply avoiding the main problems: birth, old age, disease, and death.</p>
+<p>Others have no solutions to these problems; they are simply talking all kinds of nonsense.</p>
+<p>People are being misguided.</p>
+<p>They are being kept in darkness.</p>
+<p>Let us start to give them some light.</p>
+<p>Mike Robinson: Yes, but apart from giving spiritual enlightenment, are you also concerned for people's physical well-being? Srila Prabhupada: Physical well-being automatically follows spiritual well-being.</p>
+<p>Mike Robinson: And how does that work? Srila Prabhupada: Suppose you have a car.</p>
+<p>So, naturally, you take care of the car as well as yourself.</p>
+<p>But you don't identify yourself as the car.</p>
+<p>You don't say, &quot;I am this car.&quot; That is nonsense.</p>
+<p>But this is what people are doing.</p>
+<p>They are taking too much care of the bodily &quot;car,&quot; thinking that the car is the self.</p>
+<p>They forget that they are different from the car, that they are a spirit soul and have a different business.</p>
+<p>Just as no one can drink petrol and be satisfied, no one can be satisfied with bodily activities.</p>
+<p>One must find out the proper food for the soul.</p>
+<p>If a man thinks, &quot;I am a car, and I must drink this petrol,&quot; he is considered insane.</p>
+<p>Similarly, one who thinks that he is this body, and who tries to become happy with bodily pleasures, is also insane.</p>
+<p>Mike Robinson: There's a quote here that I'd like you to comment on.</p>
+<p>I was given this literature by your people before I came, and one of the things you say here is that &quot;Religion without a rational basis is just sentiment.&quot; Can you explain that? Srila Prabhupada: Most religious people say, &quot;We believe...&quot; But what is the value of this belief? You may believe something which is not actually correct.</p>
+<p>For instance, some of the Christian people say, &quot;We believe that animals have no soul.&quot; That is not correct.</p>
+<p>They believe animals have no soul because they want to eat the animals, but actually animals do have a soul.</p>
+<p>Mike Robinson: How do you know that the animal has a soul? Srila Prabhupada: You can know, also.</p>
+<p>Here is the scientific proof: the animal eats, you eat; the animal sleeps, you sleep; the animal has sex, you have sex; the animal also defends, you also defend.</p>
+<p>Then what is the difference between you and the animal? How can you say that you have a soul but the animal doesn't? Mike Robinson: I can see that completely.</p>
+<p>But the Christian scriptures say...</p>
+<p>Srila Prabhupada: Don't bring in any scriptures; this is a commonsense topic.</p>
+<p>Try to understand.</p>
+<p>The animal is eating, you are eating; the animal is sleeping, you are sleeping; the animal is defending, you are defending; the animal is having sex, you are having sex; the animals have children, you have children; they have a living place, you have a living place.</p>
+<p>If the animal's body is cut, there is blood; if your body is cut, there is blood.</p>
+<p>So, all these similarities are there.</p>
+<p>Now, why do you deny this one similarity, the presence of the soul? This is not logical.</p>
+<p>You have studied logic? In logic there is something called analogy.</p>
+<p>Analogy means drawing a conclusion by finding many points of similarity.</p>
+<p>If there are so many points of similarity between human beings and animals, why deny one similarity? That is not logic.</p>
+<p>That is not science.</p>
+<p>Mike Robinson: But if you take that argument and use it the other way...</p>
+<p>Srila Prabhupada: There is no other way.</p>
+<p>If you are not arguing on the basis of logic, then you are not rational.</p>
+<p>Mike Robinson: Yes, OK, but let's start from another hypothesis.</p>
+<p>Suppose we assume that a human being has no soul...</p>
+<p>Srila Prabhupada: Then you must explain the difference between a living body and a dead body.</p>
+<p>I have already explained this at the beginning.</p>
+<p>As soon as the living force, the soul, is gone from the body, even the most beautiful body has no value.</p>
+<p>No one cares for it; it's thrown away.</p>
+<p>But now, if I touch your hair, there will be a fight.</p>
+<p>That is the distinction between a living body and a dead body.</p>
+<p>In a living body the soul is there, and in a dead body the soul is not there.</p>
+<p>As soon as the soul leaves the body, the body has no value.</p>
+<p>It is useless.</p>
+<p>This is very simple to understand, but even the biggest so-called scientists and philosophers are too dullheaded to understand it.</p>
+<p>Modern society is in a very abominable condition.</p>
+<p>There is no man with a real brain.</p>
+<p>Mike Robinson: Are you referring to all the scientists who fail to understand the spiritual dimension in life? Srila Prabhupada: Yes.</p>
+<p>Real science means full knowledge of everything, material and spiritual.</p>
+<p>Mike Robinson: But you were a chemist in secular life, were you not? Srila Prabhupada: Yes, I was a chemist in my earlier life.</p>
+<p>But it doesn't require any great intelligence to become a chemist.</p>
+<p>Any commonsense man can do it.</p>
+<p>Mike Robinson: But presumably you think that material science is also important, even if today's scientists are dullheaded.</p>
+<p>Srila Prabhupada: Material science is important just so far.</p>
+<p>It is not all-important.</p>
+<p>Mike Robinson: I see.</p>
+<p>Can I come back to a question I had from before? When we were differing a few minutes ago you were saying, &quot;Don't bring the scriptures in; just use common sense.&quot; But what part do the scriptures play in your religion? How important are they? Srila Prabhupada: Our religion is a science.</p>
+<p>When we say that a child grows into a boy, it is science.</p>
+<p>It is not religion.</p>
+<p>Every child grows into a boy.</p>
+<p>What is the question of religion? Every man dies.</p>
+<p>What is the question of religion? And when a man dies, the body becomes useless.</p>
+<p>What is the question of religion? It is science.</p>
+<p>Whether you're Christian or Hindu or Muslim, when you die your body becomes useless.</p>
+<p>This is science.</p>
+<p>When your relative dies, you cannot say, &quot;We are Christian; we believe he has not died.&quot; No, he has died.</p>
+<p>Whether you are Christian or Hindu or Muslim, he has died.</p>
+<p>So when we speak, we speak on this basis: that the body is important only as long as the soul is in the body.</p>
+<p>When the soul is not there, it is useless.</p>
+<p>This science is applicable to everyone, and we are trying to educate people on this basis.</p>
+<p>Mike Robinson: But if I understand you correctly, you seem to be educating people on a purely scientific basis.</p>
+<p>Where does religion come into it at all? Srila Prabhupada: Religion also means science.</p>
+<p>People have wrongly taken religion to mean faith--&quot;I believe.&quot; [To a devotee:] Look up the word religion in the dictionary.</p>
+<p>Disciple: Under religion the dictionary says, &quot;recognition of superhuman control or power, and especially of a personal God entitled to obedience, and effecting such recognition with the proper mental attitude.&quot; Srila Prabhupada: Yes.</p>
+<p>Religion means learning how to obey the supreme controller.</p>
+<p>So, you may be Christian and I may be Hindu; it doesn't matter.</p>
+<p>We must both accept that there is a supreme controller.</p>
+<p>Everyone has to accept that; that is real religion.</p>
+<p>Not this &quot;We believe animals have no soul.&quot; That is not religion.</p>
+<p>That is most unscientific.</p>
+<p>Religion means scientific understanding of the supreme controller: to understand the supreme controller and obey Him--that's all.</p>
+<p>In the state, the good citizen is he who understands the government and obeys the laws of the government, and the bad citizen is the one who doesn't care for the government.</p>
+<p>So, if you become a bad citizen by ignoring God's government, then you are irreligious.</p>
+<p>And if you are a good citizen, then you are religious.</p>
+<p>Mike Robinson: I see.</p>
+<p>Can you tell me what you believe to be the meaning of life? Why do we exist in the first place? Srila Prabhupada: The meaning of life is to enjoy.</p>
+<p>But now you are on a false platform of life, and therefore you are suffering instead of enjoying.</p>
+<p>Everywhere we see the struggle for existence.</p>
+<p>Everyone is struggling, but what is their enjoyment in the end? They are simply suffering and dying.</p>
+<p>Therefore, although life means enjoyment, at the present moment your life is not enjoyment.</p>
+<p>But if you come to the real, spiritual platform of life, then you'll enjoy.</p>
+<p>Mike Robinson: Can you explain to me, finally, some of the stages you go through in spiritual life? What are the spiritual stages a new devotee of Krishna goes through? Srila Prabhupada: The first stage is that you are inquisitive.</p>
+<p>&quot;So,&quot; you say, &quot;what is this Krishna consciousness movement? Let me study it.&quot; This is called sraddha, or faith.</p>
+<p>This is the beginning.</p>
+<p>Then, if you are serious, you mix with those who are cultivating this knowledge.</p>
+<p>You try to understand how they are feeling.</p>
+<p>Then you'll feel, &quot;Why not become one of them?&quot; And when you become one of them, then all your misgivings soon go away.</p>
+<p>You become more faithful, and then you get a real taste for Krishna consciousness.</p>
+<p>Why aren't these boys going to see the cinema? Why don't they eat meat or go to the nightclub? Because their taste has changed.</p>
+<p>They hate all these things now.</p>
+<p>In this way, you make progress.</p>
+<p>First faith, then association with devotees, then removal of all misgivings, then firm faith, then taste, then God realization, and then love of God, the perfection.</p>
+<p>That is first-class religion.</p>
+<p>Not some ritualistic ceremony of &quot;I believe, you believe.&quot; That is not religion.</p>
+<p>That is cheating.</p>
+<p>Real religion means to develop your love for God.</p>
+<p>That is the perfection of religion.</p>
+<p>Mike Robinson: Thank you very much for talking with me.</p>
+<p>It's been a pleasure talking to you.</p>
+<p>Srila Prabhupada: Hare Krishna.</p>
+<h2><a class="header" href="#truth-and-beauty" id="truth-and-beauty">Truth and Beauty</a></h2>
+<p>Srila Prabhupada first published this essay in India, in the old tabloid version of his then-fortnightly magazine Back to Godhead (November 20, 1958).</p>
+<p>It contains the unforgettable story of &quot;liquid beauty,&quot; in which Srila Prabhupada dramatically exposes the underlying principle of human sexuality.</p>
+<p>This illuminating exposition on the nature of truth and beauty is timeless and startlingly relevant for those in search of the &quot;inner self.&quot; There may sometimes be arguments about whether &quot;truth&quot; and &quot;beauty&quot; are compatible terms.</p>
+<p>One would willingly agree to express the truth, one might say, but since truth is not always beautiful--indeed, it is frequently rather startling and unpleasant--how is one to express truth and beauty at the same time? In reply, we may inform all concerned that &quot;truth&quot; and &quot;beauty&quot; are compatible terms.</p>
+<p>Indeed, we may emphatically assert that the actual truth, which is absolute, is always beautiful.</p>
+<p>The truth is so beautiful that it attracts everyone, including the truth itself.</p>
+<p>Truth is so beautiful that many sages, saints, and devotees have left everything for the sake of truth.</p>
+<p>Mahatma Gandhi, an idol of the modern world, dedicated his life to experimenting with truth, and all his activities were aimed toward truth only.</p>
+<p>Why only Mahatma Gandhi? Every one of us has the urge to search for truth alone, for the truth is not only beautiful but also all-powerful, all-resourceful, all-famous, allrenounced, and all-knowledgeable.</p>
+<p>Unfortunately, people have no information of the actual truth.</p>
+<p>Indeed, 99.9 percent of men in all walks of life are pursuing untruth only, in the name of truth.</p>
+<p>We are actually attracted by the beauty of truth, but since time immemorial we have been habituated to love of untruth appearing like truth.</p>
+<p>Therefore, to the mundaner &quot;truth&quot; and &quot;beauty&quot; are incompatible terms.</p>
+<p>The mundane truth and beauty may be explained as follows.</p>
+<p>Once a man who was very powerful and strongly built but whose character was very doubtful fell in love with a beautiful girl.</p>
+<p>The girl was not only beautiful in appearance but also saintly in character, and as such she did not like the man's advances.</p>
+<p>The man, however, was insistent because of his lustful desires, and therefore the girl requested him to wait only seven days, and she set a time after that when he could meet her.</p>
+<p>The man agreed, and with high expectations he began waiting for the appointed time.</p>
+<p>The saintly girl, however, in order to manifest the real beauty of absolute truth, adopted a method very instructive.</p>
+<p>She took very strong doses of laxatives and purgatives, and for seven days she continually passed loose stool and vomited all that she ate.</p>
+<p>Moreover, she stored all the loose stool and vomit in suitable pots.</p>
+<p>As a result of the purgatives, the so-called beautiful girl became lean and thin like a skeleton, her complexion turned blackish, and her beautiful eyes sank into the sockets of her skull.</p>
+<p>Thus at the appointed hour she waited anxiously to receive the eager man.</p>
+<p>The man appeared on the scene well dressed and well behaved and asked the ugly girl he found waiting there about the beautiful girl he was to meet.</p>
+<p>The man could not recognize the girl he saw as the same beautiful girl for whom he was asking; indeed, although she repeatedly asserted her identity, because of her pitiable condition he was unable to recognize her.</p>
+<p>At last the girl told the powerful man that she had separated the ingredients of her beauty and stored them in pots.</p>
+<p>She also told him that he could enjoy those juices of beauty.</p>
+<p>When the mundane poetic man asked to see these juices of beauty, he was directed to the store of loose stool and liquid vomit, which were emanating an unbearably bad smell.</p>
+<p>Thus the whole story of the beauty-liquid was disclosed to him.</p>
+<p>Finally, by the grace of the saintly girl, this man of low character was able to distinguish between the shadow and the substance, and thus he came to his senses.</p>
+<p>This man's position was similar to the position of every one of us who is attracted by false, material beauty.</p>
+<p>The girl mentioned above had a beautifully developed material body in accordance with the desires of her mind, but in fact she was apart from that temporary material body and mind.</p>
+<p>She was in fact a spiritual spark, and so also was the lover who was attracted by her false skin.</p>
+<p>Mundane intellectuals and aesthetics, however, are deluded by the outward beauty and attraction of the relative truth and are unaware of the spiritual spark, which is both truth and beauty at the same time.</p>
+<p>The spiritual spark is so beautiful that when it leaves the so-called beautiful body, which in fact is full of stool and vomit, no one wants to touch that body, even if it is decorated with a costly costume.</p>
+<p>We are all pursuing a false, relative truth, which is incompatible with real beauty.</p>
+<p>The actual truth, however, is permanently beautiful, retaining the same standard of beauty for innumerable years.</p>
+<p>That spiritual spark is indestructible.</p>
+<p>The beauty of the outer skin can be destroyed in only a few hours merely by a dose of a strong purgative, but the beauty of truth is indestructible and always the same.</p>
+<p>Unfortunately, mundane artists and intellectuals are ignorant of this beautiful spark of spirit.</p>
+<p>They are also ignorant of the whole fire which is the source of these spiritual sparks, and they are ignorant of the relationships between the sparks and the fire, which take the form of transcendental pastimes.</p>
+<p>When those pastimes are displayed here by the grace of the Almighty, foolish people who cannot see beyond their senses confuse those pastimes of truth and beauty with the manifestations of loose stool and vomit described above.</p>
+<p>Thus in despair they ask how truth and beauty can be accommodated at the same time.</p>
+<p>Mundaners do not know that the whole spiritual entity is the beautiful person who attracts everything.</p>
+<p>They are unaware that He is the prime substance, the prime source and fountainhead of everything that be.</p>
+<p>The infinitesimal spiritual sparks, being parts and parcels of that whole spirit, are qualitatively the same in beauty and eternity.</p>
+<p>The only difference is that the whole is eternally the whole and the parts are eternally the parts.</p>
+<p>Both of them, however, are the ultimate truth, ultimate beauty, ultimate knowledge, ultimate energy, ultimate renunciation, and ultimate opulence.</p>
+<p>Although written by the greatest mundane poet or intellectual, any literature which does not describe the ultimate truth and beauty is but a store of loose stool and vomit of the relative truth.</p>
+<p>Real literature is that which describes the ultimate truth and beauty of the Absolute.</p>
+<h2><a class="header" href="#the-art-of-dying" id="the-art-of-dying">The Art of Dying</a></h2>
+<p>Although the media are generally obsessed with violence and death, our perception of death and dying is superficial.</p>
+<p>Srila Prabhupada observes, &quot;As long as a man is in the full vigor of life, he forgets the naked truth of death, which he has to meet.&quot; How can we effectively deal with our own death? In this essay (which first appeared in the old tabloid Back to Godhead, April 20, 1960) Srila Prabhupada explains how the ancient teachings of Srimad-Bhagavatam provide a practical answer.</p>
+<p>A small child walking with his father goes on inquiring constantly.</p>
+<p>He asks his father so many odd things, and the father has to satisfy him with proper answers.</p>
+<p>When I was a young father in my householder life, I was overflooded with hundreds of questions from my second son, who was my constant companion.</p>
+<p>One day it so happened that a bridegroom's party was passing our tramcar, and the four-year-old boy, as usual, inquired what the big procession was.</p>
+<p>He was given all possible answers to his thousand and one questions regarding the marriage party, and finally he asked whether his own father was married! This question gave rise to loud laughter from all the elderly gentlemen present, although the boy was perplexed as to why we were laughing.</p>
+<p>Anyway, the boy was somehow satisfied by his married father.</p>
+<p>The lesson from this incident is that since a human being is a rational animal, he is born to make inquiries.</p>
+<p>The greater the number of questions, the greater the advancement of knowledge and science.</p>
+<p>The whole of material civilization is based on this originally large volume of questions put by young men to their elders.</p>
+<p>When elderly persons give the proper answers to the questions of the youngsters, civilization makes progress, one step after another.</p>
+<p>The most intelligent man, however, inquires about what happens after death.</p>
+<p>The less intelligent make lesser inquiries, but the questions of those who are more intelligent go higher and still higher.</p>
+<p>Among the most intelligent of men was Maharaja Pariksit, the great king of the entire world, who was accidentally cursed by a brahmana to meet death from the bite of a serpent within seven days.</p>
+<p>The brahmana who cursed him was only a boy, yet he was very powerful, and because he did not know the importance of the great king, the boy foolishly cursed him to meet death within seven days.</p>
+<p>This was later lamented by the boy's father, whom the king had offended.</p>
+<p>When the king was informed of the unfortunate curse, he at once left his palatial home and went to the bank of the Ganges, which was near his capital, to prepare for his impending death.</p>
+<p>Because he was a great king, almost all the great sages and learned scholars assembled at the place where the king was fasting prior to leaving his mortal body.</p>
+<p>At last, Sukadeva Gosvami, the youngest contemporary saint, also arrived there, and he was unanimously accepted to preside at that meeting, although his great father was also present.</p>
+<p>The king respectfully offered Sukadeva Gosvami the principal seat of esteem and asked him relevant questions regarding his passing from the mortal world, which was to take place on the seventh day thenceforward.</p>
+<p>The great king, as a worthy descendant of the Pandavas, who were all great devotees, placed the following relevant inquiries before the great sage Sukadeva.</p>
+<p>&quot;My dear sir, you are the greatest of the great transcendentalists, and therefore I submissively beg to ask you about my duties at this moment.</p>
+<p>I am just on the verge of my death.</p>
+<p>Therefore, what should I do at this critical hour? Please tell me, my lord--what should I hear, what should I worship, or whom should I remember now? A great sage like you does not stay at the home of a householder more than necessary, and therefore it is my good fortune that you have kindly come here at the time of my death.</p>
+<p>Please, therefore, give me your directions at this critical hour.&quot; The great sage, having thus been pleasingly requested by the king, answered his questions authoritatively, for the sage was a great transcendental scholar and was also well equipped with godly qualities, since he was the worthy son of Badarayana, or Vyasadeva, the original compiler of the Vedic literature.</p>
+<p>Sukadeva Gosvami said, &quot;My dear king, your inquiry is very much relevant, and it is also beneficial for all people of all times.</p>
+<p>Such inquiries, which are the highest of all, are relevant because they are confirmed by the teachings of the vedanta-darsana, the conclusion of the Vedic knowledge, and are atmavit-sammatah; in other words, liberated souls, who have full knowledge of their spiritual identity, put forward such relevant inquiries in order to elucidate further information about the Transcendence.&quot; The Srimad-Bhagavatam is the natural commentary upon the great Vedanta (or Sariraka) sutras, which were compiled by Srila Vyasadeva.</p>
+<p>The Vedanta-sutras are the topmost Vedic literature, and they contain the nucleus of basic inquiries about the transcendental subject of spiritual knowledge.</p>
+<p>Yet although Srila Vyasadeva compiled this great treatise, his mind was not satisfied.</p>
+<p>Then he happened to meet Sri Narada, his spiritual master, who advised him to describe the identity of the Personality of Godhead.</p>
+<p>Upon receiving this advice, Vyasadeva meditated on the principle of bhaktiyoga, which showed him distinctly what is the Absolute and what is the relativity, or maya.</p>
+<p>Having achieved perfect realization of these facts, he compiled the great narration of the Srimad-Bhagavatam, or beautiful Bhagavatam, which begins with actual historical facts concerning the life of Maharaja Pariksit.</p>
+<p>The Vedanta-sutra begins with the key inquiry about the Transcendence, athato brahma-jijnasa: &quot;One should now inquire about Brahman, or the Transcendence.&quot; As long as a man is in the full vigor of life, he forgets the naked truth of death, which he has to meet.</p>
+<p>Thus a foolish man makes no relevant inquiry about the real problems of life.</p>
+<p>Everyone thinks that he will never die, although he sees evidence of death before his eyes at every second.</p>
+<p>Here is the distinction between animalism and humanity.</p>
+<p>An animal like a goat has no sense of its impending death.</p>
+<p>Although its brother goat is being slaughtered, the goat, being allured by the green grass offered to it, will stand peacefully waiting to be slaughtered next.</p>
+<p>On the other hand, if a human being sees his fellow man being killed by an enemy, he either fights to save his brother or leaves, if possible, to save his own life.</p>
+<p>That is the difference between a man and a goat.</p>
+<p>An intelligent man knows that death is born along with his own birth.</p>
+<p>He knows that he is dying at every second and that the final touch will be given as soon as his term of life is finished.</p>
+<p>He therefore prepares himself for the next life or for liberation from the disease of repeated birth and death.</p>
+<p>A foolish man, however, does not know that this human form of life is obtained after a series of births and deaths imposed in the past by the laws of nature.</p>
+<p>He does not know that a living entity is an eternal being, who has no birth and death.</p>
+<p>Birth, death, old age, and disease are external impositions on a living entity and are due to his contact with material nature and to his forgetfulness of his eternal, godly nature and qualitative oneness with the Absolute Whole.</p>
+<p>Human life provides the opportunity to know this eternal fact, or truth.</p>
+<p>Thus the very beginning of the Vedanta-sutra advises that because we have this valuable form of human life, it is our duty--now--to inquire, What is Brahman, the Absolute Truth? A man who is not intelligent enough does not inquire about this transcendental life; instead, he inquires about many irrelevant matters which do not concern his eternal existence.</p>
+<p>From the very beginning of his life, he inquires from his mother, father, teachers, professors, books, and so many other sources, but he does not have the right type of information about his real life.</p>
+<p>As mentioned before, Pariksit Maharaja was given a warning notice that he would meet death within seven days, and he at once left his palace to prepare himself for the next stage.</p>
+<p>The king had at least seven days at his disposal in which to prepare for death, but as far as we are concerned, although at least we know that our death is sure, we have no information of the date fixed for the occurrence.</p>
+<p>I do not know whether I am going to meet death at the next moment.</p>
+<p>Even such a great man as Mahatma Gandhi could not calculate that he was going to meet with death in the next five minutes, nor could his great associates guess his impending death.</p>
+<p>Nonetheless, all such gentlemen present themselves as great leaders of the people.</p>
+<p>It is ignorance of death and life that distinguishes an animal from a man.</p>
+<p>A man, in the real sense of the term, inquires about himself and what he is.</p>
+<p>Wherefrom has he come into this life, and where is he going after death? Why is he put under the troubles of threefold miseries although he does not want them? Beginning from one's childhood, one goes on inquiring about so many things in his life, but he never inquires about the real essence of life.</p>
+<p>This is animalism.</p>
+<p>There is no difference between a man and an animal as far as the four principles of animal life are concerned, for every living being exists by eating, sleeping, fearing, and mating.</p>
+<p>But only the human life is meant for relevant inquiries into the facts about eternal life and the Transcendence.</p>
+<p>Human life is therefore meant for research into eternal life, and the Vedanta-sutra advises one to conduct this research now or never.</p>
+<p>If one fails to inquire now into these relevant matters about life, one is sure to go back again to the animal kingdom by the laws of nature.</p>
+<p>Therefore, even if a foolish man appears advanced in material science--that is, in eating, sleeping, fearing, mating, and so on--he cannot get free from the cruel hands of death by the law of nature.</p>
+<p>The law of nature works under three modes--goodness, passion, and ignorance.</p>
+<p>Those who live under conditions of goodness are promoted to the higher, spiritual status of life, and those who live under conditions of passion remain stationed in the same place in the material world where they are now, but those who live under conditions of ignorance are sure to be degraded to the lower species.</p>
+<p>The modern setup of human civilization is a risky one because it offers no education about relevant inquiries into the essential principles of life.</p>
+<p>Like animals, people do not know that they are going to be slaughtered by the laws of nature.</p>
+<p>They are satisfied with a bunch of green grass, or a so-called jolly life, like the waiting goat in a slaughterhouse.</p>
+<p>Considering such a condition of human life, we are just trying to make a humble attempt to save the human being by the message of Back to Godhead.</p>
+<p>This method is not fictitious.</p>
+<p>If there is at all to be an era of reality, this message of Back to Godhead is the beginning of that era.</p>
+<p>According to Sri Sukadeva Gosvami, the real fact is that a grhamedhi, or a person who has tied himself, like the goat meant for slaughter, in the business of family, society, community, nation, or humanity at large in regard to the problems and necessities of animal life--namely eating, sleeping, fearing, and mating--and who has no knowledge of the Transcendence is no better than an animal.</p>
+<p>He may have inquired about physical, political, economic, cultural, educational, or similar other matters of temporary, material concern, but if he has not inquired about the principles of transcendental life, he should be regarded as a blind man driven ahead by uncontrolled senses and about to fall into a ditch.</p>
+<p>That is the description of the grhamedhi.</p>
+<p>The opposite of the grha-medhi, however, is the grha-stha.</p>
+<p>The grhastha asrama, or the shelter of spiritual family life, is as good as the life of a sannyasi, a member of the renounced order.</p>
+<p>Regardless of whether one is a householder or a renunciate, the important point is that of relevant inquiries.</p>
+<p>A sannyasi is bogus if not interested in relevant inquiries, and a grhastha, or householder, is bona fide if he is inclined to put forward such inquiries.</p>
+<p>The grhamedhi, however, is simply interested in the animal necessities of life.</p>
+<p>By the laws of nature, the grhamedhi's life is full of calamities, whereas the life of the grhastha is full of happiness.</p>
+<p>But in the modern human civilization, the grhamedhis are posing as the grhasthas.</p>
+<p>We should therefore know who is what.</p>
+<p>A grhamedhi's life is full of vices, because he does not know how to live a family life.</p>
+<p>He does not know that beyond his control is a power who supervises and controls his activities, and he has no conception of his future life.</p>
+<p>The grhamedhi is blind to his future and has no aptitude for making relevant inquiries.</p>
+<p>His only qualification is that he is bound by the shackles of attachment to the false things he has contacted in his temporary existence.</p>
+<p>At night such grhamedhis waste their valuable time by sleeping or by satisfying their different varieties of sexual urges by visiting cinema shows and attending clubs and gambling houses, where women and liquor are indulged in lavishly.</p>
+<p>And during the day, they waste their valuable life in accumulating money or, if they have sufficient money to spend, by adjusting the comforts of their family members.</p>
+<p>Their standard of living and their personal needs increase with their increase in monetary income.</p>
+<p>Thus there is no limit to their expenses, and they are never satiated.</p>
+<p>Consequently there is unlimited competition in the field of economic development, and therefore there is no peace in any society of the human world.</p>
+<p>Everyone is perplexed by the same questions about earning and spending, but ultimately one must depend on the mercy of mother nature.</p>
+<p>When there is a scarcity in production or there are disturbances caused by providence, the poor planmaking politician blames it on cruel nature but carefully avoids studying how and by whom the laws of nature are controlled.</p>
+<p>The Bhagavad-gita, however, explains that the laws of nature are controlled by the Absolute Personality of Godhead.</p>
+<p>God alone is the controller of nature and the natural laws.</p>
+<p>Ambitious materialists sometimes examine a fragment of the law of nature, but they never care to know the maker of these laws.</p>
+<p>Most of them do not believe in the existence of an absolute person or God who controls the laws of nature.</p>
+<p>Rather, they simply concern themselves with the principles by which different elements interact, but they make no reference to the ultimate direction which makes such interactions possible.</p>
+<p>They have no relevant questions or answers in this regard.</p>
+<p>The second of the Vedanta-sutras, however, answers the essential question about Brahman by asserting that the Supreme Brahman, the Supreme Transcendence, is He from whom everything is generated.</p>
+<p>Ultimately, He is the Supreme Person.</p>
+<p>Not only is the foolish grhamedhi ignorant of the temporary nature of the particular type of body he has obtained, but he is also blind to the actual nature of what is happening before him in the daily affairs of his life.</p>
+<p>He may see his father die, his mother die, or a relative or neighbor die, yet he does not make the relevant inquiries about whether or not the other existing members of his family will die.</p>
+<p>Sometimes he thinks and knows that all the members of his family will die today or tomorrow and that he also will die.</p>
+<p>He may know that the whole family show--or, for that matter, the whole show of community, society, nation, and all such things--is but a temporary bubble in the air, having no permanent value.</p>
+<p>Yet he is mad after such temporary arrangements and does not concern himself with any relevant inquiries.</p>
+<p>He has no knowledge as to where he has to go after his death.</p>
+<p>He works very hard for the temporary arrangements of his family, society, or nation, but he never makes any future arrangement either for himself or for others who will pass away from this present phase of life.</p>
+<p>In a public vehicle like a railway carriage, we meet and sit down together with some unknown friends and become members of the same vehicle for a short time, but in due course we separate, never to meet again.</p>
+<p>Similarly, in a long sojourn of life, we get a temporary sitting accommodation in a so-called family, country, or society, but when the time is up, we are unwillingly separated from one another, never to meet again.</p>
+<p>There are so many questions relevant to our temporary arrangements in life and our friends in these temporary arrangements, but a man who is a grhamedhi never inquires about things of a permanent nature.</p>
+<p>We are all busy making permanent plans in various degrees of leadership, without knowing the permanent nature of things as they are.</p>
+<p>Sripada Sankaracarya, who especially strove to remove this ignorance in society and who advocated the cult of spiritual knowledge in regard to the all-pervading impersonal Brahman, said in despair, &quot;Children are engaged in playing, young boys are engaged in so-called love affairs with young girls, and the old are seriously thoughtful about adjusting a baffled life of struggle.</p>
+<p>But, alas, no one is prepared to inquire relevantly into the science of Brahman, the Absolute Truth.&quot; Sri Sukadeva Gosvami, who was asked for direction by Maharaja Pariksit, responded to the king's relevant inquiries by advising him as follows: tasmad bharata sarvatma bhagavan isvaro harih srotavyah kirtitavyas ca smartavyas cecchatabhayam &quot;O descendant of Bharata, it is the duty of mortal men to inquire about, hear about, glorify, and meditate upon the Personality of Godhead, who is the most attractive person because of His fullness in opulence.</p>
+<p>He is called Hari because He alone can undo the conditional existence of a living being.</p>
+<p>If we at all want to be freed from conditional existence, we must make relevant inquiries about the Absolute Truth so that He may be pleased to bestow upon us perfect freedom in life.&quot; (Srimad-Bhagavatam 2.1.5) Sri Sukadeva Gosvami has particularly used four words in regard to the Absolute Personality of Godhead.</p>
+<p>These words distinguish the Absolute Person, or Parabrahman, from other persons, who are qualitatively one with Him.</p>
+<p>The Absolute Personality of Godhead is addressed as sarvatma, or all-pervading, because no one is aloof from Him, although not everyone has this realization.</p>
+<p>The Personality of Godhead, by His plenary representation, resides in everyone's heart as Paramatma, the Supersoul, along with each individual soul.</p>
+<p>Therefore every individual soul has an intimate relationship with Him.</p>
+<p>Forgetfulness of this eternally existing intimate relationship with Him is the cause of conditional life since time immemorial.</p>
+<p>But because He is Bhagavan, or the supreme personality, He can at once reciprocate the responsive call of a devotee.</p>
+<p>Moreover, because He is the perfect person, His beauty, opulence, fame, strength, knowledge, and renunciation are all unlimited sources of transcendental bliss for the individual soul.</p>
+<p>The individual soul becomes attracted by all these different opulences when they are imperfectly represented by other conditioned souls, but the individual soul is not satisfied by such imperfect representations, and therefore he perpetually seeks the perfect one.</p>
+<p>The Personality of Godhead's beauty has no comparison, nor do His knowledge and renunciation.</p>
+<p>But above all, He is isvara, or the supreme controller.</p>
+<p>We are at present being controlled by the police action of this great king.</p>
+<p>This police control is imposed upon us because of our disobedience of law.</p>
+<p>But because the Lord is Hari, He is able to cause the disappearance of our conditional life by giving us full freedom in spiritual existence.</p>
+<p>It is therefore the duty of every man to make relevant inquiries about Him and thus go back to Godhead.</p>
+<h2><a class="header" href="#soul-research" id="soul-research">Soul Research</a></h2>
+<p>In 1972, a distinguished panel met in Windsor, Ontario, and discussed &quot;problems associated with attempts to define the exact moment of death.&quot; Panel members included world-famous heart surgeon Dr.Wilfred G.</p>
+<p>Bigelow, Mr.Justice Edson L.</p>
+<p>Haines of the Ontario Supreme Court, and J.</p>
+<p>Francis Leddy, president of the University of Windsor.</p>
+<p>Dr.Bigelow upheld the existence of the soul and urged systematic research to determine what the soul is and where it comes from.</p>
+<p>Dr.Bigelow's and other panelists' comments were later published in the Montreal Gazette.</p>
+<p>When the article came to the attention of Srila Prabhupada, he wrote a letter to Dr.Bigelow offering substantial Vedic knowledge of the science of the soul and suggested a practical method for scientifically understanding it.</p>
+<p>The Gazette article and Srila Prabhupada's response follow.</p>
+<p>Gazette Headline: Heart surgeon Wants to Know What a Soul Is WINDSOR--A world-famous Canadian heart surgeon says he believes the body has a soul which departs at death and theologians ought to try to find out more about it.</p>
+<p>Dr.Wilfred G.</p>
+<p>Bigelow, head of the cardiovascular surgery unit at Toronto General Hospital, said that &quot;as a person who believes there is a soul,&quot; he thought the time had come &quot;to take the mystery out of this and find out what it is.&quot; Bigelow was a member of a panel which appeared before the Essex County Medical-Legal Society to discuss problems associated with attempts to define the exact moment of death.</p>
+<p>The question has become vital in the age of transplants of hearts and other organs in cases when the donors are inevitably dying.</p>
+<p>The Canadian Medical Association has produced a widely accepted definition of death as the moment when the patient is in coma, responds to no stimulus of any kind, and brain waves recorded on a machine are flat.</p>
+<p>The other members of the panel were Mr.Justice Edson L.</p>
+<p>Haines of the Ontario Supreme Court and J.</p>
+<p>Francis Leddy, president of the University of Windsor.</p>
+<p>Bigelow, elaborating on points he had raised during the discussion, said in an interview later that his thirty-two years as a surgeon had left him no doubts that there is a soul.</p>
+<p>&quot;There are certain cases where you happen to be present at the moment when people pass from a living state to death, and some mysterious changes take place.</p>
+<p>&quot;One of the most noticeable is the sudden lack of life or luster to the eyes.</p>
+<p>They become opaque and literally lifeless.</p>
+<p>&quot;It's difficult to document what you observe.</p>
+<p>In fact, I don't think it can be documented very well.&quot; Bigelow, who became world renowned for his pioneering work in the &quot;deep freeze&quot; surgical technique known as hypothermia and for his heart valve surgery, said &quot;soul research&quot; should be undertaken by theology and allied disciplines within the university.</p>
+<p>During this discussion Leddy said that &quot;if there is a soul, you are not going to see it.</p>
+<p>You are not going to find it.&quot; &quot;If there is a principle of vitality or life, what is it?&quot; The problem was that &quot;the soul doesn't exist anywhere specifically, geographically.</p>
+<p>It's everywhere and yet it's nowhere in the body.&quot; It would &quot;be nice to start experimenting, but I don't know how you are going to get on any of these things,&quot; Leddy said.</p>
+<p>He said the discussion reminded him of the Soviet cosmonaut who returned from space to report there was no God, because he didn't see Him up there.</p>
+<p>Maybe so, said Bigelow, but in modern medicine when something was encountered that could not be explained, &quot;the watchword is discover the answer, take it into the laboratory, take it somewhere where you can discover the truth.&quot; The central question, said Bigelow, was &quot;where is the soul and where does it come from?&quot;</p>
+<h1><a class="header" href="#srila-prabhupada-gives-the-vedic-evidence" id="srila-prabhupada-gives-the-vedic-evidence">Srila Prabhupada Gives the Vedic Evidence</a></h1>
+<p>My dear Dr.Bigelow: Please accept my greetings.</p>
+<p>Recently I have read an article in the Gazette by Rae Corelli entitled &quot;Heart Surgeon Wants to Know What a Soul Is,&quot; and it was very interesting.</p>
+<p>Your comments show great insight, and so I thought to write you on this matter.</p>
+<p>Perhaps you may know that I am the founder-acarya of the International Society for Krishna Consciousness.</p>
+<p>I have several temples in Canada--Montreal, Toronto, Vancouver, and Hamilton.</p>
+<p>This Krishna consciousness movement is specifically meant to teach every soul his original, spiritual position.</p>
+<p>Undoubtedly the soul is present in the heart of the living entity, and it is the source of all the energies for maintaining the body.</p>
+<p>The energy of the soul is spread all over the body, and this is known as consciousness.</p>
+<p>Since this consciousness spreads the energy of the soul all over the body, one can feel pains and pleasures in any part of the body.</p>
+<p>The soul is individual, and he is transmigrating from one body to another, just as a person transmigrates from babyhood to childhood, from childhood to boyhood, from boyhood to youth, and then to advanced old age.</p>
+<p>Then the change called death takes place when we change to a new body, just as we change our old dress to a new dress.</p>
+<p>This is called transmigration of the soul.</p>
+<p>When a soul wants to enjoy this material world, forgetting his real home in the spiritual world, he takes this life of hard struggle for existence.</p>
+<p>This unnatural life of repeated birth, death, disease, and old age can be stopped when his consciousness is dovetailed with the supreme consciousness of God.</p>
+<p>That is the basic principle of our Krishna movement.</p>
+<p>As far as heart transplant is concerned, there is no question of success unless the soul is there in the heart.</p>
+<p>So the presence of the soul has to be accepted.</p>
+<p>In sexual intercourse, if there is no soul, there is no conception, no pregnancy.</p>
+<p>Contraception deteriorates the womb so that it no longer is a good place for the soul.</p>
+<p>That is against the order of God.</p>
+<p>By the order of God, a soul is sent to a particular womb, but by this contraceptive he is denied that womb and has to be placed in another.</p>
+<p>That is disobedience to the Supreme.</p>
+<p>For example, take a man who is supposed to live in a particular apartment.</p>
+<p>If the situation there is so disturbed that he cannot enter the apartment, then he is put at a great disadvantage.</p>
+<p>That is illegal interference and is punishable.</p>
+<p>The undertaking of &quot;soul research&quot; would certainly mark the advancement of science.</p>
+<p>But advancement of science will not be able to find the soul.</p>
+<p>The soul's presence can simply be accepted on circumstantial understanding.</p>
+<p>You will find in the Vedic literature that the dimension of the soul is one ten-thousandth the size of a point.</p>
+<p>The material scientist cannot measure the length and breadth of a point.</p>
+<p>Therefore it is not possible for the material scientist to capture the soul.</p>
+<p>You can simply accept the soul's existence by taking it from authority.</p>
+<p>What the greatest scientists are finding, we've explained long ago.</p>
+<p>As soon as one understands the existence of the soul, he can immediately understand the existence of God.</p>
+<p>The difference between God and the soul is that God is a very great soul, and the living entity is a very small soul; but qualitatively they are equal.</p>
+<p>Therefore God is all-pervading, and the living entity is localized.</p>
+<p>But the nature and quality are the same.</p>
+<p>The central question, you say, is &quot;Where is the soul, and where does it come from?&quot; That is not difficult to understand.</p>
+<p>We have already discussed that the soul is residing in the heart of the living entity and that it takes shelter in another body after death.</p>
+<p>Originally the soul comes from God.</p>
+<p>Just as a spark comes from fire, and when the spark falls down it appears to be extinguished, the spark of soul originally comes from the spiritual world to the material world.</p>
+<p>In the material world he falls down into three different conditions, which are called the modes of nature.</p>
+<p>When a spark of fire falls on dry grass, the fiery quality continues; when the spark falls on the ground, it cannot display its fiery manifestation unless the ground is favorably situated; and when the spark falls on water, it becomes extinguished.</p>
+<p>As such, we find three kinds of living conditions.</p>
+<p>One living entity is completely forgetful of his spiritual nature; another is almost forgetful but still has an instinct of spiritual nature; and another is completely in search of spiritual perfection.</p>
+<p>There is a bona fide method for the attainment of spiritual perfection by the spiritual spark of soul, and if he is properly guided then he is very easily sent back home, back to Godhead, wherefrom he originally fell.</p>
+<p>It will be a great contribution to human society if this authorized information from the Vedic literature is presented to the modern world on the basis of modern scientific understanding.</p>
+<p>The fact is already there.</p>
+<p>It simply has to be presented for modern understanding.</p>
+<p>Yours sincerely, A.C.Bhaktivedanta Swami</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

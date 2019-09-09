@@ -1,0 +1,695 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch2 - Science of Self-Realization</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Foreword</a></li><li class="affix"><a href="intro.html">Introduction</a></li><li class="affix"><a href="ch1.html">ch1</a></li><li class="affix"><a href="ch2.html" class="active">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Science of Self-Realization</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#choosing-a-spiritual-master" id="choosing-a-spiritual-master">Choosing a Spiritual Master</a></h1>
+<h2><a class="header" href="#what-is-a-guru" id="what-is-a-guru">What Is a Guru?</a></h2>
+<p>On hearing the word guru, we tend to envision a caricaturelike image: a bizarrelooking old fellow with a long, stringy beard and flowing robes, meditating on distant, esoteric truths.</p>
+<p>Or we think of a cosmic con man cashing in on young seekers' spiritual gullibility.</p>
+<p>But what really is a guru? What does he know that we don't? How does he enlighten us? In a talk given in England in 1973, Srila Prabhupada provides some enlightening answers.</p>
+<p>om ajnana-timirandhasya jnananjana-salakaya caksur unmilitam yena tasmai sri-gurave namah &quot;I was born in the darkest ignorance, and my guru, my spiritual master, opened my eyes with the torch of knowledge.</p>
+<p>I offer my respectful obeisances unto him.&quot; The word ajnana means &quot;ignorance&quot; or &quot;darkness.&quot; If all the lights in this room immediately went out, we would not be able to tell where we or others are sitting.</p>
+<p>Everything would become confused.</p>
+<p>Similarly, we are all in darkness in this material world, which is a world of tamas.</p>
+<p>Tamas or timira means &quot;darkness.&quot; This material world is dark, and therefore it needs sunlight or moonlight for illumination.</p>
+<p>However, there is another world, a spiritual world, that is beyond this darkness.</p>
+<p>That world is described by Sri Krishna in the Bhagavad-gita (15.6): na tad bhasayate suryo na sasanko na pavakah yad gatva na nivartante tad dhama paramam mama &quot;That abode of Mine is not illumined by the sun or moon, nor by electricity.</p>
+<p>One who reaches it never returns to this material world.&quot; The guru's business is to bring his disciples from darkness to light.</p>
+<p>At present everyone is suffering due to ignorance, just as one contracts a disease out of ignorance.</p>
+<p>If one does not know hygienic principles, he will not know what will contaminate him.</p>
+<p>Therefore due to ignorance there is infection, and we suffer from disease.</p>
+<p>A criminal may say, &quot;I did not know the law,&quot; but he will not be excused if he commits a crime.</p>
+<p>Ignorance is no excuse.</p>
+<p>Similarly, a child, not knowing that fire will burn, will touch the fire.</p>
+<p>The fire does not think, &quot;This is a child, and he does not know I will burn.&quot; No, there is no excuse.</p>
+<p>Just as there are state laws, there are also stringent laws of nature, and these laws will act despite our ignorance of them.</p>
+<p>If we do something wrong out of ignorance, we must suffer.</p>
+<p>This is the law.</p>
+<p>Whether the law is a state law or a law of nature, we risk suffering if we break it.</p>
+<p>The guru's business is to see that no human being suffers in this material world.</p>
+<p>No one can claim that he is not suffering.</p>
+<p>That is not possible.</p>
+<p>In this material world, there are three kinds of suffering: adhyatmika, adhibhautika, and adhidaivika.</p>
+<p>These are miseries arising from the material body and mind, from other living entities, and from the forces of nature.</p>
+<p>We may suffer mental anguish, or we may suffer from other living entities--from ants or mosquitoes or flies--or we may suffer due to some superior power.</p>
+<p>There may be no rain, or there may be flood.</p>
+<p>There may be excessive heat or excessive cold.</p>
+<p>So many types of suffering are imposed by nature.</p>
+<p>Thus there are three types of miseries within the material world, and everyone is suffering from one, two, or three of them.</p>
+<p>No one can say that he is completely free from suffering.</p>
+<p>We may then ask why the living entity is suffering.</p>
+<p>The answer is: out of ignorance.</p>
+<p>He does not think, &quot;I am committing mistakes and am leading a sinful life; that is why I am suffering.&quot; Therefore the guru's first business is to rescue his disciple from this ignorance.</p>
+<p>We send our children to school to save them from suffering.</p>
+<p>If our children do not receive an education, we fear that they will suffer in the future.</p>
+<p>The guru sees that suffering is due to ignorance, which is compared to darkness.</p>
+<p>How can one in darkness be saved? By light.</p>
+<p>The guru takes the torchlight of knowledge and presents it before the living entity enveloped in darkness.</p>
+<p>That knowledge relieves him from the sufferings of the darkness of ignorance.</p>
+<p>One may ask whether the guru is absolutely necessary.</p>
+<p>The Vedas inform us that he is: tad-vijnanartham sa gurum evabhigacchet samit-panih srotriyam brahma-nistham (Mundaka Upanisad 1.2.12) The Vedas enjoin us to seek out a guru; actually, they say to seek out the guru, not just a guru.</p>
+<p>The guru is one because he comes in disciplic succession.</p>
+<p>What Vyasadeva and Krishna taught five thousand years ago is also being taught now.</p>
+<p>There is no difference between the two instructions.</p>
+<p>Although hundreds and thousands of acaryas have come and gone, the message is one.</p>
+<p>The real guru cannot be two, for the real guru does not speak differently from his predecessors.</p>
+<p>Some spiritual teachers say, &quot;In my opinion you should do this,&quot; but this is not a guru.</p>
+<p>Such so-called gurus are simply rascals.</p>
+<p>The genuine guru has only one opinion, and that is the opinion expressed by Krishna, Vyasadeva, Narada, Arjuna, Sri Caitanya Mahaprabhu, and the Gosvamis.</p>
+<p>Five thousand years ago Lord Sri Krishna spoke the Bhagavad-gita, and Vyasadeva recorded it.</p>
+<p>Srila Vyasadeva did not say, &quot;This is my opinion.&quot; Rather, he wrote, sribhagavan uvaca, that is, &quot;The Supreme Personality of Godhead says.&quot; Whatever Vyasadeva wrote was originally spoken by the Supreme Personality of Godhead.</p>
+<p>Srila Vyasadeva did not give his own opinion.</p>
+<p>Consequently, Srila Vyasadeva is a guru.</p>
+<p>He does not misinterpret the words of Krishna, but transmits them exactly as they were spoken.</p>
+<p>If we send a telegram, the person who delivers the telegram does not have to correct it, edit it, or add to it.</p>
+<p>He simply presents it.</p>
+<p>That is the guru's business.</p>
+<p>The guru may be this person or that, but the message is the same; therefore it is said that guru is one.</p>
+<p>In the disciplic succession we simply find repetition of the same subject.</p>
+<p>In the Bhagavad-gita (9.34) Sri Krishna says: man-mana bhava mad-bhakto mad-yaji mam namaskuru mam evaisyasi yuktvaivam atmanam mat-parayanah &quot;Engage your mind always in thinking of Me, become My devotee, offer obeisances, and worship Me.</p>
+<p>Being completely absorbed in Me, surely you will come to Me.&quot; These very instructions were reiterated by all the acaryas, such as Ramanujacarya, Madhvacarya, and Caitanya Mahaprabhu.</p>
+<p>The six Gosvamis also transmitted the same message, and we are simply following in their footsteps.</p>
+<p>There is no difference.</p>
+<p>We do not interpret the words of Krishna by saying, &quot;In my opinion, the Battlefield of Kuruksetra represents the human body.&quot; Such interpretations are set forth by rascals.</p>
+<p>In the world there are many rascal gurus who give their own opinion, but we can challenge any rascal.</p>
+<p>A rascal guru may say, &quot;I am God,&quot; or, &quot;We are all God.&quot; That is all right, but we should find out from the dictionary what the meaning of God is.</p>
+<p>Generally, a dictionary will tell us that the word God indicates the Supreme Being.</p>
+<p>Thus we may ask such a guru, &quot;Are you the Supreme Being?&quot; If he cannot understand this, then we should give the meaning of supreme.</p>
+<p>Any dictionary will inform us that supreme means &quot;the greatest authority.&quot; We may then ask, &quot;Are you the greatest authority?&quot; Such a rascal guru, even though proclaiming himself to be God, cannot answer such a question.</p>
+<p>God is the Supreme Being and the highest authority.</p>
+<p>No one is equal to Him or greater than Him.</p>
+<p>Yet there are many guru-gods, many rascals who claim to be the Supreme.</p>
+<p>Such rascals cannot help us escape the darkness of material existence.</p>
+<p>They cannot illumine our darkness with the torchlight of spiritual knowledge.</p>
+<p>The bona fide guru will simply present what the supreme guru, God, says in bona fide scripture.</p>
+<p>A guru cannot change the message of the disciplic succession.</p>
+<p>We must understand that we cannot carry out research to find the Absolute Truth.</p>
+<p>Caitanya Mahaprabhu Himself said, &quot;My Guru Maharaja, My spiritual master, considered Me a great fool.&quot; He who remains a great fool before his guru is a guru himself.</p>
+<p>However, if one says, &quot;I am so advanced that I can speak better than my guru,&quot; he is simply a rascal.</p>
+<p>In the Bhagavad-gita (4.2) Sri Krishna says: evam parampara-praptam imam rajarsayo viduh sa kaleneha mahata yogo nastah parantapa &quot;This supreme science was thus received through the chain of disciplic succession, and the saintly kings understood it in that way.</p>
+<p>But in course of time the succession was broken, and therefore the science as it is appears to be lost.&quot; Taking on a guru is not simply a fashion.</p>
+<p>One who is serious about understanding spiritual life requires a guru.</p>
+<p>A guru is a question of necessity, for one must be very serious to understand spiritual life, God, proper action, and one's relationship with God.</p>
+<p>When we are very serious about understanding these subjects, we need a guru.</p>
+<p>We shouldn't go to a guru simply because a guru may be fashionable at the moment.</p>
+<p>Surrender must be there, for without surrender we cannot learn anything.</p>
+<p>If we go to a guru simply to challenge him, we will learn nothing.</p>
+<p>We must accept the guru just as Arjuna accepted his guru, Sri Krishna Himself: karpanya-dosopahata-svabhavah prcchami tvam dharma-sammudha-cetah yac chreyah syan niscitam bruhi tan me sisyas te 'ham sadhi mam tvam prapannam &quot;Now I am confused about my duty and have lost all composure because of weakness.</p>
+<p>In this condition I am asking You to tell me clearly what is best for me.</p>
+<p>Now I am Your disciple and a soul surrendered unto You.</p>
+<p>Please instruct me.&quot; (Bhagavad-gita 2.7) This is the process for accepting a guru.</p>
+<p>The guru is Krishna's representative, the former acaryas' representative.</p>
+<p>Krishna says that all acaryas are His representatives; therefore the guru should be offered the same respect one would offer to God.</p>
+<p>As Visvanatha Cakravarti Thakura says in his prayers to the spiritual master, yasya prasadad bhagavat-prasadah: &quot; By the mercy of the spiritual master, one receives the benediction of Krishna.&quot; Thus, if we surrender to the bona fide guru, we surrender to God.</p>
+<p>God accepts our surrender to the guru.</p>
+<p>In the Bhagavad-gita (18.66) Krishna instructs: sarva-dharman parityajya mam ekam saranam vraja aham tvam sarva-papebhyo moksayisyami ma sucah &quot;Abandon all varieties of religion and just surrender unto Me.</p>
+<p>I shall deliver you from all sinful reaction.</p>
+<p>Do not fear.&quot; Someone may argue, &quot;Where is Krishna? I shall surrender to Him.&quot; But no, the process is that we first surrender to Krishna's representative; then we surrender to Krishna.</p>
+<p>Therefore it is said, saksad-dharitvena samasta-sastraih: the guru is as good as God.</p>
+<p>When we offer respects to the guru, we are offering respects to God.</p>
+<p>Because we are trying to be God conscious, it is required that we learn how to offer respects to God through God's representative.</p>
+<p>In all the sastras the guru is described to be as good as God, but the guru never says, &quot;I am God.&quot; The disciple's duty is to offer respect to the guru just as he offers respect to God, but the guru never thinks, &quot;My disciples are offering me the same respect they offer to God; therefore I have become God.&quot; As soon as he thinks like this, he becomes a dog instead of God.</p>
+<p>Therefore Visvanatha Cakravarti says, kintu prabhor yah priya eva tasya.</p>
+<p>Because he is the most confidential servitor of God, the guru is offered the same respect that we offer God.</p>
+<p>God is always God, guru is always guru.</p>
+<p>As a matter of etiquette, God is the worshipable God, and guru is the worshiper God (sevakabhagavan).</p>
+<p>Therefore the guru is addressed as prabhupada.</p>
+<p>The word prabhu means &quot;lord,&quot; and pada means &quot;position.&quot; Thus prabhupada means &quot;he who has taken the position of the Lord.&quot; This is the same as saksad-dharitvena samasta-sastraih.</p>
+<p>Only if we are very serious about understanding the science of God is a guru required.</p>
+<p>We should not try to keep a guru as a matter of fashion.</p>
+<p>One who has accepted a guru speaks intelligently.</p>
+<p>He never speaks nonsense.</p>
+<p>That is the sign of having accepted a bona fide guru.</p>
+<p>We should certainly offer all respect to the spiritual master, but we should also remember how to carry out his orders.</p>
+<p>In the Bhagavad-gita (4.34) Sri Krishna Himself tells us the method of seeking out and approaching the guru: tad viddhi pranipatena pariprasnena sevaya upadeksyanti te jnanam jnaninas tattva-darsinah &quot;Just try to learn the truth by approaching a spiritual master.</p>
+<p>Inquire from him submissively and render service unto him.</p>
+<p>The self-realized soul can impart knowledge unto you because he has seen the truth.&quot; The first process is that of surrender.</p>
+<p>We have to find an exalted person and willingly surrender before him.</p>
+<p>The sastras enjoin that before we take a guru we study him carefully to find out whether we can surrender to him.</p>
+<p>We should not accept a guru suddenly, out of fanaticism.</p>
+<p>That is very dangerous.</p>
+<p>The guru should also study the person who wants to become a disciple to see if he is fit.</p>
+<p>That is the way a relationship is established between the guru and disciple.</p>
+<p>Everything is provided, but we must take up the process seriously.</p>
+<p>Then we can be trained to become a bona fide disciple.</p>
+<p>First we must find a bona fide guru, establish our relationship with him, and act accordingly.</p>
+<p>Then our life will be successful, for the guru can enlighten the sincere disciple who is in darkness.</p>
+<p>Everyone is born a rascal and a fool.</p>
+<p>If we are born learned, why do we need to go to school? If we do not cultivate knowledge, we are no better than animals.</p>
+<p>An animal may say that there is no need of books and that he has become a guru, but how can anyone obtain knowledge without the study of authoritative books on science and philosophy? Rascal gurus try to avoid these things.</p>
+<p>We must understand that we are all born rascals and fools and that we have to be enlightened.</p>
+<p>We have to receive knowledge to make our lives perfect.</p>
+<p>If we do not perfect our lives, we are defeated.</p>
+<p>What is this defeat? The struggle for existence.</p>
+<p>We are trying to obtain a better life, to attain a superior position, and for this we are struggling very hard.</p>
+<p>But we do not know what a superior position actually is.</p>
+<p>Whatever position we have in this material world must be given up.</p>
+<p>We may have a good position or a bad position; in any case, we cannot remain here.</p>
+<p>We may earn millions of dollars and think, &quot;Now I am in a good position,&quot; but a little dysentery or cholera will finish our position.</p>
+<p>If the bank fails, our position is gone.</p>
+<p>So actually there is no good position in this material world.</p>
+<p>It is a farce.</p>
+<p>Those who try to attain a better position in the material world are ultimately defeated, because there is no better position.</p>
+<p>The Bhagavad-gita (14.26) says what the better position is: mam ca yo 'vyabhicarena bhakti-yogena sevate sa gunan samatityaitan brahma-bhuyaya kalpate &quot;One who engages in the spiritual activities of unalloyed devotional service at once transcends the modes of material nature and is elevated to the spiritual platform.&quot; Is there any science that gives us the knowledge by which we may become immortal? Yes, we may become immortal, but not in the material sense.</p>
+<p>We cannot receive this knowledge in so-called universities.</p>
+<p>However, there is knowledge contained in the Vedic scriptures by which we may become immortal.</p>
+<p>That immortality is our better position.</p>
+<p>No more birth, no more death, no more old age, no more disease.</p>
+<p>Thus the guru takes on a very great responsibility.</p>
+<p>He must guide his disciple and enable him to become an eligible candidate for the perfect position--immortality.</p>
+<p>The guru must be competent to lead his disciple back home, back to Godhead.</p>
+<h2><a class="header" href="#saints-and-swindlers" id="saints-and-swindlers">Saints and Swindlers</a></h2>
+<p>Every day the number of people interested in practicing yoga and meditation increases by the thousands.</p>
+<p>Unfortunately, a person looking for a suitable guide is likely to encounter a bewildering array of magicians, self-styled gurus, and self-proclaimed gods.</p>
+<p>In an interview with the London Times, Srila Prabhupada explains how a sincere seeker can tell the difference between a counterfeit and genuine spiritual guide.</p>
+<p>Reporter: What frankly worries me is that since the arrival in Britain some time ago of an Indian yogi, who was the first &quot;guru&quot; that most people had ever heard of, a lot of &quot;gurus&quot; have suddenly appeared out of nowhere.</p>
+<p>Sometimes I get the feeling that not all of them are as genuine as they ought to be.</p>
+<p>Would it be right to warn people who are thinking of taking up spiritual life that they should make sure that they have a genuine guru to teach them? Srila Prabhupada: Yes.</p>
+<p>Of course, to search out a guru is very nice, but if you want a cheap guru, or if you want to be cheated, then you will find many cheating gurus.</p>
+<p>But if you are sincere, you will find a sincere guru.</p>
+<p>Because people want everything very cheaply, they are cheated.</p>
+<p>We ask our students to refrain from illicit sex, meat-eating, gambling, and intoxication.</p>
+<p>People think that this is all very difficult--a botheration.</p>
+<p>But if someone else says, &quot;You may do whatever nonsense you like, simply take my mantra,&quot; then people will like him.</p>
+<p>The point is that people want to be cheated, and therefore cheaters come.</p>
+<p>No one wants to undergo any austerity.</p>
+<p>Human life is meant for austerity, but no one is prepared to undergo austerity.</p>
+<p>Consequently, cheaters come and say, &quot;No austerity.</p>
+<p>Whatever you like, you do.</p>
+<p>Simply pay me, and I'll give you some mantra, and you'll become God in six months.&quot; All this is going on.</p>
+<p>If you want to be cheated like this, the cheaters will come.</p>
+<p>Reporter: What about the person who seriously wants to find spiritual life but who happens to finish up with the wrong guru? Srila Prabhupada: If you simply want an ordinary education, you have to devote so much time, labor, and understanding to it.</p>
+<p>Similarly, if you are going to take to spiritual life, you must become serious.</p>
+<p>How is it that simply by some wonderful mantras, someone can become God in six months? Why do people want something like that? This means that they want to be cheated.</p>
+<p>Reporter: How can a person tell he has a genuine guru? Srila Prabhupada: Can any of my students answer this question? Disciple: Once I remember John Lennon asked you, &quot;How will I know who is the genuine guru?&quot; And you answered, &quot;Just find out the one who is most addicted to Krishna.</p>
+<p>He is genuine.&quot; Srila Prabhupada: Yes.</p>
+<p>The genuine guru is God's representative, and he speaks about God and nothing else.</p>
+<p>The genuine guru is he who has no interest in materialistic life.</p>
+<p>He is after God, and God only.</p>
+<p>That is one of the tests of a genuine guru: brahmanistham.</p>
+<p>He is absorbed in the Absolute Truth.</p>
+<p>In the Mundaka Upanisad it is stated, srotriyam brahma-nistham: &quot;The genuine guru is well versed in the scriptures and Vedic knowledge, and he is completely dependent on Brahman.&quot; He should know what Brahman [spirit] is and how to become situated in Brahman.</p>
+<p>These signs are given in the Vedic literature.</p>
+<p>As I said before, the real guru is God's representative.</p>
+<p>He represents the Supreme Lord, just as a viceroy represents a king.</p>
+<p>The real guru will not manufacture anything.</p>
+<p>Everything he says is in accordance with the scriptures and the previous acaryas.</p>
+<p>He will not give you a mantra and tell you that you will become God in six months.</p>
+<p>This is not a guru's business.</p>
+<p>A guru's business is to canvass everyone to become a devotee of God.</p>
+<p>That is the sum and substance of a real guru's business.</p>
+<p>Indeed, he has no other business.</p>
+<p>He tells whomever he sees, &quot;Please become God conscious.&quot; If he canvasses somehow or other on behalf of God and tries to get everyone to become a devotee of God, he is a genuine guru.</p>
+<p>Reporter: What about a Christian priest? Srila Prabhupada: Christian, Muhammadan, Hindu--it doesn't matter.</p>
+<p>If he is simply speaking on behalf of God, he is a guru.</p>
+<p>Lord Jesus Christ, for instance.</p>
+<p>He canvassed people, saying, &quot;Just try to love God.&quot; Anyone--it doesn't matter who--be he Hindu, Muslim, or Christian, is a guru if he convinces people to love God.</p>
+<p>That is the test.</p>
+<p>The guru never says, &quot;I am God,&quot; or &quot;I will make you God.&quot; The real guru says, &quot;I am a servant of God, and I will make you a servant of God also.&quot; It doesn't matter how the guru is dressed.</p>
+<p>As Caitanya Mahaprabhu said, &quot;Whoever can impart knowledge about Krishna is a spiritual master.&quot; A genuine spiritual master simply tries to get people to become devotees of Krishna, or God.</p>
+<p>He has no other business.</p>
+<p>Reporter: But the bad gurus...</p>
+<p>Srila Prabhupada: And what is a &quot;bad&quot; guru? Reporter: A bad guru just wants some money or some fame.</p>
+<p>Srila Prabhupada: Well, if he is bad, how can he become a guru? [Laughter.] How can iron become gold? Actually, a guru cannot be bad, for if someone is bad, he cannot be a guru.</p>
+<p>You cannot say &quot;bad guru.&quot; That is a contradiction.</p>
+<p>What you have to do is simply try to understand what a genuine guru is.</p>
+<p>The definition of a genuine guru is that he is simply talking about God--that's all.</p>
+<p>If he's talking about some other nonsense, then he is not a guru.</p>
+<p>A guru cannot be bad.</p>
+<p>There is no question of a bad guru, any more than a red guru or a white guru.</p>
+<p>Guru means &quot;genuine guru.&quot; All we have to know is that the genuine guru is simply talking about God and trying to get people to become God's devotees.</p>
+<p>If he does this, he is genuine.</p>
+<p>Reporter: If I wanted to be initiated into your society, what would I have to do? Srila Prabhupada: First of all, you'd have to give up illicit sex life.</p>
+<p>Reporter: Does that include all sex life? What is illicit sex life? Srila Prabhupada: Illicit sex is sex outside of marriage.</p>
+<p>Animals have sex with no restrictions, but in human society there are restrictions.</p>
+<p>In every country and in every religion, there is some system of restricting sex life.</p>
+<p>You would also have to give up all intoxicants, including tea, cigarettes, alcohol, marijuana--anything that intoxicates.</p>
+<p>Reporter: Anything else? Srila Prabhupada: You'd also have to give up eating meat, eggs, and fish.</p>
+<p>And you'd have to give up gambling as well.</p>
+<p>Unless you gave up these four sinful activities, you could not be initiated.</p>
+<p>Reporter: How many followers do you have throughout the world? Srila Prabhupada: For anything genuine, the followers may be very few.</p>
+<p>For something rubbish, the followers may be many.</p>
+<p>Still, we have about five thousand initiated disciples.</p>
+<p>Reporter: Is the Krishna consciousness movement growing all the time? Srila Prabhupada: Yes, it is growing--but slowly.</p>
+<p>This is because we have so many restrictions.</p>
+<p>People do not like restrictions.</p>
+<p>Reporter: Where is your following the greatest? Srila Prabhupada: In the United States, Europe, South America, and Australia.</p>
+<p>And, of course, in India there are millions who practice Krishna consciousness.</p>
+<p>Reporter: Could you tell me what the goal of your movement is? Srila Prabhupada: The purpose of this Krishna consciousness movement is to awaken man's original consciousness.</p>
+<p>At the present moment our consciousness is designated.</p>
+<p>Someone is thinking, &quot;I am an Englishman,&quot; and another is thinking, &quot;I am an American.&quot; Actually, we do not belong to any of these designations.</p>
+<p>We are all part and parcel of God; that is our real identity.</p>
+<p>If everyone simply comes to that consciousness, all the problems of the world will be solved.</p>
+<p>Then we shall come to know that we are one--the same quality of spirit soul.</p>
+<p>The same quality of spirit soul is within everyone, although it may be in a different dress.</p>
+<p>This is the explanation given in the Bhagavadgita.</p>
+<p>Krishna consciousness is actually a purificatory process (sarvopadhi-vinirmuktam).</p>
+<p>Its purpose is to make people free from all designations (tat-paratvena nirmalam).</p>
+<p>When our consciousness becomes purified of all designations, the activities we carry out with our purified senses make us perfect.</p>
+<p>Eventually, we reach the ideal perfection of human life.</p>
+<p>Krishna consciousness is also a very simple process.</p>
+<p>It is not necessary to become a great philosopher, scientist, or whatever.</p>
+<p>We need only chant the holy name of the Lord, understanding that His personality, His name, and His qualities are all absolute.</p>
+<p>Krishna consciousness is a great science.</p>
+<p>Unfortunately, in the universities there is no department for this science.</p>
+<p>Therefore we invite all serious men who are interested in the welfare of human society to understand this great movement and, if possible, take part in it and cooperate with us.</p>
+<p>The problems of the world will be solved.</p>
+<p>This is also the verdict of the Bhagavad-gita, the most important and authoritative book of spiritual knowledge.</p>
+<p>Many of you have heard of the Bhagavad-gita.</p>
+<p>Our movement is based on it.</p>
+<p>Our movement is approved by all great acaryas in India.</p>
+<p>Ramanujacarya, Madhvacarya, Lord Caitanya, and so many others.</p>
+<p>You are all representatives of newspapers, so I ask you to try to understand this movement as far as possible for the good of all human society.</p>
+<p>Reporter: Do you think your movement is the only way to know God? Srila Prabhupada: Yes.</p>
+<p>Reporter: How are you assured of that? Srila Prabhupada: From the authorities and from God, Krishna.</p>
+<p>Krishna says: sarva-dharman parityajya mam ekam saranam vraja aham tvam sarva-papebhyo moksayisyami ma sucah &quot;Abandon all varieties of religion and just surrender unto Me.</p>
+<p>I shall deliver you from all sinful reaction.</p>
+<p>Do not fear.&quot; (Bhagavad-gita 18.66) Reporter: Does &quot;surrender&quot; mean that someone would have to leave his family? Srila Prabhupada: No.</p>
+<p>Reporter: But suppose I were to become an initiate.</p>
+<p>Wouldn't I have to come and live in the temple? Srila Prabhupada: Not necessarily.</p>
+<p>Reporter: I can stay at home? Srila Prabhupada: Oh, yes.</p>
+<p>Reporter: What about work? Would I have to give up my job? Srila Prabhupada: No, you'd simply have to give up your bad habits and chant the Hare Krishna mantra on these beads--that's all.</p>
+<p>Reporter: Would I have to give any financial support? Srila Prabhupada: No, that is your voluntary wish.</p>
+<p>If you give, that's all right.</p>
+<p>And if you don't, we don't mind.</p>
+<p>We do not depend on anyone's financial contribution.</p>
+<p>We depend on Krishna.</p>
+<p>Reporter: I wouldn't have to give any money at all? Srila Prabhupada: No.</p>
+<p>Reporter: Is this one of the main things that distinguishes the genuine guru from the fake guru? Srila Prabhupada: Yes, a genuine guru is not a businessman.</p>
+<p>He is a representative of God.</p>
+<p>Whatever God says, the guru repeats.</p>
+<p>He does not speak otherwise.</p>
+<p>Reporter: But would you expect to find a real guru, say, traveling in a Rolls Royce and staying in a penthouse suite in a classy hotel? Srila Prabhupada: Sometimes people provide us with a room in a first-class hotel, but we generally stay in our own temples.</p>
+<p>We have some one hundred temples around the world, so we don't require to go to any hotels.</p>
+<p>Reporter: I wasn't trying to make any accusations.</p>
+<p>I was merely trying to illustrate that I think your warning is a valid one.</p>
+<p>There are so many people interested in finding a spiritual life, and at the same time there are a lot of people interested in cashing in on the &quot;guru business.&quot; Srila Prabhupada: Are you under the impression that spiritual life means voluntarily accepting poverty? Reporter: Well, I don't know.</p>
+<p>Srila Prabhupada: A poverty-stricken man may be materialistic, and a wealthy man may be very spiritual.</p>
+<p>Spiritual life does not depend on either poverty or wealth.</p>
+<p>Spiritual life is transcendental.</p>
+<p>Consider Arjuna, for instance.</p>
+<p>Arjuna was a member of a royal family, yet he was a pure devotee of God.</p>
+<p>And in the Bhagavad-gita (4.2) Sri Krishna says, evam parampara-praptam imam rajarsayo viduh: &quot;This supreme science was received through the chain of disciplic succession, and the saintly kings understood it in that way.&quot; In the past, all kings who were saintly understood spiritual science.</p>
+<p>Therefore, spiritual life does not depend on one's material condition.</p>
+<p>Whatever a person's material condition may be--he may be a king or a pauper--he can still understand spiritual life.</p>
+<p>Generally people do not know what spiritual life is, and therefore, they unnecessarily criticize us.</p>
+<p>If I asked you what spiritual life is, how would you answer? Reporter: Well, I'm not sure.</p>
+<p>Srila Prabhupada: Although you do not know what spiritual life is, you still say, &quot;It is this,&quot; or &quot;It is that.&quot; But first you should know what spiritual life is.</p>
+<p>Spiritual life begins when you understand that you are not your body.</p>
+<p>This is the real beginning of spiritual life.</p>
+<p>By seeing the difference between your self and your body, you come to understand that you are a spirit soul (aham brahmasmi).</p>
+<p>Reporter: Do you think this knowledge should be a part of everyone's education? Srila Prabhupada: Yes.</p>
+<p>People should first be taught what they are.</p>
+<p>Are they their bodies, or something else? That is the beginning of education.</p>
+<p>Now everyone is educated to think he is his body.</p>
+<p>Because someone accidentally gets an American body, he thinks, &quot;I am an American.&quot; This is just like thinking, &quot;I am a red shirt,&quot; just because you are wearing a red shirt.</p>
+<p>You are not a red shirt; you are a human being.</p>
+<p>Similarly, this body is like a shirt or coat over the real person--the spirit soul.</p>
+<p>If we recognize ourselves simply by our bodily &quot;shirt&quot; or &quot;coat,&quot; then we have no spiritual education.</p>
+<p>Reporter: Do you think that such education should be given in schools? Srila Prabhupada: Yes--in schools, colleges, and universities.</p>
+<p>There is an immense literature on this subject--an immense fund of knowledge.</p>
+<p>What is actually required is that the leaders of society come forward to understand this movement.</p>
+<p>Reporter: Have you ever had people come to you who had previously been involved with a fake guru? Srila Prabhupada: Yes, there are many.</p>
+<p>Reporter: Were their spiritual lives in any way spoiled by the fake gurus? Srila Prabhupada: No, they were genuinely seeking something spiritual, and that was their qualification.</p>
+<p>God is within everyone's heart, and as soon as someone genuinely seeks Him, He helps that person find a genuine guru.</p>
+<p>Reporter: Have the real gurus like yourself ever tried to put a stop to the false gurus-that is, put pressure on them to put them out of business, so to speak? Srila Prabhupada: No, that is not my purpose.</p>
+<p>I started my movement simply by chanting Hare Krishna.</p>
+<p>I chanted in New York in a place called Tompkins Square Park, and soon people began to come to me.</p>
+<p>In this way, the Krishna consciousness movement gradually developed.</p>
+<p>Many accepted, and many did not accept.</p>
+<p>Those who are fortunate have accepted.</p>
+<p>Reporter: Don't you feel that people are suspicious because of their experience with fake gurus? If you went to a quack dentist and he broke your tooth, you might be suspicious about going to another dentist.</p>
+<p>Srila Prabhupada: Yes.</p>
+<p>Naturally, if you are cheated, you become suspicious.</p>
+<p>But this does not mean that if you are cheated once, you will always be cheated.</p>
+<p>You should find someone genuine.</p>
+<p>But to come to Krishna consciousness, you must be either very fortunate or well aware of this science.</p>
+<p>From the Bhagavad-gita we understand that the genuine seekers are very few: manusyanam sahasresu kascid yatati siddhaye.</p>
+<p>Out of many millions of people, there may be only one who is interested in spiritual life.</p>
+<p>Generally, people are interested in eating, sleeping, mating, and defending.</p>
+<p>So how can we expect to find many followers? It is not difficult to notice that people have lost their spiritual interest.</p>
+<p>And almost all those who are actually interested are being cheated by so-called spiritualists.</p>
+<p>You cannot judge a movement simply by the number of its followers.</p>
+<p>If one man is genuine, then the movement is successful.</p>
+<p>It is not a question of quantity, but quality.</p>
+<p>Reporter: I wondered how many people you think might have been taken in by fake gurus.</p>
+<p>Srila Prabhupada: Practically everyone.</p>
+<p>[Laughter.] There is no question of counting.</p>
+<p>Everyone.</p>
+<p>Reporter: This would mean thousands of people, wouldn't it? Srila Prabhupada: Millions.</p>
+<p>Millions have been cheated, because they want to be cheated.</p>
+<p>God is omniscient.</p>
+<p>He can understand your desires.</p>
+<p>He is within your heart, and if you want to be cheated, God sends you a cheater.</p>
+<p>Reporter: ls it possible for everyone to attain the perfectional stage you spoke of previously? Srila Prabhupada: Within a second.</p>
+<p>Anyone can attain perfection within a second-providing he is willing.</p>
+<p>The difficulty is that no one is willing.</p>
+<p>In the Bhagavad-gita (18.66) Krishna says, sarva-dharman parityajya mam ekam saranam vraja: &quot;Simply surrender unto Me.&quot; But who is going to surrender to God? Everyone says, &quot;Oh, why should I surrender to God? I will be independent.&quot; If you simply surrender, it is a second's business.</p>
+<p>That's all.</p>
+<p>But no one is willing, and that is the difficulty.</p>
+<p>Reporter: When you say that lots of people want to be cheated, do you mean that lots of people want to carry on with their worldly pleasures and at the same time, by chanting a mantra or by holding a flower, achieve spiritual life as well? Is this what you mean by wanting to be cheated? Srila Prabhupada: Yes, this is like a patient thinking, &quot;I shall continue with my disease, and at the same time I shall become healthy.&quot; It is contradictory.</p>
+<p>The first requirement is that one become educated in spiritual life.</p>
+<p>Spiritual life is not something one can understand by a few minutes' talk.</p>
+<p>There are many philosophy and theology books, but people are not interested in them.</p>
+<p>That is the difficulty.</p>
+<p>For instance, the SrimadBhagavatam is a very long work, and if you try to read this book, it may take many days just to understand one line of it.</p>
+<p>The Bhagavatam describes God, the Absolute Truth, but people are not interested.</p>
+<p>And if, by chance, someone becomes a little interested in spiritual life, he wants something immediate and cheap.</p>
+<p>Therefore, he is cheated.</p>
+<p>Actually, human life is meant for austerity and penance.</p>
+<p>That is the way of Vedic civilization.</p>
+<p>In Vedic times they would train boys as brahmacaris; no sex life was allowed at all up to the age of twenty-five.</p>
+<p>Where is that education now? A brahmacari is a student who lives a life of complete celibacy and obeys the commands of his guru at the gurukula [school of the spiritual master].</p>
+<p>Now schools and colleges are teaching sex from the very beginning, and twelve- or thirteen-year-old boys and girls are having sex.</p>
+<p>How can they have a spiritual life? Spiritual life means voluntarily accepting some austerities for the sake of God realization.</p>
+<p>That is why we insist on no illicit sex, meateating, gambling, or intoxication for our initiated students.</p>
+<p>Without these restrictions, any &quot;yoga meditation&quot; or so-called spiritual discipline cannot be genuine.</p>
+<p>It is simply a business deal between the cheaters and the cheated.</p>
+<p>Reporter: Thank you very much.</p>
+<p>Srila Prabhupada: Hare Krishna.</p>
+<h2><a class="header" href="#the-absolute-necessity-of-a-spiritual-master" id="the-absolute-necessity-of-a-spiritual-master">The Absolute Necessity of a Spiritual Master</a></h2>
+<p>In February 1936, in Bombay, India, the members of a reputed religious society, the Gaudiya Matha, were astonished by the powerful and eloquent words of a young member who spoke in honor of his spiritual master, Srila Bhaktisiddhanta Sarasvati Gosvami.</p>
+<p>Three decades later, the young speaker would become the world-renowned founder and spiritual master of the Krishna consciousness movement.</p>
+<p>Srila Prabhupada's presentation is a memorable statement on the importance of the guru in spiritual life.</p>
+<p>saksad-dharitvena samasta-sastrair uktas tatha bhavyata eva sadbhih kintu prabhor yah priya eva tasya vande guroh sri-caranaravindam &quot;In the revealed scriptures it is declared that the spiritual master should be worshiped like the Supreme Personality of Godhead, and this injunction is obeyed by pure devotees of the Lord.</p>
+<p>The spiritual master is the most confidential servant of the Lord.</p>
+<p>Thus let us offer our respectful obeisances unto the lotus feet of our spiritual master.&quot; Gentlemen, on behalf of the members of the Bombay branch of the Gaudiya Matha, let me welcome you all because you have so kindly joined us tonight in our congregational offerings of homage to the lotus feet of the world teacher, Acaryadeva, who is the founder of this Gaudiya Mission and is the president-acarya of Sri Sri Visvavaisnava Raja-sabha--I mean my eternal divine master, Paramahamsa Parivrajakacarya Sri Srimad Bhaktisiddhanta Sarasvati Gosvami Maharaja.</p>
+<p>Sixty-two years ago, on this auspicious day, the Acaryadeva made his appearance by the call of Thakura Bhaktivinoda at Sri-ksetra Jagannatha-dhama at Puri.</p>
+<p>Gentlemen, the offering of such an homage as has been arranged this evening to the Acaryadeva is not a sectarian concern, for when we speak of the fundamental principle of gurudeva, or acaryadeva, we speak of something that is of universal application.</p>
+<p>There does not arise any question of discriminating my guru from yours or anyone else's.</p>
+<p>There is only one guru, who appears in an infinity of forms to teach you, me, and all others.</p>
+<p>The guru, or acaryadeva, as we learn from the bona fide scriptures, delivers the message of the absolute world, the transcendental abode of the Absolute Personality, where everything nondifferentially serves the Absolute Truth.</p>
+<p>We have heard so many times: mahajano yena gatah sa panthah (&quot;Traverse the trail which your previous acarya has passed&quot;), but we have hardly tried to understand the real purport of this sloka.</p>
+<p>If we scrutinizingly study this proposition, we understand that the mahajana is one, and the royal road to the transcendental world is also one.</p>
+<p>In the Mundaka Upanisad (1.2.12) it is said: tad-vijnanartham sa gurum evabhigacchet samit-panih srotriyam brahma-nistham &quot;In order to learn the transcendental science, one must approach the bona fide spiritual master in disciplic succession, who is fixed in the Absolute Truth.&quot; Thus it has been enjoined herewith that in order to receive that transcendental knowledge, one must approach the guru.</p>
+<p>Therefore, if the Absolute Truth is one, about which we think there is no difference of opinion, the guru also cannot be two.</p>
+<p>The Acaryadeva for whom we have assembled tonight to offer our humble homage is not the guru of a sectarian institution or one out of many differing exponents of the truth.</p>
+<p>On the contrary, he is the Jagad-guru, or the guru of all of us; the only difference is that some obey him wholeheartedly, while others do not obey him directly.</p>
+<p>In the Srimad-Bhagavatam (11.17.27) it is said: acaryam mam vijaniyan navamanyeta karhicit na martya-buddhyasuyeta sarva-devamayo guruh &quot;One should understand the spiritual master to be as good as I am,&quot; said the Blessed Lord.</p>
+<p>&quot;Nobody should be jealous of the spiritual master or think of him as an ordinary man, because the spiritual master is the sum total of all demigods.&quot; That is, the acarya has been identified with God Himself.</p>
+<p>He has nothing to do with the affairs of this mundane world.</p>
+<p>He does not descend here to meddle with the affairs of temporary necessities, but to deliver the fallen, conditioned souls--the souls, or entities, who have come here to the material world with a motive of enjoyment by the mind and the five organs of sense perception.</p>
+<p>He appears before us to reveal the light of the Vedas and to bestow upon us the blessings of full-fledged freedom, after which we should hanker at every step of our life's journey.</p>
+<p>The transcendental knowledge of the Vedas was first uttered by God to Brahma, the creator of this particular universe.</p>
+<p>From Brahma the knowledge descended to Narada, from Narada to Vyasadeva, from Vyasadeva to Madhva, and in this process of disciplic succession the transcendental knowledge was transmitted by one disciple to another till it reached Lord Gauranga, Sri Krishna Caitanya, who posed as the disciple and successor of Sri Isvara Puri.</p>
+<p>The present Acaryadeva is the tenth disciplic representative from Sri Rupa Gosvami, the original representative of Lord Caitanya who preached this transcendental tradition in its fullness.</p>
+<p>The knowledge that we receive from our Gurudeva is not different from that imparted by God Himself and the succession of the acaryas in the preceptorial line of Brahma.</p>
+<p>We adore this auspicious day as Sri Vyasa-puja-tithi, because the Acarya is the living representative of Vyasadeva, the divine compiler of the Vedas, the Puranas, the Bhagavad-gita, the Mahabharata, and the Srimad-Bhagavatam.</p>
+<p>One who interprets the divine sound, or sabda-brahma, by his imperfect sense perception cannot be a real spiritual guru, because, in the absence of proper disciplinary training under the bona fide acarya, the interpreter is sure to differ from Vyasadeva (as the Mayavadis do).</p>
+<p>Srila Vyasadeva is the prime authority of Vedic revelation, and therefore such an irrelevant interpreter cannot be accepted as the guru, or acarya, howsoever equipped he may be with all the acquirements of material knowledge.</p>
+<p>As it is said in the Padma Purana: sampradaya-vihina ye mantras te nisphala matah &quot;Unless you are initiated by a bona fide spiritual master in the disciplic succession, the mantra that you might have received is without any effect.&quot; On the other hand, one who has received the transcendental knowledge by aural reception from the bona fide preceptor in the disciplic chain, and who has sincere regard for the real acarya, must needs be enlightened with the revealed knowledge of the Vedas.</p>
+<p>But this knowledge is permanently sealed to the cognitive approach of the empiricists.</p>
+<p>As it is said in the Svetasvatara Upanisad (6.23): yasya deve para bhaktir yatha deve tatha gurau tasyaite kathita hy arthah prakasante mahatmanah &quot;Only unto those great souls who simultaneously have implicit faith in both the Lord and the spiritual master are all the imports of Vedic knowledge automatically revealed.&quot; Gentlemen, our knowledge is so poor, our senses are so imperfect, and our sources are so limited that it is not possible for us to have even the slightest knowledge of the absolute region without surrendering ourselves at the lotus feet of Sri Vyasadeva or his bona fide representative.</p>
+<p>Every moment we are being deceived by the knowledge of our direct perception.</p>
+<p>It is all the creation or concoction of the mind, which is always deceiving, changing, and flickering.</p>
+<p>We cannot know anything of the transcendental region by our limited, perverted method of observation and experiment.</p>
+<p>But all of us can lend our eager ears for the aural reception of the transcendental sound transmitted from that region to this through the unadulterated medium of Sri Gurudeva or Sri Vyasadeva.</p>
+<p>Therefore, gentlemen, we should surrender ourselves today at the feet of the representative of Sri Vyasadeva for the elimination of all our differences bred by our unsubmissive attitude.</p>
+<p>It is accordingly said in Sri Gita (4.34): tad viddhi pranipatena pariprasnena sevaya upadeksyanti te jnanam jnaninas tattva-darsinah &quot;Just approach the wise and bona fide spiritual master.</p>
+<p>Surrender unto him first and try to understand him by inquiries and service.</p>
+<p>Such a wise spiritual master will enlighten you with transcendental knowledge, for he has already known the Absolute Truth.&quot; To receive the transcendental knowledge we must completely surrender ourselves to the real acarya in a spirit of ardent inquiry and service.</p>
+<p>Actual performance of service to the Absolute under the guidance of the acarya is the only vehicle by which we can assimilate the transcendental knowledge.</p>
+<p>Today's meeting for offering our humble services and homage to the feet of the Acaryadeva will enable us to be favored with the capacity for assimilating the transcendental knowledge so kindly transmitted by him to all persons, without distinction.</p>
+<p>Gentlemen, we are all more or less proud of our past Indian civilization, but we actually do not know the real nature of that civilization.</p>
+<p>We cannot be proud of our past material civilization, which is now a thousand times greater than in days gone by.</p>
+<p>It is said that we are passing through the age of darkness, the Kali-yuga.</p>
+<p>What is this darkness? The darkness cannot be due to backwardness in material knowledge, because we now have more of it than formerly.</p>
+<p>If not we ourselves, our neighbors, at any rate, have plenty of it.</p>
+<p>Therefore, we must conclude that the darkness of the present age is not due to a lack of material advancement, but that we have lost the clue to our spiritual advancement, which is the prime necessity of human life and the criterion of the highest type of human civilization.</p>
+<p>Throwing of bombs from airplanes is no advancement of civilization from the primitive, uncivilized practice of dropping big stones on the heads of enemies from the tops of hills.</p>
+<p>Improvement of the art of killing our neighbors by means of machine guns and poisonous gases is certainly no advancement from primitive barbarism, which prided itself on its art of killing by bows and arrows.</p>
+<p>Nor does the development of a sense of pampered selfishness prove anything more than intellectual animalism.</p>
+<p>True human civilization is very different from all these states, and therefore in the Katha Upanisad (1.3.14) there is the emphatic call: uttisthata jagrata prapya varan nibodhata ksurasya dhara nisita duratyaya durgam pathas tat kavayo vadanti &quot;Please wake up and try to understand the boon that you now have in this human form of life.</p>
+<p>The path of spiritual realization is very difficult; it is sharp like a razor's edge.</p>
+<p>That is the opinion of learned transcendental scholars.&quot; Thus, while others were yet in the womb of historical oblivion, the sages of India had developed a different kind of civilization, which enabled them to know themselves.</p>
+<p>They had discovered that we are not at all material entities, but that we are all spiritual, permanent, and indestructible servants of the Absolute.</p>
+<p>But because we have, against our better judgment, chosen to completely identify ourselves with this present material existence, our sufferings have multiplied according to the inexorable law of birth and death, with its consequent diseases and anxieties.</p>
+<p>These sufferings cannot be really mitigated by any provision of material happiness, because matter and spirit are completely different elements.</p>
+<p>It is just as if you took an aquatic animal out of water and put it on the land, supplying all manner of happiness possible on land.</p>
+<p>The deadly sufferings of the animal are not capable of being relieved at all until it is taken out of its foreign environment.</p>
+<p>Spirit and matter are completely contradictory things.</p>
+<p>All of us are spiritual entities.</p>
+<p>We cannot have perfect happiness, which is our birthright, however much we may meddle with the affairs of mundane things.</p>
+<p>Perfect happiness can be ours only when we are restored to our natural state of spiritual existence.</p>
+<p>This is the distinctive message of our ancient Indian civilization, this is the message of the Gita, this is the message of the Vedas and the Puranas, and this is the message of all the real acaryas, including our present Acaryadeva, in the line of Lord Caitanya.</p>
+<p>Gentlemen, although it is imperfectly that we have been enabled by his grace to understand the sublime messages of our Acaryadeva, Om Visnupada Paramahamsa Parivrajakacarya Sri Srimad Bhaktisiddhanta Sarasvati Gosvami Maharaja, we must admit that we have realized definitely that the divine message from his holy lips is the congenial thing for suffering humanity.</p>
+<p>All of us should hear him patiently.</p>
+<p>If we listen to the transcendental sound without unnecessary opposition, he will surely have mercy upon us.</p>
+<p>The Acarya's Message is to take us back to our original home, back to God.</p>
+<p>Let me repeat, therefore, that we should hear him patiently, follow him in the measure of our conviction, and bow down at his lotus feet for releasing us from our present causeless unwillingness for serving the Absolute and all souls.</p>
+<p>From the Gita we learn that even after the destruction of the body, the atma, or the soul, is not destroyed; he is always the same, always new and fresh.</p>
+<p>Fire cannot burn him, water cannot dissolve him, the air cannot dry him up, and the sword cannot kill him.</p>
+<p>He is everlasting and eternal, and this is also confirmed in the Srimad-Bhagavatam (10.84.13): yasyatma-buddhih kunape tri-dhatuke sva-dhih kalatradisu bhauma ijya-dhih yat-tirtha-buddhih salile na karhicij janesv abhijnesu sa eva go-kharah &quot;Anyone who accepts this bodily bag of three elements [bile, mucus, and air] as his self, who has an affinity for an intimate relationship with his wife and children, who considers his land worshipable, who takes bath in the waters of the holy places of pilgrimage but never takes advantage of those persons who are in actual knowledge-he is no better than an ass or a cow.&quot; Unfortunately, in these days we have all been turned foolish by neglecting our real comfort and identifying the material cage with ourselves.</p>
+<p>We have concentrated all our energies for the meaningless upkeep of the material cage for its own sake, completely neglecting the captive soul within.</p>
+<p>The cage is meant for the undoing of the bird; the bird is not meant for the welfare of the cage.</p>
+<p>Let us, therefore, deeply ponder this.</p>
+<p>All our activities are now turned toward the upkeep of the cage, and the most we do is try to give some food to the mind by art and literature.</p>
+<p>But we do not know that this mind is also material in a more subtle form.</p>
+<p>This is stated in the Gita (7.4): bhumir apo 'nalo vayuh kham mano buddhir eva ca ahankara itiyam me bhinna prakrtir astadha &quot;Earth, fire, water, air, sky, intelligence, mind, and ego are all My separated energies.&quot; We have scarcely tried to give any food to the soul, which is distinct from the body and mind; therefore we are all committing suicide in the proper sense of the term.</p>
+<p>The message of the Acaryadeva is to give us a warning to halt such wrong activities.</p>
+<p>Let us therefore bow down at his lotus feet for the unalloyed mercy and kindness he has bestowed upon us.</p>
+<p>Gentlemen, do not for a moment think that my Gurudeva wants to put a complete brake on the modern civilization--an impossible feat.</p>
+<p>But let us learn from him the art of making the best use of a bad bargain, and let us understand the importance of this human life, which is fit for the highest development of true consciousness.</p>
+<p>The best use of this rare human life should not be neglected.</p>
+<p>As it is said in the Srimad-Bhagavatam (11.9.29): labdhva sudurlabham idam bahu-sambhavante manusyam arthadam anityam apiha dhirah turnam yateta na pated anu mrtyu yavan nihsreyasaya visayah khalu sarvatah syat &quot;This human form of life is obtained after many, many births, and although it is not permanent, it can offer the highest benefits.</p>
+<p>Therefore a sober and intelligent man should immediately try to fulfill his mission and attain the highest profit in life before another death occurs.</p>
+<p>He should avoid sense gratification, which is available in all circumstances.&quot; Let us not misuse this human life in the vain pursuit of material enjoyment, or, in other words, for the sake of only eating, sleeping, fearing, and sensuous activities.</p>
+<p>The Acaryadeva's message is conveyed by the words of Sri Rupa Gosvami (Bhaktirasamrta-sindhu 1.2.255-256): anasaktasya visayan yatharham upayunjatah nirbandhah Krishna-sambandhe yuktam vairagyam ucyate prapancikataya buddhya hari-sambandhi-vastunah mumuksubhih parityago vairagyam phalgu kathyate &quot;One is said to be situated in the fully renounced order of life if he lives in accordance with Krishna consciousness.</p>
+<p>He should be without attachment for sense gratification and should accept only what is necessary for the upkeep of the body.</p>
+<p>On the other hand, one who renounces things that could be used in the service of Krishna, under the pretext that such things are material, does not practice complete renunciation.</p>
+<p>The purport of these slokas can only be realized by fully developing the rational portion of our life, not the animal portion.</p>
+<p>Sitting at the feet of the Acaryadeva, let us try to understand from this transcendental source of knowledge what we are, what is this universe, what is God, and what is our relationship with Him.</p>
+<p>The message of Lord Caitanya is the message for the living entities and the message of the living world.</p>
+<p>Lord Caitanya did not bother Himself for the upliftment of this dead world, which is suitably named Martyaloka, the world where everything is destined to die.</p>
+<p>He appeared before us four hundred fifty years ago to tell us something of the transcendental universe, where everything is permanent and everything is for the service of the Absolute.</p>
+<p>But recently Lord Caitanya has been misrepresented by some unscrupulous persons, and the highest philosophy of the Lord has been misinterpreted to be the cult of the lowest type of society.</p>
+<p>We are glad to announce tonight that our Acaryadeva, with his usual kindness, saved us from this horrible type of degradation, and therefore we bow down at his lotus feet with all humility.</p>
+<p>Gentlemen, it has been a mania of the cultured (or uncultured) society of the present day to accredit the Personality of Godhead with merely impersonal features and to stultify Him by claiming that He has no senses, no form, no activity, no head, no legs, and no enjoyment.</p>
+<p>This has also been the pleasure of the modern scholars due to their sheer lack of proper guidance and true introspection in the spiritual realm.</p>
+<p>All these empiricists think alike: all the enjoyable things should be monopolized by the human society, or by a particular class only, and the impersonal God should be a mere ordersupplier for their whimsical feats.</p>
+<p>We are happy that we have been relieved of this horrible type of malady by the mercy of His Divine Grace Paramahamsa Parivrajakacarya Bhaktisiddhanta Sarasvati Gosvami Maharaja.</p>
+<p>He is our eye-opener, our eternal father, our eternal preceptor, and our eternal guide.</p>
+<p>Let us therefore bow down at his lotus feet on this auspicious day.</p>
+<p>Gentlemen, although we are like ignorant children in the knowledge of the Transcendence, still His Divine Grace, my Gurudeva, has kindled a small fire within us to dissipate the invincible darkness of empirical knowledge.</p>
+<p>We are now so much on the safe side that no amount of philosophical argument by the empiric schools of thought can deviate us an inch from the position of our eternal dependence on the lotus feet of His Divine Grace.</p>
+<p>Furthermore, we are prepared to challenge the most erudite scholars of the Mayavada school and prove that the Personality of Godhead and His transcendental sports in Goloka alone constitute the sublime information of the Vedas.</p>
+<p>There are explicit indications of this in the Chandogya Upanisad (8.13.1): syamac chavalam prapadye savalac chyamam prapadye &quot;For receiving the mercy of Krishna, I surrender unto His surrender unto Krishna.&quot; Also in the Rg Veda (1.22.20): tad visnoh paramam padam sada pasyanti surayah diviva caksur atatam visnor yat paramam padam &quot;The lotus feet of Lord Visnu are the supreme objective of all the demigods.</p>
+<p>These lotus feet of the Lord are as enlightening as the sun in the sky.&quot; The plain truth so vividly explained in the Gita, which is the central lesson of the Vedas, is not understood or even suspected by the most powerful scholars of the empiric schools.</p>
+<p>Herein lies the secret of Sri Vyasa-puja.</p>
+<p>When we meditate on the transcendental pastimes of the Absolute Godhead, we are proud to feel that we are His eternal servitors, and we become jubilant and dance with joy.</p>
+<p>All glory to my divine master, for it is he who has out of his unceasing flow of mercy stirred up within us such a movement of eternal existence.</p>
+<p>Let us bow down at his lotus feet.</p>
+<p>Gentlemen, had he not appeared before us to deliver us from the thralldom of this gross worldly delusion, surely we should have remained for lives and ages in the darkness of helpless captivity.</p>
+<p>Had he not appeared before us, we would not have been able to understand the eternal truth of the sublime teaching of Lord Caitanya.</p>
+<p>Had he not appeared before us, we could not have been able to know the significance of the first sloka of the Brahma-samhita: isvarah paramah Krishnah sac-cid-ananda-vigrahah anadir adir govindah sarva-karana-karanam &quot;Krishna, who is known as Govinda, is the Supreme Godhead.</p>
+<p>He has an eternal, blissful, spiritual body.</p>
+<p>He is the origin of all.</p>
+<p>He has no other origin, and He is the prime cause of all causes.&quot; Personally, I have no hope for any direct service for the coming crores of births of the sojourn of my life, but I am confident that some day or other I shall be delivered from this mire of delusion in which I am at present so deeply sunk.</p>
+<p>Therefore let me with all my earnestness pray at the lotus feet of my divine master to allow me to suffer the lot for which I am destined due to my past misdoings, but to let me have this power of recollection: that I am nothing but a tiny servant of the Almighty Absolute Godhead, realized through the unflinching mercy of my divine master.</p>
+<p>Let me therefore bow down at his lotus feet with all the humility at my command.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

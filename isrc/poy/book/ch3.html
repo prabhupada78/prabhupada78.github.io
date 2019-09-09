@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch3 - Perfection of Yoga</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html" class="active">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Perfection of Yoga</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#yoga-as-meditation-on-kṛṣṇa" id="yoga-as-meditation-on-kṛṣṇa">Yoga As Meditation On Kṛṣṇa</a></h1>
+<p>In India there are sacred places where yogīs go to meditate in solitude, as prescribed in Bhagavad-gītā.</p>
+<p>Traditionally, yoga cannot be executed in a public place, but insofar as kīrtana-mantra-yoga, or the yoga of chanting the Hare Kṛṣṇa mantra: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare—is concerned, the more people present, the better.</p>
+<p>When Lord Caitanya Mahāprabhu was performing kīrtana in India some five hundred years ago, He organized in each group sixteen people to lead the chanting, and thousands of people chanted with them.</p>
+<p>This participation in kīrtana, in the public chanting of the names and glories of God, is very possible and is actually easy in this age; but as far as the meditational process of yoga is concerned, that is very difficult.</p>
+<p>It is specifically stated in Bhagavad-gītā that to perform meditational yoga one should go to a secluded and holy place.</p>
+<p>In other words, it is necessary to leave home.</p>
+<p>In this age of overpopulation it is not always possible to find a secluded place, but this is not necessary in bhakti-yoga.</p>
+<p>In the bhakti-yoga system there are nine different processes: hearing, chanting, remembering, serving, worshiping the Deity in the temple, praying, carrying out orders, serving Kṛṣṇa as friend and sacrificing for Him.</p>
+<p>Out of these, śravaṇaṁ kīrtanam, hearing and chanting, are considered the most important.</p>
+<p>At a public kīrtana one person can chant Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare, while a group listens, and at the end of the mantra, the group can respond, and in this way there is a reciprocation of hearing and chanting.</p>
+<p>This can easily be performed in one's own home, with a small group of friends or with many people in a large public place.</p>
+<p>One may attempt to practice meditational yoga in a large city or in a society, but one must understand that this is one's own concoction and is not the method recommended in Bhagavad-gītā.</p>
+<p>The whole process of the yoga system is to purify oneself.</p>
+<p>And what is this purification? Purification ensues upon the realization of one's actual identity.</p>
+<p>Purification is realizing that “I am pure spirit—I am not this matter.” Due to material contact, we are identifying ourselves with matter, and we are thinking, “I am this body.” But in order to perform real yoga one must realize his constitutional position as being distinct from matter.</p>
+<p>The purpose of seeking out a secluded place and executing the meditational process is to come to this understanding.</p>
+<p>It is not possible to come to this understanding if one executes the process improperly.</p>
+<p>In any case, this is the consideration of Lord Caitanya Mahāprabhu: harer nāma harer nāma harer nāmaiva kevalam kalau nāsty eva nāsty eva nāsty eva gatir anyathā “In this age of quarrel and disagreement [Kali-yuga], there is no other way of spiritual realization but this chanting of the names.</p>
+<p>There is no other way, there is no other way, there is no other way.” It is generally thought, at least in the Western world, that the yoga system involves meditating on the void.</p>
+<p>But the Vedic literatures do not recommend meditating on any void.</p>
+<p>Rather, the Vedas maintain that yoga means meditation on Viṣṇu, and this is also maintained in Bhagavad-gītā.</p>
+<p>In many yoga societies we find that people sit cross-legged and very straight, then close their eyes to meditate, and so fifty percent of them go to sleep because when we close our eyes and have no subject matter for contemplation, we simply go to sleep.</p>
+<p>Of course this is not recommended by Śrī Kṛṣṇa in Bhagavad-gītā.</p>
+<p>One must sit very straight, and the eyes be only half-closed, gazing at the tip of one's nose.</p>
+<p>If one does not follow the instructions, the result will be sleep and nothing more.</p>
+<p>Sometimes, of course, meditation goes on when one is sleeping, but this is not the recommended process for the execution of yoga.</p>
+<p>Thus to keep oneself awake Kṛṣṇa advises that one always keep the tip of the nose visible.</p>
+<p>In addition, one must be always undisturbed.</p>
+<p>If the mind is agitated, or if there is a great deal of activity going on, one will not be able to concentrate.</p>
+<p>In meditational yoga one must also be devoid of fear.</p>
+<p>There is no question of fear when one enters spiritual life.</p>
+<p>And one must also be brahmacārī, completely free from sex life.</p>
+<p>Nor can there be any demands on one meditating in this way.</p>
+<p>When there are no demands, and one executes this system properly, then he can control his mind.</p>
+<p>After one has met all the requirements for meditation, he must transfer his whole thought to Kṛṣṇa, or Viṣṇu.</p>
+<p>It is not that one is to transfer his thought to vacancy.</p>
+<p>Thus Kṛṣṇa says that one absorbed in the meditational yoga system is “always thinking of Me.” The yogī obviously has to go through a great deal of difficulty to purify the ātmā (mind, body and soul), but it is a fact that this can be done most effectively in this age simply by the chanting of Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>Why is this? Because this transcendental sound vibration is nondifferent from Kṛṣṇa.</p>
+<p>When we chant His name with devotion, then Kṛṣṇa is with us, and when Kṛṣṇa is with us, then what is the possibility of remaining impure? Consequently, one absorbed in Kṛṣṇa consciousness, in chanting the names of Kṛṣṇa and serving Him always, receives the benefit of the highest form of yoga.</p>
+<p>The advantage is that he doesn't have to take all the trouble of the meditational process.</p>
+<p>That is the beauty of Kṛṣṇa consciousness.</p>
+<p>In yoga it is necessary to control all of the senses, and when all the senses are controlled, the mind must be engaged in thinking of Viṣṇu.</p>
+<p>One becomes peaceful after thus conquering material life.</p>
+<p>jitātmanaḥ praśāntasya paramātmā samāhitaḥ śitoṣṇa-sukha-duḥkheṣu tathā mānāpamānayoḥ “For one who has conquered the mind, the Supersoul is already reached, for he has attained tranquillity.” (Bg.6.7) This material world has been likened to a great forest fire.</p>
+<p>As in the forest, fire may automatically take place, so in this material world, although we may try to live peacefully, there is always a great conflagration.</p>
+<p>It is not possible to live in peace anywhere in the material world.</p>
+<p>But for one who is transcendentally situated—either by the meditational yoga system or by the empirical philosophical method, or by bhakti-yoga—peace is possible.</p>
+<p>All forms of yoga are meant for transcendental life, but the method of chanting is especially effective in this age.</p>
+<p>Kīrtana may go on for hours, and one may not feel tired, but it is difficult to sit in lotus position perfectly still for more than a few minutes.</p>
+<p>Yet regardless of the process, once the fire of material life is extinguished, one does not simply experience what is called the impersonal void.</p>
+<p>Rather, as Kṛṣṇa tells Arjuna, one enters into the supreme abode.</p>
+<p>yuñjann evaṁ sadātmānaṁ yogī niyata-mānasaḥ śāntiṁ nirvāṇa-paramāṁ mat-saṁsthām adhigacchati “By meditating in this manner, always controlling the body, mind and activities, the mystic transcendentalist attains to peace, the supreme nirvana which abides in Me.” (Bg.6.15) Kṛṣṇa's abode is not void.</p>
+<p>It is like an establishment, and in an establishment there is a variety of engagements.</p>
+<p>The successful yogī actually attains to the Kingdom of God, where there is spiritual variegatedness.</p>
+<p>The yoga processes are simply ways to elevate oneself to enter into that abode.</p>
+<p>Actually we belong to that abode, but, being forgetful, we are put in this material world.</p>
+<p>Just as a madman becomes crazy and is put into a lunatic asylum, so we, losing sight of our spiritual identity,become crazy and are put into this material world.</p>
+<p>Thus the material world is a sort of lunatic asylum, and we can easily notice that nothing is done very sanely here.</p>
+<p>Our real business is to get out and enter into the kingdom of God.</p>
+<p>In Bhagavad-gītā Kṛṣṇa gives information of this kingdom and also gives instructions about His position and our position—of what He is and what we are.</p>
+<p>All the information necessary is set forth in Bhagavad-gītā, and a sane man will take advantage of this knowledge.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

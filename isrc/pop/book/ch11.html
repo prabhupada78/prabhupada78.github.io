@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch11 - Path of Perfection</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html" class="active">ch11</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Path of Perfection</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-path-of-perfection" id="the-path-of-perfection">The Path of Perfection</a></h1>
+<p>mam upetya punarjanma duhkhalayam asasvatam napnu vanti mahatmanah samsiddhim paramam gatah &quot;After attaining Me, the great souls, who are yogis in devotion, never return to this temporary world, which is full of miseries, because they have attained the highest perfection.&quot; (Bg.8.15) This material world is certified by its very creator, the Supreme Lord, as duhkhalayam, which means &quot;the place of miseries.&quot; Since this is the case, how can we possibly make it comfortable by so-called scientific advancement? Duhkha means &quot;misery&quot; or &quot;suffering,&quot; and real suffering is birth, old age, disease, and death.</p>
+<p>We have set these problems aside because we cannot solve them; therefore scientists concentrate on atomic bombs and spaceships.</p>
+<p>Why can't they solve these important problems that are always causing us to suffer? Obviously, they haven't the power to do so.</p>
+<p>But in this verse, Sri Krsna gives the solution: mam upetya punar janma.</p>
+<p>That is, &quot;If one attains My platform, he does not come back again to this place of misery.&quot; Unfortunately, in the mode of ignorance, people cannot understand that they are in a miserable situation.</p>
+<p>Animals cannot understand their miserable situations because they haven't the reason.</p>
+<p>Man possesses reason whereby he can understand this, but in this age people are using their reasoning power in order to gratify their animal propensities.</p>
+<p>Reason should be used in getting liberated from this miserable condition.</p>
+<p>However, if we engage in Krsna consciousness twenty-four hours a day without deviation, we will go to Krsna and not be reborn in this miserable world.</p>
+<p>Mahatmanah samsiddhim paramam gatah: those great souls who have attained the highest perfection, Krsna consciousness, are forever freed from misery.</p>
+<p>In this verse, the word mahatma refers to a Krsna conscious man eligible to enter the abode of Krsna.</p>
+<p>The word mahatma does not refer to a political leader like Mahatma Gandhi but to a great soul, a pure devotee of Krsna.</p>
+<p>When Krsna says that the mahatma enters His abode, He is referring to His transcendental kingdom, Goloka Vrndavana.</p>
+<p>The Vrndavana from which I have come is called Bhauma Vrndavana, which means it is the same Vrndavana descended on this earth.</p>
+<p>Just as Krsna descended on this earth through His own internal potency, similarly His dhama, His abode, also descends.</p>
+<p>In other words, when Krsna descends on this earth, He manifests Himself in that particular land, Vrndavana, and therefore that land is also sacred.</p>
+<p>Apart from this, Krsna has His own abode in the spiritual sky, and this is called Goloka Vrndavana.</p>
+<p>The mahatma prepares in this life to enter that transcendental abode.</p>
+<p>The human form of life can utilize nature to its best interest.</p>
+<p>Animals cannot.</p>
+<p>These facilities should be utilized in striving to become a mahatma and putting an end to birth in this material world, which is characterized by threefold miseries.</p>
+<p>The threefold miseries are those that pertain to the mind or the body, natural disturbances, and miseries caused by other living entities.</p>
+<p>Whatever our position in this material world, there is always some kind of misery being inflicted upon us.</p>
+<p>Sri Krsna frankly says that it is not possible to avoid misery in this material world, because this world is meant for misery.</p>
+<p>Unless miseries are present, we cannot come to Krsna consciousness.</p>
+<p>Misery serves as an impetus to help elevate us to Krsna consciousness.</p>
+<p>An intelligent person understands that although he does not want misery, miseries are being inflicted upon him by force.</p>
+<p>No one wants misery, but a person should be intelligent enough to question, &quot;Why are these miseries being forced upon me?&quot; Unfortunately, in modern civilization, people try to set miseries aside, thinking, &quot;Oh, why suffer? Let me cover my miseries with some intoxication.&quot; However, the miseries of life cannot be solved by artificial intoxication.</p>
+<p>As soon as the intoxication is over, one returns to the same point.</p>
+<p>The miseries of material existence can be solved only by Krsna consciousness.</p>
+<p>If we always remain in Krsna consciousness, we'll be transferred to Krsna's planet upon leaving this material body.</p>
+<p>That is called the highest perfection.</p>
+<p>People may inquire, &quot;Well, you say that entering Krsna's planet constitutes the highest perfection, but we are interested in going to the moon.</p>
+<p>Is this not a kind of perfection?&quot; Well, the desire to enter the higher planets is always there in the human mind.</p>
+<p>In fact, another name for the living entity is sarva-gata, which means that he wants to travel everywhere.</p>
+<p>That is the nature of the living entity.</p>
+<p>Americans who have money often go to India, Europe, or some other country, because they do not like to stagnate in one place.</p>
+<p>That is our nature, and therefore we are interested in going to the moon or wherever.</p>
+<p>But according to Krsna, even if we attain the higher planets, we are still subject to the material miseries.</p>
+<p>abrahma-bhu vanal lokah punar avartino 'rjuna mam upetya tu kaunteya punarjanma na vidyate &quot;From the highest planet in the material world down to the lowest, all are places of misery wherein repeated birth and death take place.</p>
+<p>But one who attains to My abode, O son of Kunti, never takes birth again.&quot; (Bg.8.16) The universe is divided into fourteen planetary systems (caturdasabhuvana)--seven lower and seven higher.</p>
+<p>The earth is situated in the middle.</p>
+<p>In this verse, Sri Krsna says, abrahma-bhuvanal lokah: even if one enters the highest planet, Brahmaloka, there is still birth and death.</p>
+<p>The words punar avartinah mean &quot;returning again,&quot; or &quot;repetition of birth and death.&quot; We are changing bodies just as we change clothes, leaving one body and entering another.</p>
+<p>All planets are filled with living entities.</p>
+<p>We shouldn't think that only the earth is inhabited.</p>
+<p>There are living entities on the higher planets and lower planets as well.</p>
+<p>From our experience, we can see that no place on earth is vacant of living entities.</p>
+<p>If we dig into the earth, we find some worms, and if we go into the water we find many aquatics.</p>
+<p>The air is filled with birds, and if we analyze outer space, we will find many living entities.</p>
+<p>It is illogical to conclude that there are no living entities on the other planets.</p>
+<p>To the contrary, they are full of living entities.</p>
+<p>In any case, Krsna says that from the highest planet to the lowest planet, there is repetition of birth and death.</p>
+<p>Yet again, as in the former verse, He says, mam upetya: &quot;If you reach My planet, you don't have to return to this miserable material world.&quot; To stress this point, Sri Krsna repeats that upon reaching Goloka Vrndavana, His eternal abode, one is liberated from the cycle of birth and death and attains eternal life.</p>
+<p>It is the duty of human life to understand these problems and attain a blissful, eternal life that is full of knowledge.</p>
+<p>Unfortunately, people in this age have forgotten the aim of life.</p>
+<p>Why? Durasaya ye bahir-artha-maninah (SB.7.5.31).</p>
+<p>People have been trapped by the material glitter--by skyscrapers, big factories, and political activities.</p>
+<p>People do not stop to consider that however big the skyscraper may be, they will not be allowed to live there indefinitely.</p>
+<p>We should not spoil our energy, therefore, in building great cities but should employ our energy to elevate ourselves to Krsna consciousness.</p>
+<p>Krsna consciousness is not a religious formula or some spiritual recreation but is the most important factor in our lives.</p>
+<p>People are interested in attaining higher planets because there one's enjoyment is a thousand times greater and the duration of life much longer.</p>
+<p>sahasra-yuga-paryantam ahar yad brahmano viduh ratrim yuga-sahasrantam te 'ho-ratra-vido janah (Bg.8.17) The duration of the material universe is limited.</p>
+<p>It is manifested in cycles of kalpas.</p>
+<p>A kalpa is a day of Brahma, and one day of Brahma consists of a thousand cycles of four yugas, or ages: Satya, Treta, Dvapara, and Kali.</p>
+<p>The cycle of Satya is characterized by virtue, wisdom, and religion, there being practically no ignorance and vice, and the yuga lasts 1,728,000 years.</p>
+<p>In the Treta-yuga vice is introduced, and this yuga lasts 1,296,000 years.</p>
+<p>In the Dvapara-yuga there is an even greater decline in virtue and religion, vice increasing, and this yuga lasts 564,000 years.</p>
+<p>And finally, in Kali-yuga (the yuga we have now been experiencing over the past 5,000 years), there is an abundance of strife, ignorance, irreligion, and vice, true virtue being practically nonexistent, and this yuga lasts 432,000 years.</p>
+<p>In Kali-yuga vice increases to such a point that at the termination of the yuga, the Supreme Lord Himself appears as the Kalki-avatara, vanquishes the demons, saves His devotees, and commences another Satya-yuga.</p>
+<p>Then the process is set rolling again.</p>
+<p>These four yugas rotating a thousand times comprise one day of Brahma, the creator god, and the same number comprise one night.</p>
+<p>Brahma lives one hundred of such &quot;years&quot; and then dies.</p>
+<p>These &quot;hundred years&quot; by earth calculations total 31 I trillion and 40 million earth years.</p>
+<p>By these calculations, the life of Brahma seems fantastic and interminable, but from the viewpoint of eternity, it is as brief as a lightning flash.</p>
+<p>In the Causal Ocean there are innumerable Brahmas rising and disappearing like bubbles in the Atlantic.</p>
+<p>Brahma and his creation are all part of the material universe, and therefore they are in constant flux.</p>
+<p>In the material universe, not even Brahma is free from the process of birth, old age, disease, and death.</p>
+<p>Brahma, however, is directly engaged in the service of the Supreme Lord in the management of this universe; therefore he at once attains liberation.</p>
+<p>Elevated sannyasis are promoted to Brahma's particular planet, Brahmaloka, which is the highest planet in the material universe and which survives all the heavenly planets in the upper strata of the planetary system, but in due course Brahma and all inhabitants of Brahmaloka are subject to death, according to the law of material nature.</p>
+<p>So even if we live millions and trillions of years, we have to die.</p>
+<p>Death cannot be avoided.</p>
+<p>Throughout the entire universe the process of creation and annihilation is taking place, as described in the next verse: avyaktad vyaktayah sarvah prabha vanty ahar-agame ratry-agame praliyante tatraiva vyakta-samjnake &quot;When Brahma's day is manifest, this multitude of living entities comes into being, and at the arrival of Brahma's night they are all annihilated.&quot; (Bg.8.18) Unless we go to the spiritual sky, there is no escaping this process of birth and death, creation and annihilation.</p>
+<p>When Brahma's days are finished, all these planetary systems are covered by water, and when Brahma rises again, creation takes place.</p>
+<p>The word ahar means &quot;in the daytime,&quot; which is twelve hours of Brahma's life.</p>
+<p>During this time this material manifestation--all these planets--are seen, but when night comes they are all merged in water.</p>
+<p>That is, they are annihilated.</p>
+<p>The word ratry-agame means &quot;at the fall of night.&quot; During this time, all these planets are invisible because they are inundated with water.</p>
+<p>This flux is the nature of the material world.</p>
+<p>bhuta-gramah sa evayam bhutva bhutva praliyate ratry-agame 'vasah partha prabhavaty ahar-agame &quot;Again and again the day comes, and this host of beings is active; and again the night falls, O Partha, and they are helplessly dissolved.&quot; (Bg.8.19) Although we do not want devastation, devastation is inevitable.</p>
+<p>At night, everything is flooded, and when day appears, gradually the waters disappear.</p>
+<p>For instance, on this one planet, the surface is three-fourths covered with water.</p>
+<p>Gradually, land is emerging, and the day will come when there will no longer be water but simply land.</p>
+<p>That is nature's process.</p>
+<p>paras tasmat tu bhavo 'nyo 'vyakto 'vyaktat sanatanah yah sa sarvesu bhutesu nasyatsu na vinasyati &quot;Yet there is another nature, which is eternal and is transcendental to this manifested and nonmanifested matter.</p>
+<p>It is supreme and is never annihilated.</p>
+<p>When all in this world is annihilated, that part remains as it is.&quot; (Bg.8.20) We cannot calculate the length and breadth of this universe.</p>
+<p>There are millions and millions of universes like this within this material world, and above this material world is the spiritual sky, where the planets are all eternal.</p>
+<p>Life on those planets is also eternal.</p>
+<p>This material manifestation comprises only one fourth of the entire creation.</p>
+<p>Ekamsena sthito jagat.</p>
+<p>Ekamsena means &quot;one fourth.&quot; Three fourths of the creation is beyond this material sky, which is covered like a ball.</p>
+<p>This covering extends millions and millions of miles, and only after penetrating that covering can one enter the spiritual sky.</p>
+<p>That is open sky, eternal sky.</p>
+<p>In this verse it is stated, paras tasmat tu bhavo 'nyah: &quot;Yet there is another nature.&quot; The word bhava means another &quot;nature.&quot; We have experience only with this material nature, but from Bhagavad-gita we understand that there is a spiritual nature that is transcendental and eternal.</p>
+<p>We actually belong to that spiritual nature, because we are spirit, but presently we are covered by this material body, and therefore we are a combination of the material and spiritual.</p>
+<p>Just as we can understand that we are a combination of both natures, we should understand also that there is a spiritual world beyond this material universe.</p>
+<p>Spiritual nature is called superior, and material nature is called inferior, because without spirit, matter cannot move.</p>
+<p>This cannot be understood by experimental knowledge.</p>
+<p>We may look at millions and millions of stars through telescopes, but we cannot approach what we are seeing.</p>
+<p>Similarly, our senses are so insufficient that we cannot approach an understanding of the spiritual nature.</p>
+<p>Being incapable, we should not try to understand God and His kingdom by experimental knowledge.</p>
+<p>Rather, we have to understand by hearing Bhagavad-gita.</p>
+<p>There is no other way.</p>
+<p>If we want to know who our father is, we simply have to believe our mother.</p>
+<p>We have no other way of knowing except by her.</p>
+<p>Similarly, in order to understand who God is and what His nature is, we have to accept the information given in Bhagavadgita.</p>
+<p>There is no question of experimenting.</p>
+<p>Once we become advanced in Krsna consciousness, we will realize God and His nature.</p>
+<p>We can come to understand, &quot;Yes, there is God and a spiritual kingdom, and I have to go there.</p>
+<p>Indeed, I must prepare myself to go there.&quot; The word vyakta means &quot;manifest.&quot; This material universe that we are seeing (or partially seeing) before us is manifest.</p>
+<p>At least at night we can see that stars are twinkling and that there are innumerable planets.</p>
+<p>But beyond this vyakta is another nature, called avyakta, which is unmanifest.</p>
+<p>That is the spiritual nature, which is sanatana, eternal.</p>
+<p>This material nature has a beginning and an end, but that spiritual nature has neither beginning nor end.</p>
+<p>This material sky is within the covering of the mahat-tattva, matter.</p>
+<p>This matter is like a cloud.</p>
+<p>When there is a storm, it appears that the entire sky is covered with clouds, but actually only an insignificant part of the sky is covered.</p>
+<p>Because we are very minute, if just a few hundred miles are covered, it appears that the entire sky is covered.</p>
+<p>As soon as a wind comes and blows the clouds away, we can see the sky once again.</p>
+<p>Like the clouds, this mahattattva covering has a beginning and an end.</p>
+<p>Similarly, the material body, being a part of material nature, has a beginning and an end.</p>
+<p>The body is born, grows, stays for some time, leaves some by-products, dwindles, and then vanishes.</p>
+<p>Whatever material manifestation we see undergoes these six basic transformations.</p>
+<p>Whatever exists within material nature will ultimately be vanquished.</p>
+<p>But herein Krsna is telling us that beyond this vanishing, cloudlike material nature, there is a superior nature, which is sanatana, eternal.</p>
+<p>Yah sa sarvesu bhutesu nasyatsu na vinasyati.</p>
+<p>When this material manifestation is annihilated, that spiritual sky remains.</p>
+<p>This is called avyakto 'vyaktat.</p>
+<p>In the Second Canto of Srimad-Bhagavatam, we find a description of the spiritual sky and the people who live there.</p>
+<p>Its nature and features are also discussed.</p>
+<p>From this Second Canto we understand that there are spiritual airplanes in the spiritual sky, and that the living entities there--who are all liberated--travel like lightning on those planes throughout the spiritual sky.</p>
+<p>This material world is simply an imitation; whatever we see here is simply a shadow of what exists there.</p>
+<p>The material world is like a cinema, wherein we see but an imitation or a shadow of the real thing that is existing.</p>
+<p>This material world is only a shadow.</p>
+<p>As stated in Srimad-Bhagavatam (1.1.1), yatra tri-sargo 'mrsa: &quot;This illusory material world is a combination of matter.&quot; In store windows we often see mannequins, but no sane man thinks that these mannequins are real.</p>
+<p>He can see that they are imitations.</p>
+<p>Similarly, whatever we see here may be beautiful, just as a mannequin may be beautiful, but it is simply an imitation of the real beauty found in the spiritual world.</p>
+<p>As Sridhara Svami says, yat satyataya mithya-sargo 'pi satyavat pratiyate: the spiritual world is real, and this unreal material manifestation only appears to be real.</p>
+<p>We must understand that reality will never be vanquished and that in essence reality means eternality.</p>
+<p>Therefore material pleasure, which is temporary, is not actual; real pleasure exists in Krsna.</p>
+<p>Consequently, those who are after the reality don't participate in this shadow pleasure.</p>
+<p>Thus when everything in the material world is annihilated, that spiritual nature remains eternally, and it is the purpose of human life to reach that spiritual sky.</p>
+<p>Unfortunately, people are not aware of the reality of the spiritual sky.</p>
+<p>According to Srimad-Bhaga vatam (7.5.31), na te viduh svartha-gatim hi visnum: people do not know their selfinterest.</p>
+<p>They do not know that human life is meant for understanding spiritual reality and preparing oneself to be transferred to that reality.</p>
+<p>No one can remain here in this material world.</p>
+<p>All Vedic literatures instruct us in this way.</p>
+<p>Tamasi majyotir gama: &quot;Don't remain in this darkness.</p>
+<p>Go to the light.&quot; According to the Fifteenth Chapter of Bhagavad-gita (15.6), na tad bhasayate suryo na sasanko na pavakah yad gatva na nivartante tad dhama paramam mama &quot;That abode of Mine is not illumined by the sun or moon, nor by electricity.</p>
+<p>One who reaches it never returns to this material world.&quot; This material world is dark by nature, and we are artificially illuminating it with electric lights, fire, and so on.</p>
+<p>In any case, its nature is dark, but the spiritual nature is full of light.</p>
+<p>When the sun is present, there is no darkness; similarly, every planet in the spiritual sky is self-luminous.</p>
+<p>Therefore there is no darkness, nor is there need of sun, moon, or electricity.</p>
+<p>The word suryo means &quot;sun,&quot; sasanko means &quot;moon,&quot; and pavakah means &quot;fire&quot; or &quot;electricity.&quot; So these are not required in the spiritual sky for illumination.</p>
+<p>And again, Krsna herein says, yad gatva na nivartante tad dhama paramam mama: &quot;That is My supreme abode, and one who reaches it never returns to this material world.&quot; This is stated throughout Bhagavad-gita.</p>
+<p>Again, in this Eighth Chapter (Bg.8.21), avyakto 'ksara ity uktas tam ahuh paramam gatim yam prapya na nivartante tad dhama paramam mama &quot;That supreme abode is called unmanifested and infallible, and it is the supreme destination.</p>
+<p>When one goes there, he never comes back.</p>
+<p>That is My supreme abode.&quot; Again, the word avyakta, meaning &quot;unmanifest,&quot; is used.</p>
+<p>The word aksara means &quot;that which is never annihilated,&quot; or &quot;that which is infallible.&quot; This means that since the supreme abode is eternal, it is not subject to the six transformations mentioned previously.</p>
+<p>Because we are presently covered by a dress of material senses, we cannot see the spiritual world, and the spiritual nature is inconceivable for us.</p>
+<p>Yet we can feel that there is something spiritual present.</p>
+<p>Even a man completely ignorant of the spiritual nature can somehow feel its presence.</p>
+<p>One need only analyze his body silently: &quot;What am I? Am I this finger? Am I this body? Am I this hair? No, I am not this, and I am not that.</p>
+<p>I am something other than this body.</p>
+<p>I am something beyond this body.</p>
+<p>What is that? That is the spiritual.&quot; In this way, we can feel or sense the presence of spirituality within this matter.</p>
+<p>We can sense the absence of spirit when a body is dead.</p>
+<p>If we witness someone dying, we can sense that something is leaving the body.</p>
+<p>Although we do not have the eyes to see it, that something is spirit.</p>
+<p>Its presence in the body is explained in the very beginning of Bhagavadgita (2.17): avinasi tu tad viddhi yena sarvam idam tatam vinasam a vyayasyasya na kascit kartum arhati &quot;Know that which pervades the entire body is indestructible.</p>
+<p>No one is able to destroy the imperishable soul.&quot; Spiritual existence is eternal, whereas the body is not.</p>
+<p>It is said that the spiritual atmosphere is avyakta, unmanifest.</p>
+<p>How, then, can it be manifest for us? Making the unmanifest manifest is this very process of Krsna consciousness.</p>
+<p>According to Padma Purana, atah sri-krsna-namadi na bha ved grahyam indriyaih sevonmukhe hijih vadau svayam eva sphuraty adah &quot;No one can understand Krsna as He is by the blunt material senses.</p>
+<p>But He reveals Himself to the devotees, being pleased with them for their transcendental loving service unto Him.&quot; In this verse, the word indriyaih means &quot;the senses.&quot; We have five senses for gathering knowledge (eyes, ears, nose, tongue, and skin), and five senses for working (voice, hands, legs, genitals, and anus).</p>
+<p>These ten senses are under the control of the mind.</p>
+<p>It is stated in this verse that with these dull material senses, we cannot understand Krsna's name, form, and so forth.</p>
+<p>Why is this? Krsna is completely spiritual, and He is also absolute.</p>
+<p>Therefore His name, form, qualities, and paraphernalia are also spiritual.</p>
+<p>Due to material conditioning, or material bondage, we cannot presently understand what is spiritual, but this ignorance can be removed by chanting Hare Krsna.</p>
+<p>If a man is sleeping, he can be awakened by sound vibration.</p>
+<p>You can call him, &quot;Come on, it's time to get up!&quot; Although the person is unconscious, hearing is so prominent that even a sleeping man can be awakened by sound vibration.</p>
+<p>Similarly, overpowered by this material conditioning, our spiritual consciousness is presently sleeping, but it can be revived by this transcendental vibration of Hare Krsna, Hare Krsna, Krsna Krsna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare.</p>
+<p>As stated before, Hare refers to the energy of the Lord, and Krsna and Rama refer to the Lord Himself.</p>
+<p>Therefore, when we chant Hare Krsna, we are praying, &quot;O Lord, O energy of the Lord, please accept me.&quot; We have no other prayer than &quot;Please accept me.&quot; Lord Caitanya Mahaprabhu taught us that we should simply cry and pray that the Lord accept us.</p>
+<p>As Caitanya Mahaprabhu Himself prayed, ayi nanda-tanuja kinkaram patitam mam visame bhavambudhau krpaya ta va pada-pankajasthita-dhuii-sadrsam vicintaya &quot;O Krsna, son of Nanda, somehow or other I have fallen into this ocean of nescience and ignorance.</p>
+<p>Please pick me up and place me as one of the atoms at Your lotus feet.&quot; If a man has fallen into the ocean, his only hope for survival is that someone comes to pick him up.</p>
+<p>He only has to be lifted one inch above the water in order to feel immediate relief.</p>
+<p>Similarly, as soon as we take to Krsna consciousness, we are lifted up, and we feel immediate relief.</p>
+<p>We cannot doubt that the transcendental is there.</p>
+<p>Bhagavad-gita is being spoken by the Supreme Personality of Godhead Himself; therefore we should not doubt His word.</p>
+<p>The only problem is feeling and understanding what He is telling us.</p>
+<p>That understanding must be developed gradually, and that knowledge will be revealed by the chanting of Hare Krsna.</p>
+<p>By this simple process, we can come to understand the spiritual kingdom, the self, the material world, God, the nature of our conditioning, liberation from material bondage, and everything else.</p>
+<p>This is called ceto-darpana-marjanam, cleaning the dusty mirror of the impure mind.</p>
+<p>Whatever the case, we must have faith in the word of Krsna.</p>
+<p>When we purchase a ticket on Pan American or Air India, we have faith that that company will take us to our destination.</p>
+<p>Faith is created because the company is authorized.</p>
+<p>Our faith should not be blind; therefore we should accept that which is recognized.</p>
+<p>Bhagavad-gita has been recognized as authorized scripture in India for thousands of years, and even outside India there are many scholars, religionists, and philosophers who have accepted Bhagavad-gita as authoritative.</p>
+<p>It is said that even such a great scientist as Albert Einstein was reading Bhagavad-gita regularly.</p>
+<p>So we should not doubt Bhagavad-gita's authenticity.</p>
+<p>Therefore when Lord Krsna says that there is a supreme abode and that we can go there, we should have faith that such an abode exists.</p>
+<p>Many philosophers think that the spiritual abode is impersonal or void.</p>
+<p>Impersonalists like the Sankarites and Buddhists generally speak of the void or emptiness, but Bhagavad-gita does not disappoint us in this way.</p>
+<p>The philosophy of voidism has simply created atheism, because it is the nature of the living entity to want enjoyment.</p>
+<p>As soon as he thinks that his future is void, he will try to enjoy the variegatedness of this material life.</p>
+<p>Thus impersonalism leads to armchair philosophical discussions and attachment to material enjoyment.</p>
+<p>We may enjoy speculating, but no real spiritual benefit can be derived from such speculation.</p>
+<p>Bhaktih paresanubha vo viraktir anyatra ca (SB.11.2.42).</p>
+<p>Once we have developed the devotional spirit, we will become immediately detached from all kinds of material enjoyment.</p>
+<p>As soon as a hungry man eats, he feels immediate satisfaction and says, &quot;No, I don't want any more.</p>
+<p>I am satisfied.&quot; This satisfaction is a characteristic of the Krsna conscious man.</p>
+<p>brahma-bhutah prasannatma na socati na kanksati samah sarvesu bhutesu mad-bhaktim labhate param &quot;One who is thus transcendentally situated at once realizes the Supreme Brahman.</p>
+<p>He never laments nor desires to have anything; he is equally disposed to every living entity.</p>
+<p>In that state he attains pure devotional service unto Me.&quot; (Bg.18.54) As soon as one is spiritually realized, he feels full satisfaction and no longer hankers after flickering material enjoyment.</p>
+<p>As stated in the Second Chapter of Bhagavad-gita (2.59), visaya vinivartante niraharasya dehinah rasa-varjam raso 'py asya param drstva nivartate &quot;The embodied soul may be restricted from sense enjoyment, though the taste for sense objects remains.</p>
+<p>But, ceasing such engagements by experiencing a higher taste, he is fixed in consciousness.&quot; A doctor may tell a diseased man, &quot;Don't eat this.</p>
+<p>Don't eat that.</p>
+<p>Don't have sex.</p>
+<p>Don't.</p>
+<p>Don't.&quot; In this way, a diseased man is forced to accept so many &quot;don'ts,&quot; but inside he is thinking, &quot;Oh, if I can just get these things, I'll be happy.&quot; The desires remain inside.</p>
+<p>However, when one is established in Krsna consciousness, he is so strong inside that he doesn't experience the desire.</p>
+<p>Although he's not impotent, he doesn't want sex.</p>
+<p>He can marry thrice, but still be detached.</p>
+<p>Param drstva nivartate.</p>
+<p>When something superior is acquired, one naturally gives up all inferior things.</p>
+<p>That which is superior is the Supreme Personality of Godhead, and atheism and impersonalism cannot give us this.</p>
+<p>He is attained only by unalloyed devotion.</p>
+<p>purusah sa parah partha bhaktya labhyas tv ananyaya yasyantah-sthani bhutani yena sarvam idam tatam &quot;The Supreme Personality of Godhead, who is greater than all, is attained by unalloyed devotion.</p>
+<p>Although He is present in His abode, He is all-pervading, and everything is situated within Him.&quot; (Bg.8.22) The words purusah sa parah indicate the supreme person who is greater than all others.</p>
+<p>This is not a void speaking, but a person who has all the characteristics of personality in full.</p>
+<p>Just as we are talking face to face, when we reach the supreme abode we can talk to God face to face.</p>
+<p>We can play with Him, eat with Him, and everything else.</p>
+<p>This state is not acquired by mental speculation but by transcendental loving service (bhaktya labhyah).</p>
+<p>The words tv ananyaya indicate that this bhakti must be without adulteration.</p>
+<p>It must be unalloyed.</p>
+<p>Although the Supreme Personality is a person and is present in His abode in the spiritual sky, He is so widespread that everything is within Him.</p>
+<p>He is both inside and outside.</p>
+<p>Although God is everywhere, He still has His kingdom, His abode.</p>
+<p>The sun may pervade the universe with its sunshine, yet the sun itself is a separate entity.</p>
+<p>In His supreme abode, the Supreme Lord has no rival.</p>
+<p>Wherever we may be, we find a predominating personality.</p>
+<p>In the United States, the predominating personality is the President.</p>
+<p>However, when the next election comes, the President will have so many rivals, but in the spiritual sky the Supreme Lord has no rival.</p>
+<p>Those who want to become rivals are placed in this material world, under the conditions of material nature.</p>
+<p>In the spiritual sky there is no rivalry, and all the inhabitants therein are liberated souls.</p>
+<p>From Srimad-Bhagavatam we receive information that their bodily features resemble gods.</p>
+<p>In some of the spiritual planets, God manifests a two-armed form, and in others He manifests a four-armed form.</p>
+<p>The living entities of those planets have corresponding features, and one cannot distinguish who is God and who is not.</p>
+<p>This is called sarupya-mukti liberation, wherein one has the same features as the Lord.</p>
+<p>There are five kinds of liberation: sayujya, sarupya, salokya, sarsti, and samipya.</p>
+<p>Sayujya-mukti means merging into God's impersonal effulgence, the brahmajyoti.</p>
+<p>We have discussed this, and have concluded that the attempt to merge and lose individuality is not desirable and is very risky.</p>
+<p>Sarupya-mukti means attaining a body exactly like God's.</p>
+<p>Salokya-mukti means living on the same planet with God.</p>
+<p>Sarsti-mukti means having the opulence of God.</p>
+<p>For instance, God is very powerful, and we can become powerful like Him.</p>
+<p>That is called sarsti.</p>
+<p>Samipya-mukti means always remaining with God as one of His associates.</p>
+<p>For instance, Arjuna is always with Krsna as His friend, and this is called samipya-mukti.</p>
+<p>We can attain any one of these five types of liberation, but out of these five, sayujya-mukti, merging into the brahmajyoti, is rejected by Vaisnava philosophy.</p>
+<p>According to the Vaisnava philosophy, we worship God as He is and retain our separate identity eternally in order to serve Him.</p>
+<p>According to the Mayavada philosophy, impersonalism, one tries to lose his individual identity and merge into the existence of the Supreme.</p>
+<p>That, however, is a suicidal policy and is not recommended by Krsna in Bhagavad-gita.</p>
+<p>This has also been rejected by Lord Caitanya Mahaprabhu, who advocated worship in separation.</p>
+<p>As stated before, the pure devotee does not even want liberation; he simply asks to remain Krsna's devotee birth after birth.</p>
+<p>This is Lord Caitanya Mahaprabhu's prayer, and the words &quot;birth after birth&quot; indicate that there is no liberation.</p>
+<p>This means that the devotee doesn't care whether he is liberated or not.</p>
+<p>He simply wants to engage in Krsna consciousness, to serve the Supreme Lord.</p>
+<p>Always wanting to engage in God's transcendental loving service is the symptom of pure devotion.</p>
+<p>Of course, wherever a devotee is, he remains in the spiritual kingdom, even though in the material body.</p>
+<p>On his part, he does not demand any of the five types of liberation, nor anything for his personal superiority or comfort.</p>
+<p>But in order to associate with God in the spiritual planets, one must become His pure devotee.</p>
+<p>For those who are not pure devotees, Lord Krsna explains at what times one should leave the body in order to attain liberation.</p>
+<p>yatra kale tv anavrttim avrttim caiva yoginah prayata yanti tam kalam vaksyami bharatarsabha &quot;O best of the Bharatas, I shall now explain to you the different times at which, passing away from this world, one does or does not come back.&quot; (Bg.8.23) In India, unlike in the West, it is common for astrologers to make minute calculations of the astronomical situation at the moment of one's birth.</p>
+<p>Indeed, a person's horoscope is read not only when he is born but also when he dies, in order to determine what his situation will be in the next life.</p>
+<p>All this can be determined by astrological calculation.</p>
+<p>In this verse, Lord Krsna is accepting those astrological principles, confirming that if one leaves his body at a particular time, he may attain liberation.</p>
+<p>If one dies at one moment, he may be liberated, or if he dies at another moment, he may have to return to the material world.</p>
+<p>It is all a question of &quot;chance,&quot; but that chance someway or other is what one has.</p>
+<p>For the devotee, however, there is no question of chance.</p>
+<p>Whatever the astrological situation, the devotee in Krsna consciousness is guaranteed liberation.</p>
+<p>For others, there are chances that if they leave their body at a particular moment, they may attain liberation and enter the spiritual kingdom, or they may be reborn.</p>
+<p>agnirjyotir ahah suklah san-masa uttarayanam tatra prayata gacchanti brahma brahma-vido janah &quot;Those who know the Supreme Brahman pass away from the world during the influence of the fiery god, in the light, at an auspicious moment, during the fortnight of the moon and the six months when the sun travels in the north.&quot; (Bg.8.24) As we all know, the sun's movements are different: six months it is north of the equator, and six months it is south.</p>
+<p>The sun is also moving, according to Vedic calculations, and from Srimad-Bhagavatam we are informed that the sun is situated at the center of the universe.</p>
+<p>Just as all the planets are moving, the sun is also moving at a speed calculated to be sixteen thousand miles per second.</p>
+<p>If a person dies when the sun is in the northern hemisphere, he can attain liberation.</p>
+<p>That is not only the verdict of Bhagavad-gita, but also of other scriptures.</p>
+<p>dhumo ratris tatha krsnah san-masa daksinayanam tatra candramasam jyotir yogi prapya nivartate &quot;The mystic who passes away from this world during the smoke, the night, the moonless fortnight, or in the six months when the sun passes to the south, or who reaches the moon planet, again comes back.&quot; (Bg.8.25) No one can say when he is going to die, and in that sense the moment of one's death is accidental.</p>
+<p>However, for a devotee in Krsna consciousness, there is no question of &quot;accidents.&quot; sukla-krsne gati hy ete jagatah sasvate mate ekaya yaty anavrttim anyayavartate punah &quot;According to the Vedas, there are two ways of passing from this world--one in light and one in darkness.</p>
+<p>When one passes in light, he does not come back; but when one passes in darkness, he returns.&quot; (Bg.8.26) The same description of departure and return is quoted by Acarya Baladeva Vidyabhusana from the Chandogya Upanisad.</p>
+<p>In such a way, those who are fruitive laborers and philosophical speculators from time immemorial are constantly going and coming.</p>
+<p>Actually they do not attain ultimate salvation, for they do not surrender to Krsna.</p>
+<p>naite srti partha janan yogi muhyati kascana tasmat sarvesu kalesu yoga-yukto bhavarjuna &quot;The devotees who know these two paths, O Arjuna, are never bewildered.</p>
+<p>Therefore be always fixed in devotion.&quot; (Bg.8.27) Herein the Lord confirms that there is no &quot;chance&quot; for one who practices bhakti-yoga.</p>
+<p>His destination is certain.</p>
+<p>Whether he dies when the sun is in the northern or southern hemisphere is of no importance.</p>
+<p>As we have already stated, if one thinks of Krsna at the time of death, he will at once be transferred to Krsna's abode.</p>
+<p>Therefore Krsna tells Arjuna to always remain in Krsna consciousness.</p>
+<p>This is possible through the chanting of Hare Krsna.</p>
+<p>Since Krsna and His spiritual kingdom are nondifferent, being absolute, Krsna and His sound vibration are the same.</p>
+<p>Simply by vibrating Krsna's name, we can enjoy Krsna's association.</p>
+<p>If we are walking down the street chanting Hare Krsna, Krsna is also going with us.</p>
+<p>If we walk down the street and look up at the sky, we may see that the sun or the moon is accompanying us.</p>
+<p>I can recall about fifty years ago, when I was a householder, my second son, who was about four years old at the time, was walking with me down the street, and he suddenly asked me, &quot;Father, why is the moon going with us?&quot; If a material object like the moon has the power to accompany us, we can surely understand that the Supreme Lord, who is all-powerful, can always remain with us.</p>
+<p>Being omnipotent, He can always keep us company, provided that we are also qualified to keep His company.</p>
+<p>Pure devotees are always merged in the thought of Krsna and are always remembering that Krsna is with them.</p>
+<p>Lord Caitanya Mahaprabhu has confirmed the absolute nature of Krsna in His Siksastaka (verse 2): namnam akari bahudha nija-sarva-saktis tatrarpita niyamitah smarane na kalah etadrsi ta va krpa bhagavan mamapi durdaivam idrsam ihajani nanuragah &quot;My Lord, O Supreme Personality of Godhead, in Your holy name there is all good fortune for the living entity, and therefore You have many names, such as Krsna and Govinda, by which You expand Yourself.</p>
+<p>You have invested all Your potencies in those names, and there are no hard-andfast rules for remembering them.</p>
+<p>My dear Lord, although You bestow such mercy upon the fallen, conditioned souls by liberally teaching Your holy names, I am so unfortunate that I commit offenses while chanting the holy name, and therefore I do not achieve attachment for chanting.&quot; We may take the effort to spend a great deal of money and attempt to build or establish a temple for Krsna, but if we do so we must observe many rules and regulations and see properly to the temple's management.</p>
+<p>But herein it is confirmed that simply by chanting, any man can have the benefit of keeping company with Krsna.</p>
+<p>Just as Arjuna is deriving benefit by being in the same chariot with Lord Sri Krsna, we can also benefit by associating with Krsna through the chanting of His holy names--Hare Krsna, Hare Krsna, Krsna Krsna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare.</p>
+<p>This maha-mantra is not my personal concoction but is authorized by Lord Caitanya Mahaprabhu, who is considered to be not only an authority but the incarnation of Lord Sri Krsna Himself.</p>
+<p>It was Lord Caitanya Mahaprabhu who said, &quot;O Lord, You are so kind to the people of this material world that You expand Yourself in Your holy name so that they can associate with You.&quot; Although the maha-mantra is in the Sanskrit language and many people do not know its meaning, it is still so attractive that people participate when it is chanted publicly.</p>
+<p>When chanting the maha-mantra, we are completely safe, even in this most dangerous position.</p>
+<p>We should always be aware that in this material world, we are always in a dangerous position.</p>
+<p>Srimad-Bhagavatam confirms: padam padam yad vipadam na tesam.</p>
+<p>In this world, there is danger at every step.</p>
+<p>The devotees of the Lord, however, are not meant to remain in this miserable, dangerous place.</p>
+<p>Therefore we should take care to advance in Krsna consciousness while in this human form.</p>
+<p>Then our happiness is assured.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch10.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch10.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
