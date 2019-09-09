@@ -84,7 +84,7 @@ It is very simple to understand.
 
 I have changed so many bodies, not only from childhood to boyhood to youth, but according to medical science we are changing bodies every second, imperceptibly.
 
-This Process indicates that the soul is permanent.
+This process indicates that the soul is permanent.
 
 Although I have changed many bodies, I remember my baby body and my childhood body—I am the same person, soul.
 
@@ -166,9 +166,7 @@ That is called perfection of yoga.
 
 Actually this yoga system is very, very difficult.
 
-It may be possible for some solitary man, but for the general mass of people it is not recommended in the scriptures: harer nāma harer nāma harer nāmaiva kevalam/ kalau nāsty eva nāsty eva nāsty eva gatir anyathā [Cc.
-
-Ādi 17.21].
+It may be possible for some solitary man, but for the general mass of people it is not recommended in the scriptures: harer nāma harer nāma harer nāmaiva kevalam/ kalau nāsty eva nāsty eva nāsty eva gatir anyathā [Cc.Ādi 17.21].
 
 "In this age of Kali one must chant the holy names of the Lord for deliverance.
 
@@ -182,7 +180,7 @@ In the Tretā-yuga one could practice yoga by performing great sacrifices, and i
 
 The present age is called Kali-yuga.
 
-Kaliyuga means the age of quarrel and disagreement.
+Kali-yuga means the age of quarrel and disagreement.
 
 No one agrees with anyone else.
 
@@ -260,7 +258,7 @@ If our education extends only to these points (the dog is eating according to hi
 
 The principle is still eating.
 
-Similarly, you may sleep in a very nice apartment in a sixstory building or in a 122-story building, and the dog may lie in a street, but when he sleeps and when you sleep, there is no difference.
+Similarly, you may sleep in a very nice apartment in a six-story building or in a 122-story building, and the dog may lie in a street, but when he sleeps and when you sleep, there is no difference.
 
 You cannot know whether you are sleeping in a skyscraper or on the ground because you are dreaming something which has taken you from your bed.
 
