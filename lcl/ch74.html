@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Notes - Life comes from Life</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="ch74.html" class="active">Notes</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li><li class="affix"><a href="ch12.html">ch12</a></li><li class="affix"><a href="ch13.html">ch13</a></li><li class="affix"><a href="ch14.html">ch14</a></li><li class="affix"><a href="ch15.html">ch15</a></li><li class="affix"><a href="ch16.html">ch16</a></li><li class="affix"><a href="ch17.html">ch17</a></li><li class="affix"><a href="ch18.html">ch18</a></li><li class="affix"><a href="ch19.html">ch19</a></li><li class="affix"><a href="ch20.html">ch20</a></li><li class="affix"><a href="ch21.html">ch21</a></li><li class="affix"><a href="ch22.html">ch22</a></li><li class="affix"><a href="ch23.html">ch23</a></li><li class="affix"><a href="ch24.html">ch24</a></li><li class="affix"><a href="ch25.html">ch25</a></li><li class="affix"><a href="ch26.html">ch26</a></li><li class="affix"><a href="ch27.html">ch27</a></li><li class="affix"><a href="ch28.html">ch28</a></li><li class="affix"><a href="ch29.html">ch29</a></li><li class="affix"><a href="ch30.html">ch30</a></li><li class="affix"><a href="ch31.html">ch31</a></li><li class="affix"><a href="ch32.html">ch32</a></li><li class="affix"><a href="ch33.html">ch33</a></li><li class="affix"><a href="ch34.html">ch34</a></li><li class="affix"><a href="ch35.html">ch35</a></li><li class="affix"><a href="ch36.html">ch36</a></li><li class="affix"><a href="ch37.html">ch37</a></li><li class="affix"><a href="ch38.html">ch38</a></li><li class="affix"><a href="ch39.html">ch39</a></li><li class="affix"><a href="ch40.html">ch40</a></li><li class="affix"><a href="ch41.html">ch41</a></li><li class="affix"><a href="ch42.html">ch42</a></li><li class="affix"><a href="ch43.html">ch43</a></li><li class="affix"><a href="ch44.html">ch44</a></li><li class="affix"><a href="ch45.html">ch45</a></li><li class="affix"><a href="ch46.html">ch46</a></li><li class="affix"><a href="ch47.html">ch47</a></li><li class="affix"><a href="ch48.html">ch48</a></li><li class="affix"><a href="ch49.html">ch49</a></li><li class="affix"><a href="ch50.html">ch50</a></li><li class="affix"><a href="ch51.html">ch51</a></li><li class="affix"><a href="ch52.html">ch52</a></li><li class="affix"><a href="ch53.html">ch53</a></li><li class="affix"><a href="ch54.html">ch54</a></li><li class="affix"><a href="ch55.html">ch55</a></li><li class="affix"><a href="ch56.html">ch56</a></li><li class="affix"><a href="ch57.html">ch57</a></li><li class="affix"><a href="ch58.html">ch58</a></li><li class="affix"><a href="ch59.html">ch59</a></li><li class="affix"><a href="ch60.html">ch60</a></li><li class="affix"><a href="ch61.html">ch61</a></li><li class="affix"><a href="ch62.html">ch62</a></li><li class="affix"><a href="ch63.html">ch63</a></li><li class="affix"><a href="ch64.html">ch64</a></li><li class="affix"><a href="ch65.html">ch65</a></li><li class="affix"><a href="ch66.html">ch66</a></li><li class="affix"><a href="ch67.html">ch67</a></li><li class="affix"><a href="ch68.html">ch68</a></li><li class="affix"><a href="ch69.html">ch69</a></li><li class="affix"><a href="ch70.html">ch70</a></li><li class="affix"><a href="ch71.html">ch71</a></li><li class="affix"><a href="ch72.html">ch72</a></li><li class="affix"><a href="ch73.html">ch73</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Life comes from Life</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#life-comes-from-life---notes" id="life-comes-from-life---notes">Life Comes From Life - Notes</a></h1>
+<p>1.Vedic knowledge was originally handed down as one Veda.</p>
+<p>About five thousand years ago the sage Vyasadeva divided it into four Vedas (Rg, Yajur, Sama and Atharva) so that less intelligent people might understand it.</p>
+<p>Vyasadeva was an empowered incarnation of God.</p>
+<p>He also undertook the task of expanding the Vedas into eighteen Puranas and the Mahabharata, and he summed up all the Vedic literature in the Vedanta-sutra.</p>
+<p>But he was still dissatisfied with this colossal literary achievement.</p>
+<p>Therefore, under the direction of his spiritual master, Narada Muni, he wrote the Srimad-Bhagavatam, which is &quot;the ripened fruit of Vedic knowledge.&quot; 2.Bhagavad-gita is widely renowned throughout the world as the essence of Vedic knowledge.</p>
+<p>It contains the sacred instructions given by Lord Krsna, the Supreme Personality of Godhead, to Arjuna, His intimate devotee, on the Battlefield of Kuruksetra.</p>
+<p>In these instructions Lord Krsna gives a scientific exposition of the perfect path to self-realization in the present dark age of hypocrisy and quarrel.</p>
+<p>Originally written in Sanskrit, Bhagavad-gita has been published in almost every language in the world (there are more than six hundred English translations alone), but Bhagavad-gita As It Is.</p>
+<p>by His Divine Grace A.C.Bhaktivedanta Swami Prabhupada, is the first English translation and commentary by a pure devotee of the Lord in a bona fide disciplic succession of spiritual masters stemming from Lord Krsna Himself.</p>
+<p>Therefore, Bhagavad-gita As It Is presents Lord Krsna's message without the slightest distortion or personal interpretation.</p>
+<p>Thus it is the first edition to have actually awakened the dormant Krsna consciousness of its readers.</p>
+<p>3.The banyan is the sacred Indian fig tree (Ficus religiosa).</p>
+<p>Its branches drop shoots to the ground, and these take root and support their parent branches.</p>
+<p>Extending itself in this way, one tree will often cover a very large area.</p>
+<p>4.Srimad-Bhagavatam, one of the eighteen Puranas, is generally known as &quot;the spotless Purana.&quot; It was written down five thousand years ago by Srila Vyasadeva, who specifically intended it for the people of the present dark age of hypocrisy and quarrel.</p>
+<p>It is the original commentary on the Vedanta-sutra (by the same author) and is the cream of all Vedic literatures.</p>
+<p>Here Srila Prabhupada quotes a verse from the Second Canto of the Bhagavatam (2.3.19).</p>
+<p>In Srila Prabhupada's English rendering of the Bhagavatam, this verse appears as follows: sva-vid-varahostra-kharaih samstutah purusah pasuh na yat-karna-pathopeto jatu nama gadagrajah <strong>TRANSLATION</strong> Men who are like dogs, hogs, camels and asses praise those men who never listen to the transcendental pastimes of Lord Sri Krsna, the deliverer from evils.</p>
+<p><strong>PURPORT</strong> The general mass of people, unless they are trained systematically for a higher standard of life in spiritual values, are no better than animals, and in this verse they have particularly been put on the level of dogs, hogs, camels and asses.</p>
+<p>Modern university education practically prepares one to acquire a doggish mentality with which to accept the service of a greater master.</p>
+<p>After finishing a so-called education, the so-called educated persons move like dogs from door to door with applications for some service, and mostly they are driven away, informed of no vacancy.</p>
+<p>As dogs are negligible animals and serve the master faithfully for bits of bread, a man serves a master faithfully without sufficient rewards.</p>
+<p>Persons who have no discrimination in the matter of foodstuff and who eat all sorts of rubbish are compared to hogs.</p>
+<p>Hogs are very much attached to eating stools.</p>
+<p>So stool is a kind of foodstuff for a particular type of animal.</p>
+<p>And even stones are eatables for a particular type of animal or bird.</p>
+<p>But the human being is not meant for eating everything and anything; he is meant to eat grains, vegetables, fruits, milk, sugar, etc.</p>
+<p>Animal food is not meant for the human being.</p>
+<p>For chewing solid food, the human being has a particular type of teeth meant for cutting fruits and vegetables.</p>
+<p>The human being is endowed with two canine teeth as a concession for persons who will eat animal food at any cost.</p>
+<p>It is known to everyone that one man's food is another man's poison.</p>
+<p>Human beings are expected to accept the remnants of food offered to Lord Sri Krsna, and the Lord accepts foodstuff from the categories of leaves, flowers, fruits, etc.</p>
+<p>(Bg.9.26).</p>
+<p>As prescribed by Vedic scriptures, no animal food is offered to the Lord.</p>
+<p>Therefore, a human being is meant to eat a particular type of food.</p>
+<p>He should not imitate the animals to derive so-called vitamin values.</p>
+<p>Therefore, a person who has no discrimination in regard to eating is compared to a hog.</p>
+<p>The camel is a kind of animal that takes pleasure in eating thorns.</p>
+<p>A person who wants to enjoy family life or the worldly life of so-called enjoyment is compared to the camel.</p>
+<p>Materialistic life is full of thorns, and so one should live only by the prescribed method of Vedic regulations just to make the best use of a bad bargain.</p>
+<p>Life in the material world is maintained by sucking one's own blood.</p>
+<p>The central point of attraction for material enjoyment is sex life.</p>
+<p>To enjoy sex life is to suck one's own blood, and there is not much more to be explained in this connection.</p>
+<p>The camel also sucks its own blood while chewing thorny twigs.</p>
+<p>The thorns the camel eats cut the tongue of the camel, and so blood begins to flow within the camel's mouth.</p>
+<p>The thorns, mixed with fresh blood, create a taste for the foolish camel, and so he enjoys the thorn-eating business with false pleasure.</p>
+<p>Similarly, the great business magnates, industrialists who work very hard to earn money by different ways and questionable means, eat the thorny results of their actions mixed with their own blood.</p>
+<p>Therefore the Bhagavatam has situated these diseased fellows along with the camels.</p>
+<p>The ass is an animal who is celebrated as the greatest fool, even among the animals.</p>
+<p>The ass works very hard and carries burdens of the maximum weight without making profit for itself.</p>
+<p>The ass is generally engaged by the washerman, whose social position is not very respectable.</p>
+<p>And the special qualification of the ass is that it is very much accustomed to being kicked by the opposite sex.</p>
+<p>When the ass begs for sexual intercourse, he is kicked by the fair sex, yet he still follows the female for such sexual pleasure.</p>
+<p>A henpecked man is compared, therefore, to the ass.</p>
+<p>The general mass of people work very hard, especially in the age of Kali.</p>
+<p>In this age the human being is actually engaged in the work of an ass, carrying heavy burdens and driving thela and rickshaws.</p>
+<p>The so-called advancement of human civilization has engaged a human being in the work of an ass.</p>
+<p>The laborers in great factories and workshops are also engaged in such burdensome work, and after working hard during the day, the poor laborer has to be again kicked by the fair sex, not only for sex enjoyment but also for so many household affairs.</p>
+<p>So Srimad-Bhagavatam's categorization of the common man without any spiritual enlightenment into the society of dogs, hogs, camels and asses is not at all an exaggeration.</p>
+<p>The leaders of such ignorant masses of people may feel very proud of being adored by such a number of dogs and hogs, but that is not very flattering.</p>
+<p>The Bhagavatam openly declares that although a person may be a great leader of such dogs and hogs disguised as men, if he has no taste for being enlightened in the science of Krsna, such a leader is also an animal and nothing more.</p>
+<p>He may be designated as a powerful, strong animal, or a big animal, but in the estimation of Srimad Bhagavatam he is never given a place in the category of man, on account of his atheistic temperament.</p>
+<p>Or, in other words, such godless leaders of dogs and hoglike men are bigger animals with the qualities of animals in greater proportion.</p>
+<p>5.Sometimes a very hungry person will pick up a discarded piece of sugarcane, from which someone else has sucked out the sugary juice, and chew the already chewed pulp in an effort to get some sweet taste.</p>
+<p>This is called &quot;chewing the chewed.&quot; 6.Srila Bhaktivinoda Thakura (1838-1914) is one of the great acaryas, or teachers of Krsna consciousness in the succession of spiritual masters.</p>
+<p>His son, Srila Bhaktisiddhanta Sarasvati Goswami Maharaja Prabhupada, was the spiritual master of His Divine Grace A.C.Bhaktivedanta Swami Prabhupada.</p>
+<p>Srila Bhaktivinoda Thakura wrote prolifically on the science of Krsna consciousness.</p>
+<p>In 1896 he initiated the teachings of Krsna consciousness in the Western world by sending a copy of one of his small books--Sri Caitanya Mahaprabhu: His Life and Precepts--to McGill University in Canada.</p>
+<p>Many of his Bengali songs are available in Songs of the Vaisnava Acaryas, published by the Bhaktivedanta Book Trust.</p>
+<p>7.In the ascending process of investigation, a person attempts to realize the truth by personal observation followed by speculation.</p>
+<p>In the descending process, on the other hand, he accepts instructions from an authorized source.</p>
+<p>These two methods of inquiry are known as induction and deduction, respectively.</p>
+<p>8.&quot;My Guru Maharaja&quot; refers to Srila Prabhupada's spiritual master, Srila Bhaktisiddhanta Sarasvati Goswami Maharaja.</p>
+<p>9.Jagad-guru means &quot;guru of the entire world.&quot; 10.A Vaisnava is a devotee of Lord Visnu.</p>
+<p>Krsna is the original form of Visnu; therefore all the devotees of Krsna are Vaisnavas.</p>
+<p>11.Raghunatha dasa Gosvami was a contemporary and an exalted devotee of Sri Krsna Caitanya Mahaprabhu.</p>
+<p>He was one of the six Gosvamis entrusted with continuing Lord Caitanya's mission of spreading Krsna consciousness throughout the world.</p>
+<p>Although born in a very wealthy family, Raghunatha dasa Gosvami led a life of great austerity after he met Lord Caitanya.</p>
+<p>12.In Bhagavad-gita 18.54.</p>
+<p>Lord Krsna says, &quot;One who is thus transcendentally situated at once realizes the Supreme Brahman and becomes fully joyful.</p>
+<p>He never laments nor desires to have anything; he is equally disposed to every living entity.</p>
+<p>In that state he attains pure devotional service unto Me.&quot; 13.Karma means &quot;activity,&quot; and the law of karma refers to the process in which higher authorities award us favorable or unfavorable reactions according to our pious or impious activities, respectively.</p>
+<p>As the Bible says, &quot;As ye sow, so shall ye reap.&quot; Thus, our present condition--whether we are wealthy, wise or beautiful, or whether we have an American, an Indian or a Japanese body-completely depends on the activities we performed in our previous life or lives.</p>
+<p>Ultimately, all karma, whether good or bad, is unfavorable, for it binds us to the material world.</p>
+<p>Devotional service in Krsna consciousness, however, is akarmic.</p>
+<p>In other words, it produces no reaction at all.</p>
+<p>Hence, when Arjuna killed his opponents on the Battlefield of Kuruksetra, he suffered no reaction, for he was simply carrying out the will of Lord Krsna.</p>
+<p>14.DNA molecules are essential building and replicating units in organic cells.</p>
+<p>Many scientists regard them as the source of life, but according to Vedic science we must distinguish the chemical constituents of the body (such as DNA) from the very source of the life symptoms, which is the spirit soul.</p>
+<p>15.Demigods are beings more advanced than humans.</p>
+<p>Although they resemble us, they possess far greater intelligence and beauty, wonderful mystic powers and, in some cases, many arms and heads.</p>
+<p>In the material universe there are thirty-three million administrative demigods, each of whom is responsible for a particular phase of cosmic management (such as heat, light, water or air).</p>
+<p>16.Bhagavad-gita 6.41-42.</p>
+<p>&quot;After many, many years of enjoyment on the planets of the pious living entities, the unsuccessful yogi is born into a family of righteous people, into a family of rich aristocracy, or into a family of transcendentalists, who are surely great in wisdom.</p>
+<p>Verily, such a birth is rare in this world.&quot; 17.Bhagavad-gita 18.61.</p>
+<p>&quot;The Supreme Lord is situated in everyone's heart, O Arjuna, and is directing the wanderings of all living entities, who are seated as on a machine made of the material energy.&quot; 18.Radharani is the supreme devotee of Lord Krsna, and She is His eternal consort.</p>
+<p>She is also considered to be the embodiment of Krsna's internal, spiritual energy of pleasure.</p>
+<p>19.The brahmastra is a subtle nuclear weapon sometimes employed in the Vedic military art.</p>
+<p>It was released by the chanting of a mantra, and even if released from a long distance, it could annihilate any target, large or small, without harming anything else.</p>
+<p>for further information, see Srimad-Bhagavatam, First Canto, Chapter Eight.</p>
+<p>20.Valmiki was a great Vedic sage and scholar.</p>
+<p>He wrote the Ramayana, one of the most important histories in Vedic literature.</p>
+<p>21.Lord Caitanya Mahaprabhu is described in Vaisnava literature as the most merciful incarnation of God because He distributed love of Godhead freely, without consideration of one's caste, color or creed.</p>
+<p>He appeared in Bengal in 1486 and is also known as &quot;the Golden Avatara&quot; because of His beautiful golden complexion.</p>
+<p>Lord Caitanya Mahaprabhu emphasized the chanting of the maha-mantra--Hare Krsna, Hare Krsna, Krsna Krsna, Hare Hare.</p>
+<p>Hare Rama, Hare Rama, Rama Rama, Hare Hare.</p>
+<p>22.These four holy cities of India are hundreds of miles apart.</p>
+<p>23.Vai means &quot;without,&quot; and kuntha means &quot;anxiety.&quot; Thus in Vaikuntha (the kingdom of God) there is no anxiety.</p>
+<p>The Vaikuntha planets are in the spiritual realm, far beyond the material universes, and everyone there lives in eternal bliss and knowledge, rendering devotional service to Lord Visnu (Krsna).</p>
+<p>24.Forty thousand light-years equal over 235 quadrillion miles.</p>
+<p>25.The gopis are the cowherd girls of Vrndavana, and their absorption in Krsna consciousness and love for Krsna are unexcelled.</p>
+<p>However, one should never compare the loving affairs of Krsna and the gopis, which are completely transcendental, to mundane sexual affairs.</p>
+<p>While leading lives of celibacy and extreme austerity, Lord Caitanya and the six Gosvamis were constantly absorbed in the mood of the gopis.</p>
+<p>Chief among the gopis is Srimati Radharani.</p>
+<p>26.Kamsa was the greatest demon of his time, and Krsna's most persistent enemy as well.</p>
+<p>In Krsna, the Supreme Personality of Godhead (a summary study of the Tenth Canto of Srimad-Bhagavatam), Srila Prabhupada tells how Kamsa tried many times to kill Krsna.</p>
+<p>Finally, Krsna killed Kamsa with His bare hands in the wrestling arena of Mathura.</p>
+<p>27.Putana was a fearsome demoness sent by Kamsa to Vrndavana to kill Krsna.</p>
+<p>She smeared deadly poison on her breast and offered it to baby Krsna to suck.</p>
+<p>Krsna well aware of her intentions, sucked out her life air and killed her.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

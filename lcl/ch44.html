@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch44 - Life comes from Life</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="ch74.html">Notes</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li><li class="affix"><a href="ch12.html">ch12</a></li><li class="affix"><a href="ch13.html">ch13</a></li><li class="affix"><a href="ch14.html">ch14</a></li><li class="affix"><a href="ch15.html">ch15</a></li><li class="affix"><a href="ch16.html">ch16</a></li><li class="affix"><a href="ch17.html">ch17</a></li><li class="affix"><a href="ch18.html">ch18</a></li><li class="affix"><a href="ch19.html">ch19</a></li><li class="affix"><a href="ch20.html">ch20</a></li><li class="affix"><a href="ch21.html">ch21</a></li><li class="affix"><a href="ch22.html">ch22</a></li><li class="affix"><a href="ch23.html">ch23</a></li><li class="affix"><a href="ch24.html">ch24</a></li><li class="affix"><a href="ch25.html">ch25</a></li><li class="affix"><a href="ch26.html">ch26</a></li><li class="affix"><a href="ch27.html">ch27</a></li><li class="affix"><a href="ch28.html">ch28</a></li><li class="affix"><a href="ch29.html">ch29</a></li><li class="affix"><a href="ch30.html">ch30</a></li><li class="affix"><a href="ch31.html">ch31</a></li><li class="affix"><a href="ch32.html">ch32</a></li><li class="affix"><a href="ch33.html">ch33</a></li><li class="affix"><a href="ch34.html">ch34</a></li><li class="affix"><a href="ch35.html">ch35</a></li><li class="affix"><a href="ch36.html">ch36</a></li><li class="affix"><a href="ch37.html">ch37</a></li><li class="affix"><a href="ch38.html">ch38</a></li><li class="affix"><a href="ch39.html">ch39</a></li><li class="affix"><a href="ch40.html">ch40</a></li><li class="affix"><a href="ch41.html">ch41</a></li><li class="affix"><a href="ch42.html">ch42</a></li><li class="affix"><a href="ch43.html">ch43</a></li><li class="affix"><a href="ch44.html" class="active">ch44</a></li><li class="affix"><a href="ch45.html">ch45</a></li><li class="affix"><a href="ch46.html">ch46</a></li><li class="affix"><a href="ch47.html">ch47</a></li><li class="affix"><a href="ch48.html">ch48</a></li><li class="affix"><a href="ch49.html">ch49</a></li><li class="affix"><a href="ch50.html">ch50</a></li><li class="affix"><a href="ch51.html">ch51</a></li><li class="affix"><a href="ch52.html">ch52</a></li><li class="affix"><a href="ch53.html">ch53</a></li><li class="affix"><a href="ch54.html">ch54</a></li><li class="affix"><a href="ch55.html">ch55</a></li><li class="affix"><a href="ch56.html">ch56</a></li><li class="affix"><a href="ch57.html">ch57</a></li><li class="affix"><a href="ch58.html">ch58</a></li><li class="affix"><a href="ch59.html">ch59</a></li><li class="affix"><a href="ch60.html">ch60</a></li><li class="affix"><a href="ch61.html">ch61</a></li><li class="affix"><a href="ch62.html">ch62</a></li><li class="affix"><a href="ch63.html">ch63</a></li><li class="affix"><a href="ch64.html">ch64</a></li><li class="affix"><a href="ch65.html">ch65</a></li><li class="affix"><a href="ch66.html">ch66</a></li><li class="affix"><a href="ch67.html">ch67</a></li><li class="affix"><a href="ch68.html">ch68</a></li><li class="affix"><a href="ch69.html">ch69</a></li><li class="affix"><a href="ch70.html">ch70</a></li><li class="affix"><a href="ch71.html">ch71</a></li><li class="affix"><a href="ch72.html">ch72</a></li><li class="affix"><a href="ch73.html">ch73</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Life comes from Life</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#changing-bodies" id="changing-bodies">Changing Bodies</a></h1>
+<p>Dr.Singh: People want more proof.</p>
+<p>Srila Prabhupada: What more is required? The eternality of the soul is a simple fact.</p>
+<p>I am an eternal soul.</p>
+<p>My body is changing, but I am not changing.</p>
+<p>For example, I am now an old man.</p>
+<p>Sometimes I think, &quot;Oh, I used to jump and play, but now I cannot jump because my body has changed.&quot; I want to jump, but I cannot do it.</p>
+<p>That jumping propensity is eternal, but because of my old body I cannot do it.</p>
+<p>Dr.Singh: Opponents will say that according to their observation, the nature of consciousness is that it lasts for only one body.</p>
+<p>Srila Prabhupada: That is foolishness.</p>
+<p>In Bhagavad-gita (2.13) Krsna explains: dehino 'smin yatha dehe kaumaram yauvanam jara tatha dehantara-praptir dhiras tatra na muhyati &quot;As the embodied soul continually passes, in this body, from boyhood to youth to old age, the soul similarly passes into another body at death.</p>
+<p>The self-realized soul is not bewildered by such a change.&quot; Just as this body is always changing (as I can see in my daily experience), there is a similar change at the time of death.</p>
+<p>Dr.Singh: But according to the scientists, we cannot actually observe this last change.</p>
+<p>Srila Prabhupada: Their eyes are so imperfect that they cannot observe many, many things.</p>
+<p>Their ignorance does not make the Bhagavad-gita unscientific.</p>
+<p>Why don't the scientists admit the imperfection of their senses? They must first admit the imperfection of their senses.</p>
+<p>Their seeing power does not determine what is and what is not science.</p>
+<p>Dogs cannot understand the laws of nature.</p>
+<p>Does that mean the laws of nature don't exist? Dr.Singh: Well, the scientists admit that argument, but they say the way to become perfect is through objective information and experience.</p>
+<p>Srila Prabhupada: No.</p>
+<p>That is not the way to become perfect.</p>
+<p>No one can become perfect through imperfect thinking, and our thinking must be imperfect because our senses and minds are imperfect.</p>
+<p>Dr.Singh: Srila Prabhupada, another question can be raised.</p>
+<p>is it not possible that the soul may accept three, four or five bodies and then die? Srila Prabhupada: You are accepting millions of bodies.</p>
+<p>I say that your body of yesterday is not your body of today.</p>
+<p>So, if you live for one hundred years, how many times have you changed bodies? Just calculate.</p>
+<p>Dr.Singh: Thirteen.</p>
+<p>Srila Prabhupada: Why thirteen? Dr.Singh: Medical science says that all the bodily cells are replaced every seven years.</p>
+<p>Srila Prabhupada: No, not every seven years--every second.</p>
+<p>Every second, the blood corpuscles are changing.</p>
+<p>Is it not so? Dr.Singh: Yes.</p>
+<p>Srila Prabhupada: And as soon as the blood corpuscles change, you change your body.</p>
+<p>Dr.Singh: In scientific terminology, can the eternality of the soul be compared to conservation of energy? Srila Prabhupada: There is no question of the conservation of energy, because energy is always existing.</p>
+<p>Dr.Singh: But according to scientific terminology, the law of conservation of energy is that energy cannot be created or destroyed, which means, I think, that it is eternal.</p>
+<p>Srila Prabhupada: Oh, yes, that we admit.</p>
+<p>Krsna is eternal; therefore all His energies are eternal.</p>
+<p>Dr.Singh: Is that why the living entity is also eternal? Srila Prabhupada: Yes.</p>
+<p>If the sun is eternal, its energies--heat and light--are also eternal.</p>
+<p>Dr.Singh: Does it follow from this, then, that life cannot be created or destroyed? Srila Prabhupada: Yes.</p>
+<p>Life is eternal.</p>
+<p>It is not created or destroyed.</p>
+<p>It is only temporarily covered.</p>
+<p>I am eternal, but last night I was covered by sleep, so I think in terms of yesterday and today.</p>
+<p>This is the condition of the material world.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch43.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch45.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch43.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch45.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

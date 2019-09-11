@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ch53 - Life comes from Life</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="ch74.html">Notes</a></li><li class="affix"><a href="index.html">ch1</a></li><li class="affix"><a href="ch2.html">ch2</a></li><li class="affix"><a href="ch3.html">ch3</a></li><li class="affix"><a href="ch4.html">ch4</a></li><li class="affix"><a href="ch5.html">ch5</a></li><li class="affix"><a href="ch6.html">ch6</a></li><li class="affix"><a href="ch7.html">ch7</a></li><li class="affix"><a href="ch8.html">ch8</a></li><li class="affix"><a href="ch9.html">ch9</a></li><li class="affix"><a href="ch10.html">ch10</a></li><li class="affix"><a href="ch11.html">ch11</a></li><li class="affix"><a href="ch12.html">ch12</a></li><li class="affix"><a href="ch13.html">ch13</a></li><li class="affix"><a href="ch14.html">ch14</a></li><li class="affix"><a href="ch15.html">ch15</a></li><li class="affix"><a href="ch16.html">ch16</a></li><li class="affix"><a href="ch17.html">ch17</a></li><li class="affix"><a href="ch18.html">ch18</a></li><li class="affix"><a href="ch19.html">ch19</a></li><li class="affix"><a href="ch20.html">ch20</a></li><li class="affix"><a href="ch21.html">ch21</a></li><li class="affix"><a href="ch22.html">ch22</a></li><li class="affix"><a href="ch23.html">ch23</a></li><li class="affix"><a href="ch24.html">ch24</a></li><li class="affix"><a href="ch25.html">ch25</a></li><li class="affix"><a href="ch26.html">ch26</a></li><li class="affix"><a href="ch27.html">ch27</a></li><li class="affix"><a href="ch28.html">ch28</a></li><li class="affix"><a href="ch29.html">ch29</a></li><li class="affix"><a href="ch30.html">ch30</a></li><li class="affix"><a href="ch31.html">ch31</a></li><li class="affix"><a href="ch32.html">ch32</a></li><li class="affix"><a href="ch33.html">ch33</a></li><li class="affix"><a href="ch34.html">ch34</a></li><li class="affix"><a href="ch35.html">ch35</a></li><li class="affix"><a href="ch36.html">ch36</a></li><li class="affix"><a href="ch37.html">ch37</a></li><li class="affix"><a href="ch38.html">ch38</a></li><li class="affix"><a href="ch39.html">ch39</a></li><li class="affix"><a href="ch40.html">ch40</a></li><li class="affix"><a href="ch41.html">ch41</a></li><li class="affix"><a href="ch42.html">ch42</a></li><li class="affix"><a href="ch43.html">ch43</a></li><li class="affix"><a href="ch44.html">ch44</a></li><li class="affix"><a href="ch45.html">ch45</a></li><li class="affix"><a href="ch46.html">ch46</a></li><li class="affix"><a href="ch47.html">ch47</a></li><li class="affix"><a href="ch48.html">ch48</a></li><li class="affix"><a href="ch49.html">ch49</a></li><li class="affix"><a href="ch50.html">ch50</a></li><li class="affix"><a href="ch51.html">ch51</a></li><li class="affix"><a href="ch52.html">ch52</a></li><li class="affix"><a href="ch53.html" class="active">ch53</a></li><li class="affix"><a href="ch54.html">ch54</a></li><li class="affix"><a href="ch55.html">ch55</a></li><li class="affix"><a href="ch56.html">ch56</a></li><li class="affix"><a href="ch57.html">ch57</a></li><li class="affix"><a href="ch58.html">ch58</a></li><li class="affix"><a href="ch59.html">ch59</a></li><li class="affix"><a href="ch60.html">ch60</a></li><li class="affix"><a href="ch61.html">ch61</a></li><li class="affix"><a href="ch62.html">ch62</a></li><li class="affix"><a href="ch63.html">ch63</a></li><li class="affix"><a href="ch64.html">ch64</a></li><li class="affix"><a href="ch65.html">ch65</a></li><li class="affix"><a href="ch66.html">ch66</a></li><li class="affix"><a href="ch67.html">ch67</a></li><li class="affix"><a href="ch68.html">ch68</a></li><li class="affix"><a href="ch69.html">ch69</a></li><li class="affix"><a href="ch70.html">ch70</a></li><li class="affix"><a href="ch71.html">ch71</a></li><li class="affix"><a href="ch72.html">ch72</a></li><li class="affix"><a href="ch73.html">ch73</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Life comes from Life</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-space-program-a-childish-waste-of-time-and-money" id="the-space-program-a-childish-waste-of-time-and-money">The Space Program: A Childish Waste of Time and Money</a></h1>
+<p>Dr.Singh: When the astronauts returned from the moon to the surface of the earth, the scientists in the space program were very careful.</p>
+<p>They thought the astronauts might have brought some new germs as yet unknown, so they put the astronauts in quarantine for several days to make sure that-Srila Prabhupada.</p>
+<p>First of all, find out whether they have gone to the moon.</p>
+<p>I am not so sure.</p>
+<p>Sixteen years ago, when I wrote Easy Journey to Other Planets, I remarked that the scientists were childish in their attempts to explore outer space and would never be successful.</p>
+<p>Many years later, when I visited San Francisco, a press reporter asked me, &quot;What is your opinion about the moon expedition?&quot; I told him, &quot;It is simply a waste of time and money, that's all.&quot; Krsnakanti: The space program recently had another failure.</p>
+<p>Srila Prabhupada: That is always happening.</p>
+<p>What was it? Krsnakanti: They sent up a space vehicle to orbit the earth and act as sort of a space outpost, but it failed.</p>
+<p>It cost two billion dollars.</p>
+<p>Srila Prabhupada: Why are they wasting time and money in that way? Krsnakanti: They were criticized in the newspapers.</p>
+<p>Srila Prabhupada: They are simply childish fools.</p>
+<p>What have they gained in the last--how many years? For how many years have they been trying to go to the moon? with their sputnik.</p>
+<p>Srila Prabhupada: But they were trying for many years before that.</p>
+<p>So let us say that for twenty-five years they have been trying.</p>
+<p>They have not gained anything except dust, but still they are trying.</p>
+<p>How obstinate! The space program will never be successful.</p>
+<p>Dr.Singh: They say that in the future they want to go to the subsurface of Mars.</p>
+<p>Srila Prabhupada: They are all becoming &quot;big men&quot; with their statements about the future.</p>
+<p>Dr.Singh: They say that it will happen in about ten years.</p>
+<p>Srila Prabhupada: So what if they say one year? They may say ten years or one year, but we do not accept such propositions.</p>
+<p>We want to see what they are doing now.</p>
+<p>Dr.Singh: They are developing their technology by using small scale models.</p>
+<p>Srila Prabhupada: They are simply childish.</p>
+<p>In my childhood I used to watch the tramcars go along the rail.</p>
+<p>Once I thought, &quot;I shall take a stick and touch it to the wire, and I shall also go along the rails.&quot; The scientists, with all their plans, are just as childish.</p>
+<p>They spend so much time and money, but what is their purpose? Their effort is hopeless because they do not actually know the purpose of life.</p>
+<p>The scientists are spending large sums of money, and politicians are financing them, but the result is zero.</p>
+<p>They are like a doctor who doesn't understand a particular disease, but who still says to his patient, &quot;All right, first try this pill, and if that doesn't work, then try this pill.&quot; The doctor will never admit that he doesn't know the remedy for the disease.</p>
+<p>The scientists are simply bluffing and cheating.</p>
+<p>They cannot solve the real problems of life--birth, death, old age and disease--and therefore all their programs are taking place on the utopian platform, which in Sanskrit is called akasa-puspa.</p>
+<p>Akasa-puspa means &quot;a flower from the sky.&quot; All their efforts to know the truth by exploring outer space are like trying to pluck a flower from the sky.</p>
+<p>To give another example, the scientists act like foolish ducks.</p>
+<p>In India we may sometimes observe a duck following all day behind a bull.</p>
+<p>The duck is thinking that the testicles of the bull are a fish.</p>
+<p>In India this is a common sight.</p>
+<p>The bull is walking, and all day the duck is walking behind, following that big fish and thinking, &quot;It will drop, and I will eat it.&quot; The Thirteenth Morning Walk: December 2, 1973 Recorded on December 2, 1973, on the shores of the Pacific Ocean near Los Angeles Srila Prabhupada:is accompanied by Dr.Singh, Hrdayananda dasa Goswami.</p>
+<p>Krsna kanti dasa adhikari and other students.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch52.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch54.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch52.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch54.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
