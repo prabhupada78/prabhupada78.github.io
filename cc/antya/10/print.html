@@ -1,0 +1,1457 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Caitanya-caritamrta</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../../index.html">Home</a></li><li class="affix"><a href="../index.html">Table of Contents</a></li><li class="affix"><a href="index.html">10.1</a></li><li class="affix"><a href="10.2.html">10.2</a></li><li class="affix"><a href="10.3.html">10.3</a></li><li class="affix"><a href="10.4.html">10.4</a></li><li class="affix"><a href="10.5.html">10.5</a></li><li class="affix"><a href="10.6.html">10.6</a></li><li class="affix"><a href="10.7.html">10.7</a></li><li class="affix"><a href="10.8.html">10.8</a></li><li class="affix"><a href="10.9-11.html">10.9-11</a></li><li class="affix"><a href="10.12.html">10.12</a></li><li class="affix"><a href="10.13.html">10.13</a></li><li class="affix"><a href="10.14.html">10.14</a></li><li class="affix"><a href="10.15-16.html">10.15-16</a></li><li class="affix"><a href="10.17.html">10.17</a></li><li class="affix"><a href="10.18.html">10.18</a></li><li class="affix"><a href="10.19.html">10.19</a></li><li class="affix"><a href="10.20.html">10.20</a></li><li class="affix"><a href="10.21.html">10.21</a></li><li class="affix"><a href="10.22.html">10.22</a></li><li class="affix"><a href="10.23.html">10.23</a></li><li class="affix"><a href="10.24.html">10.24</a></li><li class="affix"><a href="10.25.html">10.25</a></li><li class="affix"><a href="10.26.html">10.26</a></li><li class="affix"><a href="10.27.html">10.27</a></li><li class="affix"><a href="10.28.html">10.28</a></li><li class="affix"><a href="10.29-30.html">10.29-30</a></li><li class="affix"><a href="10.31.html">10.31</a></li><li class="affix"><a href="10.32.html">10.32</a></li><li class="affix"><a href="10.33.html">10.33</a></li><li class="affix"><a href="10.34.html">10.34</a></li><li class="affix"><a href="10.35.html">10.35</a></li><li class="affix"><a href="10.36.html">10.36</a></li><li class="affix"><a href="10.37.html">10.37</a></li><li class="affix"><a href="10.38.html">10.38</a></li><li class="affix"><a href="10.39.html">10.39</a></li><li class="affix"><a href="10.40.html">10.40</a></li><li class="affix"><a href="10.41.html">10.41</a></li><li class="affix"><a href="10.42.html">10.42</a></li><li class="affix"><a href="10.43.html">10.43</a></li><li class="affix"><a href="10.44.html">10.44</a></li><li class="affix"><a href="10.45.html">10.45</a></li><li class="affix"><a href="10.46.html">10.46</a></li><li class="affix"><a href="10.47.html">10.47</a></li><li class="affix"><a href="10.48.html">10.48</a></li><li class="affix"><a href="10.49.html">10.49</a></li><li class="affix"><a href="10.50.html">10.50</a></li><li class="affix"><a href="10.51.html">10.51</a></li><li class="affix"><a href="10.52.html">10.52</a></li><li class="affix"><a href="10.53.html">10.53</a></li><li class="affix"><a href="10.54.html">10.54</a></li><li class="affix"><a href="10.55.html">10.55</a></li><li class="affix"><a href="10.56.html">10.56</a></li><li class="affix"><a href="10.57.html">10.57</a></li><li class="affix"><a href="10.58.html">10.58</a></li><li class="affix"><a href="10.59.html">10.59</a></li><li class="affix"><a href="10.60.html">10.60</a></li><li class="affix"><a href="10.61.html">10.61</a></li><li class="affix"><a href="10.62.html">10.62</a></li><li class="affix"><a href="10.63.html">10.63</a></li><li class="affix"><a href="10.64.html">10.64</a></li><li class="affix"><a href="10.65.html">10.65</a></li><li class="affix"><a href="10.66.html">10.66</a></li><li class="affix"><a href="10.67.html">10.67</a></li><li class="affix"><a href="10.68.html">10.68</a></li><li class="affix"><a href="10.69.html">10.69</a></li><li class="affix"><a href="10.70.html">10.70</a></li><li class="affix"><a href="10.71.html">10.71</a></li><li class="affix"><a href="10.72.html">10.72</a></li><li class="affix"><a href="10.73.html">10.73</a></li><li class="affix"><a href="10.74.html">10.74</a></li><li class="affix"><a href="10.75.html">10.75</a></li><li class="affix"><a href="10.76.html">10.76</a></li><li class="affix"><a href="10.77.html">10.77</a></li><li class="affix"><a href="10.78.html">10.78</a></li><li class="affix"><a href="10.79.html">10.79</a></li><li class="affix"><a href="10.80.html">10.80</a></li><li class="affix"><a href="10.81.html">10.81</a></li><li class="affix"><a href="10.82.html">10.82</a></li><li class="affix"><a href="10.83-84.html">10.83-84</a></li><li class="affix"><a href="10.85.html">10.85</a></li><li class="affix"><a href="10.86.html">10.86</a></li><li class="affix"><a href="10.87.html">10.87</a></li><li class="affix"><a href="10.88.html">10.88</a></li><li class="affix"><a href="10.89.html">10.89</a></li><li class="affix"><a href="10.90.html">10.90</a></li><li class="affix"><a href="10.91.html">10.91</a></li><li class="affix"><a href="10.92.html">10.92</a></li><li class="affix"><a href="10.93.html">10.93</a></li><li class="affix"><a href="10.94.html">10.94</a></li><li class="affix"><a href="10.95.html">10.95</a></li><li class="affix"><a href="10.96.html">10.96</a></li><li class="affix"><a href="10.97.html">10.97</a></li><li class="affix"><a href="10.98.html">10.98</a></li><li class="affix"><a href="10.99.html">10.99</a></li><li class="affix"><a href="10.100.html">10.100</a></li><li class="affix"><a href="10.101.html">10.101</a></li><li class="affix"><a href="10.102.html">10.102</a></li><li class="affix"><a href="10.103.html">10.103</a></li><li class="affix"><a href="10.104.html">10.104</a></li><li class="affix"><a href="10.105.html">10.105</a></li><li class="affix"><a href="10.106.html">10.106</a></li><li class="affix"><a href="10.107.html">10.107</a></li><li class="affix"><a href="10.108.html">10.108</a></li><li class="affix"><a href="10.109.html">10.109</a></li><li class="affix"><a href="10.110.html">10.110</a></li><li class="affix"><a href="10.111.html">10.111</a></li><li class="affix"><a href="10.112.html">10.112</a></li><li class="affix"><a href="10.113.html">10.113</a></li><li class="affix"><a href="10.114.html">10.114</a></li><li class="affix"><a href="10.115.html">10.115</a></li><li class="affix"><a href="10.116.html">10.116</a></li><li class="affix"><a href="10.117.html">10.117</a></li><li class="affix"><a href="10.118.html">10.118</a></li><li class="affix"><a href="10.119.html">10.119</a></li><li class="affix"><a href="10.120.html">10.120</a></li><li class="affix"><a href="10.121.html">10.121</a></li><li class="affix"><a href="10.122.html">10.122</a></li><li class="affix"><a href="10.123.html">10.123</a></li><li class="affix"><a href="10.124.html">10.124</a></li><li class="affix"><a href="10.125-126.html">10.125-126</a></li><li class="affix"><a href="10.127.html">10.127</a></li><li class="affix"><a href="10.128.html">10.128</a></li><li class="affix"><a href="10.129.html">10.129</a></li><li class="affix"><a href="10.130.html">10.130</a></li><li class="affix"><a href="10.131.html">10.131</a></li><li class="affix"><a href="10.132.html">10.132</a></li><li class="affix"><a href="10.133.html">10.133</a></li><li class="affix"><a href="10.134.html">10.134</a></li><li class="affix"><a href="10.135-136.html">10.135-136</a></li><li class="affix"><a href="10.137.html">10.137</a></li><li class="affix"><a href="10.138.html">10.138</a></li><li class="affix"><a href="10.139.html">10.139</a></li><li class="affix"><a href="10.140-141.html">10.140-141</a></li><li class="affix"><a href="10.142.html">10.142</a></li><li class="affix"><a href="10.143.html">10.143</a></li><li class="affix"><a href="10.144.html">10.144</a></li><li class="affix"><a href="10.145.html">10.145</a></li><li class="affix"><a href="10.146.html">10.146</a></li><li class="affix"><a href="10.147.html">10.147</a></li><li class="affix"><a href="10.148.html">10.148</a></li><li class="affix"><a href="10.149.html">10.149</a></li><li class="affix"><a href="10.150.html">10.150</a></li><li class="affix"><a href="10.151.html">10.151</a></li><li class="affix"><a href="10.152.html">10.152</a></li><li class="affix"><a href="10.153.html">10.153</a></li><li class="affix"><a href="10.154-155.html">10.154-155</a></li><li class="affix"><a href="10.156.html">10.156</a></li><li class="affix"><a href="10.157.html">10.157</a></li><li class="affix"><a href="10.158.html">10.158</a></li><li class="affix"><a href="10.159.html">10.159</a></li><li class="affix"><a href="10.160.html">10.160</a></li><li class="affix"><a href="10.161.html">10.161</a></li><li class="affix"><a href="10.162.html">10.162</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Caitanya-caritamrta</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Home - Caitanya-caritamrta</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../../index.html&quot; class=&quot;active&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot;&gt;Table of Contents&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;1.1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.2.html&quot;&gt;1.2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.3-4.html&quot;&gt;1.3-4&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.5.html&quot;&gt;1.5&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.6.html&quot;&gt;1.6&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.7.html&quot;&gt;1.7&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.8.html&quot;&gt;1.8&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.9.html&quot;&gt;1.9&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.10.html&quot;&gt;1.10&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.11.html&quot;&gt;1.11&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.12.html&quot;&gt;1.12&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.13.html&quot;&gt;1.13&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.14.html&quot;&gt;1.14&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.15.html&quot;&gt;1.15&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.16.html&quot;&gt;1.16&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.17.html&quot;&gt;1.17&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.18.html&quot;&gt;1.18&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.19.html&quot;&gt;1.19&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.20.html&quot;&gt;1.20&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.21.html&quot;&gt;1.21&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.22.html&quot;&gt;1.22&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.23.html&quot;&gt;1.23&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.24.html&quot;&gt;1.24&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.25.html&quot;&gt;1.25&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.26.html&quot;&gt;1.26&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.27.html&quot;&gt;1.27&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.28.html&quot;&gt;1.28&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.29.html&quot;&gt;1.29&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.30.html&quot;&gt;1.30&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.31.html&quot;&gt;1.31&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.32.html&quot;&gt;1.32&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.33.html&quot;&gt;1.33&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.34.html&quot;&gt;1.34&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.35.html&quot;&gt;1.35&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.36.html&quot;&gt;1.36&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.37.html&quot;&gt;1.37&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.38.html&quot;&gt;1.38&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.39.html&quot;&gt;1.39&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.40.html&quot;&gt;1.40&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.41.html&quot;&gt;1.41&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.42.html&quot;&gt;1.42&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.43.html&quot;&gt;1.43&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.44.html&quot;&gt;1.44&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.45.html&quot;&gt;1.45&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.46.html&quot;&gt;1.46&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.47.html&quot;&gt;1.47&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.48.html&quot;&gt;1.48&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.49.html&quot;&gt;1.49&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.50.html&quot;&gt;1.50&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.51.html&quot;&gt;1.51&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.52.html&quot;&gt;1.52&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.53.html&quot;&gt;1.53&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.54.html&quot;&gt;1.54&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.55.html&quot;&gt;1.55&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.56.html&quot;&gt;1.56&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.57.html&quot;&gt;1.57&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.58.html&quot;&gt;1.58&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.59.html&quot;&gt;1.59&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.60.html&quot;&gt;1.60&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.61.html&quot;&gt;1.61&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.62.html&quot;&gt;1.62&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.63.html&quot;&gt;1.63&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.64.html&quot;&gt;1.64&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.65.html&quot;&gt;1.65&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.66.html&quot;&gt;1.66&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.67.html&quot;&gt;1.67&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.68.html&quot;&gt;1.68&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.69.html&quot;&gt;1.69&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.70.html&quot;&gt;1.70&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.71.html&quot;&gt;1.71&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.72.html&quot;&gt;1.72&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.73.html&quot;&gt;1.73&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.74.html&quot;&gt;1.74&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.75.html&quot;&gt;1.75&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.76.html&quot;&gt;1.76&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.77.html&quot;&gt;1.77&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.78.html&quot;&gt;1.78&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.79.html&quot;&gt;1.79&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.80.html&quot;&gt;1.80&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.81.html&quot;&gt;1.81&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.82.html&quot;&gt;1.82&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.83.html&quot;&gt;1.83&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.84.html&quot;&gt;1.84&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.85.html&quot;&gt;1.85&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.86.html&quot;&gt;1.86&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.87.html&quot;&gt;1.87&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.88.html&quot;&gt;1.88&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.89.html&quot;&gt;1.89&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.90.html&quot;&gt;1.90&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.91.html&quot;&gt;1.91&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.92.html&quot;&gt;1.92&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.93.html&quot;&gt;1.93&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.94.html&quot;&gt;1.94&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.95.html&quot;&gt;1.95&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.96.html&quot;&gt;1.96&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.97.html&quot;&gt;1.97&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.98.html&quot;&gt;1.98&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.99.html&quot;&gt;1.99&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.100.html&quot;&gt;1.100&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.101.html&quot;&gt;1.101&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.102.html&quot;&gt;1.102&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.103-104.html&quot;&gt;1.103-104&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.105.html&quot;&gt;1.105&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.106.html&quot;&gt;1.106&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.107.html&quot;&gt;1.107&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.108.html&quot;&gt;1.108&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.109.html&quot;&gt;1.109&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.110.html&quot;&gt;1.110&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.111.html&quot;&gt;1.111&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.112.html&quot;&gt;1.112&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.113.html&quot;&gt;1.113&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.114.html&quot;&gt;1.114&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.115.html&quot;&gt;1.115&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.116.html&quot;&gt;1.116&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.117.html&quot;&gt;1.117&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.118.html&quot;&gt;1.118&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.119.html&quot;&gt;1.119&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.120.html&quot;&gt;1.120&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.121.html&quot;&gt;1.121&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.122.html&quot;&gt;1.122&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.123.html&quot;&gt;1.123&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.124.html&quot;&gt;1.124&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.125.html&quot;&gt;1.125&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.126.html&quot;&gt;1.126&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.127.html&quot;&gt;1.127&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.128.html&quot;&gt;1.128&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.129.html&quot;&gt;1.129&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.130.html&quot;&gt;1.130&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.131.html&quot;&gt;1.131&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.132.html&quot;&gt;1.132&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.133.html&quot;&gt;1.133&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.134.html&quot;&gt;1.134&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.135.html&quot;&gt;1.135&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.136.html&quot;&gt;1.136&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.137.html&quot;&gt;1.137&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.138.html&quot;&gt;1.138&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.139.html&quot;&gt;1.139&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.140.html&quot;&gt;1.140&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.141.html&quot;&gt;1.141&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.142.html&quot;&gt;1.142&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.143.html&quot;&gt;1.143&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.144.html&quot;&gt;1.144&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.145.html&quot;&gt;1.145&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.146.html&quot;&gt;1.146&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.147.html&quot;&gt;1.147&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.148.html&quot;&gt;1.148&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.149.html&quot;&gt;1.149&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.150.html&quot;&gt;1.150&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.151.html&quot;&gt;1.151&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.152.html&quot;&gt;1.152&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.153.html&quot;&gt;1.153&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.154.html&quot;&gt;1.154&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.155.html&quot;&gt;1.155&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.156.html&quot;&gt;1.156&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.157.html&quot;&gt;1.157&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.158.html&quot;&gt;1.158&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.159.html&quot;&gt;1.159&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.160.html&quot;&gt;1.160&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.161.html&quot;&gt;1.161&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.162.html&quot;&gt;1.162&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.163.html&quot;&gt;1.163&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.164.html&quot;&gt;1.164&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.165.html&quot;&gt;1.165&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.166.html&quot;&gt;1.166&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.167.html&quot;&gt;1.167&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.168.html&quot;&gt;1.168&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.169.html&quot;&gt;1.169&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.170.html&quot;&gt;1.170&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.171.html&quot;&gt;1.171&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.172.html&quot;&gt;1.172&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.173.html&quot;&gt;1.173&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.174.html&quot;&gt;1.174&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.175.html&quot;&gt;1.175&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.176.html&quot;&gt;1.176&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.177.html&quot;&gt;1.177&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.178.html&quot;&gt;1.178&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.179.html&quot;&gt;1.179&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.180.html&quot;&gt;1.180&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.181.html&quot;&gt;1.181&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.182.html&quot;&gt;1.182&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.183.html&quot;&gt;1.183&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.184.html&quot;&gt;1.184&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.185.html&quot;&gt;1.185&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.186.html&quot;&gt;1.186&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.187.html&quot;&gt;1.187&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.188.html&quot;&gt;1.188&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.189.html&quot;&gt;1.189&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.190.html&quot;&gt;1.190&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.191.html&quot;&gt;1.191&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.192.html&quot;&gt;1.192&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.193.html&quot;&gt;1.193&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.194.html&quot;&gt;1.194&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.195.html&quot;&gt;1.195&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.196.html&quot;&gt;1.196&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.197.html&quot;&gt;1.197&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.198.html&quot;&gt;1.198&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.199.html&quot;&gt;1.199&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.200.html&quot;&gt;1.200&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.201.html&quot;&gt;1.201&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.202.html&quot;&gt;1.202&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.203.html&quot;&gt;1.203&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.204.html&quot;&gt;1.204&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.205.html&quot;&gt;1.205&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.206.html&quot;&gt;1.206&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.207.html&quot;&gt;1.207&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.208.html&quot;&gt;1.208&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.209.html&quot;&gt;1.209&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.210.html&quot;&gt;1.210&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.211.html&quot;&gt;1.211&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.212.html&quot;&gt;1.212&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.213.html&quot;&gt;1.213&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.214.html&quot;&gt;1.214&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.215.html&quot;&gt;1.215&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.216.html&quot;&gt;1.216&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.217.html&quot;&gt;1.217&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.218.html&quot;&gt;1.218&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.219.html&quot;&gt;1.219&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.220.html&quot;&gt;1.220&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.221.html&quot;&gt;1.221&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.222.html&quot;&gt;1.222&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;1.223.html&quot;&gt;1.223&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Caitanya-caritamrta&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;h1&gt;&lt;a class=&quot;header&quot; href=&quot;#home&quot; id=&quot;home&quot;&gt;Home&lt;/a&gt;&lt;/h1&gt;
+
+                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;../index.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+
+            
+                &lt;a href=&quot;../index.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+<h1><a class="header" href="#table-of-contents" id="table-of-contents">Table of Contents</a></h1>
+<h3><a class="header" href="#101" id="101">10.1</a></h3>
+<p>vande sri-krsna-caitanyam</p>
+<p>bhaktanugraha-kataram</p>
+<p>yena kenapi santustam</p>
+<p>bhakta-dattena sraddhaya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>vande—I offer my respectful obeisances; sri-krsna-caitanyam—to Lord Sri Caitanya Mahaprabhu; bhakta—to His devotees; anugraha-kataram—eager to show mercy; yena kenapi—by anything; santustam—pleased; bhakta—by His devotees; dattena—offered; sraddhaya—with faith and love.</p>
+<p>Let me offer my respectful obeisances unto Lord Sri Caitanya Mahaprabhu, who is always pleased to accept anything given with faith and love by His devotees and is always ready to bestow mercy upon them.</p>
+<h3><a class="header" href="#102" id="102">10.2</a></h3>
+<p>jaya jaya gauracandra jaya nityananda</p>
+<p>jayadvaita-candra jaya gaura-bhakta-vrnda</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jaya jaya—all glories; gauracandra—to Sri Caitanya Mahaprabhu; jaya—all glories; nityananda—to Lord Nityananda; jaya—all glories; advaita-candra—to Advaita Acarya; jaya—all glories; gaura-bhakta-vrnda—to the devotees of Lord Gauranga.</p>
+<p>All glories to Sri Caitanya Mahaprabhu! All glories to Lord Nityananda Prabhu! All glories to Advaitacandra! All glories to all the devotees of Lord Caitanya!</p>
+<h3><a class="header" href="#103" id="103">10.3</a></h3>
+<p>varsantare saba bhakta prabhure dekhite</p>
+<p>parama-anande sabe nilacala yaite</p>
+<p><strong>SYNONYMS</strong></p>
+<p>varsa-antare—at the next year; saba bhakta—all the devotees; prabhure dekhite—to see Sri Caitanya Mahaprabhu; parama-anande—in great happiness; sabe—all of them; nilacala yaite—to go to Jagannatha Puri, Nilacala.</p>
+<p>The next year, all the devotees were very pleased to go to Jagannatha Puri (Nilacala) to see Sri Caitanya Mahaprabhu.</p>
+<h3><a class="header" href="#104" id="104">10.4</a></h3>
+<p>advaitacarya-gosani--sarva-agra-ganya</p>
+<p>acaryaratna, acaryanidhi, srivasa adi dhanya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>advaita-acarya-gosani—Advaita Acarya Gosvami; sarva—of all; agra—the chief; ganya—to be counted; acaryaratna—Candrasekhara; acaryanidhi—Pundarika Vidyanidhi; srivasa—Srivasa Thakura; adi—and so on; dhanya—glorious.</p>
+<p>Advaita Acarya Gosani led the party from Bengal.</p>
+<p>He was followed by Acaryaratna, Acaryanidhi, Srivasa Thakura and other glorious devotees.</p>
+<h3><a class="header" href="#105" id="105">10.5</a></h3>
+<p>yadyapi prabhura ajna gaude rahite</p>
+<p>tathapi nityananda preme calila dekhite</p>
+<p><strong>SYNONYMS</strong></p>
+<p>yadyapi—although; prabhura—of Sri Caitanya Mahaprabhu; ajna—the order; gaude rahite—to stay in Bengal; tathapi—still; nityananda—Lord Nityananda; preme—in ecstatic love; calila—went; dekhite—to see.</p>
+<p>Sri Caitanya Mahaprabhu had ordered Lord Nityananda to stay in Bengal, but nevertheless, because of ecstatic love, Lord Nityananda also went to see Him.</p>
+<h3><a class="header" href="#106" id="106">10.6</a></h3>
+<p>anuragera laksana ei,--’vidhi’ nahi mane</p>
+<p>tanra ajna bhange tanra sangera karane</p>
+<p><strong>SYNONYMS</strong></p>
+<p>anuragera—of real affection; laksana—symptom; ei—this; vidhi—the regulation; nahi mane—does not care for; tanra—His; ajna—order; bhange—neglects; tanra—His; sangera—association; karane—for the purpose of.</p>
+<p>Indeed, it is a symptom of real affection that one breaks the order of the Supreme Personality of Godhead, not caring for the regulative principles, to associate with Him.</p>
+<h3><a class="header" href="#107" id="107">10.7</a></h3>
+<p>rase yaiche ghara yaite gopire ajna dila</p>
+<p>tanra ajna bhangi’ tanra sange se rahila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>rase—at the time of the rasa dance; yaiche—as; ghara yaite—to return home; gopire—the gopis; ajna dila—Lord Krsna ordered; tanra—His; ajna—order; bhangi’-breaking; tanra sange—in His association; se—they; rahila—kept themselves.</p>
+<p>During the rasa dance, Krsna asked all the gopis to return home, but the gopis neglected His order and stayed there for His association.</p>
+<h3><a class="header" href="#108" id="108">10.8</a></h3>
+<p>ajna-palane krsnera yaiche paritosa</p>
+<p>preme ajna bhangile haya koti-sukha-posa</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ajna-palane—by carrying out the order; krsnera—of Lord Krsna; yaiche—as; paritosa—happiness; preme—in ecstatic love; ajna bhangile—when one breaks the order; haya—there is; koti-sukha-posa—millions of times more happiness.</p>
+<p>If one carries out Krsna’s order, Krsna is certainly pleased, but if one sometimes breaks His order due to ecstatic love, that gives Him millions of times greater happiness.</p>
+<h3><a class="header" href="#109-11" id="109-11">10.9-11</a></h3>
+<p>vasudeva-datta, murari-gupta, gangadasa</p>
+<p>sriman-sena, sriman-pandita, akincana krsnadasa</p>
+<p>murari, garuda-pandita, buddhimanta-khanna</p>
+<p>sanjaya-purusottama, pandita-bhagavan</p>
+<p>suklambara, nrsimhananda ara yata jana</p>
+<p>sabai calila, nama na yaya likhana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>vasudeva-datta—Vasudeva Datta; murari-gupta—Murari Gupta; gangadasa—Gangadasa; sriman-sena—Sriman Sena; sriman-pandita—Sriman Pandita; akincana krsnadasa—Akincana Krsnadasa; murari—Murari Gupta; garuda-pandita—Garuda Pandita; buddhimanta-khanna—Buddhimanta Khan; sanjaya purusottama—Sanjaya Purusottama; pandita-bhagavan—Bhagavan Pandita; suklambara—Suklambara; nrsimhananda—Nrsimhananda; ara—and; yata—as many; jana—persons; sabai—all; calila—went; nama—names; na yaya likhana—it is not possible to mention.</p>
+<p>Vasudeva Datta, Murari Gupta, Gangadasa, Sriman Sena, Sriman Pandita, Akincana Krsnadasa, Murari Gupta, Garuda Pandita, Buddhimanta Khan, Sanjaya Purusottama, Bhagavan Pandita, Suklambara Brahmacari, Nrsimhananda Brahmacari and many others joined together to go to Jagannatha Puri.</p>
+<p>It would be impossible to mention the names of them all.</p>
+<h3><a class="header" href="#1012" id="1012">10.12</a></h3>
+<p>kulina-grami, khanda-vasi milila asiya</p>
+<p>sivananda-sena calila sabare lana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kulina-grami—the residents of Kulina-grama; khanda-vasi—the residents of Khanda; milila asiya—came and joined; sivananda-sena—Sivananda Sena; calila—went; sabare lana—taking all of them.</p>
+<p>The inhabitants of Kulina-grama and Khanda also came and joined.</p>
+<p>Sivananda Sena took the leadership and thus started taking care of them all.</p>
+<h3><a class="header" href="#1013" id="1013">10.13</a></h3>
+<p>raghava-pandita cale jhali sajaiya</p>
+<p>damayanti yata dravya diyache kariya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>raghava-pandita—Raghava Pandita; cale—goes; jhali sajaiya—after preparing his bag of food; damayanti—his sister; yata dravya—all the goods; diyache kariya—cooked and prepared.</p>
+<p>Raghava Pandita came with bags full of food prepared very nicely by his sister, Damayanti.</p>
+<h3><a class="header" href="#1014" id="1014">10.14</a></h3>
+<p>nana apurva bhaksya-dravya prabhura yogya bhoga</p>
+<p>vatsareka prabhu yaha karena upayoga</p>
+<p><strong>SYNONYMS</strong></p>
+<p>nana—various; upurva—unparalleled; bhaksya-dravya—eatables; prabhura—of Sri Caitanya Mahaprabhu; yogya bhoga—just suitable for the eating; vatsareka—for one year; prabhu—Sri Caitanya Mahaprabhu; yaha—which; karena upayoga—uses.</p>
+<p>Damayanti made varieties of unparalleled food just suitable for Lord Sri Caitanya Mahaprabhu to eat.</p>
+<p>The Lord ate it continually for one year.</p>
+<h3><a class="header" href="#1015-16" id="1015-16">10.15-16</a></h3>
+<p>amra-kasandi, ada-kasandi jhala-kasandi nama</p>
+<p>nembu-ada amra-koli vividha vidhana</p>
+<p>amsi, ama-khanda, tailamra, ama-satta</p>
+<p>yatna kari’ gunda kari’ purana sukuta</p>
+<p><strong>SYNONYMS</strong></p>
+<p>amra-kasandi—amra-kasandi; ada-kasandi—ada-kasandi; jhala-kasandi—jhala-kasandi; nama—named; nembu-ada—a preparation made with lime and ginger; amra-koli—amra-koli; vividha vidhana—various preparations; amsi—amsi; ama-khanda—ama-khanda; tailamra—mango within mustard oil; ama-satta—ama-satta; yatna kari’-with great attention; gunda kari’-making into a powder; purana sukuta—dried bitter vegetables such as bitter melon.</p>
+<p>These are the names of some of the pickles and condiments in the bags of Raghava Pandita: amra-kasandi, ada-kasandi, jhala-kasandi, nembu-ada, amra-koli, amsi, ama-khanda, tailamra and ama-satta.</p>
+<p>With great attention, Damayanti also made dried bitter vegetables into a powder.</p>
+<h3><a class="header" href="#1017" id="1017">10.17</a></h3>
+<p>’sukuta’ bali’ avajna na kariha citte</p>
+<p>sukutaya ye sukha prabhura, taha nahe pancamrte</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sukuta—sukuta; bali’-because; avajna—neglect; na kariha—do not make; citte—within the mind; sukutaya—from sukuta; ye—which; sukha—happiness; prabhura—of Sri Caitanya Mahaprabhu; taha—that; nahe—is not; pancamrte—in pancamrta.</p>
+<p>Do not neglect sukuta because it is a bitter preparation.</p>
+<p>Sri Caitanya Mahaprabhu derived more happiness from eating this sukuta than from drinking pancamrta (a preparation of milk, sugar, ghee, honey and curd).</p>
+<h3><a class="header" href="#1018" id="1018">10.18</a></h3>
+<p>bhava-grahi mahaprabhu sneha-matra laya</p>
+<p>sukuta pata kasandite maha-sukha paya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>bhava-grahi—one who accepts the purpose; mahaprabhu—Sri Caitanya Mahaprabhu; sneha—affection; matra—only; laya—accepts; sukuta pata—in leaves of sukuta; kasandite—in kasandi; maha-sukha—much pleasure; paya—gets.</p>
+<p>Since Sri Caitanya Mahaprabhu is the Supreme Personality of Godhead, He extracts the purpose from everything.</p>
+<p>He accepted Damayanti’s affection for Him, and therefore He derived great pleasure even from the dried bitter leaves of sukuta and from kasandi (a sour condiment).</p>
+<h3><a class="header" href="#1019" id="1019">10.19</a></h3>
+<p>’manusya’-buddhi damayanti kare prabhura paya</p>
+<p>guru-bhojane udare kabhu ’ama’ hana yaya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>manusya-buddhi—considering an ordinary human being; damayanti—the sister of Raghava Pandita; kare—does; prabhura paya—at the lotus feet of Sri Caitanya Mahaprabhu; guru-bhojane—by overeating; udare—in the abdomen; kabhu—sometimes; ama—mucus; hana yaya—there is.</p>
+<p>Because of her natural love for Sri Caitanya Mahaprabhu, Damayanti considered the Lord an ordinary human being.</p>
+<p>Therefore she thought that He would become sick by overeating and there would be mucus within His abdomen.</p>
+<p><strong>PURPORT</strong></p>
+<p>Because of pure love, the devotees of Krsna in Goloka Vrndavana, Vrajabhumi, loved Krsna as an ordinary human being like them.</p>
+<p>Yet although they considered Krsna one of them, their love for Krsna knew no bounds.</p>
+<p>Similarly, because of extreme love, devotees like Raghava Pandita and his sister, Damayanti, thought of Sri Caitanya Mahaprabhu as a human being, but their love for Him was boundless.</p>
+<p>By overeating, an ordinary human being becomes prone to a disease called amla-pitta, which is a product of indigestion characterized by acidity of the stomach.</p>
+<p>Damayanti thought that such a condition would afflict Sri Caitanya Mahaprabhu.</p>
+<h3><a class="header" href="#1020" id="1020">10.20</a></h3>
+<p>sukuta khaile sei ama ha-ibeka nasa</p>
+<p>ei sneha mane bhavi’ prabhura ullasa</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sukuta khaile—by eating the sukuta; sei ama—that mucus; ha-ibeka nasa—will be vanquished; ei—this; sneha-affection; mane—in the mind; bhavi’-thinking of; prabhura—of Sri Caitanya Mahaprabhu; ullasa—delight.</p>
+<p>Because of sincere affection, she thought that eating this sukuta would cure the Lord’s disease.</p>
+<p>Considering these affectionate thoughts of Damayanti, the Lord was very pleased.</p>
+<h3><a class="header" href="#1021" id="1021">10.21</a></h3>
+<p>priyena sangrathya vipaksa-sannidhav</p>
+<p>upahitam vaksasi pivara-stani</p>
+<p>srajam na kacid vijahau jalavilam</p>
+<p>vasanti hi premni guna na vastuni</p>
+<p><strong>SYNONYMS</strong></p>
+<p>priyena—by the lover; sangrathya—after stringing; vipaksa-sannidhau—in the presence of an opposite party; upahitam—placed; vaksasi—on the chest; pivara-stani—having raised breasts; srajam—a garland; na—not; kacit—some beloved; vijahau—rejected; jala-avilam—muddy; vasanti—reside; hi—because; premni—in love; gunah—attributes; na—not; vastuni—in the material things “A dear lover strung a garland and placed it on the shoulder of his beloved in the presence of her co-wives.</p>
+<p>She had raised breasts and was very beautiful, yet although the garland was tainted with mud, she did not reject it, for its value lay not in material things but in love.”</p>
+<p><strong>PURPORT</strong></p>
+<p>This is a verse from the Kiratarjuniya by Bharavi.</p>
+<h3><a class="header" href="#1022" id="1022">10.22</a></h3>
+<p>dhaniya-mauharira tandula gunda kariya</p>
+<p>nadu bandhiyache cini-paka kariya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>dhaniya—of coriander seeds; mauharira—of anise seeds; tandula—grains; gunda kariya—grinding to a powder; nadu bandhiyache—rendered into laddus; cini-paka kariya—cooking with sugar.</p>
+<p>Damayanti powdered coriander and anise seeds, cooked them with sugar and made them into small sweetmeats that were shaped like small balls.</p>
+<h3><a class="header" href="#1023" id="1023">10.23</a></h3>
+<p>sunthi-khanda nadu, ara ama-pitta-hara</p>
+<p>prthak prthak bandhi’ vastrera kuthali bhitara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sunthi-khanda nadu—sweetmeat balls made with dried ginger; ara—and; ama-pitta-hara—which removes mucus caused by too much bile; prthak prthak—separately; bandhi’-packaging; vastrera—of cloth; kuthali—small bags; bhitara—within.</p>
+<p>She made balls of sweetmeats with dried ginger to remove mucus caused by too much bile.</p>
+<p>She put all these preparations separately into small cloth bags.</p>
+<h3><a class="header" href="#1024" id="1024">10.24</a></h3>
+<p>koli-sunthi, koli-curna, koli-khanda ara</p>
+<p>kata nama la-iba, sata-prakara ’acara’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>koli-sunthi—dried ginger and berries; koli-curna—powder of berries; koli-khanda—another preparation of berries; ara—and; kata nama—how many names; la-iba—I shall call; sata-prakara—a hundred varieties; acara—condiments and pickles.</p>
+<p>She made a hundred varieties of condiments and pickles.</p>
+<p>She also made koli-sunthi, koli-curna, koli-khanda and many other preparations.</p>
+<p>How many should I name?</p>
+<h3><a class="header" href="#1025" id="1025">10.25</a></h3>
+<p>narikela-khanda nadu, ara nadu ganga-jala</p>
+<p>cira-sthayi khanda-vikara karila sakala</p>
+<p><strong>SYNONYMS</strong></p>
+<p>narikela-khanda nadu—sweetmeat balls made with coconut powder; ara—and; nadu ganga-jala—a sweetmeat ball as white as Ganges water; cira-sthayi—long-lasting; khanda-vikara—modified forms of sugar-candy sweets; karila—made; sakala—all.</p>
+<p>She made many sweetmeats shaped like balls.</p>
+<p>Some were made with powdered coconut, and others looked as white as the water of the Ganges.</p>
+<p>In this way she made many varieties of long-lasting sugar confections.</p>
+<h3><a class="header" href="#1026" id="1026">10.26</a></h3>
+<p>cira-sthayi ksira-sara, mandadi-vikara</p>
+<p>amrta-karpura adi aneka prakara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>cira-sthayi—long-lasting; ksira-sara—cheese; mandadi-vikara—varieties of sweetmeats made from manda, or milk and cream; amrta-karpura—a preparation made with milk and camphor; adi—and others; aneka prakara—many varieties.</p>
+<p>She made long-lasting cheese, many varieties of sweetmeats with milk and cream, and many other varied preparations, such as amrta-karpura.</p>
+<h3><a class="header" href="#1027" id="1027">10.27</a></h3>
+<p>salikacuti-dhanyera ’atapa’ cida kari’</p>
+<p>nutana-vastrera bada kuthali saba bhari’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>salikacuti-dhanyera—of a kind of fine rice; atapa—dried in the sunshine; cida kari’-making flat rice; nutana-vastrera—of new cloth; bada kuthali—a large bag; saba—all; bhari’-filling.</p>
+<p>She made flat rice from fine, unboiled, sali paddy and filled a large bag made of new cloth.</p>
+<h3><a class="header" href="#1028" id="1028">10.28</a></h3>
+<p>kateka cida hudum kari’ ghrtete bhajiya</p>
+<p>cini-pake nadu kaila karpuradi diya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kateka cida—some of the flat rice; hudum kari’-making into puffed rice; ghrtete bhajiya—frying in ghee; cini-pake—by cooking in sugar juice; nadu kaila—made into round balls; karpura-adi diya—mixing with camphor and other ingredients.</p>
+<p>She made some of the flat rice into puffed rice, fried it in ghee, cooked it in sugar juice, mixed in some camphor and rolled it into balls.</p>
+<h3><a class="header" href="#1029-30" id="1029-30">10.29-30</a></h3>
+<p>sali-dhanyera tandula-bhaja curna kariya</p>
+<p>ghrta-sikta curna kaila cini-paka diya</p>
+<p>karpura, marica, lavanga, elaci, rasavasa</p>
+<p>curna diya nadu kaila parama suvasa</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sali-dhanyera—of rice of a fine quality; tandula—the grains; bhaja—being fried; curna kariya—making it into a powder; ghrta-sikta—moistened with ghee; curna—the powder; kaila—made; cini-paka diya—by cooking with sugar; karpura—camphor; marica—black pepper; lavanga—cloves; elaci—cardamom; rasa-vasa—and other spices; curna—to the powder; diya—adding; nadu—round sweetmeats; kaila—made; parama su-vasa—very palatable.</p>
+<p>She powdered fried grains of fine rice, moistened the powder with ghee and cooked it in a solution of sugar.</p>
+<p>Then she added camphor, black pepper, cloves, cardamom and other spices and rolled it into balls that were very palatable and aromatic.</p>
+<h3><a class="header" href="#1031" id="1031">10.31</a></h3>
+<p>sali-dhanyera kha-i punah ghrtete bhajiya</p>
+<p>cini-paka ukhda kaila karpuradi diya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sali-dhanyera kha-i—parched rice from fine paddy; punah—again; ghrtete bhajiya—frying with ghee; cini-paka—boiling with sugar juice; ukhda—of the name ukhda; kaila—made; karpura-adi diya—mixing with camphor.</p>
+<p>She took parched rice from fine paddy, fried it in ghee, cooked it in a sugar solution, mixed in some camphor and thus made a preparation called ukhda or mudki.</p>
+<h3><a class="header" href="#1032" id="1032">10.32</a></h3>
+<p>phutkalai curna kari’ ghrte bhajaila</p>
+<p>cini-pake karpuradi diya nadu kaila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>phutkalai—fused peas fried in ghee and soaked in sugar juice; curna kari’-making into powder; ghrte bhajaila—fried with ghee; cini-pake—cooking with sugar; karpura-adi—camphor and other ingredients; diya—adding; nadu kaila—made round sweetmeat balls.</p>
+<p>Another variety of sweet was made with fused peas that were powdered, fried in ghee and then cooked in sugar juice.</p>
+<p>Camphor was mixed in, and then the sweet was rolled into a ball.</p>
+<h3><a class="header" href="#1033" id="1033">10.33</a></h3>
+<p>kahite na jani nama e-janme yahara</p>
+<p>aiche nana bhaksya-dravya sahasra-prakara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kahite na jani—I cannot speak; nama—the names; e-janme—in this life; yahara—of which; aiche—similar; nana—many; bhaksya-dravya—eatables; sahasra-prakara—hundreds and thousands of varieties.</p>
+<p>I could not mention the names of all these wonderful eatables, even in a lifetime.</p>
+<p>Damayanti made hundreds and thousands of varieties.</p>
+<h3><a class="header" href="#1034" id="1034">10.34</a></h3>
+<p>raghavera ajna, ara karena damayanti</p>
+<p>dunhara prabhute sneha parama-bhakati</p>
+<p><strong>SYNONYMS</strong></p>
+<p>raghavera ajna—the order of Raghava Pandita; ara—and; karena—executes; damayanti—Damayanti; dunhara—of both of them; prabhute—unto Sri Caitanya Mahaprabhu; sneha—affection; parama-bhakati—highly developed devotional service.</p>
+<p>Damayanti made all these preparations following the order of her brother, Raghava Pandita.</p>
+<p>Both of them had unlimited affection for Sri Caitanya Mahaprabhu and were advanced in devotional service.</p>
+<h3><a class="header" href="#1035" id="1035">10.35</a></h3>
+<p>ganga-mrttika ani’ vastrete chaniya</p>
+<p>panpadi kariya dila gandha-dravya diya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ganga-mrttika—dirt from the River Ganges; ani’-bringing; vastrete—through a cloth; chaniya—pressing; panpadi kariya dila—made into small balls; gandha-dravya diya—mixing with aromatic agents.</p>
+<p>Damayanti took earth from the Ganges, dried it, powdered it, strained it through a fine cloth, mixed in aromatic ingredients and rolled it into small balls.</p>
+<h3><a class="header" href="#1036" id="1036">10.36</a></h3>
+<p>patala mrt-patre sandhanadi bhari’</p>
+<p>ara saba vastu bhare vastrera kuthali</p>
+<p><strong>SYNONYMS</strong></p>
+<p>patala—thin; mrt-patre—in pots of earth; sandhana-adi—condiments and other items; bhari’-filling; ara—other; saba—all; vastu—things; bhare—filled; vastrera kuthali—small bags of cloth.</p>
+<p>The condiments and similar items were put into thin earthen pots, and everything else was put into small cloth bags.</p>
+<h3><a class="header" href="#1037" id="1037">10.37</a></h3>
+<p>samanya jhali haite dviguna jhali kaila</p>
+<p>paripati kari’ saba jhali bharaila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>samanya—small; jhali—bags; haite—from; dvi-guna—twice as big; jhali—bags; kaila—made; paripati kari’-with great attention; saba jhali—all the bags; bharaila—she filled.</p>
+<p>From small bags Damayanti made bags that were twice as large.</p>
+<p>Then with great attention she filled all the large ones with the small ones.</p>
+<h3><a class="header" href="#1038" id="1038">10.38</a></h3>
+<p>jhali bandhi’ mohara dila agraha kariya</p>
+<p>tina bojhari jhali vahe krama kariya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jhali bandhi’-binding the bags; mohara dila—she sealed; agraha kariya—with great attention; tina bojhari—three carriers; jhali vahe—carried the bags; krama kariya—one after another.</p>
+<p>She then wrapped and sealed each and every bag with great attention.</p>
+<p>The bags were carried by three bearers, one after another.</p>
+<h3><a class="header" href="#1039" id="1039">10.39</a></h3>
+<p>sanksepe kahilun ei jhalira vicara</p>
+<p>’raghavera jhali’ bali’ vikhyati yahara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sanksepe—in brief; kahilun—l have spoken; ei jhalira—of these bags; vicara—the description; raghavera jhali—the bags of Raghava; bali’-as; vikhyati—the fame; yahara—of which.</p>
+<p>Thus I have briefly described the bags that have become famous as raghavera jhali.</p>
+<h3><a class="header" href="#1040" id="1040">10.40</a></h3>
+<p>jhalira upara ’munsiba’ makaradhvaja-kara</p>
+<p>prana-rupe jhali rakhe hana tatpara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jhalira upara—upon the bags; munsiba—the superintendent; makaradhvaja-kara—Makaradhvaja Kara; prana-rupe—like his life; jhali rakhe—he keeps the bags; hana tatpara—with great attention.</p>
+<p>The superintendent for all those bags was Makaradhvaja Kara, who kept them with great attention like his very life.</p>
+<h3><a class="header" href="#1041" id="1041">10.41</a></h3>
+<p>ei-mate vaisnava saba nilacale aila</p>
+<p>daive jagannathera se dina jala-lila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei-mate—in this way; vaisnava saba—all the Vaisnavas; nilacale aila—came to Nilacala; daive—by chance; jagannathera—of Lord Jagannatha; se dina—that day; jala-lila—pastimes in the water.</p>
+<p>Thus all the Vaisnavas from Bengal went to Jagannatha Puri.</p>
+<p>By chance, they arrived on the day when Lord Jagannatha performs pastimes in the water.</p>
+<h3><a class="header" href="#1042" id="1042">10.42</a></h3>
+<p>narendrera jale ’govinda’ naukate cadiya</p>
+<p>jala-krida kare saba bhakta-gana lana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>narendrera jale—upon the water of the lake known as Narendra-sarovara; govinda—Lord Govinda; naukate cadiya—getting aboard a boat; jala-krida kare—displays His water pastimes; saba bhakta-gana—all the devotees; lana—taking.</p>
+<p>Boarding a boat in the waters of Narendra-sarovara, Lord Govinda performed His water pastimes with all the devotees.</p>
+<h3><a class="header" href="#1043" id="1043">10.43</a></h3>
+<p>sei-kale mahaprabhu bhakta-gana-sange</p>
+<p>narendre aila dekhite jala-keli-range</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sei-kale—at that time; mahaprabhu—Sri Caitanya Mahaprabhu; bhakta-gana-sange—with His devotees; narendre aila—arrived at the Narendra Lake; dekhite—to see; jala-keli—the pastimes on the water; range—in great jubilation.</p>
+<p>Then Sri Caitanya Mahaprabhu arrived with His personal associates to see the jubilant pastimes of Lord Jagannatha in the Narendra-sarovara.</p>
+<h3><a class="header" href="#1044" id="1044">10.44</a></h3>
+<p>sei-kale aila saba gaudera bhakta-gana</p>
+<p>narendrete prabhu-sange ha-ila milana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sei-kale—at the same time; aila—arrived; saba—all; gaudera bhakta-gana—the devotees from Bengal; narendrete—at the lake known as Narendra-sarovara; prabhu-sange—with Lord Sri Caitanya Mahaprabhu; ha-ila milana—there was a meeting.</p>
+<p>At the same time, all the devotees from Bengal arrived at the lake and had a great meeting with the Lord.</p>
+<h3><a class="header" href="#1045" id="1045">10.45</a></h3>
+<p>bhakta-gana pade asi’ prabhura carane</p>
+<p>uthana prabhu sabare kaila alingane</p>
+<p><strong>SYNONYMS</strong></p>
+<p>bhakta-gana—the devotees; pade—fell; asi’-coming; prabhura carane—at the lotus feet of Sri Caitanya Mahaprabhu; uthana—getting them up; prabhu—Sri Caitanya Mahaprabhu; sabare—all of them; kaila alingane—embraced.</p>
+<p>All the devotees immediately fell at the lotus feet of Sri Caitanya Mahaprabhu, and the Lord lifted and embraced every one of them.</p>
+<h3><a class="header" href="#1046" id="1046">10.46</a></h3>
+<p>gaudiya-sampradaya saba karena kirtana</p>
+<p>prabhura milane uthe premera krandana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>gaudiya-sampradaya—of the group of Vaisnavas from Bengal; saba—all; karena kirtana—perform congregational chanting; prabhura milane—upon meeting Sri Caitanya Mahaprabhu; uthe—rise; premera krandana—crying in ecstatic love.</p>
+<p>The Gaudiya-sampradaya, consisting of all the devotees from Bengal, began congregational chanting.</p>
+<p>When they met the Lord, they began to cry loudly in ecstatic love.</p>
+<h3><a class="header" href="#1047" id="1047">10.47</a></h3>
+<p>jala-krida, vadya, gita, nartana, kirtana</p>
+<p>maha-kolahala tire, salile khelana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jala-krida—the pastimes in the water; vadya—musical vibration; gita—singing; nartana—dancing; kirtana—chanting; maha-kolahala—tumultuous sound; tire—on the bank; salile—in the water; khelana—sporting.</p>
+<p>Because of the pastimes in the water, there was great jubilation on the shore, with music, singing, chanting, dancing and tumultuous crying.</p>
+<h3><a class="header" href="#1048" id="1048">10.48</a></h3>
+<p>gaudiya-sankirtane ara rodana miliya</p>
+<p>maha-kolahala haila brahmanda bhariya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>gaudiya-sankirtane—congregational chanting by the Gaudiya Vaisnavas; ara—and; rodana—crying; miliya—mixing; maha-kolahala—a great, tumultuous sound vibration; haila—there was; brahmanda—the universe; bhariya—filling.</p>
+<p>The chanting and crying of the Gaudiya Vaisnavas mixed and created a tumultuous sound vibration that filled the entire universe.</p>
+<h3><a class="header" href="#1049" id="1049">10.49</a></h3>
+<p>saba bhakta lana prabhu namilena jale</p>
+<p>saba lana jala-krida karena kutuhale</p>
+<p><strong>SYNONYMS</strong></p>
+<p>saba bhakta—all the devotees; lana—taking; prabhu—Sri Caitanya Mahaprabhu; namilena jale—got down in the water; saba lana—taking all of them; jala-krida—activities in the water; karena—performs; kutuhale—in great jubilation.</p>
+<p>Sri Caitanya Mahaprabhu entered the water with His devotees and began His pastimes with them in great jubilation.</p>
+<h3><a class="header" href="#1050" id="1050">10.50</a></h3>
+<p>prabhura ei jala-krida dasa-vrndavana</p>
+<p>’caitanya-mangale’ vistari’ kariyachena varnana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prabhura—of Sri Caitanya Mahaprabhu; ei—these; jala-krida—activities in the water; dasa-vrndavana—Vrndavana dasa Thakura; caitanya-mangale—in his book Caitanya-mangala, now known as Caitanya-bhagavata; vistari’-describing in detail; kariyachena varnana—has narrated.</p>
+<p>In his Caitanya-mangala (now known as Caitanya-bhagavata), Vrndavana dasa Thakura has given a detailed description of the activities the Lord performed in the water.</p>
+<h3><a class="header" href="#1051" id="1051">10.51</a></h3>
+<p>punah ihan varnile punarukti haya</p>
+<p>vyartha likhana haya, ara grantha badaya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>punah—again; ihan—here; varnile—if I describe; punah-ukti haya—it will be repetition; vyartha—useless; likhana—writing; haya—is; ara—and; grantha badaya—increases the volume of the book.</p>
+<p>There is no use describing here the activities of the Lord again.</p>
+<p>It would simply be repetitious and would increase the size of this book.</p>
+<h3><a class="header" href="#1052" id="1052">10.52</a></h3>
+<p>jala-lila kari’ govinda calila alaya</p>
+<p>nija-gana lana prabhu gela devalaya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jala-lila kari’-after finishing the pastimes on the water; govinda—Lord Jagannatha in His moving form as Govinda; calila alaya—returned to His place; nija-gana—His devotees; lana—taking; prabhu—Sri Caitanya Mahaprabhu; gela—went; deva-alaya—to the temple.</p>
+<p>Then Sri Caitanya Mahaprabhu went to the temple, taking all His devotees with Him.</p>
+<p><strong>PURPORT</strong></p>
+<p>The Deity referred to herein as Govinda is the vijaya-vigraha in the temple of Jagannatha.</p>
+<p>When there is a need to take Jagannatha somewhere, the vijaya-vigraha is taken because the body of Jagannatha is very heavy.</p>
+<p>The vijaya-vigraha in the Jagannatha temple is known as Govinda.</p>
+<p>For the pastimes in the Narendrasarovara, the vijaya-vigraha was carried there instead of Lord Jagannatha.</p>
+<h3><a class="header" href="#1053" id="1053">10.53</a></h3>
+<p>jagannatha dekhi’ punah nija-ghare aila</p>
+<p>prasada anana bhakta-gane khaoyaila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jagannatha dekhi’-after seeing Lord Jagannatha; punah—again; nija-ghare—to His residence; aila—returned; prasada—prasada; anana—causing to be brought; bhakta-gane khaoyaila—fed the devotees.</p>
+<p>When Sri Caitanya Mahaprabhu returned to His residence after visiting the temple of Jagannatha, He asked for a large quantity of Lord Jagannatha’s prasada, which He then distributed among His devotees so that they could eat sumptuously.</p>
+<h3><a class="header" href="#1054" id="1054">10.54</a></h3>
+<p>ista-gosthi saba lana kata-ksana kaila</p>
+<p>nija nija purva-vasaya sabaya pathaila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ista-gosthi—discussion of spiritual matters; saba lana—taking all the devotees; kata-ksana—for some time; kaila—did; nija nija—respective; purva-vasaya—to the former residences; sabaya—all; pathaila—He sent.</p>
+<p>After talking with all the devotees for some time, Sri Caitanya Mahaprabhu asked them to occupy the individual residences in which they had lived the previous year.</p>
+<h3><a class="header" href="#1055" id="1055">10.55</a></h3>
+<p>govinda-thani raghava jhali samarpila</p>
+<p>bhojana-grhera kone jhali govinda rakhila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>govinda-thani—in charge of Govinda; raghava—Raghava Pandita; jhali—the jhali, the bags of eatables; samarpila—delivered; bhojana-grhera—of the dining room; kone—in the corner; jhali—the bags; govinda—Govinda; rakhila—kept.</p>
+<p>Raghava Pandita delivered the bags of eatables to Govinda, who kept them in a corner of the dining room.</p>
+<h3><a class="header" href="#1056" id="1056">10.56</a></h3>
+<p>purva-vatsarera jhali ajada kariya</p>
+<p>dravya bharibare rakhe anya grhe lana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>purva-vatsarera—of the previous year; jhali—bags; ajada kariya—emptying; dravya bharibare—to fill with goods; rakhe—keeps; anya grhe—to another room; lana—taking.</p>
+<p>Govinda thoroughly emptied the bags from the previous year and kept them in another room to fill them with other goods.</p>
+<h3><a class="header" href="#1057" id="1057">10.57</a></h3>
+<p>ara dina mahaprabhu nija-gana lana</p>
+<p>jagannatha dekhilena sayyotthane yana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ara dina—the next day; mahaprabhu—Sri Caitanya Mahaprabhu; nija-gana lana—accompanied by His personal devotees; jagannatha dekhilena—saw Lord Jagannatha; sayya-utthane—at the time of rising early from bed; yana—going.</p>
+<p>The next day, Sri Caitanya Mahaprabhu went with His personal devotees to see Lord Jagannatha when Lord Jagannatha arose early in the morning.</p>
+<h3><a class="header" href="#1058" id="1058">10.58</a></h3>
+<p>beda-sankirtana tahan arambha karila</p>
+<p>sata-sampradaya tabe gaite lagila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>beda-sankirtana—surrounding congregational chanting; tahan—there; arambha karila—began; sata-sampradaya—seven groups; tabe—thereupon; gaite lagila—began to chant.</p>
+<p>After seeing Lord Jagannatha, Sri Caitanya Mahaprabhu began His all-encompassing sankirtana.</p>
+<p>He formed seven groups, which then began to chant.</p>
+<p><strong>PURPORT</strong></p>
+<p>For an explanation of the beda-sankirtana, one may refer to Madhya-lila, Chapter Eleven, verses 215-238.</p>
+<h3><a class="header" href="#1059" id="1059">10.59</a></h3>
+<p>sata-sampradaye nrtya kare sata jana</p>
+<p>advaita acarya, ara prabhu-nityananda</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sata-sampradaye—in the seven groups; nrtya kare—danced; sata jana—seven persons; advaita acarya—Advaita Acarya; ara—and; prabhu-nityananda—Lord Nityananda.</p>
+<p>In each of the seven groups was a principal dancer like Advaita Acarya and Lord Nityananda.</p>
+<h3><a class="header" href="#1060" id="1060">10.60</a></h3>
+<p>vakresvara, acyutananda, pandita-srivasa</p>
+<p>satyaraja-khanna, ara narahari-dasa</p>
+<p><strong>SYNONYMS</strong></p>
+<p>vakresvara—Vakresvara; acyutananda—Acyutananda; pandita-srivasa—Pandita Srivasa; satyaraja-khanna—Satyaraja Khan; ara—and; narahari-dasa—Narahari dasa.</p>
+<p>The dancers in the other groups were Vakresvara Pandita, Acyutananda, Pandita Srivasa, Satyaraja Khan and Narahari dasa.</p>
+<h3><a class="header" href="#1061" id="1061">10.61</a></h3>
+<p>sata-sampradaye prabhu karena bhramana</p>
+<p>’mora sampradaye prabhu’--aiche sabara mana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sata-sampradaye—in the seven groups; prabhu—Sri Caitanya Mahaprabhu; karena bhramana—wanders; mora sampradaye prabhu—Sri Caitanya Mahaprabhu is in our group; aiche—in this way; sabara mana—everyone was thinking.</p>
+<p>As Sri Caitanya Mahaprabhu walked from one group to another inspecting them, the men in each group thought,“The Lord is within our group.”</p>
+<h3><a class="header" href="#1062" id="1062">10.62</a></h3>
+<p>sankirtana-kolahale akasa bhedila</p>
+<p>saba jagannatha-vasi dekhite aila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sankirtana-kolahale—tumultuous roaring of congregational chanting; akasa bhedila—filled the sky; saba—all; jagannatha-vasi—the inhabitants of Jagannatha Puri; dekhite aila—came to see.</p>
+<p>The congregational chanting made a tumultuous roar that filled the sky.</p>
+<p>All the inhabitants of Jagannatha Puri came to see the kirtana.</p>
+<h3><a class="header" href="#1063" id="1063">10.63</a></h3>
+<p>raja asi’ dure dekhe nija-gana lana</p>
+<p>raja-patni saba dekhe attali cadiya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>raja—the King; asi’-coming; dure—from a distant place; dekhe—sees; nija-gana lana—accompanied by his personal staff; raja-patni—the queens; saba—all; dekhe—see; attali cadiya—going up high in the palace.</p>
+<p>Accompanied by his personal staff, the King also came there and watched from a distance, and all the queens watched from the elevated parts of the palace.</p>
+<h3><a class="header" href="#1064" id="1064">10.64</a></h3>
+<p>kirtana-atope prthivi kare talamala</p>
+<p>’hari-dhvani’ kare loka, haila kolahala</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kirtana-atope—by the force of congregational chanting; prthivi—the whole world; kare talamala—trembles; hari-dhvani kare—chanted the transcendental sound Hari; loka—people in general; haila—there was; kolahala—a tumultuous sound.</p>
+<p>Due to the forceful vibration of kirtana, the entire world began trembling.</p>
+<p>When everyone chanted the holy name, they made a tumultuous sound.</p>
+<h3><a class="header" href="#1065" id="1065">10.65</a></h3>
+<p>ei-mata kata-ksana karaila kirtana</p>
+<p>apane nacite tabe prabhura haila mana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei-mata—in this way; kata-ksana—for some time; karaila kirtana—caused kirtana to be performed; apane—personally; nacite—to dance; tabe—then; prabhura haila mana—Sri Caitanya Mahaprabhu desired.</p>
+<p>In this way the Lord had congregational chanting performed for some time, and then He Himself desired to dance.</p>
+<h3><a class="header" href="#1066" id="1066">10.66</a></h3>
+<p>sata-dike sata-sampradaya gaya, bajaya</p>
+<p>madhye maha-premavese nace gaura-raya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sata-dike—in seven directions; sata-sampradaya—the seven groups; gaya—chant; bajaya—play on the mrdanga; madhye—in the center; maha-premavese—in great ecstatic love of Krsna; nace—dances; gaura-raya—Sri Caitanya Mahaprabhu.</p>
+<p>The seven groups began chanting and beating their drums in seven directions, and Sri Caitanya Mahaprabhu began dancing in the center in great ecstatic love.</p>
+<h3><a class="header" href="#1067" id="1067">10.67</a></h3>
+<p>udiya-pada mahaprabhura mane smrti haila</p>
+<p>svarupere sei pada gaite ajna dila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>udiya-pada—a line of a song in the language of Orissa; mahaprabhura—of Sri Caitanya Mahaprabhu; mane—in the mind; smrti haila—was remembered; svarupere—unto Svarupa Damodara Gosvami; sei pada—that special line; gaite—to sing; ajna dila—ordered.</p>
+<p>Sri Caitanya Mahaprabhu remembered a line in the Orissan language and ordered Svarupa Damodara to sing it.</p>
+<h3><a class="header" href="#1068" id="1068">10.68</a></h3>
+<p>“jagamohana-pari-munda yau”</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jagamohana—the kirtana hall known as Jagamohana; pari—in; munda—my head; yau—let it be offered “Let my head fall at the feet of Jagannatha in the kirtana hall known as Jagamohana.”</p>
+<h3><a class="header" href="#1069" id="1069">10.69</a></h3>
+<p>ei pade nrtya karena parama-avese</p>
+<p>saba-loka caudike prabhura prema-jale bhase</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei pade—by this line; nrtya karena—dances; parama-avese—in great ecstatic love; saba-loka—all people; cau-dike—in all four directions; prabhura—of Sri Caitanya Mahaprabhu; prema-jale—in tears of love; bhase—float.</p>
+<p>Simply because of this line, Sri Caitanya Mahaprabhu was dancing in greatly ecstatic love.</p>
+<p>People all around Him floated in the water of His tears.</p>
+<h3><a class="header" href="#1070" id="1070">10.70</a></h3>
+<p>’bol ’bol’ balena prabhu sri-bahu tuliya</p>
+<p>hari-dhvani kare loka anande bhasiya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>bol—chant; bol—chant; balena—said; prabhu—the Lord; sri-bahu—His transcendental arms; tuliya—raising; hari-dhvani kare—chanted the holy name Hari; loka—people; anande bhasiya—floating in transcendental bliss.</p>
+<p>Raising His two arms, the Lord said, “Chant! Chant!” Floating in transcendental bliss, the people responded by chanting the holy name of Hari.</p>
+<h3><a class="header" href="#1071" id="1071">10.71</a></h3>
+<p>prabhu padi’ murcha yaya, svasa nahi ara</p>
+<p>acambite uthe prabhu kariya hunkara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prabhu—the Lord; padi’-falling down; murcha yaya—became unconscious; svasa nahi—there was no breathing; ara—and; acambite—suddenly; uthe—stands up; prabhu—Sri Caitanya Mahaprabhu; kariya hunkara—making a loud sound.</p>
+<p>The Lord fell to the ground unconscious, not even breathing.</p>
+<p>Then suddenly He stood up, making a loud sound.</p>
+<h3><a class="header" href="#1072" id="1072">10.72</a></h3>
+<p>saghana pulaka,--yena simulera taru</p>
+<p>kabhu praphullita anga, kabhu haya saru</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sa-ghana—constant; pulaka—standing of the hairs of the body; yena—like; simulera taru—the simula tree; kabhu—sometimes; praphullita—swollen; anga—body; kabhu—sometimes; haya—is; saru—lean and thin.</p>
+<p>The hairs on His body constantly stood up like the thorns on a simula tree.</p>
+<p>Sometimes His body was swollen and sometimes lean and thin.</p>
+<h3><a class="header" href="#1073" id="1073">10.73</a></h3>
+<p>prati roma-kupe haya prasveda, raktodgama</p>
+<p>jaja’ ’gaga’ ’pari’ ’mumu’--gadgada vacana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prati roma-kupe—in every hole of the hair; haya—there was; prasveda—perspiration; rakta-udgama—a profusion of blood; jaja gaga pari mumu—the sounds “jaja gaga pari mumu”; gadgada—faltering; vacana—words.</p>
+<p>He bled and perspired from every pore of His body.</p>
+<p>His voice faltered.</p>
+<p>Unable to say the line properly, He uttered only, “jaja gaga pari mumu.”</p>
+<h3><a class="header" href="#1074" id="1074">10.74</a></h3>
+<p>eka eka danta yena prthak prthak nade</p>
+<p>aiche nade danta,--yena bhume khasi’ pade</p>
+<p><strong>SYNONYMS</strong></p>
+<p>eka eka—each and every; danta—tooth; yena—as if; prthak prthak—separately; nade—shakes; aiche—like that; nade—shake; danta—the teeth; yena—as if; bhume—on the ground; khasi’-becoming loose; pade—fall.</p>
+<p>All His teeth shook, as if each were separate from the others.</p>
+<p>Indeed, they seemed about to fall to the ground.</p>
+<h3><a class="header" href="#1075" id="1075">10.75</a></h3>
+<p>ksane ksane bade prabhura ananda-avesa</p>
+<p>trtiya prahara ha-ila, nrtya nahe sesa</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ksane ksane—at every moment; bade—increases; prabhura—of Sri Caitanya Mahaprabhu; ananda-avesa—transcendental bliss; trtiya prahara—midafternoon; ha-ila—there was; nrtya—the dancing; nahe sesa—did not end.</p>
+<p>His transcendental bliss increased at every moment.</p>
+<p>Therefore even by midafternoon the dancing had not ended.</p>
+<h3><a class="header" href="#1076" id="1076">10.76</a></h3>
+<p>saba lokera uthalila ananda-sagara</p>
+<p>saba loka pasarila deha-atma-ghara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>saba lokera—of every person; uthalila—overflowed; ananda-sagara—the ocean of transcendental bliss; saba loka—every person; pasarila—forgot; deha—body; atma—mind; ghara—home.</p>
+<p>The ocean of transcendental bliss overflowed, and everyone present forgot his body, mind and home.</p>
+<h3><a class="header" href="#1077" id="1077">10.77</a></h3>
+<p>tabe nityananda prabhu srjila upaya</p>
+<p>krame-krame kirtaniya rakhila sabaya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>tabe—at that time; nityananda—Lord Nityananda; prabhu—the Lord; srjila upaya—made a device; krame-krame—by and by; kirtaniya—the chanters; rakhila—stopped; sabaya—all.</p>
+<p>Then Lord Nityananda found a way to end the kirtana.</p>
+<p>He gradually stopped all the chanters.</p>
+<h3><a class="header" href="#1078" id="1078">10.78</a></h3>
+<p>svarupera sange matra eka sampradaya</p>
+<p>svarupera sange seha manda-svara gaya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>svarupera sange—with Svarupa Damodara; matra—only; eka—one; sampradaya—group; svarupera sange—with Svarupa Damodara; seha—they; manda-svara—very softly; gaya—chanted.</p>
+<p>Thus only one group continued chanting with Svarupa Damodara, and they chanted very softly.</p>
+<h3><a class="header" href="#1079" id="1079">10.79</a></h3>
+<p>kolahala nahi, prabhura kichu bahya haila</p>
+<p>tabe nityananda sabara srama janaila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kolahala—tumultuous sound; nahi—there was not; prabhura—of Sri Caitanya Mahaprabhu; kichu—some; bahya—external consciousness; haila—there was; tabe—at that time; nityananda—Lord Nityananda; sabara—of all of them; srama—fatigue; janaila—informed.</p>
+<p>When there was no longer a tumultuous sound, Sri Caitanya Mahaprabhu returned to consciousness.</p>
+<p>Then Nityananda Prabhu informed Him of the fatigue of the chanters and dancers.</p>
+<h3><a class="header" href="#1080" id="1080">10.80</a></h3>
+<p>bhakta-srama jani’ kaila kirtana samapana</p>
+<p>saba lana asi’ kaila samudre snapana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>bhakta-srama—the fatigue of the devotees; jani’-understanding; kaila—performed; kirtana samapana—ending the chanting; saba lana asi’-accompanied by all of them; kaila—did; samudre—in the sea; snapana—bathing.</p>
+<p>Understanding the fatigue of the devotees, Sri Caitanya Mahaprabhu stopped the congregational chanting.</p>
+<p>Then He bathed in the sea, accompanied by them all.</p>
+<h3><a class="header" href="#1081" id="1081">10.81</a></h3>
+<p>saba lana prabhu kaila prasada bhojana</p>
+<p>sabare vidaya dila karite sayana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>saba lana—with all of them; prabhu—Sri Caitanya Mahaprabhu; kaila—performed; prasada bhojana—taking prasada; sabare—to everyone; vidaya dila—bade farewell; karite sayana—to take rest.</p>
+<p>Then Sri Caitanya Mahaprabhu took prasada with all of them and then asked them to return to their dwellings and take rest.</p>
+<h3><a class="header" href="#1082" id="1082">10.82</a></h3>
+<p>gambhirara dvare karena apane sayana</p>
+<p>govinda asiya kare pada-samvahana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>gambhirara dvare—at the door of the Gambhira, the small room within the room; karena—does; apane—personally; sayana—lying down; govinda—His personal servant Govinda; asiya—coming; kare—performs; pada-samvahana—massaging the legs.</p>
+<p>Sri Caitanya Mahaprabhu lay down at the door of the Gambhira, and Govinda came there to massage His legs.</p>
+<h3><a class="header" href="#1083-84" id="1083-84">10.83-84</a></h3>
+<p>sarva-kala ache ei sudrdha ’niyama’</p>
+<p>’prabhu yadi prasada pana karena sayana</p>
+<p>govinda asiya kare pada-samvahana</p>
+<p>tabe yai’ prabhura ’sesa’ karena bhojana’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sarva-kala—all the time; ache—there is; ei—this; su-drdha—hard-and-fast; niyama—regulation; prabhu—Sri Caitanya Mahaprabhu; yadi—when; prasada pana—after taking His meals; karena sayana—lies down; govinda—Govinda; asiya—coming; kare—performs; pada-samvahana—massaging the legs; tabe—thereafter; yai’-going; prabhura—of Sri Caitanya Mahaprabhu; sesa—the remnants of food; karena bhojana—eats.</p>
+<p>It was a steady, long-standing rule that Sri Caitanya Mahaprabhu would lie down to rest after lunch and Govinda would come to massage His legs.</p>
+<p>Then Govinda would honor the remnants of food left by Sri Caitanya Mahaprabhu.</p>
+<h3><a class="header" href="#1085" id="1085">10.85</a></h3>
+<p>saba dvara yudi’ prabhu kariyachena sayana</p>
+<p>bhitare yaite nare, govinda kare nivedana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>saba dvara—the whole door; yudi’-occupying the space of; prabhu—Sri Caitanya Mahaprabhu; kariyachena sayana—was lying down; bhitare—within; yaite nare—could not go; govinda—Govinda; kare nivedana—he requested.</p>
+<p>This time when the Lord lay down, He occupied the entire doorway.</p>
+<p>Govinda could not enter the room, and therefore he made the following request.</p>
+<h3><a class="header" href="#1086" id="1086">10.86</a></h3>
+<p>’eka-pasa hao, more deha’ bhitara yaite’</p>
+<p>prabhu kahe,--’sakti nahi anga calaite’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>eka-pasa hao—kindly turn on one side; more—me; deha’-allow; bhitara—within; yaite—to go; prabhu kahe—Sri Caitanya Mahaprabhu replied; sakti—strength; nahi—there is not; anga calaite—to move My body “Kindly turn on one side.</p>
+<p>Let me pass to enter the room.” However, the Lord replied,“I don’t have the strength to move My body.”</p>
+<h3><a class="header" href="#1087" id="1087">10.87</a></h3>
+<p>bara bara govinda kahe eka-dik ha-ite</p>
+<p>prabhu kahe,--’anga ami nari calaite’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>bara bara—again and again; govinda—Govinda; kahe—requests; eka-dik ha-ite—to turn on one side; prabhu kahe—Sri Caitanya Mahaprabhu replied; anga—My body; ami—I; nari calaite—cannot move.</p>
+<p>Govinda made his request again and again, but the Lord replied,“I cannot move My body.”</p>
+<h3><a class="header" href="#1088" id="1088">10.88</a></h3>
+<p>govinda kahe,--’karite cahi pada-samvahana’</p>
+<p>prabhu kahe,--’kara va na kara, yei laya tomara mana’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>govinda kahe—Govinda said; karite—to do; cahi—I want; pada-samvahana—massaging Your legs; prabhu kahe—the Lord replied; kara—do; va—or; na kara—do not do; yei—whatever; laya tomara mana—you decide.</p>
+<p>Govinda repeatedly requested, “I want to massage Your legs,” but the Lord said, “Do it or don’t do it.</p>
+<p>It depends upon your mind.”</p>
+<h3><a class="header" href="#1089" id="1089">10.89</a></h3>
+<p>tabe govinda bahirvasa tanra upare diya</p>
+<p>bhitara-ghare gela mahaprabhure langhiya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>tabe—then; govinda—Govinda; bahirvasa—outward wrapper; tanra upare—over Him; diya—spreading; bhitara-ghare—within the room; gela—went; mahaprabhure langhiya—crossing Sri Caitanya Mahaprabhu.</p>
+<p>Then Govinda spread the Lord’s wrapper over the Lord’s body and in this way entered the room by crossing over Him.</p>
+<h3><a class="header" href="#1090" id="1090">10.90</a></h3>
+<p>pada-samvahana kaila, kati-prstha capila</p>
+<p>madhura-mardane prabhura parisrama gela</p>
+<p><strong>SYNONYMS</strong></p>
+<p>pada-samvahana—massaging of the legs; kaila—he performed; kati—waist; prstha—back; capila—pressed; madhura-mardane—by mild pressing; prabhura—of Sri Caitanya Mahaprabhu; parisrama—fatigue; gela—went away.</p>
+<p>Govinda massaged the Lord’s legs as usual.</p>
+<p>He pressed the Lord’s waist and back very softly, and thus all the Lord’s fatigue went away.</p>
+<h3><a class="header" href="#1091" id="1091">10.91</a></h3>
+<p>sukhe nidra haila prabhura, govinda cape anga</p>
+<p>danda-dui ba-i prabhura haila nidra-bhanga</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sukhe—very nicely; nidra haila prabhura—Sri Caitanya Mahaprabhu slept; govinda—Govinda; cape anga—pressed the body; danda-dui bai—after about forty-five minutes; prabhura—of Sri Caitanya Mahaprabhu; haila—there was; nidra-bhanga—breaking of sleep.</p>
+<p>As Govinda stroked His body, the Lord slept very nicely for about forty-five minutes, and then His sleep broke.</p>
+<h3><a class="header" href="#1092" id="1092">10.92</a></h3>
+<p>govinde dekhiya prabhu bale kruddha hana</p>
+<p>’aji kene eta-ksana achis vasiya?</p>
+<p><strong>SYNONYMS</strong></p>
+<p>govinde dekhiya—seeing Govinda; prabhu—Sri Caitanya Mahaprabhu; bale—said; kruddha hana—in an angry mood; aji—today; kene—why; eta-ksana—for so long; achis—have you been; vasiya—sitting.</p>
+<p>When Sri Caitanya Mahaprabhu saw Govinda sitting by His side, He was somewhat angry.“Why have you been sitting here for so long today?” the Lord asked.</p>
+<h3><a class="header" href="#1093" id="1093">10.93</a></h3>
+<p>mora nidra haile kene na gela prasada khaite?’</p>
+<p>govinda kahe--’dvare suila, yaite nahi pathe’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>mora nidra haile—when I fell asleep; kene—why; na gela—did you not go; prasada khaite—to take your meal; govinda kahe—Govinda said; dvare—the door; suila—You were blocking; yaite—to go; nahi pathe—there is no passage “Why didn’t you go to take your meal after I fell asleep?” the Lord asked.</p>
+<p>Govinda replied, “You were lying down, blocking the door, and there was no way to go.”</p>
+<h3><a class="header" href="#1094" id="1094">10.94</a></h3>
+<p>prabhu kahe,--’bhitare tabe aila kemane?</p>
+<p>taiche kene prasada laite na kaila gamane?’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prabhu kahe—Sri Caitanya Mahaprabhu said; bhitare—inside; tabe—then; aila—you came; kemane—how; taiche—in the same way; kene—why; prasada laite—to take prasada; na kaila gamane—did you not go.</p>
+<p>The Lord asked, “How did you enter the room? Why didn’t you go out to take your lunch in the same way?”</p>
+<h3><a class="header" href="#1095" id="1095">10.95</a></h3>
+<p>govinda kahe mane--&quot;amara ’seva’ se ’niyama’</p>
+<p>aparadha ha-uka, kiba narake gamana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>govinda kahe—Govinda said; mane—within his mind; amara seva—my service; se niyama—that is the regulation; aparadha ha-uka—let there be offenses; kiba—or; narake—to hell; gamana—going.</p>
+<p>Govinda mentally replied, &quot;My duty is to serve, even if I have to commit offenses or go to hell.</p>
+<h3><a class="header" href="#1096" id="1096">10.96</a></h3>
+<p>’seva’ lagi’ koti ’aparadha’ nahi gani</p>
+<p>sva-nimitta ’aparadhabhase’ bhaya mani&quot;</p>
+<p><strong>SYNONYMS</strong></p>
+<p>seva lagi’-for the matter of service; koti aparadha—ten million offenses; nahi gani—I do not care for; sva-nimitta—for my personal self; aparadha-abhase—by a glimpse of an offense; bhaya mani—I am afraid “I would not mind committing hundreds and thousands of offenses for the service of the Lord, but I greatly fear committing even a glimpse of an offense for my own self.”</p>
+<h3><a class="header" href="#1097" id="1097">10.97</a></h3>
+<p>eta saba mane kari’ govinda rahila</p>
+<p>prabhu ye puchila, tara uttara na dila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>eta saba—all this; mane kari’-thinking; govinda rahila—Govinda kept silent; prabhu—Sri Caitanya Mahaprabhu; ye—what; puchila—inquired; tara—of that; uttara—reply; na dila—did not give.</p>
+<p>Thinking in this way, Govinda kept silent.</p>
+<p>He did not reply to the Lord’s inquiry.</p>
+<h3><a class="header" href="#1098" id="1098">10.98</a></h3>
+<p>pratyaha prabhura nidraya yana prasada la-ite</p>
+<p>se divasera srama dekhi’ lagila capite</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prati-aha—daily; prabhura nidraya—when the Lord was asleep; yana—he goes; prasada la-ite—to accept his lunch; se divasera—of that day; srama—the weariness; dekhi’-seeing; lagila capite—began to press.</p>
+<p>It was Govinda’s practice to go take lunch when the Lord was asleep.</p>
+<p>On that day, however, seeing the Lord’s weariness, Govinda continued massaging His body.</p>
+<h3><a class="header" href="#1099" id="1099">10.99</a></h3>
+<p>yaiteha patha nahi, yaibe kemane?</p>
+<p>maha-aparadha haya prabhura langhane</p>
+<p><strong>SYNONYMS</strong></p>
+<p>yaiteha—to go; patha nahi—there was no passage; yaibe kemane—how would he go away; maha-aparadha—a great offense; haya—there would be; prabhura langhane—to cross over the body of Sri Caitanya Mahaprabhu.</p>
+<p>There was no way to go.</p>
+<p>How could he leave? When he thought of crossing over the Lord’s body, he considered it a great offense.</p>
+<h3><a class="header" href="#10100" id="10100">10.100</a></h3>
+<p>ei saba haya bhakti-sastra-suksma marma</p>
+<p>caitanyera krpaya jane ei saba dharma</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei saba—all these; haya—are; bhakti-sastra—of the system of devotional service; suksma marma—finer principles; caitanyera krpaya—by the mercy of Sri Caitanya Mahaprabhu; jane—one can understand; ei saba—all these; dharma—principles of devotional service.</p>
+<p>These are some of the finer points of etiquette in devotional service.</p>
+<p>Only one who has received the mercy of Sri Caitanya Mahaprabhu can understand these principles.</p>
+<p><strong>PURPORT</strong></p>
+<p>Karmis, fruitive workers, cannot understand the finer conclusions of devotional service because they accept only its ritualistic value but do not understand how devotional service satisfies the Supreme Personality of Godhead.</p>
+<p>The karmis view the formalities as a means of advancing in religion, economic development, sensual satisfaction and liberation.</p>
+<p>Although these are only material results of following religious principles, the karmis consider them everything.</p>
+<p>Such ritualistic activities are called karma.</p>
+<p>Karmis who adopt devotional service very loosely and who therefore remain on the platform of material activities are called prakrta-sahajiyas.</p>
+<p>They cannot understand how pure devotional service is rendered in paternal and conjugal love, for this can be understood only by the special mercy bestowed by Sri Caitanya Mahaprabhu upon pure devotees.</p>
+<h3><a class="header" href="#10101" id="10101">10.101</a></h3>
+<p>bhakta-guna prakasite prabhu bada rangi</p>
+<p>ei saba prakasite kaila eta bhangi</p>
+<p><strong>SYNONYMS</strong></p>
+<p>bhakta-guna—the attributes of the devotee; prakasite—to manifest; prabhu—the Lord; bada rangi—very interested; ei saba—all these; prakasite—to manifest; kaila—He performed; eta—such; bhangi—incident.</p>
+<p>The Lord is very interested in manifesting the exalted qualities of His devotees, and that is why He engineered this incident.</p>
+<h3><a class="header" href="#10102" id="10102">10.102</a></h3>
+<p>sanksepe kahilun ei pari-munda-nrtya</p>
+<p>adyapiha gaya yaha caitanyera bhrtya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sanksepe—in brief; kahilun—I have described; ei—this; pari-munda-nrtya—dancing in the dancing hall of Jagannatha’s temple; adyapiha—even up-to-dately; gaya—sing about; yaha—which; caitanyera bhrtya—the servants of Sri Caitanya Mahaprabhu.</p>
+<p>Thus I have briefly described Sri Caitanya Mahaprabhu’s dancing in the hall of the Jagannatha temple.</p>
+<p>The servants of Sri Caitanya Mahaprabhu sing about this dancing even now.</p>
+<h3><a class="header" href="#10103" id="10103">10.103</a></h3>
+<p>ei-mata mahaprabhu lana nija-gana</p>
+<p>gundica-grhera kaila ksalana, marjana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei-mata—in this way; mahaprabhu—Sri Caitanya Mahaprabhu; lana nija-gana—accompanied by His personal associates; gundica-grhera—of the Gundica temple; kaila—performed; ksalana—washing; marjana—cleansing.</p>
+<p>Accompanied by His personal associates, Sri Caitanya Mahaprabhu washed and swept the Gundica temple, cleansing it as usual.</p>
+<h3><a class="header" href="#10104" id="10104">10.104</a></h3>
+<p>purvavat kaila prabhu kirtana, nartana</p>
+<p>purvavat totaya kaila vanya-bhojana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>purva-vat—as previously; kaila—performed; prabhu—Sri Caitanya Mahaprabhu; kirtana—chanting; nartana—dancing; purva-vat—as previously; totaya—in the garden; kaila—performed; vanya-bhojana—taking a picnic.</p>
+<p>The Lord danced and chanted and then enjoyed a picnic in the garden as He had done before.</p>
+<h3><a class="header" href="#10105" id="10105">10.105</a></h3>
+<p>purvavat ratha-age karila nartana</p>
+<p>hera-pancami-yatra kaila darasana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>purva-vat—as previously; ratha-age—in front of the chariot; karila nartana—performed dancing; hera-pancami-yatra—the festival of Hera-pancami; kaila darasana—He saw.</p>
+<p>As previously, He danced in front of the Jagannatha cart and observed the festival of Hera-pancami.</p>
+<h3><a class="header" href="#10106" id="10106">10.106</a></h3>
+<p>cari-masa varsaya rahila saba bhakta-gana</p>
+<p>janmastami adi yatra kaila darasana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>cari-masa-for four months; varsaya-of the rainy season; rahila-stayed; saba bhakta-gana-all the devotees; janmastami adi yatra-festivals like Lord Krsna’s birth ceremony; kaila darasana-observed.</p>
+<p>All the devotees from Bengal stayed in Jagannatha Puri for the four months of the rainy season and observed many other ceremonies, such as the anniversary of Lord Krsna’s birth.</p>
+<h3><a class="header" href="#10107" id="10107">10.107</a></h3>
+<p>purve yadi gauda ha-ite bhakta-gana aila</p>
+<p>prabhure kichu khaoyaite sabara iccha haila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>purve—formerly; yadi—when; gauda ha-ite—from Bengal; bhakta-gana aila—the devotees arrived; prabhure—to Sri Caitanya Mahaprabhu; kichu—something; khaoyaite—to feed; sabara iccha haila—everyone desired.</p>
+<p>Formerly, when all the devotees had arrived from Bengal, they all desired to give Sri Caitanya Mahaprabhu something to eat.</p>
+<h3><a class="header" href="#10108" id="10108">10.108</a></h3>
+<p>keha kona prasada ani’ deya govinda-thani</p>
+<p>’iha yena avasya bhaksana karena gosani’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>keha—someone; kona prasada—some variety of prasada; ani’-bringing; deya—delivers; govinda-thani—to Govinda; iha—this; yena—that; avasya—certainly; bhaksana karena—eats; gosani—Sri Caitanya Mahaprabhu.</p>
+<p>Each devotee would bring a certain type of prasada.</p>
+<p>He would entrust it to Govinda and request him, “Please arrange that the Lord will surely eat this prasada.”</p>
+<h3><a class="header" href="#10109" id="10109">10.109</a></h3>
+<p>keha paida, keha nadu, keha pitha-pana</p>
+<p>bahu-mulya uttama-prasada-prakara yara nana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>keha—someone; paida—a coconut preparation; keha—someone; nadu—sweetballs; keha—someone; pitha—cakes; pana—sweet rice; bahu-mulya—costly; uttama-prasada—very palatable food; prakara yara nana—of different varieties.</p>
+<p>Some brought paida (a coconut preparation), some brought sweetballs, and some brought cakes and sweet rice.</p>
+<p>The prasada was of different varieties, all very costly.</p>
+<h3><a class="header" href="#10110" id="10110">10.110</a></h3>
+<p>’amuk ei diyache’ govinda kare nivedana</p>
+<p>’dhari’ rakha’ bali’ prabhu na karena bhaksana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>amuk—such and such devotee; ei—this; diyache—has given; govinda—Govinda; kare nivedana—informs; dhari’ rakha—please keep them; bali’-saying; prabhu—Sri Caitanya Mahaprabhu; na karena bhaksana—does not eat.</p>
+<p>Govinda would present the prasada and say to Sri Caitanya Mahaprabhu, “This has been given by such and such devotee.” The Lord, however, would not actually eat it.</p>
+<p>He would simply say, “Keep it in storage.”</p>
+<h3><a class="header" href="#10111" id="10111">10.111</a></h3>
+<p>dharite dharite gharera bharila eka kona</p>
+<p>sata-janera bhaksya yata haila sancayana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>dharite dharite—keeping and keeping; gharera—of the room; bharila—filled up; eka kona—one corner; sata-janera—of one hundred people; bhaksya—sufficient for feeding; yata—all; haila—there was; sancayana—accumulation.</p>
+<p>Govinda kept accumulating the food, and soon it filled a corner of the room.</p>
+<p>There was quite enough to feed at least a hundred people.</p>
+<h3><a class="header" href="#10112" id="10112">10.112</a></h3>
+<p>govindere sabe puche kariya yatana</p>
+<p>’ama-datta prasada prabhure ki karaila bhaksana?</p>
+<p><strong>SYNONYMS</strong></p>
+<p>govindere—unto Govinda; sabe—all the devotees; puche—inquired; kariya yatana—with great eagerness; ama-datta prasada—the prasada given by me; prabhure—unto Sri Caitanya Mahaprabhu; ki karaila bhaksana—have you given for eating.</p>
+<p>All the devotees asked Govinda with great eagerness, “Have you given Sri Caitanya Mahaprabhu the prasada brought by me?”</p>
+<h3><a class="header" href="#10113" id="10113">10.113</a></h3>
+<p>kahan kichu kahi’ govinda kare vancana</p>
+<p>ara dina prabhure kahe nirveda-vacana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kahan—to someone; kichu—something; kahi’-saying; govinda—Govinda; kare vancana—told lies; ara dina—one day; prabhure—unto Sri Caitanya Mahaprabhu; kahe—said; nirveda-vacana—a statement of disappointment.</p>
+<p>When the devotees questioned Govinda, he had to tell them lies.</p>
+<p>Therefore one day he spoke to the Lord in disappointment.</p>
+<h3><a class="header" href="#10114" id="10114">10.114</a></h3>
+<p>&quot;acaryadi mahasaya kariya yatane</p>
+<p>tomare khaoyaite vastu dena mora sthane</p>
+<p><strong>SYNONYMS</strong></p>
+<p>acarya-adi—headed by Advaita Acarya; mahasaya—respectable gentlemen; kariya yatane—with great endeavor; tomare khaoyaite—to feed You; vastu dena—deliver varieties of food; mora sthane—to me &quot;Many respectable devotees, headed by Advaita Acarya, make a great endeavor to entrust me with varieties of food for You.</p>
+<h3><a class="header" href="#10115" id="10115">10.115</a></h3>
+<p>tumi se na khao, tanra puche bara bara</p>
+<p>kata vancana karimu, kemane amara nistara?&quot;</p>
+<p><strong>SYNONYMS</strong></p>
+<p>tumi—You; se—that; na khao—do not eat; tanra—they; puche—inquire; bara bara—again and again; kata vancana karimu—how long shall I cheat; kemane—how; amara—my; nistara—deliverance “You do not eat it, but they ask me again and again.</p>
+<p>How long shall I go on cheating them? How shall I be freed from this responsibility?”</p>
+<h3><a class="header" href="#10116" id="10116">10.116</a></h3>
+<p>prabhu kahe,--’adi-vasya’ duhkha kanhe mane?</p>
+<p>keba ki diyache, taha anaha ekhane’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prabhu kahe—the Lord replied; adi-vasya—you who have been residing with Me for a very long time; duhkha kanhe mane—why are you unhappy about this; keba ki diyache—whatever they have delivered; taha—all that; anaha ekhane—bring here.</p>
+<p>Sri Caitanya Mahaprabhu replied, “Why are you so foolishly unhappy? Bring here to Me whatever they have given you.”</p>
+<p><strong>PURPORT</strong></p>
+<p>Srila Bhaktivinoda Thakura explains that the word adi-vasya refers to one who has been living with another for a very long time.</p>
+<p>Govinda was addressed as adi-vasya because he had been living with Sri Caitanya Mahaprabhu for a very long time, whereas other devotees, who were mostly new, would come and go.</p>
+<p>In effect, the Lord told Govinda, “Since you have been living with Me for a long time, you should not be foolishly disappointed in this situation.</p>
+<h3><a class="header" href="#10117" id="10117">10.117</a></h3>
+<p>eta bali’ mahaprabhu vasila bhojane</p>
+<p>nama dhari’ dhari’ govinda kare nivedane</p>
+<p><strong>SYNONYMS</strong></p>
+<p>eta bali’-saying this; mahaprabhu—Sri Caitanya Mahaprabhu; vasila bhojane—sat down for eating; nama—the name; dhari’ dhari’-speaking; govinda—Govinda; kare nivedane—offers.</p>
+<p>Sri Caitanya Mahaprabhu sat down to eat.</p>
+<p>Then Govinda offered Him the preparations one after another, and as he did so he spoke the name of the person who had given each one.</p>
+<h3><a class="header" href="#10118" id="10118">10.118</a></h3>
+<p>&quot;acaryera ei paida, pana-sara-pupi</p>
+<p>ei amrta-gutika, manda, karpura-kupi</p>
+<p><strong>SYNONYMS</strong></p>
+<p>acaryera—of Advaita Acarya; ei—these; paida—coconut preparation; pana—sweet rice; sara-pupi—cakes made with cream; ei—these; amrta-gutika—sweetballs; manda—a type of round sweetmeat; karpura-kupi—a pot of camphor &quot;These preparations-paida, sweet rice, cakes made with cream, and also amrta-gutika, manda and a pot of camphor-have been given by Advaita Acarya.</p>
+<h3><a class="header" href="#10119" id="10119">10.119</a></h3>
+<p>srivasa-panditera ei aneka prakara</p>
+<p>pitha, pana, amrta-manda padma-cini ara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>srivasa-panditera—of Srivasa Pandita; ei—these; aneka prakara—many varieties; pitha—cakes; pana—cream; amrta-manda—another type of sweetball; padma-cini—padma-cini; ara—and &quot;Next there are varieties of food-cakes, cream, amrta-manda and padmacini-given by Srivasa Pandita.</p>
+<h3><a class="header" href="#10120" id="10120">10.120</a></h3>
+<p>acaryaratnera ei saba upahara</p>
+<p>acaryanidhira ei, aneka prakara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>acaryaratnera—of Candrasekhara; ei—these; saba—all; upahara—presentations; acaryanidhira—of Acaryanidhi; ei—these; aneka prakara—of different varieties &quot;All these are gifts of Acaryaratna, and these varieties of gifts are from Acaryanidhi.</p>
+<h3><a class="header" href="#10121" id="10121">10.121</a></h3>
+<p>vasudeva-dattera ei murari-guptera ara</p>
+<p>buddhimanta-khannera ei vividha prakara</p>
+<p><strong>SYNONYMS</strong></p>
+<p>vasudeva-dattera—of Vasudeva Datta; ei—these; murari-guptera—of Murari Gupta; ara—and; buddhimanta-khannera—of Buddhimanta Khan; ei—these; vividha prakara—of different varieties &quot;And all these varieties of food have been given by Vasudeva Datta, Murari Gupta and Buddhimanta Khan.</p>
+<h3><a class="header" href="#10122" id="10122">10.122</a></h3>
+<p>sriman-sena, sriman-pandita, acarya-nandana</p>
+<p>tan-sabara datta ei karaha bhojana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sriman-sena—Sivananda Sena; sriman-pandita—Sriman Pandita; acarya-nandana—Acarya Nandana; tan-sabara—of all of them; datta—given; ei—these; karaha bhojana—please eat &quot;These are gifts given by Sriman Sena, Sriman Pandita and Acarya Nandana.</p>
+<p>Please eat them all.</p>
+<h3><a class="header" href="#10123" id="10123">10.123</a></h3>
+<p>kulina-gramera ei age dekha yata</p>
+<p>khanda-vasi lokera ei dekha tata&quot;</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kulina-gramera—of the residents of Kulina-grama; ei—these; age—before; dekha—see; yata—all; khanda-vasi lokera—of the residents of Khanda; ei—these; dekha—see; tata—so many “Here are the preparations made by the inhabitants of Kulina-grama, and these have been made by the inhabitants of Khanda.”</p>
+<h3><a class="header" href="#10124" id="10124">10.124</a></h3>
+<p>aiche sabara nama lana prabhura age dhare</p>
+<p>santusta hana prabhu saba bhojana kare</p>
+<p><strong>SYNONYMS</strong></p>
+<p>aiche—in this way; sabara nama—everyone’s name; lana—taking; prabhura age—before the Lord; dhare—he places; santusta hana—being very satisfied; prabhu—the Lord; saba—all; bhojana kare—began to eat.</p>
+<p>In this way, Govinda gave everyone’s name as he put the food before the Lord.</p>
+<p>Being very satisfied, the Lord began to eat it all.</p>
+<h3><a class="header" href="#10125-126" id="10125-126">10.125-126</a></h3>
+<p>yadyapi masekera vasi mukuta narikela</p>
+<p>amrta-gutikadi, panadi sakala</p>
+<p>tathapi nutana-praya saba dravyera svada</p>
+<p>’vasi’ visvada nahe sei prabhura prasada</p>
+<p><strong>SYNONYMS</strong></p>
+<p>yadyapi—although; masekera—one month; vasi—remaining; mukuta narikela—a very hard sweet preparation of coconut; amrta-gutika—amrta-gutika sweetballs; adi—etc.; pana—sweet drinks; adi—and so on; sakala—all; tathapi—still; nutana-praya—as if fresh; saba dravyera—of every preparation; svada—the taste; vasi—stale; visvada—tasteless; nahe—were not; sei—that; prabhura prasada—the mercy of the Lord.</p>
+<p>The hard sweets made of coconut, mukuta narikela, the sweetballs, the many kinds of sweet drinks and all the other preparations were at least a month old, but although they were old, they had not become tasteless or stale.</p>
+<p>Indeed, they had all stayed fresh.</p>
+<p>That is the mercy of Sri Caitanya Mahaprabhu.</p>
+<h3><a class="header" href="#10127" id="10127">10.127</a></h3>
+<p>sata-janera bhaksya prabhu dandeke khaila!</p>
+<p>’ara kichu ache?’ bali’ govinde puchila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sata-janera—of one hundred persons; bhaksya—eatables; prabhu—Sri Caitanya Mahaprabhu; dandeke khaila—ate within twenty-four minutes; ara kichu ache—is there anything more; bali’-saying; govinde—unto Govinda; puchila—inquired.</p>
+<p>Within a very short time, Sri Caitanya Mahaprabhu ate enough for a hundred people.</p>
+<p>Then He asked Govinda, “Is there anything more left?”</p>
+<h3><a class="header" href="#10128" id="10128">10.128</a></h3>
+<p>govinda bale,--’raghavera jhali matra ache’</p>
+<p>prabhu kahe,--’aji rahu, taha dekhimu pache’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>govinda bale—Govinda replied; raghavera jhali—the bags given by Raghava; matra—only; ache—there is; prabhu kahe—Sri Caitanya Mahaprabhu said; aji—today; rahu—let remain; taha—that; dekhimu—I shall see; pache—later.</p>
+<p>Govinda replied, “Now there are only the bags of Raghava.” The Lord said, “Let them remain today.</p>
+<p>I shall see them later.”</p>
+<h3><a class="header" href="#10129" id="10129">10.129</a></h3>
+<p>ara dina prabhu yadi nibhrte bhojana kaila</p>
+<p>raghavera jhali khuli’ sakala dekhila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ara dina—the next day; prabhu—Sri Caitanya Mahaprabhu; yadi—when; nibhrte—in a secluded place; bhojana kaila—took His lunch; raghavera—of Raghava Pandita; jhali—the bags; khuli’-opening; sakala dekhila—saw everything.</p>
+<p>The next day, while taking His lunch in a secluded place, Sri Caitanya Mahaprabhu opened the bags of Raghava and inspected their contents one after another.</p>
+<h3><a class="header" href="#10130" id="10130">10.130</a></h3>
+<p>saba dravyera kichu kichu upayoga kaila</p>
+<p>svadu, sugandhi dekhi’ bahu prasamsila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>saba dravyera—of all the articles; kichu kichu—something; upayoga kaila—used; svadu—tasteful; su-gandhi—aromatic; dekhi’-seeing; bahu—very much; prasamsila—He praised.</p>
+<p>He tasted a little of everything they contained and praised it all for its flavor and aroma.</p>
+<h3><a class="header" href="#10131" id="10131">10.131</a></h3>
+<p>vatsareka tare ara rakhila dhariya</p>
+<p>bhojana-kale svarupa parivese khasana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>vatsareka—one year; tare—for; ara—balance; rakhila dhariya—kept in stock; bhojana-kale—at the time of lunch; svarupa—Svarupa Damodara Gosvami; parivese—administered; khasana—taking out little by little.</p>
+<p>All the varieties of the remaining prasada were kept to eat throughout the year.</p>
+<p>When Sri Caitanya Mahaprabhu ate His lunch, Svarupa Damodara Gosvami would serve it little by little.</p>
+<h3><a class="header" href="#10132" id="10132">10.132</a></h3>
+<p>kabhu ratri-kale kichu karena upayoga</p>
+<p>bhaktera sraddhara dravya avasya karena upabhoga</p>
+<p><strong>SYNONYMS</strong></p>
+<p>kabhu—sometimes; ratri-kale—at night; kichu—some; karena upayoga—used; bhaktera—of the devotees; sraddhara—with faith and love; dravya—preparations; avasya-certainly; karena upabhoga—enjoys.</p>
+<p>Sometimes Sri Caitanya Mahaprabhu would take some of it at night.</p>
+<p>The Lord certainly enjoys preparations made with faith and love by His devotees.</p>
+<p><strong>PURPORT</strong></p>
+<p>Krsna is very pleased with His devotees and their offerings.</p>
+<p>Therefore in Bhagavad-gita the Lord says:</p>
+<p>patram puspam phalam toyam</p>
+<p>yo me bhaktya prayacchati</p>
+<p>tad aham bhakty-upahrtam</p>
+<p>asnami prayatatmanah “If one offers Me with love and devotion a leaf, a flower, fruit or water, I will accept it.” (Bg.9.26) Herein also we find that Sri Caitanya Mahaprabhu accepted all this food because it had been offered by His devotees.</p>
+<p>Sometimes He would eat it during lunch and sometimes at night, but He would always think that since His devotees had offered it with great love and affection, He must eat it.</p>
+<h3><a class="header" href="#10133" id="10133">10.133</a></h3>
+<p>ei-mata mahaprabhu bhakta-gana-sange</p>
+<p>caturmasya gonaila krsna-katha-range</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei-mata—in this way; mahaprabhu—Sri Caitanya Mahaprabhu; bhakta-gana-sange—with His personal devotees; caturmasya gonaila—passed the four months of the rainy season; krsna-katha-range—in the happiness of discussing topics about Krsna.</p>
+<p>Thus Sri Caitanya Mahaprabhu spent the entire period of Caturmasya (the four months of the rainy season) in the happiness of discussing topics of Krsna with His devotees.</p>
+<h3><a class="header" href="#10134" id="10134">10.134</a></h3>
+<p>madhye madhye acaryadi kare nimantrana</p>
+<p>ghare bhata randhe ara vividha vyanjana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>madhye madhye—at intervals; acarya-adi—Advaita Acarya and others; kare nimantrana—invite; ghare—at home; bhata—rice; randhe—cook; ara—and; vividha vyanjana—varieties of vegetables.</p>
+<p>From time to time, Advaita Acarya and others would invite Sri Caitanya Mahaprabhu for home-cooked rice and varieties of vegetables.</p>
+<h3><a class="header" href="#10135-136" id="10135-136">10.135-136</a></h3>
+<p>maricera jhala, ara madhuramla ara</p>
+<p>ada, lavana, lembu, dugdha, dadhi, khanda-sara</p>
+<p>saka dui-cari, ara sukutara jhola</p>
+<p>nimba-vartaki, ara bhrsta-patola</p>
+<p><strong>SYNONYMS</strong></p>
+<p>maricera jhala—a pungent preparation with black pepper; ara—as well as; madhuramla—a sweet-and-sour preparation; ara—also; ada—ginger; lavana—salted preparations; lembu—lime; dugdha—milk; dadhi—yogurt; khanda-sara—cheese; saka dui-cari—spinach of two to four kinds; ara—and; sukutara jhola—a soup made of bitter melon; nimba-vartaki—eggplant mixed with nimba leaves; ara—and; bhrsta-patola—fried patola.</p>
+<p>They offered pungent preparations made with black pepper, sweet-and-sour preparations, ginger, salty preparations, limes, milk, yogurt, cheese, two or four kinds of spinach, soup made with bitter melon, eggplant mixed with nimba flowers, and fried patola.</p>
+<h3><a class="header" href="#10137" id="10137">10.137</a></h3>
+<p>bhrsta phula-badi, ara mudga-dali-supa</p>
+<p>vividha vyanjana randhe prabhura ruci-anurupa</p>
+<p><strong>SYNONYMS</strong></p>
+<p>bhrsta—fried; phula-badi—a hot dhal preparation; ara—and; mudga-dali-supa—a liquid preparation made from mung dhal; vividha vyanjana—varieties of vegetables; randhe—used to cook; prabhura ruci-anurupa—very tasteful for Sri Caitanya Mahaprabhu.</p>
+<p>They also offered phula-badi, liquid mung dhal and many vegetables, all cooked according to the Lord’s taste.</p>
+<h3><a class="header" href="#10138" id="10138">10.138</a></h3>
+<p>jagannathera prasada ane karite misrita</p>
+<p>kahan eka yayena, kahan ganera sahita</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jagannathera—of Lord Jagannatha; prasada—remnants of food; ane—bring; karite misrita—mixing; kahan—somewhere; eka yayena—goes alone; kahan—somewhere; ganera sahita—with associates.</p>
+<p>They would mix these preparations with the remnants of food from Lord Jagannatha.</p>
+<p>When Sri Caitanya Mahaprabhu accepted the invitations, He went sometimes alone and sometimes with His associates.</p>
+<h3><a class="header" href="#10139" id="10139">10.139</a></h3>
+<p>acaryaratna, acaryanidhi, nandana, raghava</p>
+<p>srivasa-adi yata bhakta, vipra saba</p>
+<p><strong>SYNONYMS</strong></p>
+<p>acaryaratna—Acaryaratna; acaryanidhi—Acaryanidhi; nandana—Nandana Acarya; raghava—Raghava Pandita; srivasa-adi—headed by Srivasa; yata bhakta—all devotees; vipra saba—all brahmanas.</p>
+<p>Devotees like Acaryaratna, Acaryanidhi, Nandana Acarya, Raghava Pandita and Srivasa were all of the brahmana caste.</p>
+<h3><a class="header" href="#10140-141" id="10140-141">10.140-141</a></h3>
+<p>ei-mata nimantrana karena yatna kari</p>
+<p>vasudeva, gadadhara-dasa, gupta-murari</p>
+<p>kulina-grami, khanda-vasi, ara yata jana</p>
+<p>jagannathera prasada ani’ kare nimantrana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei-mata—like this; nimantrana—invitation; karena—execute; yatna kari—with devotion; vasudeva—Vasudeva; gadadhara-dasa—Gadadhara dasa; gupta-murari—Murari Gupta; kulina-grami—the inhabitants of Kulina-grama; khanda-vasi—the inhabitants of Khanda; ara—and; yata jana—many other persons; jagannathera prasada—remnants of the food of Jagannatha; ani’-bringing; kare nimantrana—invite.</p>
+<p>They would extend invitations to the Lord.</p>
+<p>Vasudeva Datta, Gadadhara dasa, Murari Gupta, the inhabitants of Kulina-grama and Khanda and many other devotees who were not brahmanas by caste would purchase food offered to Lord Jagannatha and then extend invitations to Sri Caitanya Mahaprabhu.</p>
+<p><strong>PURPORT</strong></p>
+<p>The inhabitants of Kulina-grama, such as Satyaraja Khan and Ramananda Vasu, were not brahmanas by caste, nor were the inhabitants of Khanda, such as Mukunda dasa, Narahari dasa and Raghunandana.</p>
+<p>Therefore they would purchase prasada from the market where the remnants of Lord Jagannatha’s food was sold and then extend invitations to Sri Caitanya Mahaprabhu, whereas Acaryaratna, Acaryanidhi and others who were brahmanas by caste would cook at home when they invited the Lord.</p>
+<p>Caitanya Mahaprabhu observed the etiquette then current in society by accepting only prasada cooked by members of the brahmana caste, but on principle He accepted invitations from His devotees, regardless of whether they were brahmanas by caste.</p>
+<h3><a class="header" href="#10142" id="10142">10.142</a></h3>
+<p>sivananda-senera suna nimantranakhyana</p>
+<p>sivanandera bada-putrera ’caitanya-dasa’ nama</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sivananda-senera—of Sivananda Sena; suna—hear; nimantrana-akhyana—the story of the invitation; sivanandera—of Sivananda Sena; bada-putrera—of the eldest son; caitanya-dasa nama—the name is Caitanya dasa.</p>
+<p>Now hear about the invitation Sivananda Sena extended to the Lord.</p>
+<p>His eldest son was named Caitanya dasa.</p>
+<h3><a class="header" href="#10143" id="10143">10.143</a></h3>
+<p>prabhure milaite tanre sangei anila</p>
+<p>milaile, prabhu tanra nama ta’ puchila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prabhure milaite—to introduce to the Lord; tanre—him, Caitanya dasa; sangei—along; anila—brought; milaile—when he introduced him; prabhu—Sri Caitanya Mahaprabhu; tanra—his; nama—name; ta’-thereupon; puchila—inquired.</p>
+<p>When Sivananda brought his son, Caitanya dasa, to be introduced to the Lord, Sri Caitanya Mahaprabhu inquired about his name.</p>
+<h3><a class="header" href="#10144" id="10144">10.144</a></h3>
+<p>’caitanya-dasa’ nama suni’ kahe gaura-raya</p>
+<p>’kiba nama dharanacha, bujhana na yaya’</p>
+<p><strong>SYNONYMS</strong></p>
+<p>caitanya-dasa—Caitanya dasa; nama—name; suni’-hearing; kahe gaura-raya—Sri Caitanya Mahaprabhu said; kiba—what; nama—name; dharanacha—you have given; bujhana na yaya—it cannot be understood.</p>
+<p>When the Lord heard that his name was Caitanya dasa, He said, “What kind of name have you given him? It is very difficult to understand.”</p>
+<h3><a class="header" href="#10145" id="10145">10.145</a></h3>
+<p>sena kahe,--’ye janilun, sei nama dharila’</p>
+<p>eta bali’ mahaprabhure nimantrana kaila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sena kahe—Sivananda Sena replied; ye janilun—whatever I know; sei nama—that name; dharila—he has kept; eta bali’-saying this; mahaprabhure—unto Sri Caitanya Mahaprabhu; nimantrana kaila—gave an invitation.</p>
+<p>Sivananda Sena replied, “He has kept the name that appeared to me from within.” Then he invited Sri Caitanya Mahaprabhu for lunch.</p>
+<h3><a class="header" href="#10146" id="10146">10.146</a></h3>
+<p>jagannathera bahu-mulya prasada anaila</p>
+<p>bhakta-gane lana prabhu bhojane vasila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>jagannathera—of Lord Jagannatha; bahu-mulya—very costly; prasada—remnants of food; anaila—brought; bhakta-gane—the devotees; lana—taking along; prabhu—Sri Caitanya Mahaprabhu; bhojane vasila—sat down to accept prasada.</p>
+<p>Sivananda Sena had bought very costly remnants of Lord Jagannatha’s food.</p>
+<p>He brought it in and offered it to Sri Caitanya Mahaprabhu, who sat down to accept the prasada with His associates.</p>
+<h3><a class="header" href="#10147" id="10147">10.147</a></h3>
+<p>sivanandera gaurave prabhu karila bhojana</p>
+<p>ati-guru-bhojane prabhura prasanna nahe mana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sivanandera—of Sivananda Sena; gaurave—out of honor; prabhu—Sri Caitanya Mahaprabhu; karila bhojana—ate; ati-guru-bhojane—because of eating too much; prabhura—of Sri Caitanya Mahaprabhu; prasanna nahe mana—the mind was not satisfied.</p>
+<p>Because of Sivananda Sena’s glories, Sri Caitanya Mahaprabhu ate all kinds of prasada to honor his request.</p>
+<p>However, the Lord ate more than necessary, and therefore His mind was dissatisfied.</p>
+<h3><a class="header" href="#10148" id="10148">10.148</a></h3>
+<p>ara dina caitanya-dasa kaila nimantrana</p>
+<p>prabhura ’abhista’ bujhi’ anila vyanjana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ara dina—next day; caitanya-dasa—the son of Sivananda Sena; kaila nimantrana—invited; prabhura—of Sri Caitanya Mahaprabhu; abhista—desire; bujhi’-understanding; anila vyanjana—bought different vegetables.</p>
+<p>The next day, Caitanya dasa, the son of Sivananda Sena, extended an invitation to the Lord.</p>
+<p>He could understand the Lord’s mind, however, and therefore he arranged for a different kind of food.</p>
+<h3><a class="header" href="#10149" id="10149">10.149</a></h3>
+<p>dadhi, lembu, ada, ara phula-bada, lavana</p>
+<p>samagri dekhiya prabhura prasanna haila mana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>dadhi—yogurt; lembu—lime; ada—ginger; ara—and; phula-bada—soft cake made of dhal; lavana—salt; samagri dekhiya—seeing these ingredients; prabhura—of Sri Caitanya Mahaprabhu; prasanna—satisfied; haila—became; mana—the mind.</p>
+<p>He offered yogurt, limes, ginger, soft bada and salt.</p>
+<p>Seeing all these arrangements, Sri Caitanya Mahaprabhu was very pleased.</p>
+<p><strong>PURPORT</strong>By the grace of Sri Caitanya Mahaprabhu, Caitanya dasa understood the Lord’s mind.</p>
+<p>Therefore he arranged for food that would counteract the heavy meal the Lord had eaten the previous day.</p>
+<p>Later in life, Caitanya dasa became a very learned Sanskrit scholar and wrote many books.</p>
+<p>Among these books, his commentary on Krsna-karnamrta is very famous.</p>
+<p>There is another book called Caitanya-caritamrta, which is a work of Sanskrit poetry.</p>
+<p>It is said that this was also composed by him.</p>
+<h3><a class="header" href="#10150" id="10150">10.150</a></h3>
+<p>prabhu kahe,--&quot;ei balaka amara mata jane</p>
+<p>santusta ha-ilan ami ihara nimantrane&quot;</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prabhu kahe—Sri Caitanya Mahaprabhu said; ei balaka—this boy; amara mata—My mind; jane—can understand; santusta ha-ilan—am very satisfied; ami—I; ihara nimantrane—by his invitation.</p>
+<p>Sri Caitanya Mahaprabhu said, “This boy knows My mind.</p>
+<p>Therefore I am very satisfied to keep his invitation.”</p>
+<h3><a class="header" href="#10151" id="10151">10.151</a></h3>
+<p>eta bali’ dadhi-bhata karila bhojana</p>
+<p>caitanya-dasere dila ucchista-bhajana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>eta bali’-saying this; dadhi-bhata—yogurt with rice; karila bhojana—ate; caitanya-dasere—unto Caitanya dasa; dila—He offered; ucchista-bhajana—the remnants of His food.</p>
+<p>After saying this, the Lord ate the rice mixed with yogurt and offered Caitanya dasa the remnants of His food.</p>
+<h3><a class="header" href="#10152" id="10152">10.152</a></h3>
+<p>cari-masa ei-mata nimantrane yaya</p>
+<p>kona kona vaisnava ’divasa’ nahi paya</p>
+<p><strong>SYNONYMS</strong></p>
+<p>cari-masa—for four months; ei-mata—in this way; nimantrane yaya—Sri Caitanya Mahaprabhu keeps His invitations; kona kona vaisnava—some of the Vaisnava devotees; divasa—day; nahi paya—could not get.</p>
+<p>The four months of Caturmasya passed in this manner, with the Lord accepting invitations from His devotees.</p>
+<p>Because of a heavy schedule of invitations, however, some of the Vaisnavas could not get an open day on which to invite the Lord.</p>
+<h3><a class="header" href="#10153" id="10153">10.153</a></h3>
+<p>gadadhara-pandita, bhattacarya sarvabhauma</p>
+<p>inha sabara ache bhiksara divasa-niyama</p>
+<p><strong>SYNONYMS</strong></p>
+<p>gadadhara-pandita—Pandita Gadadhara; bhattacarya sarvabhauma—Sarvabhauma Bhattacarya; inha sabara—of all these persons; ache—there is; bhiksara—for accepting invitations; divasa-niyama—a fixed date in every month.</p>
+<p>Gadadhara Pandita and Sarvabhauma Bhattacarya had fixed dates on which Sri Caitanya Mahaprabhu would accept their invitations every month.</p>
+<h3><a class="header" href="#10154-155" id="10154-155">10.154-155</a></h3>
+<p>gopinathacarya, jagadananda, kasisvara</p>
+<p>bhagavan, ramabhadracarya, sankara, vakresvara</p>
+<p>madhye madhye ghara-bhate kare nimantrana</p>
+<p>anyera nimantrane prasade kaudi dui-pana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>gopinatha-acarya—Gopinatha Acarya; jagadananda—Jagadananda Pandita; kasisvara—Kasisvara; bhagavan—Bhagavan; ramabhadra-acarya—Ramabhadracarya; sankara—Sankara; vakresvara—Vakresvara; madhye madhye—at intervals; ghara-bhate—with rice at home; kare nimantrana—invite; anyera nimantrana—for others’ invitations; prasade—prasada; kaudi dui-pana—two panas of conchshells (160 conchshells).</p>
+<p>Gopinatha Acarya, Jagadananda, Kasisvara, Bhagavan, Ramabhadracarya, Sankara and Vakresvara, who were all brahmanas, extended invitations to Sri Caitanya Mahaprabhu and offered Him food cooked at home, whereas other devotees would pay two panas of small conchshells to purchase Jagannatha’s prasada and then invite the Lord.</p>
+<h3><a class="header" href="#10156" id="10156">10.156</a></h3>
+<p>prathame achila ’nirbandha’ kaudi cari-pana</p>
+<p>ramacandra-puri-bha ye ghataila nimantrana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>prathame—in the beginning; achila—it was; nirbandha—fixed; kaudi cari-pana—four panas of conchshells; ramacandra-puri-bhaye—because of the restriction of Ramacandra Puri; ghataila—decreased; nimantrana—the price of an invitation.</p>
+<p>At first the cost of Jagannatha prasada for an invitation was four panas of conchshells, but when Ramacandra Puri was there, the price was cut in half.</p>
+<h3><a class="header" href="#10157" id="10157">10.157</a></h3>
+<p>cari-masa rahi’ gaudera bhakte vidaya dila</p>
+<p>nilacalera sangi bhakta sangei rahila</p>
+<p><strong>SYNONYMS</strong></p>
+<p>cari-masa rahi’-remaining for four months; gaudera bhakte—to the devotees coming from Bengal; vidaya dila—bade farewell; nilacalera sangi—associates at Jagannatha Puri; bhakta—devotees; sangei—with; rahila—remained.</p>
+<p>The devotees who came from Bengal stayed with Sri Caitanya Mahaprabhu for four consecutive months, and then the Lord bade them farewell.</p>
+<p>After the Bengali devotees departed, the devotees who were the Lord’s constant companions at Jagannatha Puri stayed with the Lord.</p>
+<h3><a class="header" href="#10158" id="10158">10.158</a></h3>
+<p>ei ta’ kahilun prabhura bhiksa-nimantrana</p>
+<p>bhakta-datta vastu yaiche kaila asvadana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>ei ta’-thus; kahilun—I have described; prabhura—of Sri Caitanya Mahaprabhu; bhiksa-nimantrana—the invitation to dine; bhakta-datta—offered by the devotees; vastu—things; yaiche—as; kaila asvadana—He tasted.</p>
+<p>Thus I have described how Sri Caitanya Mahaprabhu accepted invitations and how He accepted and tasted the prasada offered by His devotees.</p>
+<h3><a class="header" href="#10159" id="10159">10.159</a></h3>
+<p>tara madhye raghavera jhali-vivarana</p>
+<p>tara madhye pari-munda-nrtya-kathana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>tara madhye—in the midst of that; raghavera—of Raghava Pandita; jhali-vivarana—description of the bags of food; tara madhye—along with that; pari-munda-nrtya-kathana—the description of dancing in the temple of Jagannatha.</p>
+<p>In the midst of that narration are descriptions of Raghava Pandita’s bags of food and the dancing in the temple of Jagannatha.</p>
+<h3><a class="header" href="#10160" id="10160">10.160</a></h3>
+<p>sraddha kari’ sune yei caitanyera katha</p>
+<p>caitanya-carane prema paibe sarvatha</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sraddha kari’-with great faith and love; sune—hears; yei—anyone who; caitanyera katha—the narration of the activities of Sri Caitanya Mahaprabhu; caitanya-carane—at the lotus feet of Sri Caitanya Mahaprabhu; prema—love; paibe—must achieve; sarvatha—without fail.</p>
+<p>One who hears about the pastimes of Sri Caitanya Mahaprabhu with faith and love will certainly attain ecstatic love for the lotus feet of Sri Caitanya Mahaprabhu without fail.</p>
+<h3><a class="header" href="#10161" id="10161">10.161</a></h3>
+<p>sunite amrta-sama judaya karna-mana</p>
+<p>sei bhagyavan, yei kare asvadana</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sunite—to hear; amrta-sama—just like nectar; judaya karna-mana—satisfies the ears and mind; sei bhagyavan—he is very fortunate; yei—who; kare asvadana—tastes.</p>
+<p>Narrations of Sri Caitanya Mahaprabhu’s activities are just like nectar to hear.</p>
+<p>Indeed, they satisfy both the ears and mind.</p>
+<p>One who tastes the nectar of these activities is certainly very fortunate.</p>
+<h3><a class="header" href="#10162" id="10162">10.162</a></h3>
+<p>sri-rupa-raghunatha-pade yara asa</p>
+<p>caitanya-caritamrta kahe krsnadasa</p>
+<p><strong>SYNONYMS</strong></p>
+<p>sri-rupa—Srila Rupa Gosvami; raghunatha—Srila Raghunatha dasa Gosvami; pade—at the lotus feet; yara—whose; asa—expectation; caitanya-caritamrta—the book named Caitanya-caritamrta; kahe—describes; krsnadasa—Srila Krsnadasa Kaviraja Gosvami.</p>
+<p>Praying at the lotus feet of Sri Rupa and Sri Raghunatha, always desiring their mercy, I, Krsnadasa, narrate Sri Caitanya-caritamrta, following in their footsteps.</p>
+<p>Thus end the Bhaktivedanta purports to Sri Caitanya-caritamrta, Antya-lila, Tenth Chapter, describing how Lord Sri Caitanya Mahaprabhu tasted the prasada offered by His devotees.</p>
+<p>The Passing of Haridasa Thakura The summary of the chapter is given by Srila Bhaktivinoda Thakura in his Amrta-pravaha-bhasya as follows.</p>
+<p>In this chapter, Brahma Haridasa Thakura gave up his body with the consent of Sri Caitanya Mahaprabhu, and the Lord Himself personally performed the funeral ceremony and carried the body to the sea.</p>
+<p>He personally entombed the body, covered it with sand, and erected a platform on the site.</p>
+<p>After taking bath in the sea, He personally begged prasada of Jagannatha from shopkeepers and distributed prasada to the assembled devotees.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

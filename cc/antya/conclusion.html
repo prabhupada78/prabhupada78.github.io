@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Conclusion - Caitanya-caritamrta: Antya-lila</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Introduction</a></li><li class="affix"><a href="conclusion.html" class="active">Conclusion</a></li><li class="affix"><a href="1/index.html">1</a></li><li class="affix"><a href="2/index.html">2</a></li><li class="affix"><a href="3/index.html">3</a></li><li class="affix"><a href="4/index.html">4</a></li><li class="affix"><a href="5/index.html">5</a></li><li class="affix"><a href="6/index.html">6</a></li><li class="affix"><a href="7/index.html">7</a></li><li class="affix"><a href="8/index.html">8</a></li><li class="affix"><a href="9/index.html">9</a></li><li class="affix"><a href="10/index.html">10</a></li><li class="affix"><a href="11/index.html">11</a></li><li class="affix"><a href="12/index.html">12</a></li><li class="affix"><a href="13/index.html">13</a></li><li class="affix"><a href="14/index.html">14</a></li><li class="affix"><a href="15/index.html">15</a></li><li class="affix"><a href="16/index.html">16</a></li><li class="affix"><a href="17/index.html">17</a></li><li class="affix"><a href="18/index.html">18</a></li><li class="affix"><a href="19/index.html">19</a></li><li class="affix"><a href="20/index.html">20</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Caitanya-caritamrta: Antya-lila</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#concluding-words" id="concluding-words">Concluding Words</a></h1>
+<p>Today, Sunday, November 10, 1974-corresponding to the 10th of Kartikka, Caitanya Era 488, the eleventh day of the dark fortnight, the Rama-ekadasi-we have now finished the English translation of Sri Krsnadasa Kaviraja Gosvami’s Sri Caitanya-caritamrta in accordance with the authorised order of His Divine Grace Bhaktisiddhanta Sarasvati Thakur Gosvami Maharaja, my beloved eternal spiritual master, guide and friend.</p>
+<p>Although according to material vision His Divine Grace Srila Bhaktisiddhanta Sarasvati Thakura Prabhupada passed away from this material world on the last day of December, 1936, I still consider His Divine Grace to be always present with me by his vani, his words.</p>
+<p>There are two ways of association-by vani and by vapu.</p>
+<p>Vani means words, and vapu means physical presence.</p>
+<p>Physical presence is sometimes appreciable and sometimes not, but vani continues to exist eternally.</p>
+<p>Therefore we must take advantage of the vani, not the physical presence.Bhagavad-gita, for example, is the vani of Lord Krsna.</p>
+<p>Although Krsna was personally present five thousand years ago and is no longer physically present from the materialistic point of view, Bhagavad-gita continues.</p>
+<p>In this connection we may call to memory the time when I was fortunate enough to meet His Divine Grace Srila Prabhupada, sometime in the year 1922.</p>
+<p>Srila Prabhupada had come from Calcutta to Sridhama Mayapur to start the missionary activities of the Gaudiya Matha.</p>
+<p>He was sitting in a house at Ulta Danga when through the inducement of an intimate friend, the late Sriman Narendranatha Mallika, I had the opportunity to meet His Divine Grace for the first time.</p>
+<p>I do not remember the actual date of the meeting, but at that time I was one of the managers of Dr.</p>
+<p>Bose’s laboratory in Calcutta.</p>
+<p>I was a newly married young man, addicted to Gandhi’s movement and dressed in khadi.</p>
+<p>Fortunately, even at our first meeting, His Divine Grace advised me to preach the cult of Sri Caitanya Mahaprabhu in English in the Western countries.</p>
+<p>Because at that time I was a complete nationalist, a follower of Mahatma Gandhi’s, I submitted to His Divine Grace that unless our country were freed from foreign subjugation, no one would hear the message of Sri Caitanya Mahaprabhu seriously.</p>
+<p>Of course, we had some argument on this subject, but at last I was defeated and convinced that Sri Caitanya Mahaprabhu’s message is the only panacea for suffering humanity.</p>
+<p>I was also convinced that the message of Sri Caitanya Mahaprabhu was then in the hands of a very expert devotee and that surely the message of Sri Caitanya Mahaprabhu would spread all over the world.</p>
+<p>I could not, however, immediately take up his instructions to preach, but I took his words very seriously and was always thinking of how to execute his order, although I was quite unfit to do so.</p>
+<p>In this way I passed my life as a householder until 1950, when I retired from family life as a vanaprastha.</p>
+<p>With no companion, I loitered here and there until 1959, when I took sannyasa.</p>
+<p>Then I was completely ready to discharge the order of my spiritual master.</p>
+<p>Previously, in 1936, just before His Divine Grace passed away at Jagannatha Puri, I wrote him a letter asking what I could do to serve him.</p>
+<p>In reply, he wrote me a letter, dated 13 December 1936, ordering me, in the same way, to preach in English the cult of Sri Caitanya Mahaprabhu as I had heard it from him.</p>
+<p>After he passed away, I started the fortnightly magazine Back to Godhead sometime in 1944 and tried to spread the cult of Sri Caitanya Mahaprabhu through this magazine.</p>
+<p>After I took sannyasa, a well-wishing friend suggested that I write books instead of magazines.</p>
+<p>Magazines, he said, might be thrown away, but books remain perpetually.</p>
+<p>Then I attempted to write Srimad-Bhagavatam.</p>
+<p>Before that, when I was a householder, I had written on Srimad Bhagavad-gita and had completed about eleven hundred pages, but somehow or other the manuscript was stolen.</p>
+<p>In any case, when I had published Srimad-Bhagavatam, First Canto, in three volumes in India, I thought of going to the U.S.A.</p>
+<p>By the mercy of His Divine Grace, I was able to come to New York on September 17, 1965.</p>
+<p>Since then, I have translated many books, including Srimad-Bhagavatam, Bhakti-rasamrta-sindhu, Teachings of Lord Caitanya (a summary) and many others.</p>
+<p>In the meantime, I was induced to translate Sri Caitanya-caritamrta and publish it in an elaborate version.</p>
+<p>In his leisure time in later life, His Divine Grace Bhaktisiddhanta Sarasvati Thakura would simply read Caitanya-caritamrta.</p>
+<p>It was his favorite book.</p>
+<p>He used to say that there would be a time when the foreigners would learn the Bengali langage to read Caitanya-caritamrta.</p>
+<p>The work on this translation began about eighteen months ago.</p>
+<p>Now, by the grace of Sri Caitanya Mahaprabhu and his Divine Grace Bhaktisiddhanta Sarasvati Thakura, it is finished.</p>
+<p>In this connection I have to thank my American disciples, especially Sriman Pradyumna dasa Adhikari, Sriman Nitai dasa Adhikari, Sriman Jayadvaita dasa Brahmacari and many other boys and girls who are sincerely helping me in writing, editing and publishing all these literatures.</p>
+<p>I think that His Divine Grace Bhaktisiddhanta Sarasvati Thakura is always seeing my activities and guiding me within my heart by his words.</p>
+<p>As it is said in Srimad Bhagavatam, tene brahma hrda ya adi-kavaye.</p>
+<p>Spiritual inspiration comes from within the heart, wherein the Supreme Personality of Godhead, in His Paramatma feature, is always sitting with all His devotees and associates.</p>
+<p>It is to be admitted that whatever translation work I have done is through the inspiration of my spiritual master because personally I am most insignificant and incompetent to do this materially impossible work.</p>
+<p>I do not think myself a very learned scholar, but I have full faith in the service of my spiritual master, His Divine Grace Srila Bhaktisiddhanta Sarasvati Thakura.</p>
+<p>If there is any credit to my activities of translating, it is all due to His Divine Grace.</p>
+<p>Certainly if His Divine Grace were personally present at this time, it would have been a great occasion for jubiliation, but even though he is not physically present, I am confident that he is very pleased by this work of translation.</p>
+<p>He was very fond of seeing many books published to spread the Krsna consciousness movement.</p>
+<p>Therefore our society, the International Society for Krsna Consciousness, has formed to execute the order of Sri Caitanya Mahaprabhu and His Divine Grace Srila Bhaktisiddhanta Sarasvati Thakura.</p>
+<p>It is my wish that devotees of Lord Caitanya all over the world enjoy this translation, and I am glad to express my gratitude to the learned men in the Western countries who are so pleased with my work that they are ordering in advance all my books that will be published in the future.</p>
+<p>On this occasion therefore, I request my disciples who are determined to help me in this work to continue their cooperation fully, so that philosophers, scholars, religionists and people in general all over the world will benefit by reading our transcendental literatures such as Srimad-Bhagavatam and Sri Caitanya-caritamrta.</p>
+<p>Thus end the Bhaktivedanta purports to Sri Caitanya-caritamrta, dated November 10, 1974, at the Bhaktivedanta Book Trust, Hare Krsna Land, Juhu, Bombay.Concluding Words</p>
+<p>Today, Sunday, November 10, 1974-corresponding to the 10th of Kartikka, Caitanya Era 488, the eleventh day of the dark fortnight, the Rama-ekadasi-we have now finished the English translation of Sri Krsnadasa Kaviraja Gosvami’s Sri Caitanya-caritamrta in accordance with the authorised order of His Divine Grace Bhaktisiddhanta Sarasvati Thakur Gosvami Maharaja, my beloved eternal spiritual master, guide and friend.</p>
+<p>Although according to material vision His Divine Grace Srila Bhaktisiddhanta Sarasvati Thakura Prabhupada passed away from this material world on the last day of December, 1936, I still consider His Divine Grace to be always present with me by his vani, his words.</p>
+<p>There are two ways of association-by vani and by vapu.</p>
+<p>Vani means words, and vapu means physical presence.</p>
+<p>Physical presence is sometimes appreciable and sometimes not, but vani continues to exist eternally.</p>
+<p>Therefore we must take advantage of the vani, not the physical presence.Bhagavad-gita, for example, is the vani of Lord Krsna.</p>
+<p>Although Krsna was personally present five thousand years ago and is no longer physically present from the materialistic point of view, Bhagavad-gita continues.</p>
+<p>In this connection we may call to memory the time when I was fortunate enough to meet His Divine Grace Srila Prabhupada, sometime in the year 1922.</p>
+<p>Srila Prabhupada had come from Calcutta to Sridhama Mayapur to start the missionary activities of the Gaudiya Matha.</p>
+<p>He was sitting in a house at Ulta Danga when through the inducement of an intimate friend, the late Sriman Narendranatha Mallika, I had the opportunity to meet His Divine Grace for the first time.</p>
+<p>I do not remember the actual date of the meeting, but at that time I was one of the managers of Dr.</p>
+<p>Bose’s laboratory in Calcutta.</p>
+<p>I was a newly married young man, addicted to Gandhi’s movement and dressed in khadi.</p>
+<p>Fortunately, even at our first meeting, His Divine Grace advised me to preach the cult of Sri Caitanya Mahaprabhu in English in the Western countries.</p>
+<p>Because at that time I was a complete nationalist, a follower of Mahatma Gandhi’s, I submitted to His Divine Grace that unless our country were freed from foreign subjugation, no one would hear the message of Sri Caitanya Mahaprabhu seriously.</p>
+<p>Of course, we had some argument on this subject, but at last I was defeated and convinced that Sri Caitanya Mahaprabhu’s message is the only panacea for suffering humanity.</p>
+<p>I was also convinced that the message of Sri Caitanya Mahaprabhu was then in the hands of a very expert devotee and that surely the message of Sri Caitanya Mahaprabhu would spread all over the world.</p>
+<p>I could not, however, immediately take up his instructions to preach, but I took his words very seriously and was always thinking of how to execute his order, although I was quite unfit to do so.</p>
+<p>In this way I passed my life as a householder until 1950, when I retired from family life as a vanaprastha.</p>
+<p>With no companion, I loitered here and there until 1959, when I took sannyasa.</p>
+<p>Then I was completely ready to discharge the order of my spiritual master.</p>
+<p>Previously, in 1936, just before His Divine Grace passed away at Jagannatha Puri, I wrote him a letter asking what I could do to serve him.</p>
+<p>In reply, he wrote me a letter, dated 13 December 1936, ordering me, in the same way, to preach in English the cult of Sri Caitanya Mahaprabhu as I had heard it from him.</p>
+<p>After he passed away, I started the fortnightly magazine Back to Godhead sometime in 1944 and tried to spread the cult of Sri Caitanya Mahaprabhu through this magazine.</p>
+<p>After I took sannyasa, a well-wishing friend suggested that I write books instead of magazines.</p>
+<p>Magazines, he said, might be thrown away, but books remain perpetually.</p>
+<p>Then I attempted to write Srimad-Bhagavatam.</p>
+<p>Before that, when I was a householder, I had written on Srimad Bhagavad-gita and had completed about eleven hundred pages, but somehow or other the manuscript was stolen.</p>
+<p>In any case, when I had published Srimad-Bhagavatam, First Canto, in three volumes in India, I thought of going to the U.S.A.</p>
+<p>By the mercy of His Divine Grace, I was able to come to New York on September 17, 1965.</p>
+<p>Since then, I have translated many books, including Srimad-Bhagavatam, Bhakti-rasamrta-sindhu, Teachings of Lord Caitanya (a summary) and many others.</p>
+<p>In the meantime, I was induced to translate Sri Caitanya-caritamrta and publish it in an elaborate version.</p>
+<p>In his leisure time in later life, His Divine Grace Bhaktisiddhanta Sarasvati Thakura would simply read Caitanya-caritamrta.</p>
+<p>It was his favorite book.</p>
+<p>He used to say that there would be a time when the foreigners would learn the Bengali langage to read Caitanya-caritamrta.</p>
+<p>The work on this translation began about eighteen months ago.</p>
+<p>Now, by the grace of Sri Caitanya Mahaprabhu and his Divine Grace Bhaktisiddhanta Sarasvati Thakura, it is finished.</p>
+<p>In this connection I have to thank my American disciples, especially Sriman Pradyumna dasa Adhikari, Sriman Nitai dasa Adhikari, Sriman Jayadvaita dasa Brahmacari and many other boys and girls who are sincerely helping me in writing, editing and publishing all these literatures.</p>
+<p>I think that His Divine Grace Bhaktisiddhanta Sarasvati Thakura is always seeing my activities and guiding me within my heart by his words.</p>
+<p>As it is said in Srimad Bhagavatam, tene brahma hrda ya adi-kavaye.</p>
+<p>Spiritual inspiration comes from within the heart, wherein the Supreme Personality of Godhead, in His Paramatma feature, is always sitting with all His devotees and associates.</p>
+<p>It is to be admitted that whatever translation work I have done is through the inspiration of my spiritual master because personally I am most insignificant and incompetent to do this materially impossible work.</p>
+<p>I do not think myself a very learned scholar, but I have full faith in the service of my spiritual master, His Divine Grace Srila Bhaktisiddhanta Sarasvati Thakura.</p>
+<p>If there is any credit to my activities of translating, it is all due to His Divine Grace.</p>
+<p>Certainly if His Divine Grace were personally present at this time, it would have been a great occasion for jubiliation, but even though he is not physically present, I am confident that he is very pleased by this work of translation.</p>
+<p>He was very fond of seeing many books published to spread the Krsna consciousness movement.</p>
+<p>Therefore our society, the International Society for Krsna Consciousness, has formed to execute the order of Sri Caitanya Mahaprabhu and His Divine Grace Srila Bhaktisiddhanta Sarasvati Thakura.</p>
+<p>It is my wish that devotees of Lord Caitanya all over the world enjoy this translation, and I am glad to express my gratitude to the learned men in the Western countries who are so pleased with my work that they are ordering in advance all my books that will be published in the future.</p>
+<p>On this occasion therefore, I request my disciples who are determined to help me in this work to continue their cooperation fully, so that philosophers, scholars, religionists and people in general all over the world will benefit by reading our transcendental literatures such as Srimad-Bhagavatam and Sri Caitanya-caritamrta.</p>
+<p>Thus end the Bhaktivedanta purports to Sri Caitanya-caritamrta, dated November 10, 1974, at the Bhaktivedanta Book Trust, Hare Krsna Land, Juhu, Bombay.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="1/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="1/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

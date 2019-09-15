@@ -2,8 +2,6 @@
 
 Please find typos. Thank you!
 
-Edit the files in **isrc** folder for a **Pull Request**.
-
 **Created with** [mdBook](https://github.com/rust-lang-nursery/mdBook)
 
 Hare Krsna!

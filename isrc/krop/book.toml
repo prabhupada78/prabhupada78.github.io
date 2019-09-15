@@ -1,9 +1,0 @@
-[book]
-authors = ["soul4krsna"]
-language = "en"
-multilingual = false
-src = "src"
-title = "Krsna Reservoir of Pleasure"
-[output.html]
-default-theme = "rust"
-additional-css = ["custom.css"]

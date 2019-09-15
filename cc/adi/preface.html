@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Preface - Caitanya-caritamrta: Adi-lila</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="index.html">Front</a></li><li class="affix"><a href="preface.html" class="active">Preface</a></li><li class="affix"><a href="intro.html">Introduction</a></li><li class="affix"><a href="1/index.html">1</a></li><li class="affix"><a href="2/index.html">2</a></li><li class="affix"><a href="3/index.html">3</a></li><li class="affix"><a href="4/index.html">4</a></li><li class="affix"><a href="5/index.html">5</a></li><li class="affix"><a href="6/index.html">6</a></li><li class="affix"><a href="7/index.html">7</a></li><li class="affix"><a href="8/index.html">8</a></li><li class="affix"><a href="9/index.html">9</a></li><li class="affix"><a href="10/index.html">10</a></li><li class="affix"><a href="11/index.html">11</a></li><li class="affix"><a href="12/index.html">12</a></li><li class="affix"><a href="13/index.html">13</a></li><li class="affix"><a href="14/index.html">14</a></li><li class="affix"><a href="15/index.html">15</a></li><li class="affix"><a href="16/index.html">16</a></li><li class="affix"><a href="17/index.html">17</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Caitanya-caritamrta: Adi-lila</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#preface" id="preface">Preface</a></h1>
+<p>There is no difference between the teachings of Lord Caitanya presented here and the teachings of Lord Krsna in the Bhagavad-gita.</p>
+<p>The teachings of Lord Caitanya are practical demonstrations of Lord Krsna’s teachings.</p>
+<p>Lord Krsna’s ultimate instruction in the Bhagavad-gita is that everyone should surrender unto Him, Lord Krsna.</p>
+<p>Krsna promises to take immediate charge of such a surrendered soul.</p>
+<p>The Lord, the Supreme Personality of Godhead, is already in charge of the maintenance of this creation by virtue of His plenary expansion, Ksirodakasayi Visnu, but this maintenance is not direct.</p>
+<p>However, when the Lord says that He takes charge of His pure devotee, He actually takes direct charge.</p>
+<p>A pure devotee is a soul who is forever surrendered to the Lord, just as a child is surrendered to his parents or an animal to its master.</p>
+<p>In the surrendering process, one should: (1) accept things favorable for discharging devotional service, (2) reject things unfavorable, (3) believe firmly in the Lord’s protection, (4) feel exclusively dependent on the mercy of the Lord, (5) have no interest separate from the interest of the Lord, and (6) always feel oneself meek and humble.</p>
+<p>The Lord demands that one surrender unto Him by following these six guidelines, but the unintelligent so-called scholars of the world misunderstand these demands and urge the general mass of people to reject them.</p>
+<p>At the conclusion of the Ninth Chapter of the Bhagavad-gita, Lord Krsna directly says, “Engage your mind always in thinking of Me, become My devotee, offer obeisances to Me, and worship Me.</p>
+<p>Being completely absorbed in Me, surely you will come to Me.” (Bg.9.34) However, the scholarly demons misguide the masses of people by directing them to the impersonal, unmanifest, eternal, unborn truth rather than the Personality of Godhead.</p>
+<p>The impersonalist Mayavadi philosophers do not accept that the ultimate aspect of the Absolute Truth is the Supreme Personality of Godhead.</p>
+<p>If one desires to understand the sun as it is, one must first face the sunshine and then the sun globe, and after entering into that globe, one may come face to face with the predominating deity of the sun.</p>
+<p>Due to a poor fund of knowledge, the Mayavadi philosophers cannot go beyond the Brahman effulgence, which may be compared to the sunshine.</p>
+<p>The Upanisads confirm that one has to penetrate the dazzling effulgence of Brahman before one can see the real face of the Personality of Godhead.</p>
+<p>Lord Caitanya therefore teaches direct worship of Lord Krsna, who appeared as the foster child of the King of Vraja.</p>
+<p>He also suggests that the place known as Vrndavana is as good as Lord Krsna because there is no difference between the name, quality, form, pastimes, entourage and paraphernalia of Lord Krsna and Lord Krsna Himself.</p>
+<p>That is the absolute nature of the Absolute Truth.</p>
+<p>Lord Caitanya also recommended that the highest mode of worship in the highest perfectional stage is the method practiced by the damsels of Vraja.</p>
+<p>These damsels (gopis, or cowherd girls) simply loved Krsna without a motive for material or spiritual gain.</p>
+<p>Lord Caitanya also recommended Srimad-Bhagavatam as the spotless narration of transcendental knowledge, and He pointed out that the highest goal in human life is to develop unalloyed love for Krsna, the Supreme Personality of Godhead.</p>
+<p>Lord Caitanya’s teachings are identical to those given by Lord Kapila, the original propounder of sankhya-yoga, the sankhya system of philosophy.</p>
+<p>This authorized system of yoga recommends meditation on the transcendental form of the Lord.</p>
+<p>There is no question of meditating on something void or impersonal.</p>
+<p>One can meditate on the transcendental form of Lord Visnu even without practicing involved sitting postures.</p>
+<p>Such meditation is called perfect samadhi.</p>
+<p>This perfect samadhi is verified at the end of the Sixth Chapter of the Bhagavad-gita, where Lord Krsna says, “And of all yogis, the one with great faith who always abides in Me, thinks of Me within himself, and renders transcendental loving service to Me-he is the most intimately united with Me in yoga and is the highest of all.</p>
+<p>That is My opinion.” (Bg.6.47) Lord Caitanya instructed the mass of people in the sankhya philosophy of acintya-bhedabheda-tattva, which maintains that the Supreme Lord is simultaneously one with and different from His creation.</p>
+<p>Lord Caitanya taught this philosophy through the chanting of the holy name of the Lord.</p>
+<p>He taught that the holy name of the Lord is the sound incarnation of the Lord and that since the Lord is the absolute whole, there is no difference between His holy name and His transcendental form.</p>
+<p>Thus by chanting the holy name of the Lord one can directly associate with the Supreme Lord by sound vibration.</p>
+<p>As one practices this sound vibration, one passes through three stages of development: the offensive stage, the clearing stage and the transcendental stage.</p>
+<p>In the offensive stage one may desire all kinds of material happiness, but in the second stage one becomes clear of all material contamination.</p>
+<p>When one is situated on the transcendental stage, one attains the most coveted position-the stage of loving God.</p>
+<p>Lord Caitanya taught that this is the highest stage of perfection for human beings.</p>
+<p>Yoga practice is essentially meant for controlling the senses.</p>
+<p>The central controlling factor of all the senses is the mind; therefore one first has to practice controlling the mind by engaging it in Krsna consciousness.</p>
+<p>The gross activities of the mind are expressed through the external senses, either for the acquiring of knowledge or for the functioning of the senses in accordance with the will.</p>
+<p>The subtle activities of the mind are thinking, feeling and willing.</p>
+<p>Depending on one’s consciousness, the individual is either polluted or clear.</p>
+<p>If one’s mind is fixed on Krsna (His name, quality, form, pastimes, entourage and paraphernalia), all one’s activities-both subtle and gross-become favorable.</p>
+<p>The Bhagavad-gita’s process of purifying consciousness is the process of fixing one’s mind on Krsna by talking of His transcendental activities, cleansing His temple, going to His temple, seeing the beautiful transcendental form of the Lord nicely decorated, hearing His transcendental glories, tasting food offered to Him, associating with His devotees, smelling the flowers and Tulasi leaves offered Him, engaging in activities for the Lord’s interest, etc.</p>
+<p>No one can bring the activities of the mind and senses to a stop, but one can purify these activities through a change in consciousness.</p>
+<p>This change is indicated in the Bhagavad-gita when Krsna tells Arjuna of the knowledge of yoga whereby one can work without fruitive results: “O son of Prtha, when you act in such knowledge you can free yourself from the bondage of works.” (Bg.2.39) A human being is sometimes restricted in sense gratification due to certain circumstances, such as disease, but this is not the prescription for giving up sense gratification.</p>
+<p>Without knowing the actual process by which the mind and senses can be controlled, less intelligent men either try to stop the mind and senses by force, or they give in to them and are carried away by the waves of sense gratification.</p>
+<p>The regulative principles and rules of yoga-the various sitting postures and breathing exercises performed in an attempt to withdraw one’s senses from the sense objects-are methods meant for those who are too much engrossed in the bodily conception of life.</p>
+<p>The intelligent man who is situated in Krsna consciousness does not try to forcibly stop his senses from acting.</p>
+<p>Rather, he engages his senses in the service of Krsna.</p>
+<p>No one can stop a child from playing by leaving him inactive.</p>
+<p>A child can be stopped from engaging in nonsense by being engaged in superior activities.</p>
+<p>The forceful restraint of sense activities by the eight principles of yoga is recommended for inferior men.</p>
+<p>Being engaged in the superior activities of Krsna consciousness, superior men naturally retire from the inferior activities of material existence.</p>
+<p>In this way Lord Caitanya teaches the science of Krsna consciousness.</p>
+<p>That science is absolute.</p>
+<p>Dry mental speculators try to restrain themselves from material attachment, but it is generally found that the mind is too strong to be controlled and that it drags them down to sensual activities.</p>
+<p>A person in Krsna consciousness does not run this risk.</p>
+<p>One has to engage one’s mind and senses in Krsna conscious activities, and Lord Caitanya teaches one how to do this in practice.</p>
+<p>Before accepting sannyasa (the renounced order), Lord Caitanya was known as Visvambhara.</p>
+<p>The word visvambhara refers to one who maintains the entire universe and who leads all living entities.</p>
+<p>This maintainer and leader appeared as Lord Sri Krsna Caitanya to give humanity these sublime teachings.</p>
+<p>Lord Caitanya is the ideal teacher of life’s prime necessities.</p>
+<p>He is the most munificent bestower of love of Krsna.</p>
+<p>He is the complete reservoir of all mercies and good fortune.</p>
+<p>As confirmed in Srimad-Bhagavatam, the Bhagavad-gita, the Mahabharata, and the Upanisads, Krsna is the Supreme Personality of Godhead Himself and is worshipable by everyone in this age of disagreement.</p>
+<p>Everyone can join in His sankirtana movement.</p>
+<p>No previous qualification is necessary.</p>
+<p>Just by following His teachings, anyone can become a perfect human being.</p>
+<p>If a person is fortunate enough to be attracted by Lord Caitanya’s features, he is sure to be successful in his life’s mission.</p>
+<p>In other words, those who are interested in attaining spiritual existence can easily be released from the clutches of maya by the grace of Lord Caitanya.</p>
+<p>The teachings presented in this book are nondifferent from the Lord.</p>
+<p>Engrossed in the material body, the conditioned soul increases the pages of history by all kinds of material activities.</p>
+<p>The teachings of Lord Caitanya can help human society stop such unnecessary and temporary activities.</p>
+<p>By these teachings, humanity can be elevated to the topmost platform of spiritual activity.</p>
+<p>These spiritual activities actually begin after liberation from material bondage.</p>
+<p>Such liberated activities in Krsna consciousness constitute the goal of human perfection.</p>
+<p>The false prestige one acquires by attempting to dominate material nature is illusory.</p>
+<p>Illuminating knowledge can be acquired from the teachings of Lord Caitanya, and by such knowledge one can advance in spiritual existence.</p>
+<p>Everyone has to suffer or enjoy the fruits of his activity; no one can check the laws of material nature that govern such things.</p>
+<p>As long as one is engaged in fruitive activity, one is sure to be baffled in the attempt to attain the ultimate goal of life.</p>
+<p>I sincerely hope that by understanding the teachings of Lord Caitanya, human society will experience a new light of spiritual life, which will open the field of activity for the pure soul</p>
+<p>om tat sat</p>
+<p>A.C.</p>
+<p>Bhaktivedanta Swami</p>
+<p>March 14, 1968</p>
+<p>The Birthday of Lord Caitanya</p>
+<p>Sri Sri Radha-Krsna Temple</p>
+<p>New York, N.Y.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="intro.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="intro.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
