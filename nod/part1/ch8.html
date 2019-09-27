@@ -1,0 +1,449 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>8 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html" class="active">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html">18</a></li><li class="affix"><a href="ch19.html">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#offenses-to-be-avoided" id="offenses-to-be-avoided">Offenses to be Avoided</a></h3>
+<p>In the supplementary Vedic literature, there is the following list of 32 offenses in the matter of serving the Lord:</p>
+<ol>
+<li>
+<p>One should not enter the temple of the Deity in a car or palanquin or with shoes on the feet.</p>
+</li>
+<li>
+<p>One should not fail to observe the various festivals for the pleasure of the Supreme Personality of Godhead, such as Janmāṣṭamī, Ratha-yātrā, etc.</p>
+</li>
+<li>
+<p>One should not avoid bowing down before the Deity.</p>
+</li>
+<li>
+<p>One should not enter the temple to worship the Lord without having washed his hands and feet after eating.</p>
+</li>
+<li>
+<p>One should not enter the temple in a contaminated state.</p>
+</li>
+</ol>
+<p>(According to Vedic scripture, if someone dies in the family the whole family becomes contaminated for some time, according to its status.</p>
+<p>For example, if the family is brāhmaṇa their contamination period is 12 days, for the kṣatriyas and vaiśyas it is 15 days, and for śūdras 30 days.) 6) One should not bow down on one hand.</p>
+<ol start="7">
+<li>One should not circumambulate in front of Śrī Kṛṣṇa.</li>
+</ol>
+<p>(The process of circumambulating the temple is that one should begin circumambulating from the Deity's right-hand side of the temple and come round.</p>
+<p>Such circumambulation should be performed outside the temple structure at least three times daily.) 8) One should not spread his legs before the Deity.</p>
+<ol start="9">
+<li>
+<p>One should not sit before the Deity holding the ankles, elbows or knees with his hands.</p>
+</li>
+<li>
+<p>One should not lie down before the Deity of Kṛṣṇa.</p>
+</li>
+<li>
+<p>One should not accept prasādam before the Deity.</p>
+</li>
+<li>
+<p>One should never speak a lie before the Deity.</p>
+</li>
+<li>
+<p>One should not talk very loudly before the Deity.</p>
+</li>
+<li>
+<p>One should not talk with others before the Deity.</p>
+</li>
+<li>
+<p>One should not cry or howl before the Deity.</p>
+</li>
+<li>
+<p>One should not quarrel or fight before the Deity.</p>
+</li>
+<li>
+<p>One should not chastise anyone before the Deity.</p>
+</li>
+<li>
+<p>One should not be charitable to beggars before the Deity.</p>
+</li>
+<li>
+<p>One should not speak very harshly to others before the Deity.</p>
+</li>
+<li>
+<p>One should not wear a fur blanket before the Deity.</p>
+</li>
+<li>
+<p>One should not eulogize or praise anyone else before the Deity.</p>
+</li>
+<li>
+<p>One should not speak any ill names before the Deity.</p>
+</li>
+<li>
+<p>One should not pass air before the Deity.</p>
+</li>
+<li>
+<p>One should not fail to worship the Deity according to his means.</p>
+</li>
+</ol>
+<p>(In the Bhagavad- gītā it is stated that the Lord is satisfied if some devotee offers him even a leaf or a little water.</p>
+<p>This formula prescribed by the Lord is universally applicable, even for the poorest man.</p>
+<p>But that does not mean that one who has sufficient means to worship the Lord very nicely should also adopt this method and try to satisfy the Lord simply by offering water and a leaf.</p>
+<p>If he has sufficient means, he should offer nice decorations, nice flowers, nice foodstuffs and observe all ceremonies.</p>
+<p>It is not that one should try to satisfy the Supreme Lord with a little water and a leaf, and for himself spend all his money in sense gratification.) 25) One should not eat anything which is not offered first to Kṛṣṇa.</p>
+<ol start="26">
+<li>
+<p>One should not fail to offer fresh fruit and grains to Kṛṣṇa, according to the season.</p>
+</li>
+<li>
+<p>After cooking, no one should be offered any foodstuff unless it is first offered to the Deity.</p>
+</li>
+<li>
+<p>One should not sit with his back towards the Deity.</p>
+</li>
+<li>
+<p>One should not offer obeisances silently to the spiritual master; or in other words, one should recite aloud the prayers to the spiritual master while offering obeisances.</p>
+</li>
+<li>
+<p>One should not fail to offer some praise in the presence of the spiritual master.</p>
+</li>
+<li>
+<p>One should not praise himself before the spiritual master.</p>
+</li>
+<li>
+<p>One should not deride the demigods before the Deity.</p>
+</li>
+</ol>
+<p>This is a list of 32 offenses.</p>
+<p>Besides these, there are a number of offenses which are mentioned in the Varāha Purāṇa.</p>
+<p>They are as follows: 1) One should not touch the Deity in a dark room.</p>
+<ol start="2">
+<li>
+<p>One should not fail to strictly follow the rules and regulations in worshiping the Deity.</p>
+</li>
+<li>
+<p>One should not enter the temple of the Deity without first making some sound.</p>
+</li>
+<li>
+<p>One should not offer any foodstuff to the Deity which has been seen by dogs or other lower animals.</p>
+</li>
+<li>
+<p>One should not break the silence while worshiping.</p>
+</li>
+<li>
+<p>One should not pass urine or evacuate while engaged in worshiping.</p>
+</li>
+<li>
+<p>One should not offer incense without offering some flower.</p>
+</li>
+<li>
+<p>Useless flowers without any fragrance should not be offered.</p>
+</li>
+<li>
+<p>One should not fail to wash his teeth very carefully every day.</p>
+</li>
+<li>
+<p>One should not enter the temple directly after sexual intercourse.</p>
+</li>
+<li>
+<p>One should not touch a woman during her menstrual period.</p>
+</li>
+<li>
+<p>One should not enter the temple after touching a dead body.</p>
+</li>
+<li>
+<p>One should not enter the temple wearing garments of red or blue color, or which are unwashed.</p>
+</li>
+<li>
+<p>One should not enter the temple after seeing a dead body.</p>
+</li>
+<li>
+<p>One should not pass air within the temple.</p>
+</li>
+<li>
+<p>One should not be angry within the temple.</p>
+</li>
+<li>
+<p>One should not enter the temple after visiting a crematorium.</p>
+</li>
+<li>
+<p>One should not belch before the Deity.</p>
+</li>
+</ol>
+<p>So, until one has fully digested his food, he should not enter the temple.</p>
+<ol start="19">
+<li>
+<p>One should not smoke marijuana or gañjā.</p>
+</li>
+<li>
+<p>One should not take opium or similar intoxicants.</p>
+</li>
+<li>
+<p>One should not enter the Deity room or touch the body of the Deity after having smeared oil over his body.</p>
+</li>
+<li>
+<p>One should not show disrespect to a scripture teaching about the supremacy of the Lord.</p>
+</li>
+<li>
+<p>One should not introduce any opposing scripture.</p>
+</li>
+<li>
+<p>One should not chew betel before the Deity.</p>
+</li>
+<li>
+<p>One should not offer a flower which was kept in an unclean pot.</p>
+</li>
+<li>
+<p>One should not worship the Lord while sitting on the bare floor: one must have a sitting place or carpet.</p>
+</li>
+<li>
+<p>One should not touch the Deity before he has completed taking bath.</p>
+</li>
+<li>
+<p>One should not decorate his forehead with the three-lined tilaka.</p>
+</li>
+<li>
+<p>One should not enter the temple without washing his hands and feet.</p>
+</li>
+</ol>
+<p>Other rules are that one should not offer foodstuff which is cooked by a non- Vaiṣṇava.</p>
+<p>One should not worship the Deity before a nondevotee.</p>
+<p>One should not engage himself in the worship of the Lord while seeing a nondevotee.</p>
+<p>One should begin the worship of the demigod Gaṇapati, who drives away all impediments in the execution of devotional service.</p>
+<p>In the Brahma- saṁhitā it is stated that Gaṇapati worships the lotus feet of Lord Nṛsiṁhadeva, and in that way he has become auspicious for the devotees in clearing out all impediments.</p>
+<p>Therefore, all devotees should worship Gaṇapati.</p>
+<p>The Deities should not be bathed in water which has been touched by the nails or fingers.</p>
+<p>When a devotee is perspiring, he should not engage himself in worshiping the Deity.</p>
+<p>Similarly, there are many other prohibitions, such as one should not cross or step over the flowers offered to the Deities, nor should one take a vow in the name of God.</p>
+<p>These are all different kinds of offenses in the matter of executing devotional service, and one should be careful to avoid them.</p>
+<p>In the Padma Purāṇa it is stated that even a person whose life is completely sinful will be completely protected by the Lord if he simply surrenders unto Him.</p>
+<p>So it is accepted that one who surrenders unto the Supreme Personality of Godhead becomes freed from all sinful reactions.</p>
+<p>And even when a person becomes an offender unto the Supreme Personality of Godhead Himself, he can still be delivered simply by taking shelter of the holy names of the Lord: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>In other words, the chanting of Hare Kṛṣṇa is beneficial for eradicating all sins; but if one becomes an offender to the holy names of the Lord, then he has no chance of being delivered.</p>
+<p>The offenses against the chanting of the holy name are as follows: 1) To blaspheme the devotees who have dedicated their lives for propagating the holy name of the Lord.</p>
+<ol start="2">
+<li>To consider the names of demigods like Lord Śiva or Lord Brahmā to be equal to, or independent of, the name of Lord Viṣṇu.</li>
+</ol>
+<p>(Sometimes the atheistic class of men take it that any demigod is as good as the Supreme Personality of Godhead, Viṣṇu.</p>
+<p>But one who is a devotee knows that no demigod, however great he may be, is independently as good as the Supreme Personality of Godhead.</p>
+<p>Therefore, if someone thinks that he can chant Kālī, Kālī! or Durgā, Durgā! and it is the same as Hare Kṛṣṇa, that is the greatest offense.) 3) To disobey the orders of the spiritual master.</p>
+<ol start="4">
+<li>
+<p>To blaspheme the Vedic literature or literature in pursuance of the Vedic version.</p>
+</li>
+<li>
+<p>To consider the glories of chanting Hare Kṛṣṇa as imagination.</p>
+</li>
+<li>
+<p>To give some interpretation on the holy name of the Lord.</p>
+</li>
+<li>
+<p>To commit sinful activities on the strength of the holy name of the Lord.</p>
+</li>
+</ol>
+<p>(Because by chanting the holy name of the Lord one can be freed from all kinds of sinful reactions, it should not be taken that one may continue to act sinfully and after that chant Hare Kṛṣṇa to neutralize his sins.</p>
+<p>Such a dangerous mentality is very offensive and should be avoided.) 8) To consider the chanting of Hare Kṛṣṇa as one of the auspicious ritualistic activities which are offered in the Vedas as fruitive activities (karma-kāṇḍa).</p>
+<ol start="9">
+<li>To instruct a faithless person about the glories of the holy name.</li>
+</ol>
+<p>(Anyone can take part in chanting the holy name of the Lord, but in the beginning one should not be instructed about the transcendental potency of the Lord.</p>
+<p>Those who are too sinful cannot appreciate the transcendental glories of the Lord, and therefore it is better not to instruct them in this matter.) 10) To not have complete faith in the chanting of the holy names and to maintain material attachments, even after understanding so many instructions on this matter.</p>
+<p>Every devotee who claims to be a Vaiṣṇava must guard against these offenses in order to quickly achieve the desired success.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

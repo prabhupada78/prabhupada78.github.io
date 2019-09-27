@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>6 - Nectar of Devotion - Part III</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part4/index.html">Part Four</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html" class="active">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part III</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#reverential-devotion-of-sons-and-other-subordinates" id="reverential-devotion-of-sons-and-other-subordinates">Reverential Devotion of Sons and Other Subordinates</a></h3>
+<p>True reverential devotion is exhibited by persons who think themselves subordinate to Kṛṣṇa and by persons who think themselves sons of Kṛṣṇa.</p>
+<p>The best examples of this subordination are Sāraṇa, Gada and Subhadrā.</p>
+<p>They were all members of the Yadu dynasty, and they used to always think themselves protected by Kṛṣṇa.</p>
+<p>Similarly, Kṛṣṇa's sons, such as Pradyumna, Cārudeṣṇa, and Sāmba, felt the same way.</p>
+<p>Kṛṣṇa had many sons in Dvārakā.</p>
+<p>He begot ten sons by each of His 16,108 queens, and all of these sons, headed by Pradyumna, Cārudeṣṇa and Sāmba, used to think themselves always protected by Kṛṣṇa.</p>
+<p>When Kṛṣṇa's sons dined with Him, they would sometimes open their mouths for Kṛṣṇa to feed them.</p>
+<p>Sometimes when Kṛṣṇa would pat one of His sons, the son would sit on Kṛṣṇa's lap, and while Kṛṣṇa was blessing the son's head by smelling it, the others would shed tears, thinking how many pious activities he must have performed in his previous life.</p>
+<p>Out of Kṛṣṇa's many sons, Pradyumna, a son of Kṛṣṇa's chief queen, Rukmiṇī, is considered the leader.</p>
+<p>Pradyumna's bodily features resembled Kṛṣṇa's exactly.</p>
+<p>Pure devotees of Kṛṣṇa glorify Pradyumna because he is so fortunate: like father like son.</p>
+<p>There is a description in the Hari-vaṁśa of Pradyumna's activities when he kidnapped Prabhāvatī.</p>
+<p>Pradyumna addressed Prabhāvatī at that time and said: &quot;My dear Prabhāvatī, just look at the head of our family, Śrī Kṛṣṇa: He is Viṣṇu Himself, the supreme driver of Garuḍa, and He is our supreme master.</p>
+<p>Because we have become so proud and confident of His protecting us, we sometimes do not even care about fighting with Tripurāri [Lord Śiva].&quot; There are two kinds of devotees engaged in devotional service with awe and veneration, and the servitors in the abode of Dvārakā always worship Kṛṣṇa as the most respectable and revered Personality of Godhead.</p>
+<p>They are captivated by Kṛṣṇa because of His super-excellent opulences.</p>
+<p>The members who always thought themselves protected by Kṛṣṇa could readily convert their conviction into practical demonstration, because it was sometimes found that the sons of Kṛṣṇa acted very unlawfully in various places.</p>
+<p>Nonetheless they were given full protection by Kṛṣṇa and Balarāma.</p>
+<p>Even Balarāma, the elder brother of Kṛṣṇa, sometimes unknowingly offered respect to Him.</p>
+<p>Once when Kṛṣṇa came before Lord Balarāma, He was anxious to offer His respects to His elder brother, but at that time Balarāma's club was lowered down upon Kṛṣṇa's lotus feet.</p>
+<p>In other words, the club in Balarāma's hand offered its own respects to Kṛṣṇa.</p>
+<p>These feelings of subordination, as explained above, are sometimes manifested as anubhāva.</p>
+<p>When demigods from the heavenly planets came to Śrī Kṛṣṇa, all of Kṛṣṇa's sons followed them, and Lord Brahmā sprinkled water from his kamaṇḍalu upon them.</p>
+<p>When the demigods came before Kṛṣṇa, instead of sitting on golden chairs, the sons sat down on the floor, which was covered with deerskin.</p>
+<p>Sometimes the behavior of Kṛṣṇa's sons appears similar to the behavior of His personal servants.</p>
+<p>For example, the sons used to offer their obeisances, they were silent, submissive and gentle, and they were always ready to carry out Kṛṣṇa's orders, even at the risk of life.</p>
+<p>When present before Kṛṣṇa, they bowed down on the ground.</p>
+<p>They were very silent and steady, and they used to restrain coughing and laughing before the Lord.</p>
+<p>Also, they never discussed Kṛṣṇa's pastimes in conjugal love.</p>
+<p>In other words, devotees who are engaged in reverential devotional service should not discuss the conjugal love affairs of Kṛṣṇa.</p>
+<p>No one should claim his eternal relationship with Kṛṣṇa unless he is liberated.</p>
+<p>In the conditioned state of life, the devotees have to execute the prescribed duties as recommended in the codes of devotional service.</p>
+<p>When one is mature in devotional service and is a realized soul, he can know his own eternal relationship with Kṛṣṇa.</p>
+<p>One should not artificially try to establish some relationship.</p>
+<p>In the premature stage it is sometimes found that a lusty, conditioned person will artificially try to establish some relationship with Kṛṣṇa in conjugal love.</p>
+<p>The result of this is that one becomes prakṛtasahajiyā, or one who takes everything very cheaply.</p>
+<p>Although such persons may be very anxious to establish a relationship with Kṛṣṇa in conjugal love, their conditioned life in the material world is still most abominable.</p>
+<p>A person who has actually established his relationship with Kṛṣṇa can no longer act on the material plane, and his personal character cannot be criticized.</p>
+<p>When Cupid came on one occasion to visit Lord Kṛṣṇa, some devotee addressed him thus: &quot;My dear Cupid, because you have been so fortunate as to have placed your eyesight on the lotus feet of Kṛṣṇa, the drops of perspiration on your body have become frozen, and they resemble kaṇṭaki fruits [a kind of small fruit found in thorny bushes].&quot; These are signs of ecstasy and veneration unto the Supreme Personality of Godhead.</p>
+<p>When the princes of the Yadu dynasty heard the vibration of Kṛṣṇa's Pāṣcajanya conchshell, the hairs on their bodies immediately stood up in ecstatic jubilation.</p>
+<p>It seemed at that time that all the hairs on the bodies of the princes were dancing in ecstasy.</p>
+<p>In addition to jubilation, there are sometimes symptoms of disappointment.</p>
+<p>Pradyumna once addressed Sāmba with these words: &quot;My dear Sāmba, you are such a glorified personality! I have seen that once when you were playing on the ground, your body became covered with dust; yet, our father, Lord Kṛṣṇa, still took you up on His lap.</p>
+<p>But I am so unfortunate that I could never get such love from our father!&quot; This statement is an example of disappointment in love.</p>
+<p>To regard Kṛṣṇa as one's superior is called reverential feeling, and when, in addition to this, a devotee feels that Kṛṣṇa is his protector, his transcendental love for Kṛṣṇa is increased, and his combined feelings are called reverential devotion.</p>
+<p>When this steady reverential devotion increases further, it is called love of Godhead in reverential devotion.</p>
+<p>Attraction and affection are two prominent symptoms of this stage.</p>
+<p>In this reverential devotional attitude, Pradyumna never talked to his father in a loud voice.</p>
+<p>In fact, he never so much as unlocked the lips of his mouth, nor did he ever show his face filled with tears.</p>
+<p>He would always glance only at the lotus feet of his father.</p>
+<p>There is another example of steady and fixed love for Kṛṣṇa in the instance of Arjuna's informing Him of the death of Arjuna's son, Abhimanyu, who was also the nephew of Kṛṣṇa.</p>
+<p>Abhimanyu was the son of Subhadrā, Kṛṣṇa's younger sister.</p>
+<p>He was killed at the Battle of Kurukṣetra by the combined efforts of all the commanders in King Duryodhana's army-namely, Karṇa, Aśvatthāmā, Jayadratha, Bhīṣma, Kṛpācārya and Droṇācārya.</p>
+<p>In order to assure Kṛṣṇa that there was no change of love on Subhadrā's part, Arjuna informed Him: &quot;Although Abhimanyu was killed almost in Your presence, Subhadrā's love for You is not agitated at all, nor has it even slightly changed its original color.&quot; The affection that Kṛṣṇa has for His devotees was expressed by Himself when He asked Pradyumna not to feel so bashful before Him.</p>
+<p>He addressed Pradyumna thus: &quot;My dear boy, just give up your inferiority complex, and do not hang your neck.</p>
+<p>Just talk with Me in a clear voice, and do not shed tears.</p>
+<p>You can look straight at Me, and you can place your hands on My body without any hesitation.</p>
+<p>There is no need of exhibiting so much reverence before your father.&quot; Pradyumna's attachment for Kṛṣṇa was always exhibited by his action.</p>
+<p>Whenever he was ordered by his father to execute something, he would immediately execute the order, taking the task as nectarean even though it may have been poison.</p>
+<p>Similarly, whenever he would find something to be disapproved of by his father, he would immediately reject it as poison, even though it may have been nectarean.</p>
+<p>Pradyumna's attachment in anxiety for Kṛṣṇa was expressed when he said to his wife Rati: &quot;The enemy, Śambara, is already killed.</p>
+<p>Now I am very anxious to see my father, who is my spiritual master and who always carries the conchshell known as Pāṣcajanya.&quot; Pradyumna felt great separation from Kṛṣṇa when He was absent from Dvārakā at the battlefield of Kurukṣetra.</p>
+<p>He said, &quot;Since my father has left Dvārakā, I do not take much pleasure in practicing fighting, nor am I interested in any kind of sporting pastimes.</p>
+<p>And what need is there to speak of these things? I do not even wish to stay at Dvārakā in the absence of my father.&quot; When Pradyumna came back home after killing the Śambarāsura, and as soon as he saw his father, Kṛṣṇa, before him, he became so overjoyed that he himself could not understand his joy on that occasion.</p>
+<p>This is an instance of success in separation.</p>
+<p>A similar satisfaction was observed when Kṛṣṇa returned from the battlefield of Kurukṣetra to His home at Dvārakā.</p>
+<p>All of His sons were so overjoyed that, out of ecstasy, they repeatedly made many mistakes.</p>
+<p>These mistakes were a sign of complete satisfaction.</p>
+<p>Every day Pradyumna looked over Kṛṣṇa's lotus feet with tears in his eyes.</p>
+<p>These signs of reverential devotion on the part of Pradyumna can be described in the same way they have been described in the case of other devotees.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

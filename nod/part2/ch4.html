@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>4 - Nectar of Devotion - Part II</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html" class="active">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part II</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#kṛṣṇas-personality" id="kṛṣṇas-personality">Kṛṣṇa's Personality</a></h3>
+<p>Śrīla Rūpa Gosvāmī states that although Lord Kṛṣṇa is the reservoir of unlimited pleasure and the greatest leader of all, He is still dependent upon His devotees in three ways.</p>
+<p>According to the emotional status of the devotee, the Supreme Personality of Godhead is appreciated in three ways: as the most perfect, as very perfect and as perfect.</p>
+<p>When He exhibits Himself in fullness, He is appreciated by great learned scholars as most perfect.</p>
+<p>When He exhibits Himself in lesser degrees, He is called very perfect.</p>
+<p>And when He exhibits still less, He is called perfect.</p>
+<p>This means that Kṛṣṇa is appreciated for three degrees of perfection.</p>
+<p>These three degrees of perfection are especially exhibited as follows: when He is in Goloka Vṛndāvana His transcendental qualities are exhibited as most perfect, when He is in Dvārakā He exhibits His qualities as very perfect, and when He is in Mathurā He exhibits His qualities as perfect.</p>
+<p>Kṛṣṇa's personality is analyzed as dhīrodātta, dhīra-lalita, dhīrapraśānta and dhīroddhata.</p>
+<p>If one asks how a personality can be beheld in four quite opposing ways, the answer is that the Lord is the reservoir of all transcendental qualities and activities.</p>
+<p>Therefore, His different aspects can be analyzed according to the exhibition of His limitless variety of pastimes, and as such there is no contradiction.</p>
+<p>Dhīrodātta A dhīrodātta is a person who is naturally very grave, gentle, forgiving, merciful, determined, humble, highly qualified, chivalrous and bodily attractive.</p>
+<p>In this connection, the following statement given by Indra, the King of heaven, is very significant: &quot;My dear Lord, I admit that I have committed great offenses unto You, but I cannot express my feelings of regret, being bewildered at seeing Your extraordinary chivalrous spirit, Your endeavor to protect Your devotees, Your determination, Your steadiness in lifting the great Hill of Govardhana, Your beautiful bodily features and Your astonishing characteristic of being pleased simply by accepting the prayers of Your devotees and offenders.&quot; The above statement by the King of heaven is an exact corroboration of Kṛṣṇa's being dhīrodātta.</p>
+<p>Many learned scholars have agreed to also accept Lord Rāmacandra as dhīrodātta, but all of Lord Rāmacandra's qualities are also included in the character of Lord Kṛṣṇa.</p>
+<p>Dhīra-lalita A person is called dhīra-lalita if he is naturally very funny, always in full youthfulness, expert in joking, and free from all anxieties.</p>
+<p>Such a dhīralalita personality is generally found to be domesticated and very submissive to his lover.</p>
+<p>This dhīra-lalita trait in the personality of Kṛṣṇa is described in Śrīmad- Bhāgavatam where Yajñapatnī, the wife of one of the brāhmaṇas who were performing sacrifices in Vṛndāvana tells her friends: &quot;One day Śrīmatī Rādhārāṇī, accompanied by Her associates, was taking rest in Her garden, and at that time Lord Śrī Kṛṣṇa arrived in that assembly.</p>
+<p>After sitting down, He began to narrate very impudently about His previous night's pastimes with Rādhārāṇī.</p>
+<p>While He was speaking in that way, Rādhārāṇī became very embarrassed.</p>
+<p>She was feeling ashamed and was absorbed in thought, and Kṛṣṇa took the opportunity to mark Her breasts with different kinds of tilaka.</p>
+<p>Kṛṣṇa proved Himself to be very expert in that art.&quot; In this way Kṛṣṇa, as dhīra-lalita, was enjoying His youthful proclivities in the company of the gopīs.</p>
+<p>Generally, those who are expert in writing drama choose to call Cupid the ideal dhīra-lalita, but we can more perfectly find in the personality of Kṛṣṇa all the characteristics of dhīra-lalita.</p>
+<p>Dhīra-praśānta A person who is very peaceful, forbearing, considerate and obliging is called dhīra-praśānta.</p>
+<p>This dhīra-praśānta trait of Kṛṣṇa was exhibited in His dealings with the Pāṇḍavas.</p>
+<p>On account of the Pāṇḍavas' faithful devotion to the Lord, He agreed to become their charioteer, their advisor, their friend, their messenger and sometimes their bodyguard.</p>
+<p>Such is an example of the result of devotional service towards Viṣṇu.</p>
+<p>When Kṛṣṇa was speaking to Mahārāj Yudhiṣṭhira about religious principles, He demonstrated Himself to be a great learned scholar, but because He accepted the position of younger cousin to Yudhiṣṭhira, He was speaking in a very gentle tone which enhanced His beautiful bodily features.</p>
+<p>The movements of His eyes and the mode of His speech proved that He was very, very expert in giving moral instruction.</p>
+<p>Sometimes, Mahārāj Yudhiṣṭhira is also accepted by learned scholars as dhīra-praśānta.</p>
+<p>Dhīroddhata A person who is very envious, proud, easily angered, restless and complacent is called dhīroddhata by learned scholars.</p>
+<p>Such qualities were visible in the character of Lord Kṛṣṇa because, when He was writing a letter to Kālayavana, Kṛṣṇa addressed him as a sinful frog.</p>
+<p>In His letter Kṛṣṇa advised Kālayavana that he should immediately go and find some dark well for his residence, because there was a black snake named Kṛṣṇa who was very eager to devour all such sinful frogs.</p>
+<p>Kṛṣṇa reminded Kālayavana that He could turn all the universes to ashes simply by looking at them.</p>
+<p>The above statement by Kṛṣṇa seems apparently to be of an envious nature, but according to different pastimes, places and times this quality is accepted as a great characteristic.</p>
+<p>Kṛṣṇa's dhīroddhata qualities have been accepted as great because Kṛṣṇa uses them only to protect His devotees.</p>
+<p>In other words, even undesirable traits may also be used in the exchange of devotional service.</p>
+<p>Sometimes Bhīma, the second brother of the Pāṇḍavas, is also described as dhīroddhata.</p>
+<p>Once, while fighting with a demon who was appearing as a deer, Kṛṣṇa challenged him in this way: &quot;I have come before you as a great elephant named Kṛṣṇa.</p>
+<p>You must leave the battlefield, accepting defeat, or else there is death awaiting you.&quot; This challenging spirit of Kṛṣṇa's is not contradictory to His sublime character because, as the Supreme Being, everything is possible in His character.</p>
+<p>There is a nice statement in the Kūrma Purāṇa about these contradictory traits of the Supreme Personality of Godhead.</p>
+<p>It is stated there that the Supreme Person is neither very fat nor very thin; He is always transcendental to material qualities, and yet His bodily luster is blackish.</p>
+<p>His eyes are reddish, He is all-powerful, and He is equipped with all different kinds of opulences.</p>
+<p>Contradictory traits in Kṛṣṇa's person are not at all surprising: one should not consider the characteristics of Kṛṣṇa, the Supreme Personality of Godhead, to be actually contradictory.</p>
+<p>One should try to understand the traits of Kṛṣṇa from authorities and try to understand how these characteristics are employed by the supreme will of the Lord.</p>
+<p>In the Mahā-varāha Purāṇa it is confirmed that the transcendental bodies of the Supreme Personality of Godhead and His expansions are all existing eternally.</p>
+<p>Such bodies are never material and are completely spiritual and full of knowledge.</p>
+<p>They are reservoirs of all transcendental qualities.</p>
+<p>In the Vaiṣṇava Tantra there is a statement that the Personality of Godhead and His expanded bodies are always free from the eighteen kinds of material contaminations,* because such bodies are always full of knowledge, bliss and eternity.</p>
+<p>Regarding all of the above-mentioned statements, it is understood that the Mahā- Viṣṇu is the source of all incarnations in the material world.</p>
+<p>But because of His greater extraordinary opulence, we can * The eighteen kinds of materials contaminations mentioned above are described in the Viṣṇu-yāmala Tantra as follows: illusion, fatigue, committing errors, roughness, material lust, restlessness,pride, envy, violence, disgrace, exhaustion, untruth, anger, hankering, dependance, desire to lord over the universe, seeing duality, and cheating.</p>
+<p>understand that the son of Nanda Mahārāj is the source of the Mahā-Viṣṇu also.</p>
+<p>This is confirmed in the Brahma-saṁhitā, wherein it is stated: &quot;Let me offer my respectful obeisances unto Govinda, whose partial representation is the Mahā-Viṣṇu.&quot; The gigantic form of the Mahā-Viṣṇu is the source of generation for innumerable universes.</p>
+<p>Innumerable universes are coming out of His exhaling breath, and the same universes are going back in with His inhaling breath.</p>
+<p>This Mahā-Viṣṇu is also a plenary portion of a portion of Kṛṣṇa.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

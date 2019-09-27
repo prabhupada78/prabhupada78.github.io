@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>6 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html" class="active">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html">18</a></li><li class="affix"><a href="ch19.html">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#how-to-discharge-devotional-service" id="how-to-discharge-devotional-service">How to Discharge Devotional Service</a></h3>
+<p>Śrīla Rūpa Gosvāmī states that his elder brother (Sanātana Gosvāmī) has compiled Hari-bhakti-vilāsa for the guidance of the Vaiṣṇavas and therein has mentioned many rules and regulations to be followed by the Vaiṣṇavas.</p>
+<p>Some of them are very important and prominent, and he will now mention these very important items for our benefit.</p>
+<p>The purport of this statement is that Śrīla Rūpa Gosvāmī proposes to mention only basic principles, not details.</p>
+<p>For example, a basic principle is that one has to accept a spiritual master.</p>
+<p>Exactly how one follows the instructions of his spiritual master is considered a detail.</p>
+<p>For example, if one is following the instruction of his spiritual master and that instruction is different from the instructions of another spiritual master, this is called detailed information.</p>
+<p>But the basic principle of acceptance of a spiritual master is good everywhere, although the details may be different.</p>
+<p>Śrīla Rūpa Gosvāmī does not wish to enter into details here, but he wants to place before us only the principles.</p>
+<p>He mentions the basic principles as follows: 1) accepting the shelter of the lotus feet of a bona fide spiritual master, 2) becoming initiated by the spiritual master and learning how to discharge devotional service from him, 3) obeying the orders of the spiritual master with faith and devotion, 4) following in the footsteps of great ācāryas (teachers) under the direction of the spiritual master, 5) inquiring from the spiritual master how to advance in Kṛṣṇa consciousness, 6) being prepared to give up anything material for the satisfaction of the Supreme Personality of Godhead, Śrī Kṛṣṇa (This means that when we are engaged in the devotional service of Kṛṣṇa, we must be prepared to give up something which we may not like to give up, and also we have to accept something which we may not like to accept.), 7) residing in a sacred place of pilgrimage like Dvārakā or Vṛndāvana, 8) dealing with the material world only as far as necessary, 9) observing the fasting day on Ekādaśī, and 10) worshiping sacred trees like the banyan tree and others.</p>
+<p>These ten items are preliminary necessities for beginning the discharge of devotional service in regulative principles.</p>
+<p>In the beginning, if a neophyte devotee observes the above-mentioned ten principles, surely he will quickly make good advancement in Kṛṣṇa consciousness.</p>
+<p>The next set of instructions is listed as follows: 1) One should rigidly give up the company of nondevotees.</p>
+<ol start="2">
+<li>
+<p>One should not instruct a person who is not desirous of accepting devotional service.</p>
+</li>
+<li>
+<p>One should not be very enthusiastic about constructing costly temples or monasteries.</p>
+</li>
+<li>
+<p>One should not try to read too many books, nor should one develop the idea of earning his livelihood by lecturing on or by professionally reciting Śrīmad-Bhāgavatam or the Bhagavad- gītā.</p>
+</li>
+<li>
+<p>One should not be neglectful in ordinary dealings.</p>
+</li>
+<li>
+<p>One should not be under the spell of lamentation in loss or tribulation in gain.</p>
+</li>
+<li>
+<p>One should not disrespect the demigods.</p>
+</li>
+<li>
+<p>One should not give unnecessary trouble to any living entity.</p>
+</li>
+<li>
+<p>One should carefully avoid the various offenses in chanting the holy name of the Lord, or in worshiping the Deity in the temple.</p>
+</li>
+<li>
+<p>One should be very intolerant towards the blasphemy of the Supreme Personality of Godhead, Kṛṣṇa, or His devotees.</p>
+</li>
+</ol>
+<p>Without following the above-mentioned ten principles, one cannot properly elevate himself to the platform of sādhana-bhakti, or devotional service in practice.</p>
+<p>Altogether, Śrīla Rūpa Gosvāmī mentions twenty items, and all of them are very important.</p>
+<p>Out of the twenty, the first three-namely, accepting the shelter of a bona fide spiritual master, taking initiation from him and serving him with respect and reverence-are the most important.</p>
+<p>The next important items are as follows: 1) One should decorate the body with tilaka, which is the sign of the Vaiṣṇavas.</p>
+<p>(The idea is that as soon as a person sees these marks on the body of the Vaiṣṇava, he will immediately remember Kṛṣṇa.</p>
+<p>Lord Caitanya said that a Vaiṣṇava is he whom, when seen, reminds one of Kṛṣṇa.</p>
+<p>Therefore, it is essential that a Vaiṣṇava mark his body with tilaka to remind others of Kṛṣṇa.) 2) In marking such tilaka, sometimes one may write Hare Kṛṣṇa on the body.</p>
+<ol start="3">
+<li>
+<p>One should accept flowers and garlands that have been offered to the Deity and the spiritual master and put them on his body.</p>
+</li>
+<li>
+<p>One should learn to dance before the Deity.</p>
+</li>
+<li>
+<p>One should learn to bow down immediately upon seeing the Deity or the spiritual master.</p>
+</li>
+<li>
+<p>As soon as one visits a temple of Lord Kṛṣṇa, one must stand up.</p>
+</li>
+<li>
+<p>When the Deity is being borne for a stroll in the street, a devotee should immediately follow the procession.</p>
+</li>
+</ol>
+<p>(In this connection it may be noted that in India, especially in Viṣṇu temples, the system is that apart from the big Deity who is permanently situated in the main area of the temple, there is another set of smaller Deities which are taken in procession in the evening.</p>
+<p>In some temples it is the custom to hold a big procession in the evening with a band playing and a nice big umbrella over the Deities, who sit on decorated thrones on the cart or palanquin, which is carried by devotees.</p>
+<p>The Deities come out onto the street and travel in the neighborhood while the people of the neighborhood come out to offer prasādam.</p>
+<p>The residents of the neighborhood all follow the procession so that it is a very nice scene.</p>
+<p>When the Deity is coming out, the servitors in the temple put forward the daily accounts before Them: so much was the collection, so much was the expenditure.</p>
+<p>The whole idea is that the Deity is considered to be the proprietor of the whole establishment, and all the priests and other people taking care of the temple are considered to be the servants of the Deity.</p>
+<p>This system is very, very old and is still followed.</p>
+<p>So, therefore, it is mentioned here that when the Deity is on stroll the people should follow behind.) 8) A devotee must visit a Viṣṇu temple at least once or twice every day, morning and evening.</p>
+<p>(In Vṛndāvana this system is followed very strictly.</p>
+<p>All the devotees in town go every morning and evening to visit different temples.</p>
+<p>Therefore during these times there are considerable crowds all over the city.</p>
+<p>There are about 5,000 temples in Vṛndāvana City.</p>
+<p>Of course it is not possible to visit all the temples, but there are at least one dozen very big and important temples which were started by the Gosvāmīs and which should be visited.) 9) One must circumambulate the temple building at least three times.</p>
+<p>(In every temple there is an arrangement to go around the temple at least three times.</p>
+<p>Some devotees go around more than three times: ten times, fifteen times-according to their vows.</p>
+<p>The Gosvāmīs used to circumambulate Govardhan Hill.) 10) One should circumambulate the whole Vṛndāvana area.</p>
+<ol start="11">
+<li>One must worship the Deity in the temple according to the regulative principles.</li>
+</ol>
+<p>(Offering ārātrika, prasādam, decorating the Deity, etc.-these things must be observed regularly.) 12) Rendering personal service to the Deities.</p>
+<ol start="13">
+<li>
+<p>Singing.</p>
+</li>
+<li>
+<p>Saṅkīrtana.</p>
+</li>
+<li>
+<p>Chanting.</p>
+</li>
+<li>
+<p>Offering prayers.</p>
+</li>
+<li>
+<p>Reciting notable prayers.</p>
+</li>
+<li>
+<p>Tasting mahā-prasādam (food from the very plate offered before the Deities).</p>
+</li>
+<li>
+<p>Drinking caraṇāmṛtam (water from the bathing of the Deities which is offered to guests).</p>
+</li>
+<li>
+<p>One must smell the incense and flowers offered to the Deity.</p>
+</li>
+<li>
+<p>One must touch the lotus feet of the Deity.</p>
+</li>
+<li>
+<p>One must see the Deity with great devotion.</p>
+</li>
+<li>
+<p>One must offer ārātrika at different times.</p>
+</li>
+<li>
+<p>One must hear about the Lord and His pastimes from Śrīmad-Bhāgavatam, the Bhagavad-gītā, and similar books.</p>
+</li>
+<li>
+<p>One must pray to the Deity for His mercy.</p>
+</li>
+<li>
+<p>One should remember the Deity.</p>
+</li>
+<li>
+<p>One should meditate upon the Deity.</p>
+</li>
+<li>
+<p>One should render some voluntary service.</p>
+</li>
+<li>
+<p>One should think of the Lord as his friend.</p>
+</li>
+<li>
+<p>One should offer everything to the Lord.</p>
+</li>
+<li>
+<p>One should offer a favorite article (as food or a garment).</p>
+</li>
+<li>
+<p>One should take all kinds of risks for Kṛṣṇa's benefit.</p>
+</li>
+<li>
+<p>In every condition, be a surrendered soul.</p>
+</li>
+<li>
+<p>Pour water on the tulasī tree.</p>
+</li>
+<li>
+<p>Regularly hear Śrīmad-Bhāgavatam and similar literature.</p>
+</li>
+<li>
+<p>Live in a sacred place like Mathurā, Vṛndāvana or Dvārakā.</p>
+</li>
+<li>
+<p>Offer service to Vaiṣṇavas (devotees).</p>
+</li>
+<li>
+<p>Arrange your devotional service according to your means.</p>
+</li>
+<li>
+<p>In the month of Kārttika (October and November), make arrangements for special services.</p>
+</li>
+<li>
+<p>During Janmāṣṭamī (the time of Kṛṣṇa's appearance in this world) observe a special service.</p>
+</li>
+<li>
+<p>Do whatever is done with great care and devotion for the Deity.</p>
+</li>
+<li>
+<p>Relish the pleasure of Bhāgavatam reading amongst devotees and not amongst outsiders.</p>
+</li>
+<li>
+<p>Associate with devotees who are considered more advanced.</p>
+</li>
+<li>
+<p>Live in the jurisdiction of Mathurā.</p>
+</li>
+</ol>
+<p>Now, the total regulative principles come to an aggregate of sixty-four items.</p>
+<p>As we have mentioned, the first are the primary ten regulative principles.</p>
+<p>Then come the secondary ten regulative principles, and added to these are forty-four other activities.</p>
+<p>So all together there are sixty-four items for discharging the regulative practice of devotional service.</p>
+<p>Out of these sixty-four items, five items-namely, offering water to the tulasī tree, hearing Śrīmad-Bhāgavatam, associating amongst the devotees, saṅkīrtana and living in Mathurā-are very important.</p>
+<p>The sixty-four items of devotional service should include all of our activities of body, mind and speech.</p>
+<p>As it was stated in the beginning, the regulative principle of devotional service enjoins that all of our senses must be employed in the service of the Lord.</p>
+<p>Exactly how they can be thus employed is described in the above sixty-four items.</p>
+<p>Now, Śrīla Rūpa Gosvāmī will give evidences from different scriptures supporting the authenticity of many of these points.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

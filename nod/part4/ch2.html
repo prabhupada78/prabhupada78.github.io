@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2 - Nectar of Devotion - Part IV</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html" class="active">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part IV</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#astonishment-and-chivalry" id="astonishment-and-chivalry">Astonishment and Chivalry</a></h3>
+<p><strong>Astonishment</strong></p>
+<p>The ecstasy of astonishment in devotional service is perceived in two ways: directly, by the experience of one's own eyes, and indirectly, by hearing from others.</p>
+<p>When Nārada came to see the activities of the Lord at Dvārakā and he saw that Kṛṣṇa was present within every palace in the same body and was engaged in different activities, he was struck with wonder.</p>
+<p>This is one of the examples of astonishment in devotional service by direct perception.</p>
+<p>One of the friends of Mother Yaśodā says, &quot;Yaśodā, just see the fun! On the one hand, there is your child who is always captivated by sucking the milk from your breast, and on the other hand there is the great Govardhan Hill which can obstruct the passing of the clouds.</p>
+<p>But still, just see how wonderful it is that this great Govardhan Hill is resting on the finger of your child's left hand, just as though it were a toy.</p>
+<p>Is this not very mysterious?&quot; This statement is another example of astonishment in devotional service by direct perception.</p>
+<p>An instance of astonishment in devotional service by indirect perception occurred when Mahārāj Parīkṣit heard from Śukadeva Gosvāmī about Kṛṣṇa's killing Narakāsura, who had been fighting Kṛṣṇa with eleven divisions of akṣauhiṇī soldiers.</p>
+<p>Each division of akṣauhiṇī soldiers contained several thousand elephants, several thousand horses and chariots, and several hundreds of thousands of infantry soldiers.</p>
+<p>Narakāsura possessed eleven such divisions, and all of them were throwing arrows toward Kṛṣṇa, but Kṛṣṇa killed them all, simply by throwing three arrows from His side.</p>
+<p>When Mahārāj Parīkṣit heard of this wonderful victory, he immediately rubbed the tears from his eyes and became overwhelmed with joy.</p>
+<p>This instance is an example of astonishment in devotional service by indirect perception through aural reception.</p>
+<p>There is another example of indirect astonishment.</p>
+<p>Trying to test Kṛṣṇa to see if He were truly the Supreme Personality of Godhead, Lord Brahmā stole all the cowherd boys and cows from Him.</p>
+<p>But after a few seconds, he saw that Kṛṣṇa was still present with all the cows, calves and cowherd boys, exactly in the same way as before.</p>
+<p>When Lord Brahmā described this incident to his associates on the Satya-loka planet, they all became astonished.</p>
+<p>Brahmā told them that after taking away all the boys, he saw Kṛṣṇa again playing with the same boys in the same fashion.</p>
+<p>Their bodily complexion was blackish, almost like Kṛṣṇa's, and they all had four arms.</p>
+<p>The same calves and cows were still present there, in the same original fashion.</p>
+<p>Even while describing this incident, Brahmā became almost overwhelmed.</p>
+<p>&quot;And the most astonishing thing,&quot; he added, &quot;was that many other Brahmās from many different universes had also come there to worship Kṛṣṇa and His associates.&quot; Similarly, when there was a forest fire in the Bhāṇḍīravana, Kṛṣṇa instructed His friends to close their eyes tightly, and they all did this.</p>
+<p>Then when Kṛṣṇa had extinguished the fire, the cowherd boys opened their eyes and saw that they had been relieved from the danger and that their cows and calves were all safe.</p>
+<p>They began to perceive the wonder of the situation simply by guessing how Kṛṣṇa had saved them.</p>
+<p>This is another instance of indirect perception causing astonishment in devotional service.</p>
+<p>The activities of a person, even if they are not very extraordinary, create an impression of wonder in the heart and mind of the person's friends.</p>
+<p>But even very wonderful activities performed by a person who is not one's friend will not create any impression.</p>
+<p>It is because of love that one's wonderful activities create an impression in the mind.</p>
+<p><strong>Chivalry</strong></p>
+<p>When on account of love and devotional service for the Lord there is special valorous enthusiasm, the resultant activities are called chivalrous.</p>
+<p>These chivalrous activities can be manifested in the acts of mock-fighting, giving in charity, showing mercy and executing religious principles.</p>
+<p>By performing chivalrous activities in fighting, one is called yuddha-vīra.</p>
+<p>By charitable activities one is called dāna-vīra.</p>
+<p>By showing extraordinary mercy one is called dayā- vīra.</p>
+<p>And when one is munificent in executing religious rites, he is called dharma- vīra.</p>
+<p>In all such different chivalrous activities, Kṛṣṇa is the object.</p>
+<p>When a friend wants to satisfy Kṛṣṇa by performing some chivalrous activities, the friend becomes the challenger, and Kṛṣṇa Himself becomes the opponent; or else Kṛṣṇa may give audience to the fighting, and by His desire another friend becomes the opponent.</p>
+<p>A friend once challenged Kṛṣṇa thus: &quot;My dear Mādhava, You are very restless because You think that no one can defeat You.</p>
+<p>But if You do not flee from here, then I shall show You how I can defeat You.</p>
+<p>And my friends will be very satisfied to see this!&quot; Kṛṣṇa and Śrīdāmā were very intimate friends, yet Śrīdāmā, out of anger with Kṛṣṇa, challenged Him.</p>
+<p>When both of them began to fight, all the friends on the bank of the Yamunā enjoyed the wonderful fighting of the two friends.</p>
+<p>They prepared some arrows for mock-fighting, and Kṛṣṇa began to throw his arrows at Śrīdāmā.</p>
+<p>Śrīdāmā began to block these arrows by whirling his pole, and by Śrīdāmā's chivalrous activities, Kṛṣṇa became very satisfied.</p>
+<p>Such mock-fighting generally takes place amongst chivalrous persons and creates wonderful excitement for all viewers.</p>
+<p>There is a statement in the Hari-vaṁśa that sometimes Arjuna and Kṛṣṇa fought in the presence of Kuntī, and Arjuna would be defeated by Kṛṣṇa.</p>
+<p>In such chivalrous fighting between friends, there is sometimes bragging, self- complacence, pride, power, taking to weapons, challenging and standing as opponent.</p>
+<p>All of these symptoms become impetuses to chivalrous devotional service.</p>
+<p>One friend challenged Kṛṣṇa thus: &quot;My dear friend Dāmodara, You are an expert only in eating.</p>
+<p>You have defeated Subala only because he is weak and You adopted cheating means.</p>
+<p>Don't advertise Yourself to be a great fighter by such action.</p>
+<p>You have advertised Yourself as a serpent, and I am the peacock who will now defeat You.&quot; The peacock is the ablest enemy of the serpent.</p>
+<p>In such fighting between friends, when the self-advertisement becomes personal, learned scholars say it is sub-ecstasy.</p>
+<p>When there is a roaring challenge, certain kinds of movement for fighting, enthusiasm, no weapons and assurance given to frightened witnesses-all these chivalrous activities are called sub-ecstasy.</p>
+<p>One friend addressed Kṛṣṇa in this manner: &quot;My dear Madhusūdana, You know my strength, yet You are encouraging Bhadrasena, and not me, to challenge mighty Baladeva.</p>
+<p>By this action You are simply insulting me because my arms are as strong as the bolts of the gate!&quot; A devotee once said, &quot;My dear Lord Kṛṣṇa, may Your challenger, Śrīdāmā, become glorious for his chivalrous activities, such as vibrating like a thunder cloud and roaring like a lion.</p>
+<p>May all glories go to Śrīdāmā's chivalrous activities!&quot; Chivalrous activities in the matter of fighting, charity, mercy and execution of religious rituals are called constitutional; whereas expression of pride, emotions, endurance, kindness, determination, jubilation, enthusiasm, jealousy and remembrance are called unconstitutional.</p>
+<p>When Stokakṛṣṇa, one of the many friends of Kṛṣṇa, was fighting with Him, his father chastised him for fighting with Kṛṣṇa, who was the life and soul of all residents of Vṛndāvana.</p>
+<p>Upon hearing these chastisements, Stokakṛṣṇa stopped his fighting.</p>
+<p>But Kṛṣṇa continued to challenge him, and thus, in order to meet the challenge, Stokakṛṣṇa took his pole and began to display his dexterity by whirling it.</p>
+<p>Once Śrīdāmā challenged Bhadrasena and said to him, &quot;My dear friend, you needn't be afraid of me yet.</p>
+<p>I shall first of all defeat our brother Balarāma, then I shall beat Kṛṣṇa, and then I shall come to you.&quot; Bhadrasena therefore left the party of Balarāma and joined Kṛṣṇa, and he agitated his friends as much as the Mandara Hill had agitated the whole ocean.</p>
+<p>By his roaring sounds he deafened all his friends, and he enthused Kṛṣṇa with his chivalrous activities.</p>
+<p>Once Kṛṣṇa challenged all His friends and said, &quot;My dear friends, just see-I am jumping with great chivalrous prowess.</p>
+<p>Please do not flee away.&quot; Upon hearing these challenging words, another friend named Varūthapa counter-challenged the Lord and struggled against Him.</p>
+<p>One of the friends once remarked, &quot;Sudāmā is trying his best to see Dāmodara defeated, and I think that if our powerful Subala joins him, they will be a very beautiful combination, like a valuable jewel bedecked with gold.&quot; In these chivalrous activities, only Kṛṣṇa's friends can be the opponents.</p>
+<p>Kṛṣṇa's enemies can never actually be His opponents.</p>
+<p>Therefore, this challenging by Kṛṣṇa's friends is called devotional service in chivalrous activities.</p>
+<p>Dāna-vīra, or chivalry in the giving in charity, may be divided into two parts: munificence and renunciation.</p>
+<p>A person who can sacrifice everything for the satisfaction of Kṛṣṇa is called munificent.</p>
+<p>When a person desires to make a sacrifice because of his seeing Kṛṣṇa, Kṛṣṇa is called the impetus of the munificent activity.</p>
+<p>When Kṛṣṇa appeared as the son of Nanda Mahārāj, in clear consciousness Nanda Mahārāj desired all auspiciousness for his son and thus began to give in charity valuable cows to all the brāhmaṇas.</p>
+<p>The brāhmaṇas were so satisfied by this charitable action that they were obliged to say that the charity of Nanda Mahārāj had excelled the charity of such past kings as Mahārāj Pṛthu and Nṛga.</p>
+<p>When a person knows the glories of the Lord completely and is prepared to sacrifice everything for the Lord, he is called sampradānaka, or one who gives everything in charity for the sake of Kṛṣṇa.</p>
+<p>When Mahārāj Yudhiṣṭhira went with Kṛṣṇa in the arena of the rājasūya sacrifice, in his imagination he began to anoint the body of Kṛṣṇa with pulp of sandalwood, he decorated Him with a garland hanging down to His knees, he began to give Him garments all embroidered with gold, he gave Him ornaments all bedecked with valuable jewels, and he gave Him many fully decorated elephants, chariots and horses.</p>
+<p>He further wished to give Kṛṣṇa in charity his kingdom, his family and his personal self also.</p>
+<p>After so desiring, when there was nothing to actually give in charity, Mahārāj Yudhiṣṭhira became very perturbed and anxious.</p>
+<p>Similarly, Mahārāj Bali once told his priest, Śukrācārya: &quot;My dear sage, you are fully expert in knowledge of the Vedas, and as such you worship the Supreme Personality of Godhead, Viṣṇu, by Vedic rituals.</p>
+<p>As far as this brāhmaṇa dwarf [the incarnation Vāmanadeva] is concerned, if He is Lord Viṣṇu, a simple brāhmaṇa, or even my enemy, I have decided to give to Him in charity all the land He has asked for.&quot; Mahārāj Bali was so fortunate that the Lord extended before Him His hand, which was reddish from touching the breast of the goddess of fortune, who is always smeared with red kuṅkum powder.</p>
+<p>In other words, although the Personality of Godhead is so great that the goddess of fortune is always under His command for enjoyment, He still extended His hands to take charity from Mahārāj Bali.</p>
+<p>A person who wants to give everything in charity to Kṛṣṇa but does not want anything in return is considered the real renouncer.</p>
+<p>Thus, a devotee will refuse to accept any kind of liberation, even if it is offered by the Lord.</p>
+<p>Real love of Kṛṣṇa becomes manifested when Kṛṣṇa becomes the recipient of charity and the devotee becomes the giver.</p>
+<p>In the Hari-bhakti-sudhadaya there is another example, forwarded by Mahārāj Dhruva.</p>
+<p>He says there, &quot;My dear Lord, I have practiced austerities and penances because I was desiring to receive something from You, but in exchange You have allowed me to see You, who are never visible even to the great sages and saintly persons.</p>
+<p>I had been searching out some pieces of broken glass, but instead I have found the most valuable jewel.</p>
+<p>I am therefore fully satisfied, my Lord.</p>
+<p>I do not wish to ask anything more from Your Lordship.&quot; A similar statement is to be found in the Third Canto of Śrīmad-Bhāgavatam, 15th Chapter, 48th verse.</p>
+<p>The four sages headed by Sanaka Muni addressed the Lord as follows: &quot;My dear Supreme Personality of Godhead, Your reputation is very attractive and free from all material contamination.</p>
+<p>Therefore You are worthy of being glorified and are actually the reservoir of all pilgrimages.</p>
+<p>Auspicious persons, who are fortunate enough to be engaged in glorifying Your attributes and who actually know what Your transcendental position is, do not even care to accept liberation offered by You.</p>
+<p>Because they are so transcendentally enriched, they do not care to accept even the post of Indra, the heavenly King.</p>
+<p>They know that the post of the King of heaven is also fearful, whereas for those who are engaged in glorifying Your transcendental qualities there is only joyfulness and freedom from all danger.</p>
+<p>As such, why should persons with this knowledge be attracted by a post in the heavenly kingdom?&quot; One devotee has described his feelings about the charity exhibited by King Mayūradhvaja: &quot;I am faltering even to speak about the activities of Mahārāj Mayūradhvaja, to whom I offer my respectful obeisances.&quot; Mayūradhvaja was very intelligent, and he could understand why Kṛṣṇa came to him once, in the garb of a brāhmaṇa.</p>
+<p>Kṛṣṇa demanded from him half of his body, to be sawed off by his wife and son, and King Mayūradhvaja agreed to this proposal.</p>
+<p>On account of his intense feeling of devotional service, King Mayūradhvaja was always thinking of Kṛṣṇa, and when he understood that Kṛṣṇa had come in the garb of a brāhmaṇa, he did not hesitate to part with half of his body.</p>
+<p>This sacrifice of Mahārāj Mayūradhvaja for Kṛṣṇa's sake is unique in the world, and we should offer our all-respectful obeisances to him.</p>
+<p>He had full knowledge of the Supreme Personality of Godhead in the garb of a brāhmaṇa, and he is known as the perfect dāna-vīra, or renouncer.</p>
+<p>Any person who is always ready to satisfy Kṛṣṇa and who is always dexterous in executing devotional service is called dharma-vīra, or chivalrous in executing religious rituals.</p>
+<p>Only advanced devotees performing religious ritualistic performances can come to this stage of dharma-vīra.</p>
+<p>Dharma-vīras are produced after going through the authoritative scriptures, following moral principles, being faithful and tolerant and controlling the senses.</p>
+<p>Persons who execute religious rituals for the satisfaction of Kṛṣṇa are steady in devotional service, whereas persons who execute religious rituals without intending to please Kṛṣṇa are only called pious.</p>
+<p>The best example of a dharma-vīra is Mahārāj Yudhiṣṭhira.</p>
+<p>A devotee once told Kṛṣṇa: &quot;My dear Kṛṣṇa, O killer of all demons, Mahārāj Yudhiṣṭhira, the eldest son of Mahārāj Pāṇḍu, has performed all kinds of sacrifices just to please You.</p>
+<p>He has always invited the heavenly King, Indra, to take part in the yajñas [sacrifices].</p>
+<p>Because King Indra was thus absent so often from Śacīdevī, she had to pass much of her time pining over Indra's absence, with her cheeks upon her hands.&quot; The performance of different yajñas for the demigods is considered to be worship of the limbs of the Supreme Lord.</p>
+<p>The demigods are considered to be different parts of the universal body of the Lord, and therefore the ultimate purpose in worshiping them is to please the Lord by partially worshiping His different limbs.</p>
+<p>Mahārāj Yudhiṣṭhira had no such material desire; he executed all sacrifices under the direction of Kṛṣṇa, and not to take any personal advantage from them.</p>
+<p>He only desired to please Kṛṣṇa and was therefore called the best of the devotees.</p>
+<p>He was always merged in the ocean of loving service.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

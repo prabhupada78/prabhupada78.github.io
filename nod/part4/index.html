@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1 - Nectar of Devotion - Part IV</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html" class="active">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part IV</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#laughing-ecstasy" id="laughing-ecstasy">Laughing Ecstasy</a></h3>
+<p>In the fourth division of Bhakti-rasāmṛta-sindhu, Śrīla Rūpa Gosvāmī has described seven kinds of indirect ecstasies of devotional serviceknown as laughing, astonishment, chivalry, compassion, anger, dread and ghastliness.</p>
+<p>In this portion, Śrīla Rūpa Gosvāmī further describes these ecstasies of devotional feelings, some being compatible and others incompatible with one another.</p>
+<p>When one kind of ecstatic devotional service overlaps with another in a conflicting way, this state of affairs is called rasābhāsa, or perverted presentation of mellows.</p>
+<p>Expert learned scholars say that laughing is generally found among youngsters or in the combination of old persons and young children.</p>
+<p>This ecstatic loving laughing is sometimes also found in persons who are very grave by nature.</p>
+<p>Once an old mendicant approached the door of Mother Yaśodā's house, and Kṛṣṇa told Yaśodā, &quot;My dear Mother, I don't wish to go near this skinny villain.</p>
+<p>If I go there, he might put Me within his begging bag and take Me away from You!&quot; In this way, the wonderful child, Kṛṣṇa, began to look at His mother, while the mendicant, who was standing in the door, tried to hide his smiling face, although he could not do so.</p>
+<p>He immediately expressed his smiling.</p>
+<p>In this instance, Kṛṣṇa Himself is the object of laughing affairs.</p>
+<p>Once one of Kṛṣṇa's friends informed Him, &quot;My dear Kṛṣṇa, if You will open Your mouth, then I shall give You one nice sugar candy mixed with yogurt.&quot; Kṛṣṇa immediately opened His mouth, but instead of giving Him sugar candy with yogurt, the friend dropped a flower in His mouth.</p>
+<p>After tasting this flower, Kṛṣṇa turned His mouth in a disfigured way, and upon seeing this all His friends standing there began to laugh very loudly.</p>
+<p>Once a palmist came to the house of Nanda Mahārāj, and Nanda Mahārāj asked him, &quot;My dear sage, will you kindly check the hand of my child, Kṛṣṇa? Tell me how many years He will live and whether He will become the master of thousands of cows.&quot; Upon hearing this, the palmist began to smile, and Nanda Mahārāj asked him, &quot;My dear sir, why are you laughing, and why are you covering your face?&quot; In such a laughing ecstasy of love, Kṛṣṇa or matters pertaining to Kṛṣṇa are the cause of the laughter.</p>
+<p>In such laughing devotional service, there are symptoms of jubilation, laziness, concealed feelings and similar other seemingly disturbing elements.</p>
+<p>According to Śrīla Rūpa Gosvāmī's calculation, laughter in ecstatic love can be broken down into six divisions.</p>
+<p>These divisions, according to different degrees of smiling, are called in the Sanskrit language smita, hasita, vihasita, avahasita, apahasita, and atihasita.</p>
+<p>These six classes of smiling can be classified as major and minor.</p>
+<p>The major division includes smita, hasita and vihasita smiling, and the minor division includes avahasita, apahasita and atihasita smiling.</p>
+<p>When one is smiling but his teeth are not visible, one can distinctly mark a definite change in the eyes and in the cheeks.</p>
+<p>This is called smita smiling.</p>
+<p>Once when Kṛṣṇa was stealing yogurt, Jaratī, the headmistress of the house, could detect His activities, and she was therefore coming very hurriedly to catch Him.</p>
+<p>At that time, Kṛṣṇa became very much afraid of Jaratī and went to His elder brother, Baladeva.</p>
+<p>He said, &quot;My dear brother, I have stolen yogurt! Just see-Jaratī is coming hurriedly to catch Me!&quot; When Kṛṣṇa was thus seeking the shelter of Baladeva because He was being chased by Jaratī, all the great sages in the heavenly planets began to smile.</p>
+<p>This smiling is called smita smiling.</p>
+<p>Smiling in which the teeth are slightly visible is called hasita smiling.</p>
+<p>One day Abhimanyu, the so-called husband of Rādhārāṇī, was returning home, and at that time he could not see that Kṛṣṇa was there in his house.</p>
+<p>Kṛṣṇa immediately changed His dress to look exactly like Abhimanyu and approached Abhimanyu's mother, Jaṭilā, addressing her thus: &quot;My dear mother, I am your real son Abhimanyu, but just see-Kṛṣṇa, dressed up like me, is coming before you!&quot; Jaṭilā, the mother of Abhimanyu, immediately believed that Kṛṣṇa was her own son and thus became very angry at her real son who was coming home.</p>
+<p>She began to drive away her real son, who was crying, &quot;Mother! Mother! What are you doing?&quot; Seeing this incident, all the girl friends of Rādhārāṇī, who were present there, began to smile, and a portion of their teeth was visible.</p>
+<p>This is an instance of hasita smiling.</p>
+<p>When the teeth are distinctly visible in a smile, that is called vihasita.</p>
+<p>One day when Kṛṣṇa was engaged in stealing butter and yogurt in the house of Jaṭilā, He assured His friends, &quot;My dear friends, I know that this old lady is now sleeping very profoundly because she is breathing very deeply.</p>
+<p>Let us silently steal butter and yogurt without making any disturbance.&quot; But the old lady, Jaṭilā, was not sleeping; so she could not contain her smiling, and her teeth immediately became distinctly visible.</p>
+<p>This is an instance of vihasita smiling.</p>
+<p>In a state of smiling, when the nose becomes puffed and the eyes squint, the smiling is called avahasita.</p>
+<p>Once, early in the morning when Kṛṣṇa returned home after performing His rāsa dance, Mother Yaśodā looked upon Kṛṣṇa's face and addressed Him thus: &quot;My dear son, why do Your eyes look like they have been smeared with some oxides? Have You dressed Yourself with the blue garments of Baladeva?&quot; When Mother Yaśodā was addressing Kṛṣṇa in that way, a girl friend who was nearby began to smile with a puffed nose and squinting eyes.</p>
+<p>This is an instance of avahasita smiling.</p>
+<p>The gopī knew that Kṛṣṇa had been enjoying the rāsa dance and that Mother Yaśodā could not detect her son's activities or understand how He had become covered with the gopīs' makeup.</p>
+<p>Her smiling was in the avahasita feature.</p>
+<p>When tears from the eyes are added to the smiling and the shoulders are shaking, the smile is called apahasita.</p>
+<p>When child Kṛṣṇa was dancing in response to the singing of the old maidservant Jaratī, Nārada was astonished.</p>
+<p>The Supreme Personality of Godhead, who controls all the movements of great demigods like Brahmā and others, was now dancing to the indications of an old maidservant.</p>
+<p>Seeing this fun, Nārada also began to dance, and his shoulders trembled, and his eyes moved.</p>
+<p>Due to his smiling, his teeth also became visible, and on account of the glaring effulgence from his teeth, the clouds in the skies turned silver.</p>
+<p>When a smiling person claps his hands and leaps in the air, the smiling expression changes into atihasita, or overwhelming laughter.</p>
+<p>An example of atihasita was manifested in the following incident: Kṛṣṇa once addressed Jaratī thus: &quot;My dear good woman, the skin of your face is now slackened, and so your face exactly resembles a monkey's.</p>
+<p>As such, the King of the monkeys, Balīmukha, has selected you as his worthy wife.&quot; While Kṛṣṇa was teasing Jaratī in this way, she replied that she was certainly aware of the fact that the King of the monkeys was trying to marry her, but she had already taken shelter of Kṛṣṇa, the killer of many powerful demons, and therefore she had already decided to marry Kṛṣṇa instead of the King of the monkeys.</p>
+<p>On hearing this sarcastic reply by the talkative Jaratī, all the cowherd girls present there began to laugh very loudly and clap their hands.</p>
+<p>This laughter, accompanied by the clapping of hands, is called atihasita.</p>
+<p>Sometimes there are indirect sarcastic remarks which also create atihasita circumstances.</p>
+<p>An example of one such remark was made by one of the cowherd girls to Kuṭilā, the daughter of Jaṭilā and sister of Abhimanyu, the so-called husband of Rādhārāṇī.</p>
+<p>Indirectly Kuṭilā was insulted by the following statement: &quot;My dear Kuṭilā, daughter of Jaṭilā, your breasts are as long as string beans-simply dry and long.</p>
+<p>Your nose is so gorgeous that it is defying the beauty of the noses of frogs.</p>
+<p>And your eyes are more beautiful than the eyes of dogs.</p>
+<p>Your lips are defying the flaming cinders of fire, and your abdomen is as beautiful as a big drum.</p>
+<p>Therefore, my dear beautiful Kuṭilā, you are the most beautiful of all the cowherd girls of Vṛndāvana, and because of your extraordinary beauty, I think you must be beyond the attraction of the sweet blowing of Kṛṣṇa's flute!&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../part3/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../part3/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

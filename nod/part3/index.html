@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1 - Nectar of Devotion - Part III</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part4/index.html">Part Four</a></li><li class="affix"><a href="index.html" class="active">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part III</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#neutral-love-of-god" id="neutral-love-of-god">Neutral Love of God</a></h3>
+<p>Srila Rupa Goswami offers his respectful prayers to the eternal Supreme Personality of Godhead who is always so beautiful and for whom the pure devotees are always engaged in loving transcendental service.</p>
+<p>This third division of Bhakti-rasāmṛta-sindhu describes the five primary kinds of devotional service-namely, neutrality, servitude, fraternity, parenthood and conjugal love.</p>
+<p>These five items will be very elaborately explained here, and thus they have been figuratively described as the five waves on the western side of this ocean of nectar of devotion.</p>
+<p>When one is actually able to maintain the transcendental position, his stage is called neutrality in devotional service.</p>
+<p>Some great sages have attained this neutral position by practicing austerity, penance and meditation to control the senses.</p>
+<p>Such sages are generally called mystic yogīs, and in most cases they are inclined to appreciate the spiritual pleasure of the impersonal feature of the absolute truth.</p>
+<p>They are practically unaware of the transcendental pleasure derived from personal contact with the Supreme Godhead.</p>
+<p>Actually the transcendental pleasure derived in association with the Supreme Person is far greater than the pleasure derived from impersonal Brahman realization, because of the direct meeting with the eternal form of the Lord.</p>
+<p>Impersonalists do not directly derive the transcendental pleasure of association with the Lord by hearing of His pastimes.</p>
+<p>As such, the impersonalists cannot derive any relishable transcendental pleasure from the topics of the Bhagavad-gītā, in which the Lord is personally talking with Arjuna.</p>
+<p>The basic principle of their impersonal attitude does not allow them the transcendental pleasure which is relished by a devotee whose basic principle of understanding is the Supreme Person.</p>
+<p>The impersonalistic commentary on the Bhagavad-gītā is therefore disastrous because, without understanding the transcendental pleasure of the Gītā, the impersonalist wants to interpret it in his own way.</p>
+<p>If an impersonalist can, however, come in contact with a pure devotee, his transcendental position can be changed for greater elevation.</p>
+<p>Great sages are therefore recommended to worship the form of the Lord in order to achieve that highest transcendental pleasure.</p>
+<p>Without worshiping the arcā-vigraha, the form or Deity of the Lord, one cannot understand such literature as the Bhagavad-gītā and Śrīmad-Bhāgavatam.</p>
+<p>For those great sages situated in the position of transcendental neutrality, the beginning should be to take shelter of Lord Viṣṇu, the four-handed eternal form of the Supreme Personality of Godhead.</p>
+<p>The mystic yogīs are therefore advised to meditate on the form of Lord Viṣṇu, as recommended by Kapila Muni in the sāṅkhya yoga system.</p>
+<p>Unfortunately, many mystic yogīs try to meditate on something void, and as stated in the Gītā, the result is that they simply undergo trouble and do not achieve any tangible result.</p>
+<p>When some great saintly persons who had undergone penances and austerities saw the four-handed transcendental form of Viṣṇu, they began to remark as follows: &quot;This four-handed form of the Lord, manifested in a bluish color, is the reservoir of all pleasure and the center of our living force.</p>
+<p>Actually, when we see this eternal form of Viṣṇu, we, along with many other paramahaṁsas, become immediately captivated by the beauty of the Lord.&quot; This appreciation of Lord Viṣṇu by saintly persons is an instance of situation in śānta-rasa, or the neutral stage of devotional service.</p>
+<p>In the beginning, those who are aspiring for salvation try to get out of the material entanglement by performing painful austerities and penances, and ultimately they come to the impersonal status of spiritual realization.</p>
+<p>At this brahma-bhūta stage of liberation from the material entanglement, the symptoms, as explained in the Bhagavad-gītā, are that one becomes joyous beyond any hankering or lamentation and gains a universal vision.</p>
+<p>When the devotee is situated in the śānta-rasa, or neutral stage of devotional service, he appreciates the Viṣṇu form of the Lord.</p>
+<p>Actually, all Vedic culture is aiming at understanding Lord Viṣṇu.</p>
+<p>In the Ṛg Veda one mantra says that any advanced saintly person is always aspiring to be fixed in meditation upon the lotus feet of Viṣṇu.</p>
+<p>In the Śrīmad-Bhāgavatam it is said that the foolish do not know that Viṣṇu is the ultimate goal of life.</p>
+<p>According to the conclusion of all authoritative Vedic scriptures, when a person comes to the stage of appreciating Viṣṇu, he is at the beginning of devotional service.</p>
+<p>If one cultivates devotional service further and further, under proper guidance, other features of devotional service will gradually become manifest.</p>
+<p>At this stage of śānta-rasa, one can see Lord Viṣṇu, the Supreme Personality of Godhead, the deliverer of even the demons.</p>
+<p>The Lord is appreciated by such would-be devotees as the eternal transcendental form, the chief of all self-realized souls, the supersoul, the supreme Brahman, completely pacified, completely controlled and pure, merciful to the devotees and untouched by any material condition.</p>
+<p>This appreciation of Lord Viṣṇu in awe and veneration by the saintly is to be understood as the sign that they are situated in the śānta-rasa, or neutral stage of devotional service.</p>
+<p>This stage of śānta-rasa can be attained by the impersonalists only when they are in association with pure devotees.</p>
+<p>Otherwise it is not possible.</p>
+<p>After Brahman realization, when a liberated soul comes in contact with a pure devotee of Lord Kṛṣṇa and submissively accepts the teachings of Lord Kṛṣṇa without misinterpretation, he becomes situated in this neutral stage of devotional service.</p>
+<p>The best example of saintly persons situated in the śānta- rasa are Sanaka, Sanātana, Sananda, and Sanat-kumāra, the Kumāra brothers.</p>
+<p>These four saintly persons (known as Catuḥsana) were sons of Lord Brahmā.</p>
+<p>After their birth, when they were ordered by their father to become householders and increase human society, they refused the order.</p>
+<p>They said that they had already decided not to become entangled with family life; they would rather live as saintly brahmacārīs for their own perfection.</p>
+<p>So these great saints have been living for millions of years now, but still they appear to be just like boys of four or five years.</p>
+<p>Their complexions are very fair, there is an effulgence in their bodies, and they always travel naked.</p>
+<p>These four saintly persons almost always remain together.</p>
+<p>In one of the prayers of the Kumāra brothers, the declaration is made: &quot;My Lord Mukunda [Kṛṣṇa, the giver of liberation], only so long as one does not happen to see Your eternal form of bliss and knowledge, appearing just like a newly-grown tāmala tree, with a bluish hue-only for so long can the impersonal feature of the absolute truth, known as Brahman, be very pleasing to a saintly person.&quot; The qualifications of a saintly person are described in the Bhaktirasāmṛta-sindhu as follows: A saintly person is one who understands fully that simply by discharging devotional service he can become confident of liberation.</p>
+<p>He is always situated in the regulative principles of devotional life and at the same time aspires to be liberated from the material entanglement.</p>
+<p>A saintly person thinks like this: &quot;When shall I be able to live alone in the caves of the mountains? When shall I be dressed simply with undergarments? When shall I be satisfied by eating simply a little fruit and vegetables? When will it be possible for me to think always of the lotus feet of Mukunda, who is the source of the Brahman effulgence? When, in such a spiritual condition of life, shall I fully understand my days and nights to be insignificant moments in eternal time?&quot; The devotees and self-realized persons who are engaged in preaching the glories of the Lord always maintain an ecstatic love for the Lord within their hearts.</p>
+<p>Thus they are benefited by the rays of the ecstatic moon, and they are called saintly persons.</p>
+<p>The impulse of a saintly person is to be engaged in the study of the Vedas, especially the Upaniṣadic portions, to always live in a place where there is no disturbance from the common people, to always think of the eternal form of Kṛṣṇa, to be ready to consider and understand the absolute truth, to always be prominent in exhibiting knowledge, to see the Supreme Lord in His universal form (viśva-rūpa), to associate always with learned devotees and to discuss the conclusion of the Vedas with similarly elevated persons.</p>
+<p>All of these qualifications of a saintly person serve to raise him to the status of śānta-rasa.</p>
+<p>In the Bhakti-rasāmṛta-sindhu it is stated that all those who attended the pious meeting held by Lord Brahmā for the study of Vedic literature like the Upaniṣads became overwhelmed with ecstatic love for Kṛṣṇa, the chief of the Yadu dynasty.</p>
+<p>Actually, the result of studying the Upaniṣads is to understand the Supreme Personality of Godhead.</p>
+<p>Negation of material existence is only one of the subjects of the Upaniṣads.</p>
+<p>The next subject concerns becoming situated in the impersonal realization.</p>
+<p>And then, after penetrating through the impersonal Brahman, when one comes to the platform of associating with the Supreme Personality of Godhead, one reaches the ultimate goal in studying the Upaniṣads.</p>
+<p>Those who are situated on the platform of śānta-rasa get their impetus for advancement in devotional service by smelling the tulasī offered at the lotus feet of the Lord, by hearing the sound of His conchshell, by seeing a sanctified place in some mountain or hill, by observing a forest like the ones in Vṛndāvana, by going to a place of pilgrimage, by visiting the course of the Ganges River, by being victorious over the dictations of bodily demands (i.e., eating, sleeping, mating and defending), by understanding the devastation of eternal time, and by constantly associating with devotees engaged in Kṛṣṇa consciousness.</p>
+<p>All these different items are favorable in elevating saintly persons situated in śāntarasa to the advanced stage of devotional service.</p>
+<p>In the Third Canto, 15th Chapter, 43rd verse of Śrīmad- Bhāgavatam, there is a statement by the four saintly persons known as Catuḥsana, headed by Sanaka-kumāra.</p>
+<p>They went to visit the Lord of Vaikuṇṭha-loka in the spiritual sky, and when they bowed down before the Lord, the aroma of the tulasī, mixed with saffron, entered their nostrils and immediately attracted their minds.</p>
+<p>Although these four saintly persons were always absorbed in the thought of impersonal Brahman, from association with the Lord and from smelling the tulasī leaves, the hairs on their bodies immediately stood up.</p>
+<p>This shows that even a person who is situated in Brahman realization, if he is put into association with devotees in pure devotional service, will immediately become attracted to the personal feature of the Lord.</p>
+<p>There are certain symptoms of great sages who are situated in śāntarasa devotional service, and these symptoms are exhibited as follows: they concentrate their eyesight on the tip of the nose, and they behave just like an avadhūta.</p>
+<p>Avadhūta means a highly elevated mystic who does not care for any social, religious or Vedic conventions.</p>
+<p>Another symptom is that such persons are very careful to step forward when giving speeches.</p>
+<p>When they speak, they join together the forefinger and thumb.</p>
+<p>(This is called the jṣāna-mudrā position.) They are not against the atheists, nor are they particularly inclined to the devotees.</p>
+<p>Such persons give stress to liberation and detachment from the materialistic way of life.</p>
+<p>They are always neutral and have no affection for nor misidentification with anything material.</p>
+<p>They are always grave, but fully absorbed in thoughts of the Supreme Personality of Godhead.</p>
+<p>These uncommon features develop in devotees who are situated in śānta-rasa.</p>
+<p>Regarding concentration of the eyesight on the tip of the nose, there is a statement in the Bhakti-rasāmṛta-sindhu by a devotee who observed this being performed by a yogī.</p>
+<p>He remarked, &quot;This great sage is concentrating his eyesight on the tip of his nose, and from this it appears that he has already realized the eternal form of the Lord within himself.&quot; Sometimes a devotee in śānta-rasa yawns, stretches his limbs, instructs on devotional service, offers respectful obeisances unto the form of the Lord, offers nice prayers to the Lord and has a desire to give direct service with his body.</p>
+<p>These are some of the common symptoms of the devotee who is situated in neutrality.</p>
+<p>One devotee, after observing the yawning of another devotee, addressed him thus: &quot;My dear mystic, I think that within your heart there is some ecstatic devotional love which is causing you to yawn.&quot; It is sometimes found that a devotee in the śāntarasa falls down on the ground, his hairs stand up on his body, and he trembles all over.</p>
+<p>In this way, different symptoms of ecstatic trance are exhibited automatically by such devotees.</p>
+<p>In the Bhakti-rasāmṛta-sindhu it is said that when Lord Kṛṣṇa was blowing His conchshell known as Pāṣcajanya, many great sages who were living in the caves of the mountains immediately reacted, being awakened from their trance of meditation.</p>
+<p>They immediately saw that the hairs of their bodies were standing.</p>
+<p>Sometimes devotees in śānta-rasa become stunned, peaceful, jubilant, deliberate, reflective, anxious, dexterous and argumentative.</p>
+<p>These symptoms indicate continuous ecstasy, or established emotion.</p>
+<p>Once a great realized sage was lamenting that the Supreme Lord Kṛṣṇa was living in Dvārakā but that he was unable to take advantage of seeing Him.</p>
+<p>After thinking this, the sage immediately became stunned.</p>
+<p>He was thinking that he was simply wasting his time.</p>
+<p>In other words, the sage lamented because the Supreme Personality of Godhead was personally present, and he still could not take advantage of this because of his meditation.</p>
+<p>When a mystic is transcendental to all kinds of mental concoctions and is situated in Brahman, his state is called trance beyond the influence of the material conception of life.</p>
+<p>In that stage, when one hears about the transcendental pastimes of the Lord, there may be shivering in the body.</p>
+<p>When a Brahman-realized devotee who has come to the stage of steady trance comes into contact with the eternal form of Kṛṣṇa, his transcendental pleasure increases millions of times.</p>
+<p>One great sage once inquired from another, &quot;My dear friend, do you think that after I perfect the eightfold yoga performance I shall be able to see the eternal form of the Supreme Personality of Godhead?&quot; This enquiry from the sage is an instance of inquisitiveness in a devotee situated in the neutral stage of devotional service.</p>
+<p>When Lord Kṛṣṇa, along with His elder brother Balarāma and sister Subhadrā, came to Kurukṣetra in a chariot on the occasion of a solar eclipse, many mystic yogīs also came.</p>
+<p>When these mystic yogīs saw Lord Kṛṣṇa and Balarāma, they exclaimed that now that they had seen the excellent bodily effulgence of the Lord, they had almost forgotten the pleasure derived from impersonal Brahman realization.</p>
+<p>In this connection one of the mystics approached Kṛṣṇa and said, &quot;My dear Lord, You are always full with transcendental bliss, excelling all other spiritual positions.</p>
+<p>And so, simply by seeing You from a distant place, I have come to the conclusion that there is no need of my being situated in the transcendental bliss of impersonal Brahman.&quot; When a great mystic was once awakened from his meditative trance by hearing the vibration of Kṛṣṇa's Pāṣcajanya conchshell, the mystic became overpowered.</p>
+<p>So much so, in fact, that he began to bash his head on the ground, and with eyes full of tears of ecstatic love, he violated all the rules and regulations of his yoga performances.</p>
+<p>Thus he at once neglected the process of Brahman realization.</p>
+<p>Bilvamaṅgala Thākur, in his book Kṛṣṇa-karṇāmṛta, says, &quot;Let the impersonalists be engaged in the process of transcendental realization by worshiping the impersonal Brahman.</p>
+<p>Although I was also initiated into that path of Brahman realization, I have now become misled by a naughty boy-one who is very cunning, who is very much attached to the gopīs and who has made me His maidservant.</p>
+<p>So I have now forgotten the process of Brahman realization.&quot; Bilvamaṅgala Thākur was first spiritually initiated for impersonal realization of the absolute truth, but later on, by his association with Kṛṣṇa in Vṛndāvana, he became an experienced devotee.</p>
+<p>The same thing happened to Śukadeva Gosvāmī, who also reformed himself by the grace of the Lord and took to the path of devotional service, giving up the way of impersonal realization.</p>
+<p>Śukadeva Gosvāmī and Bilvamaṅgala Thākur's giving up of the impersonal conception of the absolute truth and taking to devotional service are the best examples of devotees being situated in the neutral state.</p>
+<p>According to some authorities, this condition cannot be accepted as one of the transcendental humors, or rasas, but Śrīla Rūpa Gosvāmī says that even if one does not accept it as a transcendental humor, one must still accept it as the beginning position of devotional service.</p>
+<p>However, if one is not further raised to the platform of actual service to the Lord, he is not considered to be on the platform of transcendental mellow.</p>
+<p>In this connection, in the Eleventh Canto of Śrīmad-Bhāgavatam, Lord Kṛṣṇa personally instructs Uddhava like this: &quot;The state of being established in My personal form is called śānta-rasa, and without being situated in this position, no one can advance to actual pure devotional service.&quot; In other words, no one can be situated in the personal feature of the Supreme Personality of Godhead without being situated at least in śānta-rasa.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../part4/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../part4/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

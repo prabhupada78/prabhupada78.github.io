@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>16 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html" class="active">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html">18</a></li><li class="affix"><a href="ch19.html">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#varieties-of-love-for-kṛṣṇa" id="varieties-of-love-for-kṛṣṇa">Varieties of Love for Kṛṣṇa</a></h3>
+<p><strong>Parental Relationship</strong></p>
+<p>In the attitude of the denizens of Vṛndāvana, such as Nanda Mahārāj and Mother Yaśodā, is to be found the ideal transcendental concept of becoming the father and mother of Kṛṣṇa, the original Personality of Godhead.</p>
+<p>Factually, no one can become the father or mother of Kṛṣṇa; but a devotee's possession of such transcendental feelings is called love of Kṛṣṇa in parental relationship.</p>
+<p>The Vṛṣṇis (Kṛṣṇa's relatives at Dvārakā) also felt like that.</p>
+<p>So spontaneous love of Kṛṣṇa in the parental relationship is found both amongst those denizens of Dvārakā who belonged to the dynasty of Vṛṣṇi, as well as amongst the inhabitants of Vṛndāvana.</p>
+<p>Spontaneous love of Kṛṣṇa as exhibited by the Vṛṣṇis and the denizens of Vṛndāvana is eternally existing in them.</p>
+<p>In the stage of devotional service where regulative principles are followed, there is no necessity of discussing this love, for it must develop of itself at a more advanced stage.</p>
+<p>Persons desiring to follow in the footsteps of such eternal devotees of the Lord as the Vṛṣṇis and Vṛndāvana denizens are called rāgānugā devotees, which means that they are trying to attain to the perfection of those devotees.</p>
+<p>These rāgānugā devotees do not follow the regulative principles of devotional service very strictly, but by spontaneous nature they become attracted to some of the eternal devotees such as Nanda or Yaśodā, and they try to follow in their footsteps spontaneously.</p>
+<p>There is a gradual development of the ambition to become like a particular devotee, and this activity is called rāgānugā.</p>
+<p>We must always remember, however, that such eagerness to follow in the footsteps of the denizens of Braja (Vṛndāvana) is not possible unless one is freed from material contamination.</p>
+<p>In following the regulative principles of devotional service, there is a stage which is called anartha-nivṛtti, which means the disappearance of all material contamination.</p>
+<p>Sometimes it is found that someone is imitating such devotional love, but factually he is not freed from anarthas, or unwanted habits.</p>
+<p>It has been seen that a so-called devotee proclaims himself a follower of Nanda, Yaśodā or the gopīs, while at the same time his abominable attraction for mundane sex life is visible.</p>
+<p>Such a manifestation of divine love is mere imitation and has no value.</p>
+<p>When one is actually spontaneously attracted to the loving principles of the gopīs, there will be found no trace of any mundane contamination in his character.</p>
+<p>Therefore, in the beginning, everyone should strictly follow the regulative principles of devotional service, according to the injunctions of the scriptures and the spiritual master.</p>
+<p>Only after the stage of liberation from material contamination can one actually aspire to follow in the footsteps of the devotees in Vṛndāvana.</p>
+<p>It is said by Śrī Rūpa Gosvāmī: &quot;When one is actually liberated from material contamination, he can always remember an eternal devotee in Vṛndāvana in order to love Kṛṣṇa in the same capacity.</p>
+<p>And developing such an aptitude, one will always live in Vṛndāvana, even within his mind.&quot; The purport is that, if it is possible, one should go and physically be present at Brajabhūmi, Vṛndāvana, and be engaged always in the service of the Lord, following the devotees in Brajadhāma, the spiritual realm of Braja.</p>
+<p>If it is not possible, however, to be physically present at Vṛndāvana, one can meditate anywhere upon living in that situation.</p>
+<p>Wherever he may be, one must always think about life in Brajadhāma and about following in the footsteps of a particular devotee in the service of the Lord.</p>
+<p>A devotee who is actually advanced in Kṛṣṇa consciousness, who is constantly engaged in devotional service, should not manifest himself even though he has attained perfection.</p>
+<p>The idea is that he should always continue to act as a neophyte devotee as long as his material body is there.</p>
+<p>Activities in devotional service under regulative principles must be followed even by the pure devotee.</p>
+<p>But when he realizes his actual position in relationship with the Lord, he can, along with the discharging of regulative service, think within himself of the Lord, under the guidance of a particular associate of the Lord, and develop his transcendental sentiments in following that associate.</p>
+<p>In this connection, we should be careful about the so-called siddhapraṇai.</p>
+<p>The siddha-praṇai process is followed by a class of men who are not very authorized and who have manufactured their own way of devotional service.</p>
+<p>They imagine that they have become associates of the Lord simply by thinking of themselves like that.</p>
+<p>This external behavior is not at all according to the regulative principles.</p>
+<p>The so-called siddha-praṇai process is followed by the prakṛtasahajiyā, a pseudo-sect of so-called Vaiṣṇavas.</p>
+<p>In the opinion of Rūpa Gosvāmī, such activities are simply disturbances to the standard way of devotional service.</p>
+<p>Śrī Rūpa Gosvāmī says that learned ācāryas recommended that we follow the regulative principles even after the development of spontaneous love for Kṛṣṇa.</p>
+<p>According to the regulative principles, there are nine departmental activities, as described above, and one should specifically engage himself in the type of devotional service for which he has a natural aptitude.</p>
+<p>For example, one person may have a particular interest in hearing, another may have a particular interest in chanting, and another may have a particular interest in serving in the temple.</p>
+<p>So these, or any of the other six different types of devotional service (remembering, serving, praying, engaging in some particular service, being in a friendly relationship or offering everything in one's possession) should be executed in full earnestness.</p>
+<p>In this way everyone should act according to his particular taste.</p>
+<p>Conjugal Love Devotional service following in the footsteps of the gopīs of Vṛndāvana or the queens at Dvārakā is called devotional service in conjugal love.</p>
+<p>This devotional service in conjugal love can be divided into two categories.</p>
+<p>One is indirect conjugal love, the other direct.</p>
+<p>In both of these categories one has to follow the particular gopī who is engaged in such service in Goloka Vṛndāvana.</p>
+<p>To be directly attached to the Supreme Personality of Godhead in conjugal love is technically called keli.</p>
+<p>This keli performance means to directly join with the Supreme Personality of Godhead.</p>
+<p>There are other devotees who do not wish direct contact with the Supreme Person, but who relish the conjugal love affairs of the Lord with the gopīs.</p>
+<p>Such devotees enjoy simply by hearing of the activities of the Lord with the gopīs.</p>
+<p>This development of conjugal love can be possible only with those who are already engaged in following the regulative principles of devotional service, specifically in the worship of Rādhā and Kṛṣṇa in the temple.</p>
+<p>Such devotees gradually develop a spontaneous love for the Deity, and by hearing of the Lord's exchange of loving affairs with the gopīs, they gradually become attracted to these pastimes.</p>
+<p>After this spontaneous attraction becomes highly developed, the devotee is placed in either of the abovementioned categories.</p>
+<p>This development of conjugal love for Kṛṣṇa is not manifested in women only.</p>
+<p>The material body has nothing to do with spiritual loving affairs.</p>
+<p>A woman may develop an attitude for becoming a friend of Kṛṣṇa, and, similarly, a man may develop the feature of becoming a gopī in Vṛndāvana.</p>
+<p>How a devotee in the form of a man can desire to become a gopī is stated in the Padma Purāṇa as follows: In days gone by there were many sages in Daṇḍakāraṇya.</p>
+<p>Daṇḍakāraṇya is the name of the forest where Lord Rāmacandra lived after being banished by His father for fourteen years.</p>
+<p>At that time there were many advanced sages who were captivated by the beauty of Lord Rāmacandra and who desired to become women in order to embrace the Lord.</p>
+<p>Later on these sages appeared in Goloka Vṛndāvana when Kṛṣṇa advented Himself there, and they were born as gopīs or girl friends of Kṛṣṇa.</p>
+<p>In this way they attained the perfection of spiritual life.&quot; The story of the sages of Daṇḍakāraṇya can be explained as follows: When Lord Rāmacandra was residing in Daṇḍakāraṇya, the sages who were engaged in devotional service there became attracted by His beauty and immediately thought of the gopīs at Vṛndāvana who enjoyed conjugal loving affection with Kṛṣṇa.</p>
+<p>In this instance it is clear that the sages of Daṇḍakāraṇya desired conjugal love in the manner of the gopīs, although they were well aware of the Supreme Lord as both Kṛṣṇa and Lord Rāmacandra.</p>
+<p>They knew that Rāmacandra was an ideal king and could not accept more than one wife; but Lord Kṛṣṇa, being the full-fledged Personality of Godhead, could fulfill the desires of all of them in Vṛndāvana.</p>
+<p>These sages also concluded that the form of Lord Kṛṣṇa is more attractive than that of Lord Rāmacandra, and so they prayed to become gopīs in their future lives to be associated with Kṛṣṇa.</p>
+<p>Lord Rāmacandra remained silent, and His silence shows that He accepted the prayers of the sages.</p>
+<p>Thus they were blest by Lord Rāmacandra to have association with Lord Kṛṣṇa in their future lives.</p>
+<p>As a result of this benediction, they all took birth as women in the wombs of gopīs at Gokula, and, as they had desired in their previous lives, they enjoyed the company of Lord Kṛṣṇa, who was present at that time in Gokula Vṛndāvana.</p>
+<p>The perfection of their human form of life was thus achieved by their generating a transcendental sentiment to share conjugal love with Lord Kṛṣṇa.</p>
+<p>Conjugal love is divided into two classifications-namely, conjugal love as husband and wife and conjugal love as lover and beloved.</p>
+<p>One who develops conjugal love for Kṛṣṇa as a wife is promoted to Dvārakā, where the devotee becomes the queen of the Lord.</p>
+<p>Those who develop conjugal love for Kṛṣṇa as a lover are promoted to Goloka Vṛndāvana, to associate with the gopīs and enjoy loving affairs with Kṛṣṇa there.</p>
+<p>We should note carefully, however, that this conjugal love for Kṛṣṇa, either as gopī or queen, is not limited only to women.</p>
+<p>Even men can develop such sentiments, as was evidenced by the sages of Daṇḍakāraṇya.</p>
+<p>If someone simply desires conjugal love but does not follow in the footsteps of the gopīs, he is promoted to association with the Lord at Dvārakā.</p>
+<p>In the Mahā-kūrma Purāṇa it is stated: &quot;Great sages who were the sons of fire gods rigidly followed the regulative principles in their desire to have conjugal love for Kṛṣṇa.</p>
+<p>As such, in their next lives they were able to associate with the Lord, the origin of all creation, who is known as Vāsudeva, or Kṛṣṇa.</p>
+<p>Every one of them got Him as their husband.&quot; Parenthood or Friendship Devotees who are attracted to Kṛṣṇa as parents or as friends should follow in the footsteps of Nanda Mahārāj or Subala, respectively.</p>
+<p>Nanda Mahārāj is the foster father of Kṛṣṇa, and out of all of the friends of Kṛṣṇa, Subala is the most intimate in Brajabhūmi.</p>
+<p>In the development of becoming either the father or friend of the Lord, there are two varieties.</p>
+<p>One method is that one may try to become the father of the Lord directly, and the other is that one may follow Nanda Mahārāj and cherish the ideal of being Kṛṣṇa's father.</p>
+<p>Out of these two, the attempt to directly become the father of Kṛṣṇa is not recommended.</p>
+<p>Such a development can become polluted with māyāvāda (impersonal) philosophy.</p>
+<p>The māyāvādīs or monists think that they themselves are Kṛṣṇa, and if one thinks that he himself has become Nanda Mahārāj, then his parental love will become contaminated with the māyāvāda philosophy.</p>
+<p>The māyāvāda philosophical way of thinking is offensive, and no offender can enter into the kingdom of God to associate with Kṛṣṇa.</p>
+<p>In the Skanda Purāṇa there is a story of an old man residing in Hastināpur, capital of the kingdom of the Pāṇḍus, who desired Kṛṣṇa as his beloved son.</p>
+<p>This old man was instructed by Nārada to follow in the footsteps of Nanda Mahārāj, and thus success was achieved by him.</p>
+<p>There is a statement in the Nārāyaṇa-vyūha-stava prayers that persons who are always engaged in thinking of the Lord as their husband, friend, father or well-wisher are always worshipable by everyone.</p>
+<p>This spontaneous love for Kṛṣṇa can only be developed by the special mercy of Kṛṣṇa or His pure devotee.</p>
+<p>This process of devotional service is sometimes called puṣṭimārga.</p>
+<p>Puṣṭi means nourishing and mārga means path.</p>
+<p>Such development of sentiment nourishes devotional service to the highest standard.</p>
+<p>Thus it is called the path of nourishment, or puṣṭi-mārga.</p>
+<p>The Vallabha-sampradāya, which belongs to the Viṣṇu-svāmī sect of Vaiṣṇava religion, worships Kṛṣṇa in this puṣṭi-mārga.</p>
+<p>Generally devotees in Gujerat worship Bāla-Kṛṣṇa, under this heading of puṣṭi-mārga.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch15.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch17.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch15.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch17.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

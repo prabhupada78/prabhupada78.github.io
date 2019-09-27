@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>19 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html">18</a></li><li class="affix"><a href="ch19.html" class="active">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#devotional-service-in-love-of-god" id="devotional-service-in-love-of-god">Devotional Service in Love of God</a></h3>
+<p>When one's desire to love Kṛṣṇa in his particular relationship becomes intensified, this is known as pure love of Godhead.</p>
+<p>In the beginning a devotee is engaged in the regulative principles of devotional service by the order of his spiritual master.</p>
+<p>When one thereby becomes completely purified of all material contamination, there develops an attachment and taste for devotional service.</p>
+<p>This taste and attachment, when gradually intensified in the course of time, becomes love.</p>
+<p>The word &quot;love&quot; can only be actually applied in relationship with the Personality of Godhead.</p>
+<p>In the material world, love is not applicable at all.</p>
+<p>What goes on under the name of love in the material world is nothing but lust.</p>
+<p>There is a gulf of difference between love and lust, like the difference between gold and iron.</p>
+<p>In the Nāradapañcarātra it is clearly stated that when lust is completely transferred to the Supreme Godhead and the concept of kinship is completely reposed in Him, such is accepted as pure love of God by great authorities like Bhīṣma, Prahlāda, Uddhava and Nārada.</p>
+<p>A great authority like Bhīṣma has explained that love of Godhead means completely giving up all so-called love for any other person.</p>
+<p>According to Bhīṣma, love means to repose one's affection completely upon one person, withdrawing all affinities for any other person.</p>
+<p>This pure love can be transferred to the Supreme Personality of Godhead under two conditions-out of ecstasy and out of the causeless mercy of the Supreme Personality of Godhead Himself.</p>
+<p>Ecstatic love of Godhead can be potently invoked simply by following the rules and regulations of devotional service as they are prescribed in scriptures, under the direction of a bona fide spiritual master.</p>
+<p>In the Eleventh Canto, 2nd Chapter, 38th verse, of the Śrīmad-Bhāgavatam this ecstatic love, born of the execution of regulative devotional service, is explained: &quot;A devotee, in the course of executing the regulative principles of devotional service, develops his natural Kṛṣṇa consciousness, and being thus softened at heart he chants and dances like a madman.</p>
+<p>While performing chanting of the holy name of the Lord, he sometimes cries, sometimes talks wildly, sometimes sings and sometimes-without caring for any outsider-dances like a madman.&quot; In the Padma Purāṇa there is a statement about ecstatic love born of spontaneous affection.</p>
+<p>Candrakānti, a celebrated fair-faced girl, rigidly observed celibacy in order to obtain Kṛṣṇa as her husband.</p>
+<p>She always engaged herself in meditating on the transcendental form of the Lord and always chanted the glories of the Lord.</p>
+<p>She did not desire to accept anyone else as her husband.</p>
+<p>She had firmly decided that only Lord Kṛṣṇa would be her husband.</p>
+<p>The Lord's Extraordinary Mercy When a devotee is found to be always associated with the Lord in ecstatic love, it is to be understood that such a position is awarded by the Lord Himself out of His causeless extraordinary mercy.</p>
+<p>An example of such extraordinary mercy is given in the Eleventh Canto, 12th Chapter, 6th verse, of the Śrīmad-Bhāgavatam, wherein Lord Kṛṣṇa tells Uddhava: &quot;The gopīs in Vṛndāvana did not study the Vedas to achieve Me.</p>
+<p>Nor had they ever been in holy places of pilgrimage.</p>
+<p>Nor did they devoutly execute any regulative principle.</p>
+<p>Nor did they undergo any kind of austerity.</p>
+<p>It is simply by My association that they have attained the highest perfection of devotional service.&quot; From the example of Candrakānti as found in the Padma Purāṇa and from the example of the gopīs as found in the Śrīmad-Bhāgavatam, it appears that a devotee who always thinks of Kṛṣṇa and who always chants His glories in ecstatic love, regardless of his condition, will attain the highest perfection of unalloyed devotional love due to Lord Kṛṣṇa's extraordinary mercy.</p>
+<p>This is confirmed in the Śrīmad-Bhāgavatam: &quot;If Hari, the Supreme Lord, worshiped, adored and loved by a person, it should be understood that the person has finished all kinds of austerities, penances and similar processes for self realization.</p>
+<p>On the other hand, if after undergoing all types of austerities, penances and mystic yoga practices, one does not develop such love for Hari, then all his performances are to be considered a useless waste of time.</p>
+<p>If someone always sees Kṛṣṇa inside and out, then it is to be understood that he has surpassed all austerities and penances for self- realization.</p>
+<p>And if, after executing all kinds of penances and austerities, one cannot always see Kṛṣṇa inside and out, then he has executed his performances uselessly.&quot; Spontaneous attraction to Kṛṣṇa, which is said to be due to the extraordinary mercy of the Lord, can be placed under two headings: one is profound veneration for the greatness of the Lord, and the other may be one's automatically being attracted to Kṛṣṇa without any extraneous consideration.</p>
+<p>In the Nārada-pañcarātra it is said that if on account of profound veneration for the greatness of the Supreme Lord, one attains a great affection and steady love for Him, one is certainly assured of attaining the four kinds of Vaiṣṇava liberation-namely, achieving the same bodily features as the Lord, achieving the same opulence as the Lord, dwelling on the planet where the Lord is residing, and attaining eternal association with the Lord.</p>
+<p>The Vaiṣṇava liberation is completely different from the māyāvāda liberation, which is simply a matter of being merged into the effulgence of the Lord.</p>
+<p>In the Nārada-pañcarātra pure unalloyed devotional service is explained as being without any motive for personal benefit.</p>
+<p>If a devotee is continuously in love with Lord Kṛṣṇa and his mind is always fixed upon Him, that devotional attitude will prove to be the only means of attracting the attention of the Lord.</p>
+<p>In other words, a Vaiṣṇava who is incessantly thinking of the form of Lord Kṛṣṇa is to be known as a pure Vaiṣṇava.</p>
+<p>Generally, a devotee who has achieved the causeless mercy of the Lord on account of following the strict rules and regulations of devotional service becomes attracted by the supreme greatness of the Lord, by the transcendental beauty of the Lord and by the spontaneous execution of devotional service.</p>
+<p>To be more clear, by executing the regulative principles of devotional service, one can fully appreciate the transcendental beauty of the Lord.</p>
+<p>In any case, such exalted positions are only possible by the extraordinary mercy of the Lord upon the devotee.</p>
+<p>Association with Pure Devotees Although many different processes for developing love of Godhead have been explained so far, Śrīla Rūpa Gosvāmī now gives us a general description of how one can best achieve such a high position.</p>
+<p>The beginning of ecstatic love of Godhead is basically faith.</p>
+<p>There are many societies and associations of pure devotees, and if someone with just a little faith begins to associate with such societies, his advancement to pure devotional service is rapid.</p>
+<p>The influence of a pure devotee is such that if someone comes to associate with him with a little faith, he gets the chance of hearing about the Lord from authoritative scriptures like the Bhagavad-gītā and Śrīmad-Bhāgavatam.</p>
+<p>Thus, by the mercy of the Lord, who is situated in everyone's heart, one gradually develops his faith in the descriptions of such authoritative scriptures.</p>
+<p>This is the first stage of association with pure devotees.</p>
+<p>In the second stage, after one becomes a little advanced and mature, he automatically offers to follow the principles of devotional service under the guidance of the pure devotee and accepts him as the spiritual master.</p>
+<p>In the next stage, under the guidance of the spiritual master, the devotee executes regulative devotional service, and, as a result of such activities, he becomes freed from all unwanted occupations.</p>
+<p>When he is freed from unwanted occupations, his faith becomes steadily fixed, and he develops a transcendental taste for devotional service, then attachment, then ecstasies, and in the last stage there is pure love of Godhead.</p>
+<p>These are the different stages of the development of pure love.</p>
+<p>Only the most fortunate persons can achieve such success in life.</p>
+<p>Those who are simply academic students of the Vedic scriptures cannot appreciate how such a development takes place.</p>
+<p>In the Nārāyaṇa Pañcarātra Lord Śiva therefore tells Pārvatī: &quot;My dear supreme goddess, you can know from me that any person who has developed the ecstasy of love for the Supreme Personality of Godhead, and who is always merged in transcendental bliss on account of this love, cannot even perceive the material distress or happiness coming from the body or mind.&quot; Affection and the dealings of love are different branches of the original tree of love preceding the many varieties of affectionate manifestations, which will not be discussed here.</p>
+<p>These different manifestations have been described by Sanātana Gosvāmī in his Bhāgavatāmṛta.</p>
+<p>Although the subject of such affections and dealings of love are very confidential, Sanātana Gosvāmī has described them very explicitly.</p>
+<p>Śrī Rūpa Gosvāmī thus concludes the first division of the Bhaktirasāmṛta-sindhu, offering up his treatise for the transcendental pleasure of Sanātana Gosvāmī, who has established the transcendental beauty, and of Gopāla Bhaṭṭa Gosvāmī, Śrī Raghunātha Bhaṭṭa Gosvāmī and Raghunāthadās Gosvāmī.</p>
+<p>It appears from this statement that the great Śrīla Jīva Gosvāmī was not yet active when Bhakti-rasāmṛta-sindhu was written.</p>
+<p>Thus ends the Bhaktivedanta summary study of the first division of Bhakti-rasāmṛta-sindhu, up to the descriptions of ecstatic love of Godhead, which are to follow next.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch18.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch18.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

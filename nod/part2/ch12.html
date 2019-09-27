@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>12 - Nectar of Devotion - Part II</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html" class="active">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part II</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#additional-symptoms" id="additional-symptoms">Additional Symptoms</a></h3>
+<p>All the above-mentioned thirty-one symptoms of ecstatic love are called vyabhicārī, or disturbing.</p>
+<p>All these symptoms refer to apparently disturbed conditions, but even in such disturbed conditions there is acute ecstatic love for Kṛṣṇa.</p>
+<p>These symptoms, however, can be divided into three groups: first class, second class and third.</p>
+<p>There are many disturbing symptoms in ecstatic love, such as envy, anxiety, pride, jealousy, conclusion, cowardliness, forgiveness, impatience, hankering, regret, doubtfulness and impudence.</p>
+<p>These are included in all the thirty-one conditions of ecstatic love.</p>
+<p>Śrīla Rūpa Gosvāmī has very nicely analyzed the different kinds of disturbing symptoms, and although it is very difficult to find the exact English equivalents for many Sanskrit words used here, his analysis will now be presented.</p>
+<p>When one becomes malicious upon seeing another's advancement of life, his state of mind is generally called envy.</p>
+<p>When one becomes frightened at seeing a lightning bolt in the sky, that fearfulness brings on anxiety.</p>
+<p>Therefore, fearfulness and anxiety can be taken as one.</p>
+<p>When someone wants to hide his real mentality, it is called avahittha, or concealment.</p>
+<p>When a person wants to exhibit superiority, it is called pride.</p>
+<p>Both of these can be classified under pretension.</p>
+<p>In a pretentious attitude both avahittha and pride are to be found.</p>
+<p>When one cannot tolerate an offense committed by another, it is called amarṣa, and when one cannot tolerate the opulence of another it is called jealousy.</p>
+<p>Jealousy and amarṣa are both caused by intolerance.</p>
+<p>When one is able to establish the correct import of a word, it can be called conclusiveness.</p>
+<p>And before such a conclusive determination of import, there must be thoughtful consideration.</p>
+<p>Therefore, the act of consideration is present during the establishment of a conclusion.</p>
+<p>When one presents himself as ignorant, it is called humility, and when there is absence of enthusiasm it is called cowardice.</p>
+<p>Therefore, in humility, there is cowardice also.</p>
+<p>When the mind is steadfast it is called enduring, and when one can tolerate others' offenses, that is also called endurance.</p>
+<p>Therefore, forgiveness and endurance can be synonymous.</p>
+<p>When one is anxiousness for time to pass, that is called impatience, and when one sees something wonderful one is said to be struck with wonder.</p>
+<p>Impatience may be caused by being struck with wonder, and so impatience and being struck with wonder can be synonymous.</p>
+<p>When anxiety is in its dormant stage it is called hankering.</p>
+<p>Therefore, anxiety and hankering can also be synonymous.</p>
+<p>When one becomes regretful for some offense, his feeling is called bashfulness.</p>
+<p>In this way, bashfulness and regret can be synonymous.</p>
+<p>Doubtfulness is one of the aspects of argument.</p>
+<p>After exhibiting impudence one becomes restless.</p>
+<p>Therefore restlessness and impudence can be synonymous.</p>
+<p>When all such symptoms are included in ecstatic love, they are called añcārī, or continuously existing ecstatic symptoms.</p>
+<p>All of these symptoms are transcendental, and they are exhibited in different ways, acting and interacting under different conditions.</p>
+<p>They are like the reciprocation of love between the lover and beloved.</p>
+<p>When a person is envious or defamed, there may be a change in the color of the body.</p>
+<p>This may be classified as vibhāva, or sub-ecstasy.</p>
+<p>Sometimes illusion, collapse and strong anxiety are also considered to be vibhāva.</p>
+<p>When there are many such symptoms, they can simply be grouped together under ecstatic love.</p>
+<p>Śrīla Rūpa Gosvāmī says that fright, sleep, fatigue, laziness and the madness of intoxication are sometimes grouped under continuous symptoms of ecstatic love, and they are due to a strong attraction.</p>
+<p>False argument, determination, steadiness, remembrance, joyfulness, ignorance, humility and unconsciousness are also different symptoms of ecstatic love.</p>
+<p>Dependence is also grouped under ecstatic love, and this can be divided into superior dependence and inferior dependence.</p>
+<p>The direct differentiations between superior and inferior dependence are ascertained by Rūpa Gosvāmī and will be presented in due course.</p>
+<p>One devotee exclaimed, &quot;Oh, I cannot see the district of Mathurā! Even though by simply hearing the name of Mathurā the hairs of my body are standing up, I cannot see the place.</p>
+<p>So of what use are my eyes?&quot; This statement reveals a strong anxiety to see the district of Mathurā resulting from a strong attachment to Kṛṣṇa.</p>
+<p>There is another instance of this strong attachment for Kṛṣṇa expressed by Bhīma when he began to murmur, &quot;My arms are just like thunderbolts, but despite these arms I could not smash Śiśupāla while he was blaspheming Kṛṣṇa.</p>
+<p>Therefore, of what use are these strong arms?&quot; In this instance Bhīma became angry, and, being influenced by such anger, his hopelessness became a cause for strong attachment to Kṛṣṇa.</p>
+<p>This instance can be described as strong attachment for Kṛṣṇa in anger.</p>
+<p>When Arjuna witnessed the universal form of Kṛṣṇa, whose dazzling teeth were practically devouring the very existence of the universe, Arjuna's mouth became dried up.</p>
+<p>At that time Arjuna forgot himself and could not understand that he was Arjuna, Kṛṣṇa's friend, although he was always dependent upon Kṛṣṇa's mercy.</p>
+<p>This incident is an example of inferior dependence.</p>
+<p>Sometimes ghastly activities also support strong ecstatic love for Kṛṣṇa.</p>
+<p>This state of mind is called ecstatic fearfulness under illusion.</p>
+<p>In the Tenth Canto, 23rd Chapter, 32nd verse of Śrīmad-Bhāgavatam there is the following statement by the brāhmaṇas who were performing sacrifices: &quot;We have all been born into three advantageous conditions: we are in high brāhmaṇa families, we have ceremoniously received the sacred thread, and we are also properly initiated by a spiritual master.</p>
+<p>But, alas, in spite of all these advantages, we are condemned.</p>
+<p>Even our observance of brahmacarya [ celibacy ] is condemned.' The brāhmaṇas thus began to condemn their own activities.</p>
+<p>They realized that in spite of being so elevated by birth, education and culture, they still were under the spell of the illusory energy.</p>
+<p>They also admitted that even great yogīs who are not devotees of the Lord are covered by the influence of material energy.</p>
+<p>This kind of hopelessness felt by the brāhmaṇas who were performing ritualistic ceremonies shows practically no attachment for Kṛṣṇa.</p>
+<p>There is another hopelessness, however, which shows attachment for Kṛṣṇa.</p>
+<p>When the bull demon attacked the damsels of Braja, they began to cry out, &quot;My dear Kṛṣṇa-please save us! We are now gone!&quot; This is hopelessness with attachment for Kṛṣṇa.</p>
+<p>When the Keśī demon was assassinated by Kṛṣṇa, Kaṁsa became hopeless.</p>
+<p>He said, &quot;Keśīdaitya was as dear to me as my own life, but he has been killed by some cowherd boy who is crude, uneducated and ignorant of fighting.</p>
+<p>Even though I have defeated the King of heaven without difficulty, still I do not know the value of life.&quot; Because this hopelessness has a slight touch of attraction for Kṛṣṇa, it is considered to be a reflection of ecstatic love in hopelessness.</p>
+<p>Kaṁsa once rebuked Akrūra by saying, &quot;You are such a fool that you are accepting the Supreme Personality of Godhead to be a cowherd boy, simply because He has defeated some harmless water snake! The boy may have lifted one pebble called Govardhan Hill, but what is more surprising than that is your statement that this boy is the Personality of Godhead!&quot; This is an instance of a maliciously opposing element, caused by hopelessness in ecstatic love for Kṛṣṇa.</p>
+<p>One devotee tried to console a kadamba tree when the tree was lamenting because Kṛṣṇa had not touched even its shadow.</p>
+<p>The devotee said, &quot;My dear kadamba tree, do not be worried.</p>
+<p>Just after defeating the Kāliya snake in the Yamunā River, Kṛṣṇa will come and satisfy your desire.&quot; This is an instance of inappropriate hopelessness in ecstatic love for Kṛṣṇa.</p>
+<p>Garuḍa, the eagle, the carrier of Viṣṇu, once said, &quot;Who can be more pure than I? Where is there a second bird like me, so able and competent? Kṛṣṇa may not like me; He may not wish to join my party, but still He has to take advantage of my wings!&quot; This is an instance of hopelessness in the neutral mood of ecstatic love.</p>
+<p>The symptoms of ecstatic love are sometimes grouped under four headings-namely, generation, conjunction, aggregation and satisfaction.</p>
+<p>Kṛṣṇa once told Rādhārāṇī, &quot;My dear friend, when You tried to meet Me alone in the morning, Your friend Mekhalā remained hungry with envy.</p>
+<p>Just look at her!&quot; When Kṛṣṇa was joking with Rādhārāṇī in this way, Rādhārāṇī moved Her beautiful eyebrows crossly.</p>
+<p>Rūpa Gosvāmī prays that everyone may become blessed by this movement of Śrīmatī Rādhārāṇī's eyebrows.</p>
+<p>This is an instance of the generation of malice in ecstatic love of Kṛṣṇa.</p>
+<p>One night, after the Pūtanā demon had been killed, baby Kṛṣṇa could be seen playing upon her breast.</p>
+<p>Upon seeing this, Yaśodā became stunned for some time.</p>
+<p>This is an example of a conjunction of various symptoms of ecstatic love.</p>
+<p>The conjunction can be auspicious or inauspicious.</p>
+<p>That the Pūtanā demon had been killed was auspicious, but that Kṛṣṇa was playing on her breast in the dead of night, with no one to help Him in case of trouble, was inauspicious.</p>
+<p>Yaśodā was caught between auspiciousness and inauspiciousness.</p>
+<p>After Kṛṣṇa had just learned to walk, He was going in and out of the house very frequently.</p>
+<p>Yaśodā became surprised and said, &quot;This child is too restless and cannot be controlled! He is incessantly going about the neighborhood of Gokula [Vṛndāvana], and then He is coming back inside the house.</p>
+<p>I see that the child is very fearless, but in spite of His fearlessness, I am becoming more and more afraid of His falling into some danger.&quot; This again is an instance of the conjunction of two opposing elements: the child was very fearless, but at the same time Yaśodā was becoming fearful of some danger.</p>
+<p>Here danger is the cause, and Yaśodā's feelings are in conjunction of two opposing symptoms.</p>
+<p>In other words, Yaśodā was feeling both happiness and doubt, or growing fear.</p>
+<p>When Devakī, the mother of Kṛṣṇa, saw her son very jubilant in the presence of the wrestlers in Kaṁsa's arena, two kinds of tears were simultaneously gliding down her cheeks: sometimes her tears were warm, and sometimes they were cold.</p>
+<p>This is an instance of a conjunction of jubilation and lamentation due to different causes of ecstatic love.</p>
+<p>Once when Śrīmatī Rādhārāṇī was standing on the bank of the Yamunā River in the forest of Vṛndāvana, She was attacked by Kṛṣṇa, who was stronger than She.</p>
+<p>Although She externally expressed a disturbed mood from this incident, within Herself She was smiling and feeling great satisfaction.</p>
+<p>Externally She moved Her eyebrows and made a show of rejecting Kṛṣṇa.</p>
+<p>In this mood Rādhārāṇī looked very beautiful, and Śrīla Rūpa Gosvāmī glorified Her beauty.</p>
+<p>This is an instance of exhibiting varying feelings in ecstatic love, although the cause is one only-Kṛṣṇa.</p>
+<p>Sometimes there were great festivals in the house of Nanda Mahārāj, and all of the inhabitants of Vṛndāvana would assemble for these festivals.</p>
+<p>During one such festival, Śrīmatī Rādhārāṇī was seen wearing a golden necklace given Her by Kṛṣṇa.</p>
+<p>This was immediately detected by Mother Yaśodā as well as by Rādhārāṇī's mother, because the necklace was too long for Rādhārāṇī's neck.</p>
+<p>At the same time Rādhārāṇī could see Kṛṣṇa nearby, as well as Her own husband, Abhimanyu.</p>
+<p>So all of these things combined to make Rādhārāṇī feel very much ashamed, and with Her face shrivelled She began to look very beautiful.</p>
+<p>In this case there was a combination of bashfulness, anger, jubilation and lamentation.</p>
+<p>This is an instance of an aggregate of symptoms of ecstatic love.</p>
+<p>Kaṁsa once said, &quot;What harm can this boy do to me? He has no power.&quot; The next moment Kaṁsa was informed that all of his friends had been killed by the boy.</p>
+<p>Then Kaṁsa began to think in perplexity, &quot;Shall I go immediately and surrender unto Him? But how can a great warrior do this?&quot; The next moment he thought, &quot;Why should I be afraid of Him? There are still so many wrestlers standing to support me.&quot; But the next moment he began to consider: &quot;The boy is certainly not common, because He has lifted Govardhan Hill with His left hand.</p>
+<p>So what can I do in this connection? Let me go to Vṛndāvana and inflict pains on all the residents there.</p>
+<p>But still I cannot even go out, because my heart is trembling from fear of this boy!&quot; This condition of Kaṁsa's mind reveals an instance of pride, lamentation, humility, determination, remembrance, doubtfulness, anger and fear.</p>
+<p>Actually eight different symptoms comprised the mental condition of Kaṁsa.</p>
+<p>This is another instance of an aggregate of symptoms in hopeless ecstatic love.</p>
+<p>One householder devotee once said, &quot;My Lord, I am so wretched that these two eyes are never desiring to see the glorious city of Mathurā.</p>
+<p>Therefore, my eyes are actually condemned.</p>
+<p>I am nicely educated, but my education has simply been used in government service.</p>
+<p>I have not considered formidable time, stronger than anything else, which creates and annihilates everything.</p>
+<p>To whom shall I leave all of my wealth and fortune? I am becoming older and older.</p>
+<p>What shall I do? Shall I execute devotional service from here at home? This I cannot do, because my mind is being attracted by the transcendental land of Vṛndāvana.&quot; This is an instance of hopelessness, pride, doubtfulness, patience, lamentation, determination and eagerness-an aggregation of seven different symptoms in ecstatic love for Kṛṣṇa.</p>
+<p>There is a proverb in Sanskrit which says, &quot;Disappointment gives rise to the greatest satisfaction.&quot; In other words, when one's sentiment or ambition becomes too great and is not fulfilled until after seemingly hopeless tribulation, that is taken as the greatest satisfaction.</p>
+<p>Once the cowherd boys in Vṛndāvana were vainly searching after Kṛṣṇa for a long time, and for that reason their faces became blackened, and their complexions appeared faded.</p>
+<p>Just then they could hear on the hill a faint vibration from Kṛṣṇa's flute.</p>
+<p>Immediately all of them became very much gladdened.</p>
+<p>This is an instance of satisfaction in the midst of disappointment.</p>
+<p>Śrīla Rūpa Gosvāmī says that although he has no expert knowledge about the sounds and meanings and mellows of the symptoms of ecstatic love, he has tried to give some examples of different varieties of love of Kṛṣṇa.</p>
+<p>He further states that the thirty-one disturbing symptoms of ecstatic love, plus nine other symptoms, all taken together equal forty primary symptoms of ecstatic love.</p>
+<p>These symptoms create transformations of bodily activities as well as movements of the senses.</p>
+<p>All of them can be accepted as different feelings of the heart.</p>
+<p>Sometimes some of the feelings are quite natural.</p>
+<p>Sometimes some of the feelings are just temporary appearances.</p>
+<p>Those symptoms which are very natural always remain, both within and without the devotee.</p>
+<p>As one can detect the color of dye a cloth was soaked in by looking at the cloth, so, simply by understanding the different signs of these symptomatic features, one can understand the actual position.</p>
+<p>In other words, attachment for Kṛṣṇa is one, nevertheless, because there exist different kinds of devotees, such attachment is manifested in many varieties.</p>
+<p>As clothing tinged red appears red, so the temporary appearance of a certain type of feeling can be detected or observed by the specific ecstatic symptom.</p>
+<p>In fact, all the different humors and mellows of the devotees possess various specific feelings within the mind.</p>
+<p>And, according to these differences, the symptoms of ecstatic love appear in different forms and degrees.</p>
+<p>If one's heart is highly elevated, grave and magnanimous, or if one's heart is rough and crude, different symptoms of ecstatic love will appear, influenced by the condition of the heart.</p>
+<p>Actually, people cannot generally understand such different qualities of mentality, but when one's heart is very soft or gentle, these symptoms become very easily visible, and one can understand very clearly.</p>
+<p>The heart of one who is highly elevated and grave is compared with gold.</p>
+<p>If one's heart is very soft and gentle, his heart is compared with a cotton swab.</p>
+<p>When there is an ecstatic sensation within the mind, the golden heart or grave heart is not agitated, but the soft heart immediately becomes agitated.</p>
+<p>To offer another example, a grave, magnanimous heart is compared to a great city, and a soft heart to an insignificant cottage.</p>
+<p>There may be many lights, or even great elephants in the big city, but no one will take particular notice of them.</p>
+<p>But when such lights or elephants are seen near a small cottage, everyone can distinctly point them out.</p>
+<p>Hardness of the heart is compared to a lightning bolt, with gold and with shellac.</p>
+<p>The lightning bolt is very strong and never becomes soft.</p>
+<p>Similarly, the hearts of those who are engaged in severe austerities and penances do not become very easily softened.</p>
+<p>The golden heart becomes melted at high temperature, as in ecstatic love.</p>
+<p>And the shellac heart is very easily melted in slight temperature.</p>
+<p>Softness of the heart is compared with honey, with butter and with nectar.</p>
+<p>And the condition of the mind is compared with sunshine.</p>
+<p>As honey and butter become melted even in slight sunshine, so softhearted persons become easily melted.</p>
+<p>Nectar, however, is by its nature always liquid.</p>
+<p>And the hearts of those who are in pure ecstatic love with Kṛṣṇa are by nature always liquified, just like nectar.</p>
+<p>A pure devotee of Kṛṣṇa is always specifically qualified with nectarean qualifications and sometimes with the qualifications of butter and honey.</p>
+<p>On the whole, all the different conditions of the heart mentioned above can be melted under certain circumstances, just as a hard diamond sometimes is melted by a combination of certain chemicals.</p>
+<p>In the Dāna-keli-kaumudī it is stated, &quot;When love develops in the heart of a devotee, he cannot check the transformation of his sentiments.</p>
+<p>It is just like at the rising of the moon, when the ebb tide of the ocean cannot be checked: immediately there must be movement of high waves.&quot; Although in its natural state, the ocean is always very grave and unfathomable, when the moon rises, nothing can check the ocean's agitation.</p>
+<p>Similarly, those who are pure devotees cannot on any account check the movements of their feelings within.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch11.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch13.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch11.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch13.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

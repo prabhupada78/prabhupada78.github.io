@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>13 - Nectar of Devotion - Part II</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html" class="active">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part II</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#symptoms-of-continuous-ecstasy" id="symptoms-of-continuous-ecstasy">Symptoms of Continuous Ecstasy</a></h3>
+<p>The continuous ecstasy of love can remain like a powerful king, subduing all temporary manifestations of love as well as any opposing elements of anger.</p>
+<p>It can be exhibited directly or indirectly, and thus ecstatic love can be described as direct or indirect.</p>
+<p>These symptoms of ecstatic love are possible only when one is fully situated in a transcendental position.</p>
+<p>Direct ecstatic love can be divided into two groups-namely, selfish and selfless.</p>
+<p>When noncontradictory symptoms of ecstatic love are distinctly manifest, any contradictory symptoms create a sense of abomination.</p>
+<p>Contradictory ecstatic love is called selfish.</p>
+<p>That ecstatic love which can adjust all contradictory or noncontradictory symptoms is called direct selfless love.</p>
+<p>These selfless symptoms can again be divided into five groups: neutrality, servitude, fraternity, parenthood and conjugal love.</p>
+<p>Such ecstatic love assumes a particular mode in contact with different objects of love.</p>
+<p>Neutrality can be further subdivided into general, transparent and peaceful.</p>
+<p>An attraction for Kṛṣṇa by the people in general or by children cannot take any specific or satisfactory position.</p>
+<p>It can be manifest sometimes in trembling of the body and changing of the color of the eyes (to red, white, etc.), although there is no symptom of any particular affection.</p>
+<p>One old man was told by a young man: &quot;Just see how this child-only three years old-is so jubilant! Simply by seeing Kṛṣṇa he is running so swiftly, making a tumultuous sound.</p>
+<p>Just see!&quot; This is an instance of neutral ecstatic love in the heart of a child, without any specific subdivision.</p>
+<p>Due to the different types of attraction for Kṛṣṇa, there are different varieties of devotees.</p>
+<p>Their symptoms are manifested transparently, just like jewels.</p>
+<p>It is said that a great devotee brāhmaṇa would sometimes address the Supreme Personality of Godhead as master, and sometimes he would joke with the Lord, using different kinds of familiar words; sometimes he would protect the Lord with a filial affection, and sometimes he would cry out to the Lord, addressing Him as his beloved; and sometimes he would meditate on the Lord as the supersoul.</p>
+<p>This means that the brāhmaṇa expressed his ecstatic loving symptoms in different ways at different times.</p>
+<p>But in each instance, because of ecstatic love, the brāhmaṇa merged himself in the ocean of happiness and became situated in pure love.</p>
+<p>Thus he was a transparent medium, like a jewel that shows reality in varying colors according to its own nature.</p>
+<p>When the great sage Nārada was glorifying the pastimes of the Lord with his vīṇā, the four Kumāras, headed by Sanaka, although merged in the impersonal conception of Brahman, were trembling all over.</p>
+<p>Another devotee once exclaimed, &quot;Although I can achieve liberation simply by serving the devotees, my mind is still very much anxious to see the Supreme Personality of Godhead, whose bodily complexion is just like a dark cloud.&quot; When a devotee is so anxious to contact the Supreme Personality of Godhead, that can also be accepted as a symptom of neutral love.</p>
+<p>Generally, a devotee of Lord Kṛṣṇa can be placed into one of three groups.</p>
+<p>One group consists of those who are completely dependent on the merciful affection of the Supreme Personality of Godhead; another group consists of devotees who are dealing with Kṛṣṇa on friendly terms; and the third group consists of those who are dealing with Kṛṣṇa as His superior, with parental affection.</p>
+<p>These three classes of devotees gradually develop different relationships of transcendental mellow with the Personality of Godhead.</p>
+<p>When the attraction for Kṛṣṇa is based on only one particular humor, that is called kevala, or pure state.</p>
+<p>One in this pure state of devotional service gradually develops the desire to follow in the footsteps of an eternal associate of Kṛṣṇa, e.g., to follow in the footsteps of Rasāla, the personal attendant of Kṛṣṇa in Goloka Vṛndāvana, or to follow Kṛṣṇa's friends, like Śrīdāmā and Sudāmā, or to follow Nanda and Yaśodā, devotees in parenthood.</p>
+<p>Ecstatic love for Kṛṣṇa is never manifested directly with Kṛṣṇa Himself.</p>
+<p>The devotee has to follow in the footsteps of the eternal associates of Kṛṣṇa in Goloka Vṛndāvana.</p>
+<p>When transcendental humors in relationship with Kṛṣṇa become mixed (e.g., when the relationships with Kṛṣṇa in friendship, servitorship and parental love become mixed together), the result is called mixed humor or flavor.</p>
+<p>Such mixed transcendental flavors are manifested by such devotees as Uddhava, Bhīma and Mukharā, the personal attendant of Mother Yaśodā.</p>
+<p>Although devotional humors are sometimes found in mixtures, a particular humor is always found to be a prominent and constant factor.</p>
+<p>That prominent humor is to be accepted as the devotee's main relationship with Kṛṣṇa.</p>
+<p>For example, Uddhava is in relationship with Kṛṣṇa as a friend, but in Uddhava's character a trace of servitude to Kṛṣṇa is also visible.</p>
+<p>Such friendship is called friendship in reverence.</p>
+<p>The friendship typified by Śrīdāmā and Sudāmā, however, is the standard of friendship without any tinge of reverence.</p>
+<p>Subordinate Ecstatic Love The devotees who always think of Kṛṣṇa as a superior are in subordinate ecstatic love.</p>
+<p>To such a devotee the concept of inferiority to the Lord is very prominent, and he rarely takes interest in any other kind of transcendental loving humor with the Lord.</p>
+<p>In the Mukunda-mālā-stotra compiled by King Kulaśekhara, one of the prayers says, &quot;My dear Lord, You are the deliverer of living entities from the hellish condition of materialistic life, but that does not matter to me.</p>
+<p>Whether I am elevated to the heavenly platform or remain on this earthly planet or am dispatched to some hellish planet, that does not matter at all to me.</p>
+<p>My only prayer is that at the time of my death I may simply remember Your two beautiful feet, which are just like lotus flowers fructifying during the autumn season.&quot; Friendship As far as friendship is concerned, those high-grade devotees who are almost like Kṛṣṇa are considered to be great authorities in the modes of friendly relations with the Supreme Personality of Godhead.</p>
+<p>On that friendly platform there are different kinds of laughing and joking conversations.</p>
+<p>An example of such a friendly relationship with Kṛṣṇa is described in the Śrīmad-Bhāgavatam when Kṛṣṇa was once thinking, &quot;Today, while I was engaged in tending the cows in the pasturing ground of Vṛndāvana, I went to collect some flowers in a beautiful garden.</p>
+<p>At that time My friends, the cowherd boys, were unhappy even to tolerate a two-minute separation from Me.</p>
+<p>And, when they found Me, there was competition between us as to who would touch the other first with the flowers we had in hand.&quot; One friend criticized Kṛṣṇa thus: &quot;My dear Dāmodara, although You have been defeated by Śrīdāmā and have become sufficiently minimized in strength, by a false expression of strength You have somehow covered Your shameful condition of defeat.&quot; Parenthood, or Superiority When Mother Yaśodā heard that Kṛṣṇa's cows were being forcibly moved by the strong servants of Kaṁsa and that the tender cowherd boys were trying to protect their cows, she began to think, &quot;How can I protect these poor boys from the invasion of Kaṁsa's servants?&quot; This is an instance of a superior attitude in a devotee.</p>
+<p>As soon as Mother Yaśodā found her son Kṛṣṇa returning from the pasturing ground, she immediately began to pat Him, touching her fingers to the cheeks of the Lord.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch12.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch14.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch12.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch14.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

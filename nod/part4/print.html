@@ -1,0 +1,711 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Nectar of Devotion - Part IV</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part IV</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#home" id="home">Home</a></h1>
+<h1><a class="header" href="#part-one" id="part-one">Part One</a></h1>
+<h1><a class="header" href="#part-two" id="part-two">Part Two</a></h1>
+<h1><a class="header" href="#part-three" id="part-three">Part Three</a></h1>
+<h3><a class="header" href="#laughing-ecstasy" id="laughing-ecstasy">Laughing Ecstasy</a></h3>
+<p>In the fourth division of Bhakti-rasāmṛta-sindhu, Śrīla Rūpa Gosvāmī has described seven kinds of indirect ecstasies of devotional serviceknown as laughing, astonishment, chivalry, compassion, anger, dread and ghastliness.</p>
+<p>In this portion, Śrīla Rūpa Gosvāmī further describes these ecstasies of devotional feelings, some being compatible and others incompatible with one another.</p>
+<p>When one kind of ecstatic devotional service overlaps with another in a conflicting way, this state of affairs is called rasābhāsa, or perverted presentation of mellows.</p>
+<p>Expert learned scholars say that laughing is generally found among youngsters or in the combination of old persons and young children.</p>
+<p>This ecstatic loving laughing is sometimes also found in persons who are very grave by nature.</p>
+<p>Once an old mendicant approached the door of Mother Yaśodā's house, and Kṛṣṇa told Yaśodā, &quot;My dear Mother, I don't wish to go near this skinny villain.</p>
+<p>If I go there, he might put Me within his begging bag and take Me away from You!&quot; In this way, the wonderful child, Kṛṣṇa, began to look at His mother, while the mendicant, who was standing in the door, tried to hide his smiling face, although he could not do so.</p>
+<p>He immediately expressed his smiling.</p>
+<p>In this instance, Kṛṣṇa Himself is the object of laughing affairs.</p>
+<p>Once one of Kṛṣṇa's friends informed Him, &quot;My dear Kṛṣṇa, if You will open Your mouth, then I shall give You one nice sugar candy mixed with yogurt.&quot; Kṛṣṇa immediately opened His mouth, but instead of giving Him sugar candy with yogurt, the friend dropped a flower in His mouth.</p>
+<p>After tasting this flower, Kṛṣṇa turned His mouth in a disfigured way, and upon seeing this all His friends standing there began to laugh very loudly.</p>
+<p>Once a palmist came to the house of Nanda Mahārāj, and Nanda Mahārāj asked him, &quot;My dear sage, will you kindly check the hand of my child, Kṛṣṇa? Tell me how many years He will live and whether He will become the master of thousands of cows.&quot; Upon hearing this, the palmist began to smile, and Nanda Mahārāj asked him, &quot;My dear sir, why are you laughing, and why are you covering your face?&quot; In such a laughing ecstasy of love, Kṛṣṇa or matters pertaining to Kṛṣṇa are the cause of the laughter.</p>
+<p>In such laughing devotional service, there are symptoms of jubilation, laziness, concealed feelings and similar other seemingly disturbing elements.</p>
+<p>According to Śrīla Rūpa Gosvāmī's calculation, laughter in ecstatic love can be broken down into six divisions.</p>
+<p>These divisions, according to different degrees of smiling, are called in the Sanskrit language smita, hasita, vihasita, avahasita, apahasita, and atihasita.</p>
+<p>These six classes of smiling can be classified as major and minor.</p>
+<p>The major division includes smita, hasita and vihasita smiling, and the minor division includes avahasita, apahasita and atihasita smiling.</p>
+<p>When one is smiling but his teeth are not visible, one can distinctly mark a definite change in the eyes and in the cheeks.</p>
+<p>This is called smita smiling.</p>
+<p>Once when Kṛṣṇa was stealing yogurt, Jaratī, the headmistress of the house, could detect His activities, and she was therefore coming very hurriedly to catch Him.</p>
+<p>At that time, Kṛṣṇa became very much afraid of Jaratī and went to His elder brother, Baladeva.</p>
+<p>He said, &quot;My dear brother, I have stolen yogurt! Just see-Jaratī is coming hurriedly to catch Me!&quot; When Kṛṣṇa was thus seeking the shelter of Baladeva because He was being chased by Jaratī, all the great sages in the heavenly planets began to smile.</p>
+<p>This smiling is called smita smiling.</p>
+<p>Smiling in which the teeth are slightly visible is called hasita smiling.</p>
+<p>One day Abhimanyu, the so-called husband of Rādhārāṇī, was returning home, and at that time he could not see that Kṛṣṇa was there in his house.</p>
+<p>Kṛṣṇa immediately changed His dress to look exactly like Abhimanyu and approached Abhimanyu's mother, Jaṭilā, addressing her thus: &quot;My dear mother, I am your real son Abhimanyu, but just see-Kṛṣṇa, dressed up like me, is coming before you!&quot; Jaṭilā, the mother of Abhimanyu, immediately believed that Kṛṣṇa was her own son and thus became very angry at her real son who was coming home.</p>
+<p>She began to drive away her real son, who was crying, &quot;Mother! Mother! What are you doing?&quot; Seeing this incident, all the girl friends of Rādhārāṇī, who were present there, began to smile, and a portion of their teeth was visible.</p>
+<p>This is an instance of hasita smiling.</p>
+<p>When the teeth are distinctly visible in a smile, that is called vihasita.</p>
+<p>One day when Kṛṣṇa was engaged in stealing butter and yogurt in the house of Jaṭilā, He assured His friends, &quot;My dear friends, I know that this old lady is now sleeping very profoundly because she is breathing very deeply.</p>
+<p>Let us silently steal butter and yogurt without making any disturbance.&quot; But the old lady, Jaṭilā, was not sleeping; so she could not contain her smiling, and her teeth immediately became distinctly visible.</p>
+<p>This is an instance of vihasita smiling.</p>
+<p>In a state of smiling, when the nose becomes puffed and the eyes squint, the smiling is called avahasita.</p>
+<p>Once, early in the morning when Kṛṣṇa returned home after performing His rāsa dance, Mother Yaśodā looked upon Kṛṣṇa's face and addressed Him thus: &quot;My dear son, why do Your eyes look like they have been smeared with some oxides? Have You dressed Yourself with the blue garments of Baladeva?&quot; When Mother Yaśodā was addressing Kṛṣṇa in that way, a girl friend who was nearby began to smile with a puffed nose and squinting eyes.</p>
+<p>This is an instance of avahasita smiling.</p>
+<p>The gopī knew that Kṛṣṇa had been enjoying the rāsa dance and that Mother Yaśodā could not detect her son's activities or understand how He had become covered with the gopīs' makeup.</p>
+<p>Her smiling was in the avahasita feature.</p>
+<p>When tears from the eyes are added to the smiling and the shoulders are shaking, the smile is called apahasita.</p>
+<p>When child Kṛṣṇa was dancing in response to the singing of the old maidservant Jaratī, Nārada was astonished.</p>
+<p>The Supreme Personality of Godhead, who controls all the movements of great demigods like Brahmā and others, was now dancing to the indications of an old maidservant.</p>
+<p>Seeing this fun, Nārada also began to dance, and his shoulders trembled, and his eyes moved.</p>
+<p>Due to his smiling, his teeth also became visible, and on account of the glaring effulgence from his teeth, the clouds in the skies turned silver.</p>
+<p>When a smiling person claps his hands and leaps in the air, the smiling expression changes into atihasita, or overwhelming laughter.</p>
+<p>An example of atihasita was manifested in the following incident: Kṛṣṇa once addressed Jaratī thus: &quot;My dear good woman, the skin of your face is now slackened, and so your face exactly resembles a monkey's.</p>
+<p>As such, the King of the monkeys, Balīmukha, has selected you as his worthy wife.&quot; While Kṛṣṇa was teasing Jaratī in this way, she replied that she was certainly aware of the fact that the King of the monkeys was trying to marry her, but she had already taken shelter of Kṛṣṇa, the killer of many powerful demons, and therefore she had already decided to marry Kṛṣṇa instead of the King of the monkeys.</p>
+<p>On hearing this sarcastic reply by the talkative Jaratī, all the cowherd girls present there began to laugh very loudly and clap their hands.</p>
+<p>This laughter, accompanied by the clapping of hands, is called atihasita.</p>
+<p>Sometimes there are indirect sarcastic remarks which also create atihasita circumstances.</p>
+<p>An example of one such remark was made by one of the cowherd girls to Kuṭilā, the daughter of Jaṭilā and sister of Abhimanyu, the so-called husband of Rādhārāṇī.</p>
+<p>Indirectly Kuṭilā was insulted by the following statement: &quot;My dear Kuṭilā, daughter of Jaṭilā, your breasts are as long as string beans-simply dry and long.</p>
+<p>Your nose is so gorgeous that it is defying the beauty of the noses of frogs.</p>
+<p>And your eyes are more beautiful than the eyes of dogs.</p>
+<p>Your lips are defying the flaming cinders of fire, and your abdomen is as beautiful as a big drum.</p>
+<p>Therefore, my dear beautiful Kuṭilā, you are the most beautiful of all the cowherd girls of Vṛndāvana, and because of your extraordinary beauty, I think you must be beyond the attraction of the sweet blowing of Kṛṣṇa's flute!&quot;</p>
+<h3><a class="header" href="#astonishment-and-chivalry" id="astonishment-and-chivalry">Astonishment and Chivalry</a></h3>
+<p><strong>Astonishment</strong></p>
+<p>The ecstasy of astonishment in devotional service is perceived in two ways: directly, by the experience of one's own eyes, and indirectly, by hearing from others.</p>
+<p>When Nārada came to see the activities of the Lord at Dvārakā and he saw that Kṛṣṇa was present within every palace in the same body and was engaged in different activities, he was struck with wonder.</p>
+<p>This is one of the examples of astonishment in devotional service by direct perception.</p>
+<p>One of the friends of Mother Yaśodā says, &quot;Yaśodā, just see the fun! On the one hand, there is your child who is always captivated by sucking the milk from your breast, and on the other hand there is the great Govardhan Hill which can obstruct the passing of the clouds.</p>
+<p>But still, just see how wonderful it is that this great Govardhan Hill is resting on the finger of your child's left hand, just as though it were a toy.</p>
+<p>Is this not very mysterious?&quot; This statement is another example of astonishment in devotional service by direct perception.</p>
+<p>An instance of astonishment in devotional service by indirect perception occurred when Mahārāj Parīkṣit heard from Śukadeva Gosvāmī about Kṛṣṇa's killing Narakāsura, who had been fighting Kṛṣṇa with eleven divisions of akṣauhiṇī soldiers.</p>
+<p>Each division of akṣauhiṇī soldiers contained several thousand elephants, several thousand horses and chariots, and several hundreds of thousands of infantry soldiers.</p>
+<p>Narakāsura possessed eleven such divisions, and all of them were throwing arrows toward Kṛṣṇa, but Kṛṣṇa killed them all, simply by throwing three arrows from His side.</p>
+<p>When Mahārāj Parīkṣit heard of this wonderful victory, he immediately rubbed the tears from his eyes and became overwhelmed with joy.</p>
+<p>This instance is an example of astonishment in devotional service by indirect perception through aural reception.</p>
+<p>There is another example of indirect astonishment.</p>
+<p>Trying to test Kṛṣṇa to see if He were truly the Supreme Personality of Godhead, Lord Brahmā stole all the cowherd boys and cows from Him.</p>
+<p>But after a few seconds, he saw that Kṛṣṇa was still present with all the cows, calves and cowherd boys, exactly in the same way as before.</p>
+<p>When Lord Brahmā described this incident to his associates on the Satya-loka planet, they all became astonished.</p>
+<p>Brahmā told them that after taking away all the boys, he saw Kṛṣṇa again playing with the same boys in the same fashion.</p>
+<p>Their bodily complexion was blackish, almost like Kṛṣṇa's, and they all had four arms.</p>
+<p>The same calves and cows were still present there, in the same original fashion.</p>
+<p>Even while describing this incident, Brahmā became almost overwhelmed.</p>
+<p>&quot;And the most astonishing thing,&quot; he added, &quot;was that many other Brahmās from many different universes had also come there to worship Kṛṣṇa and His associates.&quot; Similarly, when there was a forest fire in the Bhāṇḍīravana, Kṛṣṇa instructed His friends to close their eyes tightly, and they all did this.</p>
+<p>Then when Kṛṣṇa had extinguished the fire, the cowherd boys opened their eyes and saw that they had been relieved from the danger and that their cows and calves were all safe.</p>
+<p>They began to perceive the wonder of the situation simply by guessing how Kṛṣṇa had saved them.</p>
+<p>This is another instance of indirect perception causing astonishment in devotional service.</p>
+<p>The activities of a person, even if they are not very extraordinary, create an impression of wonder in the heart and mind of the person's friends.</p>
+<p>But even very wonderful activities performed by a person who is not one's friend will not create any impression.</p>
+<p>It is because of love that one's wonderful activities create an impression in the mind.</p>
+<p><strong>Chivalry</strong></p>
+<p>When on account of love and devotional service for the Lord there is special valorous enthusiasm, the resultant activities are called chivalrous.</p>
+<p>These chivalrous activities can be manifested in the acts of mock-fighting, giving in charity, showing mercy and executing religious principles.</p>
+<p>By performing chivalrous activities in fighting, one is called yuddha-vīra.</p>
+<p>By charitable activities one is called dāna-vīra.</p>
+<p>By showing extraordinary mercy one is called dayā- vīra.</p>
+<p>And when one is munificent in executing religious rites, he is called dharma- vīra.</p>
+<p>In all such different chivalrous activities, Kṛṣṇa is the object.</p>
+<p>When a friend wants to satisfy Kṛṣṇa by performing some chivalrous activities, the friend becomes the challenger, and Kṛṣṇa Himself becomes the opponent; or else Kṛṣṇa may give audience to the fighting, and by His desire another friend becomes the opponent.</p>
+<p>A friend once challenged Kṛṣṇa thus: &quot;My dear Mādhava, You are very restless because You think that no one can defeat You.</p>
+<p>But if You do not flee from here, then I shall show You how I can defeat You.</p>
+<p>And my friends will be very satisfied to see this!&quot; Kṛṣṇa and Śrīdāmā were very intimate friends, yet Śrīdāmā, out of anger with Kṛṣṇa, challenged Him.</p>
+<p>When both of them began to fight, all the friends on the bank of the Yamunā enjoyed the wonderful fighting of the two friends.</p>
+<p>They prepared some arrows for mock-fighting, and Kṛṣṇa began to throw his arrows at Śrīdāmā.</p>
+<p>Śrīdāmā began to block these arrows by whirling his pole, and by Śrīdāmā's chivalrous activities, Kṛṣṇa became very satisfied.</p>
+<p>Such mock-fighting generally takes place amongst chivalrous persons and creates wonderful excitement for all viewers.</p>
+<p>There is a statement in the Hari-vaṁśa that sometimes Arjuna and Kṛṣṇa fought in the presence of Kuntī, and Arjuna would be defeated by Kṛṣṇa.</p>
+<p>In such chivalrous fighting between friends, there is sometimes bragging, self- complacence, pride, power, taking to weapons, challenging and standing as opponent.</p>
+<p>All of these symptoms become impetuses to chivalrous devotional service.</p>
+<p>One friend challenged Kṛṣṇa thus: &quot;My dear friend Dāmodara, You are an expert only in eating.</p>
+<p>You have defeated Subala only because he is weak and You adopted cheating means.</p>
+<p>Don't advertise Yourself to be a great fighter by such action.</p>
+<p>You have advertised Yourself as a serpent, and I am the peacock who will now defeat You.&quot; The peacock is the ablest enemy of the serpent.</p>
+<p>In such fighting between friends, when the self-advertisement becomes personal, learned scholars say it is sub-ecstasy.</p>
+<p>When there is a roaring challenge, certain kinds of movement for fighting, enthusiasm, no weapons and assurance given to frightened witnesses-all these chivalrous activities are called sub-ecstasy.</p>
+<p>One friend addressed Kṛṣṇa in this manner: &quot;My dear Madhusūdana, You know my strength, yet You are encouraging Bhadrasena, and not me, to challenge mighty Baladeva.</p>
+<p>By this action You are simply insulting me because my arms are as strong as the bolts of the gate!&quot; A devotee once said, &quot;My dear Lord Kṛṣṇa, may Your challenger, Śrīdāmā, become glorious for his chivalrous activities, such as vibrating like a thunder cloud and roaring like a lion.</p>
+<p>May all glories go to Śrīdāmā's chivalrous activities!&quot; Chivalrous activities in the matter of fighting, charity, mercy and execution of religious rituals are called constitutional; whereas expression of pride, emotions, endurance, kindness, determination, jubilation, enthusiasm, jealousy and remembrance are called unconstitutional.</p>
+<p>When Stokakṛṣṇa, one of the many friends of Kṛṣṇa, was fighting with Him, his father chastised him for fighting with Kṛṣṇa, who was the life and soul of all residents of Vṛndāvana.</p>
+<p>Upon hearing these chastisements, Stokakṛṣṇa stopped his fighting.</p>
+<p>But Kṛṣṇa continued to challenge him, and thus, in order to meet the challenge, Stokakṛṣṇa took his pole and began to display his dexterity by whirling it.</p>
+<p>Once Śrīdāmā challenged Bhadrasena and said to him, &quot;My dear friend, you needn't be afraid of me yet.</p>
+<p>I shall first of all defeat our brother Balarāma, then I shall beat Kṛṣṇa, and then I shall come to you.&quot; Bhadrasena therefore left the party of Balarāma and joined Kṛṣṇa, and he agitated his friends as much as the Mandara Hill had agitated the whole ocean.</p>
+<p>By his roaring sounds he deafened all his friends, and he enthused Kṛṣṇa with his chivalrous activities.</p>
+<p>Once Kṛṣṇa challenged all His friends and said, &quot;My dear friends, just see-I am jumping with great chivalrous prowess.</p>
+<p>Please do not flee away.&quot; Upon hearing these challenging words, another friend named Varūthapa counter-challenged the Lord and struggled against Him.</p>
+<p>One of the friends once remarked, &quot;Sudāmā is trying his best to see Dāmodara defeated, and I think that if our powerful Subala joins him, they will be a very beautiful combination, like a valuable jewel bedecked with gold.&quot; In these chivalrous activities, only Kṛṣṇa's friends can be the opponents.</p>
+<p>Kṛṣṇa's enemies can never actually be His opponents.</p>
+<p>Therefore, this challenging by Kṛṣṇa's friends is called devotional service in chivalrous activities.</p>
+<p>Dāna-vīra, or chivalry in the giving in charity, may be divided into two parts: munificence and renunciation.</p>
+<p>A person who can sacrifice everything for the satisfaction of Kṛṣṇa is called munificent.</p>
+<p>When a person desires to make a sacrifice because of his seeing Kṛṣṇa, Kṛṣṇa is called the impetus of the munificent activity.</p>
+<p>When Kṛṣṇa appeared as the son of Nanda Mahārāj, in clear consciousness Nanda Mahārāj desired all auspiciousness for his son and thus began to give in charity valuable cows to all the brāhmaṇas.</p>
+<p>The brāhmaṇas were so satisfied by this charitable action that they were obliged to say that the charity of Nanda Mahārāj had excelled the charity of such past kings as Mahārāj Pṛthu and Nṛga.</p>
+<p>When a person knows the glories of the Lord completely and is prepared to sacrifice everything for the Lord, he is called sampradānaka, or one who gives everything in charity for the sake of Kṛṣṇa.</p>
+<p>When Mahārāj Yudhiṣṭhira went with Kṛṣṇa in the arena of the rājasūya sacrifice, in his imagination he began to anoint the body of Kṛṣṇa with pulp of sandalwood, he decorated Him with a garland hanging down to His knees, he began to give Him garments all embroidered with gold, he gave Him ornaments all bedecked with valuable jewels, and he gave Him many fully decorated elephants, chariots and horses.</p>
+<p>He further wished to give Kṛṣṇa in charity his kingdom, his family and his personal self also.</p>
+<p>After so desiring, when there was nothing to actually give in charity, Mahārāj Yudhiṣṭhira became very perturbed and anxious.</p>
+<p>Similarly, Mahārāj Bali once told his priest, Śukrācārya: &quot;My dear sage, you are fully expert in knowledge of the Vedas, and as such you worship the Supreme Personality of Godhead, Viṣṇu, by Vedic rituals.</p>
+<p>As far as this brāhmaṇa dwarf [the incarnation Vāmanadeva] is concerned, if He is Lord Viṣṇu, a simple brāhmaṇa, or even my enemy, I have decided to give to Him in charity all the land He has asked for.&quot; Mahārāj Bali was so fortunate that the Lord extended before Him His hand, which was reddish from touching the breast of the goddess of fortune, who is always smeared with red kuṅkum powder.</p>
+<p>In other words, although the Personality of Godhead is so great that the goddess of fortune is always under His command for enjoyment, He still extended His hands to take charity from Mahārāj Bali.</p>
+<p>A person who wants to give everything in charity to Kṛṣṇa but does not want anything in return is considered the real renouncer.</p>
+<p>Thus, a devotee will refuse to accept any kind of liberation, even if it is offered by the Lord.</p>
+<p>Real love of Kṛṣṇa becomes manifested when Kṛṣṇa becomes the recipient of charity and the devotee becomes the giver.</p>
+<p>In the Hari-bhakti-sudhadaya there is another example, forwarded by Mahārāj Dhruva.</p>
+<p>He says there, &quot;My dear Lord, I have practiced austerities and penances because I was desiring to receive something from You, but in exchange You have allowed me to see You, who are never visible even to the great sages and saintly persons.</p>
+<p>I had been searching out some pieces of broken glass, but instead I have found the most valuable jewel.</p>
+<p>I am therefore fully satisfied, my Lord.</p>
+<p>I do not wish to ask anything more from Your Lordship.&quot; A similar statement is to be found in the Third Canto of Śrīmad-Bhāgavatam, 15th Chapter, 48th verse.</p>
+<p>The four sages headed by Sanaka Muni addressed the Lord as follows: &quot;My dear Supreme Personality of Godhead, Your reputation is very attractive and free from all material contamination.</p>
+<p>Therefore You are worthy of being glorified and are actually the reservoir of all pilgrimages.</p>
+<p>Auspicious persons, who are fortunate enough to be engaged in glorifying Your attributes and who actually know what Your transcendental position is, do not even care to accept liberation offered by You.</p>
+<p>Because they are so transcendentally enriched, they do not care to accept even the post of Indra, the heavenly King.</p>
+<p>They know that the post of the King of heaven is also fearful, whereas for those who are engaged in glorifying Your transcendental qualities there is only joyfulness and freedom from all danger.</p>
+<p>As such, why should persons with this knowledge be attracted by a post in the heavenly kingdom?&quot; One devotee has described his feelings about the charity exhibited by King Mayūradhvaja: &quot;I am faltering even to speak about the activities of Mahārāj Mayūradhvaja, to whom I offer my respectful obeisances.&quot; Mayūradhvaja was very intelligent, and he could understand why Kṛṣṇa came to him once, in the garb of a brāhmaṇa.</p>
+<p>Kṛṣṇa demanded from him half of his body, to be sawed off by his wife and son, and King Mayūradhvaja agreed to this proposal.</p>
+<p>On account of his intense feeling of devotional service, King Mayūradhvaja was always thinking of Kṛṣṇa, and when he understood that Kṛṣṇa had come in the garb of a brāhmaṇa, he did not hesitate to part with half of his body.</p>
+<p>This sacrifice of Mahārāj Mayūradhvaja for Kṛṣṇa's sake is unique in the world, and we should offer our all-respectful obeisances to him.</p>
+<p>He had full knowledge of the Supreme Personality of Godhead in the garb of a brāhmaṇa, and he is known as the perfect dāna-vīra, or renouncer.</p>
+<p>Any person who is always ready to satisfy Kṛṣṇa and who is always dexterous in executing devotional service is called dharma-vīra, or chivalrous in executing religious rituals.</p>
+<p>Only advanced devotees performing religious ritualistic performances can come to this stage of dharma-vīra.</p>
+<p>Dharma-vīras are produced after going through the authoritative scriptures, following moral principles, being faithful and tolerant and controlling the senses.</p>
+<p>Persons who execute religious rituals for the satisfaction of Kṛṣṇa are steady in devotional service, whereas persons who execute religious rituals without intending to please Kṛṣṇa are only called pious.</p>
+<p>The best example of a dharma-vīra is Mahārāj Yudhiṣṭhira.</p>
+<p>A devotee once told Kṛṣṇa: &quot;My dear Kṛṣṇa, O killer of all demons, Mahārāj Yudhiṣṭhira, the eldest son of Mahārāj Pāṇḍu, has performed all kinds of sacrifices just to please You.</p>
+<p>He has always invited the heavenly King, Indra, to take part in the yajñas [sacrifices].</p>
+<p>Because King Indra was thus absent so often from Śacīdevī, she had to pass much of her time pining over Indra's absence, with her cheeks upon her hands.&quot; The performance of different yajñas for the demigods is considered to be worship of the limbs of the Supreme Lord.</p>
+<p>The demigods are considered to be different parts of the universal body of the Lord, and therefore the ultimate purpose in worshiping them is to please the Lord by partially worshiping His different limbs.</p>
+<p>Mahārāj Yudhiṣṭhira had no such material desire; he executed all sacrifices under the direction of Kṛṣṇa, and not to take any personal advantage from them.</p>
+<p>He only desired to please Kṛṣṇa and was therefore called the best of the devotees.</p>
+<p>He was always merged in the ocean of loving service.</p>
+<h3><a class="header" href="#compassion-and-anger-compassion" id="compassion-and-anger-compassion">Compassion and Anger Compassion</a></h3>
+<p>When the ecstasy of devotional service produces some kind of lamentation in connection with Kṛṣṇa, it is called devotional service in compassion.</p>
+<p>The impetus of this devotional service is Kṛṣṇa's transcendental quality, form and activities.</p>
+<p>In this ecstasy of devotional service there are sometimes symptoms like regret, heavy breathing, crying, falling on the ground and beating upon one's chest.</p>
+<p>Sometimes symptoms like laziness, frustration, defamation, humility, anxiety, moroseness, eagerness, restlessness, madness, death, forgetfulness, disease and illusion are also visible.</p>
+<p>When in the heart of a devotee there is expectation of some mishap to Kṛṣṇa it is called devotional service in bereavement.</p>
+<p>Such bereavement is another symptom of this devotional service in compassion.</p>
+<p>In the Śrīmad-Bhāgavatam, Tenth Canto, 16th Chapter, 13th verse, there is the following description.</p>
+<p>When Kṛṣṇa was chastising the Kāliyanāga in the Yamunā, the big snake wrapped his coils all over Kṛṣṇa's body, and upon seeing Kṛṣṇa in this situation, all His dear cowherd friends became greatly disturbed.</p>
+<p>Out of bereavement, distress and fearfulness, they became bewildered and began to fall on the ground.</p>
+<p>Because the cowherd boys were under the illusion that Kṛṣṇa could be in some mishap, their symptoms are not at all astonishing; they had dedicated their friendship, their possessions, their desires and their very selves to Kṛṣṇa.</p>
+<p>When Kṛṣṇa entered the Yamunā River, which had become very poisonous from the presence of Kāliya, Mother Yaśodā feared all kinds of mishaps, and she was breathing hotly.</p>
+<p>Tears from her eyes were soaking her clothes, and she was almost collapsing.</p>
+<p>Similarly, when the Śaṅkhāsura demon was attacking Kṛṣṇa's queens one after another, Lord Baladeva became more and more bluish.</p>
+<p>In the Haṁsadūta, the following incident is described: The gopīs requested Haṁsadūta to search after the marks of Kṛṣṇa's lotus feet and to accept them as Lord Brahmā had accepted them on his helmet after he had stolen all Kṛṣṇa's cowherd boys.</p>
+<p>Regretting his challenge to Kṛṣṇa, Lord Brahmā had bowed down before the Lord, and his helmet became marked with the footprints of Kṛṣṇa.</p>
+<p>The gopīs reminded Haṁsadūta that sometimes even the great sage Nārada becomes very ecstatic by seeing these footprints, and sometimes great liberated sages also aspire to see them.</p>
+<p>&quot;You should therefore seek very enthusiastically to find the footprints of Kṛṣṇa,&quot; they urged.</p>
+<p>This is another instance of devotional service in compassion.</p>
+<p>There is an instance when Sahadeva, the younger brother of Nakula, became greatly gladdened at seeing the effulgent glowing of Kṛṣṇa's footprints.</p>
+<p>He began to cry and call out, &quot;Mother Mādrī! Where are you now? Father Pāṇḍu! Where are you now? I am very sorry that you are not here to see these footprints of Kṛṣṇa!&quot; This is another instance of devotional service in compassion.</p>
+<p>In such devotional service in compassion there are sometimes smiling symptoms, but never is there any stress or lamentation.</p>
+<p>The basic principle is always ecstatic love.</p>
+<p>The apprehension of some mishap to Kṛṣṇa or to His beloved queens, as exhibited by Baladeva and Yudhiṣṭhira, has been explained above.</p>
+<p>This apprehension is not exactly due to their ignorance of the inconceivable potencies of Kṛṣṇa but to their intense love for Him.</p>
+<p>This kind of apprehension of some mishap to Kṛṣṇa first of all becomes manifested as an object of lamentation, but gradually it develops into such compassionate loving ecstasy that it turns to another channel and gives transcendental pleasure.</p>
+<p>Anger In ecstatic loving service to Kṛṣṇa in anger, Kṛṣṇa is always the object.</p>
+<p>In Vidagdha-mādhava, Second Canto, 53rd verse, Lalitāgopī expressed her anger, which was caused by Kṛṣṇa, when she addressed Śrīmatī Rādhārāṇī thus: &quot;My dear friend, my inner desires have been polluted.</p>
+<p>Therefore I shall go to the place of Yamarāja.</p>
+<p>But I am sorry to see that Kṛṣṇa has still not given up His smiling over cheating You.</p>
+<p>I do not know how You could repose all Your loving propensities upon this lusty young boy from the neighborhood of the cowherds.&quot; After seeing Kṛṣṇa, Jaratī sometimes said, &quot;O You thief of young girls' properties! I can distinctly see the covering garment of my daughter-inlaw on Your person.&quot; Then she cried very loudly, addressing all the residents of Vṛndāvana to inform them that this son of King Nanda was setting fire to the household life of her daughter-in-law.</p>
+<p>Similar ecstatic love for Kṛṣṇa in anger was expressed by Rohiṇī-devī when she heard the roaring sound of the two falling arjuna trees to which Kṛṣṇa had been tied.</p>
+<p>The whole neighborhood proceeded immediately towards the place where the accident took place, and Rohiṇīdevī took the opportunity to rebuke Mother Yaśodā as follows: &quot;You may be very expert in giving lessons to your son by binding Him with rope, but don't you look to see if your son is in a dangerous spot? The trees are falling on the ground, and He is simply loitering there!&quot; This expression of Rohiṇīdevī's anger toward Yaśodā is an example of ecstatic love in anger caused by Kṛṣṇa.</p>
+<p>Once, while Kṛṣṇa was in the pasturing ground with His cowherd boys, His friends requested Him to go to the Tālavana Forest, where Gardabhāsura, a disturbing demon in the shape of an ass, resided.</p>
+<p>The friends of Kṛṣṇa wanted to eat the fruit from the forest trees, but they could not go because of fear of the demon.</p>
+<p>Thus they requested Kṛṣṇa to go there and kill Gardabhāsura.</p>
+<p>After Kṛṣṇa did this, they all returned home, and their report of the day's activity perturbed Mother Yaśodā because Kṛṣṇa had been sent alone into such danger in the Tālavana Forest.</p>
+<p>Thus she looked upon the boys with anger.</p>
+<p>There is another instance of anger on the part of a friend of Rādhārāṇī's.</p>
+<p>When Rādhārāṇī was dissatisfied with the behavior of Kṛṣṇa and had stopped talking with Him, Kṛṣṇa was very sorry for Rādhārāṇī's great dissatisfaction, and in order to beg forgiveness, He fell down at Her lotus feet.</p>
+<p>But even after this, Rādhārāṇī was not satisfied, and She did not talk with Kṛṣṇa.</p>
+<p>At that time, one of Her friends chastised Her in the following words: &quot;My dear friend, You are allowing Yourself to be churned by the rod of dissatisfaction, so what can I say unto You? The only advice I can give You is that You had better leave this scene immediately, because Your misbehavior is giving me too much pain.</p>
+<p>I cannot bear to see Your behavior, because even though Kṛṣṇa's peacock feather has touched Your feet, You still appear to be red-faced.&quot; The above attitudes of dissatisfaction and anger in devotional service are called īrṣyu.</p>
+<p>When Uddhava was leaving Vṛndāvana, some of the elderly gopīs rebuked him as follows: &quot;O son of Gāndinī, your cruelty is defaming the dynasty of King Yadu.</p>
+<p>You are taking Kṛṣṇa away, keeping us in such pitiable condition without Him.</p>
+<p>Now, even before you have left, the life air of all the gopīs has practically disappeared.&quot; When Kṛṣṇa was insulted by Śiśupāla in the assembly of the rāja-sūya yajñṣa convened by Mahārāj Yudhiṣṭhira, there was a great turmoil amongst the Pāṇḍavas and Kurus, involving grandfather Bhīṣma.</p>
+<p>At that time Nakula said with great anger, &quot;Kṛṣṇa is the Supreme Personality of Godhead, and the nails of His toes are beautified by the light emanating from the jeweled helmets of the authorities of the Vedas.</p>
+<p>If He is derided by anyone, I declare herewith as a Pāṇḍava that I will kick his helmet with my left foot, and I will strike him with my arrows, which are as good as Y amadaṇḍa, the sceptor of Yamarāja!&quot; This is an instance of ecstatic love for Kṛṣṇa in anger.</p>
+<p>In such a transcendental angry mood sometimes sarcastic remarks, unfavorable glances and insulting words are exhibited.</p>
+<p>Sometimes there are other symptoms, like rubbing the two hands, clacking the teeth, clamping the lips, moving the eyebrows, scratching the arms, lowering the head, breathing rapidly, uttering strong words, nodding the head, exhibiting yellowishness at the corner of the eyes, and exhibiting trembling lips.</p>
+<p>Sometimes the eyes turn red, and sometimes they fade.</p>
+<p>And there is sometimes chastisement and silence.</p>
+<p>All these symptoms of anger can be divided into two parts: constitutional and unconstitutional, or permanent and temporary symptoms.</p>
+<p>Sometimes great emotion, bewilderment, pride, frustration, illusion, impotence, jealousy, dexterity, negligence and signs of hard labor are also manifest as unconstitutional symptoms.</p>
+<p>In all these humors of ecstatic love, the feeling of anger is accepted as the steady factor.</p>
+<p>When Jarāsandha angrily attacked the city of Mathurā, he looked at Kṛṣṇa with sarcastic glances.</p>
+<p>At that time Baladeva took up His plow weapon and gazed upon Jarāsandha with colored eyes.</p>
+<p>There is a statement in the Vidagdha-mādhava wherein Śrīmatī Rādhārāṇī, in an angry mood, addressed Her mother, Paurṇamāsī, after she had accused Rādhārāṇī of going to Kṛṣṇa.</p>
+<p>&quot;My dear mother,&quot; Rādhā declared, &quot;what can I say to you? Kṛṣṇa is so cruel that He often attacks Me on the street, and if I want to cry out very loudly, this boy with a peacock feather on His head immediately covers My face so that I cannot cry.</p>
+<p>And if I want to go away from the scene because I am afraid of Him, He will immediately spread His arms to block My path.</p>
+<p>If I piteously fall down at His feet, then this enemy of the Madhu demon, in an angry mood, bites My face! Mother, just try to understand My situation, and don't be unnecessarily angry with Me.</p>
+<p>Instead, please tell Me how I can save Myself from these terrible attacks of Kṛṣṇa!&quot; Sometimes amongst contemporary personalities there are signs of ecstasy in anger because of love for Kṛṣṇa.</p>
+<p>An example of such anger was exhibited in the quarrel between Jaṭilā and Mukharā.</p>
+<p>Jaṭilā was the mother-in-law of Rādhārāṇī, and Mukharā was Her great-grandmother.</p>
+<p>Both of them were talking about Kṛṣṇa's unnecessary harassment of Rādhārāṇī when She was walking on the street.</p>
+<p>Jaṭilā said, &quot;You cruel- faced Mukharā! By hearing your words my heart feels like it is burning in a fire!&quot; And Mukharā replied, &quot;You sinful Jaṭilā, by hearing your words, there is aching in my head! You cannot give any evidence that Kṛṣṇa has attacked Rādhārāṇī, the daughter of my granddaughter Kīrtidā.&quot; Once, when Rādhārāṇī was taking off the necklace given to Her by Kṛṣṇa, Jaṭilā, her mother-in-law, told a friend: &quot;My dear friend, just see the beautiful necklace that Kṛṣṇa has presented to Rādhārāṇī.</p>
+<p>She is now holding it, but still She wants to tell us that She has no connection with Kṛṣṇa.</p>
+<p>This girl's activities have disgraced our whole family!&quot; Natural jealousy of Kṛṣṇa by persons like Śiśupāla cannot be accepted as ecstatic love in anger with Kṛṣṇa.</p>
+<h3><a class="header" href="#dread-and-ghastliness" id="dread-and-ghastliness">Dread and Ghastliness</a></h3>
+<p><strong>Dread</strong></p>
+<p>In ecstatic love for Kṛṣṇa in dread, there are two causes of fear: either Kṛṣṇa Himself or some dreadful situation for Kṛṣṇa.</p>
+<p>When a devotee feels himself to be an offender at Kṛṣṇa's lotus feet, at that time Kṛṣṇa Himself becomes the objective of dreadful ecstatic love.</p>
+<p>And when out of ecstatic love friends and well-wishers of Kṛṣṇa apprehend some danger for Him, that situation becomes the object of their dread.</p>
+<p>When Ṛkṣarāj was in front of Kṛṣṇa fighting and suddenly realized that Kṛṣṇa is the Supreme Personality of Godhead, Kṛṣṇa addressed him thus: &quot;My dear Ṛkṣarāj, why is your face so dry? Please do not feel threatened by Me.</p>
+<p>There is no need for your heart to tremble like this.</p>
+<p>Please calm yourself down.</p>
+<p>I have no anger toward you.</p>
+<p>You can, however, become as angry as you like with Me-to expand your service in fighting with Me and to increase My sporting attitude.&quot; In this dreadful situation in ecstatic love for Kṛṣṇa, Kṛṣṇa Himself is the object of dread.</p>
+<p>There is another instance of a dreadful situation with Kṛṣṇa as the object as follows: After being sufficiently chastised by child Kṛṣṇa in the Yamunā River, the Kāliya snake began to address the Lord, &quot;O killer of the Mura demon, I have acquired many mystic powers by my austerity and penances, but before You I am nothing, I am most insignificant.</p>
+<p>Therefore, please be kind upon a poor soul like me, and don't be angry with me.</p>
+<p>I did not know Your actual position, and out of ignorance I have committed such horrible offenses.</p>
+<p>Please save me.</p>
+<p>I am a most unfortunate, foolish creature.</p>
+<p>Please be merciful to me.&quot; This is another instance of the ecstasy of dread in devotional service.</p>
+<p>When the Keśī demon was causing disturbance in Vṛndāvana by assuming a large horse's body that was so big that he could jump over the trees, Mother Yaśodā told her husband, Nanda Mahārāj, &quot;Our child is very restless, so we had better keep Him locked up within the house.</p>
+<p>I have been very worried about the recent disturbances of the Keśī demon, who has been assuming the form of a giant horse.&quot; When it was learned that the demon was entering Gokula in an angry mood, Mother Yaśodā became so anxious to protect her child that her face dried up and there were tears in her eyes.</p>
+<p>These are some of the signs of the ecstasy of dread in devotional service, caused by seeing and hearing something that is dangerous to Kṛṣṇa.</p>
+<p>After the Pūtanā witch had been killed, some friends of Mother Yaśodā inquired from her about the incident.</p>
+<p>Mother Yaśodā at once requested her friends, &quot;Please stop! Please stop! Don't bring up the incident of Pūtanā.</p>
+<p>I become distressed just by remembering this incident.</p>
+<p>The Pūtanā witch came to devour my son, and she deceived me into letting her take the child on her lap.</p>
+<p>After that, she died and made a tumultuous sound with her gigantic body.&quot; In the ecstasy of devotional service in dread, the unconstitutional symptoms are drying up of the mouth, exuberance, glancing towards the backside, concealing oneself, bewilderment, searching after the endangered lovable object and crying very loudly.</p>
+<p>Some other unconstitutional symptoms are illusion, forgetfulness, and expectation of danger.</p>
+<p>In all such circumstances the ecstatic dread is the steady or constant factor.</p>
+<p>Such dreadfulness is caused either by offenses committed or by dreadful circumstances.</p>
+<p>Offenses can be committed in varieties of ways, and the dread is felt by the person who has committed the offense.</p>
+<p>When dread is caused by a fearful object, this fearful object is generally a person who is fearsome in his features, nature and influence.</p>
+<p>An example of an object which caused ecstatic dread is the Pūtanā witch.</p>
+<p>Dread may be caused by mischievous demonic characters, such as King Kaṁsa, and it can be caused by great powerful demigods, such as Indra or Śaṅkara.</p>
+<p>Demons like Kaṁsa feared Kṛṣṇa, but their feelings cannot be described as ecstatic dread in devotional service.</p>
+<p><strong>Ghastliness</strong></p>
+<p>It is understood from authoritative sources that an attachment for Kṛṣṇa because of feelings of disgust sometimes presents a ghastly ecstasy in devotional service.</p>
+<p>The person experiencing such ecstatic love for Kṛṣṇa is almost always in the neutral stage of devotional service, or śānta-rasa.</p>
+<p>A description of ecstatic love caused by ghastliness is found in the following statement: &quot;This person was formerly interested solely in the matter of lust and sense gratification, and he had perfected the greatest skill in exploiting women to fulfill his lusty desires.</p>
+<p>But now how wonderful it is that this same man is chanting the names of Kṛṣṇa with tears in his eyes, and as soon as he sees the face of a woman, he immediately becomes disgusted.</p>
+<p>From the indication of his face, I would think that now he hates sex life.&quot; In this mellow of devotional service in ghastliness, the sub-ecstatic symptoms are spitting upon the consideration of one's past life, contorting the face, covering the nose and washing the hands.</p>
+<p>There is also trembling of the body, forcible twisting of the body and perspiration.</p>
+<p>Other symptoms which may be present are shame, exhaustion, madness, illusion, frustration, humility, self-pity, restlessness, eagerness and stunning of the body.</p>
+<p>When a devotee, lamenting for his past abominable activities, shows special symptoms on his body, his feeling is called ecstasy in devotional service in ghastliness.</p>
+<p>This is caused by the awakening of his Kṛṣṇa consciousness.</p>
+<p>In this connection there is the following statement: &quot;How can a person take pleasure in the enjoyment of sex life in this body, which is a bag of skin and bones, filled with blood, covered by skin and flesh and which produces mucus and evil smells?&quot; This perception is possible only for one who is awakened to Kṛṣṇa consciousness and who has become fully cognizant of the abominable nature of this material body.</p>
+<p>A fortunate child in the womb of his mother prayed to Kṛṣṇa as follows: &quot;O enemy of Kaṁsa, I am suffering so much because of this material body.</p>
+<p>Now I am trapped within a mess of blood, urine and liquid stool, within the womb of my mother.</p>
+<p>Because I am living in such a condition, I am suffering great pangs.</p>
+<p>Therefore, O divine ocean of mercy, please be kind to me.</p>
+<p>I have no capacity to be engaged in Your loving devotional service, but please save me!&quot; There is a similar statement by a person fallen in the hellish condition of life.</p>
+<p>He addressed the Supreme Lord thus: &quot;My dear Lord, Yamarāja has placed me in a situation which is full of filthy and obnoxious smells.</p>
+<p>There are so many insects and worms, surrounded by the stools left by different kinds of diseased persons.</p>
+<p>And after visualizing this horrible scene, my eyes have become sore, and I am becoming nearly blind.</p>
+<p>I therefore pray, O my Lord, O deliverer from the hellish conditions of life.</p>
+<p>I have fallen into this hell, but I shall try to remember Your holy name always, and in this way I shall try to keep my body and soul together.&quot; This is another instance of ecstatic love for Kṛṣṇa in an abominable situation.</p>
+<p>It is to be understood that any person who is constantly engaged in chanting the holy names of the Lord, Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare, has attained a transcendental affection for Kṛṣṇa, and as such, in any condition of life, he remains satisfied simply by remembering the Lord's name in full affection and ecstatic love.</p>
+<p>In conclusion, it may be stated that ecstatic love for Kṛṣṇa in ghastliness appears during the development of dormant neutrality into developed affection.</p>
+<h3><a class="header" href="#mixing-of-rasas" id="mixing-of-rasas">Mixing of Rasas</a></h3>
+<p>As already described, there are twelve different kinds of rasas, or ecstatic relationships which are shared with Kṛṣṇa.</p>
+<p>Five of these rasas are direct, and they are listed as neutrality, servitude, fraternal love, parental love, and conjugal love.</p>
+<p>Seven of the rasas are indirect, and they are listed as humor, astonishment, chivalry, compassion, anger, dread and ghastliness.</p>
+<p>The five direct rasas are eternally manifested in the Vaikuṇṭha world, the spiritual kingdom, whereas the seven indirect rasas are eternally manifesting and unmanifesting in Gokula Vṛndāvana, where Kṛṣṇa displays His transcendental pastimes in the material world.</p>
+<p>Very often, in addition to one's regular rasa, there is found the presence of some other rasa, and the mixture of these loving humors is sometimes compatible, or palatable, and sometimes incompatible, or unpalatable.</p>
+<p>The following is a scientific analysis of the compatibility and incompatibility of the mixtures of these various rasas, or loving moods.</p>
+<p>When in the rasa of neutral love (śānta-rasa) there are found traces of dread or astonishment, the result is compatible.</p>
+<p>When with this neutral love there are manifestations of conjugal love, chivalry, anger or dread, the result is incompatible.</p>
+<p>When in the ecstasy of a serving humor, there are manifestations of dread, neutral love, or chivalry (such as dharma-vīra and dāna-vīra), the result is compatible.</p>
+<p>The ecstasy of devotional service in chivalry (yuddha-vīra) and anger are directly produced by Kṛṣṇa Himself.</p>
+<p>With the ecstasy of fraternal love, a mixture of conjugal love, laughter or chivalry is highly compatible.</p>
+<p>With the same fraternal love, a mixture of dread or parental love is most incompatible.</p>
+<p>Although there are gulfs of differences between them, with the ecstasy of parental affection, a mixture of laughter, compassion or dread is compatible.</p>
+<p>With the ecstasy of parental love, a mixture of conjugal love, chivalry or anger is incompatible.</p>
+<p>With the ecstasy of devotion in conjugal love, a mixture of laughter or fraternity is compatible.</p>
+<p>According to certain expert opinions, in the ecstasy of conjugal love, the feelings of chivalry known as yuddha-vīra and dharma-vīra are the only compatible additions.</p>
+<p>According to this view, except for these two humors, all other manifestations are taken as incompatible with conjugal love.</p>
+<p>With the ecstasy of devotional laughter, a mixture of dread, conjugal love or parental love is compatible, whereas a mixture of compassion or ghastliness is incompatible.</p>
+<p>With the ecstasy of devotion in astonishment, a mixture of chivalry or neutral love is compatible; whereas a mixture of anger or dread is always incompatible.</p>
+<p>With the ecstasy of devotional chivalry, a mixture of astonishment, laughter or servitude is compatible, while a mixture of dread or conjugal love is incompatible.</p>
+<p>According to some expert opinions, the ecstasy of neutral love is always compatible with devotional service in chivalry.</p>
+<p>With the ecstasy of compassion in devotional service a mixture of anger or parental love is compatible; while a mixture of laughter, conjugal love or astonishment is always incompatible.</p>
+<p>With the ecstasy of anger in devotional service a mixture of compassion or chivalry is compatible, whereas a mixture of laughter, conjugal union or dread is completely incompatible.</p>
+<p>With the ecstasy of dread in devotional service, a mixture of ghastliness or compassion is compatible.</p>
+<p>With the ecstasy of chivalry in devotional service, a mixture of conjugal union, laughter or anger is always incompatible.</p>
+<p>In the ecstasy of ghastliness in devotional service, feelings of neutral love, laughter or servitude are compatible, whereas feelings of conjugal union and fraternity are incompatible.</p>
+<p>The above analysis is a sample of the study of rasābhāsa, or incompatible mixing of rasas.</p>
+<p>This transcendental science of rasābhāsa can thoroughly explain the humors in ecstatic love which are compatible and incompatible with one another.</p>
+<p>When Lord Caitanya Mahāprabhu was residing in Jagannātha Purī, many poets and devotees used to come to Him and offer their different kinds of poetry, but the regulation was that Lord Caitanya's secretary, Svarūpa Dāmodara, first examined all of these writings scrutinizingly, and then if he would find that there were no incompatibilities in the rasas, or transcendental mellows, he would then allow the poet to approach Lord Caitanya and recite his poetry.</p>
+<p>The topic of incompatibility is a very important one, and those who are pure devotees always expect to find perfect compatibility in descriptions of the different relationships with the Personality of Godhead.</p>
+<p>The study of compatibility and incompatibility sometimes becomes very involved, and a hint of why this is so is given as follows: When a friend meets another friend, the mellow produced out of that meeting is generally taken as very palatable.</p>
+<p>But actually with such meetings between two friends, there are so many feelings involved that it is difficult to ascertain when these feelings are actually becoming compatible and when they are becoming incompatible.</p>
+<p>Expert literary scholars have analyzed the rasas which are compatible with one another by contrasting the various rasas in a particular mixture under the names &quot;whole&quot; and &quot;part&quot;.</p>
+<p>According to this method, the prominent feeling is called the &quot;whole&quot;, and the subordinate feeling is called the &quot;part.&quot; The following statement elucidates the subject of part and whole: &quot;All living entities are just like sparks from the supreme fire, and as such, I do not know if I, a tiny spark, shall be able to engage myself in the transcendental loving service of this supreme fire, Lord Kṛṣṇa.&quot; In this statement, the feelings of neutral love are taken as the whole, whereas the desire to serve the Lord is taken as the part.</p>
+<p>Actually, in the Brahman effulgence there is no chance for reciprocation of loving ecstasy between the Lord and the devotee.</p>
+<p>There is another quotation by a devotee who laments as follows: &quot;Alas, I am still trying to relish different pleasurable states from this body, which is simply some skin covering mucus, semina and blood.</p>
+<p>In this state of consciousness I am so condemned that I cannot relish the transcendental ecstasy of remembering the Supreme Personality of Godhead.&quot; In this statement there are two ecstatic loving humors, namely neutrality and ghastliness.</p>
+<p>Neutrality is taken here as the whole, whereas the ecstasy of ghastliness is the part.</p>
+<p>There is a similar statement by a devotee as follows: &quot;I shall now begin my service of fanning the Supreme Personality of Godhead, Śrī Kṛṣṇa, who is seated on a golden throne.</p>
+<p>He is the supreme Parambrahma in His eternal transcendental form of a cloudy blackish complexion.</p>
+<p>Now I shall give up my affection for my material body, which is nothing but a bunch of flesh and blood.&quot; Herein also there is a combination of servitude and ghastliness, where the ecstasy of servitude is taken as the whole, and the ecstasy of ghastliness is taken as the part.</p>
+<p>There is another statement as follows: &quot;When shall I be freed from the mode of ignorance? And being thus purified, when shall I attain the stage of serving Kṛṣṇa eternally? Only then shall I be able to worship Him, always observing His lotus eyes and beautiful face.&quot; In this statement the whole is the ecstasy of neutrality, and the part is servitorship.</p>
+<p>There is another statement as follows: &quot;Please look at this devotee of the Lord who is dancing just from remembering the lotus feet of Kṛṣṇa.</p>
+<p>Simply by observing his dance you will lose all interest in even the most beautiful women!&quot; In this statement the whole is in neutrality, and the part is in ghastliness.</p>
+<p>One devotee boldly said, &quot;My dear Lord, now I am turning my face from any thought of association with young girls.</p>
+<p>As far as Brahman realization is concerned, I have lost all interest because I am completely absorbed in thinking about You.</p>
+<p>And being absorbed so blissfully, I have lost all other desires, even the desire for mystic powers.</p>
+<p>Now my mind is only attracted to worshiping Your lotus feet.&quot; In this statement, the whole is the ecstasy of neutrality, and the part is chivalry.</p>
+<p>In another statement, Subala is addressed thus: &quot;My dear Subala, the damsels of Vṛndāvana who had the opportunity of enjoying Kṛṣṇa's kissing must be the foremost of all the fortunate women in the world.&quot; In this example, the ecstasy of fraternal devotional service is the whole, and the ecstasy of conjugal love is the part.</p>
+<p>The following statement was made by Kṛṣṇa to the gopīs: &quot;My dear enchanted, don't gaze at Me with longing eyes like this.</p>
+<p>Be satisfied and return to your homes in Vṛndāvana.</p>
+<p>There is no necessity of your presence here.&quot; While Kṛṣṇa was joking in this way with the damsels of Braja, who with great hope had come to enjoy the rāsa dance with Him, Subala was also on the scene, and he began to look at Kṛṣṇa with wide and laughing eyes.</p>
+<p>Subala's feeling contained a mixture of fraternity and laughter in devotional service.</p>
+<p>Fraternity is considered here as the whole, and the laughter is considered as the part.</p>
+<p>The following example contains a mixture of ecstatic fraternity and laughter, taken respectively as the whole and part.</p>
+<p>When Kṛṣṇa saw that Subala, in the dress of Rādhārāṇī, was silently hiding under the shade of a beautiful aśoka tree on the bank of the Yamunā, He immediately arose from His seat in surprise.</p>
+<p>Upon seeing Kṛṣṇa, Subala tried to hide his laughter by covering his cheeks.</p>
+<p>There is also an example of a mixture of parental love and compassion in devotional service.</p>
+<p>When Mother Yaśodā was thinking that her son was walking in the forest without any umbrella or shoes, she became greatly perturbed to think of how much difficulty Kṛṣṇa must have been feeling.</p>
+<p>In this example the whole is the parental love, and the part is compassion.</p>
+<p>There is the following example of a mixture of parental love and laughter.</p>
+<p>A friend of Mother Yaśodā told her, &quot;My dear Yaśodā, your son has very cunningly stolen a lump of butter from my home.</p>
+<p>And to make me blame my own son for His mischief, He has smeared some of the butter on my son's face while he was sleeping!&quot; Upon hearing this, Mother Yaśodā shook her curved eyebrows.</p>
+<p>She could only look at her friend with a smiling face.</p>
+<p>May Mother Yaśodā bless everyone with this smiling attitude.</p>
+<p>In this example the whole is the parental love, and the part is the laughter.</p>
+<p>There is an example of a mixture of several humors with devotional service as follows.</p>
+<p>When Kṛṣṇa was holding up Govardhan Hill with His left hand, His hairs became scattered all over His shoulders, and He appeared to be perspiring.</p>
+<p>When Mother Yaśodā saw this scene, she began to tremble.</p>
+<p>Then, as she stared at the scene with broadened eyes, she saw Kṛṣṇa begin to exhibit varieties of facial caricatures.</p>
+<p>Mother Yaśodā then became very happy and began to smile.</p>
+<p>Then again, when she thought that Kṛṣṇa was holding up the hill for such an extremely long time, her clothes became soaked with perspiration.</p>
+<p>May Mother Yaśodā Brajeśvarī protect the whole universe by her infinite mercy! In this example, the whole is parental love, and the part is dread, wonder, laughter, compassion, etc.</p>
+<p>There is an example of a mixture of conjugal love and fraternal affection when Śrīmatī Rādhārāṇī said, &quot;My dear friends, just see how Kṛṣṇa is resting His hand on the shoulder of Subala, who is dressed up just like a young girl! I think He must be sending some message to Me through Subala.&quot; The purport is that the superiors of Rādhārāṇī do not like Kṛṣṇa or His cowherd friends to associate with Her; therefore these friends sometimes clothe themselves in female dress so they can give Rādhārāṇī a message from Kṛṣṇa.</p>
+<p>In this example the whole is conjugal love and the part is fraternity.</p>
+<p>The following is an example of a mixture of conjugal love and laughter in devotional service.</p>
+<p>Kṛṣṇa, in the dress of a young girl, told Rādhārāṇī, &quot;Oh, You hard-hearted girl! Don't You know that I am Your sister? Why are You unable to recognize Me? Be merciful upon Me and please capture My shoulders and embrace Me with love!&quot; While Kṛṣṇa was dressed up exactly like Rādhārāṇī, He was speaking these nice words, and Śrīmatī Rādhārāṇī could understand His purpose.</p>
+<p>But because She was in front of many of Her superiors, She simply smiled and did not say anything.</p>
+<p>In this instance, the ecstasy of conjugal love is taken as the whole, and the ecstasy of laughter is taken as the part.</p>
+<p>The following illustrates a mixture of several feelings.</p>
+<p>When one of the consort friends of Candrāvalī saw that Kṛṣṇa was preparing to fight with the Vṛṣāsura demon, she began to think: &quot;How wonderful Kṛṣṇa is! His mind is captivated by the eyebrows of Candrāvalī in a smiling spirit, His snake-like arms are on the shoulder of His friend, and at the same time He is roaring like a lion to encourage Vṛṣāsura to fight with Him!&quot; This is an example of conjugal love, fraternity, and chivalry.</p>
+<p>The conjugal love is taken here as the whole, and the fraternity and chivalry are taken as the parts.</p>
+<p>When Kubjā caught hold of Kṛṣṇa's yellow garment because she was feeling almost lusty with sex urge, Kṛṣṇa simply bowed down His head with His cheeks glowing in front of the many people who were standing there and laughing.</p>
+<p>This is an example of a mixture of ecstatic conjugal love and laughter.</p>
+<p>The laughter is taken as the whole, and the conjugal love is taken as the part.</p>
+<p>Viśāla, a cowherd boy who was attempting to fight with Bhadrasena, was addressed by another cowherd boy as follows:&quot;Why are you attempting to show your chivalrous spirit before me? Before this, you even attempted to fight with Śrīdāmā, but you must know that Śrīdāmā does not even care to fight with hundreds of Balarāmas.</p>
+<p>So why are you acting so enthusiastically when you actually have no importance at all?&quot; This is an example of a mixture of devotional fraternity and chivalry.</p>
+<p>The chivalry is taken as the whole, and the fraternity is taken as the part.</p>
+<p>Śiśupāla was habituated to calling Kṛṣṇa ill names, and by his insults he irritated the sons of Pāṇḍu more than he irritated Kṛṣṇa.</p>
+<p>The Pāṇḍavas therefore equipped themselves with all kinds of weapons to kill Śiśupāla.</p>
+<p>Their feelings were a mixture of ecstatic anger and fraternity, the anger being taken as the whole, and fraternity as the part.</p>
+<p>Once Kṛṣṇa was watching Śrīdāmā very expertly using his stick to fight with Balarāma, who was an expert club-fighter and who had even killed the Pralambāsura demon with His club.</p>
+<p>When Kṛṣṇa saw Balarāma finally defeated by Śrīdāmā, who was using only a small stick, Kṛṣṇa became filled with pleasure and began to look upon Śrīdāmā with great wonder.</p>
+<p>In this instance there is a mixture of astonishment, fraternity and chivalry in devotional service.</p>
+<p>The fraternity and chivalry are considered as the parts, and the astonishment is considered as the whole.</p>
+<p>Expert analysts of these various kinds of mellows instruct us that when different mellows overlap one another, the mellow which is the whole, or the prominent humor, is called the permanent ecstasy.</p>
+<p>It is confirmed in the Viṣṇu-dharmottara that when there are many mellows of devotional ecstasy mixed together, the prominent one, or the whole, is called the steady ecstasy of devotional service.</p>
+<p>Although the subordinate mellow may be manifested for a certain time, at length it will become merged into the prominent whole.</p>
+<p>Thus it is called an unconstitutional ecstasy of devotional service.</p>
+<p>There is a good analogy in this connection, showing the relationship between the part and the whole.</p>
+<p>Lord Vāmanadeva is actually the Supreme Personality of Godhead, but He appeared to have been &quot;born&quot; as one of the brothers of Indra.</p>
+<p>Although Vāmanadeva is sometimes taken as a less-important demigod, He is actually the maintainer of Indra, the King of the demigods.</p>
+<p>Thus, although sometimes Vāmanadeva is considered to be a subordinate demigod, His actual position is that of the supreme whole, the source of the entire demigod system.</p>
+<p>In the same way, a rasa which is actually prominent may sometimes appear to be manifested in a subordinate way, although its actual position is as the main or prominent loving feeling of a devotee.</p>
+<p>When an unconstitutional ecstasy of devotional service is manifested prominently at a certain time, it is still accepted as the part.</p>
+<p>If it is not very prominently manifested, it appears only slightly and quickly merges back into the whole.</p>
+<p>At such times of slight appearance, no consideration is given to it; as when one is eating some palatable dishes, if one also eats a small blade of grass he will not taste it, nor will he care to distinguish what its taste is like.</p>
+<h3><a class="header" href="#further-analysis-of-mixed-rasas" id="further-analysis-of-mixed-rasas">Further Analysis of Mixed Rasas</a></h3>
+<p>As already described, if certain kinds of mellows become mixed and there is a joining of opposite mellows, then the situation is called incompatible.</p>
+<p>When one is eating sweet rice and something salty or sour is mixed in, the mixture is not very tasteful, and it is called incompatible.</p>
+<p>An exemplary instance of incompatibility is the following statement by an impersonalist who was lamenting aloud, &quot;I have been attached simply to the impersonal Brahman feature, and I have passed my days uselessly in practicing trance.</p>
+<p>I have not given any proper attention to Śrī Kṛṣṇa, who is the source of the impersonal Brahman and who is the reservoir of all transcendental pleasures.&quot; In this statement there are traces of neutrality and conjugal love, and the resulting humor is incompatible.</p>
+<p>Sometimes it is found in places like Vṛndāvana that a person with a slight devotional attitude of neutral love for Kṛṣṇa may immediately and artificially try to attain to the platform of conjugal love.</p>
+<p>But because of the incompatibility of neutrality and conjugal love, the person is found to fall from the standard of devotional service.</p>
+<p>Incompatibility was expressed by a great devotee on the platform of neutrality when he sarcastically prayed, &quot;I am very anxious to see Kṛṣṇa, the Supreme Personality of Godhead, who is many millions of times more affectionate than the pitṛs (forefathers) in the Pitṛ-loka, and who is always worshiped by the great demigods and sages.</p>
+<p>I am a little surprised, however, that although Kṛṣṇa is the husband of the goddess of fortune, His body is often marked with the nail pricks of ordinary society girls!&quot; Here is an example of incompatibility due to a mixture of neutrality and high conjugal love.</p>
+<p>There is the following statement by a gopī: &quot;My dear Kṛṣṇa, the first thing You should do is just embrace me with Your strong arms.</p>
+<p>Then, my dear friend, I shall first smell Your head, and then I shall enjoy with You.&quot; This is an example of incompatibility in which conjugal love is the whole and servitorship is the part.</p>
+<p>One devotee said, &quot;My dear Kṛṣṇa, how can I address You as my son when You are addressed by the great Vedāntists as the absolute truth and by the Vaiṣṇavas who follow the principles of Nārada-paṣcarātra as the Supreme Personality of Godhead? You are the same Supreme Person, so how shall my tongue be so extraordinarily bold as to address You as an ordinary son?&quot; In this statement there is a mixture of neutrality and parental love, and the result is incompatible.</p>
+<p>Another devotee said, &quot;My dear friend, my youthful beauty is as temporary as lightning in the sky, and therefore, my possessing attractive bodily features is unimportant.</p>
+<p>I have never met Kṛṣṇa, so I request you to please arrange for my meeting Him immediately.&quot; In this statement there is the incompatibility of a neutral mellow mixed with conjugal love.</p>
+<p>A lusty woman in Kailāsa once told Kṛṣṇa: &quot;My dear Kṛṣṇa, may You have a long life!&quot; Then, after saying this, she embraced Kṛṣṇa.</p>
+<p>This is an example of incompatibility resulting from a mixture of parental love and conjugal love.</p>
+<p>The purpose of the above analysis is to show that in the mixture of various mellows, or reciprocations of ecstatic love between Kṛṣṇa and the devotees, if the result is not pure, there will be incompatibility.</p>
+<p>According to the opinion of stalwart devotees like Rūpa Gosvāmī, as soon as there are contradictory feelings, the result is incompatible.</p>
+<p>Once an ordinary female devotee addressed Kṛṣṇa, &quot;My dear boy, I know that my body is just a composition of flesh and blood and can never be enjoyable to You.</p>
+<p>But still, I have been so attracted by Your beauty that I wish that You accept me as Your conjugal lover.&quot; In this statement there is incompatibility caused by a mixture of ghastliness and conjugal love in devotional service.</p>
+<p>Śrīla Rūpa Gosvāmī warns devotees to not commit such incompatibilities in their writings or in their dealings.</p>
+<p>The presence of such contradictory feelings is called rasābhāsa.</p>
+<p>When there is rasābhāsa in any book of Kṛṣṇa consciousness, no learned scholar or devotee will accept it.</p>
+<p>In the Vidagdha-mādhava, second act, verse 29, Paurṇamāsī tells Nāndīmukhī: &quot;Just see how wonderful it is! Great sages meditate upon Kṛṣṇa after being relieved from all material transactions, and with great difficulty they try to situate Kṛṣṇa in their hearts.</p>
+<p>And opposed to this, this young girl is trying to withdraw her mind from Kṛṣṇa so she can apply it in the material activities of sense gratification.</p>
+<p>What a regrettable thing it is that this girl is trying to drive away from her heart the same Kṛṣṇa who is sought after by great sages through severe austerities and perseverance!&quot; Although in this statement there are contradictory mellows of ecstatic devotion, the result is not incompatible because conjugal love is so elevated that it is defeating all other varieties of mellows.</p>
+<p>Śrīla Jīva Gosvāmī comments in this connection that such a loving state of mind is not possible for all.</p>
+<p>It is only possible in the case of the gopīs of Vṛndāvana.</p>
+<p>There are many other instances of contradictory mellows where there is no perverted experience of rasābhāsa.</p>
+<p>Once some minor demigod of the heavenly planets remarked: &quot;Kṛṣṇa, whose joking words were once the source of so much laughter for the residents of Braja, has now been attacked by the serpent king, Kāliya, and He has become the object of everyone's overwhelming lamentation!&quot; In this instance there is a mixture of laughter and compassion, but there is no incompatibility because by both of these rasas the loving affection for Kṛṣṇa is increased.</p>
+<p>Śrīmatī Rādhārāṇī was once told that although She had stopped all activities, She was still the supreme source of inspiration for all kinds of devotional service.</p>
+<p>The statement says, &quot;My dear Rādhārāṇī, in separation from Kṛṣṇa You are now as still as the most beautiful tree, whose gracefulness is not blocked by any covering of leaves.</p>
+<p>Your tranquil mood makes You appear to be completely merged in Brahman realization!&quot; In this example there is a mixture of conjugal love and neutral love, but the conjugal love has surpassed everything.</p>
+<p>Actually, Brahman realization is only a stunted existence.</p>
+<p>There is the following statement by Kṛṣṇa Himself: &quot;Śrīmatī Rādhārāṇī has become peace personified for Me.</p>
+<p>Because of Her I now go without sleep.</p>
+<p>I stare constantly without blinking My eyes, and I am always in a meditative mood.</p>
+<p>Because of Her I have even made My home in the cave of a mountain!&quot; This is an example of conjugal love mixed with neutral love, but there is no incompatibility.</p>
+<p>The following is a conversation consisting of questions put before Rambhā, a celebrated beautiful woman, and her corresponding answers.</p>
+<p>Rambhā was asked, &quot;My dear Rambhā, who are you?&quot; She answered, &quot;I am peace personified.&quot; Question: &quot;Then why are you in the sky?&quot; Answer: &quot;I am in the sky to experience the supreme absolute truth.&quot; Question: &quot;Then why are you staring?&quot; Answer: &quot;Just to look into the supreme beauty of the absolute truth.&quot; Question: &quot;Then why do you appear to be disturbed in mind?&quot; Answer: &quot;Because Cupid is acting.&quot; In the above example also there is no perverted representation of mellows because on the whole the ecstasy of conjugal love has exceeded the neutral position of devotional service.</p>
+<p>In the Tenth Canto of Śrīmad-Bhāgavatam, 60th Chapter, 44th verse, Rukmiṇīdevī said, &quot;My dear husband, a woman who has no taste for the transcendental pleasure available from Your personal contact must be inclined to accept as her husband somebody who is externally a combination of mustaches, beard, body hairs, fingernails and some head hair.</p>
+<p>And within him there are muscles, bones, blood, intestinal worms, stools, mucus, bile, and similar things.</p>
+<p>Actually, such a husband is only a dead body, but due to not being attracted to Your transcendental form, a woman will have to accept this combination of stools and urine for her husband.&quot; This statement, which lists the ingredients of a material body, is not a perverted mellow in transcendental realization because it shows correct discrimination between matter and spirit.</p>
+<p>In the Vidagdha-mādhava, second act, 42nd verse, Kṛṣṇa tells His friend, &quot;My dear friend, what a wonderful thing it is that since I have seen the beautiful lotus eyes of Śrīmatī Rādhārāṇī, I have developed a tendency to spit on the moon and the lotus flower!&quot; This is an example of conjugal love mixed with ghastliness, but there is no incompatibility.</p>
+<p>The following is a statement which describes different mellows of devotional service: &quot;Although Kṛṣṇa was invincible to any enemy, the cowherd boys of Vṛndāvana became almost blackish with astonishment upon seeing His wonderful royal garments and His fighting feats on the battlefield of Kurukṣetra.&quot; In this statement, although there is a mixture of chivalrous activities and astonishment in devotional service, there is no perverted reflection of mellows.</p>
+<p>One resident of Mathurā requested her father to bolt the doors and then go with her to the school of Sāndīpani Muni to find Kṛṣṇa.</p>
+<p>She complained that Kṛṣṇa had completely stolen her mind.</p>
+<p>In this incident there is a mixture of conjugal love and parental love, but there is no incompatibility.</p>
+<p>A brahmānandī (impersonalist) expressed his desire as follows: &quot;When shall I be able to see that supreme absolute Personality of Godhead who is eternal bliss and knowledge, and whose chest has become smeared with red kuṅkum powder by touching the breast of Rukmiṇī?&quot; Here there is a mixture of conjugal love and neutrality.</p>
+<p>Although this is a contradiction of mellows, there is no incompatibility because even a brahmānandī will become attracted to Kṛṣṇa.</p>
+<p>Nanda Mahārāj told his wife, &quot;My dear Yaśodā, although your son, Kṛṣṇa, is as delicate and soft as the mallīkā flower, He has gone to kill the Keśī demon, who is as strong as the mountain.</p>
+<p>Therefore I have become a little disturbed.</p>
+<p>But never mind, all auspiciousness to my son! I shall raise this hand which is as strong as a pillar, and I shall kill the Keśī demon, just to give freedom from all anxieties to the inhabitants of Brajamaṇḍala!&quot; In this statement there are two kinds of mellows: chivalry and dread.</p>
+<p>Both of them, however, improve the position of parental love, and therefore there is no incompatibility.</p>
+<p>In the Lalita-mādhava of Śrīla Rūpa Gosvāmī it is stated, &quot;After Kṛṣṇa's arrival in Kaṁsa's arena, Kaṁsa's priest looked at Kṛṣṇa with a detestful expression.</p>
+<p>The entire arena was filled with dread on the part of Kaṁsa and his priest and restless expressions of pleasure on the cheeks of Kṛṣṇa's friends.</p>
+<p>Frustration was felt by His envious rivals.</p>
+<p>The great sages meditated.</p>
+<p>Hot tears were in the eyes of Devakī and other motherly ladies, and hairs stood on the bodies of the expert warriors.</p>
+<p>There was astonishment in the hearts of demigods such as Indra.</p>
+<p>The servants danced, and the restless eyes of all the young girls glanced about.&quot; In this statement there is a description of a combination of different mellows, but there is no incompatibility.</p>
+<p>A similar statement, which is free from incompatibility, is in the Lalitamādhava wherein the author blesses all the readers of the book in the following manner: &quot;Although the Supreme Personality of Godhead is able to lift a mountain with a finger of His left hand, He is always humble and meek.</p>
+<p>He is always very kind to His loving devotees.</p>
+<p>He has frustrated Indra's attempt at vengeance by refusing him the sacrifice of Indra-yajṣa.</p>
+<p>He is the cause of all pleasure to all young girls.</p>
+<p>May He be ever compassionate upon you all!&quot;</p>
+<h3><a class="header" href="#perverted-expression-of-mellows" id="perverted-expression-of-mellows">Perverted Expression of Mellows</a></h3>
+<p>Rasābhāsa, or incompatible mixtures of mellows, may be classified as uparasa (false expression) anurasa (imitation) and aparasa (perverted or misrepresented mellows).</p>
+<p>There is the following statement by an impersonalist who had just seen Kṛṣṇa: &quot;When a person has passed completely from all contamination of material existence, he relishes a transcendental bliss of being established in trance.</p>
+<p>But as soon as I saw You, the original Personality of Godhead, I experienced the same bliss.&quot; This perverted reflection of mellows is called śānta-uparasa, or a perverted reflection of mixed impersonalism and personalism.</p>
+<p>There is another statement as follows: &quot;Wherever I am glancing I simply see Your personality.</p>
+<p>Therefore I know You are the uncontaminated Brahman effulgence, the supreme cause of all causes.</p>
+<p>I think there is nothing but You in this cosmic manifestation.&quot; This is another example of uparasa, or a perverted reflection of impersonalism and personalism.</p>
+<p>When Madhumaṅgala, an intimate friend of Kṛṣṇa, was dancing before Kṛṣṇa in a joking manner, no one was paying attention to him, and he jokingly said, &quot;My dear Lord, please be merciful upon me.</p>
+<p>I am praying for Your mercy.&quot; This is an example of uparasa in fraternal affection and neutrality.</p>
+<p>Kaṁsa once addressed his sister Devakī as follows: &quot;My dear sister, having seen your dear son Kṛṣṇa, I think that He is so strong that He can kill even wrestlers strong as the mountains.</p>
+<p>So I will have no more anxieties about Him, even if He is engaged in a terrible fight.&quot; This is an instance of uparasa in a perverted reflection of parental love.</p>
+<p>In the Lalita-mādhava, Śrīla Rūpa Gosvāmī says, &quot;The wives of the yajñic brāhmaṇas were all young girls, and they were attracted to Kṛṣṇa in the same way as the gopīs of Vṛndāvana.</p>
+<p>Out of their attraction they distributed food to Kṛṣṇa.&quot; Here the two devotional mellows are conjugal love and parental love, and the result is called upa-rasa in conjugal love.</p>
+<p>One of the friends of Śrīmatī Rādhārāṇī told Her, &quot;My dear friend Gāndharvikā [Rādhārāṇī], You were the most chaste girl in our village, but now You have divided Yourself and are partially chaste and partially unchaste.</p>
+<p>It is all due to Cupid's influence upon You after You saw Kṛṣṇa and heard the sound of His flute.&quot; This is another example of uparasa caused by divided interests in conjugal love.</p>
+<p>According to some expert learned scholars, the feelings between lover and beloved create perverted reflections of mellows in many ways.</p>
+<p>&quot;The gopīs have become purified by Kṛṣṇa's glance, and as such, Cupid's influence is distinctly visible on their bodies.&quot; Although in the material sense the glancing of a boy at a girl is a kind of pollution, when Kṛṣṇa threw His transcendental glance at the gopīs, they became purified.</p>
+<p>In other words, because Kṛṣṇa is the absolute truth, any action by Him is transcendentally pure.</p>
+<p>After Kṛṣṇa chastised the Kāliyanāga in the Yamunā River by dancing on his heads, the Kāliyanāga's wives addressed Kṛṣṇa, &quot;My dear cowherd boy, we are all only young wives of the Kāliyanāga, so why do You agitate our minds by sounding Your flute?&quot; Kāliya's wives were flattering Kṛṣṇa so that He would spare their husband.</p>
+<p>Therefore this is an example of uparasa, or imitation.</p>
+<p>One devotee said, &quot;My dear Govinda, here is a nice flowery bush in Kailāsa.</p>
+<p>I am a young girl, and You are a young poetic boy.</p>
+<p>After this, what more can I say? You just consider.&quot; This is an example of uparasa, caused by impudency in conjugal love.</p>
+<p>When Nārada Muni was passing through Vṛndāvana, he came to the Bhāṇḍīravana Forest and saw in one of the trees the famous parrot couple that always accompanies Lord Kṛṣṇa.</p>
+<p>The couple was imitating some discussion they heard upon the Vedānta philosophy, and thus were seemingly arguing upon various philosophical points.</p>
+<p>Upon seeing this, Nārada Muni was struck with wonder, and he began to stare without moving his eyelids.</p>
+<p>This is an example of anurasa, or imitation.</p>
+<p>When Kṛṣṇa was fleeing away from the battlefield, from a distant place Jarāsandha was watching Him with restless eyes and was feeling very proud.</p>
+<p>Being thus puffed up with his conquest, he was repeatedly laughing.</p>
+<p>This is an example of aparasa.</p>
+<p>Everything in connection with Kṛṣṇa is called ecstatic devotional love, although it may be exhibited in different ways: sometimes in right order and sometimes as a perverted reflection.</p>
+<p>According to the opinion of all expert devotees, anything that will arouse ecstatic love for Kṛṣṇa is to be taken as an impetus for transcendental mellow.</p>
+<p>Thus ends the Bhaktivedanta summary study of Śrī Bhakti-rasāmṛtasindhu by Śrīla Rūpa Gosvāmī.</p>
+<p>Concluding Words Śrīla Rūpa Gosvāmī concludes by saying that Bhakti-rasāmṛta- sindhu is very difficult for ordinary men to understand, yet he hopes that Lord Kṛṣṇa, the eternal Supreme Personality of Godhead, will be pleased with his presentation of this book.</p>
+<p>By rough calculation it is estimated that Śrīla Rūpa Gosvāmī finished Śrī Bhakti-rasāmṛta-sindhu in Gokula Vṛndāvana in the year 1552.</p>
+<p>While physically present, Śrīla Rūpa Gosvāmī was living in different parts of Vṛndāvana, and his headquarters were in the temple of Rādhā-Dāmodara in the present city of Vṛndāvana.</p>
+<p>The place of Rūpa Gosvāmī's bhajana, execution of devotional service, is commemorated still.</p>
+<p>There are two different tomb-like structures in the Rādhā-Dāmodara temple; one structure is called his place of bhajana, and in the other his body is entombed.</p>
+<p>Behind this very tomb I have my place of bhajana, but since 1965 I have been away.</p>
+<p>The place, however, is being taken care of by my disciples.</p>
+<p>By Kṛṣṇa's will, I am now residing at the Los Angeles temple of the International Society for Krishna Consciousness.</p>
+<p>This purport is finished today, the 30th of June, 1969.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

@@ -1,0 +1,1731 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Nectar of Devotion</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="index.html">Nectar of Devotion</a></li><li class="affix"><a href="preface.html">Preface</a></li><li class="affix"><a href="intro.html">Introduction</a></li><li class="affix"><a href="part1/index.html">Part One</a></li><li class="affix"><a href="part2/index.html">Part Two</a></li><li class="affix"><a href="part3/index.html">Part Three</a></li><li class="affix"><a href="part4/index.html">Part Four</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="nod.png" alt="alt text" title="NoD" /></p>
+<h3><a class="header" href="#a-hrefprefacehtmlprefacea" id="a-hrefprefacehtmlprefacea"><a href="preface.html">Preface</a></a></h3>
+<h3><a class="header" href="#a-hrefintrohtmlintroductiona" id="a-hrefintrohtmlintroductiona"><a href="intro.html">Introduction</a></a></h3>
+<h3><a class="header" href="#a-hrefpart1indexhtmlpart-onea" id="a-hrefpart1indexhtmlpart-onea"><a href="part1/index.html">Part One</a></a></h3>
+<h3><a class="header" href="#a-hrefpart2indexhtmlpart-twoa" id="a-hrefpart2indexhtmlpart-twoa"><a href="part2/index.html">Part Two</a></a></h3>
+<h3><a class="header" href="#a-hrefpart3indexhtmlpart-threea" id="a-hrefpart3indexhtmlpart-threea"><a href="part3/index.html">Part Three</a></a></h3>
+<h3><a class="header" href="#a-hrefpart4indexhtmlpart-foura" id="a-hrefpart4indexhtmlpart-foura"><a href="part4/index.html">Part Four</a></a></h3>
+<h1><a class="header" href="#preface" id="preface">Preface</a></h1>
+<h3><a class="header" href="#to-the-six-gosvāmīs-of-vṛndāvana" id="to-the-six-gosvāmīs-of-vṛndāvana">To the Six Gosvāmīs of Vṛndāvana</a></h3>
+<p>nānā-śāstra-vicāraṇaika-nipuṇau sad-dharma-saṁsthāpakau lokānāṁ hitakāriṇau tribhuvane mānyau śaraṇyākarau rādhā-kṛṣṇa-padāravinda-bhajanānandena mattālikau vande rūpa-sanātanau raghuyugau śrī-jīva-gopālakau.</p>
+<p>&quot;I offer my respectful obeisances unto the six Gosvāmīs, namely Śrī Sanātana Gosvāmī, Śrī Rūpa Gosvāmī, Śrī Raghunātha Bhaṭṭa Gosvāmī, Śrī Raghunātha dāsa Gosvāmī, Śrī Jīva Gosvāmī and Śrī Gopāla Bhaṭṭa Gosvāmī, who are very expert in scrutinizingly studying all the revealed scriptures with the aim of establishing eternal religious principles for the benefit of all human beings.</p>
+<p>Thus they are honored all over the three worlds, and they are worth taking shelter of because they are absorbed in the mood of the gopīs and are engaged in the transcendental loving service of Rādhā and Kṛṣṇa.&quot;  The Nectar of Devotion is a summary study of Bhakti-rasāmṛta-sindhu, which was written in Sanskrit by Śrīla Rūpa Gosvāmī Prabhupāda.</p>
+<p>He was the chief of the six Gosvāmīs who were the direct disciples of Lord Caitanya Mahāprabhu.</p>
+<p>When he first met Lord Caitanya, Śrīla Rūpa Gosvāmī Prabhupāda was engaged as a minister in the Mohammedan government of Bengal.</p>
+<p>He and his brother Sanātana were then named Sākara Mallik and Dabir Khās respectively, and they held responsible posts as ministers of Nawab Hussain Shah.</p>
+<p>At that time, five hundred years ago, the Hindu society was very rigid, and if a member of the brāhmaṇa caste accepted the service of a Mohammedan ruler he was at once rejected from brāhmaṇa society.</p>
+<p>That was the position of the two brothers, Dabir Khās and Sākara Mallik.</p>
+<p>They belonged to the highly situated sārasvata-brāhmaṇa community, but they were ostracized due to their acceptance of ministerial posts in the government of Hussain Shah.</p>
+<p>It is the grace of Lord Caitanya that He accepted these two exalted personalities as His disciples and raised them to the position of gosvāmīs, the highest position of brahminical culture.</p>
+<p>Similarly, Lord Caitanya accepted Haridāsa Thākur as His disciple although he happened to be born of a Mohammedan family, and Lord Caitanya later on made him the ācārya of the chanting of the holy name of the Lord: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>Lord Caitanya's principle is universal.</p>
+<p>Anyone who knows the science of Kṛṣṇa and is engaged in the service of the Lord is accepted as being in a higher position than a person born in the family of a brāhmaṇa.</p>
+<p>That is the original principle accepted by all Vedic literatures, especially by the Bhagavad-gītā and the Śrīmad-Bhāgavatam.</p>
+<p>The principle of Lord Caitanya's movement in educating and elevating everyone to the exalted post of a gosvāmī is taught in The Nectar of Devotion.</p>
+<p>Lord Caitanya met the two brothers, Dabir Khās and Sākara Mallik, in a village known as Rāmakeli in the district of Maldah, and after that meeting the brothers decided to retire from government service and join Lord Caitanya.</p>
+<p>Sākara Mallik, who was later to become Rūpa Gosvāmī, retired from his post and collected all the money he had accumulated during his service.</p>
+<p>It is described in the Caitanya-caritāmṛta that his accumulated savings in gold coins equalled millions of dollars and filled a large boat.</p>
+<p>He divided the money in a very exemplary manner which should be followed by devotees in particular and by humanity in general.</p>
+<p>Fifty percent of his accumulated wealth was distributed to the Kṛṣṇa conscious persons, namely the brāhmaṇas and the Vaiṣṇavas; twenty-five percent was distributed to relatives; and twenty-five percent was kept against emergency expenditures and personal difficulties.</p>
+<p>Later on when Dabir Khās also proposed to retire, the Nawab was very much agitated and put him into jail.</p>
+<p>But Dabir Khās, who was later to become Śrīla Sanātana Gosvāmī, took advantage of his brother's personal money, which had been deposited with a village banker, and escaped from the prison of Hussain Shah.</p>
+<p>In this way both brothers joined Lord Caitanya Mahāprabhu.</p>
+<p>Rūpa Gosvāmī first met Lord Caitanya at Prayāg (Allahabad, India), and on the Daśāśvamedha bathing ghāt of that holy city the Lord instructed him continually for ten days.</p>
+<p>The Lord particularly instructed Rūpa Gosvāmī on the science of Kṛṣṇa consciousness.</p>
+<p>These teachings of Lord Caitanya to Śrīla Rūpa Gosvāmī Prabhupāda are narrated in our book Teachings of Lord Caitanya.</p>
+<p>Later, Śrīla Rūpa Gosvāmī Prabhupāda elaborated the teachings of the Lord with profound knowledge of revealed scriptures and authoritative references from various Vedic literatures.</p>
+<p>Śrīla Śrīnivāsa Ācārya describes in his prayers to the six Gosvāmīs that they were all highly learned scholars, not only in Sanskrit but also in foreign languages such as Persian and Arabian.</p>
+<p>They very scrutinizingly studied all the Vedic scriptures in order to establish the cult of Caitanya Mahāprabhu on the authorized principles of Vedic knowledge.</p>
+<p>The present Kṛṣṇa consciousness movement is also based on the authority of Śrīla Rūpa Gosvāmī Prabhupāda.</p>
+<p>We are therefore generally known as rūpānugas, or followers in the footsteps of Śrīla Rūpa Gosvāmī Prabhupada.</p>
+<p>It is only for our guidance that Śrīla Rūpa Gosvāmī prepared his book Bhakti-rasāmṛta-sindhu, which is now presented in the form of The Nectar of Devotion.</p>
+<p>Persons engaged in the Kṛṣṇa consciousness movement may take advantage of this great literature and be very solidly situated in Kṛṣṇa consciousness.</p>
+<p>Bhakti means devotional service.</p>
+<p>Every service has some attractive feature which drives the servitor progressively on and on.</p>
+<p>Every one of us within this world is perpetually engaged in some sort of service, and the impetus for such service is the pleasure we derive from it.</p>
+<p>Driven by affection for his wife and children, a family man works day and night.</p>
+<p>A philanthropist works in the same way for love of the greater family, and a nationalist for the cause of his country and countrymen.</p>
+<p>That force which drives the philanthropist, the householder and the nationalist is called rasa, or a kind of mellow (relationship) whose taste is very sweet.</p>
+<p>Bhakti-rasa is a mellow different from the ordinary rasa enjoyed by mundane workers.</p>
+<p>Mundane workers labor very hard day and night in order to relish a certain kind of rasa which is understood as sense gratification.</p>
+<p>The relish or taste of the mundane rasa does not long endure, and therefore mundane workers are always apt to change their position of enjoyment.</p>
+<p>A businessman is not satisfied by working the whole week; therefore, wanting a change for the weekend, he goes to a place where he tries to forget his business activities.</p>
+<p>Then, after the weekend is spent in forgetfulness, he again changes his position and resumes his actual business activities.</p>
+<p>Material engagement means accepting a particular status for some time and then changing it.</p>
+<p>This position of changing back and forth is technically known as bhoga-tyāga, which means a position of alternating sense enjoyment and renunciation.</p>
+<p>A living entity cannot steadily remain either in sense enjoyment or in renunciation.</p>
+<p>Change is going on perpetually, and we cannot be happy in either state because of our eternal constitutional position.</p>
+<p>Sense gratification does not endure for long, and it is therefore called capala-sukha, or flickering happiness.</p>
+<p>For example, an ordinary family man who works very hard day and night and is successful in giving comforts to the members of his family thereby relishes a kind of mellow, but his whole advancement of material happiness immediately terminates along with his body as soon as his life is over.</p>
+<p>Death is therefore taken as the representative of God for the atheistic class of men.</p>
+<p>The devotee realizes the presence of God by devotional service, whereas the atheist realizes the presence of God in the shape of death.</p>
+<p>At death everything is finished, and one has to begin a new chapter of life in a new situation, perhaps higher or lower than the last one.</p>
+<p>In any field of activity, political, social, national or international, the result of our actions will be finished with the end of life. That is sure.</p>
+<p>Bhakti-rasa, however, the mellow relished in the transcendental loving service of the Lord, does not finish with the end of life.</p>
+<p>It continues perpetually and is therefore called amṛta, that which does not die but exists eternally.</p>
+<p>This is confirmed in all Vedic literatures.</p>
+<p>The Bhagavad-gītā says that a little advancement in bhakti-rasa can save the devotee from the greatest danger, that of missing the opportunity for human life.</p>
+<p>The rasas derived from our feelings in social life, in family life, or in the greater family life of altruism, philanthropism, nationalism, socialism, communism, etc., do not guarantee that one's next life will be as a human being.</p>
+<p>We prepare our next life by our actual activities in the present life.</p>
+<p>A living entity is offered a particular type of body as a result of his action in the present body.</p>
+<p>These activities are taken into account by a superior authority known as daiva, or the authority of God.</p>
+<p>This daiva is explained in the Bhagavad-gītā as the prime cause of everything, and in the Śrīmad-Bhāgavatam it is stated that a man takes his next body by daiva-netreṇa, which means by the supervision of the authority of the Supreme.</p>
+<p>In an ordinary sense daiva is explained as destiny.</p>
+<p>Daiva supervision gives us a body selected from 8,400,000 forms; the choice does not depend on our selection, but is awarded to us according to our destiny.</p>
+<p>If our body at present is engaged in the activities of Kṛṣṇa consciousness, then it is guaranteed that we will have at least a human body in our next life.</p>
+<p>A human being engaged in Kṛṣṇa consciousness, even if unable to complete the course of bhakti-yoga, is allowed to take birth in the higher division of human society so that he can automatically further his advancement in Kṛṣṇa consciousness.</p>
+<p>Therefore, all bona fide activities in Kṛṣṇa consciousness are amṛta, or permanent.</p>
+<p>This is the subject matter of The Nectar of Devotion.</p>
+<p>This eternal engagement in bhakti-rasa can be understood by a serious student upon studying The Nectar of Devotion.</p>
+<p>Adoption of bhakti-rasa or Kṛṣṇa consciousness will immediately bring one to an auspicious life free from anxieties and will bless one with transcendental existence, thus minimizing the value of liberation.</p>
+<p>Bhakti-rasa itself is sufficient to produce a feeling of liberation because it attracts the attention of the Supreme Lord, Kṛṣṇa.</p>
+<p>Generally, neophyte devotees are anxious to see Kṛṣṇa or God, but God cannot be seen or known by our present materially blunt senses.</p>
+<p>The process of devotional service as it is recommended in The Nectar of Devotion will gradually elevate one from the material condition of life to the spiritual status, wherein the devotee becomes purified of all designations.</p>
+<p>The senses can then become uncontaminated, being constantly in touch with bhakti-rasa.</p>
+<p>When the purified senses are employed in the service of the Lord, one becomes situated in bhakti- rasa life, and any action performed for the satisfaction of Kṛṣṇa in this transcendental bhakti-rasa stage of life can be relished perpetually.</p>
+<p>When one is thus engaged in devotional service, all varieties of rasas or mellows turn into eternity.</p>
+<p>In the beginning one is trained according to the principles of regulation under the guidance of the ācārya or spiritual master, and gradually, when one is elevated, devotional service becomes automatic and spontaneous eagerness to serve Kṛṣṇa.</p>
+<p>There are twelve kinds of rasas, as will be explained in this book, and by renovating our relationship with Kṛṣṇa in five primary rasas we can live eternally in full knowledge and bliss.</p>
+<p>The basic principle of the living condition is that we have a general propensity to love someone.</p>
+<p>No one can live without loving someone else.</p>
+<p>This propensity is present in every living being.</p>
+<p>Even an animal like a tiger has this loving propensity at least in a dormant stage, and it is certainly present in the human beings.</p>
+<p>The missing point, however, is where to repose our love so that everyone can become happy.</p>
+<p>At the present moment the human society teaches one to love his country or family or his personal self, but there is no information where to repose the loving propensity so that everyone can become happy.</p>
+<p>That missing point is Kṛṣṇa, and The Nectar of Devotion teaches us how to stimulate our original love for Kṛṣṇa and how to be situated in that position where we can enjoy our blissful life.</p>
+<p>In the primary stage a child loves his parents, then his brothers and sisters, and as he daily grows up he begins to love his family, society, community, country, nation, or even the whole human society.</p>
+<p>But the loving propensity is not satisfied even by loving all human society; that loving propensity remains imperfectly fulfilled until we know who is the supreme beloved.</p>
+<p>Our love can be fully satisfied only when it is reposed in Kṛṣṇa.</p>
+<p>This theme is the sum and substance of The Nectar of Devotion, which teaches us how to love Kṛṣṇa in five different transcendental mellows.</p>
+<p>Our loving propensity expands just as a vibration of light or air expands, but we do not know where it ends.</p>
+<p>The Nectar of Devotion teaches us the science of loving every one of the living entities perfectly by the easy method of loving Kṛṣṇa.</p>
+<p>We have failed to create peace and harmony in human society, even by such great attempts as the United Nations, because we do not know the right method.</p>
+<p>The method is very simple, but one has to understand it with a cool head.</p>
+<p>The Nectar of Devotion teaches all men how to perform the simple and natural method of loving Kṛṣṇa, the Supreme Personality of Godhead.</p>
+<p>If we learn how to love Kṛṣṇa, then it is very easy to immediately and simultaneously love every living being.</p>
+<p>It is like pouring water on the root of a tree or supplying food to one's stomach.</p>
+<p>The method of pouring water on the root of a tree or supplying foodstuffs to the stomach is universally scientific and practical, as every one of us has experienced.</p>
+<p>Everyone knows well that when we eat something, or in other words when we put foodstuffs in the stomach, the energy created by such action is immediately distributed throughout the whole body.</p>
+<p>Similarly, when we pour water on the root, the energy thus created is immediately distributed throughout the entirety of even the largest tree.</p>
+<p>It is not possible to water the tree part by part, nor is it possible to feed the different parts of the body separately.</p>
+<p>The Nectar of Devotion will teach us how to turn the one switch that will immediately brighten everything, everywhere.</p>
+<p>One who does not know this method is missing the point of life.</p>
+<p>As far as material necessities are concerned, the human civilization at the present moment is very much advanced in living comfortably, but still we are not happy because we are missing the point.</p>
+<p>The material comforts of life alone are not sufficient to make us happy.</p>
+<p>The vivid example is America: the richest nation of the world, having all facilities for material comfort, is producing a class of men completely confused and frustrated in life.</p>
+<p>I am appealing herewith to such confused men to learn the art of devotional service as directed in The Nectar of Devotion, and I am sure that the fire of material existence burning within their hearts will be immediately extinguished.</p>
+<p>The root cause of our dissatisfaction is that our dormant loving propensity has not been fulfilled despite our great advancement in the materialistic way of life.</p>
+<p>The Nectar of Devotion will give us practical hints how we can live in this material world perfectly engaged in devotional service and thus fulfill all our desires in this life and the next.</p>
+<p>The Nectar of Devotion is not presented to condemn any way of materialistic life, but the attempt is to give information to religionists, philosophers and people in general how to love Kṛṣṇa.</p>
+<p>One may live without material discomfiture, but at the same time he should learn the art of loving Kṛṣṇa.</p>
+<p>At the present moment we are inventing so many ways to utilize our propensity to love, but factually we are missing the real point, Kṛṣṇa.</p>
+<p>We are watering all parts of the tree but missing the tree's root.</p>
+<p>We are trying to keep our body fit by all means, but we are neglecting to supply foodstuffs to the stomach.</p>
+<p>Missing Kṛṣṇa means missing one's self also.</p>
+<p>Real self-realization and realization of Kṛṣṇa go together simultaneously.</p>
+<p>For example, seeing oneself in the morning means seeing the sunrise also; without seeing the sunshine no one can see himself.</p>
+<p>Similarly, unless one has realized Kṛṣṇa there is no question of self-realization.</p>
+<p>The Nectar of Devotion is specifically presented for persons who are now engaged in the Kṛṣṇa consciousness movement.</p>
+<p>I beg to offer my sincere thanks to all my friends and disciples who are helping me to push forward the Kṛṣṇa consciousness movement in the Western countries, and I beg to acknowledge, with thanks, the contribution made by my beloved disciple Śrīmad Jayānanda Brahmacārī.</p>
+<p>My thanks are due as well to the directors of ISKCON Press, who have taken so much care in publishing this great literature.</p>
+<p>Hare Kṛṣṇa.</p>
+<p>A.C.Bhaktivedanta Swami.</p>
+<p>13 April 1970.</p>
+<p>ISKCON Headquarters.</p>
+<p>3764 Watseka Ave.</p>
+<p>Los Angeles, California.</p>
+<h1><a class="header" href="#introduction" id="introduction">Introduction</a></h1>
+<p>Invoking auspiciousness: Lord Śrī Kṛṣṇa is the Supreme Personality of Godhead, the cause of all causes, the reservoir of all rasas, or relationships, which are called neutrality (passive adoration), servitorship, friendship, parenthood, conjugal love, comedy, compassion, fear, chivalry, ghastliness, wonder and devastation.</p>
+<p>He is the supreme attractive form, and by His universal and transcendental attractive features He has captivated all the gopīs, headed by Tārakā, Pālikā, Śyāmā, Lalitā, and ultimately, Śrīmatī Rādhārāṇī.</p>
+<p>Let His Lordship's grace be on us so that there may not be any hindrance in the execution of this duty of writing The Nectar of Devotion, impelled by His Divine Grace Śrī Śrīmad Bhaktisiddhānta Sarasvatī Gosvāmī Prabhupāda.</p>
+<p>Let me offer my respectful obeisances unto the lotus feet of Śrīla Rūpa Gosvāmī Prabhupāda and of Śrīla Bhaktisiddhānta Sarasvatī Gosvāmī Prabhupāda, by whose inspiration I have been engaged in the matter of compiling this summary study of Bhakti-rasāmṛta-sindhu.</p>
+<p>This is the sublime science of devotional service as propounded by Śrī Caitanya Mahāprabhu, who appeared 500 years ago in West Bengal, India, to propagate the movement of Kṛṣṇa consciousness.</p>
+<p>Śrīla Rūpa Gosvāmī begins his great book by offering his respectful obeisances unto Śrī Sanātana Gosvāmī, who is his elder brother and spiritual master, and he prays that Bhakti-rasāmṛta-sindhu may be very pleasing to him.</p>
+<p>He further prays that by residing in that ocean of nectar he may always feel transcendental pleasure in the service of Rādhā and Kṛṣṇa.</p>
+<p>Let us offer our respectful obeisances to all the great devotees and ācāryas (holy teachers), who are compared with sharks in the great ocean of nectar and who do not care for the various rivers of liberation.</p>
+<p>Impersonalists are very fond of merging into the Supreme, like rivers that come down and merge into the ocean.</p>
+<p>The ocean can be compared with liberation, and the rivers with all the different paths of liberation.</p>
+<p>The impersonalists are dwelling in the river water, which eventually comes to mix with the ocean.</p>
+<p>They have no information, however, that within the ocean, as within the river, there are innumerable aquatic living entities.</p>
+<p>The sharks who dwell in the ocean do not care for the rivers which are gliding down into it.</p>
+<p>The devotees eternally live in the ocean of devotional service, and they do not care for the rivers.</p>
+<p>In other words, those who are pure devotees always remain in the ocean of transcendental loving service to the Lord and have no business with the other processes, which are compared to the rivers that only gradually come to the ocean.</p>
+<p>Śrīla Rūpa Gosvāmī prays to his spiritual master, Śrīla Sanātana Gosvāmī, for the protection of Bhakti-rasāmṛta-sindhu-the Ocean of the Pure Nectar of Devotional Service-from the argumentative logicians who unnecessarily meddle in the science of service to the Lord.</p>
+<p>He compares their arguments and logic to volcanic eruptions in the midst of the ocean.</p>
+<p>In the midst of the ocean such volcanic eruptions can do very little harm, and similarly, those who are against devotional service to the Lord and who put forward many philosophical theses about the ultimate transcendental realization cannot disturb this great ocean of devotional service.</p>
+<p>The author of Bhakti-rasāmṛta-sindhu, Śrīla Rūpa Gosvāmī, very humbly submits that he is just trying to spread Kṛṣṇa consciousness all over the world, although he humbly thinks himself unfit for this work.</p>
+<p>That should be the attitude of all preachers of the Kṛṣṇa consciousness movement, following in the footsteps of Śrīla Rūpa Gosvāmī.</p>
+<p>We should never think of ourselves as great preachers, but should always consider that we are simply instrumental to the previous ācāryas, and simply by following in their footsteps we may be able to do something for the benefit of suffering humanity.</p>
+<p>Bhakti-rasāmṛta-sindhu is divided into four parts, just as the ocean is sometimes divided into four parts, and there are different sections within each of these four divisions.</p>
+<p>Originally in Bhakti-rasāmṛta-sindhu, the ocean is divided like the watery ocean into east, west, north and south, while the sub-sections within these different divisions are called waves.</p>
+<p>As in the ocean there are always different waves, either on the eastern side, the western side, the northern side or the southern side, so similarly Bhaktirasāmṛta-sindhu has different waves.</p>
+<p>In the first part there are four waves, the first being a general description of devotional service.</p>
+<p>The second concerns the regulative principles for executing devotional service, and the third wave devotional service in ecstasy.</p>
+<p>In the fourth is the ultimate goal, love of God.</p>
+<p>These will be explicitly described along with their different symptoms.</p>
+<p>The authorized descriptions of bhakti, or devotional service, following in the footsteps of previous ācāryas, can be summarized in the following statement by Śrīla Rūpa Gosvāmī: &quot;First-class devotional service is known by one's tendency to be fully engaged in Kṛṣṇa consciousness, serving the Lord favorably.&quot; The purport is that one may also be in Kṛṣṇa consciousness unfavorably, but that cannot be counted as pure devotional service.</p>
+<p>Pure devotional service should be free from the desire for any material benefit or for sense gratification, as these desires are cultivated through fruitive activities and philosophical speculation.</p>
+<p>Generally, people are engaged in different activities to get some material profit, while most philosophers are engaged in proposing transcendental realization through volumes of word jugglery and speculation.</p>
+<p>Pure devotional service must always be free from such fruitive activities and philosophical speculations.</p>
+<p>One has to learn Kṛṣṇa consciousness or pure devotional service from the authorities by spontaneous loving service.</p>
+<p>This devotional service is a sort of cultivation.</p>
+<p>It is not simply inaction for people who like to be inactive or devote their time to silent meditation.</p>
+<p>There are many different methods for people who want this, but cultivation of Kṛṣṇa consciousness is different.</p>
+<p>The particular word used by Śrīla Rūpa Gosvāmī in this connection is anuśīlana, or cultivation by following the predecessor teachers (ācāryas).</p>
+<p>As soon as we say &quot;cultivation,&quot; we must refer to activity.</p>
+<p>Without activity, consciousness alone cannot help us.</p>
+<p>All activities may be divided into two classes: one class may be for achieving a certain goal, and the other may be for avoiding some unfavorable circumstance.</p>
+<p>In Sanskrit, these activities are called pravṛtti and nivṛttipositive and negative action.</p>
+<p>There are many examples of negative action.</p>
+<p>For instance, a diseased person has to be cautious and take medicine in order to avoid some unfavorable illness.</p>
+<p>Those who are cultivating spiritual life and executing devotional service are always engaged in activity.</p>
+<p>Such activity can be performed with the body or with the mind.</p>
+<p>Thinking, feeling and willing are all activities of the mind, and when we will to do something, the activity comes to be manifest by the gross bodily senses.</p>
+<p>Thus, in our mental activities we should always try to think of Kṛṣṇa and try to plan how to please Him, following in the footsteps of the great ācāryas and the personal spiritual master.</p>
+<p>There are activities of the body, activities of the different senses and activities of speech.</p>
+<p>A Kṛṣṇa conscious person engages his words in preaching the glories of the Lord.</p>
+<p>This is called kīrtana.</p>
+<p>And by his mind a Kṛṣṇa conscious person always thinks of the activities of the Lord-as He is speaking on the Battlefield of Kurukṣetra or engaging in His various pastimes at Vṛndāvana with His devotees.</p>
+<p>In this way one can always think of the activities and pastimes of the Lord.</p>
+<p>This is the mental culture of Kṛṣṇa consciousness.</p>
+<p>Similarly, we can offer many services with our bodily activities.</p>
+<p>But all such activities must be in relationship with Kṛṣṇa.</p>
+<p>This relationship is established by connecting oneself with the bona fide spiritual master who is the direct representative of Kṛṣṇa in disciplic succession.</p>
+<p>Therefore, the execution of Kṛṣṇa conscious activities with the body should be directed by the spiritual master and then performed with faith.</p>
+<p>The connection with the spiritual master is called initiation.</p>
+<p>From the date of initiation by the spiritual master, the connection between Kṛṣṇa and a person cultivating Kṛṣṇa consciousness is established.</p>
+<p>Without initiation by a bona fide spiritual master, the actual connection with Kṛṣṇa consciousness is never performed.</p>
+<p>This cultivation of Kṛṣṇa consciousness is not material.</p>
+<p>The Lord has generally three energies-namely, the external energy, the internal energy, and the marginal energy.</p>
+<p>The living entities are called marginal energy, and the material cosmic manifestation is the action of the external or material energy.</p>
+<p>Then there is the spiritual world, which is a manifestation of the internal energy.</p>
+<p>The living entities, who are called marginal energy, perform material activities when acting under the inferior external energy.</p>
+<p>And when they engage in activities under the internal spiritual energy, their activities are called Kṛṣṇa conscious.</p>
+<p>This means that those who are great souls or great devotees do not act under the spell of material energy, but act instead under the protection of the spiritual energy.</p>
+<p>Any activities done in devotional service or in Kṛṣṇa consciousness are directly under the control of spiritual energy.</p>
+<p>In other words, energy is a sort of strength, and this strength can be spiritualized by the mercy of both the bona fide spiritual master and Kṛṣṇa.</p>
+<p>In the Caitanya-caritāmṛta, by Kṛṣṇadāsa Kavirāja Gosvāmī, Lord Caitanya states that it is a fortunate person who comes in contact with a bona fide spiritual master by the grace of Kṛṣṇa.</p>
+<p>One who is serious about spiritual life is given by Kṛṣṇa the intelligence to come in contact with a bona fide spiritual master, and then by the grace of the spiritual master one becomes advanced in Kṛṣṇa consciousness.</p>
+<p>In this way the whole jurisdiction of Kṛṣṇa consciousness is directly under the spiritual energyKṛṣṇa and the spiritual master.</p>
+<p>This has nothing to do with the material world.</p>
+<p>When we speak of Kṛṣṇa we refer to the Supreme Personality of Godhead, along with His many expansions.</p>
+<p>He is expanded by His plenary parts and parcels, His differentiated parts and parcels and His different energies.</p>
+<p>Kṛṣṇa, in other words, means everything and includes everything.</p>
+<p>Generally, however, we should understand Kṛṣṇa to mean Kṛṣṇa and His personal expansions.</p>
+<p>Kṛṣṇa expands Himself as Baladeva, Saṅkarṣaṇa, Vāsudeva, Aniruddha, Pradyumna, Rāma, Nṛsiṁha and Varāha, as well as many other incarnations and innumerable Viṣṇu expansions.</p>
+<p>These are described in the Śrīmad-Bhāgavatam to be as numerous as the uncountable waves.</p>
+<p>So Kṛṣṇa includes all such expansions, as well as His pure devotees.</p>
+<p>In the Brahma-saṁhitā it is stated that Kṛṣṇa's expansions are all complete in eternity, blissfulness and cognizance.</p>
+<p>Devotional service means to prosecute Kṛṣṇa conscious activities which are favorable to the transcendental pleasure of the Supreme Lord Kṛṣṇa, and any activities which are not favorable to the transcendental favor of the Lord cannot be accepted as devotional service.</p>
+<p>For example, great demons like Rāvaṇa, Kaṁsa and Hiraṇyakaśipu were always thinking of Kṛṣṇa, but they were thinking of Him as their enemy.</p>
+<p>This sort of thinking cannot be accepted as bhakti, or Kṛṣṇa consciousness.</p>
+<p>The impersonalists sometimes misunderstand devotional service in such a way that they divide Kṛṣṇa from His paraphernalia and pastimes.</p>
+<p>For example, the Bhagavad- gītā is spoken on the battlefield of Kurukṣetra, and the impersonalists say that although Kṛṣṇa is of interest, the battlefield of Kurukṣetra isn't.</p>
+<p>The devotees, however, also know that the battlefield of Kurukṣetra by itself has nothing to do with their business, but in addition they know that &quot;Kṛṣṇa&quot; does not mean just Kṛṣṇa alone.</p>
+<p>He is always with His associates and paraphernalia.</p>
+<p>For instance, if someone says, &quot;Give something to eat to the man with the weapons,&quot; the eating process is done by the man and not by the weapons.</p>
+<p>Similarly, in Kṛṣṇa consciousness, a devotee may be interested in the paraphernalia and locations-such as the battlefield of Kurukṣetra-which are associated with Kṛṣṇa, but he is not concerned with simply any battlefield.</p>
+<p>He is concerned with Kṛṣṇa-His speech, His instructions, etc.</p>
+<p>It is because Kṛṣṇa is there that the battlefield is so important.</p>
+<p>This is the summary understanding of what Kṛṣṇa consciousness is.</p>
+<p>Without this understanding one is sure to misunderstand why the devotees are interested in the battlefield of Kurukṣetra.</p>
+<p>One who is interested in Kṛṣṇa becomes interested in His different pastimes and activities.</p>
+<p>The definition of a pure devotee, as given by Rūpa Gosvāmī in Bhaktirasāmṛta-sindhu, can be summarized thus: his service is favorable and is always in relation to Kṛṣṇa.</p>
+<p>In order to keep the purity of such Kṛṣṇa conscious activities, one must be freed from all material desires and philosophical speculation.</p>
+<p>Any desire except for the service of the Lord is called material desire.</p>
+<p>And philosophical speculation refers to the sort of speculation which ultimately arrives at a conclusion of voidism or impersonalism.</p>
+<p>This conclusion is useless for a Kṛṣṇa conscious person.</p>
+<p>Only rarely by philosophical speculation can one reach the conclusion of worshiping Vāsudeva, Kṛṣṇa.</p>
+<p>This is confirmed in the Bhagavad-gītā itself.</p>
+<p>The ultimate end of philosophical speculation, then, must be Kṛṣṇa, with the understanding that Kṛṣṇa is everything, the cause of all causes, and that one should therefore surrender unto Him.</p>
+<p>If this ultimate goal is reached, then philosophical advancement is favorable, but if the conclusion of philosophical speculation is voidism or impersonalism, that is not bhakti.</p>
+<p>Karma or fruitive activities are sometimes understood to be ritualistic activities.</p>
+<p>There are many persons who are very much attracted by the ritualistic activities described in the Vedas.</p>
+<p>But if one becomes attracted simply to ritualistic activities without understanding Kṛṣṇa, his activities are unfavorable to Kṛṣṇa consciousness.</p>
+<p>Actually, Kṛṣṇa consciousness can be based simply on hearing, chanting, remembering, etc.</p>
+<p>Described in the Śrīmad- Bhāgavatam are nine different processes, besides which everything done is unfavorable to Kṛṣṇa consciousness.</p>
+<p>Thus, one should always be guarding against falldowns.</p>
+<p>Śrīla Rūpa Gosvāmī has also mentioned in this definition of bhakti the word jñāna-karmādi.</p>
+<p>This karmādi (fruitive work) consists of activities which are unable to help one attain to pure devotional service.</p>
+<p>Many forms of so-called renunciation are also not favorable to Kṛṣṇa conscious devotional service.</p>
+<p>Śrīla Rūpa Gosvāmī has also quoted a definition from the Nāradapañcarātra, as follows: &quot;One should be free from all material designations and must be cleansed of all material contamination by Kṛṣṇa consciousness.</p>
+<p>He should be restored to his pure identity, where he engages his senses in the service of the proprietor of the senses.&quot; So when our senses are engaged for the actual proprietor of the senses, that is called devotional service.</p>
+<p>In our conditional state, our senses are engaged in serving these bodily demands.</p>
+<p>When the same senses are engaged in executing the order of Kṛṣṇa, it is called bhakti.</p>
+<p>As long as one identifies himself as belonging to a certain family, a certain society or a certain person, he is said to be covered with designations.</p>
+<p>When one is fully aware that he does not belong to any family, society or country, but is eternally related to Kṛṣṇa, he then realizes that his energy should be employed not in the interests of so-called family, society or country, but in the interests of Kṛṣṇa.</p>
+<p>This is purity of purpose and the platform of pure devotional service in Kṛṣṇa consciousness.</p>
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1 - Nectar of Devotion - Part I</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part2/index.html&quot;&gt;Part Two&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot; class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch2.html&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch3.html&quot;&gt;3&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch4.html&quot;&gt;4&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch5.html&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch6.html&quot;&gt;6&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch7.html&quot;&gt;7&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch8.html&quot;&gt;8&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch9.html&quot;&gt;9&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch10.html&quot;&gt;10&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch11.html&quot;&gt;11&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch12.html&quot;&gt;12&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch13.html&quot;&gt;13&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch14.html&quot;&gt;14&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch15.html&quot;&gt;15&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch16.html&quot;&gt;16&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch17.html&quot;&gt;17&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch18.html&quot;&gt;18&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch19.html&quot;&gt;19&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Nectar of Devotion - Part I&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;h3&gt;&lt;a class=&quot;header&quot; href=&quot;#characteristics-of-pure-devotional-service&quot; id=&quot;characteristics-of-pure-devotional-service&quot;&gt;Characteristics of Pure Devotional Service&lt;/a&gt;&lt;/h3&gt;
+</code></pre>
+<p>In the Śrīmad-Bhāgavatam, Third Canto, 29th Chapter, 10th verse, Śrīla Kapiladeva, while instructing His mother, has given the following characteristics of pure devotional service: &quot;My dear mother, those who are My pure devotees, and who have no desire for material benefit or philosophical speculation, have their minds so much engaged in My service that they are never interested in asking Me for anything-except to be engaged in that service.</p>
+<p>They do not even beg to live in My abode with Me.&quot; There are five kinds of liberation, namely to become one with the Lord, to live with the Supreme Lord on the same planet, to have the same features as the Lord, to enjoy the same opulences as the Lord, and to live as a companion of the Lord.</p>
+<p>A devotee, not to speak of rejecting material sense gratification, does not even want any of the five kinds of liberation.</p>
+<p>He is satisfied simply by discharging loving service to the Lord.</p>
+<p>That is the characteristic of pure devotion.</p>
+<p>In the above statement by Kapiladeva from the Śrīmad- Bhāgavatam, the actual position of a pure devotee is described, and the primary characteristics of devotional service are also defined.</p>
+<p>Further characteristics of devotional service are described by Rūpa Gosvāmī with evidences from different scriptures.</p>
+<p>He states that there are six characteristics of pure devotional service, which are as follows:</p>
+<ol>
+<li>
+<p>Pure devotional service brings immediate relief from all kinds of material distress.</p>
+</li>
+<li>
+<p>Pure devotional service is the beginning of all auspiciousness.</p>
+</li>
+<li>
+<p>Pure devotional service automatically puts one in transcendental pleasure.</p>
+</li>
+<li>
+<p>Pure devotional service is rarely achieved.</p>
+</li>
+<li>
+<p>Those in pure devotional service deride even the conception of liberation.</p>
+</li>
+<li>
+<p>Pure devotional service is the only means to attract Kṛṣṇa.</p>
+</li>
+</ol>
+<p>Kṛṣṇa is all-attractive, but pure devotional service attracts even Him.</p>
+<p>This means that pure devotional service is even transcendentally stronger than Kṛṣṇa Himself, because it is Kṛṣṇa's internal potency.</p>
+<p>Relief from Material Distress In the Bhagavad-gītā, the Lord says that one should surrender unto Him, giving up all other engagements.</p>
+<p>The Lord also gives His word there that He will protect such surrendered souls from the reactions of all sinful activities.</p>
+<p>Śrīla Rūpa Gosvāmī says that the distresses from sinful activities are due both to the sins themselves and to sins committed in our past lives.</p>
+<p>Generally, one commits sinful activities due to ignorance.</p>
+<p>But ignorance is no excuse for evading the reaction-sinful activities.</p>
+<p>Sinful activities are of two kinds: those which are mature and those which are not mature.</p>
+<p>The sinful activities for which we are suffering at the present moment are called mature.</p>
+<p>The many sinful activities stored within us for which we have not yet suffered are considered immature.</p>
+<p>For example, a man may have committed criminal acts but not yet arrested for them.</p>
+<p>Now, as soon as he is detected, arrest is awaiting him.</p>
+<p>Similarly, for some of our sinful activities we are awaiting distresses in the future, and for others, which are mature, we are suffering at the present moment.</p>
+<p>In this way there is a chain of sinful activities and their concomitant distresses, and the conditioned soul is suffering life after life due to these sins.</p>
+<p>He is suffering in the present life the results of sinful activities from his past life, and he is meanwhile creating further sufferings for his future life.</p>
+<p>Mature sinful activities are exhibited if one is suffering from some chronic disease, if one is suffering from some legal implication, if one is born in a low and degraded family, or if one is uneducated or very ugly.</p>
+<p>There are many results of past sinful activities for which we are suffering at the present moment, and we may be suffering in the future due to our present sinful activities.</p>
+<p>But all of these reactions to sinful deeds can immediately be stopped if we take to Kṛṣṇa consciousness.</p>
+<p>As evidence for this, Rūpa Gosvāmī quotes from the Śrīmad-Bhāgavatam, Eleventh Canto, 14th Chapter, 18th verse.</p>
+<p>This verse is in connection with Lord Kṛṣṇa's instruction to Uddhava, where He says, &quot;My dear Uddhava, devotional service unto Me is just like a blazing fire which can burn into ashes unlimited fuel supplied to it.&quot; The purport is that as the blazing fire can burn any amount of fuel to ashes, so devotional service to the Lord in Kṛṣṇa consciousness can burn up all the fuel of sinful activities.</p>
+<p>For example, in the Gītā Arjuna thought that fighting was a sinful activity, but Kṛṣṇa engaged him on the battlefield under His order, and so the fighting became devotional service.</p>
+<p>Therefore, Arjuna was not subjected to any sinful reaction.</p>
+<p>Śrīla Rūpa Gosvāmī quotes another verse from the Third Canto of Śrīmad-Bhāgavatam, 33rd Chapter, 6th verse, in which Devahūti addresses her son, Kapiladeva and says, &quot;My dear Lord, there are nine different kinds of devotional service, beginning from hearing and chanting.</p>
+<p>Anyone who hears about Your pastimes, who chants about Your glories, who offers You obeisances, who thinks of You and, in this way, executes any of the nine kinds of devotional service-even if he is born in a family of dog-eaters [the lowest grade of mankind]-becomes immediately qualified to perform sacrifices.&quot; As such, for anyone who is actually engaged in devotional service in full Kṛṣṇa consciousness, how is it possible that he has not become purified? It is not possible.</p>
+<p>One who is engaged in Kṛṣṇa consciousness and devotional service has without doubt become freed from all contaminations of material sinful activities.</p>
+<p>Devotional service therefore has the power to actually nullify all kinds of reactions to sinful deeds.</p>
+<p>A devotee is nevertheless always alert not to commit any sinful activities; this is his specific qualification as a devotee.</p>
+<p>Thus the Śrīmad-Bhāgavatam states that by performing devotional service a person who was born even in a family of dog-eaters may become eligible to take part in the performance of the ritualistic ceremonies recommended in the Vedas.</p>
+<p>It is implicit in this statement that a person born into a family of dog-eaters is generally not fit for performing yajña, or sacrifice.</p>
+<p>The priestly caste in charge of performing these ritualistic ceremonies recommended in the Vedas is called the brāhmaṇa order.</p>
+<p>Unless one is a brāhmaṇa, he cannot perform these ceremonies.</p>
+<p>A person is born in a brāhmaṇa family or in a family of dog-eaters due to his past activities.</p>
+<p>If a person is born in a family of dog-eaters it means that his past activities are all sinful.</p>
+<p>But if even such a person takes to the path of devotional service and begins to chant the holy names of the LordHare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare-he is at once fit to perform the ritualistic ceremonies.</p>
+<p>This means that his sinful reactions have immediately become neutralized.</p>
+<p>It is stated in the Padma Purāṇa that there are four kinds of effects due to sinful activities, which are listed as follows: 1) the effect which is not yet fructified, 2) the effect which is lying as seed, 3) the effect which is already mature, and 4) the effect which is almost mature.</p>
+<p>It is also stated that all these four effects become immediately vanquished for those who surrender unto the Supreme Personality of Godhead, Viṣṇu, and become engaged in His devotional service in full Kṛṣṇa consciousness.</p>
+<p>Those effects described as &quot;almost mature&quot; refer to the distress from which one is suffering at present, and the effects &quot;lying as seed&quot; means that in the core of the heart there is a certain stock of sinful desires which are like seeds.</p>
+<p>The Sanskrit word kūṭam means that they are almost ready to produce the seed, or the effect of the seed.</p>
+<p>An &quot;immature effect&quot; refers to the case where the seedling has not begun.</p>
+<p>From this statement of Padma Purāṇa it is understood that material contamination is very subtle.</p>
+<p>Its beginning, its fruition and results, and how one suffers such results in the form of distress, are part of a great chain.</p>
+<p>When one catches some disease, it is often very difficult to ascertain the cause of the disease, where it originated, and how it is maturing.</p>
+<p>The suffering of a disease, however, does not appear all of a sudden.</p>
+<p>It actually takes time.</p>
+<p>And, as in the medical field, for precaution's sake, the doctor injects a vaccination to prevent the growing of contamination, similarly, the practical injection to stop all the fructifications of the seeds of our sinful activities is simply engagement in Kṛṣṇa consciousness.</p>
+<p>In this connection, Śukadeva Gosvāmī speaks in the Sixth Canto of Śrīmad-Bhāgavatam, 2nd Chapter, 17th verse, about the story of Ajāmila, who began life as a fine and dutiful brāhmaṇa, but in his young manhood became wholly corrupted by a prostitute.</p>
+<p>At the end of his wicked life, just by calling the name of &quot;Nārāyaṇa [Kṛṣṇa],&quot; he was saved despite so much sin.</p>
+<p>Śukadeva points out that austerity, charity and the performance of ritualistic ceremonies for counteracting sinful activities are recommended processes, but that by performing them one cannot remove the sinful desire-seed from the heart, as was the case with Ajāmila in his youth.</p>
+<p>This sinful desire-seed can be removed only by achieving Kṛṣṇa consciousness.</p>
+<p>And this can be accomplished very easily by chanting the mahā-mantra, or Hare Kṛṣṇa mantra, as recommended by Śrī Caitanya Mahāprabhu.</p>
+<p>In other words, unless one adopts the path of devotional service, he cannot be one hundred percent clean from all the reactions of sinful activities.</p>
+<p>By performing Vedic ritualistic activities, by giving money in charity and by undergoing austerity, one can temporarily become free from the reactions of sinful activities, but at the next moment he must again become engaged in sinful activities.</p>
+<p>For example, a person suffering from venereal disease on account of excessive indulgence in sex life has to undergo some severe pain in medical treatment, and he is then cured for the time being.</p>
+<p>But because he has not been able to remove the sex desire from his heart, he must again indulge in the same thing and become a victim of the same disease.</p>
+<p>So medical treatment may give temporary relief from the distress of such venereal disease, but unless one is trained to understand that sex life is abominable, it is impossible to be saved from such repeated distress.</p>
+<p>Similarly, the ritualistic performances, charity and austerity, which are recommended in the Vedas may temporarily stop one from acting in sinful ways, but as long as the heart is not clear, one will have to repeat sinful activities again and again.</p>
+<p>Another example is given in the Śrīmad-Bhāgavatam of the elephant who enters into a lake and takes a bath very seriously, cleansing his body thoroughly.</p>
+<p>Then as soon as he comes onto shore he again takes some dust from the earth and throws it over his body.</p>
+<p>Similarly, a person who is not trained in Kṛṣṇa consciousness cannot become completely free from the desire for sinful activities.</p>
+<p>Neither the yoga process, nor philosophical speculations, nor fruitive activities can save one from the seeds of sinful desires.</p>
+<p>Only by being engaged in devotional service can this be done.</p>
+<p>There is another evidence in the Fourth Canto of Śrīmad- Bhāgavatam, 22nd Chapter, 37th verse, wherein Sanat-kumāra says, &quot;My dear King, the false ego of a human being is so strong that it keeps him in material existence as if tied up by a strong rope.</p>
+<p>Only the devotees can cut off the knot of this strong rope very easily, by engaging themselves in Kṛṣṇa consciousness.</p>
+<p>Others, who are not in Kṛṣṇa consciousness but are trying to become great mystics or great ritual performers, cannot advance like the devotees.</p>
+<p>Therefore, it is the duty of everyone to engage himself in the activities of Kṛṣṇa consciousness in order to be freed from the tight knot of false ego and engagement in material activities.&quot; This tight knot of false ego is due to ignorance.</p>
+<p>As long as one is ignorant about his identification, he is sure to act wrongly and thereby become entangled in material contamination.</p>
+<p>This ignorance of factual knowledge can also be dissipated by Kṛṣṇa consciousness, as is confirmed in the Padma Purāṇa as follows: &quot;Pure devotional service in Kṛṣṇa consciousness is the highest enlightenment, and when such enlightenment is there, it is just like a blazing forest fire, killing all the inauspicious snakes of desire.&quot; The example is being given in this connection that when there is a forest fire the extensive blazing automatically kills all the snakes in the forest.</p>
+<p>There are many, many snakes on the ground of the forest, and when a fire takes place, it burns the dried foliage, and the snakes are immediately attacked.</p>
+<p>Animals who have four legs can flee from the fire or can at least try to flee, but the snakes are immediately killed.</p>
+<p>Similarly, the blazing fire of Kṛṣṇa consciousness is so strong that the snakes of ignorance are immediately killed.</p>
+<p>Kṛṣṇa Consciousness is All-Auspicious Śrīla Rūpa Gosvāmī has given a definition of auspiciousness.</p>
+<p>He says that actual auspiciousness means welfare activities for all the people of the world.</p>
+<p>At the present moment groups of people are engaged in welfare activities in terms of society, community or nation.</p>
+<p>There is even an attempt in the form of the United Nations for world-help activity.</p>
+<p>But due to the shortcomings of limited national activities, such a general mass welfare program for the whole world is not practically possible.</p>
+<p>The Kṛṣṇa consciousness movement, however, is so nice that it can render the highest benefit to the entire human race.</p>
+<p>Everyone can be attracted by this movement, and everyone can feel the result.</p>
+<p>Therefore, Rūpa Gosvāmī and other learned scholars agree that a broad propaganda program for the Kṛṣṇa consciousness movement of devotional service all over the world is the highest humanitarian welfare activity.</p>
+<p>How the Kṛṣṇa consciousness movement can attract the attention of the whole world and how each and every man can feel pleasure in this Kṛṣṇa consciousness is stated in the Padma Purāṇa as follows: &quot;A person who is engaged in devotional service in full Kṛṣṇa consciousness is to be understood to be doing the best service to the whole world and to be pleasing everyone in the world.</p>
+<p>In addition to human society, he is pleasing even the trees and animals because they also become attracted by such a movement.&quot; A practical example of this was shown by Lord Caitanya when He was traveling through the forests of Jharikhanda in central India for spreading His saṅkīrtana movement.</p>
+<p>The tigers, the elephants, the deer and all the other wild animals joined Him and were participating, in their own ways, by dancing and chanting Hare Kṛṣṇa.</p>
+<p>Furthermore, a person engaged in Kṛṣṇa consciousness, acting in devotional service, can develop all the good qualities that are generally found in the demigods.</p>
+<p>It is said by Śukadeva Gosvāmī in the Fifth Canto of Śrīmad-Bhāgavatam, 18th Chapter, 12thverse, &quot;My dear King, persons who have unflinching faith in Kṛṣṇa and are without any duplicity can develop all the good qualities of the demigods.</p>
+<p>On account of a devotee's high grade of Kṛṣṇa consciousness even the demigods like to live with him, and therefore it can be understood that the qualities of the demigods have developed within his body.&quot; On the other hand, a person who is not in Kṛṣṇa consciousness has no good qualities.</p>
+<p>He may be highly educated from the academic point of view, but in the actual field of his activities he can be seen to be baser than the animals.</p>
+<p>Even though a person is highly educated academically, if he cannot go beyond the sphere of mental activities then he is sure to perform only material activities and thus remain impure.</p>
+<p>There are so many persons in the modern world who have been highly educated in the materialistic universities, but it is seen that they cannot take up the movement of Kṛṣṇa consciousness and develop the high qualities of the demigods.</p>
+<p>For example, a Kṛṣṇa conscious boy, even if he is not very well educated by the university standard, can immediately give up all illicit sex life, gambling, meat-eating and intoxication; whereas those who are not in Kṛṣṇa consciousness, although very highly educated, are often drunkards, meat-eaters, sex-mongers and gamblers.</p>
+<p>These are practical proofs of how a Kṛṣṇa conscious person becomes highly developed in good qualities, whereas a person who is not in Kṛṣṇa consciousness cannot do so.</p>
+<p>We experience that even a young boy in Kṛṣṇa consciousness is unattached to cinemas, nightclubs, naked dance shows, restaurants, liquor shops, etc.</p>
+<p>He becomes completely freed.</p>
+<p>He saves his valuable time from being extravagantly spent in the way of smoking, drinking, attending the theater and dancing.</p>
+<p>One who is not in Kṛṣṇa consciousness usually cannot sit silently even for half an hour.</p>
+<p>The yoga system teaches that if you become silent you will realize that you are God.</p>
+<p>This system may be all right for materialistic persons, but how long will they be able to keep themselves silent? Artificially, they may sit down for so-called meditation, but immediately after their yogic performance they will engage themselves again in such activities as illicit sex life, gambling, meat-eating and many other nonsensical things.</p>
+<p>But a Kṛṣṇa conscious person gradually elevates himself without endeavoring for this so-called silent meditation.</p>
+<p>Simply because he is engaged in Kṛṣṇa consciousness he automatically gives up all this nonsense and develops a high character.</p>
+<p>One develops the highest character by becoming a pure devotee of Kṛṣṇa.</p>
+<p>The conclusion is that no one can truly have any good qualities if he is lacking Kṛṣṇa consciousness.</p>
+<p>Happiness in Kṛṣṇa Consciousness Śrīla Rūpa Gosvāmī has analyzed the different sources of happiness.</p>
+<p>He has divided happiness into three categories, which are: 1) happiness derived from material enjoyment, 2) happiness derived by identifying oneself with the Supreme Brahman and 3) happiness derived from Kṛṣṇa consciousness.</p>
+<p>In the Tantra-śāstra Lord Śiva speaks to his wife, Satī, in this way: &quot;My dear wife, a person who has surrendered himself at the lotus feet of Govinda and who has thus developed pure Kṛṣṇa consciousness can be very easily awarded all the perfections desired by the impersonalists; and beyond this, he can enjoy the happiness achieved by the pure devotees.&quot; Happiness derived from pure devotional service is the highest because it is eternal.</p>
+<p>But the happiness derived from material perfection or understanding oneself to be Brahman is inferior because it is temporary.</p>
+<p>There is no preventing one's falling down from material happiness, and there is even every chance of falling down from the spiritual happiness derived out of identifying oneself with the impersonal Brahman.</p>
+<p>It has been seen that great māyāvādī (impersonalist) sannyāsīs-very highly educated and almost realized souls-may sometimes take to political activities or to social welfare activities.</p>
+<p>The reason is that they actually do not derive any ultimate transcendental happiness in the impersonal understanding and therefore must come down to the material platform and take to such mundane affairs.</p>
+<p>There are many instances, especially in India, where these māyāvādī sannyāsīs descend to the material platform again.</p>
+<p>But a person who is fully in Kṛṣṇa consciousness will never return to any sort of material platform.</p>
+<p>However alluring and attracting they may be, he always knows that no material welfare activities can be compared with the spiritual activity of Kṛṣṇa consciousness.</p>
+<p>The mystic perfections achieved by actually successful yogīs are eight in number.</p>
+<p>Aṇimā-siddhi refers to the power by which one can become so small that he can enter into a stone.</p>
+<p>Modern scientific improvements also enable us to enter into stone because they provide for excavating so many subways, penetrating the hills, etc.</p>
+<p>So, aṇimā-siddhi, the mystic perfection of trying to enter into stone, has also been achieved by material science.</p>
+<p>Similarly, all of the yoga-siddhis, or perfections, are material arts.</p>
+<p>For example, in one yoga-siddhi there is development of the power to become so light that one can float in the air or on water.</p>
+<p>That is also being performed by modern scientists.</p>
+<p>They are flying in the air, they are floating on the surface of the water, and they are traveling under the water.</p>
+<p>After comparing all these mystic yoga-siddhis to materialistic perfections it is found that the materialistic scientists try for the same perfections.</p>
+<p>So actually there is no difference between mystic perfection and materialistic perfection.</p>
+<p>A German scholar once said that the socalled yoga perfections have already been achieved by the modern scientists, and so he was not concerned with them.</p>
+<p>He intelligently went to India to learn how he could understand his eternal relationship with the Supreme Lord by means of bhakti-yoga, devotional service.</p>
+<p>Of course, in the categories of mystic perfection there are certain processes which the material scientists have not yet been able to develop.</p>
+<p>For instance, a mystic yogī can enter into the sun planet simply by using the rays of the sunshine.</p>
+<p>This perfection is called laghimā.</p>
+<p>Similarly, a yogī can touch the moon with his finger.</p>
+<p>Though the modern astronauts go to the moon with the help of spaceships, they undergo many difficulties, whereas a person with mystic perfection can extend his hand and touch the moon with his finger.</p>
+<p>This siddhi is called prāpti, or acquisition.</p>
+<p>With this prāpti-siddhi, the perfect mystic yogī can not only touch the moon planet, but he can extend his hand anywhere and take whatever he likes.</p>
+<p>He may be sitting thousands of miles away from a certain place, and if he likes he can take fruit from a garden there.</p>
+<p>This is prāpti-siddhi.</p>
+<p>The modern scientists have manufactured nuclear weapons with which they can destroy an insignificant part of this planet, but by the yoga-siddhi known as īśitā one can create and destroy an entire planet simply at will.</p>
+<p>Another perfection is called vaśitā, and by this perfection one can bring anyone under his control.</p>
+<p>This is a kind of hypnotism which is almost irresistible.</p>
+<p>Sometimes it is found that a yogī who may have attained a little perfection in this vaśitā mystic power comes out among the people and speaks all sorts of nonsense, controls their minds, exploits them, takes their money and then goes away.</p>
+<p>There is another mystic perfection which is known as prākāmya (magic).</p>
+<p>By this prākāmya power one can achieve anything he likes.</p>
+<p>For example, one can make water enter into his eye and then again come out from within the eye.</p>
+<p>Simply by his will he can perform such wonderful activities.</p>
+<p>The highest perfection of mystic power is called kāmāvasāyitā.</p>
+<p>This is also magic, but whereas the prākāmya power acts to create wonderful effects within the scope of nature, kāmāvasāyitā permits one to contradict nature-in other words, to do the impossible.</p>
+<p>Of course, one can derive great amounts of temporary happiness by achieving such yogic materialistic perfections.</p>
+<p>Foolishly, people who are enamored of the glimmer of modern materialistic advancement are thinking that the Kṛṣṇa consciousness movement is for less intelligent men.</p>
+<p>&quot;I am better off being busy with my material comforts-maintaining a nice apartment, family and sex life.&quot; These people do not know that at any moment they can be kicked out of their material situation.</p>
+<p>Due to ignorance, they do not know that real life is eternal.</p>
+<p>The temporary comforts of the body are not the goal of life, and it is due only to darkest ignorance that people become enamored of the glimmering advancement of material comforts.</p>
+<p>Śrīla Bhaktivinode Thākur has therefore said that the advancement of material knowledge renders a person more foolish because it causes one to forget his real identification by its glimmer.</p>
+<p>This is doom for him, because this human form of life is meant for getting out of the material contamination.</p>
+<p>By the advancement of material knowledge, people are becoming more and more entangled in material existence.</p>
+<p>They have no hope of being liberated from this catastrophe.</p>
+<p>In the Hari-bhakti-sudhodaya it is stated that Prahlāda Mahārāj, a great devotee of the Lord, prayed to Nṛsiṁhadeva (the half-lion half-man incarnation) as follows: &quot;My dear Lord, I repeatedly pray unto Your lotus feet that I may simply be stronger in devotional service.</p>
+<p>I simply pray that my Kṛṣṇa consciousness may be more strong and steady, because happiness derived out of Kṛṣṇa consciousness and devotional service is so powerful that with it one can have all the other perfections of religiousness, economic development, sense gratification and even the attainment of liberation from material existence.&quot; Actually, a pure devotee does not aspire after any of these perfections because the happiness derived from devotional service in Kṛṣṇa consciousness is so transcendental and so unlimited that no other happiness can be compared with it.</p>
+<p>It is said that even one drop of happiness in Kṛṣṇa consciousness stands beyond comparison with an ocean of happiness derived from any other activity.</p>
+<p>Thus, any person who has developed even a little quantity of pure devotional service can very easily kick out all the other kinds of happiness derived from religiousness, economic development, sense gratification and liberation.</p>
+<p>There was a great devotee of Lord Caitanya known as Kholāvecā Śrīdhara, who was a very poor man.</p>
+<p>He was doing a small business selling cups made from the leaves of plantain trees, and his income was almost nothing.</p>
+<p>Still, he was spending fifty percent of his small income on the worship of the Ganges, and with the other fifty percent he was somehow living.</p>
+<p>Lord Caitanya once revealed Himself to this confidential devotee, Kholāvecā Śrīdhara, and offered him any opulence that he liked.</p>
+<p>But Śrīdhara informed the Lord that he did not want any material opulence.</p>
+<p>He was quite happy in his present position and wanted only to gain unflinching faith and devotion unto the lotus feet of Lord Caitanya.</p>
+<p>That is the position of pure devotees.</p>
+<p>If they can be engaged twenty four hours each day in devotional service they do not want anything else, not even the happiness of liberation or of becoming one with the supreme.</p>
+<p>In the Nārada-paṣcarātra it is also said that any person who has developed even a small amount of devotional service doesn't care a fig for any kind of happiness derived from religiousness, economic development, sense gratification, or the five kinds of liberation.</p>
+<p>Any kind of happiness derived from religiousness, economic development, liberation or sense gratification cannot even dare to enter into the heart of a pure devotee.</p>
+<p>It is stated that as the personal attendants and maidservants of a queen follow the queen with all respect and obeisances, similarly the joys of religiousness, economic development, sense gratification and liberation follow the devotional service of the Lord.</p>
+<p>In other words, a pure devotee does not lack any kind of happiness derived from any source.</p>
+<p>He does not want anything but service to Kṛṣṇa, but even if he should have another desire, the Lord fulfills this without the devotee's asking.</p>
+<p>Rareness of Pure Devotional Service In the preliminary phase of spiritual life there are different kinds of austerities, penances and similar processes for attaining self-realization.</p>
+<p>However, even if an executor of these processes is without any material desire, he still cannot achieve devotional service.</p>
+<p>And aspiring by oneself alone to achieve devotional service is also not very hopeful because Kṛṣṇa does not agree to award devotional service to merely anyone.</p>
+<p>Kṛṣṇa can easily offer a person material happiness or even liberation, but He does not agree very easily to award a person engagement in His devotional service.</p>
+<p>Devotional service can in fact be attained only through the mercy of a pure devotee.</p>
+<p>In the Caitanya-caritāmṛta it is said: &quot;By the mercy of the spiritual master who is a pure devotee and by the mercy of Kṛṣṇa one can achieve the platform of devotional service.</p>
+<p>There is no other way.&quot; The rarity of devotional service is also confirmed in the Tantra- śāstra, where Lord Śiva says to Satī, &quot;My dear Satī, if one is a very fine philosopher, analyzing the different processes of knowledge, he can achieve liberation from the material entanglement.</p>
+<p>By performance of the ritualistic sacrifices recommended in the Vedas one can be elevated to the platform of pious activities and thereby enjoy the material comforts of life to the fullest extent.</p>
+<p>But all such endeavors can hardly offer anyone devotional service to the Lord, not even if one tries for it by such processes for many, many thousands of births.&quot; In the Śrīmad-Bhāgavatam it is also confirmed by Prahlāda Mahārāj that merely by personal efforts or by the instructions of higher authorities one cannot attain to the stage of devotional service.</p>
+<p>One must become blessed by the dust of the lotus feet of a pure devotee who is completely freed from the contamination of material desires.</p>
+<p>In the Fifth Canto of Śrīmad-Bhāgavatam, 6th Chapter, 18th verse, Nārada also says to Yudhiṣṭhira, &quot;My dear King, it is Lord Kṛṣṇa, known as Mukunda, who is the eternal protector of the Pāṇḍavas and the Yadus.</p>
+<p>He is also your spiritual master and instructor in every respect.</p>
+<p>He is the only worshipable God for you.</p>
+<p>He is very dear and affectionate, and He is the director of all your activities, both individual and familial.</p>
+<p>And what's more, He sometimes carries out your orders as if He were your messenger! My dear King, how very fortunate you are, because for others all these favors given to you by the Supreme Lord would not even be dreamt of.&quot; The purport to this verse is that the Lord easily offers liberation, but He rarely agrees to offer a soul devotional service because by devotional service the Lord Himself becomes purchased by the devotee.</p>
+<p>The Happiness of Becoming One with the Supreme Śrīla Rūpa Gosvāmī says that if brahmānanda, or the happiness of becoming one with the Supreme, is multiplied by one trillionfold, still it cannot be compared with an atomic fraction of the happiness derived from the ocean of devotional service.</p>
+<p>In the Hari-bhakti-sudhodaya Prahlāda Mahārāj, while satisfying Lord Nṛsiṁhadeva by his prayers, says: &quot;My dear Lord of the universe, I am feeling transcendental pleasure in Your presence and have become merged in the ocean of happiness.</p>
+<p>I now consider the happiness of brahmānanda to be no more than the water in the impression left by a cow's hoof in the earth, compared to this ocean of bliss.&quot; Similarly, it is confirmed in the Bhāvārtha-dīpikā, Śrīdhara Svāmī's commentary on the Śrīmad-Bhāgavatam: &quot;My dear Lord, some of the fortunate persons who are swimming in the ocean of Your nectar of devotion, and who are relishing the nectar of the narration of Your pastimes, certainly know ecstasies which immediately minimize the value of the happiness derived from religiousness, economic development, sense gratification and liberation.</p>
+<p>Such a transcendental devotee regards any kind of happiness other than devotional service as no better than straw in the street.&quot; Attracting Kṛṣṇa Śrīla Rūpa Gosvāmī has stated that devotional service attracts even Kṛṣṇa.</p>
+<p>Kṛṣṇa attracts everyone, but devotional service attracts Kṛṣṇa.</p>
+<p>The symbol of devotional service in the highest degree is Rādhārāṇī.</p>
+<p>Kṛṣṇa is called Madana-mohana, which means that He is so attractive that He can defeat the attraction of thousands of Cupids.</p>
+<p>But Rādhārāṇī is still more attractive, for She can even attract Kṛṣṇa.</p>
+<p>Therefore devotees call Her Madana-mohana-mohanī-the attractor of the attractor of Cupid.</p>
+<p>To perform devotional service means to follow in the footsteps of Rādhārāṇī, and devotees in Vṛndāvana put themselves under the care of Rādhārāṇī in order to achieve perfection in their devotional service.</p>
+<p>In other words, devotional service is not an activity of the material world; it is directly under the control of Rādhārāṇī.</p>
+<p>In Bhagavad-gītā it is confirmed that the mahātmās, or great souls, are under the protection of daivī prakṛti, the internal energy-Rādhārāṇī.</p>
+<p>So, being directly under the control of the internal potency of Kṛṣṇa, devotional service attracts even Kṛṣṇa Himself.</p>
+<p>This fact is corroborated by Kṛṣṇa in the Eleventh Canto of Śrīmad-Bhāgavatam, 12th Chapter, 1st verse, where He says: &quot;My dear Uddhava, you may know it from Me that the attraction I feel for devotional service rendered by My devotees is not to be attained even by the performance of mystic yoga, philosophical speculation, ritualistic sacrifices, the study of Vedānta, the practice of severe austerities or the giving of everything in charity.</p>
+<p>These are, of course, very nice activities, but they are not as attractive to Me as the transcendental loving service rendered by My devotees.&quot; How Kṛṣṇa becomes attracted by the devotional service of His devotees is described by Nārada in the Śrīmad-Bhāgavatam, Seventh Canto, 10th Chapter, 37th verse.</p>
+<p>There Nārada addresses King Yudhiṣṭhira while the King is appreciating the glories of the character of Prahlāda Mahārāj.</p>
+<p>A devotee always appreciates the activities of other devotees.</p>
+<p>Yudhiṣṭhira Mahārāj was appreciating the qualities of Prahlāda, and that is one symptom of a pure devotee.</p>
+<p>A pure devotee never thinks himself as great; he always thinks that other devotees are greater than himself.</p>
+<p>The King was thinking, &quot;Prahlāda Mahārāj is actually a devotee of the Lord, while I am nothing,&quot; and while thinking this he was addressed by Nārada as follows: &quot;My dear King Yudhiṣṭhira, in this world you [the Pāṇḍava brothers] are the only fortunate people.</p>
+<p>The Supreme Personality of Godhead has appeared on this planet and is presenting Himself to you as an ordinary human being.</p>
+<p>He is always with you in all circumstances.</p>
+<p>He is living with you and covering Himself from the eyes of others.</p>
+<p>Others cannot understand that He is the Supreme Lord, but He is still living with you as your cousin, as your friend and even as your messenger.</p>
+<p>Therefore you must know that nobody in this world is more fortunate than you.&quot; In the Bhagavad-gītā, when Kṛṣṇa appeared in His universal form, Arjuna prayed: &quot;My dear Kṛṣṇa, I thought of You as my cousin-brother, and so I have shown disrespect to You in so many ways, calling You Kṛṣṇa, or friend.</p>
+<p>But You are so great that I could not understand.&quot; So that was the position of the Pāṇḍavas; although Kṛṣṇa is the Supreme Personality of Godhead, the greatest among all greats, still He remained with those royal brothers, being attracted by their devotion, by their friendship and by their love.</p>
+<p>That is the proof of how great this process of devotional service is.</p>
+<p>It can attract even the Supreme Personality of Godhead.</p>
+<p>God is great, but devotional service is greater than God because it attracts Him.</p>
+<p>People who are not in devotional service can never understand what great value there is in rendering service to the Lord.</p>
+<pre><code>                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+                        &lt;a rel=&quot;prev&quot; href=&quot;../part2/index.html&quot; class=&quot;mobile-nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;ch2.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+                &lt;a href=&quot;../part2/index.html&quot; class=&quot;nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+
+            
+                &lt;a href=&quot;ch2.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1 - Nectar of Devotion - Part II</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part1/index.html&quot;&gt;Part One&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part3/index.html&quot;&gt;Part Three&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot; class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch2.html&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch3.html&quot;&gt;3&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch4.html&quot;&gt;4&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch5.html&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch6.html&quot;&gt;6&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch7.html&quot;&gt;7&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch8.html&quot;&gt;8&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch9.html&quot;&gt;9&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch10.html&quot;&gt;10&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch11.html&quot;&gt;11&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch12.html&quot;&gt;12&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch13.html&quot;&gt;13&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch14.html&quot;&gt;14&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch15.html&quot;&gt;15&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Nectar of Devotion - Part II&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;h3&gt;&lt;a class=&quot;header&quot; href=&quot;#transcendental-mellow&quot; id=&quot;transcendental-mellow&quot;&gt;Transcendental Mellow&lt;/a&gt;&lt;/h3&gt;
+</code></pre>
+<p>In this second division of Bhakti-rasāmṛta-sindhu the author offers his respectful obeisances unto &quot;Sanātana.&quot; This Sanātana can be interpreted as either Śrī Kṛṣṇa Himself or as Sanātana Gosvāmī, the elder brother and spiritual master of Rūpa Gosvāmī.</p>
+<p>In the case where Sanātana is accepted to mean Śrī Kṛṣṇa, the obeisances are offered to Kṛṣṇa because He is naturally so beautiful and because He is the killer of the demon Agha.</p>
+<p>If it is interpreted to mean Sanātana Gosvāmī, then it is because he is so greatly favored by Rūpa Gosvāmī, being always served by him, and because he is the annihilator of all kinds of sinful activities.</p>
+<p>In this division of Bhaktirasāmṛta-sindhu the author wants to describe the general symptoms of the transcendental mellow (loving mood) of discharging devotional service.</p>
+<p>In this division of Bhakti-rasāmṛta-sindhu there are five general topics: 1) vibhāva-special symptoms of ecstasy, 2) anubhāva-subsequent ecstasy, 3) sāttvika-bhāva-constitutional ecstasy, 4) vyabhicārī-bhāva-aggressive ecstasy and 5) sthāyi- bhāva-fervent ecstasy.</p>
+<p>The word rasa, used in the Bhakti- rasāmṛta-sindhu, is understood by different persons differently because the exact English equivalent is very difficult to find.</p>
+<p>But as we have seen our spiritual master translate this word rasa into &quot;mellow,&quot; we shall follow in his footsteps and also translate the word in that way.</p>
+<p>The particular loving mood or attitude relished in the exchange of love with the Supreme Personality of Godhead is called rasa, or mellow.</p>
+<p>The different types of rasa, when combined together, help one to taste the mellow of devotional service in the highest degree of transcendental ecstasy.</p>
+<p>Such a position, although entirely transcendental to our experience, will be explained in this section as far as possible, following in the footsteps of Śrīla Rūpa Gosvāmī.</p>
+<p>Without relishing some sort of mellow or loving mood in one's activities, no one can continue to perform such activities.</p>
+<p>Similarly, in the transcendental life of Kṛṣṇa consciousness and devotional service there must be some mellow or specific taste from the service.</p>
+<p>Generally this mellow is experienced by chanting, hearing, worshiping in the temple and being engaged in the service of the Lord.</p>
+<p>So when a person feels transcendental bliss, that is called &quot;relishing the mellow.&quot; To be more clear, we may understand that the various feelings of happiness derived from discharging devotional service may be termed the &quot;mellows&quot; of devotional service.</p>
+<p>This relishing of transcendental mellow in discharging devotional service cannot be experienced by all classes of men because this sweet loving mood is developed only from one's previous life's activities, or by the association of unalloyed devotees.</p>
+<p>As explained above, association with pure devotees is the beginning of faith in devotional service.</p>
+<p>Only by developing such faith in the association of a pure devotee, or by having in one's previous life executed devotional activities, can one actually relish the mellow of devotional service.</p>
+<p>In other words, this transcendental bliss is not to be enjoyed by any common man unless he is so extraordinarily fortunate as to be in association with devotees or to be continuing his previous birth's devotional activities.</p>
+<p>The gradual process of development to the stage of devotional service is explained in the Śrīmad-Bhāgavatam, First Canto: &quot;The beginning is to hear about Lord Kṛṣṇa in the association of devotees who have themselves cleansed their hearts by association.</p>
+<p>Hearing about the transcendental activities of the Lord will result in one's feeling transcendental bliss always.&quot; It is also explained in the Bhagavad-gītā that for one who has actually come to the spiritual platform, the first symptom visible will be that he is always joyful.</p>
+<p>This joyous life is attained by one's reaction to reading the Bhagavad-gītā or Śrīmad-Bhāgavatam, or else from associating with persons who are very interested in the spiritual life of Kṛṣṇa consciousnessspecifically those who have made the determination to achieve the favor of Govinda by being engaged in transcendental loving service at His lotus feet.</p>
+<p>Being encouraged by such a feeling, one who is constantly engaged in discharging the regulative principles of devotional service in such a way as to please the Supreme Personality of Godhead develops two principles of compelling force, which come under the heading of vibhāva.</p>
+<p>Thus one enjoys transcendental bliss.</p>
+<p>There are several origins or causes for this compulsive love of Kṛṣṇa, such as Kṛṣṇa Himself, the devotees of Kṛṣṇa, Kṛṣṇa's playing on the flute, etc.</p>
+<p>The effect is sometimes loving and sometimes stunted.</p>
+<p>There are eight transcendental symptoms found in the body during ecstasy, and all of them are possible only by a mixture of the abovementioned five ecstatic divisions.</p>
+<p>Without some mixture of these five ecstatic principles, one cannot relish transcendental bliss.</p>
+<p>The cause or basis for relishing transcendental mellow is exactly what we mean by vibhāva.</p>
+<p>This vibhāva is divided into two-namely, basic and impetuous.</p>
+<p>In the Agni Purāṇa the description of vibhāva is given as follows: &quot;The basis from which ecstatic love is born is called vibhāva, which is divided into two-basic and impetuous.&quot; In other words, there are two kinds of ecstatic love.</p>
+<p>The object of basic ecstatic love is Kṛṣṇa and His devotee.</p>
+<p>Lord Kṛṣṇa is the object of basic ecstatic love, and His pure devotee, a reservoir of such love, is the object of impetuous ecstatic love.</p>
+<p>Impetuous ecstatic love, then, is that love which develops when one sees an object which reminds him of Kṛṣṇa.</p>
+<p>Lord Kṛṣṇa, who is the possessor of inconceivable potencies and qualities of transcendental knowledge and bliss, is the basic cause of ecstatic love.</p>
+<p>Lord Kṛṣṇa also becomes the reservoir (impetus) of ecstatic love by His different incarnations and expansions.</p>
+<p>In the Śrīmad- Bhāgavatam there is a statement in connection with the brahma-vimohana- līlā, which demonstrates something of this impetuous feature of ecstatic love.</p>
+<p>When Brahmā was deluded by Kṛṣṇa, who expanded Himself into so many cowherd boys, calves and cows, Kṛṣṇa's elder brother, Śrī Baladeva (a direct expansion of Kṛṣṇa Himself), felt astonishment and said, &quot;How wonderful it is that My ecstatic love for Kṛṣṇa is again being attracted to so many cowherd boys, calves and cows!&quot; He was struck with wonder by thinking in this way.</p>
+<p>This is one of the examples in which Kṛṣṇa Himself becomes the object and reservoir of ecstatic love in the impetuous aspect.</p>
+<pre><code>                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+                        &lt;a rel=&quot;prev&quot; href=&quot;../part3/index.html&quot; class=&quot;mobile-nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;ch2.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+                &lt;a href=&quot;../part3/index.html&quot; class=&quot;nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+
+            
+                &lt;a href=&quot;ch2.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1 - Nectar of Devotion - Part III</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part1/index.html&quot;&gt;Part One&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part2/index.html&quot;&gt;Part Two&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part4/index.html&quot;&gt;Part Four&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot; class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch2.html&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch3.html&quot;&gt;3&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch4.html&quot;&gt;4&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch5.html&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch6.html&quot;&gt;6&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch7.html&quot;&gt;7&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch8.html&quot;&gt;8&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch9.html&quot;&gt;9&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch10.html&quot;&gt;10&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Nectar of Devotion - Part III&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;h3&gt;&lt;a class=&quot;header&quot; href=&quot;#neutral-love-of-god&quot; id=&quot;neutral-love-of-god&quot;&gt;Neutral Love of God&lt;/a&gt;&lt;/h3&gt;
+</code></pre>
+<p>Srila Rupa Goswami offers his respectful prayers to the eternal Supreme Personality of Godhead who is always so beautiful and for whom the pure devotees are always engaged in loving transcendental service.</p>
+<p>This third division of Bhakti-rasāmṛta-sindhu describes the five primary kinds of devotional service-namely, neutrality, servitude, fraternity, parenthood and conjugal love.</p>
+<p>These five items will be very elaborately explained here, and thus they have been figuratively described as the five waves on the western side of this ocean of nectar of devotion.</p>
+<p>When one is actually able to maintain the transcendental position, his stage is called neutrality in devotional service.</p>
+<p>Some great sages have attained this neutral position by practicing austerity, penance and meditation to control the senses.</p>
+<p>Such sages are generally called mystic yogīs, and in most cases they are inclined to appreciate the spiritual pleasure of the impersonal feature of the absolute truth.</p>
+<p>They are practically unaware of the transcendental pleasure derived from personal contact with the Supreme Godhead.</p>
+<p>Actually the transcendental pleasure derived in association with the Supreme Person is far greater than the pleasure derived from impersonal Brahman realization, because of the direct meeting with the eternal form of the Lord.</p>
+<p>Impersonalists do not directly derive the transcendental pleasure of association with the Lord by hearing of His pastimes.</p>
+<p>As such, the impersonalists cannot derive any relishable transcendental pleasure from the topics of the Bhagavad-gītā, in which the Lord is personally talking with Arjuna.</p>
+<p>The basic principle of their impersonal attitude does not allow them the transcendental pleasure which is relished by a devotee whose basic principle of understanding is the Supreme Person.</p>
+<p>The impersonalistic commentary on the Bhagavad-gītā is therefore disastrous because, without understanding the transcendental pleasure of the Gītā, the impersonalist wants to interpret it in his own way.</p>
+<p>If an impersonalist can, however, come in contact with a pure devotee, his transcendental position can be changed for greater elevation.</p>
+<p>Great sages are therefore recommended to worship the form of the Lord in order to achieve that highest transcendental pleasure.</p>
+<p>Without worshiping the arcā-vigraha, the form or Deity of the Lord, one cannot understand such literature as the Bhagavad-gītā and Śrīmad-Bhāgavatam.</p>
+<p>For those great sages situated in the position of transcendental neutrality, the beginning should be to take shelter of Lord Viṣṇu, the four-handed eternal form of the Supreme Personality of Godhead.</p>
+<p>The mystic yogīs are therefore advised to meditate on the form of Lord Viṣṇu, as recommended by Kapila Muni in the sāṅkhya yoga system.</p>
+<p>Unfortunately, many mystic yogīs try to meditate on something void, and as stated in the Gītā, the result is that they simply undergo trouble and do not achieve any tangible result.</p>
+<p>When some great saintly persons who had undergone penances and austerities saw the four-handed transcendental form of Viṣṇu, they began to remark as follows: &quot;This four-handed form of the Lord, manifested in a bluish color, is the reservoir of all pleasure and the center of our living force.</p>
+<p>Actually, when we see this eternal form of Viṣṇu, we, along with many other paramahaṁsas, become immediately captivated by the beauty of the Lord.&quot; This appreciation of Lord Viṣṇu by saintly persons is an instance of situation in śānta-rasa, or the neutral stage of devotional service.</p>
+<p>In the beginning, those who are aspiring for salvation try to get out of the material entanglement by performing painful austerities and penances, and ultimately they come to the impersonal status of spiritual realization.</p>
+<p>At this brahma-bhūta stage of liberation from the material entanglement, the symptoms, as explained in the Bhagavad-gītā, are that one becomes joyous beyond any hankering or lamentation and gains a universal vision.</p>
+<p>When the devotee is situated in the śānta-rasa, or neutral stage of devotional service, he appreciates the Viṣṇu form of the Lord.</p>
+<p>Actually, all Vedic culture is aiming at understanding Lord Viṣṇu.</p>
+<p>In the Ṛg Veda one mantra says that any advanced saintly person is always aspiring to be fixed in meditation upon the lotus feet of Viṣṇu.</p>
+<p>In the Śrīmad-Bhāgavatam it is said that the foolish do not know that Viṣṇu is the ultimate goal of life.</p>
+<p>According to the conclusion of all authoritative Vedic scriptures, when a person comes to the stage of appreciating Viṣṇu, he is at the beginning of devotional service.</p>
+<p>If one cultivates devotional service further and further, under proper guidance, other features of devotional service will gradually become manifest.</p>
+<p>At this stage of śānta-rasa, one can see Lord Viṣṇu, the Supreme Personality of Godhead, the deliverer of even the demons.</p>
+<p>The Lord is appreciated by such would-be devotees as the eternal transcendental form, the chief of all self-realized souls, the supersoul, the supreme Brahman, completely pacified, completely controlled and pure, merciful to the devotees and untouched by any material condition.</p>
+<p>This appreciation of Lord Viṣṇu in awe and veneration by the saintly is to be understood as the sign that they are situated in the śānta-rasa, or neutral stage of devotional service.</p>
+<p>This stage of śānta-rasa can be attained by the impersonalists only when they are in association with pure devotees.</p>
+<p>Otherwise it is not possible.</p>
+<p>After Brahman realization, when a liberated soul comes in contact with a pure devotee of Lord Kṛṣṇa and submissively accepts the teachings of Lord Kṛṣṇa without misinterpretation, he becomes situated in this neutral stage of devotional service.</p>
+<p>The best example of saintly persons situated in the śānta- rasa are Sanaka, Sanātana, Sananda, and Sanat-kumāra, the Kumāra brothers.</p>
+<p>These four saintly persons (known as Catuḥsana) were sons of Lord Brahmā.</p>
+<p>After their birth, when they were ordered by their father to become householders and increase human society, they refused the order.</p>
+<p>They said that they had already decided not to become entangled with family life; they would rather live as saintly brahmacārīs for their own perfection.</p>
+<p>So these great saints have been living for millions of years now, but still they appear to be just like boys of four or five years.</p>
+<p>Their complexions are very fair, there is an effulgence in their bodies, and they always travel naked.</p>
+<p>These four saintly persons almost always remain together.</p>
+<p>In one of the prayers of the Kumāra brothers, the declaration is made: &quot;My Lord Mukunda [Kṛṣṇa, the giver of liberation], only so long as one does not happen to see Your eternal form of bliss and knowledge, appearing just like a newly-grown tāmala tree, with a bluish hue-only for so long can the impersonal feature of the absolute truth, known as Brahman, be very pleasing to a saintly person.&quot; The qualifications of a saintly person are described in the Bhaktirasāmṛta-sindhu as follows: A saintly person is one who understands fully that simply by discharging devotional service he can become confident of liberation.</p>
+<p>He is always situated in the regulative principles of devotional life and at the same time aspires to be liberated from the material entanglement.</p>
+<p>A saintly person thinks like this: &quot;When shall I be able to live alone in the caves of the mountains? When shall I be dressed simply with undergarments? When shall I be satisfied by eating simply a little fruit and vegetables? When will it be possible for me to think always of the lotus feet of Mukunda, who is the source of the Brahman effulgence? When, in such a spiritual condition of life, shall I fully understand my days and nights to be insignificant moments in eternal time?&quot; The devotees and self-realized persons who are engaged in preaching the glories of the Lord always maintain an ecstatic love for the Lord within their hearts.</p>
+<p>Thus they are benefited by the rays of the ecstatic moon, and they are called saintly persons.</p>
+<p>The impulse of a saintly person is to be engaged in the study of the Vedas, especially the Upaniṣadic portions, to always live in a place where there is no disturbance from the common people, to always think of the eternal form of Kṛṣṇa, to be ready to consider and understand the absolute truth, to always be prominent in exhibiting knowledge, to see the Supreme Lord in His universal form (viśva-rūpa), to associate always with learned devotees and to discuss the conclusion of the Vedas with similarly elevated persons.</p>
+<p>All of these qualifications of a saintly person serve to raise him to the status of śānta-rasa.</p>
+<p>In the Bhakti-rasāmṛta-sindhu it is stated that all those who attended the pious meeting held by Lord Brahmā for the study of Vedic literature like the Upaniṣads became overwhelmed with ecstatic love for Kṛṣṇa, the chief of the Yadu dynasty.</p>
+<p>Actually, the result of studying the Upaniṣads is to understand the Supreme Personality of Godhead.</p>
+<p>Negation of material existence is only one of the subjects of the Upaniṣads.</p>
+<p>The next subject concerns becoming situated in the impersonal realization.</p>
+<p>And then, after penetrating through the impersonal Brahman, when one comes to the platform of associating with the Supreme Personality of Godhead, one reaches the ultimate goal in studying the Upaniṣads.</p>
+<p>Those who are situated on the platform of śānta-rasa get their impetus for advancement in devotional service by smelling the tulasī offered at the lotus feet of the Lord, by hearing the sound of His conchshell, by seeing a sanctified place in some mountain or hill, by observing a forest like the ones in Vṛndāvana, by going to a place of pilgrimage, by visiting the course of the Ganges River, by being victorious over the dictations of bodily demands (i.e., eating, sleeping, mating and defending), by understanding the devastation of eternal time, and by constantly associating with devotees engaged in Kṛṣṇa consciousness.</p>
+<p>All these different items are favorable in elevating saintly persons situated in śāntarasa to the advanced stage of devotional service.</p>
+<p>In the Third Canto, 15th Chapter, 43rd verse of Śrīmad- Bhāgavatam, there is a statement by the four saintly persons known as Catuḥsana, headed by Sanaka-kumāra.</p>
+<p>They went to visit the Lord of Vaikuṇṭha-loka in the spiritual sky, and when they bowed down before the Lord, the aroma of the tulasī, mixed with saffron, entered their nostrils and immediately attracted their minds.</p>
+<p>Although these four saintly persons were always absorbed in the thought of impersonal Brahman, from association with the Lord and from smelling the tulasī leaves, the hairs on their bodies immediately stood up.</p>
+<p>This shows that even a person who is situated in Brahman realization, if he is put into association with devotees in pure devotional service, will immediately become attracted to the personal feature of the Lord.</p>
+<p>There are certain symptoms of great sages who are situated in śāntarasa devotional service, and these symptoms are exhibited as follows: they concentrate their eyesight on the tip of the nose, and they behave just like an avadhūta.</p>
+<p>Avadhūta means a highly elevated mystic who does not care for any social, religious or Vedic conventions.</p>
+<p>Another symptom is that such persons are very careful to step forward when giving speeches.</p>
+<p>When they speak, they join together the forefinger and thumb.</p>
+<p>(This is called the jṣāna-mudrā position.) They are not against the atheists, nor are they particularly inclined to the devotees.</p>
+<p>Such persons give stress to liberation and detachment from the materialistic way of life.</p>
+<p>They are always neutral and have no affection for nor misidentification with anything material.</p>
+<p>They are always grave, but fully absorbed in thoughts of the Supreme Personality of Godhead.</p>
+<p>These uncommon features develop in devotees who are situated in śānta-rasa.</p>
+<p>Regarding concentration of the eyesight on the tip of the nose, there is a statement in the Bhakti-rasāmṛta-sindhu by a devotee who observed this being performed by a yogī.</p>
+<p>He remarked, &quot;This great sage is concentrating his eyesight on the tip of his nose, and from this it appears that he has already realized the eternal form of the Lord within himself.&quot; Sometimes a devotee in śānta-rasa yawns, stretches his limbs, instructs on devotional service, offers respectful obeisances unto the form of the Lord, offers nice prayers to the Lord and has a desire to give direct service with his body.</p>
+<p>These are some of the common symptoms of the devotee who is situated in neutrality.</p>
+<p>One devotee, after observing the yawning of another devotee, addressed him thus: &quot;My dear mystic, I think that within your heart there is some ecstatic devotional love which is causing you to yawn.&quot; It is sometimes found that a devotee in the śāntarasa falls down on the ground, his hairs stand up on his body, and he trembles all over.</p>
+<p>In this way, different symptoms of ecstatic trance are exhibited automatically by such devotees.</p>
+<p>In the Bhakti-rasāmṛta-sindhu it is said that when Lord Kṛṣṇa was blowing His conchshell known as Pāṣcajanya, many great sages who were living in the caves of the mountains immediately reacted, being awakened from their trance of meditation.</p>
+<p>They immediately saw that the hairs of their bodies were standing.</p>
+<p>Sometimes devotees in śānta-rasa become stunned, peaceful, jubilant, deliberate, reflective, anxious, dexterous and argumentative.</p>
+<p>These symptoms indicate continuous ecstasy, or established emotion.</p>
+<p>Once a great realized sage was lamenting that the Supreme Lord Kṛṣṇa was living in Dvārakā but that he was unable to take advantage of seeing Him.</p>
+<p>After thinking this, the sage immediately became stunned.</p>
+<p>He was thinking that he was simply wasting his time.</p>
+<p>In other words, the sage lamented because the Supreme Personality of Godhead was personally present, and he still could not take advantage of this because of his meditation.</p>
+<p>When a mystic is transcendental to all kinds of mental concoctions and is situated in Brahman, his state is called trance beyond the influence of the material conception of life.</p>
+<p>In that stage, when one hears about the transcendental pastimes of the Lord, there may be shivering in the body.</p>
+<p>When a Brahman-realized devotee who has come to the stage of steady trance comes into contact with the eternal form of Kṛṣṇa, his transcendental pleasure increases millions of times.</p>
+<p>One great sage once inquired from another, &quot;My dear friend, do you think that after I perfect the eightfold yoga performance I shall be able to see the eternal form of the Supreme Personality of Godhead?&quot; This enquiry from the sage is an instance of inquisitiveness in a devotee situated in the neutral stage of devotional service.</p>
+<p>When Lord Kṛṣṇa, along with His elder brother Balarāma and sister Subhadrā, came to Kurukṣetra in a chariot on the occasion of a solar eclipse, many mystic yogīs also came.</p>
+<p>When these mystic yogīs saw Lord Kṛṣṇa and Balarāma, they exclaimed that now that they had seen the excellent bodily effulgence of the Lord, they had almost forgotten the pleasure derived from impersonal Brahman realization.</p>
+<p>In this connection one of the mystics approached Kṛṣṇa and said, &quot;My dear Lord, You are always full with transcendental bliss, excelling all other spiritual positions.</p>
+<p>And so, simply by seeing You from a distant place, I have come to the conclusion that there is no need of my being situated in the transcendental bliss of impersonal Brahman.&quot; When a great mystic was once awakened from his meditative trance by hearing the vibration of Kṛṣṇa's Pāṣcajanya conchshell, the mystic became overpowered.</p>
+<p>So much so, in fact, that he began to bash his head on the ground, and with eyes full of tears of ecstatic love, he violated all the rules and regulations of his yoga performances.</p>
+<p>Thus he at once neglected the process of Brahman realization.</p>
+<p>Bilvamaṅgala Thākur, in his book Kṛṣṇa-karṇāmṛta, says, &quot;Let the impersonalists be engaged in the process of transcendental realization by worshiping the impersonal Brahman.</p>
+<p>Although I was also initiated into that path of Brahman realization, I have now become misled by a naughty boy-one who is very cunning, who is very much attached to the gopīs and who has made me His maidservant.</p>
+<p>So I have now forgotten the process of Brahman realization.&quot; Bilvamaṅgala Thākur was first spiritually initiated for impersonal realization of the absolute truth, but later on, by his association with Kṛṣṇa in Vṛndāvana, he became an experienced devotee.</p>
+<p>The same thing happened to Śukadeva Gosvāmī, who also reformed himself by the grace of the Lord and took to the path of devotional service, giving up the way of impersonal realization.</p>
+<p>Śukadeva Gosvāmī and Bilvamaṅgala Thākur's giving up of the impersonal conception of the absolute truth and taking to devotional service are the best examples of devotees being situated in the neutral state.</p>
+<p>According to some authorities, this condition cannot be accepted as one of the transcendental humors, or rasas, but Śrīla Rūpa Gosvāmī says that even if one does not accept it as a transcendental humor, one must still accept it as the beginning position of devotional service.</p>
+<p>However, if one is not further raised to the platform of actual service to the Lord, he is not considered to be on the platform of transcendental mellow.</p>
+<p>In this connection, in the Eleventh Canto of Śrīmad-Bhāgavatam, Lord Kṛṣṇa personally instructs Uddhava like this: &quot;The state of being established in My personal form is called śānta-rasa, and without being situated in this position, no one can advance to actual pure devotional service.&quot; In other words, no one can be situated in the personal feature of the Supreme Personality of Godhead without being situated at least in śānta-rasa.</p>
+<pre><code>                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+                        &lt;a rel=&quot;prev&quot; href=&quot;../part4/index.html&quot; class=&quot;mobile-nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;ch2.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+                &lt;a href=&quot;../part4/index.html&quot; class=&quot;nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+
+            
+                &lt;a href=&quot;ch2.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1 - Nectar of Devotion - Part IV</title>
+<pre><code>    &lt;meta content=&quot;text/html; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot; /&gt;
+
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.png&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/variables.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/general.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/chrome.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/print.css&quot; media=&quot;print&quot;&gt;
+
+    &lt;!-- Fonts --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;FontAwesome/css/font-awesome.css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Code+Pro:500&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+
+    &lt;!-- Highlight.js Stylesheets --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tomorrow-night.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;ayu-highlight.css&quot;&gt;
+
+    &lt;!-- Custom theme stylesheets --&gt;
+    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;custom.css&quot;&gt;
+    
+
+    
+&lt;/head&gt;
+&lt;body class=&quot;rust&quot;&gt;
+    &lt;!-- Provide site root to javascript --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var path_to_root = &quot;&quot;;
+        var default_theme = &quot;rust&quot;;
+    &lt;/script&gt;
+
+    &lt;!-- Work around some values being stored in localStorage wrapped in quotes --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        try {
+            var theme = localStorage.getItem('mdbook-theme');
+            var sidebar = localStorage.getItem('mdbook-sidebar');
+
+            if (theme.startsWith('&quot;') &amp;&amp; theme.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+            }
+
+            if (sidebar.startsWith('&quot;') &amp;&amp; sidebar.endsWith('&quot;')) {
+                localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+            }
+        } catch (e) { }
+    &lt;/script&gt;
+
+    &lt;!-- Set the theme before any content is loaded, prevents flash --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var theme;
+        try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+        if (theme === null || theme === undefined) { theme = default_theme; }
+        document.body.className = theme;
+        document.querySelector('html').className = theme + ' js';
+    &lt;/script&gt;
+
+    &lt;!-- Hide / unhide sidebar before it is displayed --&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+        var html = document.querySelector('html');
+        var sidebar = 'hidden';
+        if (document.body.clientWidth &gt;= 1080) {
+            try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+            sidebar = sidebar || 'visible';
+        }
+        html.classList.remove('sidebar-visible');
+        html.classList.add(&quot;sidebar-&quot; + sidebar);
+    &lt;/script&gt;
+
+    &lt;nav id=&quot;sidebar&quot; class=&quot;sidebar&quot; aria-label=&quot;Table of contents&quot;&gt;
+        &lt;div class=&quot;sidebar-scrollbox&quot;&gt;
+            &lt;ol class=&quot;chapter&quot;&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../index.html&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part1/index.html&quot;&gt;Part One&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part2/index.html&quot;&gt;Part Two&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;../part3/index.html&quot;&gt;Part Three&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;index.html&quot; class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch2.html&quot;&gt;2&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch3.html&quot;&gt;3&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch4.html&quot;&gt;4&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch5.html&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch6.html&quot;&gt;6&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;affix&quot;&gt;&lt;a href=&quot;ch7.html&quot;&gt;7&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;sidebar-resize-handle&quot; class=&quot;sidebar-resize-handle&quot;&gt;&lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;div id=&quot;page-wrapper&quot; class=&quot;page-wrapper&quot;&gt;
+
+        &lt;div class=&quot;page&quot;&gt;
+            
+            &lt;div id=&quot;menu-bar&quot; class=&quot;menu-bar&quot;&gt;
+                &lt;div id=&quot;menu-bar-sticky-container&quot;&gt;
+                    &lt;div class=&quot;left-buttons&quot;&gt;
+                        &lt;button id=&quot;sidebar-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Toggle Table of Contents&quot; aria-label=&quot;Toggle Table of Contents&quot; aria-controls=&quot;sidebar&quot;&gt;
+                            &lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;button id=&quot;theme-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Change theme&quot; aria-label=&quot;Change theme&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;theme-list&quot;&gt;
+                            &lt;i class=&quot;fa fa-paint-brush&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        &lt;ul id=&quot;theme-list&quot; class=&quot;theme-popup&quot; aria-label=&quot;Themes&quot; role=&quot;menu&quot;&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;light&quot;&gt;Light&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;rust&quot;&gt;Rust (default)&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;coal&quot;&gt;Coal&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;navy&quot;&gt;Navy&lt;/button&gt;&lt;/li&gt;
+                            &lt;li role=&quot;none&quot;&gt;&lt;button role=&quot;menuitem&quot; class=&quot;theme&quot; id=&quot;ayu&quot;&gt;Ayu&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;button id=&quot;search-toggle&quot; class=&quot;icon-button&quot; type=&quot;button&quot; title=&quot;Search. (Shortkey: s)&quot; aria-label=&quot;Toggle Searchbar&quot; aria-expanded=&quot;false&quot; aria-keyshortcuts=&quot;S&quot; aria-controls=&quot;searchbar&quot;&gt;
+                            &lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;
+                        &lt;/button&gt;
+                        
+                    &lt;/div&gt;
+
+                    &lt;h1 class=&quot;menu-title&quot;&gt;Nectar of Devotion - Part IV&lt;/h1&gt;
+
+                    &lt;div class=&quot;right-buttons&quot;&gt;
+                        &lt;a href=&quot;print.html&quot; title=&quot;Print this book&quot; aria-label=&quot;Print this book&quot;&gt;
+                            &lt;i id=&quot;print-button&quot; class=&quot;fa fa-print&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                        
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div id=&quot;search-wrapper&quot; class=&quot;hidden&quot;&gt;
+                &lt;form id=&quot;searchbar-outer&quot; class=&quot;searchbar-outer&quot;&gt;
+                    &lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;searchbar&quot; name=&quot;searchbar&quot; placeholder=&quot;Search this book ...&quot; aria-controls=&quot;searchresults-outer&quot; aria-describedby=&quot;searchresults-header&quot;&gt;
+                &lt;/form&gt;
+                &lt;div id=&quot;searchresults-outer&quot; class=&quot;searchresults-outer hidden&quot;&gt;
+                    &lt;div id=&quot;searchresults-header&quot; class=&quot;searchresults-header&quot;&gt;&lt;/div&gt;
+                    &lt;ul id=&quot;searchresults&quot;&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+
+            &lt;!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM --&gt;
+            &lt;script type=&quot;text/javascript&quot;&gt;
+                document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                });
+            &lt;/script&gt;
+
+            &lt;div id=&quot;content&quot; class=&quot;content&quot;&gt;
+                &lt;main&gt;
+                    &lt;h3&gt;&lt;a class=&quot;header&quot; href=&quot;#laughing-ecstasy&quot; id=&quot;laughing-ecstasy&quot;&gt;Laughing Ecstasy&lt;/a&gt;&lt;/h3&gt;
+</code></pre>
+<p>In the fourth division of Bhakti-rasāmṛta-sindhu, Śrīla Rūpa Gosvāmī has described seven kinds of indirect ecstasies of devotional serviceknown as laughing, astonishment, chivalry, compassion, anger, dread and ghastliness.</p>
+<p>In this portion, Śrīla Rūpa Gosvāmī further describes these ecstasies of devotional feelings, some being compatible and others incompatible with one another.</p>
+<p>When one kind of ecstatic devotional service overlaps with another in a conflicting way, this state of affairs is called rasābhāsa, or perverted presentation of mellows.</p>
+<p>Expert learned scholars say that laughing is generally found among youngsters or in the combination of old persons and young children.</p>
+<p>This ecstatic loving laughing is sometimes also found in persons who are very grave by nature.</p>
+<p>Once an old mendicant approached the door of Mother Yaśodā's house, and Kṛṣṇa told Yaśodā, &quot;My dear Mother, I don't wish to go near this skinny villain.</p>
+<p>If I go there, he might put Me within his begging bag and take Me away from You!&quot; In this way, the wonderful child, Kṛṣṇa, began to look at His mother, while the mendicant, who was standing in the door, tried to hide his smiling face, although he could not do so.</p>
+<p>He immediately expressed his smiling.</p>
+<p>In this instance, Kṛṣṇa Himself is the object of laughing affairs.</p>
+<p>Once one of Kṛṣṇa's friends informed Him, &quot;My dear Kṛṣṇa, if You will open Your mouth, then I shall give You one nice sugar candy mixed with yogurt.&quot; Kṛṣṇa immediately opened His mouth, but instead of giving Him sugar candy with yogurt, the friend dropped a flower in His mouth.</p>
+<p>After tasting this flower, Kṛṣṇa turned His mouth in a disfigured way, and upon seeing this all His friends standing there began to laugh very loudly.</p>
+<p>Once a palmist came to the house of Nanda Mahārāj, and Nanda Mahārāj asked him, &quot;My dear sage, will you kindly check the hand of my child, Kṛṣṇa? Tell me how many years He will live and whether He will become the master of thousands of cows.&quot; Upon hearing this, the palmist began to smile, and Nanda Mahārāj asked him, &quot;My dear sir, why are you laughing, and why are you covering your face?&quot; In such a laughing ecstasy of love, Kṛṣṇa or matters pertaining to Kṛṣṇa are the cause of the laughter.</p>
+<p>In such laughing devotional service, there are symptoms of jubilation, laziness, concealed feelings and similar other seemingly disturbing elements.</p>
+<p>According to Śrīla Rūpa Gosvāmī's calculation, laughter in ecstatic love can be broken down into six divisions.</p>
+<p>These divisions, according to different degrees of smiling, are called in the Sanskrit language smita, hasita, vihasita, avahasita, apahasita, and atihasita.</p>
+<p>These six classes of smiling can be classified as major and minor.</p>
+<p>The major division includes smita, hasita and vihasita smiling, and the minor division includes avahasita, apahasita and atihasita smiling.</p>
+<p>When one is smiling but his teeth are not visible, one can distinctly mark a definite change in the eyes and in the cheeks.</p>
+<p>This is called smita smiling.</p>
+<p>Once when Kṛṣṇa was stealing yogurt, Jaratī, the headmistress of the house, could detect His activities, and she was therefore coming very hurriedly to catch Him.</p>
+<p>At that time, Kṛṣṇa became very much afraid of Jaratī and went to His elder brother, Baladeva.</p>
+<p>He said, &quot;My dear brother, I have stolen yogurt! Just see-Jaratī is coming hurriedly to catch Me!&quot; When Kṛṣṇa was thus seeking the shelter of Baladeva because He was being chased by Jaratī, all the great sages in the heavenly planets began to smile.</p>
+<p>This smiling is called smita smiling.</p>
+<p>Smiling in which the teeth are slightly visible is called hasita smiling.</p>
+<p>One day Abhimanyu, the so-called husband of Rādhārāṇī, was returning home, and at that time he could not see that Kṛṣṇa was there in his house.</p>
+<p>Kṛṣṇa immediately changed His dress to look exactly like Abhimanyu and approached Abhimanyu's mother, Jaṭilā, addressing her thus: &quot;My dear mother, I am your real son Abhimanyu, but just see-Kṛṣṇa, dressed up like me, is coming before you!&quot; Jaṭilā, the mother of Abhimanyu, immediately believed that Kṛṣṇa was her own son and thus became very angry at her real son who was coming home.</p>
+<p>She began to drive away her real son, who was crying, &quot;Mother! Mother! What are you doing?&quot; Seeing this incident, all the girl friends of Rādhārāṇī, who were present there, began to smile, and a portion of their teeth was visible.</p>
+<p>This is an instance of hasita smiling.</p>
+<p>When the teeth are distinctly visible in a smile, that is called vihasita.</p>
+<p>One day when Kṛṣṇa was engaged in stealing butter and yogurt in the house of Jaṭilā, He assured His friends, &quot;My dear friends, I know that this old lady is now sleeping very profoundly because she is breathing very deeply.</p>
+<p>Let us silently steal butter and yogurt without making any disturbance.&quot; But the old lady, Jaṭilā, was not sleeping; so she could not contain her smiling, and her teeth immediately became distinctly visible.</p>
+<p>This is an instance of vihasita smiling.</p>
+<p>In a state of smiling, when the nose becomes puffed and the eyes squint, the smiling is called avahasita.</p>
+<p>Once, early in the morning when Kṛṣṇa returned home after performing His rāsa dance, Mother Yaśodā looked upon Kṛṣṇa's face and addressed Him thus: &quot;My dear son, why do Your eyes look like they have been smeared with some oxides? Have You dressed Yourself with the blue garments of Baladeva?&quot; When Mother Yaśodā was addressing Kṛṣṇa in that way, a girl friend who was nearby began to smile with a puffed nose and squinting eyes.</p>
+<p>This is an instance of avahasita smiling.</p>
+<p>The gopī knew that Kṛṣṇa had been enjoying the rāsa dance and that Mother Yaśodā could not detect her son's activities or understand how He had become covered with the gopīs' makeup.</p>
+<p>Her smiling was in the avahasita feature.</p>
+<p>When tears from the eyes are added to the smiling and the shoulders are shaking, the smile is called apahasita.</p>
+<p>When child Kṛṣṇa was dancing in response to the singing of the old maidservant Jaratī, Nārada was astonished.</p>
+<p>The Supreme Personality of Godhead, who controls all the movements of great demigods like Brahmā and others, was now dancing to the indications of an old maidservant.</p>
+<p>Seeing this fun, Nārada also began to dance, and his shoulders trembled, and his eyes moved.</p>
+<p>Due to his smiling, his teeth also became visible, and on account of the glaring effulgence from his teeth, the clouds in the skies turned silver.</p>
+<p>When a smiling person claps his hands and leaps in the air, the smiling expression changes into atihasita, or overwhelming laughter.</p>
+<p>An example of atihasita was manifested in the following incident: Kṛṣṇa once addressed Jaratī thus: &quot;My dear good woman, the skin of your face is now slackened, and so your face exactly resembles a monkey's.</p>
+<p>As such, the King of the monkeys, Balīmukha, has selected you as his worthy wife.&quot; While Kṛṣṇa was teasing Jaratī in this way, she replied that she was certainly aware of the fact that the King of the monkeys was trying to marry her, but she had already taken shelter of Kṛṣṇa, the killer of many powerful demons, and therefore she had already decided to marry Kṛṣṇa instead of the King of the monkeys.</p>
+<p>On hearing this sarcastic reply by the talkative Jaratī, all the cowherd girls present there began to laugh very loudly and clap their hands.</p>
+<p>This laughter, accompanied by the clapping of hands, is called atihasita.</p>
+<p>Sometimes there are indirect sarcastic remarks which also create atihasita circumstances.</p>
+<p>An example of one such remark was made by one of the cowherd girls to Kuṭilā, the daughter of Jaṭilā and sister of Abhimanyu, the so-called husband of Rādhārāṇī.</p>
+<p>Indirectly Kuṭilā was insulted by the following statement: &quot;My dear Kuṭilā, daughter of Jaṭilā, your breasts are as long as string beans-simply dry and long.</p>
+<p>Your nose is so gorgeous that it is defying the beauty of the noses of frogs.</p>
+<p>And your eyes are more beautiful than the eyes of dogs.</p>
+<p>Your lips are defying the flaming cinders of fire, and your abdomen is as beautiful as a big drum.</p>
+<p>Therefore, my dear beautiful Kuṭilā, you are the most beautiful of all the cowherd girls of Vṛndāvana, and because of your extraordinary beauty, I think you must be beyond the attraction of the sweet blowing of Kṛṣṇa's flute!&quot;</p>
+<pre><code>                &lt;/main&gt;
+
+                &lt;nav class=&quot;nav-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+                    &lt;!-- Mobile navigation buttons --&gt;
+                    
+                        &lt;a rel=&quot;prev&quot; href=&quot;../part3/index.html&quot; class=&quot;mobile-nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    
+                        &lt;a rel=&quot;next&quot; href=&quot;ch2.html&quot; class=&quot;mobile-nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                            &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                        &lt;/a&gt;
+                    
+
+                    &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+                &lt;/nav&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;nav class=&quot;nav-wide-wrapper&quot; aria-label=&quot;Page navigation&quot;&gt;
+            
+                &lt;a href=&quot;../part3/index.html&quot; class=&quot;nav-chapters previous&quot; title=&quot;Previous chapter&quot; aria-label=&quot;Previous chapter&quot; aria-keyshortcuts=&quot;Left&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-left&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+
+            
+                &lt;a href=&quot;ch2.html&quot; class=&quot;nav-chapters next&quot; title=&quot;Next chapter&quot; aria-label=&quot;Next chapter&quot; aria-keyshortcuts=&quot;Right&quot;&gt;
+                    &lt;i class=&quot;fa fa-angle-right&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+            
+        &lt;/nav&gt;
+
+    &lt;/div&gt;
+
+    
+
+    
+
+    
+
+    
+    &lt;script src=&quot;elasticlunr.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;mark.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;searcher.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    
+
+    &lt;script src=&quot;clipboard.min.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;highlight.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;book.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- Custom JS scripts --&gt;
+    
+
+    
+
+&lt;/body&gt;
+</code></pre>
+</html>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>

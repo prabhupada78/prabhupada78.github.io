@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>6 - Nectar of Devotion - Part IV</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html" class="active">6</a></li><li class="affix"><a href="ch7.html">7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part IV</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#further-analysis-of-mixed-rasas" id="further-analysis-of-mixed-rasas">Further Analysis of Mixed Rasas</a></h3>
+<p>As already described, if certain kinds of mellows become mixed and there is a joining of opposite mellows, then the situation is called incompatible.</p>
+<p>When one is eating sweet rice and something salty or sour is mixed in, the mixture is not very tasteful, and it is called incompatible.</p>
+<p>An exemplary instance of incompatibility is the following statement by an impersonalist who was lamenting aloud, &quot;I have been attached simply to the impersonal Brahman feature, and I have passed my days uselessly in practicing trance.</p>
+<p>I have not given any proper attention to Śrī Kṛṣṇa, who is the source of the impersonal Brahman and who is the reservoir of all transcendental pleasures.&quot; In this statement there are traces of neutrality and conjugal love, and the resulting humor is incompatible.</p>
+<p>Sometimes it is found in places like Vṛndāvana that a person with a slight devotional attitude of neutral love for Kṛṣṇa may immediately and artificially try to attain to the platform of conjugal love.</p>
+<p>But because of the incompatibility of neutrality and conjugal love, the person is found to fall from the standard of devotional service.</p>
+<p>Incompatibility was expressed by a great devotee on the platform of neutrality when he sarcastically prayed, &quot;I am very anxious to see Kṛṣṇa, the Supreme Personality of Godhead, who is many millions of times more affectionate than the pitṛs (forefathers) in the Pitṛ-loka, and who is always worshiped by the great demigods and sages.</p>
+<p>I am a little surprised, however, that although Kṛṣṇa is the husband of the goddess of fortune, His body is often marked with the nail pricks of ordinary society girls!&quot; Here is an example of incompatibility due to a mixture of neutrality and high conjugal love.</p>
+<p>There is the following statement by a gopī: &quot;My dear Kṛṣṇa, the first thing You should do is just embrace me with Your strong arms.</p>
+<p>Then, my dear friend, I shall first smell Your head, and then I shall enjoy with You.&quot; This is an example of incompatibility in which conjugal love is the whole and servitorship is the part.</p>
+<p>One devotee said, &quot;My dear Kṛṣṇa, how can I address You as my son when You are addressed by the great Vedāntists as the absolute truth and by the Vaiṣṇavas who follow the principles of Nārada-paṣcarātra as the Supreme Personality of Godhead? You are the same Supreme Person, so how shall my tongue be so extraordinarily bold as to address You as an ordinary son?&quot; In this statement there is a mixture of neutrality and parental love, and the result is incompatible.</p>
+<p>Another devotee said, &quot;My dear friend, my youthful beauty is as temporary as lightning in the sky, and therefore, my possessing attractive bodily features is unimportant.</p>
+<p>I have never met Kṛṣṇa, so I request you to please arrange for my meeting Him immediately.&quot; In this statement there is the incompatibility of a neutral mellow mixed with conjugal love.</p>
+<p>A lusty woman in Kailāsa once told Kṛṣṇa: &quot;My dear Kṛṣṇa, may You have a long life!&quot; Then, after saying this, she embraced Kṛṣṇa.</p>
+<p>This is an example of incompatibility resulting from a mixture of parental love and conjugal love.</p>
+<p>The purpose of the above analysis is to show that in the mixture of various mellows, or reciprocations of ecstatic love between Kṛṣṇa and the devotees, if the result is not pure, there will be incompatibility.</p>
+<p>According to the opinion of stalwart devotees like Rūpa Gosvāmī, as soon as there are contradictory feelings, the result is incompatible.</p>
+<p>Once an ordinary female devotee addressed Kṛṣṇa, &quot;My dear boy, I know that my body is just a composition of flesh and blood and can never be enjoyable to You.</p>
+<p>But still, I have been so attracted by Your beauty that I wish that You accept me as Your conjugal lover.&quot; In this statement there is incompatibility caused by a mixture of ghastliness and conjugal love in devotional service.</p>
+<p>Śrīla Rūpa Gosvāmī warns devotees to not commit such incompatibilities in their writings or in their dealings.</p>
+<p>The presence of such contradictory feelings is called rasābhāsa.</p>
+<p>When there is rasābhāsa in any book of Kṛṣṇa consciousness, no learned scholar or devotee will accept it.</p>
+<p>In the Vidagdha-mādhava, second act, verse 29, Paurṇamāsī tells Nāndīmukhī: &quot;Just see how wonderful it is! Great sages meditate upon Kṛṣṇa after being relieved from all material transactions, and with great difficulty they try to situate Kṛṣṇa in their hearts.</p>
+<p>And opposed to this, this young girl is trying to withdraw her mind from Kṛṣṇa so she can apply it in the material activities of sense gratification.</p>
+<p>What a regrettable thing it is that this girl is trying to drive away from her heart the same Kṛṣṇa who is sought after by great sages through severe austerities and perseverance!&quot; Although in this statement there are contradictory mellows of ecstatic devotion, the result is not incompatible because conjugal love is so elevated that it is defeating all other varieties of mellows.</p>
+<p>Śrīla Jīva Gosvāmī comments in this connection that such a loving state of mind is not possible for all.</p>
+<p>It is only possible in the case of the gopīs of Vṛndāvana.</p>
+<p>There are many other instances of contradictory mellows where there is no perverted experience of rasābhāsa.</p>
+<p>Once some minor demigod of the heavenly planets remarked: &quot;Kṛṣṇa, whose joking words were once the source of so much laughter for the residents of Braja, has now been attacked by the serpent king, Kāliya, and He has become the object of everyone's overwhelming lamentation!&quot; In this instance there is a mixture of laughter and compassion, but there is no incompatibility because by both of these rasas the loving affection for Kṛṣṇa is increased.</p>
+<p>Śrīmatī Rādhārāṇī was once told that although She had stopped all activities, She was still the supreme source of inspiration for all kinds of devotional service.</p>
+<p>The statement says, &quot;My dear Rādhārāṇī, in separation from Kṛṣṇa You are now as still as the most beautiful tree, whose gracefulness is not blocked by any covering of leaves.</p>
+<p>Your tranquil mood makes You appear to be completely merged in Brahman realization!&quot; In this example there is a mixture of conjugal love and neutral love, but the conjugal love has surpassed everything.</p>
+<p>Actually, Brahman realization is only a stunted existence.</p>
+<p>There is the following statement by Kṛṣṇa Himself: &quot;Śrīmatī Rādhārāṇī has become peace personified for Me.</p>
+<p>Because of Her I now go without sleep.</p>
+<p>I stare constantly without blinking My eyes, and I am always in a meditative mood.</p>
+<p>Because of Her I have even made My home in the cave of a mountain!&quot; This is an example of conjugal love mixed with neutral love, but there is no incompatibility.</p>
+<p>The following is a conversation consisting of questions put before Rambhā, a celebrated beautiful woman, and her corresponding answers.</p>
+<p>Rambhā was asked, &quot;My dear Rambhā, who are you?&quot; She answered, &quot;I am peace personified.&quot; Question: &quot;Then why are you in the sky?&quot; Answer: &quot;I am in the sky to experience the supreme absolute truth.&quot; Question: &quot;Then why are you staring?&quot; Answer: &quot;Just to look into the supreme beauty of the absolute truth.&quot; Question: &quot;Then why do you appear to be disturbed in mind?&quot; Answer: &quot;Because Cupid is acting.&quot; In the above example also there is no perverted representation of mellows because on the whole the ecstasy of conjugal love has exceeded the neutral position of devotional service.</p>
+<p>In the Tenth Canto of Śrīmad-Bhāgavatam, 60th Chapter, 44th verse, Rukmiṇīdevī said, &quot;My dear husband, a woman who has no taste for the transcendental pleasure available from Your personal contact must be inclined to accept as her husband somebody who is externally a combination of mustaches, beard, body hairs, fingernails and some head hair.</p>
+<p>And within him there are muscles, bones, blood, intestinal worms, stools, mucus, bile, and similar things.</p>
+<p>Actually, such a husband is only a dead body, but due to not being attracted to Your transcendental form, a woman will have to accept this combination of stools and urine for her husband.&quot; This statement, which lists the ingredients of a material body, is not a perverted mellow in transcendental realization because it shows correct discrimination between matter and spirit.</p>
+<p>In the Vidagdha-mādhava, second act, 42nd verse, Kṛṣṇa tells His friend, &quot;My dear friend, what a wonderful thing it is that since I have seen the beautiful lotus eyes of Śrīmatī Rādhārāṇī, I have developed a tendency to spit on the moon and the lotus flower!&quot; This is an example of conjugal love mixed with ghastliness, but there is no incompatibility.</p>
+<p>The following is a statement which describes different mellows of devotional service: &quot;Although Kṛṣṇa was invincible to any enemy, the cowherd boys of Vṛndāvana became almost blackish with astonishment upon seeing His wonderful royal garments and His fighting feats on the battlefield of Kurukṣetra.&quot; In this statement, although there is a mixture of chivalrous activities and astonishment in devotional service, there is no perverted reflection of mellows.</p>
+<p>One resident of Mathurā requested her father to bolt the doors and then go with her to the school of Sāndīpani Muni to find Kṛṣṇa.</p>
+<p>She complained that Kṛṣṇa had completely stolen her mind.</p>
+<p>In this incident there is a mixture of conjugal love and parental love, but there is no incompatibility.</p>
+<p>A brahmānandī (impersonalist) expressed his desire as follows: &quot;When shall I be able to see that supreme absolute Personality of Godhead who is eternal bliss and knowledge, and whose chest has become smeared with red kuṅkum powder by touching the breast of Rukmiṇī?&quot; Here there is a mixture of conjugal love and neutrality.</p>
+<p>Although this is a contradiction of mellows, there is no incompatibility because even a brahmānandī will become attracted to Kṛṣṇa.</p>
+<p>Nanda Mahārāj told his wife, &quot;My dear Yaśodā, although your son, Kṛṣṇa, is as delicate and soft as the mallīkā flower, He has gone to kill the Keśī demon, who is as strong as the mountain.</p>
+<p>Therefore I have become a little disturbed.</p>
+<p>But never mind, all auspiciousness to my son! I shall raise this hand which is as strong as a pillar, and I shall kill the Keśī demon, just to give freedom from all anxieties to the inhabitants of Brajamaṇḍala!&quot; In this statement there are two kinds of mellows: chivalry and dread.</p>
+<p>Both of them, however, improve the position of parental love, and therefore there is no incompatibility.</p>
+<p>In the Lalita-mādhava of Śrīla Rūpa Gosvāmī it is stated, &quot;After Kṛṣṇa's arrival in Kaṁsa's arena, Kaṁsa's priest looked at Kṛṣṇa with a detestful expression.</p>
+<p>The entire arena was filled with dread on the part of Kaṁsa and his priest and restless expressions of pleasure on the cheeks of Kṛṣṇa's friends.</p>
+<p>Frustration was felt by His envious rivals.</p>
+<p>The great sages meditated.</p>
+<p>Hot tears were in the eyes of Devakī and other motherly ladies, and hairs stood on the bodies of the expert warriors.</p>
+<p>There was astonishment in the hearts of demigods such as Indra.</p>
+<p>The servants danced, and the restless eyes of all the young girls glanced about.&quot; In this statement there is a description of a combination of different mellows, but there is no incompatibility.</p>
+<p>A similar statement, which is free from incompatibility, is in the Lalitamādhava wherein the author blesses all the readers of the book in the following manner: &quot;Although the Supreme Personality of Godhead is able to lift a mountain with a finger of His left hand, He is always humble and meek.</p>
+<p>He is always very kind to His loving devotees.</p>
+<p>He has frustrated Indra's attempt at vengeance by refusing him the sacrifice of Indra-yajṣa.</p>
+<p>He is the cause of all pleasure to all young girls.</p>
+<p>May He be ever compassionate upon you all!&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

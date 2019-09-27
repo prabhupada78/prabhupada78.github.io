@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>7 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html" class="active">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html">18</a></li><li class="affix"><a href="ch19.html">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#evidence-regarding-devotional-principles" id="evidence-regarding-devotional-principles">Evidence Regarding Devotional Principles</a></h3>
+<p>In the Eleventh Canto of Śrīmad-Bhāgavatam, Prabuddha tells Mahārāj Nimi: &quot;My dear King, please know for certain that in the material world there is no happiness.</p>
+<p>It is simply a mistake to think that there is happiness here, because this place is full of nothing but miserable conditions.</p>
+<p>Any person who is seriously desirous of achieving real happiness must seek out a bona fide spiritual master and take shelter of him by initiation.</p>
+<p>The qualification of a spiritual master is that he must have realized the conclusion of the scriptures by deliberation and arguments and thus be able to convince others of these conclusions.</p>
+<p>Such great personalities who have taken shelter of the Supreme Godhead, leaving aside all material considerations, are to be understood as bona fide spiritual masters.</p>
+<p>Everyone should try to find such a bona fide spiritual master in order to fulfill his mission of life, which is to transfer himself to the plane of spiritual bliss.&quot; The purport is that one should not accept as a spiritual master someone who is Fool Number One, who has no direction according to the scriptural injunctions, whose character is doubtful, who does not follow the principles of devotional service, or who has not conquered the influence of the six sense gratifying agents.</p>
+<p>The six agents of sense gratification are the tongue, the genitals, the belly, anger, the mind and words.</p>
+<p>Anyone who has practiced controlling these six is permitted to make disciples all over the world.</p>
+<p>To accept such a spiritual master is the crucial point for advancement in spiritual life.</p>
+<p>One who is fortunate enough to come under the shelter of a bona fide spiritual master is sure to traverse the path of spiritual salvation without any doubt.</p>
+<p>To Accept Initiation from the Spiritual Master and Receive Instructions from Him Sage Prabuddha continued to speak to the King as follows: &quot;My dear King, a disciple has to accept the spiritual master not only as spiritual master, but also as the representative of the Supreme Personality of Godhead and the supersoul.</p>
+<p>In other words, the disciple should accept the spiritual master as God because he is the external manifestation of Kṛṣṇa.&quot; This is confirmed in every scripture, and a disciple should accept the spiritual master as such.</p>
+<p>One should learn Śrīmad-Bhāgavatam seriously and with all respect and veneration for the spiritual master.</p>
+<p>Hearing and speaking Śrīmad- Bhāgavatam is the religious process which elevates one to the platform of serving and loving the Supreme Personality of Godhead.</p>
+<p>The attitude of the disciple should always be to satisfy the bona fide spiritual master.</p>
+<p>Then it will be very easy for him to understand spiritual knowledge.</p>
+<p>This is confirmed in the Vedas, and it will be further explained by Rūpa Gosvāmī that, for a person who has unflinching faith in God and the spiritual master, everything becomes revealed very easily.</p>
+<p>To Serve the Spiritual Master with Faith and Confidence Regarding accepting initiation from the spiritual master, in the Eleventh Canto of Śrīmad-Bhāgavatam, 17th Chapter, 22nd verse, it is stated by Lord Kṛṣṇa: &quot;My dear Uddhava, the spiritual master must be accepted not only as My representative but as My very self.</p>
+<p>He must never be considered on the same level with an ordinary human being.</p>
+<p>One should never be envious of the spiritual master, as one may be envious of an ordinary man.</p>
+<p>The spiritual master should always be seen as the representative of the Supreme Personality of Godhead, and by serving the spiritual master, one is able to serve all the demigods.&quot; To Follow in the Footsteps of Saintly Persons In the Skanda Purāṇa it is advised that a devotee follow the past ācāryas and saintly persons because by such following one can achieve the desired results, with no chance of lamenting or being baffled in his progress.</p>
+<p>In the scripture known as Brahma-yāmala it is stated as follows: &quot;If someone wants to pose himself as a great devotee without following the authorities of the revealed scriptures, then his activities will never help him to make progress in devotional service.</p>
+<p>Instead, he will simply create disturbances for the sincere students of devotional service.&quot; Those who do not strictly follow the principles of revealed scriptures are generally called sahajiyā, those who have imagined everything to be cheap, and who have their own concocted ideas, and who do not follow the scriptural injunctions.</p>
+<p>Such persons are simply creating disturbances in the discharge of devotional service.</p>
+<p>In this connection, an objection may be raised by those who are not in devotional service and who do not care for the revealed scriptures.</p>
+<p>An example of this is seen in Buddhist philosophy.</p>
+<p>Lord Buddha appeared in the family of a high-grade kṣatriya king, but his philosophy was not in accord with the Vedic conclusions and therefore was rejected.</p>
+<p>Under the patronage of a Hindu king, Mahārāj Aśoka, the Buddhist religion was spread all over India and the adjoining countries.</p>
+<p>However, after the appearance of the great stalwart teacher, Śaṅkarācārya, this Buddhism was driven out beyond the border of India.</p>
+<p>The Buddhists or other religionists who do not care for revealed scriptures sometimes say that there are many devotees of Lord Buddha who show devotional service to Lord Buddha and who therefore should be considered devotees.</p>
+<p>In answer to this argument, Rūpa Gosvāmī says that the followers of Buddha cannot be accepted as devotees.</p>
+<p>Although Lord Buddha is accepted as an incarnation of Kṛṣṇa, the followers of such incarnations are not very advanced in their knowledge of the Vedas.</p>
+<p>To study the Vedas means to come to the conclusion of the supremacy of the Personality of Godhead.</p>
+<p>Therefore any religious principle which denies the supremacy of the Personality of Godhead is not accepted and is called atheism.</p>
+<p>Atheism means defying the authority of the Vedas and decrying the great ācāryas who teach Vedic scriptures for the benefit of the people in general.</p>
+<p>Lord Buddha is accepted as an incarnation of Kṛṣṇa in the Śrīmad-Bhāgavatam, but in the same Śrīmad-Bhāgavatam it is stated that Lord Buddha appeared in order to bewilder the atheist class of men.</p>
+<p>Therefore his philosophy is meant for bewildering the atheists and should not be accepted.</p>
+<p>If someone asks, &quot;Why should Kṛṣṇa propagate atheistic principles?&quot; the answer is that it was the desire of the Supreme Personality of Godhead to end the violence which was then being committed in the name of the Vedas.</p>
+<p>The so-called religionists were falsely using the Vedas to justify such violent acts as meat-eating, and Lord Buddha came to lead the fallen people away from such a false interpretation of the Vedas.</p>
+<p>Also, for the atheist class, Lord Buddha preached atheism so that they would follow him and thus be tricked into devotional service to Lord Buddha, or Kṛṣṇa.</p>
+<p>Inquiring about External Religious Principles In the Nāradīya Purāṇa it is said, &quot;If one is actually very serious about devotional service, then all of his purposes will be served without any delay.&quot; Residing in a Sacred Place In the Padma Purāṇa it is stated, &quot;For one who has given up his material sense enjoyment and has accepted the principles of devotional service, the opulence of Viṣṇu-loka [the kingdom of God] is awaiting.&quot; In the Padma Purāṇa it is also said that for a person who has lived in Dvārakā for six months, for one month, or even for one fortnight, there is awaiting elevation to the Vaikuṇṭha-lokas and all the profits of sārūpyamukti (the privilege of having the same four-handed bodily features as Nārāyaṇa).</p>
+<p>In the Brahma Purāṇa it is said: &quot;The transcendental significance of Puruṣottama-kṣetra, which is the 80-square-mile field of Lord Jagannātha, cannot be properly described.</p>
+<p>Even the demigods from higher planetary systems see the inhabitants of this Jagannātha Purī as having exactly the same features of body as are possessed by one in Vaikuṇṭha.</p>
+<p>That is, the demigods see the inhabitants of Jagannātha Purī as being fourhanded.&quot; When there was a meeting of great sages at Naimiṣāraṇya, Sūta Gosvāmī was reciting Śrīmad-Bhāgavatam, and the importance of the Ganges was stated as follows: &quot;The waters of the Ganges are always carrying the flavor of tulasī offered at the lotus feet of Śrī Kṛṣṇa, and as such the waters of the Ganges are ever flowing, spreading the glories of Lord Kṛṣṇa.</p>
+<p>Wherever the waters of the Ganges are flowing, all will be sanctified, both externally and internally.&quot; To Accept Only What is Necessary In the Nāradīya Purāṇa it is directed: &quot;One should not accept more than necessary if he is serious about discharging devotional service.&quot; The purport is that one should not neglect following the principles of devotional service, nor should one accept the rulings of devotional service which are more than what he can easily perform.</p>
+<p>For example, it may be said that one should chant the Hare Kṛṣṇa mantra at least 100,000 times daily on his beads.</p>
+<p>But if this is not possible, then one must minimize his chanting according to his own capacity.</p>
+<p>Generally, we recommend our disciples to chant at least 16 rounds on their japa beads daily, and this should be completed.</p>
+<p>But if one is not even able to chant 16 rounds, then he must make it up the next day.</p>
+<p>He must be sure to keep his vow.</p>
+<p>If he does not strictly follow this out, then he is sure to be negligent.</p>
+<p>That is offensive in the service of the Lord.</p>
+<p>If we encourage offenses, we shall not be able to make progress in devotional service.</p>
+<p>It is better if one fixes up a regulative principle according to his own ability and then follows that vow without fail.</p>
+<p>That will make him advanced in spiritual life.</p>
+<p>Observing Fasting on Ekādaśī In the Brahma-vaivarta Purāṇa it is said that one who observes fasting on Ekādaśī day is freed from all kinds of reactions to sinful activities and advances in pious life.</p>
+<p>The basic principle is not just to fast, but to increase one's faith and love for Govinda, or Kṛṣṇa.</p>
+<p>The real reason for observing fasting on Ekādaśī is to minimize the demands of the body and to engage our time in the service of the Lord by chanting or performing similar service.</p>
+<p>The best thing to do on fasting days is to remember the pastimes of Govinda and to hear His holy name constantly.</p>
+<p>To Offer Respect to the Banyan Trees In the Skanda Purāṇa it is directed that a devotee should offer water to the tulasī plant and āmalaka trees.</p>
+<p>He should offer respect to the cows and to the brāhmaṇas and should serve the Vaiṣṇavas by offering them respectful obeisances and meditating upon them.</p>
+<p>All of these processes will help the devotee to diminish the reactions to his past sinful activities.</p>
+<p>To Give Up the Company of Nondevotess Lord Caitanya was once asked by one of His householder devotees what the general behavior of a Vaiṣṇava should be.</p>
+<p>In this connection, Lord Caitanya replied that a Vaiṣṇava should always give up the company of nondevotees.</p>
+<p>Then He explained that there are two kinds of nondevotees: one class is against the supremacy of Kṛṣṇa, and another class is too materialistic.</p>
+<p>In other words, those who are after material enjoyment and those who are against the supremacy of the Lord are called avaiṣṇava, and their company should be strictly avoided.</p>
+<p>In the Kātyāyana-saṁhitā it is stated that even if one is forced to live within a cage of iron or in the midst of a blazing fire, he should accept this position rather than live with nondevotees who are through and through against the supremacy of the Lord.</p>
+<p>Similarly, in Viṣṇu-rahasya, there is a statement to the effect that one should prefer to embrace a snake, a tiger or an alligator rather than associate with persons who are worshipers of various demigods and who are impelled by material desire.</p>
+<p>In the scriptures it is instructed that one may worship a certain demigod if he is desirous of achieving some material gain.</p>
+<p>For example, one is advised to worship the sun god if he is desirous of getting rid of a diseased condition.</p>
+<p>For a beautiful wife, one can worship Umā, the wife of Lord Śiva, and for advanced education one may worship Sarasvatī.</p>
+<p>Similarly, there is a list in the Śrīmad- Bhāgavatam for worshipers of all demigods, according to different material desires.</p>
+<p>But all of these worshipers, although they appear to be very good devotees of the demigods, are still considered to be nondevotees.</p>
+<p>They cannot be accepted as devotees.</p>
+<p>The māyāvādīs (impersonalists) say that one can worship any form of the Lord and that it doesn't matter because one reaches the same destination anyway.</p>
+<p>But it is clearly stated in the Bhagavad-gītā that those who are worshipers of the demigods will ultimately reach only the planets of those demigods, while those who are devotees of the Lord Himself will be promoted to the Lord's abode, the kingdom of God.</p>
+<p>So actually these persons who are worshipers of demigods have been condemned in the Gītā.</p>
+<p>It is described that due to their lusty desires they have lost their intelligence, and therefore they have taken to worshiping the different demigods.</p>
+<p>So in the Viṣṇu- rahasya these demigod worshipers are forcefully condemned by the statement that it is better to live with the most dangerous animals than to associate with these persons.</p>
+<p>Another stricture is that a person may have many disciples, but he should not act in such a way that he will be obliged to any of them for some particular action or some favor.</p>
+<p>And one should also not be very enthusiastic about constructing new temples, nor should one be enthusiastic about reading various types of books, save and except the ones which lead to the advancement of devotional service.</p>
+<p>Practically, if one very carefully reads the Bhagavad-gītā, Śrīmad-Bhāgavatam, Teachings of Lord Caitanya and this Nectar of Devotion, that will give him sufficient knowledge to understand the science of Kṛṣṇa consciousness.</p>
+<p>One need not take the trouble of reading other books.</p>
+<p>In the Seventh Canto of Śrīmad-Bhāgavatam, 13th Chapter, 7th verse, Nārada Muni, while discussing with Mahārāj Yudhiṣṭhira the various functions of the different orders in society, especially mentions rules for the sannyāsīs-those persons who have renounced this material world.</p>
+<p>One who has accepted the sannyāsa order of life is forbidden to accept as a disciple anyone who is not fit.</p>
+<p>A sannyāsī should first of all examine whether a prospective student is sincerely seeking Kṛṣṇa consciousness.</p>
+<p>If he is not, he should not be accepted.</p>
+<p>However, Lord Caitanya's causeless mercy is such that He advised all bona fide spiritual masters to speak about Kṛṣṇa consciousness everywhere.</p>
+<p>Therefore, in the line of Lord Caitanya, even the sannyāsīs can speak about Kṛṣṇa consciousness everywhere, and if someone is seriously inclined to become a disciple, the sannyāsī always accepts him.</p>
+<p>The one point is that without increasing the number of disciples, there is no propagation of the cult of Kṛṣṇa consciousness.</p>
+<p>Therefore, sometimes even at a risk, a sannyāsī in the line of Caitanya Mahāprabhu may accept even a person who is not thoroughly fit to become a disciple.</p>
+<p>Later on, by the mercy of such a bona fide spiritual master, the disciple is gradually elevated.</p>
+<p>However, if one increases the number of disciples simply for some prestige or false honor, he will surely fall down in the matter of executing Kṛṣṇa consciousness.</p>
+<p>Similarly, a bona fide spiritual master has no business reading many books simply to show his proficiency or to get popularity by lecturing in different places.</p>
+<p>One should avoid all these things.</p>
+<p>It is also stated that a sannyāsī should not be enthusiastic about constructing temples.</p>
+<p>We can see in the life of various ācāryas in the line of Śrī Caitanya Mahāprabhu that they are not very enthusiastic about constructing temples.</p>
+<p>However, if somebody comes forward to offer some service, the same reluctant ācāryas will encourage the building of costly temples by such servitors.</p>
+<p>For example, Rūpa Gosvāmī was offered a favor by Mahārāj Mansingh, the commander-in-chief of Emperor Akbar, and Rūpa Gosvāmī instructed him to construct a large temple for Govindajī, which cost vast amounts of money.</p>
+<p>So a bona fide spiritual master should not personally take any responsibility for constructing temples, but if someone has money and wants to spend it in the service of Kṛṣṇa, an ācārya like Rūpa Gosvāmī may utilize the devotee's money to construct a nice costly temple for the service of the Lord.</p>
+<p>Unfortunately, it happens that someone who is not fit to become a spiritual master may approach wealthy persons to contribute for temple constructions.</p>
+<p>If such money is utilized by unqualified spiritual masters to live comfortably in costly temples without actually doing any preaching work, this is not acceptable.</p>
+<p>In other words, a spiritual master needn't be very enthusiastic for constructing temple buildings simply in the name of so-called spiritual advancement.</p>
+<p>Rather, his first and foremost activity should be to preach.</p>
+<p>In this connection, Śrīla Bhaktisiddhānta Sarasvatī Gosvāmī Mahārāj recommended that a spiritual master print books.</p>
+<p>If one has money, instead of constructing costly temples, one should spend his money for the publication of authorized books in different languages for propagating the Kṛṣṇa consciousness movement.</p>
+<p>Straightforwardness in Ordinary Dealings There is a statement in the Padma Purāṇa: &quot;Persons who are engaged in Kṛṣṇa consciousness should never be disturbed by some material gain or loss.</p>
+<p>Even if there is some material loss, one should not be perturbed, but should always think of Kṛṣṇa within himself.&quot; The purport is that every conditioned soul is always absorbed in thinking of materialistic activities; he has to make himself freed from such thoughts and transfer himself completely to Kṛṣṇa consciousness.</p>
+<p>As we have already explained, the basic principle of Kṛṣṇa consciousness is to always think of Kṛṣṇa.</p>
+<p>One should not be disturbed in material loss, but, rather, should concentrate his mind upon the lotus feet of the Lord.</p>
+<p>A devotee should not be subjected to lamentation or illusion.</p>
+<p>There is the following statement in the Padma Purāṇa: &quot;Within the heart of a person who is overpowered by lamentation or anger, there is no possibility of Kṛṣṇa being manifested.&quot; The Demigods One should not become neglectful to offer due respect to the demigods.</p>
+<p>One may not be a devotee of demigods, but that does not mean that he should be disrespectful to them.</p>
+<p>For example, a Vaiṣṇava is not a devotee of Lord Śiva or Lord Brahmā, but he is duty-bound to offer all respects to such highly-positioned demigods.</p>
+<p>According to Vaiṣṇava philosophy, one should offer respect even to an ant, so then what need is there to speak of such exalted persons as Lord Śiva and Lord Brahmā? In the Padma Purāṇa it is said, &quot;Kṛṣṇa, or Hari, is the master of all demigods, and therefore He is always worshipable.</p>
+<p>But this does not mean that one should not offer respect to the demigods.&quot; Not Giving Pain to Any Living Entity This is the statement of Mahābhārata: &quot;A person who does not disturb or cause painful action in the mind of any living entity, who treats everyone just like a loving father does his children, whose heart is so pure, certainly very soon becomes favored by the Supreme Personality of Godhead.&quot; In so-called civilized society there is sometimes agitation against cruelty to animals, but at the same time regular slaughterhouses are always maintained.</p>
+<p>A Vaiṣṇava is not like that.</p>
+<p>A Vaiṣṇava can never support animal slaughter nor even give pain to any living entity.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>7 - Nectar of Devotion - Part III</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part4/index.html">Part Four</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html" class="active">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part III</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#fraternal-devotion" id="fraternal-devotion">Fraternal Devotion</a></h3>
+<p>When a devotee is permanently situated in devotional service, and by different symptoms of ecstasy he has developed and matured a fraternal mellow or flavor in relationship with the Personality of Godhead, his feeling is called fraternal love of Godhead.</p>
+<p>The impetus for such fraternal love of God is God Himself.</p>
+<p>When one is liberated and discovers his eternal relationship with the Supreme Lord, the Lord Himself becomes the impetus for increasing fraternal love.</p>
+<p>The eternal associates of the Lord in Vṛndāvana have described this as follows: &quot;The Lord, Hari, whose bodily hue is like the indranīla jewel, whose smiling is as beautiful as the kunda flower, whose silk dress is as yellow as golden autumn foliage, whose chest is beautified with garlands of flowers and who is always playing upon His flute-this enemy of the Agha demon is always attracting our hearts by wandering about Vṛndāvana.&quot; There are similar statements of fraternal love expressed outside the jurisdiction of Vṛndāvana.</p>
+<p>When the sons of Pāṇḍu, headed by Mahārāj Yudhiṣṭhira, saw Kṛṣṇa in His fourhanded form on the battlefield of Kurukṣetra, holding His conchshell, disc, club and lotus flower, they completely forgot themselves and became merged in the ocean of nectarean happiness.</p>
+<p>This shows how the sons of Pāṇḍu-King Yudhiṣṭhira, Bhīma, Arjuna, Nakula and Sahadeva-were all caught up in fraternal love for Kṛṣṇa.</p>
+<p>Sometimes the different names, forms, paraphernalia and transcendental qualities provoke fraternal love: For instance, Kṛṣṇa's nice dress, the all-auspicious symptoms on His body, His strongly- built body, His knowledge of different languages, His learned teachings in the Bhagavad- gītā, His uncommon genius in all fields of endeavor, His exhibition of expert knowledge, His mercy, His chivalry, His behavior as a conjugal lover, His intelligence, His forgiveness, His attraction for all kinds of men, His opulence and His happiness-all provoke fraternal love.</p>
+<p>The impetus to fraternal love upon seeing the associates of Kṛṣṇa in Vṛndāvana is also very natural, for their personal bodily features, their qualities and dress are all equal to Kṛṣṇa's.</p>
+<p>These associates are always happy in their service to Kṛṣṇa, and they are generally known as vayasyas, or friends of the same age.</p>
+<p>The vayasyas are fully confident of protection by Kṛṣṇa.</p>
+<p>Devotees sometimes pray: &quot;Let us offer our respectful obeisances unto the vayasyas of Kṛṣṇa, who are firmly convinced of Kṛṣṇa's friendship and protection and whose devotion to Kṛṣṇa is ever-fixed.</p>
+<p>They are fearless, and on a level equal with Kṛṣṇa they discharge their transcendental loving devotional service.&quot; Such eternal vayasyas are also found beyond the jurisdiction of Vṛndāvana, in places such as Dvārakā and Hastināpura.</p>
+<p>Except for Vṛndāvana, all the places of Kṛṣṇa's pastimes are called puras (towns).</p>
+<p>Mathurā and Hastināpura, the capital of the Kurus, are both puras.</p>
+<p>Personalities like Arjuna, Bhīma, Draupadī and Śrīdāmā Brāhmaṇa are counted among Kṛṣṇa's fraternal devotees in the puras.</p>
+<p>How the sons of Pāṇḍu, the Pāṇḍavas, enjoy Kṛṣṇa's association is described as follows: &quot;When Śrī Kṛṣṇa arrived in Indraprastha, the capital of the Kurus, Mahārāj Yudhiṣṭhira immediately came out to smell the flavor of Kṛṣṇa's head.&quot; It is the Vedic custom that superiors smell the heads of their subordinates when the subordinates offer respect to the superior by touching his feet.</p>
+<p>Similarly, Arjuna and Bhīma embraced Kṛṣṇa with great jubilation, and the two younger brothers, namely Nakula and Sahadeva, touched the lotus feet of Kṛṣṇa with tears in their eyes and offered their respects.</p>
+<p>In this way all the five Pāṇḍava brothers enjoyed the fraternal friendship of Kṛṣṇa in transcendental mellow.</p>
+<p>Of the five Pāṇḍavas, Arjuna is the most intimately connected with Kṛṣṇa.</p>
+<p>He has a nice bow in his hand which is called Gāṇḍīva.</p>
+<p>His thighs are compared with the trunks of elephants, and his eyes are always reddish.</p>
+<p>When Kṛṣṇa and Arjuna are together on a chariot, they become celestial beauties, pleasing to the eyes of everyone.</p>
+<p>It is said that once Arjuna was lying in his bed with his head upon Kṛṣṇa's lap and was talking and joking with Kṛṣṇa in great relaxation and was enjoying Kṛṣṇa's company with smiling and great satisfaction.</p>
+<p>As far as the vayasyas (friends) in Vṛndāvana are concerned, they become greatly distressed when they cannot see Kṛṣṇa even for a moment.</p>
+<p>There is the following prayer by a devotee for the vayasyas in Vṛndāvana: &quot;All glories to Kṛṣṇa's vayasyas, who are just like Kṛṣṇa in their age, qualities, pastimes, dress and beauty.</p>
+<p>They are accustomed to playing on their flutes made of palm leaves, and they all have buffalohorn bugles ornamented like Kṛṣṇa's with jewels such as indranīla and with gold and coral.</p>
+<p>They are always jubilant like Kṛṣṇa.</p>
+<p>May these glorious companions of Kṛṣṇa always protect us!&quot; The vayasyas in Vṛndāvana are in such intimate friendship with Kṛṣṇa that sometimes they think themselves as good as Kṛṣṇa.</p>
+<p>Here is an instance of such friendly feeling: When Kṛṣṇa was holding up Govardhan Hill with His left hand, the vayasyas said, &quot;My dear friend, You have been standing for the last seven days and nights without any rest.</p>
+<p>This is very troublesome for us because we see that You have undertaken a severely laborious task.</p>
+<p>We think, therefore, that You need not continue to stand in that way holding the hill.</p>
+<p>You can just transfer it onto Sudāmā's hand.</p>
+<p>We are very much aggrieved to see You in this position.</p>
+<p>If you think that Sudāmā is not able to support Govardhan Hill, then at least You should change hands.</p>
+<p>Instead of supporting it with Your left hand, please transfer it to Your right hand, so that we can give Your left hand a massage.&quot; This is an instance of intimacy, showing how much the vayasyas considered themselves to be equal to Kṛṣṇa.</p>
+<p>In the Śrīmad-Bhāgavatam, Tenth Canto, 12th Chapter, 10th verse, Śukadeva Gosvāmī tells King Parīkṣit: &quot;My dear King, Kṛṣṇa is the Supreme Personality of Godhead to the learned transcendentalist, He is the supreme happiness for the impersonalist, He is the supreme worshipable Deity for the devotee, and He is just like an ordinary boy to one who is under the spell of māyā.</p>
+<p>And just imagine-these cowherd boys are now playing with the Supreme Person as though they are on an equal level! By this anyone can understand that these boys must have accumulated heaps of the results of pious activities to enable them to associate with the Supreme Personality of Godhead in such intimate friendship.&quot; There is a description of Kṛṣṇa's feeling for His vayasyas in Vṛndāvana.</p>
+<p>He once said to Balarāma, &quot;My dear brother, when My companions were being devoured by the Aghāsura, hot tears poured down from My eyes.</p>
+<p>And as they were washing My cheeks, My dear elder brother, for at least one moment I completely lost Myself.&quot; Within Gokula, Kṛṣṇa's vayasyas are generally divided into four groups: 1) well-wishers, 2) friends, 3) confidential friends and 4) intimate friends.</p>
+<p>Kṛṣṇa's well-wisher friends are a little bit older than Kṛṣṇa, and they have some parental affection for Him.</p>
+<p>Because of their being older than Kṛṣṇa they always try to protect Him from any harm.</p>
+<p>As such, they sometimes bear weapons so that they can chastise any mischievous persons who want to do harm to Kṛṣṇa.</p>
+<p>Counted among the well-wisher friends are Subhadra,* Maṇḍalībhadra, Bhadravardhana, Gobhaṭa, Yakṣa, Indrabhaṭa, Bhadrāṅga, Vīrabhadra, Mahāguṇa, Vijaya and Balabhadra.</p>
+<p>They are older than Kṛṣṇa and are always thinking of His welfare.</p>
+<p>One of the elderly friends said, &quot;My dear Maṇḍalībhadra, why are you wielding a shining sword as though you were running toward Ariṣṭāsura to kill him? My dear Baladeva, why are You unnecessarily bearing that heavy plow? My dear Vijaya, don't be unnecessarily agitated.</p>
+<p>My dear Bhadravardhana, there is no need to make these threatening motions.</p>
+<p>If you will all look more closely you will see that it is only a thunder cloud upon Govardhana Hill; it is not the Ariṣṭāsura in the shape of a bull, as you have imagined.&quot; These older, well-wishing friends of Kṛṣṇa had imagined a large cloud to be the Ariṣṭāsura, appearing in the shape of a huge bull.</p>
+<p>In the midst of their excitement one of them ascertained that it was actually only a cloud on Govardhan Hill.</p>
+<p>He therefore informed the others not to take the trouble of worrying about Kṛṣṇa, because there was no present danger from Ariṣṭāsura.</p>
+<ul>
+<li>Not be confused with Kṛṣṇa's sister of the same name.</li>
+</ul>
+<p>Amongst the well-wisher friends, Maṇḍalībhadra and Balabhadra are the chiefs.</p>
+<p>Maṇḍalībhadra is described as follows: his complexion is yellowish, and his dress is very attractive.</p>
+<p>He always carries a stick of various colors.</p>
+<p>He wears a peacock feather on his head and always looks very beautiful.</p>
+<p>Maṇḍalībhadra's attitude is revealed in this statement: &quot;My dear friends, our beloved Kṛṣṇa is now very tired from working with the cows in the pasturing grounds and from traveling all over the forests.</p>
+<p>I can see that He is very fatigued.</p>
+<p>Let me massage His head silently while He is taking rest in His house.</p>
+<p>And you, Subala-you just massage His thighs.&quot; One devotee described the personal beauty of Baladeva as follows: &quot;Let me take shelter of the lotus feet of Balarāma, whose beauty is enhanced by the earrings touching his cheeks.</p>
+<p>His face is decorated with tilaka made from kastūrī (musk), and His broad chest is decorated with a garland of guṣja (small conchshells).</p>
+<p>His complexion is as white as an autumn cloud, He wears garments of blue color, and His voice is very grave.</p>
+<p>His arms are very long, touching His thighs, and He has shown His great strength by killing the Pralamba demon.</p>
+<p>Let me take shelter of this chivalrous Balarāma.&quot; Baladeva's affection for Kṛṣṇa is illustrated in this statement to Subala: &quot;My dear friend, please inform Kṛṣṇa not to go to Kāliya's lake today.</p>
+<p>Today is His birthday, and so I wish to go along with Mother Yaśodā to bathe Him.</p>
+<p>Tell Him He should not leave the house today.&quot; This shows how Balarāma, Kṛṣṇa's elder brother, took care of Kṛṣṇa with parental love, within the scope of fraternal affection.</p>
+<p>Friends who were younger than Kṛṣṇa, who were always attached to Him and who gave Him all kinds of service, are called ordinary friends, or, simply, friends.</p>
+<p>Such ordinary friends are called sakhās, and the names of some sakhās are Viśāla, Vṛṣabha, Ojasvi, Devaprastha, Varūthapa, Maranda, Kusumāpīḍa, Maṇibandha and Karandhama.</p>
+<p>All of these sakhā friends of Kṛṣṇa sought only to serve Him.</p>
+<p>Sometimes some of them would rise early in the morning and immediately go to Kṛṣṇa's place and wait at the door to see Kṛṣṇa and * Balarāma and Baladeva are different names for the same expansion of Kṛṣṇa.</p>
+<p>He is Kṛṣṇa elder brother.</p>
+<p>to accompany Him to the pasturing grounds.</p>
+<p>In the meantime, Kṛṣṇa would be dressed by Mother Yaśodā, and when she would see a boy standing at the door, she would call him: &quot;Well, Viśāla, why are you standing there? Come here!&quot; So with the permission of Mother Yaśodā, he would immediately enter the house.</p>
+<p>And while Mother Yaśodā was dressing Kṛṣṇa, he would try to help put on Kṛṣṇa's ankle bells, and Kṛṣṇa would jokingly strike him with His flute.</p>
+<p>Then Mother Yaśodā would call, &quot;Kṛṣṇa, what is this? Why are You teasing Your friend?&quot; And Kṛṣṇa would laugh, and the friend would also laugh.</p>
+<p>These are some of the activities of Kṛṣṇa's sakhās.</p>
+<p>Sometimes the sakhās would take care of the cows who were going hither and thither.</p>
+<p>They would tell Kṛṣṇa, &quot;Your cows were going off here and there,&quot; and Kṛṣṇa would thank them.</p>
+<p>Sometimes when Kṛṣṇa and His sakhās went to the pasturing ground, Kaṁsa would send a demon to kill Kṛṣṇa.</p>
+<p>Therefore, almost every day there was a fight with some different kind of demon.</p>
+<p>After fighting with a demon, Kṛṣṇa would feel fatigued, the hairs on His head would be scattered, and the sakhās would immediately come and try to relieve Him in different ways.</p>
+<p>Some friends would say, &quot;My dear Viśāla, please take this fan of lotus leaves and fan Kṛṣṇa so that He may feel some comfort.</p>
+<p>Varūthapa, you just brush the scattered hairs on Kṛṣṇa's head which have fallen upon His face.</p>
+<p>Vṛṣabha, don't talk unnecessarily! Immediately massage Kṛṣṇa's body.</p>
+<p>His arms have become tired from fighting and wrestling with that demon.</p>
+<p>Oh, just see how our friend Kṛṣṇa has become tired!&quot; These are some examples of the treatment given to Kṛṣṇa by the sakhās.</p>
+<p>One of the sakhās, known as Devaprastha, is described as follows: he is very strong, a ready scholar, and is very expert in playing ball.</p>
+<p>He wears a white dress, and he ties his hair into a bunch with a rope.</p>
+<p>Whenever there is a fight between Kṛṣṇa and the demons, Devaprastha is the first to help, and he fights just like an elephant.</p>
+<p>One of the gopīs once said to her friend, &quot;My dear beautiful friend, when Kṛṣṇa, the son of Mahārāj Nanda, was taking rest within the cave of a hill, He was keeping His head on the arms of Śrīdāmā, and He was putting His left hand on Dāmā's chest.</p>
+<p>Taking this opportunity, Devaprastha, out of his strong affection for Kṛṣṇa, immediately began to massage His legs.&quot; Such are the activities of Kṛṣṇa's friends out on the pasturing grounds.</p>
+<p>The more confidential friends are called priya-sakhās and are almost Kṛṣṇa's age.</p>
+<p>Because of their very confidential friendship, their behavior is only on the basis of pure friendship.</p>
+<p>Other friends' behavior is on the ground of paternal love or servitude, but the basic principle of the confidential friends is simply friendship on an equal level.</p>
+<p>Some confidential friends are as follows: Śrīdāmā, Sudāmā, Dāmā, Vasudāmā, Kiṅkiṇi, Stokakṛṣṇa, Aṁśu, Bhadrasena, Vilāsina, Puṇḍarīka, Viṭaṅka and Kalaviṅka.</p>
+<p>By their various activities in different pastimes, all of these friends used to give transcendental pleasure to Kṛṣṇa.</p>
+<p>The behavior of these confidential friends is described by a friend of Rādhārāṇī, who told Rādhārāṇī: &quot;My dear graceful Rādhārāṇī, Your intimate friend, Kṛṣṇa, is also served by His intimate boyfriends.</p>
+<p>Some of them cut jokes with Him in mild voices and please Him very much by this.&quot; For example, Kṛṣṇa had one brāhmaṇa friend whose name was Madhumaṅgala.</p>
+<p>This boy would joke by playing the part of a greedy brāhmaṇa.</p>
+<p>Whenever the friends ate, he would eat more than all others, especially lāḍḍus, of which he was very fond.</p>
+<p>Then after eating more lāḍḍus than anyone else, Madhumaṅgala would still not be satisfied, and he would say to Kṛṣṇa, &quot;If You give me one more lāḍḍu, then I shall be pleased to give You my blessings so that Your friend Rādhārāṇī will be very much pleased with You.&quot; The brāhmaṇas are supposed to give blessings to the vaiśyas (farming and merchant caste), and Kṛṣṇa presented Himself as the son of Mahārāj Nanda, a vaiśya; so the brāhmaṇa boy was right in giving blessings to Kṛṣṇa.</p>
+<p>Thus Kṛṣṇa was very pleased by His friend's blessings, and He would supply him with more and more lāḍḍus.</p>
+<p>Sometimes a confidential friend would come before Kṛṣṇa and embrace Him with great affection and love.</p>
+<p>Another friend would then come up from the rear and cover Kṛṣṇa's eyes with his hands.</p>
+<p>Kṛṣṇa would always feel very happy by such dealings with His confidential friends.</p>
+<p>Out of all these confidential friends, Śrīdāmā is considered to be the chief.</p>
+<p>Śrīdāmā used to put on a yellow-colored dress.</p>
+<p>He would carry a buffalo horn, and his turban was of reddish, copper color.</p>
+<p>His bodily complexion was blackish, and around his neck there was a nice garland.</p>
+<p>He would always challenge Kṛṣṇa in joking friendship.</p>
+<p>Let us pray to Śrīdāmā to bestow his mercy upon us! Sometimes Śrīdāmā used to address Kṛṣṇa: &quot;Oh, You are so cruel that You left us alone on the bank of the Yamunā, and we were all mad from not seeing You there! Now it is our great fortune that we are able to see You here.</p>
+<p>If You want to pacify us, You must embrace each one of us with Your arms.</p>
+<p>But believe me, my dear friend, a moment's absence from You creates great havoc, not only for us but for the cows also.</p>
+<p>Everything becomes disarranged, and we become mad after You.&quot; There are other friends who are still more confidential.</p>
+<p>They are called priya-narmā, or intimate friends.</p>
+<p>Counted among the priya- narmā friends are Subala, Arjuna, Gandharva, Vasanta and Ujjvala.</p>
+<p>There was talk among the friends of Rādhārāṇī, the gopīs, about these most intimate friends.</p>
+<p>One gopī addressed Rādhārāṇī thus:ly &quot;My dear Kṛśāṅgī [delicate one], just see how Subala is whispering Your message into Kṛṣṇa's ear, how he is delivering the confidential letter of Śyāmādāsī silently into Kṛṣṇa's hand, how he is delivering the betel nuts prepared by Pālikā into Kṛṣṇa's mouth, and how he is decorating Kṛṣṇa with the garland prepared by Tārakā.</p>
+<p>Did you know, my dear friend, that all these most intimate friends of Kṛṣṇa are always engaged in His service in this way?&quot; Out of the many intimate priya- narmās, Subala and Ujjvala are considered to be the most prominent.</p>
+<p>Subala's body is described as follows.</p>
+<p>His complexion is just like molten gold.</p>
+<p>He is very, very dear to Kṛṣṇa.</p>
+<p>He always has a garland around his neck, and he wears yellow clothing.</p>
+<p>His eyes are just like lotus flower petals, and he is so intelligent that by his talking and his moral instructions, all the other friends take the highest pleasure.</p>
+<p>Let us all offer our respectful obeisances unto Kṛṣṇa's friend Subala! The degree of intimacy shared by Kṛṣṇa and Subala can be understood by the fact that the talks between them were so confidential that no one else could understand what they were saying.</p>
+<p>The description of Ujjvala, another intimate friend, is given as follows.</p>
+<p>Ujjvala always wears some garment of orange color, and the movements of his eyes are always very restless.</p>
+<p>He likes to decorate himself with all kinds of flowers, his bodily hue is almost like Kṛṣṇa's, and on his neck there is always a necklace of pearls.</p>
+<p>He is always very dear to Kṛṣṇa.</p>
+<p>Let us all worship Ujjvala, the most intimate friend of Kṛṣṇa! About the confidential service of Ujjvala, this statement is to be found, addressed by Rādhārāṇī to one of Her friends: &quot;My dear friend, it is impossible for Me to keep My prestige! I wanted to avoid talking to Kṛṣṇa anymore-but just see! There again is His friend, Ujjvala, coming to Me with his canvassing work.</p>
+<p>His entreaties are so powerful that it is very difficult for a gopī to resist her love for Kṛṣṇa, even though she may be very bashful, devoted to her family duties and most faithful to her husband.&quot; The following is a statement by Ujjvala, showing his jubilant nature: &quot;My dear Kṛṣṇa, O killer of Aghāsura, You have extended Your loving affairs so much that You can be compared to the great ocean, which is without limitations.</p>
+<p>At the same time, the young girls of the world who are all searching after the perfect lover have become just like rivers running into this ocean.</p>
+<p>Under the circumstances, all these rivers of young girls may try to divert their courses to some other place, but at the end they must come unto You.&quot; Amongst the groups of different friends of Kṛṣṇa, some are well-known from various scriptures, and some are well-known by popular tradition.</p>
+<p>There are three divisions amongst Kṛṣṇa's friends: some are eternally in friendship with Kṛṣṇa, some are elevated demigods, and some are perfected devotees.</p>
+<p>In all of these groups there are some who by nature are fixed in Kṛṣṇa's service and are always engaged in giving counsel; some of them are very fond of joking and naturally cause Kṛṣṇa to smile by their words; some of them are by nature very simple, and by their simplicity they please Lord Kṛṣṇa; some of them create wonderful situations by their activities, apparently against Kṛṣṇa; some of them are very talkative, always arguing with Kṛṣṇa and creating a debating atmosphere; and some of them are very gentle and give pleasure to Kṛṣṇa by their sweet words.</p>
+<p>All of these friends are very intimate with Kṛṣṇa, and they show expertise in their different activities, their aim always being to please Kṛṣṇa.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

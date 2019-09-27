@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>3 - Nectar of Devotion - Part IV</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html" class="active">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part IV</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#compassion-and-anger-compassion" id="compassion-and-anger-compassion">Compassion and Anger Compassion</a></h3>
+<p>When the ecstasy of devotional service produces some kind of lamentation in connection with Kṛṣṇa, it is called devotional service in compassion.</p>
+<p>The impetus of this devotional service is Kṛṣṇa's transcendental quality, form and activities.</p>
+<p>In this ecstasy of devotional service there are sometimes symptoms like regret, heavy breathing, crying, falling on the ground and beating upon one's chest.</p>
+<p>Sometimes symptoms like laziness, frustration, defamation, humility, anxiety, moroseness, eagerness, restlessness, madness, death, forgetfulness, disease and illusion are also visible.</p>
+<p>When in the heart of a devotee there is expectation of some mishap to Kṛṣṇa it is called devotional service in bereavement.</p>
+<p>Such bereavement is another symptom of this devotional service in compassion.</p>
+<p>In the Śrīmad-Bhāgavatam, Tenth Canto, 16th Chapter, 13th verse, there is the following description.</p>
+<p>When Kṛṣṇa was chastising the Kāliyanāga in the Yamunā, the big snake wrapped his coils all over Kṛṣṇa's body, and upon seeing Kṛṣṇa in this situation, all His dear cowherd friends became greatly disturbed.</p>
+<p>Out of bereavement, distress and fearfulness, they became bewildered and began to fall on the ground.</p>
+<p>Because the cowherd boys were under the illusion that Kṛṣṇa could be in some mishap, their symptoms are not at all astonishing; they had dedicated their friendship, their possessions, their desires and their very selves to Kṛṣṇa.</p>
+<p>When Kṛṣṇa entered the Yamunā River, which had become very poisonous from the presence of Kāliya, Mother Yaśodā feared all kinds of mishaps, and she was breathing hotly.</p>
+<p>Tears from her eyes were soaking her clothes, and she was almost collapsing.</p>
+<p>Similarly, when the Śaṅkhāsura demon was attacking Kṛṣṇa's queens one after another, Lord Baladeva became more and more bluish.</p>
+<p>In the Haṁsadūta, the following incident is described: The gopīs requested Haṁsadūta to search after the marks of Kṛṣṇa's lotus feet and to accept them as Lord Brahmā had accepted them on his helmet after he had stolen all Kṛṣṇa's cowherd boys.</p>
+<p>Regretting his challenge to Kṛṣṇa, Lord Brahmā had bowed down before the Lord, and his helmet became marked with the footprints of Kṛṣṇa.</p>
+<p>The gopīs reminded Haṁsadūta that sometimes even the great sage Nārada becomes very ecstatic by seeing these footprints, and sometimes great liberated sages also aspire to see them.</p>
+<p>&quot;You should therefore seek very enthusiastically to find the footprints of Kṛṣṇa,&quot; they urged.</p>
+<p>This is another instance of devotional service in compassion.</p>
+<p>There is an instance when Sahadeva, the younger brother of Nakula, became greatly gladdened at seeing the effulgent glowing of Kṛṣṇa's footprints.</p>
+<p>He began to cry and call out, &quot;Mother Mādrī! Where are you now? Father Pāṇḍu! Where are you now? I am very sorry that you are not here to see these footprints of Kṛṣṇa!&quot; This is another instance of devotional service in compassion.</p>
+<p>In such devotional service in compassion there are sometimes smiling symptoms, but never is there any stress or lamentation.</p>
+<p>The basic principle is always ecstatic love.</p>
+<p>The apprehension of some mishap to Kṛṣṇa or to His beloved queens, as exhibited by Baladeva and Yudhiṣṭhira, has been explained above.</p>
+<p>This apprehension is not exactly due to their ignorance of the inconceivable potencies of Kṛṣṇa but to their intense love for Him.</p>
+<p>This kind of apprehension of some mishap to Kṛṣṇa first of all becomes manifested as an object of lamentation, but gradually it develops into such compassionate loving ecstasy that it turns to another channel and gives transcendental pleasure.</p>
+<p>Anger In ecstatic loving service to Kṛṣṇa in anger, Kṛṣṇa is always the object.</p>
+<p>In Vidagdha-mādhava, Second Canto, 53rd verse, Lalitāgopī expressed her anger, which was caused by Kṛṣṇa, when she addressed Śrīmatī Rādhārāṇī thus: &quot;My dear friend, my inner desires have been polluted.</p>
+<p>Therefore I shall go to the place of Yamarāja.</p>
+<p>But I am sorry to see that Kṛṣṇa has still not given up His smiling over cheating You.</p>
+<p>I do not know how You could repose all Your loving propensities upon this lusty young boy from the neighborhood of the cowherds.&quot; After seeing Kṛṣṇa, Jaratī sometimes said, &quot;O You thief of young girls' properties! I can distinctly see the covering garment of my daughter-inlaw on Your person.&quot; Then she cried very loudly, addressing all the residents of Vṛndāvana to inform them that this son of King Nanda was setting fire to the household life of her daughter-in-law.</p>
+<p>Similar ecstatic love for Kṛṣṇa in anger was expressed by Rohiṇī-devī when she heard the roaring sound of the two falling arjuna trees to which Kṛṣṇa had been tied.</p>
+<p>The whole neighborhood proceeded immediately towards the place where the accident took place, and Rohiṇīdevī took the opportunity to rebuke Mother Yaśodā as follows: &quot;You may be very expert in giving lessons to your son by binding Him with rope, but don't you look to see if your son is in a dangerous spot? The trees are falling on the ground, and He is simply loitering there!&quot; This expression of Rohiṇīdevī's anger toward Yaśodā is an example of ecstatic love in anger caused by Kṛṣṇa.</p>
+<p>Once, while Kṛṣṇa was in the pasturing ground with His cowherd boys, His friends requested Him to go to the Tālavana Forest, where Gardabhāsura, a disturbing demon in the shape of an ass, resided.</p>
+<p>The friends of Kṛṣṇa wanted to eat the fruit from the forest trees, but they could not go because of fear of the demon.</p>
+<p>Thus they requested Kṛṣṇa to go there and kill Gardabhāsura.</p>
+<p>After Kṛṣṇa did this, they all returned home, and their report of the day's activity perturbed Mother Yaśodā because Kṛṣṇa had been sent alone into such danger in the Tālavana Forest.</p>
+<p>Thus she looked upon the boys with anger.</p>
+<p>There is another instance of anger on the part of a friend of Rādhārāṇī's.</p>
+<p>When Rādhārāṇī was dissatisfied with the behavior of Kṛṣṇa and had stopped talking with Him, Kṛṣṇa was very sorry for Rādhārāṇī's great dissatisfaction, and in order to beg forgiveness, He fell down at Her lotus feet.</p>
+<p>But even after this, Rādhārāṇī was not satisfied, and She did not talk with Kṛṣṇa.</p>
+<p>At that time, one of Her friends chastised Her in the following words: &quot;My dear friend, You are allowing Yourself to be churned by the rod of dissatisfaction, so what can I say unto You? The only advice I can give You is that You had better leave this scene immediately, because Your misbehavior is giving me too much pain.</p>
+<p>I cannot bear to see Your behavior, because even though Kṛṣṇa's peacock feather has touched Your feet, You still appear to be red-faced.&quot; The above attitudes of dissatisfaction and anger in devotional service are called īrṣyu.</p>
+<p>When Uddhava was leaving Vṛndāvana, some of the elderly gopīs rebuked him as follows: &quot;O son of Gāndinī, your cruelty is defaming the dynasty of King Yadu.</p>
+<p>You are taking Kṛṣṇa away, keeping us in such pitiable condition without Him.</p>
+<p>Now, even before you have left, the life air of all the gopīs has practically disappeared.&quot; When Kṛṣṇa was insulted by Śiśupāla in the assembly of the rāja-sūya yajñṣa convened by Mahārāj Yudhiṣṭhira, there was a great turmoil amongst the Pāṇḍavas and Kurus, involving grandfather Bhīṣma.</p>
+<p>At that time Nakula said with great anger, &quot;Kṛṣṇa is the Supreme Personality of Godhead, and the nails of His toes are beautified by the light emanating from the jeweled helmets of the authorities of the Vedas.</p>
+<p>If He is derided by anyone, I declare herewith as a Pāṇḍava that I will kick his helmet with my left foot, and I will strike him with my arrows, which are as good as Y amadaṇḍa, the sceptor of Yamarāja!&quot; This is an instance of ecstatic love for Kṛṣṇa in anger.</p>
+<p>In such a transcendental angry mood sometimes sarcastic remarks, unfavorable glances and insulting words are exhibited.</p>
+<p>Sometimes there are other symptoms, like rubbing the two hands, clacking the teeth, clamping the lips, moving the eyebrows, scratching the arms, lowering the head, breathing rapidly, uttering strong words, nodding the head, exhibiting yellowishness at the corner of the eyes, and exhibiting trembling lips.</p>
+<p>Sometimes the eyes turn red, and sometimes they fade.</p>
+<p>And there is sometimes chastisement and silence.</p>
+<p>All these symptoms of anger can be divided into two parts: constitutional and unconstitutional, or permanent and temporary symptoms.</p>
+<p>Sometimes great emotion, bewilderment, pride, frustration, illusion, impotence, jealousy, dexterity, negligence and signs of hard labor are also manifest as unconstitutional symptoms.</p>
+<p>In all these humors of ecstatic love, the feeling of anger is accepted as the steady factor.</p>
+<p>When Jarāsandha angrily attacked the city of Mathurā, he looked at Kṛṣṇa with sarcastic glances.</p>
+<p>At that time Baladeva took up His plow weapon and gazed upon Jarāsandha with colored eyes.</p>
+<p>There is a statement in the Vidagdha-mādhava wherein Śrīmatī Rādhārāṇī, in an angry mood, addressed Her mother, Paurṇamāsī, after she had accused Rādhārāṇī of going to Kṛṣṇa.</p>
+<p>&quot;My dear mother,&quot; Rādhā declared, &quot;what can I say to you? Kṛṣṇa is so cruel that He often attacks Me on the street, and if I want to cry out very loudly, this boy with a peacock feather on His head immediately covers My face so that I cannot cry.</p>
+<p>And if I want to go away from the scene because I am afraid of Him, He will immediately spread His arms to block My path.</p>
+<p>If I piteously fall down at His feet, then this enemy of the Madhu demon, in an angry mood, bites My face! Mother, just try to understand My situation, and don't be unnecessarily angry with Me.</p>
+<p>Instead, please tell Me how I can save Myself from these terrible attacks of Kṛṣṇa!&quot; Sometimes amongst contemporary personalities there are signs of ecstasy in anger because of love for Kṛṣṇa.</p>
+<p>An example of such anger was exhibited in the quarrel between Jaṭilā and Mukharā.</p>
+<p>Jaṭilā was the mother-in-law of Rādhārāṇī, and Mukharā was Her great-grandmother.</p>
+<p>Both of them were talking about Kṛṣṇa's unnecessary harassment of Rādhārāṇī when She was walking on the street.</p>
+<p>Jaṭilā said, &quot;You cruel- faced Mukharā! By hearing your words my heart feels like it is burning in a fire!&quot; And Mukharā replied, &quot;You sinful Jaṭilā, by hearing your words, there is aching in my head! You cannot give any evidence that Kṛṣṇa has attacked Rādhārāṇī, the daughter of my granddaughter Kīrtidā.&quot; Once, when Rādhārāṇī was taking off the necklace given to Her by Kṛṣṇa, Jaṭilā, her mother-in-law, told a friend: &quot;My dear friend, just see the beautiful necklace that Kṛṣṇa has presented to Rādhārāṇī.</p>
+<p>She is now holding it, but still She wants to tell us that She has no connection with Kṛṣṇa.</p>
+<p>This girl's activities have disgraced our whole family!&quot; Natural jealousy of Kṛṣṇa by persons like Śiśupāla cannot be accepted as ecstatic love in anger with Kṛṣṇa.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

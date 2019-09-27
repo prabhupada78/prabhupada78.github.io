@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>18 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html" class="active">18</a></li><li class="affix"><a href="ch19.html">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#character-of-one-in-ecstatic-love" id="character-of-one-in-ecstatic-love">Character of One in Ecstatic Love</a></h3>
+<p>Rūpa Gosvāmī next describes the characteristics of a person who has actually developed his ecstatic love for Kṛṣṇa.</p>
+<p>The characteristics are as follows:</p>
+<ol>
+<li>
+<p>He is always anxious to utilize his time in the devotional service of the Lord. He does not like to be idle. He wants service always, twenty-four hours a day without deviation.</p>
+</li>
+<li>
+<p>He is always reserved and perseverant.</p>
+</li>
+<li>
+<p>He is always detached from all material attraction.</p>
+</li>
+<li>
+<p>He does not long for any material respect in return for his activities.</p>
+</li>
+<li>
+<p>He is always certain that Kṛṣṇa will bestow His mercy upon him.</p>
+</li>
+<li>
+<p>He is always very eager to serve the Lord faithfully.</p>
+</li>
+<li>
+<p>He is very much attached to the chanting of the holy names of the Lord.</p>
+</li>
+<li>
+<p>He is always eager to describe the transcendental qualities of the Lord.</p>
+</li>
+<li>
+<p>He is very pleased to live in a place where the Lord's pastimes are performed, e.g., Mathurā, Vṛndāvana, or Dvārakā.</p>
+</li>
+</ol>
+<p>Utilization of Time An unalloyed devotee who has developed ecstatic love for Kṛṣṇa is always engaging his words in reciting prayers to the Lord.</p>
+<p>Within the mind he is always thinking of Kṛṣṇa, and with his body he is either offering obeisances by bowing down before the Deity or is engaging in some other service.</p>
+<p>During these ecstatic activities he sometimes sheds tears.</p>
+<p>In this way his whole life is engaged in the service of the Lord, with not a moment wasted on any other engagement.</p>
+<p>Perseverance When a person is undisturbed even in the presence of various causes of disturbance, he is called reserved and perseverant.</p>
+<p>An example of this perseverance and reservation is found in the behavior of King Parīkṣit, as described in the First Canto, 19th Chapter, 13th verse, of the Śrīmad-Bhāgavatam.</p>
+<p>The King says there to all the sages present before him at the time of his death, &quot;My dear brāhmaṇas, you should always accept me as your surrendered servant.</p>
+<p>I have come to the bank of the Ganges just to devote my heart and soul unto the lotus feet of Lord Kṛṣṇa.</p>
+<p>So please bless me, that Mother Ganges may also be pleased with me.</p>
+<p>Let the curse of the brāhmaṇa's son fall upon me-I do not mind.</p>
+<p>I only request that at the last moment of my life all of you will kindly chant the holy name of Viṣṇu, so that I may realize His transcendental qualities.&quot; This example of Mahārāj Parīkṣit's behavior, his remaining patient even at the last point of his life, his undisturbed condition of mind, is an example of reservation.</p>
+<p>This is one of the characteristics of a devotee who has developed ecstatic love for Kṛṣṇa.</p>
+<p>Detachment The senses are always desiring sense enjoyment, but when a devotee develops transcendental love for Kṛṣṇa his senses are no longer attracted by material desires.</p>
+<p>This state of mind is called detachment.</p>
+<p>There is a nice example of this detachment in connection with the character of King Bharata.</p>
+<p>In the Fifth Canto, 14th Chapter, 43rd verse, of Śrīmad-Bhāgavatam it is stated: &quot;Emperor Bharata was so attracted by the beauty of the lotus feet of Kṛṣṇa that even in his youthful life he gave up all kinds of attachments to family, children, friends, kingdom, etc., as though they were untouchable stools.&quot; Emperor Bharata is a typical example of detachment.</p>
+<p>He had everything enjoyable in the material world, but he left it.</p>
+<p>This means that detachment does not mean artificially keeping oneself aloof and apart from the allurements of attachment.</p>
+<p>Even in the presence of such allurements, if one can remain unattracted by material attachments, that is called detachment.</p>
+<p>In the beginning, of course, a neophyte devotee must try to keep himself apart from all kinds of alluring attachments, but the real position of a mature devotee is that even in the presence of all allurements, he is not at all attracted.</p>
+<p>This is the actual criterion of detachment.</p>
+<p>Pridelessness When a devotee, in spite of possessing all the qualities of pure realization, is not proud of his position, that is called pridelessness.</p>
+<p>In the Padma Purāṇa it is stated that King Bhagīratha was the emperor above all other kings, yet he developed such ecstatic love for Kṛṣṇa that he became a mendicant and went out begging even to the homes of his political enemies and untouchables.</p>
+<p>He was so humble that he respectfully bowed down before them.</p>
+<p>There are many similar instances in the history of India.</p>
+<p>Even very recently, about 200 years ago or less, one big landlord known as Lalababu, a Calcutta landholder, became a Vaiṣṇava and lived in Vṛndāvana.</p>
+<p>He was also begging from door to door, even at the homes of his political enemies.</p>
+<p>Begging involves being ready to be insulted by persons at whose home one has come.</p>
+<p>That is natural.</p>
+<p>But one has to tolerate such insults for the sake of Kṛṣṇa.</p>
+<p>The devotee of Kṛṣṇa can accept any position in the service of Kṛṣṇa.</p>
+<p>Great Hope The strong conviction that one will certainly receive the favor of the Supreme Personality of Godhead is called in Sanskrit āśā-bandha.</p>
+<p>Āśābandha means to continue to think, &quot;Because I'm trying my best to follow the routine principles of devotional service, I am sure that I will go back to Godhead, back to home.&quot; In this connection, one prayer by Rūpa Gosvāmī is sufficient to exemplify this hopefulness.</p>
+<p>He says, &quot;I have no love for Kṛṣṇa nor for the causes of developing love of Kṛṣṇa-namely, hearing and chanting.</p>
+<p>And the process of bhakti-yoga, by which one is always thinking of Kṛṣṇa and fixing His lotus feet in the heart, is also lacking in me.</p>
+<p>As far as philosophical knowledge or pious works are concerned, I don't see any opportunity for me to execute such activities.</p>
+<p>But above all, I am not even born of a nice family.</p>
+<p>Therefore I must simply pray to You, Gopī-jana-vallabha [Kṛṣṇa, maintainer and beloved of the gopīs].</p>
+<p>I simply wish and hope that some way or other I may be able to approach Your lotus feet, and this hope is giving me pain, because I think myself quite incompetent to approach that transcendental goal of life.&quot; The purport is that under this heading of āśā-bandha, one should continue to hope against hope that some way or other he will be able to approach the lotus feet of the Supreme Lord.</p>
+<p>Eagerness for Achieving the Desired Success When one is sufficiently eager to achieve success in devotional service, that is called samutkaṇṭhā.</p>
+<p>This means complete eagerness.</p>
+<p>Actually this eagerness is the price for achieving success in Kṛṣṇa consciousness.</p>
+<p>Everything has some value, and one has to pay the value before obtaining or possessing it.</p>
+<p>It is stated in the Vedic literature that to purchase the most valuable thing, Kṛṣṇa consciousness, one has to develop intense eagerness for achieving success.</p>
+<p>This intense eagerness is very nicely expressed by Bilvamaṅgala Thākur in his book Kṛṣṇa-karṇāmṛta.</p>
+<p>He says, &quot;I am eagerly waiting to see that boy of Vṛndāvana whose bodily beauty is captivating the whole universe, whose eyes are always bounded by black eyebrows and expanded like lotus petals, who is always eagerly glancing over His devotees and therefore moving slightly here and there.</p>
+<p>His eyes are always moist, and His lips are colored like copper, and through those lips there comes a sound vibration which drives one madder than a mad elephant.</p>
+<p>I want so much to see Him at Vṛndāvana!&quot; In the same Karṇāmṛta there is another statement about the chanting of Rādhārāṇī.</p>
+<p>It is said by one of the associates of Rādhārāṇī: &quot;O Lord Govinda, the girl who is daughter of King Vṛṣabhānu is now shedding tears, and She is anxiously chanting Your holy name-Kṛṣṇa! Kṛṣṇa!&quot; This attachment for chanting the glories of the Lord is also stated in the Karṇāmṛta as follows: &quot;What shall I do for Kṛṣṇa, who is pleasing beyond all pleasurable conceptions, and who is naughtier than all restless boys? The idea of Kṛṣṇa's beautiful activities is attracting my heart, and I do not know what I can do!&quot; Attraction for Living in a Place Where Kṛṣṇa Has His Pastimes In the book Padyāvalī by Rūpa Gosvāmī there is the following statement about Vṛndāvana: &quot;In this place the son of Mahārāj Nanda used to live with His father, who was king of all cowherd men.</p>
+<p>In this place Lord Kṛṣṇa broke the cart in which the Śakaṭāsura demon was concealed.</p>
+<p>At this place Dāmodara, who can cut the knot of our material existence, was tied up by His mother Yaśodā.&quot; A pure devotee of Lord Kṛṣṇa resides in the district of Mathurā or Vṛndāvana and visits all the places where Kṛṣṇa's pastimes were performed.</p>
+<p>At these sacred places Kṛṣṇa displayed His childhood activities with the cowherd boys and mother Yaśodā.</p>
+<p>The system of circumambulating all these places is still current among devotees of Lord Kṛṣṇa, and those coming to Mathurā and Vṛndāvana always feel transcendental pleasure.</p>
+<p>Actually, if someone goes to Vṛndāvana, he will immediately feel separation from Kṛṣṇa, who performed such nice activities when He was present there.</p>
+<p>Such attraction for remembering Kṛṣṇa's activities is known as attachment for Kṛṣṇa.</p>
+<p>There are impersonalist philosophers and mystics, however, who by a show of devotional service want ultimately to merge into the existence of the Supreme Lord.</p>
+<p>They sometimes try to imitate a pure devotee's sentiment for visiting the holy places where Kṛṣṇa had His pastimes, but they simply have a view for salvation, and so their activities cannot be considered attachment.</p>
+<p>It is said by Rūpa Gosvāmī that the attachment exhibited by pure devotees for Kṛṣṇa cannot possibly be perfected in the heart of fruitive workers (karmīs) or mental speculators because such attachment in pure Kṛṣṇa consciousness is very rare and not possible to achieve even for many liberated persons.</p>
+<p>As is stated in the Bhagavad-gītā, liberation from material contamination is the stage at which devotional service can be achieved.</p>
+<p>For a person who simply wants to have liberation and to merge into the impersonal brahma-jyoti, it is not possible to acquire attachment to Kṛṣṇa.</p>
+<p>This attachment is very confidentially kept by Kṛṣṇa and is only bestowed upon pure devotees.</p>
+<p>Even ordinary devotees cannot have such pure attachment for Kṛṣṇa.</p>
+<p>Therefore, how is it possible for success to be achieved by persons whose hearts are contaminated by the actions and reactions of fruitive activities and who are entangled by various types of mental speculation? There are many so-called devotees who artificially think of Kṛṣṇa's pastimes, which are known as aṣṭa-kālika-līlā.</p>
+<p>Sometimes one may artificially imitate these, pretending that Kṛṣṇa is talking with him in the form of a boy, or else one may pretend that Rādhārāṇī and Kṛṣṇa both have come to him and are talking with him.</p>
+<p>Such characteristics are sometimes exhibited by the impersonalist class of men, and they may captivate some innocent persons who have no knowledge in the science of devotional service.</p>
+<p>However, as soon as an experienced devotee sees all of these caricatures, he can immediately evaluate such rascaldom.</p>
+<p>If such a pretender is sometimes seen possessing imitative attachment to Kṛṣṇa, that will not be accepted as real attachment.</p>
+<p>It may be said, however, that such attachment is like giving a future hope to the pretender, so that he may eventually rise onto the actual platform of pure devotional service.</p>
+<p>This imitative attachment can be divided into two headings-namely, shadow attachment and para (transcendental) attachment.</p>
+<p>If someone, without undergoing the regulative principles of devotional service or without being guided by a bona fide spiritual master, shows such imitative attachment, it is called shadow attachment.</p>
+<p>Sometimes it is found that a person actually attached to material enjoyment or salvation has the good fortune to associate with pure devotees while they are engaged in chanting the holy name of the Lord.</p>
+<p>By the good grace of the Lord one may also cooperate and join in the chanting.</p>
+<p>At that time, simply by the association of such pure devotees, the moonlike rays from their hearts reflect on him, and by the influence of the pure devotees he may show some likeness of attachment caused by inquisitiveness, but this is very flickering.</p>
+<p>And, if by the manifestation of such shadow attachment one feels the disappearance of all material pangs, then it is called para attachment.</p>
+<p>Such shadow attachment or para attachment can develop by associating with a pure devotee or by visiting holy places like Vṛndāvana or Mathurā; or if an ordinary man develops such attachment for Kṛṣṇa and fortunately performs devotional activities in the association of pure devotees, he can also rise up to the platform of pure devotional service.</p>
+<p>The conclusion is that transcendental attachment is so powerful that even if such attachment is seen manifested in some common man, by the association of a pure devotee it can bring one to the perfectional stage.</p>
+<p>But such attachment for Kṛṣṇa cannot be invoked in a person without his being sufficiently blessed by the association of pure devotees.</p>
+<p>As attachment can be invoked by the association of pure devotees, so attachment can also be extinguished by committing offenses at the lotus feet of pure devotees.</p>
+<p>To be more clear, by the association of pure devotees attachment for Kṛṣṇa can be aroused, but if one commits offenses at the lotus feet of a devotee, his shadow attachment or para attachment can beextinguished.</p>
+<p>This extinguishing is like the waning moon, which gradually decreases and at last becomes darkness.</p>
+<p>One should therefore be very careful while associating with pure devotees to guard against committing an offense at their lotus feet.</p>
+<p>Transcendental attachment, either shadow or para, can be nullified by different degrees of offenses at the lotus feet of pure devotees.</p>
+<p>If the offense is very serious, then one's attachment becomes almost nil, and if the offense is not very serious, one's attachment can become second-class or third-class.</p>
+<p>If someone becomes attached to the principles of salvation or to merging into the existence of the brahma-jyoti, his ecstasies gradually diminish into shadow and para attachment or else transform into the principles of ahaṅgrahopāsanā.</p>
+<p>This ahaṅgrahopāsanā describes a living entity when he begins spiritual realization by identifying himself with the Supreme Lord.</p>
+<p>This state of self realization is technically known as monism.</p>
+<p>The monist thinks himself one with the Supreme Lord.</p>
+<p>Thus, without differentiating between himself and the Supreme Lord, it is his view that by worshiping himself he is worshiping the supreme whole.</p>
+<p>Sometimes it is found that a neophyte is taking part in chanting and dancing very enthusiastically, but within himself he is under the impression that he has become one with the supreme whole.</p>
+<p>This conception of monism is completely different from pure transcendental devotional service.</p>
+<p>If, however, it is seen that a person has developed a high standard of devotion without having undergone even the regulative principles, it is to be understood that his status of devotional service was achieved in a former life.</p>
+<p>For some reason or another it had been temporarily stopped, most probably by committing an offense at the lotus feet of a devotee.</p>
+<p>Now, with a good second chance, it has again begun to develop.</p>
+<p>The conclusion is that steady progress in devotional service can be attained only in the association of pure devotees.</p>
+<p>If one can gradually advance his status in devotional service, it is to be understood that it is due to the causeless mercy of Kṛṣṇa Himself.</p>
+<p>If a person is completely detached from material enjoyment and has developed pure ecstatic devotion, even if he is sometimes accidentally found not to be living up to the standard of devotional service, one should not be envious of him.</p>
+<p>It is confirmed also in the Bhagavad-gītā that a devotee who has unflinching faith in and devotion to the Lord, even if he is sometimes found to be accidentally deviated from pure devotional characteristics, should still be counted amongst the pure.</p>
+<p>Unflinching faith in devotional service, in Lord Kṛṣṇa and in the spiritual master makes one highly elevated in the activities of devotional service.</p>
+<p>In the Nṛsiṁha Purāṇa it is stated: &quot;If a person has completely engaged his mind, body and activities in the service of the Supreme Godhead, and externally he is found to be engaged in some abominable activities, these abominable activities will surely be very quickly vanquished by the influence of his staunch devotional force.&quot; The example is given that on the full moon there are some spots which may appear to be pockmarks.</p>
+<p>Still, the illumination spread by the full moon cannot be checked.</p>
+<p>Similarly, a little fault in the midst of volumes of devotional service is not at all to be counted as fault.</p>
+<p>Attachment for Kṛṣṇa is transcendental bliss.</p>
+<p>Amidst unlimited volumes of transcendental bliss, a spot of some material defect cannot act in any way.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch17.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch19.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch17.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch19.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

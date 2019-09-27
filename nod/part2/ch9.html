@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>9 - Nectar of Devotion - Part II</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html" class="active">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part II</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#other-ecstatic-symptoms-existential-ecstatic-love-for-kṛṣṇa-" id="other-ecstatic-symptoms-existential-ecstatic-love-for-kṛṣṇa-">Other Ecstatic Symptoms Existential Ecstatic Love for Kṛṣṇa .</a></h3>
+<p>When a devotee is always intensely affected by love for Kṛṣṇa in a direct relationship with Him-or even a little apart from Him-his status is called existential ecstatic love.</p>
+<p>The symptoms originating from such existential ecstatic love are divided into three headings-namely, moist, burnt and driedup.</p>
+<p>Moist existential ecstatic love aroused in connection with Kṛṣṇa is divided into two: direct and indirect.</p>
+<p>Rādhārāṇī was weaving a garland of kunda flowers, and, upon hearing the vibration of Kṛṣṇa's flute, She immediately stopped Her work.</p>
+<p>This is an example of direct moistened existential ecstatic love.</p>
+<p>Indirect moistened existential ecstatic love is described in the following statement: Kṛṣṇa, who is also called Puruṣottama, is to the eyes of Mother Yaśodā just like the cloud is to the eyes of the cātakī bird.</p>
+<p>When Kṛṣṇa had been brought to Mathurā, Mother Yaśodā, being very anxious and angry, began to rebuke the King of Mathurā.</p>
+<p>Burnt existential ecstatic love is divided into three, and one example is as follows: One day, Mother Yaśodā was dreaming that the gigantic demon, Pūtanā, was lying on the courtyard of her house, and she immediately became anxious to seek out Kṛṣṇa.</p>
+<p>When there are manifestations of ecstatic symptoms in the body of a nondevotee, these are called dried-up symptoms of ecstatic love.</p>
+<p>The nondevotees are actually materialistic, but in contact with some pure devotee, they sometimes may manifest some symptoms of ecstasy.</p>
+<p>Devotional scholars call these dried- up symptoms.</p>
+<p>There are eight symptoms of existential ecstatic love: becoming stunned, perspiring, standing of the hairs on the body, faltering of the voice, trembling of the body, changing bodily colors, shedding tears, and devastation.</p>
+<p>The scientific explanation of these eight symptoms is given by Rūpa Gosvāmī as follows.</p>
+<p>When the vital force of life is in contact with the earth, it is called stunning.</p>
+<p>When the same force comes into contact with water, there is the shedding of tears.</p>
+<p>When the same force comes into contact with fire, there is perspiration.</p>
+<p>When the force comes into contact with the sky, there is complete devastation.</p>
+<p>And when that force comes into contact with the air, there is trembling, failing of the voice and standing of the hairs on the body.</p>
+<p>These symptoms are sometimes manifested internally and sometimes externally.</p>
+<p>The pure devotee always feels such symptomatic expressions within himself, but being afraid of outsiders he does not generally manifest them externally.</p>
+<p>Becoming Stunned The symptom of becoming stunned is caused by ecstatic tribulation, fearfulness, astonishment, lamentation and anger.</p>
+<p>This symptom is exhibited by a stoppage of talking, a stoppage of movement, a feeling of voidness and an extreme feeling of separation.</p>
+<p>When Uddhava was describing Kṛṣṇa's pastimes to Vidura, he said, &quot;One day the gopīs became stunned when Kṛṣṇa, in the dress of a gardening maid, entered the greenhouse and enlivened them with joking and laughter.</p>
+<p>Then when Kṛṣṇa left the greenhouse, the gopīs were seeing Kṛṣṇa so ecstatically that it was as though both their minds and eyes were following Him.&quot; These symptoms signify that although the gopīs' business was not finished, they had become stunned with ecstatic love.</p>
+<p>Another example of being stunned took place when Kṛṣṇa was surrounded by various wrestlers in the sacrificial arena of Kaṁsa.</p>
+<p>His mother, Devakī,* then became stunned, and her eyes dried up when she saw Kṛṣṇa amongst the wrestlers.</p>
+<ul>
+<li>Devakī was the &quot;natural&quot; mother of Kṛṣṇa, his father being Vasudeva.</li>
+</ul>
+<p>In order to protect the divine baby from Devakī's brother Kaṁsa,delivered Kṛṣṇa to Nanda and Mother Yaśoda in vṛndāvana, and it was there that He There is also an example of the astonishment of Lord Brahmā.</p>
+<p>It is explained in the Tenth Canto, 13th Chapter, 51st verse of ŚrīmadBhāgavatam that when Brahmā understood that this cowherd boy was the Supreme Personality of Godhead Himself, he became stunned.</p>
+<p>All of his sensual activities became stopped upon seeing all the cowherd boys again, along with Kṛṣṇa.</p>
+<p>Lord Brahmā was so stunned that he appeared to be a golden statue with four heads.</p>
+<p>Also, when the residents of Braja found that Kṛṣṇa had lifted Govardhan Hill with His left hand, they became stunned.</p>
+<p>Astonishment caused by lamentation is exemplified when Kṛṣṇa was entering into the belly of the Bakāsura demon and all the demigods from higher planets became stunned with lamentation.</p>
+<p>A similar example of becoming stunned was visible in Arjuna when he saw that Aśvatthāmā was attempting to release his brahmāstra at Kṛṣṇa.</p>
+<p>Perspiration An example of perspiring because of jubilation is described in ŚrīmadBhāgavatam.</p>
+<p>One gopī addressed Rādhārāṇī thusly: &quot;My dear Rādhārāṇī, You are rebuking the sunshine unnecessarily, but I can understand that You are perspiring only because of Your becoming too lusty at seeing Kṛṣṇa.&quot; Perspiration caused by fearfulness was exhibited by Raktak, one of the servants of Kṛṣṇa.</p>
+<p>One day Kṛṣṇa dressed Himself just like Abhimanyu, the husband of Rādhārāṇī.</p>
+<p>Abhimanyu did not like Rādhārāṇī's association with Kṛṣṇa, and therefore when Raktak saw Kṛṣṇa in the dress of Abhimanyu and thus mistook His identity, he began to strongly rebuke Him.</p>
+<p>As soon as Raktak finally understood that it was Kṛṣṇa in the dress of Abhimanyu, he began perspiring.</p>
+<p>This perspiration was caused by fearfulness.</p>
+<p>Perspiration due to anger was exhibited by Garuḍa, the eagle who is the carrier of Viṣṇu.</p>
+<p>Once the heavenly king, Indra, was sending exhibited His childhood pastimes.</p>
+<p>At sixteen years of age He returned to Mathurā (where Devakī had given birth to him) and vanquished kaṁsa in the arena mentioned here.</p>
+<p>See the author's Kṛṣṇa as well as his ŚrīmadBhāgavatam,for fuller details of the events.</p>
+<p>The brahmāstra was a nuclear weapon controlled by mantra, or sound vibration.</p>
+<p>torrents of rain over Vṛndāvana.</p>
+<p>Garuḍa was observing the incident from above the clouds, and because of his anger, he began perspiring.</p>
+<p>Standing of Hairs on the Body The standing up of hair on the body was manifested when Mother Yaśodā found within Kṛṣṇa's mouth all of the universal planetary systems.</p>
+<p>She had asked Kṛṣṇa to open His mouth wide just to see whether He had eaten dirt.</p>
+<p>But when Kṛṣṇa opened His mouth, she saw not only the entire earth, but also many other planets within His mouth.</p>
+<p>This caused a standing up of the hair on her body.</p>
+<p>The standing up of hair on the body resulting from jubilation is described in the Tenth Canto, 30th Chapter, 9th verse of Śrīmad-Bhāgavatam in connection with the gopīs engaged in the rāsa dance.</p>
+<p>During this rāsa dance Kṛṣṇa disappeared all of a sudden with Rādhārāṇī, and the gopīs began to search Him out.</p>
+<p>At that time they addressed the earth and began to say, &quot;My dear earthly planet, how many austerities and penances you must have undergone to have the lotus feet of Kṛṣṇa always touching your surface.</p>
+<p>I think that you must be very jubilant because the trees and plants, which are just like hairs on your body, are standing up so gloriously.</p>
+<p>May we ask when did you first get these symptoms? Are you enjoying this jubilation since you were touched by the incarnation Vāmana or since you were delivered by the incarnation Varāha?&quot; Kṛṣṇa would sometimes perform mock fighting along with the cowherd boys.</p>
+<p>When Kṛṣṇa blew His horn in this mock fighting, Śrīdāmā, who was on the opposing side, felt his bodily hairs stand up.</p>
+<p>Similarly, when Arjuna saw Kṛṣṇa in His gigantic universal form, there was a standing of the hairs on his body.</p>
+<p>Faltering of the Voice When Kṛṣṇa was going to Mathurā on the chariot driven by Akrūra, Yaśodā and all the gopīs came to try to forbid Him to pass and to block His way.</p>
+<p>At that time Rādhārāṇī was so perturbed that in a faltering voice, She requested Mother Yaśodā to please stop Akrūra.</p>
+<p>Faltering of the voice resulting from wonder was exhibited by Brahmā.</p>
+<p>It is said in Śrīmad-Bhāgavatam, Tenth Canto, 13th Chapter, 59th verse that, after bowing down before Lord Kṛṣṇa, when Brahmā began to rise he prayed to the Lord in a faltering voice.</p>
+<p>In the Tenth Canto, 29th Chapter, 27th verse, another example of faltering of the voice was exhibited by the gopīs when they came to Kṛṣṇa, desiring to dance with Him.</p>
+<p>Kṛṣṇa asked them to go back to their husbands and homes.</p>
+<p>The gopīs apparently became very angry and began to talk to Kṛṣṇa with faltering voices.</p>
+<p>In the Tenth Canto, 39th Chapter, 48th verse, of Śrīmad- Bhāgavatam a faltering voice due to jubilation was exhibited by Akrūra when he was shown all of the Vaikuṇṭha planets resting within the River Yamunā.</p>
+<p>When Akrūra understood that Kṛṣṇa was the Supreme Personality of Godhead, he bowed his head to Kṛṣṇa's lotus feet and with folded hands began to pray in a faltering voice.</p>
+<p>There are also examples of faltering of the voice caused by fearfulness.</p>
+<p>One of Kṛṣṇa's friends praised Him thusly: &quot;My dear friend, Your flute was given to Your servant, Patrī, and when I asked him to return it he began speaking in a faltering voice, and his complexion became yellow.&quot; Trembling When Kṛṣṇa was trying to capture the demon Śaṅkha, Rādhārāṇī began trembling out of fearfulness.</p>
+<p>Similar trembling of the body was exhibited in Sahadeva, the younger brother of Nakula.</p>
+<p>When Śiśupāla was vehemently blaspheming the Lord, Sahadeva began to tremble out of anger.</p>
+<p>Trembling of the body was also exhibited by Rādhārāṇī out of tribulation.</p>
+<p>Rādhārāṇī trembled as She told one of the gopīs: &quot;Don't joke with this disappointing boy! Please ask Him not to approach Me, because He is always the cause of all grief for us.&quot; Changing of Bodily Color Sometimes, due to great aggrievement caused by the dealings of Kṛṣṇa, the body changes color.</p>
+<p>The gopīs therefore addressed the Lord thusly: &quot;My dear Kṛṣṇa, due to separation from You, all of the denizens of Vṛndāvana have changed their color.</p>
+<p>And because of this change of color even the great sage Nārada was thinking of Vṛndāvana as a white island in the ocean of milk.&quot; When Kṛṣṇa and Balarāma were present in the arena of Kaṁsa, Kaṁsa's body changed color.</p>
+<p>Similarly, Indra's face changed color when he saw that Kṛṣṇa was protecting all the denizens of Braja by lifting Govardhan Hill.</p>
+<p>If the color change takes place due to excessive jubilation, the hue turns red.</p>
+<p>Because such a change of color is so rare, Śrīla Rūpa Gosvāmī does not further discuss this point.</p>
+<p>Tears Out of jubilation, anger or separation there may be the pouring down of tears from the eyes.</p>
+<p>When such tears are very cold they are due to jubilation, and when they are due to anger the tears become hot.</p>
+<p>In all cases there is a severe movement of the eyes, and the eyes generally become reddish.</p>
+<p>There is also an itching sensation which causes the sufferer to rub his eyes.</p>
+<p>When the lotus-eyed Rukmiṇī, the first queen of Kṛṣṇa in Dvārakā, was shedding tears out of ecstatic jubilation, she did not like the tears.</p>
+<p>There is a passage in the Hari- vaṁśa wherein Satyabhāmā begins to shed tears because of her great affection for Kṛṣṇa.</p>
+<p>An example of shedding tears because of anger was exhibited by Bhīma when he saw that Śiśupāla was insulting Kṛṣṇa in the rāja-sūya arena of sacrifice.</p>
+<p>Bhīma wanted to kill Śiśupāla immediately, but because Kṛṣṇa did not order him to do so, he became morose with anger.</p>
+<p>It is described that there were hot tears covering his eyes, as a thin cloud sometimes covers the evening moon.</p>
+<p>In the evening, when the moon is slightly covered by a thin cloud, it looks very nice, and when Bhīma was shedding tears on account of his anger, he also looked very nice.</p>
+<p>In the Tenth Canto of Śrīmad-Bhāgavatam, Chapter 68, verse 23, there is a nice example of Rukmiṇī's shedding tears of lamentation.</p>
+<p>When Kṛṣṇa and Rukmiṇī were talking, Rukmiṇī became frightened of separation from Kṛṣṇa, and therefore she began scratching the earth with her red, lotus-like nails.</p>
+<p>Because she was shedding tears, the black ointment from her eyes was dripping, along with the tears, onto her breasts, which were covered with kuṅkum powder.</p>
+<p>Rukmiṇī was so aggrieved that her voice was choked up.</p>
+<p>Devastation When a person is confused by simultaneous happiness and tribulation and does not know what to do, this state of confusion is called pralaya, or devastation.</p>
+<p>In this condition of pralaya one sometimes falls down on the ground, and all the symptoms of ecstatic love become manifest.</p>
+<p>When the gopīs were searching after Kṛṣṇa and all of a sudden He came out from the bushes and creepers, all of them became stunned and almost senseless.</p>
+<p>In this state the gopīs appeared very beautiful.</p>
+<p>This is an example of pralaya, or devastation in happiness.</p>
+<p>There are also instances of pralaya in distress.</p>
+<p>One such example is described in the Tenth Canto, 39th Chapter, 14th verse of ŚrīmadBhāgavatam, where Śukadeva Gosvāmī tells King Parīkṣit: &quot;My dear King, when the gopīs were missing Kṛṣṇa, they were so much absorbed in meditation upon Him that all of their senses stopped functioning, and they lost all bodily sense.</p>
+<p>It was as though they had become liberated from all material conditions.&quot; Out of the many ecstatic symptoms of the body, the symptom of being stunned is especially significant.</p>
+<p>According to the degree of being stunned, the vital force within the body becomes agitated, and due to such a state, the other ecstatic loving symptoms sometimes become altered.</p>
+<p>These transcendental ecstatic symptoms gradually develop, and in the course of such development, they are sometimes called smoky, sometimes called blazing, and sometimes called shining.</p>
+<p>These three degrees are experienced for many, many years and extend to different parts of the body.</p>
+<p>Unlike the shedding of tears and faltering of the voice, the condition of being stunned is spread all over the body.</p>
+<p>The shedding of tears and faltering of the voice are simply localized symptoms.</p>
+<p>The shedding of tears, however, sometimes makes the eyes become swollen and whitish, and sometimes the lenses of the eyes become differently focused.</p>
+<p>Faltering of the voice may sometimes cause choking in the throat and extreme anxiety.</p>
+<p>As the different symptoms of these ecstatic manifestations are localized, they are accompanied by different local reactions; e.g., when the throat is choked up because of a faltering voice, there may be a sound like &quot;ghra.&quot; Such sounds choke up the voice, and with extreme mental anxiety they may manifest in different ways.</p>
+<p>All these symptoms are listed under the dried-up existential condition known as smoky, and they are exhibited in different ways.</p>
+<p>Sometimes, while participating in ceremonies celebrating Kṛṣṇa's pastimes, or in the society of devotees, there is dancing ecstasy.</p>
+<p>Such sentiments are called blazing.</p>
+<p>None of the above symptoms can be manifested without the basic principle of strong attachment for Kṛṣṇa.</p>
+<p>In the smoky condition of such ecstatic expressions, the symptoms could otherwise be hidden.</p>
+<p>This type of symptom was experienced by Priest Gargamuni, who was performing some ritualistic ceremony in the house of Nanda Mahārāj.</p>
+<p>When he heard about Kṛṣṇa's killing of the Aghāsura demon, there were some tears visible in his eyes, his throat was trembling, and perspiration covered his whole body.</p>
+<p>In this way Priest Gargamuni's beautiful face assumed a nice condition.</p>
+<p>When several such ecstatic symptoms are visible, the condition is called blazing.</p>
+<p>For example, some of Kṛṣṇa's friends told Him, &quot;My dear friend, as soon as I heard the sound of Your flute from within the forest, my hands became almost motionless and my eyes became full of tears.</p>
+<p>So much so, in fact, that I could not recognize Your peacock feather.</p>
+<p>My thighs became almost completely stunned so that I could not move even an inch.</p>
+<p>Therefore, my dear friend, I must acknowledge the wonderful vibration of Your transcendental flute.&quot; Similarly, one gopī said to another, &quot;My dear friend, when I heard the sound of Kṛṣṇa's flute, I tried to hide myself from the reaction of the vibrations.</p>
+<p>But still I could not check the trembling of my body, and therefore all of my friends in the house could detect my attachment for Kṛṣṇa without any doubt.&quot; When the ecstatic symptoms cannot be checked, and they simultaneously appear in four or five different categories, this stage of ecstatic love is called shining.</p>
+<p>The example is cited, in this connection, that when the sage Nārada saw Lord Kṛṣṇa standing before him, his body became so stunned that he stopped playing on his vīṇā.</p>
+<p>Because of his faltering voice he could not offer any prayers to Kṛṣṇa, and his eyes became filled with tears.</p>
+<p>Thus, Nārada's ability to see Kṛṣṇa was also obstructed.</p>
+<p>When similar symptoms were manifest in the body of Śrīmatī Rādhārāṇī, some of Her friends criticized Her: &quot;My dear friend, You are blaming the flavor of the flowers for the tears in Your eyes.</p>
+<p>You are rebuking the air for the standing of the hairs on Your body.</p>
+<p>And You are cursing Your walking in the forest for Your thighs being stunned.</p>
+<p>But Your faltering voice reveals the cause to be different: it is just Your attachment for Kṛṣṇa!&quot; Śrīla Rūpa Gosvāmī remarks that when various symptoms become manifest very prominently, the devotee's condition can be called the brightest.</p>
+<p>For example, a friend of Kṛṣṇa addressed Him as follows: &quot;My dear Pītāmbara, because of separation from You all the residents of Goloka Vṛndāvana are perspiring.</p>
+<p>They are lamenting with different words, and their eyes have become moistened with tears.</p>
+<p>Actually, all of them are in great confusion.&quot; There is a supreme symptom of ecstatic love which is called mahābhāva.</p>
+<p>This mahābhāva expression was possible only in Rādhārāṇī, but later on when Śrī Kṛṣṇa Caitanya appeared to feel the mode of love of Rādhārāṇī, He also expressed all of the symptoms of mahābhāva.</p>
+<p>Śrī Rūpa Gosvāmī says in this connection that when the symptoms of ecstatic love become the most bright, that stage is accepted as mahābhāva.</p>
+<p>Śrīla Rūpa Gosvāmī further analyzes the ecstatic loving expression into four divisions which are called sāttvābhāsā.</p>
+<p>Sometimes impersonalists who are not actually in devotional service may also exhibit such symptoms of ecstatic love, but this is not accepted as actual ecstasy.</p>
+<p>It is a reflection only.</p>
+<p>For example, sometimes in Vārāṇasī, a holy city for impersonalist scholars, there may be seen a sannyāsī crying from hearing the glories of the Lord.</p>
+<p>Impersonalists also sometimes chant the Hare Kṛṣṇa mantra and dance, but their aim is not to serve the Lord.</p>
+<p>It is to become one with the Lord and merge into His existence.</p>
+<p>Rūpa Gosvāmī therefore says that even if the reactions to chanting are manifested in the impersonalist's body, they should not be considered to be symptoms of actual attachment, but reflections only, just like the sun reflected in a dark room through some polished glass.</p>
+<p>The chanting of Hare Kṛṣṇa, however, is so nice and transcendental that it will eventually melt even the hearts of persons who are impersonalists.</p>
+<p>Rūpa Gosvāmī says that the impersonalists' symptoms are simply reflections of ecstatic love, not the real thing.</p>
+<p>Sometimes it is found that when staunch logicians, without any trace of devotional service and without actually understanding the transcendental glories of the Lord, sit down to hear the glories of the Lord, they appear to be melting and shedding tears.</p>
+<p>In this connection there is a statement by a devotee who is addressing the Lord thusly: &quot;My dear Mukunda, I cannot properly express the glories of Your pastimes.</p>
+<p>Even when the nondevotees hear of Your glorious pastimes they become affected and shed tears and start to tremble.&quot; Such nondevotees are not actually melted; they are hardhearted.</p>
+<p>But the influence of the glories of the Lord is so great that even the nondevotees sometimes shed tears.</p>
+<p>Sometimes it is found that a nondevotee who has practically no taste for Kṛṣṇa and who follows no rules or regulations can, by practice, make a show of devotional symptoms, even crying in an assembly of devotees.</p>
+<p>This shedding of tears is not actually an ecstatic loving expression, however.</p>
+<p>It is done simply by practice.</p>
+<p>Although there is no need to describe these reflections of ecstatic love, Rūpa Gosvāmī gives some instances where there is no actual devotional service and such expressions are manifested.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch8.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch8.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

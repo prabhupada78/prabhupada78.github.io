@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>4 - Nectar of Devotion - Part III</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="../part4/index.html">Part Four</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html" class="active">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part III</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#indifference-and-separation" id="indifference-and-separation">Indifference and Separation</a></h3>
+<p>The great devotee Uddhava once wrote a letter to Kṛṣṇa: &quot;My dear Kṛṣṇa, I have just finished the study of all kinds of philosophical books and Vedic verses about the goal of life, and so now I have a little reputation for my studies.</p>
+<p>But still, in spite of my reputation, my knowledge is condemned, because although enjoying the effulgence of Vedic knowledge, I could not appreciate the effulgence emanating from the nails of Your toes.</p>
+<p>Therefore, the sooner my pride and Vedic knowledge are finished, the better it will be!&quot; This is an example of indifference.</p>
+<p>Another devotee very anxiously expressed himself thusly: &quot;My mind is very flickering, so I cannot concentrate it upon Your lotus feet.</p>
+<p>And seeing this inefficiency in myself I become ashamed, and the whole night I am unable to sleep because I am exasperated by my great inability.&quot; In the Kṛṣṇa-karṇāmṛta Bilvamaṅgala Thākur has explained his restlessness as follows: &quot;My dear Lord, Your naughtiness in boyhood is the most wonderful thing in the three worlds.</p>
+<p>And You Yourself know what this naughtiness is.</p>
+<p>As such, You can very easily understand my flickering mind.</p>
+<p>This is known to You and myself.</p>
+<p>Therefore, I am simply yearning to know how I can fix my mind on Your lotus feet.&quot; Another devotee expressed his impudence by saying: &quot;My dear Lord, without considering my lowly position, I must confess to You that my eyes are just like black wasps, desiring to hover at Your lotus feet.&quot; In the Seventh Canto of Śrīmad-Bhāgavatam, 4th Chapter, 27th verse, the great sage Nārada informs Mahārāj Yudhiṣṭhira about Prahlāda Mahārāj, who was a devotee from the very beginning of his life.</p>
+<p>The proof of Prahlāda's natural devotion is that even when he was a small child he did not play with his playmates, but was always eager to preach the glories of the Lord.</p>
+<p>Instead of joining in their sportive acrobatic feats, he remained as an inactive child because he was always in trance, meditating on Kṛṣṇa.</p>
+<p>As such, there was no possibility of his being touched by the external world.</p>
+<p>The following statement is about a brāhmaṇa devotee: &quot;This brāhmaṇa is very expert in all kinds of activities, but I do not know why he is looking up without moving his eyes.</p>
+<p>It appears that his body is fixed motionless just like a doll's.</p>
+<p>In this condition, I can guess that he has been captivated by the transcendental beauty of that expert flute-player, Śrī Kṛṣṇa, and, being attached to Him, he is simply staring at the black cloud, remembering the bodily hue of Śrī Kṛṣṇa.&quot; This is an example of how a devotee can become inert due to ecstatic love.</p>
+<p>In the Śrīmad-Bhāgavatam, Seventh Canto, 4th Chapter, 30th verse, Prahlāda Mahārāj says that even in his childhood, when he was loudly speaking the glories of the Lord, he used to dance just like a shameless madman.</p>
+<p>And sometimes, being fully absorbed in thought on the pastimes of the Lord, he used to imitate such pastimes.</p>
+<p>This is an instance of a devotee's being almost like a madman.</p>
+<p>Similarly, it is said that the great sage Nārada was so ecstatically in love with Kṛṣṇa that he would sometimes dance naked, and sometimes his whole body would become stunned.</p>
+<p>Sometimes he would laugh very loudly, sometimes he would cry very loudly, sometimes he would remain silent, and sometimes he would appear to be suffering from some disease, although he had no disease.</p>
+<p>This is another instance of becoming like a madman in the ecstasy of devotion.</p>
+<p>In the Hari-bhakti-sudhodaya it is stated that when Prahlāda Mahārāj was thinking himself unfit to approach the Supreme Personality of Godhead, he immersed himself in great distress, in an ocean of unhappiness.</p>
+<p>As such, he used to shed tears and lie down on the floor as though unconscious.</p>
+<p>The students of a great devotee once talked amongst themselves in this way: &quot;My dear Godbrothers, our spiritual master, after seeing the lotus feet of the Lord, has thrown himself into the fire of lamentation, and because of this fire the water of his life has almost dried away.</p>
+<p>Let us now pour the nectar of the holy name through his ears, and by our doing so the swan of his life may again show signs of life.&quot; When Lord Kṛṣṇa went to the city of Śoṇitapura to fight with Bali's son Bāṇa and to cut off all his hands, Uddhava, being separated from Kṛṣṇa and thinking of His fight, was almost completely stunned into unconsciousness.</p>
+<p>When a devotee is fully in love with the Supreme Personality of Godhead, there may be the following symptoms due to his feelings of separation from the Lord: feverish condition of the body, withering of the body, lack of sleep, nonattachment, inertness, appearing diseased, madness, unconsciousness and sometimes death.</p>
+<p>As far as the feverish condition of the body is concerned, Uddhava once told Nārada, &quot;My dear great sage, the lotus flower that is a friend of the sun may be a cause of distress for us; and the fire in the ocean may cause us some burning sensation; and Indīvara, the friend of a demon, may distress us in various ways- we do not mind.</p>
+<p>But the most regrettable factor is that all of them remind us of Kṛṣṇa, and this is giving us too much distress!&quot; This is an instance of the feverish condition which is due to being separated from Kṛṣṇa.</p>
+<p>Some of the devotees who went to see Kṛṣṇa at Dvārakā and were detained at the door said: &quot;My dear Kṛṣṇa, O friend of the Pāṇḍus, as the swan loves to dive into the water amongst the lily flowers and would die if he were taken from the water, so we only wish to be with You.</p>
+<p>Our limbs are being shrunken and faded because You have been taken away from us.&quot; The King of Bahulā, although very comfortably situated in his palace, began to think the nights very long and distressing because of his separation from Kṛṣṇa.</p>
+<p>King Yudhiṣṭhira once said, &quot;Kṛṣṇa, the chariot driver of Arjuna, is the only relative of mine within the three worlds.</p>
+<p>Therefore, my mind is becoming maddened day and night with separation from His lotus feet, and I do not know how to situate myself or where I shall go to attain any steadiness of mind.&quot; This is another example of lack of sleep.</p>
+<p>Some of the cowherd friends of Kṛṣṇa said, &quot;My dear Kṛṣṇa, O enemy of the Mura demon, just think of Your personal servant Raktaka.</p>
+<p>Simply because he saw a peacock feather he is now closing his eyes and is no longer attentive to pasturing the cows.</p>
+<p>Rather, he has left them in a faraway pasture and has not even bothered to use his stick to control them.&quot; This is an instance of mental imbalance due to separation from Kṛṣṇa.</p>
+<p>When Lord Kṛṣṇa went to the capital of King Yudhiṣṭhira, Uddhava was so afflicted by the fire of separation from Śrī Kṛṣṇa that the perspiring water from his enflamed body and the tears from his eyes poured from him, and in this way he became completely stunned.</p>
+<p>When Śrī Kṛṣṇa left the city of Dvārakā to seek out the Syamantaka jewel, He was late returning home.</p>
+<p>Uddhava became so afflicted that the symptoms of disease became manifest on his body.</p>
+<p>Actually, due to his excessive ecstatic love for Kṛṣṇa, Uddhava became known in Dvārakā as crazy.</p>
+<p>To his great fortune, on that day Uddhava's reputation as a crazy fellow was firmly established.</p>
+<p>Uddhava's craziness was practically proved when he went to Raivataka Hill to minutely observe the congested black clouds.</p>
+<p>In his disturbed condition, he began to pray to these clouds, and he expressed his jubilation by bowing down before them.</p>
+<p>Uddhava informed Kṛṣṇa, &quot;My dear leader of the Yadu dynasty, Your servants in Vṛndāvana cannot sleep at night thinking of You, so now they are all lying down on the bank of the Yamunā almost paralyzed.</p>
+<p>And it appears that they are almost dead because their breathing is very slow.&quot; This is an instance of becoming unconscious due to separation from Kṛṣṇa.</p>
+<p>Kṛṣṇa was once informed, &quot;You are the life and soul of all the inhabitants of Vṛndāvana.</p>
+<p>So because You have left Vṛndāvana, all of the servitors of Your lotus feet there are suffering.</p>
+<p>It is as if the lakes filled with lotus flowers have dried up from the scorching heat of separation from You.&quot; In the example given here, the inhabitants of Vṛndāvana are compared to lakes filled with lotus flowers, and because of the scorching heat of separation from Kṛṣṇa, the lakes-along with the lotus flowers of their lives-are being burned up.</p>
+<p>And the swans in the lakes, who are compared to the vitality of the inhabitants of Vṛndāvana, are no longer desiring to live in that lake.</p>
+<p>In other words, because of the scorching heat, the swans are leaving the lakes.</p>
+<p>This metaphor is used to describe the condition of the devotees separated from Kṛṣṇa.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch5.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch5.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html" class="active">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html">18</a></li><li class="affix"><a href="ch19.html">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#the-first-stages-of-devotion" id="the-first-stages-of-devotion">The First Stages of Devotion</a></h3>
+<p>The three categories of devotional service which Śrīla Rūpa Gosvāmī describes in Bhakti-rasāmṛta-sindhu are listed as devotional service in practice, devotional service in ecstasy and devotional service in pure love of Godhead.</p>
+<p>There are many sub-headings in each of these categories.</p>
+<p>Generally it is understood that in the category of devotional service in practice there are two different qualities; devotional service in ecstasy has four qualities, and devotional service in pure love of Godhead has six qualities.</p>
+<p>These qualities will be explained by Śrīla Rūpa Gosvāmī later on.</p>
+<p>In this connection, Śrīla Rūpa Gosvāmī suggests that the person eligible for Kṛṣṇa consciousness or devotional service can be classified by his particular taste.</p>
+<p>He says that devotional service is a continual process from one's previous life.</p>
+<p>No one can take to devotional service unless he has had some previous connection with it.</p>
+<p>For example, suppose in this life I practice devotional service to some extent.</p>
+<p>Even though it is not one hundred percent perfectly performed, still whatever I have done will not be lost.</p>
+<p>In my next life, from the very point where I stop in this life, I shall begin again.</p>
+<p>In this way there is always a continuity.</p>
+<p>But even if there is no continuity, if only by chance a person takes interest in a pure devotee's instruction, he can be accepted and can advance in devotional service.</p>
+<p>Anyway, for persons who have a natural taste for understanding books like the Bhagavad-gītā and Śrīmad-Bhāgavatam, devotional service is easier than for those who are simply accustomed to mental speculation and argumentative processes.</p>
+<p>To support this statement there are many authoritative assertions by the learned scholars of bygone ages.</p>
+<p>According to their general opinion, a person may become governed by certain convictions derived by his own arguments and decisions.</p>
+<p>Then another person, who may be a greater logician, will nullify these conclusions and establish another thesis.</p>
+<p>In this way the path of argument will never be safe or conclusive.</p>
+<p>The Śrīmad-Bhāgavatam recommends, therefore, that one follow in the footsteps of the authorities.</p>
+<p>Here is a general description of devotional service given by Śrī Rūpa Gosvāmī in his Bhakti-rasāmṛta-sindhu.</p>
+<p>Previously, it has been stated that devotional service can be divided into three categories-namely, devotional service in practice, devotional service in ecstasy, and devotional service in pure love of God.</p>
+<p>Now Śrī Rūpa Gosvāmī proposes to describe devotional service in practice.</p>
+<p>Practice means employing our senses in some particular type of work.</p>
+<p>Therefore devotional service in practice means utilizing our different sensory organs in service to Kṛṣṇa.</p>
+<p>Some of the senses are meant for acquiring knowledge, and some are meant for executing the conclusions of our thinking, feeling and willing.</p>
+<p>So practice means employing both the mind and the senses in practical devotional service.</p>
+<p>This practice is not for developing something artificial.</p>
+<p>For example, a child learns or practices to walk.</p>
+<p>This walking is not unnatural.</p>
+<p>The walking capacity is there originally in the child, and simply by a little practice he walks very nicely.</p>
+<p>Similarly, devotional service to the Supreme Lord is the natural instinct of every living entity.</p>
+<p>Even uncivilized men like the aborigines offer their respectful obeisances to something wonderful exhibited by nature's law, and they appreciate that behind some wonderful exhibition or action there is something supreme.</p>
+<p>So this consciousness, though lying dormant in those who are materially contaminated, is found in every living entity.</p>
+<p>And, when purified, this is called Kṛṣṇa consciousness.</p>
+<p>There are certain prescribed methods for employing our senses and mind in such a way that our dormant consciousness for loving Kṛṣṇa will be invoked, as much as the child, with a little practice, can begin to walk.</p>
+<p>One who has no basic walking capacity cannot walk by practice.</p>
+<p>Similarly, Kṛṣṇa consciousness cannot be aroused simply by practice.</p>
+<p>Actually there is no such practice.</p>
+<p>When we wish to develop our innate capacity for devotional service there are certain processes which, by our accepting and executing them, will cause that dormant capacity to be invoked.</p>
+<p>Such practice is called sādhana-bhakti.</p>
+<p>Every living entity under the spell of material energy is held to be in an abnormal condition of madness.</p>
+<p>In the Śrīmad-Bhāgavatam it is said: &quot;Generally, the conditioned soul is mad because he is always engaged in activities which are the causes of bondage and suffering.&quot; Spirit soul in its original condition is joyful, blissful, eternal and full of knowledge.</p>
+<p>Only by his implication in material activities has he become miserable, temporary and full of ignorance.</p>
+<p>This is due to vikarma.</p>
+<p>Vikarma means actions which should not be done.</p>
+<p>Therefore, we must practice sādhanabhakti-which means to offer maṅgala-ārātrika (Deity worship) in the morning, to refrain from certain material activities, to offer obeisances to the spiritual master and to follow many other rules and regulations which will be discussed here one after another.</p>
+<p>These practices will help one to become cured of madness.</p>
+<p>As a man's mental disease is cured by the directions of a psychiatrist, so this sādhana-bhakti cures the conditioned soul of his madness under the spell of māyā, material illusion.</p>
+<p>Nārada Muni mentions this sādhana-bhakti in the Śrīmad-Bhāgavatam, Seventh Canto, 1st Chapter, 30th verse.</p>
+<p>He says there to King Yudhiṣṭhira: &quot;My dear King, one has to fix his mind on Kṛṣṇa by any means.&quot; That is called Kṛṣṇa consciousness.</p>
+<p>It is the duty of the ācārya, the spiritual master, to find the ways and means for his disciple to fix his mind on Kṛṣṇa.</p>
+<p>That is the beginning of sādhana-bhakti.</p>
+<p>Śrī Caitanya Mahāprabhu has given us an authorized program for this purpose, centered around the chanting of the Hare Kṛṣṇa mantra.</p>
+<p>This chanting has so much power that it immediately attaches one to Kṛṣṇa.</p>
+<p>That is the beginning of sādhana- bhakti.</p>
+<p>Somehow or other, one has to fix his mind on Kṛṣṇa.</p>
+<p>The great saint Ambarīṣa Mahārāj, although a responsible king, fixed his mind on Kṛṣṇa, and similarly anyone who tries to fix his mind in this way will very rapidly make progress in successfully reviving his original Kṛṣṇa consciousness.</p>
+<p>Now this sādhana-bhakti, or practice of devotional service, can also be divided into two parts.</p>
+<p>The first part is called regulative principles: one has to follow these different regulative principles by the order of the spiritual master, or on the strength of authoritative scriptures, and there can be no question of refusal.</p>
+<p>That is called vaidhi, or regulated.</p>
+<p>One has to do it without any argument.</p>
+<p>Another part of sādhana-bhakti is called rāgānugā.</p>
+<p>Rāgānugā refers to the point at which, by following the regulative principles, one becomes a little more attached to Kṛṣṇa, and executes devotional service out of natural love.</p>
+<p>For example, a person engaged in devotional service may be ordered to rise early in the morning and offer ārātrika, which is a form of Deity worship.</p>
+<p>In the beginning, by the order of his spiritual master, one rises early in the morning and offers ārātrika, but then he develops real attachment.</p>
+<p>When he gets this attachment, he automatically tries to decorate the Deity and prepare different kinds of dresses and thinks of different plans to execute his devotional service nicely.</p>
+<p>Although it is within the category of practice, this offering of loving service is spontaneous.</p>
+<p>So the practice of devotional service, sādhana-bhakti, can be divided into two parts-namely, regulative and spontaneous.</p>
+<p>Rūpa Gosvāmī defines the first part of devotional practice, or vaidhibhakti, as follows: &quot;When there is no attachment or no spontaneous loving service to the Lord, and one is engaged in the service of the Lord simply out of obedience to the order of the spiritual master or in pursuance of the scriptures, such obligatory service is called vaidhibhakti.&quot; These principles of vaidhi-bhakti are also described in the Śrīmad-Bhāgavatam, Second Canto, 1st Chapter, verse 35, where Śukadeva Gosvāmī instructs the dying Mahārāj Parīkṣit as to his course of action.</p>
+<p>Mahārāj Parīkṣit met Śukadeva Gosvāmī just a week before his death, and the King was perplexed as to what should be done before he was to pass on.</p>
+<p>Many other sages also arrived there, but no one could give him the proper direction.</p>
+<p>Śukadeva Gosvāmī, however, gave this direction to him as follows: &quot;My dear King, if you want to be fearless in meeting your death next week (for actually everyone is afraid at the point of death), then you must immediately begin the process of hearing and chanting and remembering God.&quot; If one can chant and hear Hare Kṛṣṇa and always remember Lord Kṛṣṇa, then he is sure to become fearless of death, which may come at any moment.</p>
+<p>In the statements of Śukadeva Gosvāmī it is said that the Supreme Personality of Godhead is Kṛṣṇa.</p>
+<p>Therefore Śukadeva recommends that one should always hear about Kṛṣṇa.</p>
+<p>He does not recommend that one hear and chant about the demigods.</p>
+<p>The māyāvādīs (impersonalists) say that you can chant any name, either that of Kṛṣṇa or those of the demigods, and the result will be the same.</p>
+<p>But actually this is not a fact.</p>
+<p>According to the authorized version of Śrīmad-Bhāgavatam, one has to hear and chant about Lord Viṣṇu (Kṛṣṇa) only.</p>
+<p>So Śukadeva Gosvāmī has recommended to Parīkṣit Mahārāj that in order to be fearless of death one has to hear and chant and remember the Supreme Personality of Godhead, Kṛṣṇa, by all means.</p>
+<p>He also mentions that the Supreme Personality of Godhead is sarvātmā.</p>
+<p>Sarvātmā means &quot;the supersoul of everyone.&quot; Kṛṣṇa is also mentioned as īśvara, the supreme controller who is situated in everyone's heart.</p>
+<p>Therefore, if some way or other we become attached to Kṛṣṇa, He will make us free from all danger.</p>
+<p>In the Bhagavad- gītā it is said that anyone who becomes a devotee of the Lord is never vanquished.</p>
+<p>Others, however, are always vanquished.</p>
+<p>Vanquished means that after getting this human form of life, a person does not come out of the entanglement of birth and death and thus misses his golden opportunity.</p>
+<p>Such a person does not know where he is being thrown by the laws of nature.</p>
+<p>Suppose one does not develop Kṛṣṇa consciousness in this human form of life.</p>
+<p>He will be thrown into the cycle of birth and death involving 8,400,000 species of life, and his spiritual identity will remain lost.</p>
+<p>One does not know whether he is going to be a plant, or a beast, or a bird, or something like that, because there are so many species of life.</p>
+<p>The recommendation of Rūpa Gosvāmī for reviving our original Kṛṣṇa consciousness is that somehow or other we should apply our minds to Kṛṣṇa very seriously and thus also become fearless of death.</p>
+<p>After death we do not know our destination, because we are completely under the control of the laws of nature.</p>
+<p>Only Kṛṣṇa, the Supreme Personality of Godhead, is controller over the laws of nature.</p>
+<p>Therefore, if we take shelter of Kṛṣṇa seriously, there will be no fear of being thrown back into the cycle of so many species of life.</p>
+<p>A sincere devotee will surely be transferred to the abode of Kṛṣṇa, as affirmed in the Bhagavad-gītā.</p>
+<p>In the Padma Purāṇa also the same process is advised.</p>
+<p>There it is said that one should always remember Lord Viṣṇu.</p>
+<p>This is called dhyāna, or meditation-always remembering Kṛṣṇa.</p>
+<p>It is said that one has to meditate with his mind fixed upon Viṣṇu.</p>
+<p>Padma Purāṇa recommends that one always fix his mind on the form of Viṣṇu by meditation and not forget Him at any moment.</p>
+<p>And this state of consciousness is called samādhi, or trance.</p>
+<p>We should always try to mold the activities of our lives in such a way that we will constantly remember Viṣṇu, or Kṛṣṇa.</p>
+<p>That is Kṛṣṇa consciousness.</p>
+<p>Whether one concentrates his mind on the four-handed form of Viṣṇu or on the form of two-handed Kṛṣṇa, it is the same.</p>
+<p>The Padma Purāṇa recommends: somehow or other, always think of Viṣṇu without forgetting Him under any circumstances.</p>
+<p>Actually, this is the most basic of all regulative principles.</p>
+<p>For, when there is an order from a superior about doing something, there is simultaneously a prohibition.</p>
+<p>When the order is that one should always remember Kṛṣṇa, the prohibition is that one should never forget Him.</p>
+<p>Within this simple order and prohibition all regulative principles are found complete.</p>
+<p>This regulative principle is applicable to all varṇas and āśramas, the castes and occupations of life.</p>
+<p>There are four varṇas, namely, the brāhmaṇas (priests and intellectuals), the kṣatriyas (warriors and statesmen), the vaiśyas (businessmen and farmers) and the śūdras (laborers and servants).</p>
+<p>There are also four standard āśramas, namely brahmacarya (student life), gṛhastha (householder), vānaprastha (retired) and sannyāsa (renounced).</p>
+<p>The regulative principles are not only for the brahmacārīs (celibate students) to follow, but are applicable for all.</p>
+<p>It doesn't matter whether one is a beginner-a brahmacārī-or if one is very advanced-a sannyāsī.</p>
+<p>The principle of remembering the Supreme Personality of Godhead constantly and not forgetting Him at any moment is meant to be followed by everyone without fail.</p>
+<p>If this injunction is followed, then all other rules and regulations will automatically fall into line.</p>
+<p>All other rules and regulations should be treated as assistants or servants to this one basic principle.</p>
+<p>The injunctions of rules and regulations and the resultant reactions are mentioned in the Eleventh Canto of Śrīmad-Bhāgavatam, 5th Chapter, 1st and 2nd verses.</p>
+<p>Camasa Muni, one of the nine sages who came to instruct King Nimi, addressed the King and said, &quot;The four social orders, namely the brāhmaṇas, the kṣatriyas, the vaiśyas, and the śūdras, have come out of the different parts of the universal form of the Supreme Lord as follows: the brāhmaṇas have come out from the head, the kṣatriyas have come out from the arms, the vaiśyas have come out from the waist, and the śūdras have come out from the legs.</p>
+<p>Similarly, the sannyāsīs have come out from the head, the vānaprasthas from the arms, the gṛhasthas from the waist, and the brahmacārīs from the legs.&quot; These different orders of society and grades of spiritual advancement are conceived in terms of qualification.</p>
+<p>It is confirmed in the Bhagavadgītā that the four social orders and the four spiritual orders are created by the Lord Himself, in terms of different individual qualities.</p>
+<p>As the different parts of the body have different types of activities, so the social orders and spiritual orders also have different types of activities in terms of qualification and position.</p>
+<p>The target of these activities, however, is always the Supreme Personality of Godhead.</p>
+<p>As confirmed in the Bhagavad-gītā, &quot;He is the supreme enjoyer.&quot; So whether one is a brāhmaṇa or a śūdra, he has to satisfy the Supreme Lord by his activities.</p>
+<p>This is also confirmed in the Śrīmad-Bhāgavatam by a verse which reads: &quot;Everyone must be engaged in his particular duty, but the perfection of such work should be tested by how far the Lord is satisfied with such activities.&quot; The injunction herein is that one has to act according to his position, and by such activities one must either satisfy the Supreme Personality or else fall down from his position.</p>
+<p>For example, a brāhmaṇa, who is born out of the head of the Lord has as his business to preach the transcendental Vedic sounds, or śabdabrahman.</p>
+<p>Because the brāhmaṇa is the head, he has to preach the transcendental sound, and he also has to eat on behalf of the Supreme Lord.</p>
+<p>According to Vedic injunctions, when a brāhmaṇa eats it is to be understood that the Personality of Godhead is eating through him.</p>
+<p>It is not, however, that the brāhmaṇa should simply eat on behalf of the Lord and not preach the message of the Bhagavad-gītā to the world.</p>
+<p>Actually, one who preaches the message of the Gītā is very dear to Kṛṣṇa, as is confirmed in the Gītā itself.</p>
+<p>Such a preacher is factually a brāhmaṇa and thus, by feeding him, one feeds the Supreme Lord directly.</p>
+<p>Similarly, the kṣatriya has to protect people from the onslaughts of māyā.</p>
+<p>That is his duty.</p>
+<p>For example, as soon as Mahārāj Parīkṣit saw that a black man was attempting to kill a cow, he immediately took his sword, wanting to kill the black man, whose name was Kali.* That is a kṣatriya's duty.</p>
+<p>Violence is required in order to give protection.</p>
+<p>In the Bhagavadgītā Lord Kṛṣṇa directly gave His order to Arjuna to commit violence on the battlefield of Kurukṣetra, just to give protection to the people in general.</p>
+<p>The vaiśyas are meant for producing agricultural products, trading them and distributing them.</p>
+<p>And the working class, or śūdras, are those who haven't the intelligence of the brāhmaṇas or the kṣatriyas or the vaiśyas, and therefore they are meant to help these higher classes by bodily labor.</p>
+<p>In this way, there is full cooperation and spiritual advancement amongst all the different orders of society.</p>
+<p>And when there is no such cooperation, the members of society will fall down.</p>
+<p>That is the present position in the kali-yuga, this age of quarrel.</p>
+<p>Nobody is doing his duty, and everyone is simply puffed-up by calling himself a brāhmaṇa (intellectual) or a kṣatriya (soldier or statesman).</p>
+<p>But actually, such people are without status.</p>
+<p>They are out of touch with the Supreme Personality of Godhead because they are not Kṛṣṇa conscious.</p>
+<p>Therefore the Kṛṣṇa consciousness movement is intended to set the whole of human society in proper condition *Not to be confused with kālī, the demigoddess who is the devastating feature of material nature.</p>
+<p>The latter is actually pronounced kāh-lee, whereas the kali under discussion here (as in the age of kali) is pronounced kuh-ly.</p>
+<p>so that everyone will be happy and take profit from developing Kṛṣṇa consciousness.</p>
+<p>Lord Śrī Kṛṣṇa instructed Uddhava that by following the injunctions of the social and spiritual orders of human society one can satisfy the Supreme Personality of Godhead, and as a result of such satisfaction the whole society gets all the necessities of life amply and without difficulty.</p>
+<p>This is because, after all, the Supreme Personality of Godhead maintains all other living entities.</p>
+<p>If the whole society performs its respective duties and remains in Kṛṣṇa consciousness, there is no doubt that all of its members will live very peacefully and happily.</p>
+<p>Without wanting the necessities of life, the whole world will be turned into Vaikuṇṭha, a spiritual abode.</p>
+<p>Even without being transferred to the kingdom of God, by following the injunctions of the Śrīmad-Bhāgavatam and prosecuting the duties of Kṛṣṇa consciousness, all human society will be happy in all respects.</p>
+<p>There is a similar statement by Śrī Kṛṣṇa Himself to Uddhava in the Eleventh Canto of Śrīmad-Bhāgavatam, 5th Chapter, 2nd verse.</p>
+<p>The Lord says there, &quot;My dear Uddhava, all persons are engaged in activities, whether those indicated in the revealed scriptures or ordinary worldly activities.</p>
+<p>If by the result of either of such activities they worship Me in Kṛṣṇa consciousness, then automatically they become very happy within this world as well as in the next.</p>
+<p>Of this there is no doubt.&quot; We can conclude from this statement by Kṛṣṇa that activities in Kṛṣṇa consciousness will give everyone all perfection in their desires.</p>
+<p>Thus the Kṛṣṇa consciousness movement is so nice that there is no need of even designating oneself brāhmaṇa, kṣatriya, vaiśya, śūdra, brahmacārī, gṛhastha, vānaprastha or sannyāsī.</p>
+<p>Let everyone be engaged in whatever occupation he now has.</p>
+<p>Simply let him worship Lord Kṛṣṇa by the result of his activities in Kṛṣṇa consciousness.</p>
+<p>That will adjust the whole situation, and everyone will be happy and peaceful within this world.</p>
+<p>In the Nārada-pañcarātra the regulative principles of devotional service are described as follows: &quot;Any activities sanctioned in the revealed scriptures and aiming at the satisfaction of the Supreme Personality of Godhead are accepted by saintly teachers as the regulative principles of devotional service.</p>
+<p>If somebody regularly executes such service unto the Supreme Personality of Godhead under the direction of a bona fide spiritual master, then gradually he rises to the platform of serving in pure love of God.&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

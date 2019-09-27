@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>10 - Nectar of Devotion - Part I</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part2/index.html">Part Two</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html" class="active">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li><li class="affix"><a href="ch16.html">16</a></li><li class="affix"><a href="ch17.html">17</a></li><li class="affix"><a href="ch18.html">18</a></li><li class="affix"><a href="ch19.html">19</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part I</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#techniques-of-hearing-and-memorizing" id="techniques-of-hearing-and-memorizing">Techniques of Hearing and Memorizing</a></h3>
+<p>The beginning of Kṛṣṇa consciouṣness and devotional service is hearing, in Sanskrit called śravaṇam.</p>
+<p>All people should be given the chance to come and join devotional parties so that they may hear.</p>
+<p>This hearing is very important for progressing in Kṛṣṇa consciousness.</p>
+<p>When one links his ears to give aural reception to the transcendental vibrations he can quickly become purified and cleansed in the heart.</p>
+<p>Lord Caitanya has affirmed that this hearing is very important.</p>
+<p>It cleanses the heart of the contaminated soul so that he becomes quickly qualified to enter into devotional service and to understand Kṛṣṇa consciousness.</p>
+<p>In the Garuḍa Purāṇa the stress on hearing is expressed very nicely.</p>
+<p>It is said there: &quot;The state of conditioned life in the material world is just like a man lying unconscious, having been bitten by a snake.</p>
+<p>This is because both such unconscious states can be ended by the sound of a mantra.&quot; When a man is snake-bitten he does not die immediately, but first becomes unconscious and remains in a comatose condition.</p>
+<p>Anyone who is in the material world is also sleeping, as he is ignorant of his actual self or his actual duty and his relationship with God.</p>
+<p>So materialistic life means that one is bitten by the snake of māyā, illusion, and thus, without any Kṛṣṇa consciousness, he is almost dead.</p>
+<p>Now the so-called dead man bitten by a snake can be brought back again to life by the chanting of some mantra.</p>
+<p>There are expert chanters of these mantras who can perform this feat.</p>
+<p>Similarly, one can be brought back into Kṛṣṇa consciousness from the deadly unconscious state of material life by hearing of the mahā-mantra: Hare Kṛṣṇa, Hare Kṛṣṇa, Kṛṣṇa Kṛṣṇa, Hare Hare/ Hare Rāma, Hare Rāma, Rāma Rāma, Hare Hare.</p>
+<p>In the Fourth Canto of Śrīmad-Bhāgavatam, 29th Chapter, 37th verse, the importance of hearing of the pastimes of the Lord is stated by Śukadeva Gosvāmī to Mahārāj Parīkṣit: &quot;My dear King, one should stay at a place where the great ācāryas [holy teachers] speak about the transcendental activities of the Lord, and one should give aural reception to the nectarean river flowing from the moonlike faces of such great personalities.</p>
+<p>If someone eagerly continues to hear such transcendental sounds, then certainly he will become freed from all material hunger, thirst, fear and lamentation, as well as all illusions of material existence.&quot; Śrī Caitanya Mahāprabhu also recommended this process of hearing as a means of self realization in the present age of Kali.</p>
+<p>In this age it is very difficult to follow thoroughly the regulative principles and studies of the Vedas which were formerly recommended.</p>
+<p>However, if one gives aural reception to the sound vibrated by great devotees and ācāryas, that alone will give him relief from all material contamination.</p>
+<p>Therefore it is the recommendation of Caitanya Mahāprabhu that one should simply hear from authorities who are actually devotees of the Lord.</p>
+<p>Hearing from professional men will not help.</p>
+<p>If we hear from those who are actually self realized, then the nectarean rivers, like those which are flowing on the moon planet, will flow into our ears.</p>
+<p>This is the metaphor used in the above verse.</p>
+<p>As is stated in the Bhagavad-gītā, &quot;A materialistic person can give up his material hankerings only by becoming situated in Kṛṣṇa consciousness.&quot; Unless one finds a superior engagement, he will not be able to give up his inferior engagement.</p>
+<p>In the material world everyone is engaged in the illusory activities of inferior energy, but when one is given the opportunity to relish the activities of the superior energy performed by Kṛṣṇa, then he forgets all his lesser pleasures.</p>
+<p>When Kṛṣṇa speaks on the battlefield of Kurukṣetra, to the materialistic person it appears that this is simply talk between two friends, but actually it is a river of nectar flowing down from the mouth of Śrī Kṛṣṇa.</p>
+<p>Arjuna gave aural reception to such vibrations, and thus he became freed from all the illusions of material problems.</p>
+<p>In the Twelfth Canto of Śrīmad-Bhāgavatam, 3rd Chapter, 12th verse, it is stated: &quot;A person who desires unalloyed devotional service to Lord Kṛṣṇa, who is praised by transcendental sound vibrations, should always hear about His glorification and transcendental qualities.</p>
+<p>This will surely kill all kinds of inauspiciousness in the heart.&quot; Also in the Tenth Canto, 14th Chapter, 8th verse, it is said: &quot;My dear Lord, any person who is constantly awaiting Your causeless mercy to be bestowed upon him, and who goes on suffering the resultant actions of his past misdeeds, offering You respectful obeisances from the core of his heart, is surely eligible to become liberated, for it has become his rightful claim.&quot; This statement of Śrīmad-Bhāgavatam should be the guide of all devotees.</p>
+<p>A devotee should not expect immediate relief from the reactions of his past misdeeds.</p>
+<p>No conditioned soul is free from such reactionary experiences, because material existence means continued suffering or enjoying of past activities.</p>
+<p>If one has finished his material activities then there is no more birth.</p>
+<p>This is only possible when one begins Kṛṣṇa conscious activities, because such activities do not produce reaction.</p>
+<p>Therefore, as soon as one becomes perfect in Kṛṣṇa conscious activities, he is not going to take birth again in this material world.</p>
+<p>A devotee who is not perfectly freed from the resultant actions should therefore continue to act in Kṛṣṇa consciousness seriously, even though there may be so many impediments.</p>
+<p>When such impediments arise he should simply think of Kṛṣṇa and expect His mercy.</p>
+<p>That is the only solace.</p>
+<p>If the devotee passes his days in that spirit, it is certain that he is going to be promoted to the abode of the Lord.</p>
+<p>By such activities, he earns his claim to enter into the kingdom of God.</p>
+<p>The exact word used in this verse is dāyabhāk.</p>
+<p>Dāyabhāk refers to a son's becoming the lawful inheritor of the property of the father.</p>
+<p>In a similar way, a pure devotee who is prepared to undergo all kinds of tribulations in executing Kṛṣṇa conscious duties becomes lawfully qualified to enter into the transcendental abode.</p>
+<p>Remembrance Some way or other, if someone establishes in his mind his continuous relationship with Kṛṣṇa, this relationship is called remembrance.</p>
+<p>About this remembrance there is a nice statement in the Viṣṇu Purāṇa, where it is said: &quot;Simply by remembering the Supreme Personality of Godhead all living entities become eligible for all kinds of auspiciousness.</p>
+<p>Therefore let me always remember the Lord, who is unborn and eternal.&quot; In the Padma Purāṇa the same remembrance is explained as follows: &quot;Let me offer my respectful obeisances unto the Supreme Lord Kṛṣṇa, because if someone remembers Him, either at the time of death or during his span of life, he becomes freed from all sinful reactions.&quot; Meditation Meditation means to engage the mind in thinking of the form of the Lord, of the qualities of the Lord, of the activities of the Lord and of the service of the Lord.</p>
+<p>Meditation does not mean anything impersonal or void.</p>
+<p>According to Vedic literature, meditation is always on the form of Viṣṇu.</p>
+<p>In the Nṛsiṁha Purāṇa there is a statement about meditation on the form of the Lord.</p>
+<p>It is said there: &quot;Meditation focusing on the lotus feet of the Supreme Personality of Godhead has been accepted as transcendental and beyond the experience of material pain and pleasure.</p>
+<p>By such meditation even one who is grossly miscreant can be delivered from the sinful reactions of his life.&quot; In the Viṣṇu-dharma there is a statement about meditation on the transcendental quality of the Lord.</p>
+<p>It is said, &quot;Persons who are constantly engaged in Kṛṣṇa consciousness, and who remember the transcendental qualities of the Lord, become free from all reactions to sinful activities, and after being so cleansed they become fit to enter into the kingdom of God.&quot; In other words, no one can enter into the kingdom of God without being freed from all sinful reactions.</p>
+<p>Sinful reactions can be avoided simply by remembering the form, qualities, pastimes, etc., of the Lord.</p>
+<p>In the Padma Purāṇa there is a statement about remembering the activities of the Lord: &quot;A person who is always engaged in meditation on the sweet pastimes and wonderful activities of the Lord surely becomes freed from all material contamination.&quot; Meditation on Executing Devotional Service In some of the Purāṇas the evidence is given that if someone is simply meditating on devotional activities, he has achieved the desired result and has seen face to face the Supreme Personality of Godhead.</p>
+<p>In this connection, there is a story in the Brahma-vaivarta Purāṇa that in the city of Pratiṣṭhānapura in South India there was once a brāhmaṇa who was not very well-to-do, but who was nevertheless satisfied in himself, thinking that because of his past misdeeds, and by the desire of Kṛṣṇa, he did not get sufficient money and opulence.</p>
+<p>So he was not at all sorry for his poor material position, and he used to live very peacefully.</p>
+<p>He was very openhearted, and sometimes he went to hear some lectures delivered by great realized souls.</p>
+<p>At one such meeting, while he was very faithfully hearing about Vaiṣṇava activities, he was informed that these activities can be performed even by meditation.</p>
+<p>In other words, if a person is unable to actually perform Vaiṣṇava activities physically, he can meditate upon the Vaiṣṇava activities and thereby acquire all of the same results.</p>
+<p>Because the brāhmaṇa was not very well-to-do financially, he decided that he would simply meditate on grand, royal devotional activities, and he began this business thusly: Sometimes he would take his bath in the River Godāvarī.</p>
+<p>After taking his bath he would sit in a secluded place on the bank of the river, and, by practicing the yoga exercises of prāṇāyāma, the usual breathing exercise, he would concentrate his mind.</p>
+<p>This breathing exercise is meant to mechanically make the mind fixed upon a particular subject.</p>
+<p>That is the result of the breathing exercise and also of the different sitting postures of yoga.</p>
+<p>Formerly, even quite ordinary persons used to know how to fix the mind upon the remembrance of the Lord, and so the brāhmaṇa was doing this.</p>
+<p>When he had fixed the form of the Lord in his mind, he began to imagine in his meditations that he was dressing the Lord very nicely in costly clothing, with ornaments, helmets and other paraphernalia.</p>
+<p>Then he offered his respectful obeisances by bowing down before the Lord.</p>
+<p>After finishing the dressing he began to imagine that he was cleaning the temple very nicely.</p>
+<p>After cleansing the temple, he imagined that he had many water jugs made of gold and silver, and he took all those jugs to the river and filled them with the holy water.</p>
+<p>Not only did he collect water from Godāvarī, but he collected from the Ganges, Yamunā, Narmadā and Kāverī.</p>
+<p>Generally a Vaiṣṇava, while worshiping the Lord, collects water from all these rivers by mantra chanting.</p>
+<p>This brāhmaṇa, instead of chanting some mantra, imagined that he was physically securing water from all these rivers in golden and silver water pots.</p>
+<p>Then he collected all kinds of worshipful paraphernalia-flowers, fruits, incense and sandalwood pulp.</p>
+<p>He collected everything to place before the Deity.</p>
+<p>All these waters, flowers and scented articles were then very nicely offered to the Deities to Their satisfaction.</p>
+<p>Then he offered ārātrika, and with the regulative principles he finished all these activities in the correct worshiping method.</p>
+<p>He would daily execute similar performances as his routine work, and he continued to do so for many, many years.</p>
+<p>Then one day the brāhmaṇa imagined in his meditations that he had prepared some sweet rice with milk and sugar and offered the preparation to the Deity.</p>
+<p>However, he was not very satisfied with the offering because the sweet rice had been prepared recently and it was still very hot.</p>
+<p>(This preparation, sweet rice, should not be taken hot.</p>
+<p>The cooler the sweet rice, the better its taste.) So because the sweet rice was prepared by the brāhmaṇa very recently, he wanted to touch it so that he could know whether it was fit for eating by the Lord.</p>
+<p>As soon as he touched the sweet rice pot with his finger, he immediately was burnt by the heat of the pot.</p>
+<p>In this way, his meditation broke.</p>
+<p>Now, when he looked at his finger, he saw that it was burnt, and he was wondering in astonishment how this could have happened.</p>
+<p>Because he was simply meditating on touching the hot sweet rice, he never thought that his finger would actually become burnt.</p>
+<p>While he was thinking like this, in Vaikuṇṭha Lord Nārāyaṇa, seated with the goddess of fortune, Lakṣmī, began to smile humorously.</p>
+<p>On seeing this smiling of the Lord, all the goddesses of fortune who were attending the Lord became very curious and asked Lord Nārāyaṇa why He was smiling.</p>
+<p>The Lord, however, did not reply to their inquisitiveness, but instead immediately sent for the brāhmaṇa.</p>
+<p>An airplane sent from Vaikuṇṭha immediately brought the brāhmaṇa into Lord Nārāyaṇa's presence.</p>
+<p>When the brāhmaṇa was thus present before the Lord and the goddesses of fortune, the Lord explained the whole story.</p>
+<p>The brāhmaṇa was then fortunate enough to get an eternal place in Vaikuṇṭha in the association of the Lord and His Lakṣmīs.</p>
+<p>This shows how the Lord is all-pervading, in spite of His being locally situated in His abode.</p>
+<p>Although the Lord was present in Vaikuṇṭha, He was present also in the heart of the brāhmaṇa when he was meditating on the worshiping process.</p>
+<p>Thus, we can understand that things offered by the devotees even in meditation are accepted by the Lord, and they help one achieve the desired result.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch9.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch11.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch9.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch11.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>8 - Nectar of Devotion - Part II</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+        <link rel="stylesheet" href="custom.css">
+        
+
+        
+    </head>
+    <body class="rust">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="affix"><a href="../index.html">Home</a></li><li class="affix"><a href="../part1/index.html">Part One</a></li><li class="affix"><a href="../part3/index.html">Part Three</a></li><li class="affix"><a href="index.html">1</a></li><li class="affix"><a href="ch2.html">2</a></li><li class="affix"><a href="ch3.html">3</a></li><li class="affix"><a href="ch4.html">4</a></li><li class="affix"><a href="ch5.html">5</a></li><li class="affix"><a href="ch6.html">6</a></li><li class="affix"><a href="ch7.html">7</a></li><li class="affix"><a href="ch8.html" class="active">8</a></li><li class="affix"><a href="ch9.html">9</a></li><li class="affix"><a href="ch10.html">10</a></li><li class="affix"><a href="ch11.html">11</a></li><li class="affix"><a href="ch12.html">12</a></li><li class="affix"><a href="ch13.html">13</a></li><li class="affix"><a href="ch14.html">14</a></li><li class="affix"><a href="ch15.html">15</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Nectar of Devotion - Part II</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h3><a class="header" href="#symptoms-of-ecstatic-love" id="symptoms-of-ecstatic-love">Symptoms of Ecstatic Love</a></h3>
+<p>The bodily symptoms which are manifested by a devotee in expressing ecstatic love for Kṛṣṇa are called anubhāva.</p>
+<p>Practical examples of anubhāva are as follows: dancing, rolling on the ground, singing very loudly, stretching the body, crying loudly, yawning, breathing very heavily, neglecting the presence of others, drooling, laughing like a madman, wheeling the head and belching.</p>
+<p>When there is an extraordinary excess of ecstatic love, with all of these bodily symptoms manifested, one feels relieved transcendentally.</p>
+<p>These symptoms are divided into two parts: one is called śīta, and the other is called kṣepaṇa.</p>
+<p>When there is yawning, it is called śīta, and when there is dancing it is called kṣepaṇa.</p>
+<p><strong>Dancing</strong></p>
+<p>While watching the rāsa dance performed by Lord Kṛṣṇa and the gopīs, Lord Śiva beheld the beautiful face of Kṛṣṇa and immediately began to dance and beat upon his small ḍiṇḍima drum.</p>
+<p>While Lord Śiva was dancing in ecstasy, his eldest son, Ganeśa, joined him.</p>
+<p><strong>Rolling on the Ground</strong></p>
+<p>In the Third Canto, 1st Chapter, 31st verse, of Śrīmad- Bhāgavatam, Vidura inquires from Uddhava, &quot;My dear friend, is Akrūra in an auspicious condition? He is not only a learned scholar and sinless, but he is also a devotee of Lord Kṛṣṇa.</p>
+<p>He has such ecstatic love for Kṛṣṇa that I have seen him rolling upon Kṛṣṇa's footprints in the dust as if bereft of all senses.&quot; Similarly, one gopī gave a message to Kṛṣṇa that Rādhārāṇī, because of Her separation from Him and because of Her enchantment with the flavor of His flower garlands, was rolling on the ground, thereby bruising Her soft body.</p>
+<p><strong>Singing Loudly</strong></p>
+<p>One gopī informed Kṛṣṇa that when Śrīmatī Rādhārāṇī was singing about His glories, She enchanted all of Her friends in such a way that they became stonelike and dull.</p>
+<p>At the same time, the nearby stones began to melt away in ecstatic love.</p>
+<p><strong>Stretching the Body</strong></p>
+<p>When there was stretching of the body of Nārada Muni from chanting the Hare Kṛṣṇa mantra, he chanted so loudly that it was apprehended that Lord Nṛsiṁha had appeared.</p>
+<p>Thus all the demons began to flee in different directions.</p>
+<p>It is also said that sometimes when Nārada, the carrier of the vīṇā, remembers his Lord Kṛṣṇa in great ecstasy, he begins to stretch his body so vigorously that his sacred thread gives way.</p>
+<p><strong>Crying Loudly</strong></p>
+<p>A gopī once said to Kṛṣṇa: &quot;My dear son of Nanda Mahārāj, by the sound of Your flute Śrīmatī Rādhārāṇī has become full of lamentation and fear, and thus, with a faltering voice, She is crying like a kurobi bird.</p>
+<p>It is described that by hearing the vibration of Kṛṣṇa's flute Lord Śiva becomes very puzzled and begins to cry so loudly into space that the demons become vanquished and the devotees become overwhelmed with joy.</p>
+<p><strong>Yawning</strong></p>
+<p>It is said that when the full moon rises, the lotus petals become expanded.</p>
+<p>Similarly, when Kṛṣṇa used to appear before Rādhārāṇī, Her face, which is compared with the lotus flower, would expand by Her yawning.</p>
+<p><strong>Breathing Heavily</strong></p>
+<p>As far as breathing heavily is concerned, it is stated: &quot;Lalitā [one of the gopīs] is just like a cātakī bird, which only takes water falling directly from the rain cloud and not from any other source.&quot; In this statement Kṛṣṇa is compared to the dark cloud, and Lalitā is compared to the cātakī bird seeking only Kṛṣṇa's company.</p>
+<p>The metaphor continues to say, &quot;As a heavy wind sometimes disperses a mighty cloud, so the heavy breath from Lalitā's nostrils caused her to miss Kṛṣṇa, who had disappeared by the time she recovered herself.&quot; Neglecting the Presence of Others As far as neglecting the presence of others is concerned, the wives of the brāhmaṇas who were performing sacrifices at Vṛndāvana left home as soon as they heard that Kṛṣṇa was nearby.</p>
+<p>They left their homes without caring for their learned husbands.</p>
+<p>The husbands began to discuss this amongst themselves: &quot;How wonderful is the attraction for Kṛṣṇa, that it has made these women leave us without any care!&quot; This is the influence of Kṛṣṇa.</p>
+<p>Anyone who becomes attracted to Kṛṣṇa can be relieved from the bondage of birth and death, which can be compared to the locked-up homes that were neglected by the wives of the brāhmaṇas.</p>
+<p>In the Padyāvalī there is a statement by some devotees: &quot;We shall not care for any outsiders.</p>
+<p>If they should deride us, we shall still not care for them.</p>
+<p>We shall simply enjoy the transcendental mellow of chanting Hare Kṛṣṇa, and thus we shall roll on the ground and dance ecstatically.</p>
+<p>In this way we shall eternally enjoy transcendental bliss.&quot; Drooling As an example of the running down of saliva from the mouth, it is stated that sometimes when Nārada Muni was chanting the Hare Kṛṣṇa mantra, he remained stunned for a while, and saliva oozed from his mouth.</p>
+<p><strong>Laughing like a Madman</strong></p>
+<p>When a devotee laughs very loudly like a madman, it is done out of an extraordinary agitation of ecstatic love within the heart.</p>
+<p>Such mad laughing is an expression of the condition of the heart, which is technically called aṭṭa-hāsa.</p>
+<p>When a devotee becomes affected with this mental condition, his love is expressed through the lips.</p>
+<p>The laughing sounds, coming one after another, are compared to flowers falling from the creeper of devotion which grows within the heart of the devotee.</p>
+<p>In the Caitanya-caritāmṛta devotional service to the Lord is also compared to a creeper which rises up to the lotus feet of Kṛṣṇa in Goloka Vṛndāvana.</p>
+<p><strong>Wheeling of the Head</strong></p>
+<p>One gopī told her friend: &quot;It appears that Lord Kṛṣṇa, the enemy of the demon Agha, has released from His mouth a whirlwind which is acting on your head and is gradually proceeding to do the same to the other lotus-eyed gopīs.&quot;</p>
+<p><strong>Belching</strong></p>
+<p>Sometimes belching also becomes a symptom of ecstatic love for Kṛṣṇa.</p>
+<p>There is evidence of this in Paurṇamāsī's address to one crying associate of Rādhārāṇī: &quot;My dear daughter, don't be worried because Śrīmatī Rādhārāṇī is belching.</p>
+<p>I am about to offer a remedial measure for this symptom.</p>
+<p>Do not cry so loudly.</p>
+<p>This belching is not due to indigestion; it is a sign of ecstatic love for Kṛṣṇa.</p>
+<p>I shall arrange to cure this belching symptom immediately.</p>
+<p>Don't be worried.&quot; This statement of Paurṇamāsī is evidence that ecstatic love for Kṛṣṇa is sometimes manifested through belching.</p>
+<p>Sometimes trembling of the whole body and hemorrhaging from some part of the body are also manifested in response to ecstatic love for Kṛṣṇa, but such symptoms are very rare, and therefore Śrīla Rūpa Gosvāmī does not discuss any further on this point.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="ch7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="ch9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="ch7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="ch9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
